@@ -1,0 +1,275 @@
+- name: Oversigt
+  items:
+    - name: Tilmeld dig
+      href: sign-up-sign-in.md
+    - name: Get started
+      href: getting-started.md
+    - name: Guidet læring
+      href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
+    - name: Opret et flow i browseren
+      href: get-started-logic-template.md
+    - name: Opret et flow på en telefon
+      href: mobile-create-flow.md
+    - name: Opret et teamflow
+      href: create-team-flows.md
+    - name: 'Opret et flow, der bruger Common Data Service'
+      href: common-data-model-intro.md
+- name: Automatiserede flows
+  items:
+    - name: Opret et flow fra bunden
+      href: get-started-logic-flow.md
+    - name: Udløs et flow med e-mail
+      href: email-triggers.md
+    - name: Opret et SharePoint-påmindelsesflow
+      href: create-sharepoint-reminder-flows.md
+    - name: Opret flow for at tilpasse SharePoint-sidegodkendelser
+      href: customize-sharepoint-page-approvals.md
+    - name: Opret et flow i Teams
+      href: flows-teams.md
+    - name: Opret tilpassede kortflows i Teams
+      href: create-adaptive-cards-teams.md
+    - name: Opret et flow med Common Data Service
+      href: connection-cds.md
+    - name: Opret et flow med Dynamics 365
+      href: connection-dynamics365.md
+    - name: Opret et flow med OneDrive for Business
+      href: onedrive-business-launch-panel.md
+    - name: Filter og kopier data
+      href: odata-filters.md
+    - name: Brug en Flic
+      href: flic-button-flows.md
+    - name: Brug en bttn
+      href: bttn-button-flows.md
+- name: Knapflows
+  items:
+    - name: Opret et knapflow
+      href: introduction-to-button-flows.md
+    - name: Opret et knapflow med udløsertokens
+      href: introduction-to-button-trigger-tokens.md
+    - name: Opret et knapflow med brugerinput
+      href: button-flow-with-user-input-tokens.md
+    - name: Del en knap
+      href: share-buttons.md
+- name: Planlagte flows
+  items:
+    - name: Kør et flow efter en tidsplan
+      href: run-scheduled-tasks.md
+    - name: Behandl en liste over elementer
+      href: apply-to-each.md
+- name: Forretningsprocesforløb
+  items:
+    - name: Oversigt over forretningsprocesflows
+      href: business-process-flows-overview.md
+    - name: Opret et forretningsprocesflow for at standardisere processer
+      href: create-business-process-flow.md
+    - name: Optimer forretningsprocesflows med forgrening
+      href: enhance-business-process-flows-branching.md
+    - name: Bedste fremgangsmåder for attributter for forretningsprocesflows
+      href: best-practices-entity-attributes.md
+- name: Brugergrænsefladeflow (eksempelvisning)
+  items:
+    - name: Introduktion til brugergrænsefladeflow
+      href: ./ui-flows/overview.md
+    - name: Konfigurer brugergrænsefladeflow
+      href: ./ui-flows/setup.md
+    - name: Opret og test desktopbrugergrænsefladeflow
+      href: ./ui-flows/create-desktop.md
+    - name: Rediger desktopbrugergrænsefladeflow
+      href: ./ui-flows/edit-desktop.md
+    - name: Brug input og output i desktopbrugergrænsefladeflow
+      href: ./ui-flows/inputs-outputs-desktop.md
+    - name: Opret og test webbrugergrænsefladeflow
+      href: ./ui-flows/create-web.md
+    - name: Rediger webbrugergrænsefladeflow
+      href: ./ui-flows/edit-web.md
+    - name: Brug input og output i webbrugergrænsefladeflow
+      href: ./ui-flows/inputs-outputs-web.md
+    - name: Kør brugergrænsefladeflow
+      href: ./ui-flows/run-ui-flow.md
+    - name: Administrer brugergrænsefladeflow
+      href: ./ui-flows/manage.md
+- name: Løsninger
+  items:
+    - name: Oversigt
+      href: overview-solution-flows.md
+    - name: Opret et flow i en løsning
+      href: create-flow-solution.md
+    - name: Eksportér løsning
+      href: export-flow-solution.md
+    - name: Importér løsning
+      href: import-flow-solution.md
+    - name: Rediger et løsningsorienteret flow
+      href: edit-solution-aware-flow.md
+    - name: Fjern et løsningsorienteret flow
+      href: remove-solution-aware-flow.md
+- name: Common Data Service
+  items:
+    - name: Klassiske Common Data Service-arbejdsprocesser
+      items:
+        - name: Oversigt
+          href: workflow-processes.md
+        - name: Konfigurer faser og trin for arbejdsprocesser
+          href: configure-workflow-steps.md
+        - name: Overvåg og administrer arbejdsprocesser
+          href: monitor-manage-processes.md
+        - name: De bedste fremgangsmåder for arbejdsprocesser
+          href: best-practices-workflow-processes.md
+        - name: Erstat arbejdsprocesser med flow
+          href: replace-workflows-with-flows.md
+    - name: Klassiske Common Data Service-arbejdsprocesser
+      items:
+        - name: Brug af handlinger
+          href: actions.md
+        - name: Opret en brugerdefineret handling
+          href: create-actions.md
+        - name: Konfigurer brugerdefinerede handlinger fra en arbejdsproces
+          href: configure-actions.md
+        - name: Aktivér brugerdefinerede handlinger fra en arbejdsproces
+          href: invoke-custom-actions-workflow-dialog.md
+    - name: Klassiske Common Data Service-opgaveflow
+      items:
+        - name: Opret mobilopgaveflows
+          href: create-mobile-task-flow.md
+    - name: Klassiske Common Data Service-dialoger
+      items:
+        - name: Brug klassiske Common Data Service-dialoger
+          href: use-cds-for-apps-dialogs.md
+        - name: Erstat klassiske Common Data Service-dialoger
+          href: replace-dialogs.md
+- name: AI Builder
+  items:
+    - name: Brug AI Builder i Power Automate
+      href: use-ai-builder.md
+- name: 'Sådan gør du:'
+  items:
+    - name: Tilføj en handling
+      href: multi-step-logic-flow.md
+    - name: Tilføj en betingelse
+      href: add-condition.md
+    - name: Brug datahandlinger
+      href: data-operations.md
+    - name: Anvend udtryk i betingelser
+      href: use-expressions-in-conditions.md
+    - name: Brug Visio til at udforme flow
+      href: visio-flows.md
+    - name: 'Reference: Brug funktioner i udtryk'
+      href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
+    - name: Godkendelsesflows
+      items:
+        - name: Enkelte godkendelser
+          href: modern-approvals.md
+        - name: Sekventielle godkendelser
+          href: sequential-modern-approvals.md
+        - name: Parallelle godkendelser
+          href: parallel-modern-approvals.md
+        - name: Alle skal godkende
+          href: all-assigned-must-approve.md
+        - name: Integrerede godkendelser
+          href: common-data-model-approve.md
+        - name: Formatér anmodninger om godkendelse
+          href: approvals-markdown-support.md
+        - name: Indstillinger for brugerdefineret godkendelsessvar
+          href: create-approval-response-options.md
+    - name: Administrer flows på en telefon
+      href: mobile-manage-flows.md
+    - name: Udgivelse af en skabelon
+      href: publish-a-template.md
+- name: Foretag fejlfinding
+  items:
+    - name: Se et flow
+      href: see-a-flow-run.md
+    - name: Overvåg flowaktivitet på en telefon
+      href: mobile-monitor-activity.md
+    - name: Foretag fejlfinding af et flow
+      href: fix-flow-failures.md
+    - name: Find og løs fejl med fejlkontrol
+      href: error-checker.md
+- name: Opret forbindelse til data
+  items:
+    - name: Tilgængelige forbindelser
+      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
+    - name: Administrer forbindelser
+      href: add-manage-connections.md
+    - name: Administrer gateways
+      href: gateway-manage.md
+    - name: Forstå gateways
+      href: gateway-reference.md
+- name: Til udviklere
+  items:
+    - name: 'Virksomhedsudviklere, partnere og ISV''er'
+      href: ./developer/dev-enterprise-intro.md
+    - name: Byg og certificer brugerdefinerede connectorer
+      href: ./developer/register-custom-api.md
+    - name: Integrer i websteder og andre teknologier
+      href: ./developer/embed-flow-dev.md
+    - name: Lad kunderne testkøre dine flow
+      href: ./developer/dev-appsource-test-drive.md
+    - name: Arbejd med forretningsprocesforløb ved hjælp af kode
+      href: ./developer/business-process-flows-code.md
+      items:
+        - name: 'Eksempel: Arbejd med forretningsprocesforløb'
+          href: ./developer/sample-work-business-process-flows.md
+    - name: Custom Common Data Service-arbejdsprocesaktiviteter
+      href: ./developer/custom-cds-for-apps-workflow-activities.md
+- name: Administration
+  items:
+    - name: 'Flow i organisationen, Ofte stillede spørgsmål'
+      href: organization-q-and-a.md
+    - name: Prisfastsættelse
+      href: billing-questions.md
+    - name: Introduktion til administration
+      href: admin-center-introduction.md
+    - name: Administrer miljøer
+      href: environments-overview-admin.md
+    - name: Angiv en politik for at forhindre tab af data
+      href: prevent-data-loss.md
+    - name: Understøt Intune i mobilapps
+      href: intune-support.md
+    - name: Introduktion til datagrupper
+      href: introduction-to-data-groups.md
+    - name: Få vist analyserapporter for deling og connectorer
+      href: admin-analytics-report.md
+    - name: Besvar DSR-anmodninger
+      items:
+        - name: Oversigt
+          href: gdpr-dsr-summary.md
+        - name: Opdag anmodninger
+          href: gdpr-dsr-discovery.md
+        - name: Eksportér anmodninger
+          href: gdpr-dsr-export.md
+        - name: Slet anmodninger
+          href: gdpr-dsr-delete.md
+    - name: DSR anmodninger for Microsoft-konti
+      items:
+        - name: Oversigt
+          href: gdpr-dsr-summary-msa.md
+        - name: Opdag anmodninger
+          href: gdpr-dsr-discovery-msa.md
+        - name: Eksportér anmodninger
+          href: gdpr-dsr-export-msa.md
+        - name: Slet anmodninger
+          href: gdpr-dsr-delete-msa.md
+        - name: Luk anmodninger
+          href: gdpr-dsr-accountclose-msa.md
+    - name: Power Automate til den amerikanske regering
+      href: us-govt.md
+- name: Reference
+  items:
+    - name: Oversigt over områder
+      href: regions-overview.md
+    - name: Grænser og konfiguration
+      href: limits-and-config.md
+    - name: Produktbemærkninger
+      href: release-notes.md
+    - name: Power Automate-web-API
+      href: web-api.md
+    - name: Ofte stillede spørgsmål
+      href: frequently-asked-questions.md
+- name: Lær af andre
+  items:
+    - name: Webinarer
+      href: 'https://flow.microsoft.com/blog/category/webinars/'
+    - name: Blog
+      href: 'https://flow.microsoft.com/blog/'
+    - name: Forummer
+      href: 'https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity'
