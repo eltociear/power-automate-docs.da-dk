@@ -20,14 +20,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e364c4d9c07f3bac1f78fa6941d1823272ae2466
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: e7d5e4219c46703019f995b625c6d672a767018a
+ms.sourcegitcommit: 683127e3655abeec9ae6e86fcdf4ac2256101d08
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74370899"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882113"
 ---
-# <a name="set-up-ui-flows"></a>Konfigurer Flow for brugergrænseflade
+# <a name="set-up-ui-flows"></a>Konfigurer brugergrænsefladeflow
 
 [Dette emne er foreløbig dokumentation og kan ændres].
 
@@ -132,7 +132,7 @@ Du skal bruge gatewayen til at udløse flow for brugergrænsefladen fra et [flow
 ## <a name="uninstall-ui-flows"></a>Fjern Flow for brugergrænseflade
 
 1. Åbn menuen **Start** > **Indstillinger** > **Programmer**.
-1. Søg efter **Flow for brugergrænseflade (prøveversion)**, og vælg den derefter.
+1. Søg efter **Flow for brugergrænseflade (prøveversion)** , og vælg den derefter.
 1. Vælg **Fjern**.
 
 ## <a name="next-steps"></a>Næste trin
