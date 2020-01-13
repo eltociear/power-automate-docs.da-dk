@@ -2,7 +2,7 @@
   items:
     - name: Tilmeld dig
       href: sign-up-sign-in.md
-    - name: Get started
+    - name: Kom i gang
       href: getting-started.md
     - name: Guidet læring
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
@@ -118,7 +118,7 @@
           href: replace-workflows-with-flows.md
     - name: Klassiske Common Data Service-arbejdsprocesser
       items:
-        - name: Brug af handlinger
+        - name: Anvend handlinger
           href: actions.md
         - name: Opret en brugerdefineret handling
           href: create-actions.md
@@ -154,6 +154,20 @@
       href: visio-flows.md
     - name: 'Reference: Brug funktioner i udtryk'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
+    - name: Brug tilpassede kort i modelflow
+      items:
+        - name: Oversigt over tilpassede kort til Teams
+          href: overview-adaptive-cards.md
+        - name: Opret tilpassede kort til Teams
+          href: create-adaptive-cards.md
+        - name: Eksempel – billeddeling
+          href: image-share-sample.md
+        - name: Eksempel – metadataopdatering
+          href: metadata-update-sample.md
+        - name: Eksempel – daglig vejrudsigt
+          href: daily-weather-sample.md
+        - name: Eksempel – generering af kundeemner
+          href: lead-collection-sample.md
     - name: Godkendelsesflows
       items:
         - name: Enkelte godkendelser
@@ -174,7 +188,7 @@
       href: mobile-manage-flows.md
     - name: Udgivelse af en skabelon
       href: publish-a-template.md
-- name: Foretag fejlfinding
+- name: Fejlfind
   items:
     - name: Se et flow
       href: see-a-flow-run.md
@@ -194,20 +208,20 @@
       href: gateway-manage.md
     - name: Forstå gateways
       href: gateway-reference.md
-- name: Til udviklere
+- name: For udviklere
   items:
     - name: 'Virksomhedsudviklere, partnere og ISV''er'
       href: ./developer/dev-enterprise-intro.md
     - name: Byg og certificer brugerdefinerede connectorer
       href: ./developer/register-custom-api.md
-    - name: Integrer i websteder og andre teknologier
+    - name: Integrer med websteder og andre teknologier
       href: ./developer/embed-flow-dev.md
     - name: Lad kunderne testkøre dine flow
       href: ./developer/dev-appsource-test-drive.md
     - name: Arbejd med forretningsprocesforløb ved hjælp af kode
       href: ./developer/business-process-flows-code.md
       items:
-        - name: 'Eksempel: Arbejd med forretningsprocesforløb'
+        - name: 'Eksempel: Arbejd med forretningsprocesflow'
           href: ./developer/sample-work-business-process-flows.md
     - name: Custom Common Data Service-arbejdsprocesaktiviteter
       href: ./developer/custom-cds-for-apps-workflow-activities.md
@@ -265,7 +279,7 @@
       href: web-api.md
     - name: Ofte stillede spørgsmål
       href: frequently-asked-questions.md
-- name: Lær af andre
+- name: Få mere at vide af andre
   items:
     - name: Webinarer
       href: 'https://flow.microsoft.com/blog/category/webinars/'
