@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b842fa3cd4f7f8e3a1460f345a17ec805a7acb00
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: aca3291bcbda1917b669107b73f84248741dee7e
+ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74355282"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75867822"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Føj en betingelse til et flow
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
