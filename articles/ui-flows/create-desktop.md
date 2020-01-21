@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 064ab35f68ad36ba52395be7768b95276c5c648d
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: afe9277ced28cdb964ed32550dd0402eaa0d1df4
+ms.sourcegitcommit: 8c4231190023d17c3d620e1e58d1d3d6bcd289ab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74372601"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943490"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow
 
@@ -78,7 +78,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
      >[!TIP]
      >Når du holder musemarkøren over kontrolelementer i appen, kan du se en blå kontur rundt om hvert enkelt kontrolelement. Vent altid på den blå markering, før du vælger et kontrolelement.
      >
-     >Hvis elementet ikke er fremhævet med blåt, optages det muligvis ikke.
+     >Hvis elementet ikke er fremhævet med blåt, optages det muligvis ikke korrekt.
 
 1. Vælg **Optag** fra optagerkontrolelementet.
 1. Vælg det første tal, vælg **+** , vælg det andet tal, og vælg derefter **=** .
@@ -122,9 +122,9 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 - Skærmbilleder går i øjeblikket tabt efter lagring. Vi arbejder på at løse problemet.
 
-- Det kan være en god idé at tilføje handlingen [**Luk** ](edit-desktop.md#add-a-manual-action)i slutningen af dit flow for brugergrænseflade, fordi flow for brugergrænseflader starter en ny forekomst af programmerne med hver test eller kørsel.
+- Det kan være en god idé at tilføje handlingen [**Luk**](edit-desktop.md#add-a-manual-action)i slutningen af dit flow for brugergrænseflade, fordi flow for brugergrænseflader starter en ny forekomst af programmerne med hver test eller kørsel.
 
-- Vælg **...**  > **Slet** på kortet med handlinger, der er optaget, for at fjerne eventuelle unødvendige/identiske handlinger. Der kan oprettes identiske handlinger, afhængigt af optagelsernes type og hastighed. 
+- Vælg **...**  > **Slet** på kortet med handlinger, der er optaget, for at fjerne eventuelle unødvendige/identiske handlinger.
 
 - Højreklik afspilles muligvis ikke korrekt. Hvis det er tilfældet, skal du klikke til venstre under optagelsen for at få flow for brugergrænseflade til at fokusere på destinationsbrugergrænsefladen og derefter højreklikke.
 
