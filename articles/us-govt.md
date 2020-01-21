@@ -169,9 +169,9 @@ Du kan bruge forskellige URL-adresser til at få adgang til Power Automate US Go
 
 Kommerciel version | US Government-version
 ------ | --------
-https://flow.microsoft.com | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us ) (GCC) og https://high.flow.microsoft.us (GCC High)
-https://admin.flow.microsoft.com | [https://gov.admin.flow.microsoft.us](https://gov.admin.flow.microsoft.us ) (GCC) og https://high.admin.flow.microsoft.us (GCC High)
-https://flow.microsoft.com/connectors | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors ) (GCC) og https://high.flow.microsoft.us/connectors (GCC High)
+https://flow.microsoft.com | https://gov.flow.microsoft.us (GCC) og https://high.flow.microsoft.us (GCC High)
+https://admin.flow.microsoft.com | https://gov.admin.flow.microsoft.us (GCC) og https://high.admin.flow.microsoft.us (GCC High)
+https://flow.microsoft.com/connectors | https://gov.flow.microsoft.us/connectors ) (GCC) og https://high.flow.microsoft.us/connectors (GCC High)
 
 
 For de kunder, der implementerer netværksbegrænsninger, skal du sørge for, at adgangen til følgende domæner er tilgængelige for dine slutbrugeres adgangspunkter:
