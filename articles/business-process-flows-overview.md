@@ -1,7 +1,7 @@
 ---
 title: Oversigt over forretningsprocesforløb | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 12/12/2019
 ms.reviewer: ''
 ms.service: flow
 author: MSFTMAN
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5ca4e1698ec3196f90d6765fc52d26ddbb1eb591
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: ce726a2f4bfdbd7c57a60e5dcc25eb5cee504bce
+ms.sourcegitcommit: 85100833f23c3bcc42f3ee090be476a53fe5c55b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74356616"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951512"
 ---
 # <a name="business-process-flows-overview"></a>Oversigt over forretningsprocesforløb
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -94,7 +94,7 @@ Forretningsprocesforløb indeholder en vejledning i, hvordan man får arbejdet f
  Du kan kun definere forretningsprocesforløb for de objekter, der understøtter dem. Du skal også være opmærksom på grænserne for antallet af processer, faser og trin, der kan tilføjes.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Forretningsprocesforløb, der kalder en arbejdsproces  
- Du kan kalde arbejdsprocesser efter behov inde i et forretningsprocesforløb. Du konfigurerer dette fra det nye forretningsprocesforløb ved at trække en arbejdsproceskomponent til en fase i processen eller til afsnittet med globale arbejdsprocesser. Du kan finde flere oplysninger om brug af arbejdsprocesser i forretningsprocesforløb i [Blog: Automatisering af forretningsprocesforløb i Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+ Du kan kalde arbejdsprocesser efter behov inde i et forretningsprocesforløb. Du konfigurerer dette fra det nye forretningsprocesforløb ved at trække en arbejdsproceskomponent til en fase i processen eller til afsnittet med globale arbejdsprocesser. Du kan finde flere oplysninger om brug af arbejdsprocesser i forretningsprocesforløb i [Blog: Automatisering af forretningsprocesser i Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
  Når du medtager en arbejdsproces, som du vil udløse ved registrering af en fase i forretningsprocesforløbet, og denne fase er det sidste trin i forløbet, giver designeren det indtryk, at arbejdsprocessen udløses, når den pågældende fase er afsluttet. Arbejdsprocessen udløses dog ikke, fordi en faseovergang ikke finder sted. Du modtager ikke en advarsel eller fejl, der forhindrer dig i at inkludere arbejdsprocessen i fasen. Når en bruger interagerer med forretningsprocesforløbet, resulterer afslutning eller annullering af processen ikke i en faseovergang, og arbejdsprocessen udløses derfor ikke. Overvej følgende eksempler:  
   
@@ -172,6 +172,19 @@ Flere standardvisninger er tilgængelige, som du kan få vist som et diagram, f.
 ### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interager med et objekt i et forretningsprocesforløb fra en arbejdsproces
 Du kan også interagere med et objekti et forretningsprocesforløb fra en arbejdsproces. Du kan f.eks. oprette en arbejdsproces for objektposten for forretningsprocesforløbet for at ændre den aktive fase, når et felt i objektposten Salgsmulighed bliver opdateret. Du kan finde flere oplysninger om, hvordan du gør dette, under [Automatiser faser i et forretningsprocesforløb ved hjælp af arbejdsprocesser](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
+### <a name="run-business-process-flows-offline"></a>Kør forretningsprocesflow offline
+
+Du kan anvende forretningsprocesflow offline, hvis følgende betingelser er opfyldt:
+
+- Forretningsprocesflowet bruges fra en Power Apps-app.
+- Power Apps-appen er aktiveret til offline brug.
+- Forretningsprocesflowet har en enkelt enhed.
+
+De tre kommandoer, der specifikt er tilgængelige for et forretningsprocesforløb, når Power Apps-appen er offline, er:
+
+- Næste fase
+- Forrige fase
+- Angiv aktiv fase
 
 ### <a name="limitations-of-using-business-process-flow-entities"></a>Begrænsninger ved brug af objekter i forretningsprocesforløb
 
