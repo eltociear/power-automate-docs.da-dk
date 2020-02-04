@@ -16,5 +16,5 @@
    
      Dette kort er en skabelon for den mail, der sendes, når status for anmodningen om ferie ændres.
    
-     Bemærk: I feltet **Brødtekst** på kortet **Send en mail** kort, skal du bruge tokenet **Kommentarer** fra handlingen **Godkendelser – Start en godkendelse**.
+     Bemærk! I feltet **Brødtekst** på kortet **Send en mail** kort, skal du bruge tokenet **Kommentarer** fra handlingen **Godkendelser – Start en godkendelse**.
 

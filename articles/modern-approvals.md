@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c174ad7fe18539a7dc1d44acf315d569f4b35a39
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74376511"
 ---
 # <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Opret og test en arbejdsproces for godkendelse med Power Automate
@@ -36,7 +36,7 @@ Hvis du vil oprette en arbejdsproces til godkendelse, skal du tilføje handlinge
 
 Godkendere kan svare på anmodninger via deres mailindbakke, [godkendelsescentret](https://flow.microsoft.com/manage/approvals/received/) på Power Automate-webstedet eller Power Automate-appen.
 
-## <a name="create-an-approval-flow"></a>Oprettelse af et godkendelsesflow
+## <a name="create-an-approval-flow"></a>Opret et godkendelsesflow
 Her er et overblik over det flow, vi opretter og tester:
 
    ![oversigt over flow](./media/modern-approvals/create-flow-overview.png)
@@ -182,4 +182,4 @@ Nu, hvor du har oprettet og testet dit flow, skal du sørge for, at andre ved, h
 * Få vist og administrer [ventende godkendelsesanmodninger](approve-reject-requests.md)
 * Opret [sekventielle godkendelsesflows.](sequential-modern-approvals.md)
 * Opret [parallelle godkendelsesflows.](parallel-modern-approvals.md)
-* Installér Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).

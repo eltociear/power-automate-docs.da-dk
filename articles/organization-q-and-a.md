@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 22fa35d40dbb198b376150f144d4de11585fc7ca
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74375177"
 ---
 # <a name="flow-in-your-organization-qa"></a>Flow i organisationen, Ofte stillede spørgsmål
@@ -38,10 +38,10 @@ Power Automate er en offentlig cloudtjeneste, der hjælper enkeltpersoner og tea
 ### <a name="how-do-people-sign-up-for-flow"></a>Hvordan tilmelder man sig Flow?
 Enkeltpersoner kan tilmelde sig Flow på to måder gennem webportalen:
 
-#### <a name="option-1"></a>Mulighed 1
+#### <a name="option-1"></a>Valgmulighed 1
 Alle kan tilmelde sig ved at gå til [flow.microsoft.com](https://flow.microsoft.com), vælge **Tilmeld dig gratis** og derefter fuldføre tilmeldingsprocessen for Flow via [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) eller [signup.live.com](https://signup.live.com).
 
-#### <a name="option-2"></a>Mulighed 2
+#### <a name="option-2"></a>Valgmulighed 2
 Alle kan tilmelde sig ved at gå til [flow.microsoft.com](https://flow.microsoft.com), vælge **Log på**, logge på med deres arbejds- eller skolemail eller personlige mail og acceptere vilkårene for anvendelse af Flow.    
 
 Når en bruger i organisationen tilmelder sig Flow med mulighed 2, får den pågældende bruger automatisk tildelt en gratis Power Automate-licens.
@@ -81,9 +81,9 @@ Se afsnittet nedenfor, hvis du som standard vil fjerne feltet Flow fra appstarte
 Hvis en bruger fik tildelt en Flow Plan 1- eller Flow Plan 2-licens, kan du gøre følgende for at fjerne Flow-licensen for den pågældende bruger, og derved fjernes Flow-ikonet fra appstarteren:
 
 1. Gå til [Office 365-administrationsportalen](https://portal.microsoftonline.com/).
-2. Vælg **Brugere** i venstre navigationspanel, og vælg derefter **Aktive brugere**.
-3. Find den bruger, du vil fjerne licensen for, og vælg derefter den pågældendes navn.
-4. I ruden med brugerdetaljer skal du vælge **Rediger** i afsnittet **Produktlicenser**.
+2. I navigationspanelet til venstre skal du vælge **Users** og derefter vælge **Active Users**.
+3. Find den bruger, du vil fjerne licensen fra, og vælg derefter vedkommendes navn.
+4. I detaljeruden for brugeren skal du i sektionen **Product licenses** vælge **Edit**.
 5. Find licensen med navnet **Power Automate Plan 1** eller **Power Automate Plan 2**, angiv til/fra-knappen til **Fra**, og vælg derefter **Gem**.
    
    ![](./media/organization-q-and-a/remove-license.png)
@@ -91,14 +91,14 @@ Hvis en bruger fik tildelt en Flow Plan 1- eller Flow Plan 2-licens, kan du gør
 Hvis en bruger har adgang til Flow gennem Office 365- og Dynamics 365-planlicensen, kan du deaktivere vedkommendes adgang til de ekstra funktioner, der er inkluderet i denne plan, ved at gøre følgende:
 
 1. Gå til [Office 365-administrationsportalen](https://portal.microsoftonline.com/).
-2. Vælg **Brugere** i venstre navigationspanel, og vælg derefter **Aktive brugere**.
-3. Find den bruger, du vil fjerne adgangen for, og vælg derefter den pågældendes navn.
+2. I navigationspanelet til venstre skal du vælge **Users** og derefter vælge **Active Users**.
+3. Find den bruger, du vil fjerne adgangen fra, og vælg derefter vedkommendes navn.
 4. I ruden med brugerdetaljer skal du vælge **Rediger** i afsnittet **Produktlicenser**.
 5. Udvid brugerens Office 365- eller Dynamics 365-licens, deaktiver adgang til tjenesten med navnet **Flow for Office 365** eller **Flow for Dynamics 365**, og vælg derefter **Gem**.
    
    ![](./media/organization-q-and-a/remove-service-plan.png)
 
-Massesletning af licenser er også mulig via PowerShell. Se et detaljeret eksempel i [Fjern licenser fra brugerkonti med Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx).   Du kan desuden finde flere oplysninger om massesletning af tjenester inden for en licens i [Deaktiver adgang til tjenester med Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
+Massesletning af licenser er også mulig via PowerShell. Du kan se et detaljeret eksempel under [Fjern licenser fra brugerkonti med Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx).   Du kan desuden finde flere oplysninger om massesletning af tjenester inden for en licens i [Deaktiver adgang til tjenester med Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
 
 Når Flow-licensen eller -tjenesten fjernes fra en bruger i din organisation, resulterer det i, at Flow-ikonet fjernes fra følgende placeringer for den pågældende bruger:
 
@@ -112,7 +112,7 @@ Når Flow-licensen eller -tjenesten fjernes fra en bruger i din organisation, re
 Bemærk, at som standard fjernes kun feltet Flow. En bruger kan stadig vælge at bruge Power Automate som enkeltperson.
 
 ### <a name="why-did-10000-licenses-for-power-automate-show-up-in-my-office-365-tenant"></a>Hvorfor blev der vist 10.000 licenser til Power Automate i min Office 365-lejer?
-Alle kan afprøve Power Automate Plan 1 eller 2 i 90 dage, og disse prøvelicenser repræsenterer den tilgængelige kapacitet for nye Flow-brugere i din lejer. Der er intet gebyr for disse licenser. Der er specifikt to mulige grunde til, at der muligvis vises en kapacitet på 10.000 (prøve) licenser til Flow i Office 365-administrationsportalen:
+Alle kan afprøve Power Automate Plan 1 eller 2 i 90 dage, og disse prøvelicenser repræsenterer den tilgængelige kapacitet for nye Flow-brugere i din lejer. Der er ingen opkrævning for disse licenser. Der er specifikt to mulige grunde til, at der muligvis vises en kapacitet på 10.000 (prøve) licenser til Flow i Office 365-administrationsportalen:
 
 1. Hvis mindst én bruger i din lejer deltog i den offentlige prøveversion af Flow, der var tilgængelig fra april 2016 til oktober 2016, så vil du se 10.000 licenser, der er forsynet med mærkaten "Microsoft Power Apps og logiske flow"
    
@@ -138,30 +138,30 @@ Alle kan se deres abonnement ved at besøge siden med Flow-priser på [https://f
 ### <a name="will-power-automate-sign-up-impact-the-identities-in-my-organization"></a>Vil tilmelding til Power Automate påvirke identiteterne i min organisation?
 Hvis organisationen allerede har et eksisterende Office 365-miljø, og alle brugere i organisationen har en Office 365-konto, påvirkes identitetsstyringen ikke.
 
-Hvis organisationen allerede har et eksisterende Office 365-miljø, men ikke alle brugere i organisationen har en Office 365-konto, oprettes de pågældende brugere i lejeren og får tildelt licenser, der er baseret på deres arbejds- eller skolemailadresse. Det betyder, at antallet af brugere, som du administrerer på et givent tidspunkt, vokser, efterhånden som brugerne i organisationen tilmelder sig tjenesten.
+Hvis organisationen allerede har et eksisterende Office 365-miljø, men det ikke er alle brugerne i organisationen, der har Office 365-konti, opretter vi en bruger i lejeren og tildeler licenser på baggrund af brugernes arbejds- eller skolemailadresser. Det betyder, at antallet af brugere, som du administrerer på et givent tidspunkt, vokser, efterhånden som brugerne i organisationen tilmelder sig tjenesten.
 
-Hvis organisationen ikke har ikke et Office 365-miljø med forbindelse til dit maildomæne, ændres administrationen af identiteter ikke. Brugerne føjes til en ny cloudbrugermappe, og du har mulighed for at overtage som lejeradministrator og administrere dem.
+Hvis organisationen ikke har ikke et Office 365-miljø med forbindelse til dit maildomæne, ændres administrationen af identiteter ikke. Brugerne føjes til en ny brugermappe udelukkende for cloudmiljøet, og du får mulighed for at overtage administrationen af lejeren og administrere dem.
 
 ### <a name="a-new-tenant-was-created-by-power-automate-how-do-i-manage-this"></a>En ny lejer blev oprettet af Power Automate; hvordan håndterer jeg dette?
 Hvis en ny lejer blev oprettet af Power Automate, kan du gøre krav på og administrere den pågældende lejer ved hjælp af følgende trin:
 
 1. Tilmeld dig lejeren ved at tilmelde dig Flow ved hjælp af et mailadressedomæne, der svarer til det lejerdomæne, du vil administrere. Hvis Microsoft f.eks. oprettede lejeren contoso.com, skal du tilmelde dig lejeren med en mailadresse, der slutter på @contoso.com.
-2. Gør krav på administrationen ved at bekræfte ejerskabet af domænet: Når du er i lejeren, kan du give dig selv administratorrollen ved at bekræfte ejerskabet af domænet. Hvis du vil gøre dette, skal du følge disse trin:    
+2. Få administratorkontrol ved at bekræfte ejerskabet over domænet: Når du har adgang til lejren, kan du forfremme dig selv til administratorrollen ved at bekræfte ejerskabet over domænet. Det gør du ved at gennemgå disse trin:    
    
    1. Gå til [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Vælg ikonet Appstarter øverst til venstre, og vælg Admin.
-   3. Læs vejledningen på siden **Become the admin**, og vælg derefter **Yes, I want to be the admin**.  
+   3. Læs instruktionerne på siden **Become the admin**, og vælg derefter **Yes, I want to be the admin**.  
       
        **BEMÆRK**! Hvis denne indstilling ikke vises, er der allerede en Office 365-administrator.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Kan jeg styre den Office 365-lejer, brugerene føjes til, hvis jeg har flere domæner?
+### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Kan jeg kontrollere den Office 365-lejer, som brugerne er føjet til, hvis jeg har flere domæner?
 Hvis du ikke gør noget, oprettes der en lejer for hvert brugermaildomæne og -underdomæne.
 
 Hvis du ønsker, at alle brugere skal være i den samme lejer uanset deres mailadresseudvidelser:  
 
-* Oprette en destinationslejer på forhånd, eller bruge en eksisterende lejer. Tilføj alle de eksisterende domæner og underdomæner, der skal konsolideres i den pågældende lejer. Derefter tilmeldes alle brugere med mailadresser, der slutter på disse domæner og underdomæner automatisk destinationslejeren, når de tilmelder sig.
+* Opret en destinationslejer i forvejen, eller brug en eksisterende lejer. Tilføj alle eksisterende domæner og underdomæner, der skal konsolideres i den pågældende lejer. Derefter deltager alle brugerne med mailadresser, der slutter med de pågældende domæner og underdomæner, automatisk i destinationslejeren, når de tilmelder sig.
 
-**VIGTIGT**! Der er ingen understøttede automatiserede metode til flytning af brugerne på tværs af lejere, efter at de er oprettet. Du finder flere oplysninger om tilføjelse af domæner til en enkelt Office 365-lejer under [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+**VIGTIGT**! Der er ingen understøttede automatiserede metode til flytning af brugerne på tværs af lejere, efter at de er oprettet. Hvis du vil have mere at vide om tilføjelse af domæner til en enkelt Office 365-lejer, skal du se [Føj dine brugere og domæner til Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Hvordan kan jeg begrænse mine brugeres mulighed for at få adgang til organisationens forretningsdata?
 Power Automate giver dig mulighed for at oprette datazoner for forretningsdata og ikke-forretningsdata, som vist nedenfor. Når disse politikker til forebyggelse af datatab implementeres, forhindres brugerne i at designe eller køre Flow, der kombinerer forretningsdata og ikke-forretningsdata. Du kan finde yderligere oplysninger i [Politikker til forebyggelse af datatab (DLP)](prevent-data-loss.md).

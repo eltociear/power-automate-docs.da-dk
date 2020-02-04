@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e8acff386e031eba3bb48a9f8abd535f8ce57940
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373452"
 ---
 # <a name="run-flows-on-a-schedule"></a>Kør flows efter en tidsplan
@@ -54,7 +54,7 @@ Opret et flow, der udfører en eller flere handlinger (f.eks afsendelse af en ra
 ## <a name="specify-advanced-options"></a>Angiv avancerede indstillinger
 1. Følg trinnene i det forrige afsnit, og vælg derefter **Vis avancerede indstillinger**.
    
-    **Bemærk**! Disse indstillinger ændres på baggrund af de værdier, der er angivet for **Interval** og **Frekvens**. Hvis dit skærmbillede ikke svarer til nedenstående grafik, skal du kontrollere, at **Interval** og **frekvens** er angivet til samme værdier som vist i grafikken.
+    **Bemærk!** Disse indstillinger ændres på baggrund af de værdier, der er angivet for **Interval** og **Frekvens**. Hvis dit skærmbillede ikke svarer til nedenstående grafik, skal du kontrollere, at **Interval** og **frekvens** er angivet til samme værdier som vist i grafikken.
 2. Vælg en **Tidszone** for at angive, om **Starttidspunktet** afspejler en lokal tidszone, Universal Coordinated Time (UTC) osv.
 3. Angiv et **Starttidspunkt** i følgende format:
    <br>YYYY-MM-DDTHH:MM:SSZ

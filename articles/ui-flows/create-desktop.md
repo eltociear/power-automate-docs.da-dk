@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: afe9277ced28cdb964ed32550dd0402eaa0d1df4
-ms.sourcegitcommit: 8c4231190023d17c3d620e1e58d1d3d6bcd289ab
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "75943490"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow

@@ -22,10 +22,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b338991cfdbb73a8a0464fd4322714ece82c2ac5
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373015"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Erstat dialoger med forretningsprocesforløb eller lærredsapps
@@ -119,7 +119,7 @@ Kan jeg starte en lærredsapp som en pop op fra en knap på kommandolinjen?
 - Ja. Hvis du vil gøre dette, skal du bare indstille mål-URL-adressen til URL-adressen i din lærredsapp, som kan hentes fra sektionen **Oplysninger** i appen, som beskrevet tidligere.
 
 Kan arbejdsprocesser kaldes fra en lærredsapp?
-- Dette understøttes ikke. Vi anbefaler, at du i stedet bruger et forløb. Flere oplysninger: [Introduktion til knapflows med brugerinput](button-flow-with-user-input-tokens.md)
+- Dette understøttes ikke. Vi anbefaler, at du i stedet bruger et forløb. Flere oplysninger: [Introduktion til knapflow med brugerinput](button-flow-with-user-input-tokens.md)
 
 Kan jeg automatisk konvertere dialoger til forretningsprocesforløb eller lærredsapps?
 - Du kan ikke automatisk konvertere dialoger til forretningsprocesforløb eller lærredsapps.
