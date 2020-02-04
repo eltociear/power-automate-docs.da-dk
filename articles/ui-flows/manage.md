@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d07f2dc95432a81518fcb6445911f1c6430ce623
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74371359"
 ---
 # <a name="manage-ui-flows"></a>Administrer brugergrænsefladeflow
 
-[Dette emne er foreløbig dokumentation og kan ændres.]
+[Dette emne er foreløbig dokumentation og kan ændres].
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
@@ -62,5 +62,5 @@ Følg disse trin for at få vist oplysninger om et flow for brugergrænsefladen:
 ## <a name="learn-more"></a>Få mere at vide
 
 - Få mere at vide om [oprettelse af skrivebordsflow for brugergrænsefladen](create-desktop.md).
-- Få mere at vide om [oprettelse af webflow for brugergrænsefladen](create-web.md).
+- Få mere at vide om, hvordan du [opretter flow for brugergrænsefladen på internettet](create-web.md).
 - Få mere at vide om, hvordan du kører [flow for brugergrænsefladen](run-ui-flow.md).

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f2e46711637497120872848f239d59651ab875d5
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74358088"
 ---
 # <a name="manage-connections-in-power-automate"></a>Administrer forbindelser i Power Automate
@@ -46,7 +46,7 @@ Du kan oprette en forbindelse i flere forskellige scenarier, såsom:
 
 I dette emne vises, hvordan du kan administrere forbindelser på [Power Automate-webstedet][1].
 
-## <a name="add-a-connection"></a>Tilføj en forbindelse
+## <a name="add-a-connection"></a>Opret en forbindelse
 1. På [Power Automate-webstedet][1] skal du logge på med din arbejds- eller organisationskonto.
 2. Vælg gearikonet i det øverste højre hjørne, og vælg derefter **Forbindelser**.
    

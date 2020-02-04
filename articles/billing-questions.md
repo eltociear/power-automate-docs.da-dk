@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 3ea993f30f34a9997a1a3a3580b0151e93223d7a
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74356777"
 ---
 # <a name="billing-and-metering-questions"></a>Spørgsmål om fakturering og måling
@@ -53,7 +53,7 @@ Vælg **Få mere at vide om** > **priser** i den øverste navigationsmenu, og v�
 
 Hvis du har en gratis version eller en prøveversion, skal du klikke eller trykke på gearikonet i det øverste navigationspanel for at få vist dit aktuelle forbrug i forhold til versionen. 
 
-![Knappen Indstillinger](./media/billing-questions/settings.png)
+![Knappen Settings](./media/billing-questions/settings.png)
 
 Hvis du har en betalt plan, samles kørsler i puljer på tværs af alle brugere i organisationen. Vi arbejder på funktioner, der viser tilgængelige kvoter og forbrug på tværs af en organisation.
 

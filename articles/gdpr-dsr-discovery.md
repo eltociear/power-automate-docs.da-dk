@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 26bed9ab3329bbf0edf8ea055de71b732d7d0746
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74355397"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-power-automate"></a>Svar på søgeanmodninger fra registrerede omfattet af GDPR for Power Automate
@@ -45,7 +45,7 @@ Nedenfor finder du en oversigt over, hvilke typer af Power Automate-ressourcer d
 |Brugeroplysninger|Oplysninger, som ikke kan ses af brugeren, og som understøtter kørsel af flow.|
 |Forbindelser|Bruges af connectors og gør det muligt at oprette forbindelse til API'er, systemer, databaser osv. [Få mere at vide](https://docs.microsoft.com/flow/add-manage-connections)|
 |Forbindelsestilladelser|Tilladelser for en bestemt forbindelse. [Få mere at vide](https://docs.microsoft.com/flow/add-manage-connections)|
-|Brugerdefinerede connectors|Brugerdefinerede connectors, som en bruger har oprettet og publiceret for at gøre det muligt at få adgang til brugerdefinerede systemer eller tredjepartssystemer. [Få mere at vide](https://docs.microsoft.com/connectors/custom-connectors/)|
+|Brugerdefinerede forbindelser|Brugerdefinerede connectors, som en bruger har oprettet og publiceret for at gøre det muligt at få adgang til brugerdefinerede systemer eller tredjepartssystemer. [Få mere at vide](https://docs.microsoft.com/connectors/custom-connectors/)|
 |Tilladelser til brugerdefineret connector|Lister over tilladelser til brugerdefinerede connectors. [Få mere at vide](https://docs.microsoft.com/connectors/custom-connectors/share)|
 |Gateway|Gateways er datatjenester i det lokale miljø, der kun kan installeres af en bruger, til hurtig og sikker overførsel af data mellem Power Automate og en datakilde, der ikke er i clouden. [Få mere at vide](https://docs.microsoft.com/flow/gateway-manage)|
-|Gatewaytilladelser|Gateways kan deles med brugere i en organisation. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=872249)|
+|Gatewaytilladelser|Gateways kan deles med brugerne i en organisation. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=872249)|

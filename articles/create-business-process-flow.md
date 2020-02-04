@@ -23,13 +23,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2c8e512c39805296e5885266750b59b49feca482
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74359192"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Selvstudium: Opret et forretningsprocesforløb for at standardisere processer
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Selvstudium: Opret et forretningsprocesflow for at standardisere processer
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 I dette selvstudium kan du se, hvordan du opretter et forretningsprocesforløb med Power Apps. Få mere at vide om, hvorfor du bruger forretningsprocesforløb, under [Oversigt over forretningsprocesforløb](business-process-flows-overview.md). Du kan finde oplysninger om, hvordan du opretter et forløb for en mobil opgave under [Opret et forløb for en mobil opgave](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
@@ -49,7 +49,7 @@ Du har brug for [Flowplan 2](https://preview.flow.microsoft.com/pricing/) for at
 
 ## <a name="create-a-business-process-flow"></a>Opret et forretningsprocesforløb  
   
-1. Åbn [løsningsoversigten](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
+1. Åbn [Løsningsoversigt](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
   
 2. Vælg **Processer** i venstre navigationsrude. 
   

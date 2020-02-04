@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9f093221d8bb3c2ddbe8d6401973527dc8dcfd2b
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74355765"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Opret et godkendelsesflow, som kræver, at alle skal godkende
@@ -90,7 +90,7 @@ Log på [Power Automate](https://flow.microsoft.com), og udfør derefter følgen
    |  Godkendelsestype |Brug **Enhver fra listen over tildelte** til at angive, at enhver af godkenderne kan godkende eller afvise anmodningen. </p>Brug **Alle fra listen over tildelte** til at angive, at en anmodning kun er godkendt, hvis alle er enige, og at anmodningen afvises, hvis en enkelt person afviser den. |
    |  Titel |Titlen på godkendelsesanmodningen. |
    |  Tildelt til |Mailadresser til godkenderne. |
-   |  Oplysninger |Eventuelle yderligere oplysninger, du vil have sendt til de godkendere, der er angivet i feltet **Tildelt til**. |
+   |  Detaljer |Eventuelle yderligere oplysninger, du vil have sendt til de godkendere, der er angivet i feltet **Tildelt til**. |
    |  Elementlink |En URL-adresse til godkendelseselementet. I dette eksempel er dette et link til elementet i SharePoint. |
    |  Beskrivelse af elementlinket |En tekst med beskrivelse til **elementlinket**. |
 
@@ -114,7 +114,7 @@ Log på [Power Automate](https://flow.microsoft.com), og udfør derefter følgen
 >
 >
 
-| Godkendelsestype | Funktionsmåde |
+| Godkendelsestype | Adfærd |
 | --- | --- |
 | Enhver fra listen over tildelte |Handlinger, der følger efter kørsel af handlingen **Start en godkendelse**, efter en af godkenderne har besluttet sig. |
 | Alle fra listen over tildelte |Handlinger, der følger efter kørsel af handlingen **Start en godkendelse**, efter en godkender afviser eller alle godkender anmodningen. |

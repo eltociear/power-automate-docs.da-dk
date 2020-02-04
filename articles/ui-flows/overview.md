@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 756ccf21a75728da2ef8d114bc99d72692c38120
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74371106"
 ---
-# <a name="preview-introduction-to-ui-flows"></a>Prøveversion: Introduktion til flow for brugergrænsefladen
+# <a name="preview-introduction-to-ui-flows"></a>Prøveversion: Introduktion til brugergrænsefladeflow
 
 [Dette emne er foreløbig dokumentation og kan ændres].
 
@@ -54,7 +54,7 @@ Med Power Automate kan du automatisere både moderne programmer med API'er og æ
 
 | **Programtype**      | **Funktion** | **Fordele**     |
 |---------------------------|----------------------------|------------------|
-| Moderne programmer med API'er| Connectors                 | Høj pålidelighed med opdateringer af brugergrænsefladen i softwaren |
+| Moderne programmer med API'er| Forbindelser                 | Høj pålidelighed med opdateringer af brugergrænsefladen i softwaren |
 | Ældre programmer (ingen API'er)          | Flow for brugergrænseflade                    | Nemt at oprette. Fungerer, selvom der ikke er nogen API.   |
 
 

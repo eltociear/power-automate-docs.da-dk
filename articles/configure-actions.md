@@ -22,10 +22,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9157159a263bb2b8be41445aebb478fc6aa2ddb3
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74360549"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Konfigurer brugerdefinerede handlinger fra en arbejdsproces
@@ -64,7 +64,7 @@ Handlinger har også noget, som arbejdsprocesser ikke har – input- og outputar
  **Kategori**  
  Denne egenskab fastsætter, at dette er en handlingsproces. Du kan ikke ændre dette, når du har gemt processen.  
   
- **Objekt**  
+ **Enhed**  
  I forbindelse med handlingsprocesser kan du vælge et objekt til angivelse af kontekst for arbejdsprocessen på samme måde som andre typer processer, men du kan også vælge **None (global)** . Brug denne indstilling, hvis din handling ikke kræver konteksten for et bestemt objekt. Du kan ikke ændre dette, når du har gemt processen.  
   
  **Type**  
@@ -123,7 +123,7 @@ Handlinger har også noget, som arbejdsprocesser ikke har – input- og outputar
   
 |Type|Beskrivelse|  
 |----------|-----------------|  
-|Boolean|En `true` eller `false` værdi.|  
+|Boolesk|En `true` eller `false` værdi.|  
 |DateTime|En værdi, der gemmer oplysninger om dato og klokkeslæt.|  
 |Decimal|En talværdi med decimalpræcision. Bruges, når præcision er yderst vigtigt.|  
 |Entity|En post for det angivne objekt. Når du vælger Entity, aktiveres rullelisten, og du kan vælge objekttypen.|  

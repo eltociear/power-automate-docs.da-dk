@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: d65be1552c3e748e4910c4fb942a60322f6f1e19
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74363263"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Arbejd med forretningsprocesforløb ved hjælp af kode
@@ -78,7 +78,7 @@ Du kan hente navnet på objektet for forretningsprocesforløbet på en af følge
 - **Ved hjælp af brugergrænsefladen**: Brug tilpasningsbrugergrænsefladen til at gå til forretningsprocesforløbsobjektet:
 
     ![](media/bpf-entity-name.png)
-- **Ved hjælp af Web-API'EN**: Brug følgende anmodning:
+- **Ved hjælp af Web-API'en**: Brug følgende anmodning:
 
     **Anmodning**
 
@@ -143,7 +143,7 @@ Det brugerdefinerede objekt for forretningsprocesflowet har organisationsomfang.
 > [!IMPORTANT]
 > Skift til en anden procesforekomst for en objektpost understøttes kun via brugergrænsefladen (klient) eller programmeringsmæssigt ved hjælp af oplysninger, der er tilgængelige i dette afsnit. Du kan ikke længere bruge `SetProcess`-meddelelsen (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> eller <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) til at skifte processer ved hjælp af programmering (angiv et andet forretningsprocesflow som den aktive procesforekomst) for destinationsobjektposten. 
 
- Lad os se nærmere på følgende eksempel, hvor vi har et forretningsprocesflow på tværs af objekter, "My Custom BPF", med 3 faser: S1:Account, S2:Account og S3:Contact. 
+ Lad os se nærmere på følgende eksempel, hvor vi har et forretningsprocesflow på tværs af objekter, "My Custom BPF", med 3 faser: S1:Konto, S2:Konto og S3:Kontakt. 
 
  ![](media/sample-bpf.png)
  
@@ -265,20 +265,20 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Skift tilstand for en procesforekomst: Afbryd, genaktiver eller afslut 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Skift tilstanden for en procesforekomst: Afbryd, genaktiver eller udfør 
 
 En procesforekomst kan have en af følgende tilstande: **Aktiv**, **Afsluttet** eller **Afbrudt**. Tilstanden bestemmes af følgende attributter for procesforekomstposten:
 
 - **statecode**: Viser statussen for procesforekomsten.
 
-    |Værdi|Etiket|
+    |Værdi|Navn|
     |-----|-----|
     |0    |Aktiv|
     |1    |Inaktiv|
 
-- **statuscode**: Viser oplysninger om status for procesforekomsten.
+- **statuscode**: Viser oplysninger om status for procesforekomst.
 
-    |Værdi|Etiket|
+    |Værdi|Navn|
     |-----|-----|
     |1    |Aktiv|
     |2    |Afsluttet|
@@ -344,7 +344,7 @@ Hver forekomstpost i et forretningsprocesforløb, der returneres for en objektpo
   
  Når du har oplysninger om den aktive fase og den aktive sti for et forretningsprocesforløb, kan du bruge oplysningerne til at gå til den forrige eller næste fase på den aktive sti. Hvis du går fremad i faserne, skal det ske i sekvenser, dvs. du kan kun gå videre til den næste fase på den aktive sti.   
   
- Du kan få vist hele kodeeksemplet med brugen af disse to metoder og fasenavigation ved hjælp af [Organization Service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata) i [Eksempel: Arbejd med forretningsprocesforløb](sample-work-business-process-flows.md). 
+ Du kan få vist hele kodeeksemplet med brugen af disse to metoder og fasenavigation ved hjælp af [Organization Service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata) i [Eksempel: Arbejd med forretningsprocesflow](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
 ## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Anvend forretningsprocesforløb under oprettelse af en objektpost
@@ -373,7 +373,7 @@ Hvis du ikke angiver en værdi for attributten **ProcessId**, mens du opretter e
 
 De ældre procesrelaterede attributter (f.eks **ProcessId**, **StageId** og **TraversedPath**) for objekter, der er aktiveret for forretningsprocesforløb, frarådes allerede. Manipulation af disse ældre procesrelaterede attributter for målobjektposter garanterer ikke overensstemmelse med tilstanden for forretningsprocesforløbet, og er ***ikke*** et understøttet scenarie. Den anbefalede måde er at bruge attributterne for forretningsprocesforløbet som beskrevet tidligere i afsnittet [Opret, hent, opdater og slet objektposter i forretningsprocesforløb (procesforekomster)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
 
-Den eneste undtagelse til dette er ved at ændre attributten **ProcessId** programmatisk, samtidig med at du opretter en objektpost til at tilsidesætte standardanvendelsen af forretningsprocesforløbet til den nye post, som forklaret i det forrige afsnit : [Anvend forretningsprocesforløb, mens du opretter en objektpost](#ApplyBPF).
+Den eneste undtagelse til dette er ved at ændre attributten **ProcessId** vha. programmering, samtidig med at du opretter en objektpost til at tilsidesætte standardanvendelsen af forretningsprocesforløbet til den nye post, som forklaret i det forrige afsnit: [Anvend forretningsprocesforløb under oprettelse af en objektpost](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>Understøttelse på klientsiden af programmering til forretningsprocesforløb  

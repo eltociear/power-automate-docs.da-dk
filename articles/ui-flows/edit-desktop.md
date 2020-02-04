@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9c9da27098ca9114c0919d0fb6e70495f442a3c6
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74371704"
 ---
-# <a name="edit-desktop-ui-flows"></a>Rediger flow for brugergrænsefladen på skrivebordet
+# <a name="edit-desktop-ui-flows"></a>Rediger desktopbrugergrænsefladeflow
 
 [Dette emne er foreløbig dokumentation og kan ændres].
 
@@ -59,7 +59,7 @@ Avancerede parametre giver dig mulighed for at ændre følgende:
 Det kan være en god idé at optage dit flow for brugergrænsefladen i flere sessioner. Når du har fuldført din første optagelse, kan du fortsætte på følgende måde:
 
 1. Log på [Power Automate](https://flow.microsoft.com).
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)**.
+1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)** .
 1. Vælg det flow for brugergrænsefladen, du vil redigere.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Vælg **Rediger**. 
@@ -110,7 +110,7 @@ Når du har optaget et program med mindst én handling, kan du manuelt tilføje 
 Følg disse trin for at tilføje en manuel handling:
 
 1. Log på [Power Automate](https://flow.microsoft.com).
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)**.
+1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)** .
 1. Vælg det flow for brugergrænsefladen, du vil redigere.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Vælg **Rediger**. 

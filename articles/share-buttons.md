@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3209748b03823add7622472665ce70b4cd581b1f
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74372739"
 ---
 # <a name="share-button-flows-in-power-automate"></a>Del knapflow i Power Automate
@@ -138,7 +138,7 @@ Hvis du ikke længere vil bruge en knap, der er delt med dig, kan du fjerne den 
     ![fjern knap](./media/share-buttons/share-button-flows-added-shared-button.png)
 2. Tryk på **Fjern** på den viste menu.
 
-Det er det hele. Knappen vises ikke længere under fanen **Knapper** i appen Power Automate.
+Det var det. Knappen vises ikke længere under fanen **Knapper** i appen Power Automate.
 
 > [!NOTE]
 > Når du har fjernet en delt knap, kan du tilføje den igen ved at vælge **HENT FLERE** under fanen **Knapper**.
