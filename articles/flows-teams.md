@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: a2a9b5d5a6ed8305ed3e7c29717ef19978bae0a7
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367058"
 ---
 # <a name="power-automate-in-teams"></a>Power Automate i Teams
@@ -82,7 +82,7 @@ Følg disse trin for at installere Power Automate-appen i Microsoft Teams.
 
     Du kan også oprette flow ud fra en brugerdefineret skabelon eller en tom skabelon på samme måde som med Power Automate-designer. 
 
-## <a name="manage-approvals"></a>Administrer godkendelser
+## <a name="manage-approvals"></a>at administrere godkendelser
 
 Du kan administrere [godkendelser](modern-approvals.md) i Microsoft Teams, på samme måde som du ville gøre i Power Automate. Følg disse trin for at administrere dine godkendelser:
 

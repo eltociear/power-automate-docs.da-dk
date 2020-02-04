@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 5af881b25afb9dbc1554eaf730b21e2bf27f095d
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367863"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
@@ -150,7 +150,7 @@ Administratorer kan oprette [politikker til forebyggelse af datatab](prevent-dat
 
 Du kan oprette flows med en tjenestekonto, men vi anbefaler, at du ikke gør det, hvis legitimationsoplysningerne for tjenestekontoen er delte.
 
-## <a name="licensing"></a>Licenser
+## <a name="licensing"></a>Licensering
 ### <a name="will-power-automate-still-have-a-free-or-trial-option"></a>Findes der stadig en gratis version eller prøveversion af Power Automate?
 Ja. Du kan bruge vores gratis tilbud med begrænsede brugerrettigheder, eller du kan tilmelde dig en gratis 90-dages prøveversion af Power Automate. Du kan til enhver tid aktivere dit abonnement i løbet af prøveperioden.
 

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 019d711771c10f360b1f5c7dab61aa432c827311
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367104"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administrer en datagateway i det lokale miljø i Power Automate.
@@ -32,7 +32,7 @@ ms.locfileid: "74367104"
 
 Installer og administrer en datagateway i det lokale miljø for at integrere en række cloudbaserede apps sikkert med dine data og apps i det lokale miljø med Power Automate.
 
-Med en gateway kan du oprette forbindelse til data i det lokale miljø over disse forbindelser:
+Med en gateway kan du oprette forbindelse til data i det lokale miljø via disse forbindelser:
 
 * Apache Impala
 * Brugerdefinerede connectorer, som du opretter
@@ -90,7 +90,7 @@ Følg disse trin for at fordele trafikken på tværs af dine gateways:
 1. Vælg **Distribuer anmodninger på tværs af alle aktive gateways i klyngen**.
 1. Vælg **Anvend** for at gemme dine ændringer.
 
-Du kan få flere oplysninger under [Forstå gateways](gateway-reference.md).
+Du kan finde flere oplysninger under [Forstå gateways](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png

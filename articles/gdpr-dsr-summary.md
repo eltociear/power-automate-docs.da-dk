@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 256e874e2b70844219cd1c21e2ed37f2a96ba78c
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367380"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-power-automate"></a>Svar på anmodninger fra registrerede omfattet af GDPR for Power Automate
@@ -59,23 +59,23 @@ Ifølge GDPR har personer (i forordningen kaldet fysiske personer) ret til at ad
 
 Denne artikel beskriver, hvordan Microsofts produkter, tjenester og administrative værktøjer bruges til at hjælpe domænecontrollere med at finde og behandle personlige data, når de besvarer DSR-anmodninger. I artiklen forklares det især, hvordan du kan finde, få adgang til og behandle personlige data, der er placeret i Microsofts cloud. Her er en hurtigt oversigt over de processer, der er beskrevet i denne vejledning:
 
-1. Søg: Med søge- og registreringsværktøjer kan du nemmere finde kundedata, der er omfattet af en DSR. Når du har indsamlet de dokumenter, der eventuelt skal behandles, kan du udføre en eller flere af de DSR-handlinger, der er beskrevet i følgende trin, for at besvare anmodningen. Eller du finder måske ud af, at anmodningen ikke opfylder din organisations retningslinjer for besvarelse af DSR-anmodninger. [Dokumentation til Power Automate DSR Discovery](gdpr-dsr-discovery.md)
+1. Find: Med søge- og registreringsværktøjer kan du nemmere finde kundedata, der er omfattet af en DSR. Når du har indsamlet de dokumenter, der eventuelt skal behandles, kan du udføre en eller flere af de DSR-handlinger, der er beskrevet i følgende trin, for at besvare anmodningen. Eller du finder måske ud af, at anmodningen ikke opfylder din organisations retningslinjer for besvarelse af DSR-anmodninger. [Dokumentation til Power Automate DSR Discovery](gdpr-dsr-discovery.md)
 
-1. Få adgang: Hent de personlige data, der er placeret i Microsofts cloud, og hvis der er anmodet om det, kan du oprette en kopi af disse data, som den fysiske person har adgang til.
+1. Få adgang: Hent de private oplysninger, der er placeret i Microsoft-cloudmiljøet, og hvis der er anmodet om det, kan du oprette en kopi af disse data, som den registrerede har adgang til.
 
-1. Korriger: Foretag ændringer eller implementer andre handlinger, der er anmodet om, på de personlige data, hvis det er relevant.
+1. Ret: Foretag ændringer, eller implementer andre handlinger, der er anmodet om, for de private oplysninger, hvis det er relevant.
 
     Hvis en fysisk person beder dig om at korrigere de personlige data, der findes i din organisation, skal du og din organisation finde ud af, om anmodningen kan imødekommes eller ej.  Korrigering af dataene kan omfatte redigering, ændring eller fjernelse af personlige data.
 
     Du kan bruge Azure Active Directory til at administrere Power Automate-brugernes id'er. Enterprise-kunder kan håndtere DSR-anmodninger om korrigering, herunder begrænsede redigeringsfunktioner, afhængigt af den relevante Microsoft-tjeneste.  Som databehandler tilbyder Microsoft ikke muligheden for at korrigere systemoprettede logge, da de afspejler faktiske aktiviteter og udgør en oversigt over hændelser i Microsoft-tjenesterne.  [Få mere at vide om DSR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
 
-1. Begræns: Begræns behandlingen af de personlige data enten ved at fjerne licenser til forskellige onlinetjenester eller ved at deaktivere de relevante tjenester, hvor det er muligt. Du kan også fjerne data fra Microsofts cloud og opbevare dem i det lokale miljø eller et andet sted.
+1. Begræns: Begræns behandlingen af de private oplysninger enten ved at fjerne licenser til forskellige onlinetjenester eller ved at deaktivere de relevante tjenester, hvor det er muligt. Du kan også fjerne data fra Microsofts cloud og opbevare dem i det lokale miljø eller et andet sted.
 
     Fysiske personer kan anmode om, at du begrænser behandlingen af deres personlige data.  Microsoft leverer API'er (Application Programming Interface – programmeringsgrænseflader til programmerer) og brugergrænseflader til dette formål.  På disse grænseflader kan virksomhedskundernes lejeradministratorer administrere DSR-anmodningerne via en kombination af at eksportere data og slette data. En kunde kan (1) eksportere en elektronisk kopi af personlige data for brugeren, herunder konti, systemoprettede logge og tilknyttede logge, og herefter (2) slette kontoen og tilknyttede data, der findes i Microsoft-systemer.
 
-1. Slet: Fjern permanent de personlige data, der er lagret i Microsofts cloud. [Få mere at vide om, hvordan du sletter personlige data](gdpr-dsr-delete.md).
+1. Slet: Fjern permanent de private oplysninger, der er lagret i Microsoft-cloudmiljøet. [Få mere at vide om, hvordan du sletter personlige data](gdpr-dsr-delete.md).
 
-1. Eksportér: Opret en elektronisk kopi (i et computerlæsbart format) af de personlige data til den fysiske person. I hvert afsnit i denne artikel beskrives de tekniske procedurer, som en datacontrollerorganisation kan udføre for at besvare en DSR-anmodning om personlige data i Microsofts cloud. [Få mere at vide om, hvordan du eksporterer personlige data](gdpr-dsr-export.md).
+1. Eksportér: Opret en elektronisk kopi (i et computerlæsbart format) af de private oplysninger til den registrerede. I hvert afsnit i denne artikel beskrives de tekniske procedurer, som en datacontrollerorganisation kan udføre for at besvare en DSR-anmodning om personlige data i Microsofts cloud. [Få mere at vide om, hvordan du eksporterer personlige data](gdpr-dsr-export.md).
 
 ## <a name="system-generated-logs"></a>Systemoprettede logge
 

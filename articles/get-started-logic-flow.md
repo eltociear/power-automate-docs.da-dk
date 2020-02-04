@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 569408367130c6f5121b30d2c8c14833b142b934
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74368783"
 ---
 # <a name="create-a-flow-in-power-automate"></a>Opret et flow i Power Automate
@@ -32,7 +32,7 @@ ms.locfileid: "74368783"
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
-Opret et flow, der automatisk udfører en eller flere handlinger, når det er udløst af en hændelse. Opret f.eks. et flow, der giver dig besked via mail, når nogen sender et tweet, der indeholder et nøgleord, som du angiver. I dette eksempel er afsendelsen af et tweet hændelsen, og afsendelsen af mail er handlingen.
+Opret et flow, der udfører en eller flere opgaver automatisk, når det udløses af en hændelse. Opret f.eks. et flow, der giver dig besked via mail, når nogen sender et tweet, der indeholder et nøgleord, som du angiver. I dette eksempel er afsendelsen af et tweet hændelsen, og afsendelsen af mail er handlingen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 

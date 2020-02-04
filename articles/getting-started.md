@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bb50b99f0a86e1221aaa4c4072426a31b9bf8f61
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74368645"
 ---
 # <a name="get-started-with-power-automate"></a>Introduktion til Power Automate 
@@ -42,7 +42,7 @@ Power Automate er en af hjørnestenene i Power Platform. Den består af en platf
 
 | **Flowtype**                                                                       | **Use case**                                                                                  | **Destination**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automatiserede flow](get-started-logic-flow.md)                 | Opret et flow, der automatisk udfører en eller flere handlinger, når det er udløst af en hændelse. | [Connectors](https://docs.microsoft.com/connectors/) til tjenester i cloudmiljøet og det lokale miljø. |
+| [Automatiserede flow](get-started-logic-flow.md)                 | Opret et flow, der udfører en eller flere opgaver automatisk, når det udløses af en hændelse. | [Connectors](https://docs.microsoft.com/connectors/) til tjenester i cloudmiljøet og det lokale miljø. |
 | [Flow for knapper](introduction-to-button-flows.md)              | Kør gentagne opgaver fra et hvilket som helst sted, når som helst, via din mobilenhed.                        |                                                                                        |
 | [Planlagte flow](run-scheduled-tasks.md)                    | Opret et flow, der udfører en eller flere opgaver efter en tidsplan.             |                                                                                        |
 | [Forretningsprocesflow](business-process-flows-overview.md) | Definer en række trin, der skal følges for at opnå det ønskede resultat.                 | Menneskelige processer                                                                        |
@@ -142,7 +142,7 @@ Fra meddelelsescenteret kan du navigere til siden **Aktivitet** i Power Automate
 
 ![Meddelelsescenter](media/getting-started/notification-center.png)
 
-## <a name="use-the-mobile-app"></a>Brug af mobilappen. ##
+## <a name="use-the-mobile-app"></a>Brug mobilappen ##
 
 Download Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows). Med denne app kan du [overvåge flowaktivitet](mobile-monitor-activity.md), [administrere dine flows](mobile-manage-flows.md) og [oprette flows på baggrund af skabeloner](mobile-create-flow.md).
 
