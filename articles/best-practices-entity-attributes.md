@@ -20,10 +20,10 @@ author: msftman
 ms.author: deonhe
 manager: kvivek
 ms.openlocfilehash: ffc9fef64a9eda74d8a834745204fd635125e0c2
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74357260"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Bedste praksis for brug af enhedsattributter for forretningsprocesforløb
@@ -40,7 +40,7 @@ Når du tidligere ville rapportere om forretningsprocesser efter fase, skulle du
 
 Nu, hvor feltet *Aktiv fase* (activestageid) frarådes for relaterede enheder, kan der rapporteres om forretningsprocessforløb på to måder.
 
-### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Mulighed 1: visninger og diagrammer i enhed for forretningsprocesforløb **(anbefales)**
+### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Mulighed 1: Visninger og diagrammer i enhed for forretningsprocesforløb **(anbefales)**
 
 I version 9.0 og nyere opretter hvert forretningsprocesforløb sin egen Common Data Service-enhed, der som regel har det samme navn som forretningsprocesforløbet. Hvis du vil rapportere om forretningsprocesforløbet, skal du vælge enheden for det forretningsprocesforløb, du vil rapportere om, og derefter oprette visninger og diagrammer på samme måde, som du gjorde før.
 

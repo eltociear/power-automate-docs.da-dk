@@ -19,18 +19,18 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 4f7566c6d6430c9167c0d1b7cc082792d0939780
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74364712"
 ---
-# <a name="sample-work-with-business-process-flows"></a>Eksempel: Arbejd med forretningsprocesforløb
+# <a name="sample-work-with-business-process-flows"></a>Eksempel: Arbejd med forretningsprocesflow
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 I eksemplet vises, hvordan du arbejder programmatisk med forretningsprocesforløb som f.eks. hentning af forekomsterne af forretningsprocesforløbet for en objektpost, hentning af en aktiv sti for en forekomst af et forretningsprocesforløb og dets procesfaser samt ændring af den aktive fase. Du kan finde oplysninger om disse begreber under [Arbejd med forretningsprocesforløb ved hjælp af kode](business-process-flows-code.md)  
 
- Dette eksempel kan downloades fra [Eksempel: Arbejd med forretningsprocesforløb](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
+ Dette eksempel kan downloades fra [Eksempel: Arbejd med forretningsprocesflow](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Forudsætninger  
@@ -80,7 +80,7 @@ I eksemplet vises, hvordan du arbejder programmatisk med forretningsprocesforlø
 5. Hvis du ikke tidligere har kørt et af eksemplerne, skal du angive oplysninger for at køre koden. I modsat fald skal du angive nummeret på en af de forekomster, du tidligere har konfigureret.  
 
 
-   |                                 Prompt                                  |                                                                                             Beskrivelse                                                                                             |
+   |                                 Spørg                                  |                                                                                             Beskrivelse                                                                                             |
    |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      Angiv et Dynamics 365-servernavn og en port [crm.dynamics.com]       | Skriv navnet på din Dynamics 365-server. Standarden er Dynamics 365 (online) (crm.dynamics.com) i Nordamerika.<br /><br /> Eksempel: <br />crm5.Dynamics.com |
    | Er denne organisation klargjort til Microsoft Online Services (y/n) [n] |                                                 Skriv **y**, Hvis dette er en organisation, der er klargjort til Microsoft Online Services. Ellers skal du skrive **n**.                                                  |

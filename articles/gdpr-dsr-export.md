@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: aa3a66f71860f2bee2e3f45441bbcd0cd1646914
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367771"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Svar på eksportanmodninger fra registrerede omfattet af GDPR for Power Automate
@@ -40,7 +40,7 @@ Power Automate indeholder følgende funktioner, som du kan bruge til at finde el
 
 * **Webstedsadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/).
 
-* **PowerShell-adgang:** [PowerShell-cdmlet'er til Power Apps Administration](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell-adgang:**  [PowerShell-cmdlet'er til Power Apps Administration](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Kundedata**|**Webstedsadgang**|**PowerShell-adgang**|
 |-----------------|------------------|-------------------|
@@ -51,7 +51,7 @@ Power Automate indeholder følgende funktioner, som du kan bruge til at finde el
 |Brugeroplysninger||Power Apps-cmdlet'er|
 |Forbindelser|Power Automate-udviklerportal|Power Apps-cmdlet'er |
 |Forbindelsestilladelser|Power Automate-udviklerportal|Power Apps-cmdlet'er |
-|Brugerdefinerede connectors|Power Automate-udviklerportal|Power Apps-cmdlet'er |
+|Brugerdefinerede forbindelser|Power Automate-udviklerportal|Power Apps-cmdlet'er |
 |Tilladelser til brugerdefineret connector|Power Automate-udviklerportal|Power Apps-cmdlet'er |
 |Gateway|Power Automate-udviklerportal|PowerShell-cmdlet'er til datagateway i det lokale miljø|
 |Gatewaytilladelser|Power Automate-udviklerportal|PowerShell-cmdlet'er til datagateway i det lokale miljø|
@@ -130,7 +130,7 @@ En bruger kan eksportere tildelingerne af forbindelsesroller for alle de forbind
 Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
 ```
-Power Apps Admin PowerShell-cmdlet'er
+PowerShell-cmdlet'er til Power Apps Administration
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -161,7 +161,7 @@ Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
 ~~~~
 
-Power Apps Admin PowerShell-cmdlet'er
+PowerShell-cmdlet'er til Power Apps Administration
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -181,7 +181,7 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
 ```
 
-Power Apps Admin PowerShell-cmdlet'er
+PowerShell-cmdlet'er til Power Apps Administration
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -207,7 +207,7 @@ Oversigten over Power Automate-godkendelser henter en oversigtsliste over godken
 ## <a name="export-user-details"></a>Eksportér brugeroplysninger
 Brugeroplysningerne er en forbindelse mellem en bruger og en specifik lejer. En administrator kan eksportere disse oplysninger ved at foretage et kald til cmdlet'en **Get AdminFlowUserDetails** og overføre brugerens objekt-id.
 
-Power Apps Admin PowerShell-cmdlet'er
+PowerShell-cmdlet'er til Power Apps Administration
 
 ```PowerShell
 Add-PowerAppsAccount

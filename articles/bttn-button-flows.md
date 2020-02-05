@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4ee3a9c7acb567ed0516b682377e5b79d40132cf
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74356731"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Kør dine flows med fysiske bttns fra The Button Corporation (prøveversion)

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e8f7b993b59c269b56dac2f13d4db166ed3e91b7
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373061"
 ---
 # <a name="manage-sequential-approvals-with-power-automate"></a>Administrer sekventielle godkendelser med Power Automate

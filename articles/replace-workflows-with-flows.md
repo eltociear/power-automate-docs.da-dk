@@ -13,10 +13,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c4be61dfafa17c3808eb497aa9ed7d1bcaaecbab
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373659"
 ---
 # <a name="replace-classic-common-data-service-workflows-with-flows"></a>Erstat klassiske arbejdsprocesser i Common Data Service med flow
@@ -36,7 +36,7 @@ I denne tabel opsummeres en sammenligning mellem funktioner i Power Automate og 
 
 <table>
 <tr>
-<th colspan="2">Funktionalitet</th>
+<th colspan="2">Funktion</th>
 <th>Power Automate</th>
 <th>Klassisk arbejdsproces</th>
 </tr>
@@ -452,7 +452,7 @@ I denne tabel opsummeres en sammenligning mellem funktioner i Power Automate og 
 </tr>
 </table>
 
-## <a name="example-scenario-replace-workflow-with-a-flow"></a>Eksempel på scenarie: Erstat arbejdsproces med et flow
+## <a name="example-scenario-replace-workflow-with-a-flow"></a>Eksempelscenarie: Erstat arbejdsproces med et flow
 
 Forestil dig et salgsscenarie, hvor du har sammensat et tilbud til en kunde og nu har brug for at anmode om godkendelse fra dit administrationsteam, før du sender tilbuddet til kunden. Med klassiske arbejdsprocesser ville dette ikke være nemt at gøre, og de fleste løsninger af dette kræver, at en udvikler skriver brugerdefinerede arbejdsprocesaktiviteter for at hente tilbudslinjeelementer.
 

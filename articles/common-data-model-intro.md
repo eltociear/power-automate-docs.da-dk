@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2b536263d90af7b0bbdcdec30d1b00bc7bae2a9e
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74361193"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Opret et flow, der bruger Common Data Service
@@ -86,12 +86,12 @@ Udnyt f.eks. Common Data Service i Power Automate på følgende vigtige måder:
     ![Angiv forekomst af Dynamics 365](./media/common-data-model-intro/specify-instance.png)
 2. (valgfrit) Næsten øverst i skærmbilledet skal du angive et andet navn for det flow, du opretter.
    
-    **Bemærk**! Hvis dit browservindue ikke er maksimeret, kan brugergrænsefladen muligvis se lidt anderledes ud.
+    **Bemærk!** Hvis dit browservindue ikke er maksimeret, kan brugergrænsefladen muligvis se lidt anderledes ud.
    
     ![Navngiv flow](./media/common-data-model-intro/name-flow.png)
 3. Klik eller tryk på **Opret flow**.
    
-    **Bemærk**! Hvis dit browservindue ikke er maksimeret, er det muligvis kun afkrydsningen, der vises.
+    **Bemærk!** Hvis dit browservindue ikke er maksimeret, er det muligvis kun afkrydsningen, der vises.
    
     ![Opret flow](./media/common-data-model-intro/create-flow.png)
 

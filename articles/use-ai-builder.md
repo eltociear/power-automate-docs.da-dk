@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: bdcca1cb46ff9fdd0538bad231dddb64cb2dc0f3
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370738"
 ---
 # <a name="use-ai-builder-in-power-automate"></a>Brug AI Builder i Power Automate
@@ -33,7 +33,7 @@ ms.locfileid: "74370738"
 
 AI Builder er en ny Power Platform-funktion, der gør det muligt for dig at føje intelligens til dine automatiserede processer, forudsige resultater og hjælpe med at forbedre virksomhedens præstation. AI Builder er en nøglefærdig løsning, der giver styrken i Microsoft AI via en peg og klik-funktionalitet, og den er direkte integreret i Power Apps og Power Automate. Flere oplysninger: [Hvad er AI Builder?](/ai-builder/)
 
-Du kan bygge AI-modeller ved hjælp af indstillingen **AI Builder** fra navigationsruden til venstre i [Power Automate](https://flow.microsoft.com). Flere oplysninger: [AI-modeltyper](/ai-builder/model-types)
+Du kan bygge AI-modeller ved hjælp af indstillingen **AI Builder** fra navigationsruden til venstre i [Power Automate](https://flow.microsoft.com). Flere oplysninger: [Typer af modeller til kunstig intelligens](/ai-builder/model-types)
 
 ![Brug AI Builder i Power Automate](./media/use-ai-builder/ai_builder.png "AI Builder i Power Automate")
 

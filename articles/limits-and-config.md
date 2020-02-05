@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4361705779ab31b73206835380a648557f581e66
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74354661"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
@@ -52,7 +52,7 @@ Der er grænser for en enkelt udgående anmodning.
 
 | Navn | Grænse |
 | --- | --- |
-| Antal ekstra forsøg |90 | Standarden er 4. Hvis du vil ændre standarden, skal du bruge indstillingerne for handling | 
+| Gentagne forsøg |90 | Standarden er 4. Hvis du vil ændre standarden, skal du bruge indstillingerne for handling | 
 | Maks. forsinkelse ved nyt forsøg |1 dag | |
 | Min. forsinkelse ved nyt forsøg |5 sekunder | |
 
@@ -65,7 +65,7 @@ Dette er grænserne for en enkelt flowkørsel.
 | Lageropbevaring |30 dage |Dette er fra starttidspunkt for kørslen. |
 | Minimuminterval for gentagelse |1 minut | |
 | Maksimuminterval for gentagelse |500 dage | |
-| Maks. opbevaring af kørselsoversigt |28 dage ifølge GDPR regler. | |
+| Maks. opbevaring af kørselshistorik |28 dage ifølge GDPR regler. | |
 |Minimum interval for udsættelse – gratis licens og Plan 1-licens|5 sekunder||
 |Minimum interval for udsættelse – Plan 2-licens|1 sekund||
 
@@ -92,7 +92,7 @@ Dette er grænserne for en enkelt flowkørsel. Du kan se de daglige grænser und
 |Slutpunkt for kørsel – antal læste kald tilladt for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|6\.000||
 |Slutpunkt for kørsel – antal læste kald tilladt for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|60.000||
 |Slutpunkt for kørsel: Aktivér kald for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|4\.500||
-|Slutpunkt for kørsel: Antal aktiverede kald tilladt for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|45.000||
+|Slutpunkt for kørsel: Antal aktiverede kald for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|45.000||
 |Mængden af tilladt gennemløb for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|600 MB||
 |Mængden af tilladt gennemløb for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|6 GB||
 |Mængden af indholdsflow, der er tilladt for at producere (handlingsinput/outputs) pr. time – licensen af typen gratis, Office 365, Plan 1, Plan 2, Pr. bruger og Pr. flow|200 GB||
@@ -121,7 +121,7 @@ Den IP-adresse, Power Automate-anmodninger sendes fra, afhænger af det [område
 ### <a name="logic-apps"></a>Logic Apps
 Opkald, der foretages fra et flow, går direkte gennem tjenesten Azure Logic App. Følgende er eksempler på disse opkald: HTTP eller HTTP + OpenAPI. Se [i dokumentationen til Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses), hvilke IP-adresser der anvendes af denne tjeneste.
 
-### <a name="connectors"></a>Connectors
+### <a name="connectors"></a>Forbindelser
 Kald fra en connector i et flow (f.eks. SQL-API eller SharePoint-API), kommer fra de IP-adresser, der er angivet her:
 
 | Område | Udgående IP-adresse |
@@ -147,7 +147,7 @@ Domæner | Protokoller | Anvendelser
 management.azure.com|https|Adgang til Azure Resource Manager.
 login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Adgang til Active Directory Authentication Library (ADAL).
 graph.microsoft.com </br>graph.windows.net</br>|https|Adgang til Azure AD Graph API - for hentning af brugeroplysninger som f.eks. et profilbillede.
-*.azure-apim.net|https|Adgang til kørsel af connectors.
+*.azure-apim.net|https|Adgangen til Runtime for forbindelser.
 *.flow.microsoft.com|https|Adgang til Power Automate-webstedet.
 *.powerapps.com|https|Adgang til Power Apps-webstedet.
 *.azureedge.net|https|Adgang til CDN for Power Automate.

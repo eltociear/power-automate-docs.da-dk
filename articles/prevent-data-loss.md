@@ -21,31 +21,31 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 63e49b656527f471d7bdd5a5d7a0b02d572c1221
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74374763"
 ---
-# <a name="data-loss-prevention-dlp-policies"></a>Politikker til forebyggelse af datatab
+# <a name="data-loss-prevention-dlp-policies"></a>DLP-politikker (forebyggelse af datatab)
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-I dette dokument introduceres du til politikker til forebyggelse af datatab, som kan hjælpe med at beskytte dine organisationsdata imod at blive delt vha. en liste over forbindelse, som du definerer.
+I dette dokument introduceres du til politikker om forebyggelse af datatab, som kan hjælpe med at beskytte dine organisationsdata imod at blive delt vha. en liste over forbindelse, som du definerer.
 
-## <a name="whats-a-data-loss-prevention-policy"></a>Hvad er en politik til forebyggelse af datatab?
+## <a name="whats-a-data-loss-prevention-policy"></a>Hvad er en politik om forebyggelse af datatab?
 
-Dataene i en organisation er kritiske for organisationens succes. Dataene skal være tilgængelige, så de nemt kan bruges som grundlag i beslutningsprocesser, men de skal også være beskyttet, så de ikke deles med målgrupper, der ikke skal have adgang til dataene. For at beskytte disse data får du med Power Automate mulighed for at oprette og gennemtvinge politikker, som definerer, hvilke forbrugerconnectors der kan få adgang til og dele forretningsdata. Disse politikker, som definerer, hvordan data kan deles, kaldes politikker til forebyggelse af datatab.
+En virksomheds data er afgørende for virksomhedens succes. Dataene skal være tilgængelige for beslutningstagerne, men de skal være beskyttet, så de ikke deles med de brugere, der ikke skal have adgang til dem. For at beskytte disse data får du med Power Automate mulighed for at oprette og gennemtvinge politikker, som definerer, hvilke forbrugerconnectors der kan få adgang til og dele forretningsdata. Disse politikker, der definerer, hvordan data kan deles, kaldes politikker til forebyggelse af datatab (DLP).
 
-## <a name="why-create-a-dlp-policy"></a>Hvorfor oprette en politik til forebyggelse af datatab?
+## <a name="why-create-a-dlp-policy"></a>Hvorfor oprette en DLP-politik?
 
 Du opretter en DLP-politik for tydeligt at definere, hvilke forbrugerforbindelser der må få adgang til og dele dine forretningsdata. Det kan f.eks. være, at en organisation, der bruger Power Automate, måske ikke vil have, at deres forretningsdata på SharePoint automatisk publiceres i deres Twitter-feed. Du kan forhindre dette ved at oprette en politik til forebyggelse af datatab, som blokerer SharePoint-data fra at blive brugt som kilde for tweets.
 
-## <a name="benefits-of-a-dlp-policy"></a>Fordelene ved en politik til forebyggelse af datatab
+## <a name="benefits-of-a-dlp-policy"></a>Fordelene ved en DLP-politik
 
 * Dette sikrer, at data administreres på en ensartet måde på tværs af organisationen.
 * Forhindrer, at vigtige forretningsdata ved et uheld publiceres til forbindelser som sociale medier.
 
-## <a name="managing-dlp-policies"></a>Administration af politikker til forebyggelse af datatab
+## <a name="managing-dlp-policies"></a>Administration af DLP-politikker
 
 ### <a name="prerequisites-for-managing-dlp-policies"></a>Forudsætninger for administration af DLP-politikker
 
@@ -54,11 +54,11 @@ Du opretter en DLP-politik for tydeligt at definere, hvilke forbrugerforbindelse
     Du kan få mere at vide om tilladelser i [artiklen om miljøer](environments-overview-admin.md).
 * En [P2-licens til Power Automate](billing-questions.md).
 
-## <a name="create-a-dlp-policy"></a>Opret en politik til forebyggelse af datatab
+## <a name="create-a-dlp-policy"></a>Opret en DLP-politik
 
 ### <a name="prerequisites-for-creating-dlp-policies"></a>Forudsætninger for oprettelse af DLP-politikker
 
-Hvis du vil oprette en politik til forebyggelse af datatab, skal du have tilladelser til mindst ét miljø.
+Hvis du vil oprette en politik om forebyggelse af datatab, skal du have tilladelser til mindst ét miljø.
 
 Følg disse trin for at oprette en politik til forebyggelse af datatab, som forhindrer, at data på virksomhedens SharePoint-websted publiceres på Twitter:
 
@@ -82,7 +82,7 @@ Følg disse trin for at oprette en politik til forebyggelse af datatab, som forh
 
     ![Vælg miljø.](./media/prevent-data-loss/create-policy-3.png)
 
-1. Vælg fanen **Datagrupper**:
+1. Vælg fanen **Data groups** (Datagrupper):
 
     ![Vælg datagrupper](./media/prevent-data-loss/create-policy-4.png)
 
@@ -98,11 +98,11 @@ Følg disse trin for at oprette en politik til forebyggelse af datatab, som forh
 
 1. Vælg **Gem politik** i øverste højre hjørne af skærmen.
 
-1. Efter et øjeblik vises din nye politik til forebyggelse af datatab på listen over politikker:
+1. Efter et øjeblik vises den nye DLP-politik på listen med politikker til forebyggelse af datatab:
 
     ![DLP-liste](./media/prevent-data-loss/create-policy-9.png)
 
-1. **Valgfri** Send en mail eller anden type kommunikation til dit team for at gøre dem opmærksom på, at der er en ny politik til forebyggelse af datatab tilgængelig.
+1. **Valgfrit** Send en mail eller anden meddelelse til dit team, der advarer dem om, at der nu findes en ny DLP-politik.
 
 Du har nu oprettet en politik til forebyggelse af datatab, der giver apps tilladelse til at dele data mellem SharePoint og Salesforce og blokerer delingen af data for alle andre tjenester.
 
@@ -119,43 +119,43 @@ Under forudsætning af at du har oprettet den DLP-politik, der er beskrevet oven
 
 Hvis brugerne kontakte dig om midlertidigt afbrudte flows bør du overveje følgende:
 
-1. Hvis der er en gyldig forretningsmæssig årsag til at dele forretningsdata mellem SharePoint og Twitter, kan du redigere politikken til forebyggelse af datatab i dette eksempel.
+1. Hvis der er en gyldig forretningsmæssig årsag til at dele forretningsdata mellem SharePoint og Twitter, kan du redigere politikken om forebyggelse af datatab i dette eksempel.
 
-1. Bed brugeren om at redigere flowet for at overholde politikken til forebyggelse af datatab.
+1. Bed brugeren om at redigere flowet for at overholde politikken om forebyggelse af datatab.
 
 1. Bed brugeren om at lade flowet være midlertidigt afbrudt, indtil der er truffet afgørelse om deling af data mellem disse to enheder.
 
-## <a name="find-a-dlp-policy"></a>Find en politik til forebyggelse af datatab
+## <a name="find-a-dlp-policy"></a>Find en DLP-politik
 
 ### <a name="admins"></a>Administratorer
 
-Administratorer kan bruge søgefunktionen i Administratorcenter til at søge efter bestemte politikker til forebyggelse af datatab.
+Administratorer kan bruge søgefunktionen fra administrationscenteret til at finde bestemte DLP-politikker.
 
 > [!NOTE]
 > Administratorer bør publicere alle politikker til forebyggelse af datatab, så brugerne i organisationen er opmærksomme på politikkerne, inden de opretter flows.
 >
 >
 
-### <a name="makers"></a>Maker
+### <a name="makers"></a>Oprettere
 
-Hvis du ikke har administratortilladelser, og du vil vide mere om politikkerne til forebyggelse af datatab, kan du kontakte administratoren. Du kan også få mere at vide i [artiklen om Maker-miljøer](environments-overview-maker.md)
+Hvis du ikke har administratortilladelser, og du ønsker at få mere at vide om DLP-politikker i din organisation, kan du kontakte administratoren. Du kan også få mere at vide i [artiklen om Maker-miljøer](environments-overview-maker.md)
 
 > [!NOTE]
 > Det er kun administratorer, der kan redigere eller slette politikker til forebyggelse af datatab.
 >
 >
 
-## <a name="edit-a-dlp-policy"></a>Rediger en politik til forebyggelse af datatab
+## <a name="edit-a-dlp-policy"></a>Rediger en DLP-politik
 
 1. Åbn [Administration](https://admin.flow.microsoft.com).
 
-1. Vælg linket **Datapolitikker** i venstre side.
+1. I Admin center, der starter, skal du vælge linket **Data policies** (Datapolitikker) på venstre side.
 
     ![vælg datapolitikker](./media/prevent-data-loss/2.png)
 
 1. Søg på listen over eksisterende politikker til forebyggelse af datatab, og vælg redigeringsknappen ud for den politik, du vil redigere.
 
-1. Foretag de nødvendige ændringer af politikken. Du kan eksempelvis ændre miljøet eller tjenesterne i datagrupperne
+1. Foretag de nødvendige ændringer af politikken. Du kan f.eks. ændre miljøet eller tjenesterne i datagrupperne.
 
 1. Vælg **Gem politik** for at gemme ændringerne.
 
@@ -164,7 +164,7 @@ Hvis du ikke har administratortilladelser, og du vil vide mere om politikkerne t
 >
 >
 
-## <a name="delete-a-dlp-policy"></a>Slet en politik til forebyggelse af datatab
+## <a name="delete-a-dlp-policy"></a>Slet en DLP-politik
 
 1. Åbn [Administration](https://admin.flow.microsoft.com).
 
@@ -176,13 +176,13 @@ Hvis du ikke har administratortilladelser, og du vil vide mere om politikkerne t
 
     ![Vælg knappen Slet](./media/prevent-data-loss/3-delete.png)
 
-1. Bekræft, at du ønsker at slette politikken ved at vælge knappen **Slet**:
+1. Bekræft, at du vil slette politikken, ved at vælge knappen **Slet**:
 
     ![bekræft, at du virkelig vil slette politikken](./media/prevent-data-loss/4.png)
 
-## <a name="dlp-policy-permissions"></a>Tilladelser til politik til forebyggelse af datatab
+## <a name="dlp-policy-permissions"></a>DLP-politiktilladelser
 
-Det er kun lejer- og miljøadministratorer, der kan oprette og redigere politikker til forebyggelse af datatab. Du kan få mere at vide om tilladelser i artiklen om [miljøer](environments-overview-admin.md).
+Det er kun lejer- og miljøadministratorer, der kan oprette og redigere DLP-politikker. Du kan få mere at vide om tilladelser i artiklen om [miljøer](environments-overview-admin.md).
 
 
 ## <a name="custom-and-http-connectors"></a>Brugerdefinerede connectors og HTTP-connectors
@@ -206,7 +206,7 @@ Hvis du vil føje HTTP-connectors til en eksisterende politik via [skabelonen](h
 
 ## <a name="add-custom-and-http-connectors-with-powershell"></a>Tilføj brugerdefinerede connectors og HTTP-connectors med PowerShell
 
-Hvis du vil føje understøttelse af brugerdefinerede connectors og/eller HTTP-connectors til en politik ved hjælp af PowerShell, skal du [downloade](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) og importere de seneste PowerShell-scripts til Power Apps og derefter bruge disse cmdlet'er: "New-AdminDlpPolicy", "Set-AdminDlpPolicy", "Add-CustomConnectorToPolicy" og "Remove-CustomConnectorFromPolicy" for at redigere politikken. Bruge cmdlet'en "Get-Help -detailed" som reference.
+Hvis du vil føje understøttelse af brugerdefinerede connectors og/eller HTTP-connectors til en politik ved hjælp af PowerShell, skal du [downloade](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) og importere de seneste PowerShell-scripts til Power Apps og derefter bruge disse cmdlet'er:  "New-AdminDlpPolicy", "Set-AdminDlpPolicy", "Add-CustomConnectorToPolicy" og "Remove-CustomConnectorFromPolicy" for at ændre politikken. Bruge cmdlet'en "Get-Help -detailed" som reference.
 
 
 > [!IMPORTANT]
@@ -218,5 +218,5 @@ Hvis du vil føje understøttelse af brugerdefinerede connectors og/eller HTTP-c
 
 * [Få mere at vide om miljøer](environments-overview-admin.md)
 * [Få mere at vide om Power Automate](getting-started.md)
-* [Få mere at vide om administratorcenteret](admin-center-introduction.md)
+* [Få mere at vide om administrationscenteret](admin-center-introduction.md)
 * [Få mere at vide om dataintegration](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

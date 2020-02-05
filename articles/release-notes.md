@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e617e6928d5295a9485c55e1efa57a945abf870f
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74374303"
 ---
 # <a name="release-notes"></a>Produktbemærkninger
@@ -74,7 +74,7 @@ ms.locfileid: "74374303"
 ### <a name="release-2018-08-31"></a>Version udgivet 08-31-2018
 
 - **Test dit flow ved hjælp af eksempeldata** – Brug eksempeldata fra connectorer til at teste dit flow, når du bygger det i Power Automate-designeren. Når du har testet dit flow med eksempeldata, kan du bekræfte, at flowet kører som forventet, når det er udrullet i produktionen.
-- **Fem nye connectorer** – Vi har tilføjet fire nye administrationsconnectorer: Power Apps for App Makers, Power platform for Admins, Power Apps for Admins, Power Automate for Admins og Microsoft School Data Sync.
+- **Fem nye connectorer** – vi har tilføjet fire nye administrationsconnectorer: Power Apps for App Makers, Power platform for Admins, Power Apps for Admins, Power Automate for Admins og Microsoft School Data Sync.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/test-data-management-connectors/) om denne version.
 
@@ -83,7 +83,7 @@ ms.locfileid: "74374303"
 - **Nye skabeloner til synkronisering af kalender** – Nye kalender skabeloner, der kopierer begivenhederne fra Google Kalender og Office 365 eller Outlook.com.
 - **Understøttelse af flere værdi til SharePoint** – Læsning af og skrivning til felter med flere værdier i SharePoint af typen Valg, Person eller Opslag.
 - **Send godkendelser på vegne af andre brugere i din organisation** – Send godkendelser på vegne af andre brugere i din organisation – for eksempel den person, der har uploadet filen til SharePoint-listen i stedet for den person, der oprettede flowet.
-- **Flere inputtyper for knapper** – Knapper har to nye inputtyper: Tal og Ja/Nej.
+- **Flere inputtyper for knapper** – Knapper har to nye inputtyper: Tal og Ja/Nej
 - **Connectoropdateringer** – En ny NetDocuments-connector, forbedringer af Azure-connectorer med mere.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/button-types-more/) om denne version.
@@ -186,7 +186,7 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 - **Flow i Microsoft Teams** – Fra Teams kan du oprette og administrere flows, gennemgå dine modtagne og sendte godkendelser og starte flows direkte i Teams-desktopappen eller på teams.microsoft.com – [få mere at vide her](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
 - **Meddelelser om redigering af delte flows** – Når et flow, du ejer, ændres af en kollega, får du en mail med besked om, hvem der har ændret flowet.
 - **Nye udtryk** – Der er tilføjet to nye udtryk: Et til at opdele URL-adresser i tekst og et til at arbejde med JSON-objekter.
-- **Tre nye connectorer** – I denne uge er der to nye Plumsail-connectorer, Plumsail SP og Plumsail Forms, samt en ny connector til kintone.
+- **Tre nye connectorer** – i denne uge er der to nye Plumsail-connectorer: Plumsail SP og Plumsail-formularer og en ny connector til kintone.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) om denne version.
 
@@ -401,7 +401,7 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 
 ### <a name="release-2017-04-27"></a>Version udgivet 27-04-2017
 * **Byg flows med parallelle trin** – Opret flows med parallel udførelse: Det betyder, at du kan have to eller flere trin, der kører på præcis samme tid.
-* **Fem nye understøttede tjenester** – Fem nye tjenester: Approvals, Benchmark Email, Capsule CRM, LiveChat og Outlook Customer Manager.
+* **Fem nye understøttede tjenester** – fem nye tjenester: Approvals, Benchmark Email, Capsule CRM, LiveChat og Outlook Customer Manager.
 * **Overvåg nye forsøg for handlinger** – Power Automate vil prøve igen, når der opstår fejl i tjenester. Se nu, hvor mange automatiske genforsøg, der forekom, og oplysninger om, hvad der er sket.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/parallel-actions/) om denne version.
@@ -526,7 +526,7 @@ Du kan nu udnytte værdifulde oplysninger, når du udløser et knapflow, f.eks. 
 
 ### <a name="release-2016-11-15"></a>Version udgivet 15-11-2016
 * **Power Automate Partner Program** – Power Automate har nu et certificeret partnerprogram til at knytte forbindelser og drage fordel af forskellige virksomhedens talenter og erfaring med Power Automate over hele verden.
-* **Seks nye tjenester** – Vi frigiver også seks tjenester i denne uge: Asana, Campfire, EasyRedmine, JIRA, Redmine og Vimeo.
+* **Seks nye tjenester** – vi udgiver også seks tjenester i denne uge: Asana, Campfire, EasyRedmine, JIRA, Redmine og Vimeo.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/partner-program-six-new-services/) om denne version.
 
@@ -649,7 +649,7 @@ Forbindelse til Power Automate i det lokale miljø ved hjælp af datagateway i d
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) om denne version.
 
 ### <a name="release-2016-05-07"></a>Version udgivet 07-05-2016
-Tilføjet to nye tjenester: Microsoft Project Online og Mandrill by Mailchimp. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) om denne version.
+To nye tjenester er tilføjet: Microsoft Project Online og Mandrill fra Mailchimp. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) om denne version.
 
 ### <a name="release-2016-04-27---public-preview"></a>Version 27-04-2016 – Offentlig prøveversion
 Hvis du har brugt Logikflow som en del af [Microsoft Power Apps](https://powerapps.microsoft.com), indeholder prøveversionen af Power Automate flere nye funktioner:

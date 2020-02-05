@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 8554959026d299ac45ccf3ccb3ace7b8d9226294
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74369059"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Reaktion på sletteanmodninger fra den registrerede i forbindelse med GDPR i Power Automate
@@ -56,7 +56,7 @@ For de data og ressourcer, der kræver manuel gennemgang, findes følgende funkt
 
 * **Webstedsadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/)
 
-* **PowerShell-adgang:** [PowerShell-cdmlet'er til Power Apps Administration](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell-adgang:**  [PowerShell-cmdlet'er til Power Apps Administration](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Her er opdelingen af oplevelser, som en administrator kan slette opdelt efter de enkelte typer personlige data inden for de enkelte typer ressourcer:
 
@@ -309,7 +309,7 @@ Når du har udført trinnene ovenfor, er det sidste trin at slette brugerkontoen
 
 Hvis du er medlem af en ikke-administreret lejer, skal du udføre **kontolukning** fra [portalen til beskyttelse af personlige oplysninger for arbejde og skole](https://go.microsoft.com/fwlink/?linkid=873123).
 
-Hvis du vil vide, om du er bruger på en administreret eller ikke-administreret lejer, skal du udføre følgende handlinger:
+Hvis du vil finde ud af, om du bruger en administreret eller ikke-administreret lejer, skal du gøre følgende:
 
 1. Åbn følgende URL-adresse i en browser, og sørg for at erstatte din mailadresse i URL-adressen:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Hvis du er medlem af en **ikke-administreret lejer**, vil du få vist `"IsViral": true` i svaret.

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b57e9dee27a2d22159a9cd805c65034a5e5bb578
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74363884"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Kom godt i gang med tokens, der udløser knap
@@ -81,11 +81,11 @@ Lad os komme i gang:
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/7.png)  
 8. Tryk på parameteren for **Komplet adresse**, tryk derefter på **Opret**  
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/8.png)  
-9. Tryk på **Færdig**. Nu har du oprettet dit knapflow.  
+9. Tryk på **Udført**. Nu har du oprettet dit knapflow.  
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Kør knapflowet
-**BEMÆRK!** : Dette knapflow sender din aktuelle placering via e-mail.  
+**BEMÆRK**! Dette knapflow sender din aktuelle placering via e-mail.  
 
 1. Tryk på kategorien for **Knapper** i bunden af skærmen. Her ser du en liste over knapper, som du har tilladelse til at bruge. Tryk på den knap, der repræsenterer det knapflow, du netop har oprettet:  
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/10.png)  

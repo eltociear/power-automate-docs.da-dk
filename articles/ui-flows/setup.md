@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e7d5e4219c46703019f995b625c6d672a767018a
-ms.sourcegitcommit: 683127e3655abeec9ae6e86fcdf4ac2256101d08
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74882113"
 ---
 # <a name="set-up-ui-flows"></a>Konfigurer brugergrænsefladeflow

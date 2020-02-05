@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 81b486c0d9ed059cc310f1297e27b28206776f45
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367541"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Svar på anmodninger om rettigheder fra fysiske personer omfattet af GDPR
@@ -55,14 +55,14 @@ Microsoft tilbyder produkter, tjenester og værktøjer, som controllere kan brug
 
 Her er en oversigt over de processer, der er beskrevet i denne vejledning:
 
-1. **Søg**: Med søge- og registreringsværktøjer kan du nemmere finde de kundedata, der er omfattet af en DSR-anmodning. Hvis de dokumenter, du indsamler, opfylder vejledning til at træffe foranstaltninger, kan du udføre en eller flere af de DSR-handlinger, der er beskrevet i følgende trin. Du kan finde flere oplysninger i [Power Automate DSR Discovery-dokumentationen til Microsoft-konti](gdpr-dsr-discovery-msa.md). Eller du finder måske ud af, at anmodningen ikke opfylder din controllers retningslinjer for besvarelse af DSR-anmodninger.
+1. **Find**: Med søge- og registreringsværktøjer kan du nemmere finde de kundedata, der er omfattet af en DSR-anmodning. Hvis de dokumenter, du indsamler, opfylder vejledning til at træffe foranstaltninger, kan du udføre en eller flere af de DSR-handlinger, der er beskrevet i følgende trin. Du kan finde flere oplysninger i [Power Automate DSR Discovery-dokumentationen til Microsoft-konti](gdpr-dsr-discovery-msa.md). Eller du finder måske ud af, at anmodningen ikke opfylder din controllers retningslinjer for besvarelse af DSR-anmodninger.
 
 1. **Få adgang**: Hent de personlige data, der er placeret i Microsofts cloud, og hvis der er anmodet om det, kan du oprette en kopi af disse data, som den fysiske person har adgang til.
 
-1. **Korriger**: Foretag ændringer, eller implementer andre handlinger, der er anmodet om, på de personlige data, hvis det er relevant.
+1. **Korriger**: Foretag ændringer, eller implementer andre handlinger, der er anmodet om, for de private oplysninger, hvis det er relevant.
 
-1. **Begræns**: Begræns behandlingen af de personlige data enten ved at fjerne licenser til forskellige onlinetjenester eller ved at deaktivere de relevante tjenester, hvor det er muligt. Du kan også fjerne data fra Microsofts cloud og opbevare dem i det lokale miljø eller et andet sted.
+1. **Begræns**: Begræns behandlingen af de private oplysninger enten ved at fjerne licenser til forskellige onlinetjenester eller ved at deaktivere de relevante tjenester, hvor det er muligt. Du kan også fjerne data fra Microsofts cloud og opbevare dem i det lokale miljø eller et andet sted.
 
-1. **Slet**: Fjern permanent de personlige data, der er lagret i Microsofts cloud. Få mere at vide om, hvordan du [sletter personlige data for Microsoft-konti](gdpr-dsr-delete-msa.md). Få mere at vide om, hvordan du [lukker en Microsoft-konto](gdpr-dsr-accountclose-msa.md).
+1. **Slet**: Fjern permanent de private oplysninger, der er lagret i Microsoft-cloudmiljøet. Få mere at vide om, hvordan du [sletter personlige data for Microsoft-konti](gdpr-dsr-delete-msa.md). Få mere at vide om, hvordan du [lukker en Microsoft-konto](gdpr-dsr-accountclose-msa.md).
 
 1. **Eksportér**: Opret en elektronisk kopi (i et computerlæsbart format) af de personlige data. [Få mere at vide om, hvordan du eksporterer personlige data for Microsoft-konti](gdpr-dsr-export-msa.md).

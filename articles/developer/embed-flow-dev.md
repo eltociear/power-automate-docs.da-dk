@@ -20,10 +20,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 6ca077b6a7b0d04f184ddf8a716dd677713e0667
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74364620"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integrer Power Automate på websteder og i programmer
@@ -258,7 +258,7 @@ Gælder for ApprovalCenter-widgets.
 |------------|-------------------|--------------| 
 | `hideLink`| Valgfri | Når den angives til `true`, skjuler widgetten de modtagne og sendte godkendelseslinks | 
 | `autoNavigateToDetails`| Valgfri | Når den angives til `true`, åbner widgetten automatisk godkendelsesdetaljerne, når der kun findes én godkendelse | 
-| `approvalsFilter`| Valgfri | Godkenderwidgetten anvender det angivne godkendelsesfilter, når godkendelserne angives, f.eks.: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
+| `approvalsFilter`| Valgfri | Godkendelseswidgetten anvender det angivne godkendelsesfilter, når godkendelserne anføres, f.eks.:    Godkendelseswidgetten anvender det angivne godkendelsesfilter, når godkendelserne anføres, f.eks.: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
 | `tab`| Valgfri | Den aktive fanes vises som standard i Flow-widgetten. <br/> Gyldige værdier: "receivedApprovals", "sentApprovals" | 
 | `showSimpleEmptyPage`| Valgfri | Viser en tom side, når der ikke er nogen godkendelser | 
 | `hideInfoPaneCloseButton` | Valgfri | Skjuler knappen Luk i ruden med oplysninger (eller værten har allerede knappen Luk) | 
@@ -269,7 +269,7 @@ Gælder for ApprovalCenter-widgets.
 
 Power Automate-widgetten understøtter hændelser, som lader værten lytte til hændelser for widgettens livscyklus. Power Automate-widgetten understøtter to typer af hændelser: hændelser for ensrettede meddelelser (f.eks. Widget\_Ready) og hændelser, der sendes fra widgetten for at hente data fra værten (Get\_Access\_Token). Værten skal bruge metoden widget.listen() til at lytte til specifikke hændelser, der sendes fra widgetten.
 
-### <a name="usage"></a>Brug
+### <a name="usage"></a>Forbrug
 
 ```javascript
 widget.listen("<WIDGET_EVENT>", function() {
@@ -279,7 +279,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 ### <a name="supported-events-by-widget-type"></a>Understøttede hændelser efter widgettype
 
-| Widgethændelse      | Oplysninger                                                         | 
+| Widgethændelse      | Detaljer                                                         | 
 |-------------------|-----------------------------------------------------------------| 
 | `WIDGET_READY`      | Widgetten blev indlæst                                      | 
 | `WIDGET_RENDERED`   | Widgetten blev indlæst og gengivelse af brugergrænsefladen er fuldført                      | 
@@ -288,7 +288,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 ### <a name="runtime-widget"></a>Widgetten Runtime
 
-| Widgethændelse                    | Oplysninger                                     | Data                                              | 
+| Widgethændelse                    | Detaljer                                     | Data                                              | 
 |---------------------------------|---------------------------------------------|-----------| 
 | `RUN_FLOW_STARTED`                | Udløst og kørslen af flowet blev startet      |           | 
 | `RUN_FLOW_COMPLETED`              | Kørsel af flow blev udløst             |           | 
@@ -299,7 +299,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 ### <a name="flow-creation-widget"></a>Widgetten Oprettelse af flow
 
-| Widgethændelse             | Oplysninger                                  | Data  | 
+| Widgethændelse             | Detaljer                                  | Data  | 
 |--------------------------|------------------------------------------|-------| 
 | `FLOW_CREATION_FAILED`     | Oprettelse af flow mislykkedes                     |       | 
 | `WIDGET_CLOSE`             | Udløses, når værten bør lukke widgetten  |       | 
@@ -308,7 +308,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 ### <a name="approval-widget"></a>Widgetten Godkendelse
 
-| Widgethændelse                      | Oplysninger                             | 
+| Widgethændelse                      | Detaljer                             | 
 |-----------------------------------|-------------------------------------| 
 | `RECEIVED_APPROVAL_STATUS_CHANGED`  | Modtaget godkendelsesstatus blev ændret  | 
 | `SENT_APPROVAL_STATUS_CHANGED`      | Sendt godkendelsesstatus blev ændret      | 
@@ -358,7 +358,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ### <a name="runtime-widget"></a>Widgetten Runtime
 
-| Widgethandling                               | Oplysninger                                                      | Parametergrænseflade  | 
+| Widgethandling                               | Detaljer                                                      | Parametergrænseflade  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
 | `triggerFlow`                                 | Udløser en kørsel af flow                                          | `{ flowName: string, implicitData?: string } `| 
 | `triggerFlowByTemplate`                       | Udløser en kørsel af flow af skabelonen                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
@@ -367,7 +367,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ### <a name="flow-creation-widget"></a>Widgetten Oprettelse af flow
 
-| Widgethandling                               | Oplysninger                                                      | Parametergrænseflade  | 
+| Widgethandling                               | Detaljer                                                      | Parametergrænseflade  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
 | `createFlowFromTemplate`                      | Opretter et flow for den valgte skabelon                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
 | `createFlowFromTemplateDefinition`            | Opretter et flow for den valgte skabelondefinition          | `{ templateDefinition: string }` | 
@@ -375,7 +375,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ### <a name="approval-widget"></a>Widgetten Godkendelse
 
-| Widgethandling  | Oplysninger                                           | Parametergrænseflade  | 
+| Widgethandling  | Detaljer                                           | Parametergrænseflade  | 
 |----------------|---------------------------------------------------|----------------------| 
 | `closeInfoPane`  | Lukker ruden med oplysninger, hvor godkendelsesdetaljerne vises  | I/T                  | 
 

@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 2b2b53b833711311c039678a9196a2833d50c84c
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370853"
 ---
 # <a name="power-automate-us-government"></a>Power Automate til den amerikanske regering
@@ -67,7 +67,7 @@ Adgang til Power Automate US Government-planer er begrænset til de tilbud, der 
 > [!NOTE]
 > Licenser er tilgængelige i kundelejere fra midten af april 2019.
 
-Yderligere oplysninger samt oplysninger om forskellene i funktionaliteten mellem disse licensgrupper er beskrevet mere detaljeret her: [Power Automate-licensoplysninger](https://flow.microsoft.com/pricing/).
+Yderligere oplysninger samt oplysninger om forskellene i funktionaliteten mellem disse licensgrupper er beskrevet mere detaljeret her: [Oplysninger om Power Automate-licenser](https://flow.microsoft.com/pricing/).
 
 Power Automate US Government er tilgængelig gennem volumenlicens og Cloud Solution Provider-købskanaler.
 

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 223ca24325ee9aed2476d1da6ad9e986c09306d7
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74375591"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Opret arbejdsprocesser for parallel godkendelse med Power Automate
@@ -58,7 +58,7 @@ Noter navnet og URL-adressen på SharePoint Online-listen. Vi skal bruge disse e
 
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
-## <a name="name-and-save-your-flow"></a>Navngiv dit flow, og gem det
+## <a name="name-and-save-your-flow"></a>Navngiv og gem dit flow
 
 1. Angiv et navn til dit flow, og vælg derefter ikonet **Gem** for at gemme det arbejde, vi har udført hidtil.
 

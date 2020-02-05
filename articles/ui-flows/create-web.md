@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 06a27a495a008542208cd56230ad8c21b5e5b938
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74372371"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Opret og test flow for brugergrænsefladen på internettet
@@ -41,7 +41,7 @@ Følg disse trin for at oprette et simpelt flow for brugergrænsefladen på inte
 
 1. Log på med din arbejds- eller skolekonto, hvis det er nødvendigt.
 
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)** > **Ny**.
+1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)**  > **Ny**.
 
    ![Opret et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
 

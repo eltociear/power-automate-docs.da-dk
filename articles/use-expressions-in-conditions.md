@@ -19,10 +19,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 46985cc33ac099c75c6e8e976aba19d7a5d6c567
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370301"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Brug udtryk i betingelser til at kontrollere flere værdier
@@ -35,13 +35,13 @@ Du kan bruge en vilkårlig kombination af følgende logiske udtryk i dine beting
 
 Udtryk|Beskrivelse|Eksempel
 --------|-----------|-------
-|[og](#use-the-and-expression)|Kræver to argumenter og returnerer sand, hvis begge værdier er sande.<br><b>Bemærk</b>! Begge argumenter skal være booleske værdier.|Udtrykket returnerer falsk: <br>og (større end(1,10), lig med(0,0))
-|[eller](#use-the-or-expression)|Kræver to argumenter og returnerer sand, hvis et af argumenterne er sande. <br><b>Bemærk</b>! Begge argumenter skal være booleske værdier.|Udtrykket returnerer sand:<br>eller(større end(1,10),lig med(0,0))
-|lig med|Returnerer sand, hvis to værdier er ens.|Hvis parameter1 f.eks. er someValue, returnerer udtrykket sand:<br>lig med(parameters('parameter1'), 'someValue')
-|[mindre end](#use-the-less-expression)|Kræver to argumenter og returnerer sand, hvis det første argument er mindre end det andet argument. <br><b>Bemærk</b>! De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer sand:<br>less(10,100)
-|lessOrEquals|Kræver to argumenter og returnerer sand, hvis det første argument er mindre end eller lig med det andet argument. <br><b>Bemærk</b>! De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer sand:<br>lessOrEquals(10,10)
-|[større](#use-the-greater-expression)|Kræver to argumenter og returnerer sand, hvis det første argument er større end det andet argument. <br><b>Bemærk</b>! De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer falsk:<br>større(10,10)
-|greaterOrEquals|Kræver to argumenter og returnerer sand, hvis det første argument er større end eller lig med det andet argument. <br><b>Bemærk</b>! De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer falsk:<br>greaterOrEquals(10,100)
+|[og](#use-the-and-expression)|Kræver to argumenter og returnerer sand, hvis begge værdier er sande.<br><b>Bemærk!</b> Begge argumenter skal være booleske værdier.|Udtrykket returnerer falsk: <br>og (større end(1,10), lig med(0,0))
+|[eller](#use-the-or-expression)|Kræver to argumenter og returnerer sand, hvis et af argumenterne er sande. <br><b>Bemærk!</b> Begge argumenter skal være booleske værdier.|Udtrykket returnerer sand:<br>eller(større end(1,10),lig med(0,0))
+|er lig med|Returnerer sand, hvis to værdier er ens.|Hvis parameter1 f.eks. er someValue, returnerer udtrykket sand:<br>lig med(parameters('parameter1'), 'someValue')
+|[mindre end](#use-the-less-expression)|Kræver to argumenter og returnerer sand, hvis det første argument er mindre end det andet argument. <br><b>Bemærk!</b> De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer sand:<br>less(10,100)
+|lessOrEquals|Kræver to argumenter og returnerer sand, hvis det første argument er mindre end eller lig med det andet argument. <br><b>Bemærk!</b> De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer sand:<br>lessOrEquals(10,10)
+|[større](#use-the-greater-expression)|Kræver to argumenter og returnerer sand, hvis det første argument er større end det andet argument. <br><b>Bemærk!</b> De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer falsk:<br>større(10,10)
+|greaterOrEquals|Kræver to argumenter og returnerer sand, hvis det første argument er større end eller lig med det andet argument. <br><b>Bemærk!</b> De understøttede typer er heltal, flydende og streng.|Udtrykket returnerer falsk:<br>greaterOrEquals(10,100)
 |[tom](#use-the-empty-expression)|Returnerer sand, hvis objektet, matrixen eller strengen er tom.|Udtrykket returnerer sand:<br>tom('')
 |ikke|Returnerer det modsatte af en boolesk værdi. |Udtrykket returnerer sand:<br>ikke(indeholder ("200 fuldført", "Mislykkedes"))
 |hvis|Returnerer en bestemt værdi, hvis udtrykket resulterer i sand eller falsk.|Udtrykket returnerer "ja":<br>hvis(lig med(1, 1), "ja", "nej")
@@ -92,7 +92,7 @@ Lad os oprette flowet.
     ![nyt trin](includes/media/new-step/action.png)
 2. Søg efter **rækker**, og vælg derefter **Excel - Hent rækker**.
 
-    Bemærk! Vælg den "hent rækker"-handling, som svarer til det regneark, du bruger. Hvis du f.eks. bruger Google Sheets, skal du vælge **Google Sheets – Hent rækker**.
+    Bemærk! Vælg den handling af typen "hent rækker", som svarer til det regneark, du bruger. Hvis du f.eks. bruger Google Sheets, skal du vælge **Google Sheets – Hent rækker**.
 
     ![hent rækker](includes/media/new-step/get-excel-rows.png)
 3. Vælg mappeikonet i feltet **Filnavn**, og gennemse og vælg derefter det regneark, der indeholder dine data.
@@ -103,7 +103,7 @@ Lad os oprette flowet.
     ![vælg tabel](includes/media/new-step/select-table.png)
 
 ### <a name="check-the-status-column-of-each-row"></a>Kontrollér statuskolonnen for hver række
-1. Vælg **Nyt trin** > **Mere** > **Tilføj en "anvend på hver"**.
+1. Vælg **Nyt trin** > **Mere** > **Tilføj en "anvend på hver"** .
 
     ![vælg tabel](includes/media/new-step/apply-to-each.png)
 2. Føj tokenet **Værdi** til feltet **Vælg et output fra de tidligere trin**.

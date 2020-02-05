@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 45fe310d7c18fc395857d29503faef9bf4e6eedb
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74365701"
 ---
 # <a name="using-environments-within-power-automate"></a>Brug af miljøer i Power Automate
@@ -71,7 +71,7 @@ Selvom miljøer giver mange fordele, medfører de også nye begrænsninger. Den 
 
 Administratorer kan bruge Administration til at oprette og administrere miljøer. Her er de to måder, du kan åbne Administration på:
 
-### <a name="option-1-select-settings"></a>Mulighed 1: Vælg indstillinger
+### <a name="option-1-select-settings"></a>Mulighed 1: Vælg Indstillinger
 
 1. Log på [flow.microsoft.com](https://flow.microsoft.com).
 1. Vælg tandhjulet Indstillinger, og vælg **Administration** på listen:
@@ -93,7 +93,7 @@ Gå til [admin.flow.microsoft.com](https://admin.flow.microsoft.com), og log på
    |------------------|-------------------------------------------------------------------------------------------------------------|
    | Miljønavn |              Angiv navnet på dit miljø, f.eks. `Human Resources` eller `Europe flows`.              |
    |      Område      | Vælg den placering, hvor dit miljø skal hostes. Du opnår den bedste ydeevne ved at bruge et område, der er tæt på dine brugere. |
-   | Miljøtype |                  Vælg en miljøtype på baggrund af din licens: Produktion eller Prøve.                   |
+   | Miljøtype |                  Vælg en miljøtype på baggrund af din licens: Produktion eller Prøveversion.                   |
 
      ![indstillinger for miljø](./media/environments-overview-admin/new-environment-dialog.png)
 3. Klik på **Opret miljø**.
@@ -181,7 +181,7 @@ Vælg en plan, der passer til dig, ved at gå til siden [Priser på Power Automa
 
 I dokumentet [Spørgsmål om fakturering](billing-questions.md) kan du finde svar på ofte stillede spørgsmål om fakturering.
 
-### <a name="can-the-common-data-service-be-used-outside-of-an-environment"></a>Kan Common Data Service bruges uden for et miljø?
+### <a name="can-the-common-data-service-be-used-outside-of-an-environment"></a>Kan Common Data Service benyttes uden for et miljø?
 
 Nej. Common Data Service kræver et miljø. [Læs mere](common-data-model-intro.md) om det.
 

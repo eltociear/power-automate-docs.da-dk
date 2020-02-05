@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d0d5380e1ade6d1d11d557f38e7fc5db6616d1d9
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370945"
 ---
-# <a name="run-ui-flows"></a>Kør flow for brugergrænsefladen
+# <a name="run-ui-flows"></a>Kør brugergrænsefladeflow
 
 [Dette emne er foreløbig dokumentation og kan ændres].
 
@@ -72,7 +72,7 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
 
    Det skal du gøre én gang pr. enhed:
 
-    - **Navn på forbindelse**: Vælg et navn til enheden for flowforbindelsen. Det kan være forskelligt fra navnet på gatewayen.
+    - **Navn på forbindelsen**: Vælg et navn til forbindelsen mellem enheden og flowet. Det kan være forskelligt fra navnet på gatewayen.
     - **Brugernavn**: Angiv arbejds- eller skolekontoen for din enhed.
     - **Godkendelsestype**: Vælg Windows.
     - **Adgangskode**: Adgangskoden til din arbejds- eller skolekonto.

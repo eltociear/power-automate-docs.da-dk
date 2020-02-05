@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 136bb90c47a1aeea2f11ef45e35a4957506ad488
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74363907"
 ---
 # <a name="introducing-button-flows"></a>Introduktion til knapflows
@@ -73,7 +73,7 @@ I denne vejledning opretter vi en knap, der starter et Visual Studio Online (VSO
 Tillykke, du har oprettet et knapflow! Nu kan du køre dette knapflow under fanen **Knapper** i appen Flow, når du vil. Du skal blot trykke på "knappen" for at køre flowet. Mobilappen Power Automate er tilgængelig til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>Fra din mobilenhed
-**Bemærk!** : I denne vejledning vises der skærmbilleder fra en Android-enhed, men skærmbilleder og fremgangsmåderne er det samme på en iOS-enhed.
+**Bemærk!** I denne vejledning vises der skærmbilleder fra en Android-enhed, men skærmbilleder og fremgangsmåderne er det samme på en iOS-enhed.
 
 I appen Flow:
 
@@ -118,7 +118,7 @@ Du skulle nu modtage en pushmeddelelse om, at mailen er blevet sendt.
 Du kan overvåge dine knapflows fra fanen **Aktivitet** i appen Flow:   
 ![Oversigtsbillede](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
-**Bemærk!** : Tryk på en aktivitet for at se resultaterne af og detaljerne om kørslen.  
+**Bemærk!** Tryk på en aktivitet for at se resultaterne af og detaljerne om kørslen.  
 
 ![Oversigtsbillede](./media/introduction-to-button-flows/activity-details-1.png)  
 

@@ -1,6 +1,6 @@
 ---
 title: Opret brugerdefineret forretningslogik via processer med Power Apps | MicrosoftDocs
-description: Få mere at vide om de forskellige typer forretningslogik, som du kan bruge i din app
+description: Du kan få mere at vide om de forskellige typer forretningslogik, du kan bruge i din app
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
@@ -23,16 +23,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c5cc72f79b411f8ba50120308bcaf6dd03b302e6
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74368346"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Opret brugerdefineret forretningslogik via processer
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-En af det vigtigste grunde til at bruge modeldrevne apps er, at du kan definere og gennemtvinge forretningsprocesser konsekvent. Konsistente processer er med til at sikre, at brugerne af systemet kan fokusere på deres arbejde og ikke på at huske at skulle udføre et række manuelle trin. Processer kan være simple eller komplekse og kan ændres over tid.  
+En af det vigtigste grunde til at bruge modeldrevne apps er, at du kan definere og gennemtvinge forretningsprocesser konsekvent. Konsistente processer er med til at sikre, at brugerne af systemet kan fokusere på deres arbejde og ikke på at huske at skulle udføre et række manuelle trin. Processer kan være simple eller avancerede og kan ændre sig over tid.  
   
 Power Apps indeholder flere typer processer, der alle er udviklet til et bestemt formål:  
   
@@ -68,7 +68,7 @@ Power Apps indeholder flere typer processer, der alle er udviklet til et bestemt
   
 <a name="useMSFlow"></a>   
 ## <a name="when-to-use-power-automate"></a>Hvornår du skal bruge Power Automate  
- Du kan bruge Power Automate, når du har brug for at oprette automatiserede arbejdsprocesser, der udfører handlinger mellem dit miljø og din foretrukne app eller tjeneste som f.eks. Dynamics 365, Twitter, Dropbox, Google-tjenester, Office 365 og SharePoint. Du kan udløse et flow baseret på en bestemt handling, eller du kan kalde det fra din app. Flere oplysninger: [Brug af Power Automate til at automatisere processer på tværs af tjenester](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+ Du kan bruge Power Automate, når du har brug for at oprette automatiserede arbejdsprocesser, der udfører handlinger mellem dit miljø og din foretrukne app eller tjeneste som f.eks. Dynamics 365, Twitter, Dropbox, Google-tjenester, Office 365 og SharePoint. Du kan udløse et flow baseret på en bestemt handling, eller du kan kalde det fra din app. Flere oplysninger: [Brug Power Automate til at automatisere processer på tværs af tjenester](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
 )  
   
 <a name="BKMK_Where"></a>   

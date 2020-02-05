@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cba8de780c58a2b70f1d65ff002336c7312dfd36
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74377408"
 ---
 # <a name="manage-flows-in-power-automate-from-your-phone"></a>Administrer flow i Power Automate fra din telefon
@@ -46,7 +46,7 @@ Når flowet kører, sender det en brugerdefineret pushmeddelelse med følgende s
 
 ![Send meddelelse til slæk](./media/mobile-manage-flows/create-event.png)
 
-**Bemærk**! Du kan også [overvåge flowaktivitet](mobile-monitor-activity.md) fra mobilappen.
+**Bemærk!** Du kan også [overvåge flowaktivitet](mobile-monitor-activity.md) fra mobilappen.
 
 ## <a name="manage-a-flow"></a>Administrer et flow
 1. Åbn mobilappen, og tryk derefter på **Mine flows** i bunden af skærmen for at få vist alle dine flows.
