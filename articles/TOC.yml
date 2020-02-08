@@ -56,6 +56,24 @@
       href: run-scheduled-tasks.md
     - name: Behandl en liste over elementer
       href: apply-to-each.md
+- name: Godkendelsesflows
+  items:
+    - name: Enkelte godkendelser
+      href: modern-approvals.md
+    - name: Godkendelser med vedhæftede filer
+      href: approval-attachments.md
+    - name: Sekventielle godkendelser
+      href: sequential-modern-approvals.md
+    - name: Parallelle godkendelser
+      href: parallel-modern-approvals.md
+    - name: Alle skal godkende
+      href: all-assigned-must-approve.md
+    - name: Integrerede godkendelser
+      href: common-data-model-approve.md
+    - name: Formatér anmodninger om godkendelse
+      href: approvals-markdown-support.md
+    - name: Indstillinger for brugerdefineret godkendelsessvar
+      href: create-approval-response-options.md
 - name: Forretningsprocesforløb
   items:
     - name: Oversigt over forretningsprocesflows
@@ -170,24 +188,6 @@
           href: daily-weather-sample.md
         - name: Eksempel – generering af kundeemner
           href: lead-collection-sample.md
-    - name: Godkendelsesflows
-      items:
-        - name: Enkelte godkendelser
-          href: modern-approvals.md
-        - name: Godkendelser med vedhæftede filer
-          href: approval-attachments.md
-        - name: Sekventielle godkendelser
-          href: sequential-modern-approvals.md
-        - name: Parallelle godkendelser
-          href: parallel-modern-approvals.md
-        - name: Alle skal godkende
-          href: all-assigned-must-approve.md
-        - name: Integrerede godkendelser
-          href: common-data-model-approve.md
-        - name: Formatér anmodninger om godkendelse
-          href: approvals-markdown-support.md
-        - name: Indstillinger for brugerdefineret godkendelsessvar
-          href: create-approval-response-options.md
     - name: Administrer flows på en telefon
       href: mobile-manage-flows.md
     - name: Udgivelse af en skabelon
