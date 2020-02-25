@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2b536263d90af7b0bbdcdec30d1b00bc7bae2a9e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: a96d2e7ee5d0050f5fcbc96afe79429e1aad2426
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361193"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575039"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Opret et flow, der bruger Common Data Service
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]

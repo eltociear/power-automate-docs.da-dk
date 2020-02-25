@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4361705779ab31b73206835380a648557f581e66
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9a3bfc0d8db6425e31a86287a5ad78665d0ff28e
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74354661"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575072"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -110,7 +110,7 @@ Dette er grænserne for et enkelt flow.
 | `description` længdegrænse |256 | |
 
 ## <a name="sharepoint-limits"></a>SharePoint-begrænsninger
-Der er [begrænsninger](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) for, hvordan du kan bruge Microsoft SharePoint med Power Automate og Power Apps.
+Der er [begrænsninger](https://docs.microsoft.com/connectors/sharepointonline/#limits) for, hvordan du kan bruge Microsoft SharePoint med Power Automate og Power Apps.
 
 ## <a name="ip-address-configuration"></a>Konfiguration af IP-adresse
 Den IP-adresse, Power Automate-anmodninger sendes fra, afhænger af det [område](regions-overview.md), hvor det [miljø](environments-overview-admin.md), som indeholder flowet, er placeret. Vi publicerer i øjeblikket ikke FQDN'er, der er tilgængelige for flowscenarier.
