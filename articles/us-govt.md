@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 2b2b53b833711311c039678a9196a2833d50c84c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 44220aebd8726c31f94996ec215020688f317223
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74370853"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77574991"
 ---
 # <a name="power-automate-us-government"></a>Power Automate til den amerikanske regering
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -226,7 +226,7 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af Flow,
 
 - Udløs Power Automate US Government-flow *vha.* Dynamics 365 GCC
 
-- [Godkendelser](./modern-approvals.md) – selvom US Government-kunder bruger Power Automate-godkendelser, kan de ikke sende handlingsrettede mails og skal videresende godkendere til godkendelsescenteret. Som en løsning kan Power Automate-oprettere bruge standardmailconnectorer til at underrette andre om, at der er en ventende godkendelse. I dette tilfælde indeholder de også linket i mailen, der peger på det godkendelsescenter, hvor US Government-kunder kan reagere på godkendelserne.
+- [Godkendelser](./modern-approvals.md) er endnu ikke tilgængelige for GCC- og GCC High-lejere.
 
 - [Forbrugsanalyse](https://flow.microsoft.com/blog/admin-analytics/)
 

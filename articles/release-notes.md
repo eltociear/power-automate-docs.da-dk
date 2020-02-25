@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e617e6928d5295a9485c55e1efa57a945abf870f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ab6b6d0cf638b489db47e1f2d075afdf18a2ee49
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374303"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575052"
 ---
 # <a name="release-notes"></a>Produktbemærkninger
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -51,14 +51,9 @@ ms.locfileid: "74374303"
 
 ## <a name="whats-new"></a>Nyheder
 
-> [!IMPORTANT]
->
-> **Meddelelse om produktbemærkninger**
->
-> Vil du gerne vide mere om kommende og nyudgivne funktioner i Power Automate?
->[Få vist produktbemærkningerne for oktober 2018](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). Vi har hentet alle detaljer – fra ende til anden, fra top til bund – som du kan bruge til planlægning. Hvis du vil have flere detaljer, skal du se de funktioner og forbedringer, som [hver enkelt ugentlige udgave](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) indeholder.
->
-> Produktbemærkningerne før udgivelsen i oktober 2018 forbliver her til fremtidig reference, men alle nye udgivelser inkluderes kun på ovenstående steder og ikke på denne side.
+Du kan få oplysninger om nye funktioner, der er udgivet til Power Automate, her:
+- [Plan for 2020-udgivelse, 1. bølge](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features) for nye funktioner, der udgives i løbet af de næste par måneder.
+- [Ugentlige produktbemærkninger](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) om nye funktioner, rettelser og forbedringer, der er udgivet i de seneste par uger.
 
 ### <a name="release-2018-09-24"></a>Version 24-09-2018
 
