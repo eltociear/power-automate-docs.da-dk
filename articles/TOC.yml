@@ -88,7 +88,7 @@
       href: custom-controls-business-process-flows.md
     - name: Bedste fremgangsmåder for attributter for forretningsprocesflows
       href: best-practices-entity-attributes.md
-- name: Brugergrænsefladeflow (eksempelvisning)
+- name: Flow for brugergrænseflade (prøveversion)
   items:
     - name: Introduktion til brugergrænsefladeflow
       href: ./ui-flows/overview.md
@@ -100,6 +100,9 @@
       href: ./ui-flows/edit-desktop.md
     - name: Brug input og output i desktopbrugergrænsefladeflow
       href: ./ui-flows/inputs-outputs-desktop.md
+      items:
+        - name: Brug IME'er (Input Method Editors) i flow for brugergrænseflader
+          href: ./ui-flows/use-ime.md
     - name: Opret og test webbrugergrænsefladeflow
       href: ./ui-flows/create-web.md
     - name: Rediger webbrugergrænsefladeflow
