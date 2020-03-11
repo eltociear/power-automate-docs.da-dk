@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 06a27a495a008542208cd56230ad8c21b5e5b938
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 90951e4244ef7caa75bedc522d1bb032e070dbef
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74372371"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244271"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Opret og test flow for brugergrænsefladen på internettet
 
@@ -96,9 +96,7 @@ Nu, hvor du har oprettet et flow for brugergrænsefladen på internettet, kan du
 
 **Windows-programmer optages og afspilles ikke længere i flow for brugergrænsefladen, når der er installeret en ny version.**
 
-Du skal fjerne den tidligere version, før du installerer en ny.
-
-Det gør du ved at åbne menuen Start, gå til **Indstillinger** > **Programmer**, søge efter **Flow for brugergrænseflade** på listen over programmer > **Flow for brugergrænseflade (prøveversion)** og derefter vælge "Fjern". Guiden fører dig gennem processen.
+Bekræft, at du bruger den [nyeste version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409)
 
 **Midlertidig brugerprofil til afspilning**
 
@@ -131,3 +129,4 @@ For at løse problemet skal brugeren manuelt redigere scriptet for at indsætte 
 
 - Hvis du vil udføre mere med flow for brugergrænsefladen, kan du også afprøve flow for brugergrænsefladen med [input- og output](inputs-outputs-web.md)parametre.
 
+ 

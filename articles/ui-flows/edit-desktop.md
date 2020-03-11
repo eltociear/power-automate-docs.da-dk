@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9c9da27098ca9114c0919d0fb6e70495f442a3c6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 0be3b3656cf9683b43d4ba22bc23b537ccc4e597
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371704"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244280"
 ---
 # <a name="edit-desktop-ui-flows"></a>Rediger desktopbrugergrænsefladeflow
 
@@ -161,6 +161,40 @@ Du kan hente **elementXPath** ved hjælp af [Optageren for brugergrænsefladen W
 Fjern det første element (alt før /Window), før du bruger resultatet i **elementXPath** i selektoren.
 
 Test dit flow for brugergrænsefladen for at bekræfte, at selektoren fungerer korrekt.
+
+
+## <a name="enable-coordinate-based-playback"></a>Aktivér koordinatbaseret afspilning
+
+Koordinatbaseret afspilning bruger relative forskydninger af skærmkoordinater som et fallback, der hjælper flow for brugergrænsefladen med at finde destinationsobjekter, som den automatiseringsstruktur, der anvendes som standard af Windows-brugergrænsefladen, ikke kan finde under afspilning. 
+
+Her er nogle af årsagerne til, at den automatiseringsstruktur, der anvendes som standard af Windows-brugergrænsefladen, muligvis ikke kan finde destinationsobjekter under afspilning:
+
+- Det ældre program, som du automatiserer, bruger muligvis ikke programmeringsteknologier, der understøtter automatiseringsstrukturen, der anvendes af Windows-brugergrænsefladen.
+- Programmet eller dets kontrolelementer har muligvis ikke en entydig XPath, et entydigt navn eller entydige id'er til brugergrænsefladen i forbindelse med automatisering. 
+- Programmet har dynamiske kontrolelementer, hvis navne eller id'er kan ændres. 
+- Programmet har kontrolelementer, der ikke har navne, id'er, entydige id'er osv.
+
+>[!TIP]
+>Brug den samme skalering og opløsning, og maksimer også destinationsprogrammet under optagelsen for at forbedre nøjagtigheden af koordinatbaseret afspilning.
+
+Følg disse trin, når du har optaget et script til flow for brugergrænsefladen:
+
+1. Udvid det trin, der starter eller tilknytter programmet.
+   
+   Dette er normalt det første trin i scriptet til optagelse.
+1. Vælg **Vis avancerede indstillinger**.
+1. Find egenskaben **Brug koordinat for afspilning**.
+1. Vælg **Ja** på listen for at aktivere koordinatbaseret afspilning.
+
+>[!TIP]
+> Du kan aktivere eller deaktivere **Brug koordinat for afspilning** for hvert program for at anvende indstillingen på alle de trin, der udføres i forbindelse med det pågældende program.  
+
+
+>[!WARNING]
+>Med koordinatbaseret afspilning kan automatiseringen vælge kontrolelementer, der ikke er en del af destinationsprogrammet, af en række årsager, f.eks. når brugergrænsefladen i destinationsprogrammerne ændres drastisk.
+
+
+
 
 ## <a name="next-steps"></a>Næste trin
 

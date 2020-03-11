@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5c70db242974e549d07161fa47e76ab7eaa7a924
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3d9686ed208183aaf73a6a274b809d7a3cce4bf0
+ms.sourcegitcommit: 517c1418aca5745a93d8765cfde661067cedfdf6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74372693"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78267151"
 ---
 # <a name="sign-up-and-sign-in-for-power-automate"></a>Tilmeld dig, og log på Power Automate
 
@@ -38,9 +38,9 @@ Det er nemt at komme i gang med Power Automate som enkeltperson! Før du kan opr
 ## <a name="sign-up-free"></a>Tilmeld dig gratis
 Hvis du ikke har brugt andre onlineprodukter fra Microsoft, skal du tilmelde dig.
 
-1. På [flow.microsoft.com](https://flow.microsoft.com) skal du klikke eller trykke på **Tilmeld dig gratis** i øverste højre hjørne.
+1. På [flow.microsoft.com](https://flow.microsoft.com) skal du vælge **Prøv gratis** i øverste højre hjørne.
 2. Angiv din mailadresse.
-3. Klik eller tryk på højre pil.
+3. Vælg den højre pil.
 
     ![Link til tilmelding](./media/sign-up-sign-in/signup.png)
 

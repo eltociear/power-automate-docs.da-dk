@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: afe9277ced28cdb964ed32550dd0402eaa0d1df4
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: c27637f56defb1acff07302954424953ec48b506
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "75943490"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244307"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow
 
@@ -60,6 +60,23 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
    ![Vælg skrivebord](../media/create-windows-ui-flow/give-a-name.png "Vælg skrivebord") 
 
 1. Vælg **Næste** nederst for at springe over den valgfri skærm **Konfigurer input**, da vi ikke bruger input i denne gennemgang.
+
+1.  Vælg **Download pakke**.
+1.  Åbn filen **Setup.Microsoft.Flow.UIflow.exe**. Du finder sandsynligvis denne fil i mappen **Downloads**, efter du har downloadet den i forrige trin.
+1.  Følg vejledningen i installationsprogrammet til Konfiguration af Flow for brugergrænseflade (prøveversion) for at fuldføre installationen.
+
+    Når installationsprogrammet til flow for brugergrænsefladen er fuldført, bliver du i browseren bedt om at aktivere udvidelsen.
+
+1. På Microsoft Edge (Chromium) skal du vælge hvert advarselsikon i øverste højre hjørne af browseren og derefter vælge **Aktivér udvidelse**.
+1. På Google Chrome skal du vælge **Aktivér udvidelse**, når du bliver bedt om det.
+
+   > [!TIP]
+   > Hvis du ikke fik vist prompten i din browser, skal du kontrollere følgende:
+   > - Du skal bruge browseren Microsoft Edge (Chromium) eller Google Chrome.
+   > - Du skal muligvis aktivere udvidelsen manuelt. Hvis du har Microsoft Edge (Chromium), skal du navigere til **edge://extensions**, og hvis du har Google Chrome, skal du navigere til **chrome://extensions**.
+   > - Hvis udvidelsen til flow for brugergrænsefladen i Power Automate ikke vises, skal du geninstallere den ved hjælp af [installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+   Fortsæt, når du har installeret udvidelsen.
 
 1. Vælg kortet **Optag app** for at udvide det.
 
@@ -128,14 +145,14 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 - Højreklik afspilles muligvis ikke korrekt. Hvis det er tilfældet, skal du klikke til venstre under optagelsen for at få flow for brugergrænseflade til at fokusere på destinationsbrugergrænsefladen og derefter højreklikke.
 
-- Hvis brugergrænseflade-flow ikke længere optager eller afspiller Windows-programmer efter installation af en ny version, skal du fjerne den tidligere version og derefter installere en ny version.
+- Hvis flow for brugergrænsefladen ikke længere optager eller afspiller Windows-programmer, når der er installeret en ny version, skal du kontrollere, at du har den [nyeste version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409).
 
 
 ### <a name="unsupported-application-types"></a>Ikke-understøttede programtyper
 
--   Interaktioner i Windows (Stifinder, menuen Start, proceslinje osv.).
+- Interaktioner i Windows (Stifinder, menuen Start, proceslinje osv.).
 
--   Webbrowsere (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla osv.).
+- Webbrowsere (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla osv.).
     Du skal se [Opret et flow for brugergrænseflade](edit-web.md) for at automatisere websteder.
 
 -   Java-programmer.

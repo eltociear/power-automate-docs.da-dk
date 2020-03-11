@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d0d5380e1ade6d1d11d557f38e7fc5db6616d1d9
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3feab8291a3dc14adab398f7619fd5b6141674ab
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74370945"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244213"
 ---
 # <a name="run-ui-flows"></a>Kør brugergrænsefladeflow
 
@@ -111,10 +111,6 @@ Når du definerer input og output i et flow for brugergrænsefladen, kan du over
 
 1. Du kan også bruge output fra dit flow for brugergrænsefladen som input til handlinger, der vises senere i flowet. Det gør du ved at vælge inputfeltet og derefter vælge et input fra tokenvælgeren.
 
-## <a name="limitations-and-known-issues"></a>Begrænsninger og kendte problemer
-
-- Gatewayklynger understøttes ikke.
-- Da tastaturer, der ikke er amerikanske (QWERTY), ikke understøttes i denne version, vil afspilning af inputtrin, hvor tastesekvensen blev optaget med et tastatur, der ikke er amerikansk (QWERTY), resultere i tastetryk på amerikansk (QWERTY).
 
 ## <a name="learn-more"></a>Få mere at vide
 

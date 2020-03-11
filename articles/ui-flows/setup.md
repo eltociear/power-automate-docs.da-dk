@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 222ee4a6d7d3116100880ec4a5dc205988fc8ce6
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 1cf0dee7576111a696f8486f36aa5a2cdd2eeebf
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77574956"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244241"
 ---
 # <a name="set-up-ui-flows"></a>Konfigurer brugergrænsefladeflow
 
@@ -48,11 +48,12 @@ Før du kan bruge din enhed til at oprette flow for brugergrænsefladen, skal du
 - En arbejds- eller skolekonto til at logge på din Windows-enhed med administratorrettigheder og Power Automate.
 
 - En enhed, der kører Windows 10, Windows Server 2016 eller Windows Server 2019.
-- Et amerikansk tastatur (QWERTY) tilsluttet.
 
-- Den [nyeste version af Microsoft Edge](https://www.microsoftedgeinsider.com) eller Google Chrome.
+- [Microsoft Edge](https://www.microsoftedgeinsider.com)- eller Google Chrom-browser.
 
 - Et [miljø](https://docs.microsoft.com/power-platform/admin/environments-overview) med en [Common Data Service-database](https://docs.microsoft.com/power-platform/admin/create-database).
+
+- Et tilsluttet understøttet tastatur.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -94,19 +95,14 @@ Følg disse trin for at installere programmet for flow for brugergrænsefladen:
 
 Når installationsprogrammet til flow for brugergrænsefladen er fuldført, bliver du bedt om at aktivere udvidelsen i browseren.
 
-- På Microsoft Edge (Chromium) skal du vælge hvert advarselsikon i øverste højre hjørne af browseren og derefter vælge **Aktivér udvidelse**.
+- På Microsoft Edge skal du vælge hvert advarselsikon i øverste højre hjørne af browseren og derefter vælge **Aktivér udvidelse**.
 -   På Google Chrome skal du vælge **Aktivér udvidelse**, når du bliver bedt om det.  
 
 > [!TIP]
 > Hvis du ikke fik vist prompten i din browser, skal du kontrollere følgende:
-> - Du skal bruge Microsoft Edge (Chromium) eller Google Chrome
-> - Du skal muligvis aktivere udvidelsen manuelt. Hvis du har Microsoft Edge (Chromium), skal du navigere til **edge://extensions**, og hvis du har Google Chrome, skal du navigere til **chrome://extensions**.
+> - Du skal bruge Microsoft Edge eller Google Chrome
+> - Du skal muligvis aktivere udvidelsen manuelt. Hvis du har Microsoft Edge, skal du gå til **edge://extensions**, og hvis du har Google Chrome, skal du gå til **chrome://extensions**.
 > - Hvis udvidelsen til flow for brugergrænsefladen i Power Automate ikke vises, skal du geninstallere den ved hjælp af [installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
-
-<!-- To do for Gautier: check if the below is not bugged as there was one at some point.
-> - Reinstall the extension from the Chrome store
-Navigate to this link https://chrome.google.com/webstore/detail/microsoft-flow-preview/jcajipieipkmjpfakbdhmjidmhidogoo and install it manually, that will fix any issues. (For Edge Chromium, use the same link and accept when prompted to install from external stores.)
--->
 
 ## <a name="install-selenium-ide-to-automate-web-applications"></a>Installér Selenium IDE for at automatisere webprogrammer
 
@@ -118,7 +114,7 @@ Følg disse trin for at installere Selenium IDE:
 
 1. [Download og installér](https://go.microsoft.com/fwlink/?linkid=2107665) Selenium IDE til den nyeste version af Microsoft Edge eller Google Chrome.
 
-1. I forbindelse med Microsoft Edge (Chromium) skal du vælge **Tillad udvidelser fra andre butikker** og derefter vælge **Føj til Chrome**.
+1. I forbindelse med Microsoft Edge skal du vælge **Tillad udvidelser fra andre butikker** og derefter vælge **Føj til Chrome**.
 
 ## <a name="install-the-on-premises-data-gateway"></a>Installér datagatewayen i det lokale miljø
 
@@ -135,6 +131,50 @@ Du skal bruge gatewayen til at udløse flow for brugergrænsefladen fra et [flow
 1. Søg efter **Flow for brugergrænseflade (prøveversion)** , og vælg den derefter.
 1. Vælg **Fjern**.
 
+## <a name="supported-keyboard-layouts"></a>Layouts for tilsluttet tastatur
+
+- Amerikansk tastatur – engelsk (USA)
+- Amerikansk tastatur – engelsk (Australien)
+- Amerikansk tastatur – engelsk (Canada)
+- Microsoft Pinyin – kinesisk (forenklet Han, Kina)
+- Tysk tastatur – tysk (Tyskland)
+- Microsoft IME – japansk (Japan)
+- Britisk tastatur – engelsk (Storbritannien)
+- Fransk tastatur – fransk (Frankrig)
+- Russisk tastatur – russisk (Rusland)
+- Portugisisk tastatur (Brasiliansk ABNT) – portugisisk (Brasilien)
+- Portugisisk tastatur (Brasiliansk ABNT2) – portugisisk (Brasilien)
+- Microsoft IME – koreansk (Sydkorea)
+- Spansk tastatur – spansk (Spanien)
+- Italiensk tastatur – Italiensk (Italien)
+- Latinamerikansk tastatur – spansk (Mexico)
+- Polsk tastatur (programmører) – polsk (Polen)
+- Amerikansk internationalt tastatur – hollandsk (Nederlandene)
+- Tyrkisk Q-tastatur – tyrkisk (Tyrkiet)
+- Indisk tastatur – engelsk (Indien)
+
+## <a name="supported-languages"></a>Understøttede sprog
+
+Her ses de sprog, som flow for brugergrænsefladen understøtter udover engelsk:
+
+|||||
+----|-----|-----|-----
+Baskisk  | Fransk    | Lettisk   | Slovakisk
+Bulgarsk   |   Galisisk    |   Litauisk  |   Slovensk
+Catalansk |   Tysk      |Malaysisk  |   Spansk
+Kinesisk (forenklet)    |   Græsk   |   Norsk   |   Svensk
+Kinesisk (traditionelt)   |   Hindi   |   Polsk  |   Thai
+Kroatisk    |   Ungarsk   |   Portugisisk (Brasilien) |   Tyrkisk
+Tjekkisk   |   Indonesisk  |   Portugisisk (Portugal)       |Ukrainsk
+Dansk  |   Italiensk |   Rumænsk    |   Vietnamesisk
+Nederlandsk       |Japansk   |   Russisk 
+Estisk    |Kasakhisk |   Serbisk (kyrillisk, Serbien)  
+Finsk     |Koreansk     |Serbisk (latin, Serbien)
+
+## <a name="limitations"></a>Begrænsninger
+- De nyeste versioner af hver enkelt komponent kræves for at kunne optage, teste eller køre flow for brugergrænsefladen.
+
+
 ## <a name="next-steps"></a>Næste trin
 
 - Få mere at vide om, hvordan du [opretter flow for brugergrænsefladen på skrivebordet](create-desktop.md).
@@ -142,9 +182,3 @@ Du skal bruge gatewayen til at udløse flow for brugergrænsefladen fra et [flow
 - Få mere at vide om, hvordan du kører [flow for brugergrænsefladen](run-ui-flow.md).
 - Få mere at vide om, hvordan du [administrerer flow for brugergrænsefladen](manage.md).
 - Få mere at vide om [gatewayen i det lokale miljø](../gateway-reference.md#use-a-gateway)
-
-## <a name="limitations"></a>Begrænsninger
-- De nyeste versioner af hver enkelt komponent kræves for at kunne optage, teste eller køre flow for brugergrænsefladen.
-- Fjern tidligere versioner, før du installerer den nyeste.
-
-
