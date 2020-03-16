@@ -92,6 +92,8 @@
   items:
     - name: Introduktion til brugergrænsefladeflow
       href: ./ui-flows/overview.md
+    - name: Opgrader flow for brugergrænsefladen fra tidligere versioner
+      href: ./ui-flows/upgrade.md
     - name: Konfigurer brugergrænsefladeflow
       href: ./ui-flows/setup.md
     - name: Opret og test desktopbrugergrænsefladeflow
@@ -109,7 +111,7 @@
       href: ./ui-flows/edit-web.md
     - name: Brug input og output i webbrugergrænsefladeflow
       href: ./ui-flows/inputs-outputs-web.md
-    - name: Kør brugergrænsefladeflow
+    - name: Kør ikke-automatiserede og automatiserede flow for brugergrænsefladen
       href: ./ui-flows/run-ui-flow.md
     - name: Administrer brugergrænsefladeflow
       href: ./ui-flows/manage.md

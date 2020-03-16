@@ -12,12 +12,12 @@ metadata:
   author: MSFTMAN
   ms.author: Deonhe
   ms.date: 01/18/2020
-  ms.openlocfilehash: 6bd3222b9ccb06ae310f5f45fe5fec5a0309c149
-  ms.sourcegitcommit: c063787413058b6702db1a03519f44540997bd16
+  ms.openlocfilehash: b62daba1b1c41f8d9655ddbadae8210a9fbb4a49
+  ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 03/01/2020
-  ms.locfileid: "78203650"
+  ms.lasthandoff: 03/12/2020
+  ms.locfileid: "79194801"
 landingContent:
 - title: Om Power Automate
   linkLists:
@@ -69,13 +69,13 @@ landingContent:
       url: /power-automate/ui-flows/overview
   - linkListType: how-to-guide
     links:
-    - text: Konfigurer flow for brugergrænseflade
+    - text: Konfigurer brugergrænsefladeflow
       url: /power-automate/ui-flows/setup
     - text: Opret flow for brugergrænseflade til skrivebord
       url: /power-automate/ui-flows/create-desktop
     - text: Opret flow for brugergrænseflade til web
       url: /power-automate/ui-flows/create-web
-    - text: Kør flow for brugergrænseflade
+    - text: Kør brugergrænsefladeflow
       url: /power-automate/ui-flows/run-ui-flow
   - linkListType: video
     links:
@@ -95,11 +95,11 @@ landingContent:
       url: /power-automate/export-flow-solution
     - text: Importér løsning
       url: /power-automate/import-flow-solution
-- title: Avancerede funktioner
+- title: Få mere ud af dine flow
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Brug AI Builder
+    - text: Brug AI Builder til flow, der anvender kunstig intelligens
       url: /power-automate/use-ai-builder
     - text: Brug tilpassede kort
       url: /power-automate/overview-adaptive-cards
