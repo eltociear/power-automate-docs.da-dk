@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2be12487e8f5a023299a8775ec568915fd3f8cc0
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4aac1ace0e30d5e36d59f0d2bcbb3cb692f7256c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374625"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195560"
 ---
 # <a name="submit-a-template-to-the-power-automate-gallery"></a>Send en skabelon til Power Automate-galleriet
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Send en flowskabelon til galleriet med skabeloner til Power Automate. Skabeloner hjælper ikke kun brugerne med lettere at oprette flows, men også med at forestille sig yderligere scenarier, der kan drage fordel af et flow.
 

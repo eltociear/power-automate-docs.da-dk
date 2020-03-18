@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 8554959026d299ac45ccf3ccb3ace7b8d9226294
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 39291e74b16727abe04c20c16eddeaa6d9871091
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74369059"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195675"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Reaktion på sletteanmodninger fra den registrerede i forbindelse med GDPR i Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 "Retten til sletning" ved at fjerne personlige data fra en organisations kundedata er en central sikkerhedsdetalje i persondataforordningen. Fjernelse af personlige data inkluderer fjernelse af alle personlige data og systemoprettede logge, men ikke oplysninger fra overvågningslogge.
 

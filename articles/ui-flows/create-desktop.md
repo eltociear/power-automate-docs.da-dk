@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c27637f56defb1acff07302954424953ec48b506
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: 254e92db3c02cac4294b92fc5a1deec4a23e341e
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244307"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224187"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow
 
@@ -49,7 +49,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)**  > **Ny**.
 
-   ![Opret et nyt flow for brugergrænseflade](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænseflade")
+   ![Opret et nyt flow for brugergrænseflade](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
 
 1. Vælg **Skrivebord-app** og vælg derefter **Næste**.
 
@@ -129,11 +129,6 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 1. Vælg **Gem og afslut** for at gemme dit flow for brugergrænseflade.
 
-## <a name="next-steps"></a>Næste trin
-
-- Få mere at vide om, hvordan du [udløser dit flow for brugergrænseflade](run-ui-flow.md), du netop har oprettet.
-
-- Hvis du vil foretage dig mere med flow for brugergrænseflader, kan du også afprøve flow for brugergrænseflader med [input- og output](inputs-outputs-web.md)parametre.
 
 ## <a name="known-issues-and-solutions"></a>Almindelige problemer og løsninger
 
@@ -205,3 +200,9 @@ Følgende handlinger optages ikke:
 - Fastgør båndet, før du starter afspilning, for at undgå problemer, der kan opstå, hvis båndet er indstillet til at blive skjult automatisk under afspilning.
 - Vælg ikke elementer ved at klikke og trække. Brug f. eks. ikke Skift-klik til at markere celler i Microsoft Excel, og vælg ikke tekst i Microsoft Word eller Microsoft PowerPoint ved at trække musen.
 - Nogle elementer fungerer muligvis ikke korrekt i flow for brugergrænseflade (prøveversion) til Microsoft Word- og Microsoft PowerPoint-skrivebordsprogrammer. Punkter i menuen Filer, f. eks. start fra en tom side eller højreklik på kontrolelementer, for f.eks. at tilføje et afsnit i Microsoft Word eller ændre layoutet af dias i Microsoft PowerPoint, fungerer muligvis ikke.
+
+## <a name="next-steps"></a>Næste trin
+
+- Få mere at vide om, hvordan du [udløser dit flow for brugergrænseflade](run-ui-flow.md), du netop har oprettet.
+
+- Hvis du vil udføre mere med flow for brugergrænsefladen, kan du også afprøve flow for brugergrænsefladen med [input- og output](inputs-outputs-web.md)parametre.

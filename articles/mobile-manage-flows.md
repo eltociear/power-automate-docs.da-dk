@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cba8de780c58a2b70f1d65ff002336c7312dfd36
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ce9a943f50ef5c8cc69e5dbf8fde796a75e4cdf9
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74377408"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195795"
 ---
 # <a name="manage-flows-in-power-automate-from-your-phone"></a>Administrer flow i Power Automate fra din telefon
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Få vist en liste over alle de flows, du har oprettet, og få vist hændelser og handlinger for hvert enkelt flow, aktivér eller deaktiver dem, og udforsk kørselsoversigten.
 
 **Forudsætninger**

@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 40692f5993652e386b084b2bd2ff375192448e35
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 513200d18ac2a845cd63a6d269513f3bcb45118c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74377293"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193973"
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-power-automate"></a>Godkend anmodninger på en mobilenhed vha. Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Hvis et flow identificerer dig som godkender, og du har installeret mobilappen til Power Automate, modtager du en pushmeddelelse, når der anmodes om din godkendelse.
 
 Denne artikel fører dig gennem nogle almindelige scenarier, som med stor sandsynlighed vil opstå, når du administrerer godkendelsesanmodninger i mobilappen til Power Automate.

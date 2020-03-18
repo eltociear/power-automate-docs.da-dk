@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 223ca24325ee9aed2476d1da6ad9e986c09306d7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9515fee127c1130803f075c6b6a08802a7c1eaea
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74375591"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192455"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Opret arbejdsprocesser for parallel godkendelse med Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I en arbejdsproces for parallel godkendelse skal flere personer godkende elementer, f.eks. fakturaer, indkøbsordrer, anmodninger om ferie osv. De enkelte personers godkendelse er uafhængig af alle andre godkendere.
 

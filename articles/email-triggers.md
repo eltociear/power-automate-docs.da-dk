@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fdfa1966c40c3c6db6803a58d9f2df687058b3d6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f7588a3ca1db5c62a4e60380575542671e8d408d
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74365632"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192298"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Udløs et flow baseret på mailegenskaber
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Brug udløseren **Når en ny mail modtages** til at oprette et flow, der køres, når en eller flere af følgende mailegenskaber opfylder de kriterier, du har angivet:
 
 | Egenskab | Hvornår bruger du |

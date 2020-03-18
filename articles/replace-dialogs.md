@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b338991cfdbb73a8a0464fd4322714ece82c2ac5
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8d3ce37fee1a4650454cc2c47af0d19fe37da96d
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74373015"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193697"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Erstat dialoger med forretningsprocesforløb eller lærredsapps
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 [Dialoger frarådes](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), og de skal erstattes af forretningsprocesforløb eller lærredsapps. I dette emne beskrives forskellige funktioner i disse indstillinger samt situationer, hvor et forretningsprocesforløb eller en lærredsapp, der er integreret i en modeldreven formular, kan bruges til at erstatte en eksisterende dialog.
 

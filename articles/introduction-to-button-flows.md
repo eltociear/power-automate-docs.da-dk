@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 136bb90c47a1aeea2f11ef45e35a4957506ad488
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ef83dc95d5f9f9afae42f3c488513f81de69b172
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74363907"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192409"
 ---
 # <a name="introducing-button-flows"></a>Introduktion til knapflows
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="what-are-button-flows"></a>Hvad er knapflows?
 Vi har vist alle nogle rutineopgaver, som vi ville ønske, at vi kunne køre med blot et klik på en knap. Det kan f.eks. være, at du skal sende en hurtig mail til dit team for at minde dem om at deltage i dagens teammøde, eller du vil starte et nyt Visual Studio Online-build af koden, efter at du har fået besked om, at der ikke er planlagt flere opdateringer resten af dagen. Med knapflows kan du udføre disse og mange andre typer opgaver ved at trykke på en knap på din mobilenhed.
 

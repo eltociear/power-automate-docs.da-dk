@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a96d2e7ee5d0050f5fcbc96afe79429e1aad2426
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 333f5b92df92cc384b9517a9ccf1d6bb0164c07b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575039"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194295"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Opret et flow, der bruger Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Du kan forbedre driftseffektiviteten med en samlet visning af virksomhedsdata ved at oprette et flow, der bruger [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Udrul denne sikre forretningsdatabase, der omfatter korrekt udformede standardforretningsenheder (f.eks. salg, indkøb, kundeservice og produktivitet) i din organisation. Gem organisationens data i en eller flere [brugerdefinerede enheder](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), som giver adskillige fordele i forhold til eksterne datakilder, såsom Microsoft Excel og Salesforce.
 
 Udnyt f.eks. Common Data Service i Power Automate på følgende vigtige måder:

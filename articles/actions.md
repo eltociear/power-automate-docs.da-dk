@@ -18,15 +18,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e3b5d53e72cff93f853bafd89f8a51200a7e735f
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: c165213949d72fa9e7aacbc28d076969677a8802
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74354592"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192915"
 ---
 # <a name="use-actions"></a>Brug af handlinger
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Handlinger åbner op for en lang række muligheder for oprettelse af forretningslogik. I forbindelse med handlinger kan du oprette, opdatere, slette, tildele eller udføre handlingen. En handling opretter en brugerdefineret meddelelse internt. Udviklere kalder disse handlinger "meddelelser". Hver af disse meddelelser er baseret på de handlinger, der udføres på en objektpost. Hvis målet for en proces er at oprette en post, derefter opdatere den og derefter tildele den, er der tre separate trin. Hvert trin er defineret af funktionaliteten i objektet – ikke nødvendigvis dine forretningsprocesser.  
   

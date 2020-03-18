@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 63e49b656527f471d7bdd5a5d7a0b02d572c1221
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: b1894bbaa69e3c9093ccc93d6a7928a92d56535f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374763"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192064"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>DLP-politikker (forebyggelse af datatab)
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I dette dokument introduceres du til politikker om forebyggelse af datatab, som kan hjælpe med at beskytte dine organisationsdata imod at blive delt vha. en liste over forbindelse, som du definerer.
 

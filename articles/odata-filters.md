@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4e0e827b24b81ead79cb1fec73916e625b715eea
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 6a71b3ae1e72588dc6fb21aad83631a91ae1d4ba
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74375821"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193035"
 ---
 # <a name="filter-and-copy-data-with-power-automate"></a>Filtrer og kopiér data med Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Denne gennemgang viser, hvordan du opretter et flow, der overvåger en kilde til nye eller ændrede elementer og derefter kopierer disse ændringer til en destination. Du kan oprette et flow som dette, hvis dine brugere indtaster data på én placering, men dit team skal bruge dem på en anden placering eller i et andet format.
 
 Under denne gennemgang kopieres der data fra en Microsoft SharePoint-[liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (kilden) til en [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (destinationen), men du kan kopiere data til eller fra enhver af de mere end [150 tjenester](https://flow.microsoft.com/connectors/), som Power Automate understøtter.

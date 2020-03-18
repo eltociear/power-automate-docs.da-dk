@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 22736d826c6e0448e3d1272aed1b3d4f78fdb23b
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 72a4e33dafd7c2237799357cc993d9815dd36012
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74362067"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194962"
 ---
 # <a name="create-a-mobile-task-flow"></a>Opret en mobilopgaveproces
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Opret en proces i Dynamics 365 til telefoner eller Dynamics 365 til tablets, der er baseret på almindelige opgaver, som dine brugere udfører. Hvis de f.eks. har brug for at udføre en række opfølgende trin regelmæssigt efter kundemøder, kan du oprette en opgaveproces. Når brugerne trykker på den nye opgave i deres mobilapp, bliver de ført igennem processen fra start til slut, så de ikke glemmer et vigtigt trin.  
   

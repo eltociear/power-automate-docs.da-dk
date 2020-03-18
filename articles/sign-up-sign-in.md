@@ -20,20 +20,19 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3d9686ed208183aaf73a6a274b809d7a3cce4bf0
-ms.sourcegitcommit: 517c1418aca5745a93d8765cfde661067cedfdf6
+ms.openlocfilehash: b3b121a5ca131427ce896126f261e43b6bdccade
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78267151"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195997"
 ---
 # <a name="sign-up-and-sign-in-for-power-automate"></a>Tilmeld dig, og log på Power Automate
 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 Det er nemt at komme i gang med Power Automate som enkeltperson! Før du kan oprette et flow, skal du tilmelde dig ved hjælp af en hvilken som helst mailadresse. Hvis du aldrig har brugt et Microsoft-onlineprodukt med denne adresse, skal du bruge et øjeblik på at registrere den.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="sign-up-free"></a>Tilmeld dig gratis
 Hvis du ikke har brugt andre onlineprodukter fra Microsoft, skal du tilmelde dig.

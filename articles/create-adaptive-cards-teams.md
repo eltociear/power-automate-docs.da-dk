@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: 3813b32ea50c9f91ff3ac3b620796983926d365e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3ba5f24bf24f57242441fab2770bce881bc78b69
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74362941"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192111"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
 # <a name="use-adaptive-cards-in-microsoft-teams"></a>Brug tilpassede kort i Microsoft Teams
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Du kan oprette et flow, der sender [tilpassede kort](https://adaptivecards.io) til en Microsoft Teams-kanal. Med tilpassede kort kan du bruge omfattende formatering til at gøre dine opslag tydeligere, interaktive og inspirerende. Tilpassede kort kan indeholde komponenter, som billeder, grafer, tekst med omfattende formatering og meget mere.
 

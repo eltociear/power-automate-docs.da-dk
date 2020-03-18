@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ca8633ac8ee3654d8c61b55421a3feead392954c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 0541a89ad0fe5f8d7dae0acfc6f257be7532ef15
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358525"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195064"
 ---
 # <a name="use-data-operations-with-power-automate"></a>Brug datahandlinger med Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 I denne gennemgang får du mere at vide om nogle af de populære datahandlinger i Power Automate, f.eks. at skrive en meddelelse, joinforbinde, vælge, filtrere en matrix, oprette en tabel og opdele JSON, som er tilgængelige til redigering af data, når du opretter flow.
 
 ## <a name="prerequisites"></a>Forudsætninger

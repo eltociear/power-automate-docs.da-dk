@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 26bed9ab3329bbf0edf8ea055de71b732d7d0746
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 05def202f2a0b0db8a6eebb067406c96221e7d1c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355397"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195537"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-power-automate"></a>Svar på søgeanmodninger fra registrerede omfattet af GDPR for Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Det første trin som svar på en DSR-anmodning er at finde de personlige data, som anmodningen gælder. Dette første trin hjælper dig med at afgøre, om en DSR-anmodning opfylder organisationens krav, og om den skal accepteres eller afvises. Når du f.eks. har fundet og gennemset de personlige data, finder du måske ud af, at anmodningen ikke opfylder organisationens krav, fordi det kan have en negativ effekt på andres rettigheder og frihed.
 

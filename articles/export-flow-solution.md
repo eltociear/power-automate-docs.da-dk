@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 826fb3097bca225eac82f2f9abacb8089e08e500
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: 32f8269bce8e36774bf937683776f97fc618d41a
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74365609"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194939"
 ---
 # <a name="export-a-solution"></a>Eksportér en løsning
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Følg disse trin for at flytte din løsning og dens afhængigheder til et nyt miljø:
 

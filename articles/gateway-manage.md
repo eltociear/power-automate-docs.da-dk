@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f3600587897b9e64ecd76f85c8b9762e84bc7b94
-ms.sourcegitcommit: dbba53a52e2c5b1c2965f6c608e586748d5baae0
+ms.openlocfilehash: 33c2e0e6a3a35e23d0889cd19908a055cc7f5f5e
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567013"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193559"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administrer en datagateway i det lokale miljø i Power Automate.
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Installer og administrer en datagateway i det lokale miljø for at integrere en række cloudbaserede apps sikkert med dine data og apps i det lokale miljø med Power Automate.
 
