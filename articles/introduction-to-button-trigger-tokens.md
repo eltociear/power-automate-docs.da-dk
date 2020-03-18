@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b57e9dee27a2d22159a9cd805c65034a5e5bb578
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: d2a7cbf1f3bb582853583a790e2bd26f319655d3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74363884"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195721"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Kom godt i gang med tokens, der udløser knap
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="what-are-button-trigger-tokens"></a>Hvad er tokens, der udløser knap?
 Tokens, der udløser knap, er datapunkter, der er kendte og tilgængelige for enheden, hvor på der kører et [knapflow](introduction-to-button-flows.md). Disse tokens ændrer sig på baggrund af faktorer, såsom den aktuelle tid eller enhedens geografiske placering et givent øjeblik.  
 

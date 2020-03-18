@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 2830d08832bad330ec67717234f5a8cb0482d3a9
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 5e1dc452bdbe7aa65700d159cf9365812dc50bfb
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74369036"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194134"
 ---
 # <a name="respond-to-gdpr-data-subject-discovery-requests"></a>Besvar søgeanmodninger fra fysiske personer omfattet af GDPR 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Det første trin som svar på en DSR-anmodning er at finde de personlige data, som anmodningen gælder.
 Nedenfor finder du en oversigt over, hvilke typer af Power Automate-ressourcer der indeholder personlige data for en bruger, som godkendes med sin Microsoft-konto (MSA).

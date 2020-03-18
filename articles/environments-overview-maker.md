@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 263ebf710d280ebd7c4a6d2846fa859693561476
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 7d62aa0870af1be0e05e0a3799d02cfdfe705e3c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355466"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195422"
 ---
 # <a name="choosing-an-environment"></a>Valg af et miljø
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I denne artikel introduceres du til **miljøer** i Power Automate, hvor du kan oprette og isolere dine flow, gateways, forbindelser og andre ressourcer på en sikker måde.
 

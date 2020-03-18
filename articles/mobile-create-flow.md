@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2faafe936dc9659a50b7e249c75eb9c495101fbf
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 393ae5f6a86363610c26aea78a04748f34dc4f97
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74377592"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193605"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Opret et flow fra din telefon vha. Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Opret et flow fra din telefon ved hjælp af en skabelon, som du kan finde ved at søge på en liste over tjenester, gennemse kategorier eller angive nøgleord. Følg trinnene i dette emne for at oprette et flow, der sender en pushmeddelelse til din telefon, når du modtager en mail fra din chef.
 
 Hvis du ikke er fortrolig med Power Automate, kan du [få vist en oversigt](getting-started.md).

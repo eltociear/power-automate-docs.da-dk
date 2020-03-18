@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e8f7b993b59c269b56dac2f13d4db166ed3e91b7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 28199ab8b2a2dbf18ef89b905b2bdd362ff9e82b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74373061"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194088"
 ---
 # <a name="manage-sequential-approvals-with-power-automate"></a>Administrer sekventielle godkendelser med Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Nogle arbejdsprocesser kræver forhåndsgodkendelse, før den endelige godkender skal godkende dem. Et firma kan f.eks. have en sekventiel godkendelsespolitik, der kræver forhåndsgodkendelse for fakturaer over DKK 1.000,00, før de kan godkendes af økonomiafdelingen.
 
 I denne gennemgang opretter vi et sekventielt godkendelsesflow til administration af medarbejderes anmodning om ferie.

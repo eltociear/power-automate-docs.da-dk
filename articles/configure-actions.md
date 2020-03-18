@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9157159a263bb2b8be41445aebb478fc6aa2ddb3
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: cba86e3e10591bb5e1ac36a68840ff7954146329
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74360549"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193495"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Konfigurer brugerdefinerede handlinger fra en arbejdsproces
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Du kan aktivere en brugerdefineret handling fra en arbejdsproces uden at skrive kode. Flere oplysninger: [Aktivér brugerdefinerede handlinger fra en arbejdsproces](invoke-custom-actions-workflow-dialog.md).  
   

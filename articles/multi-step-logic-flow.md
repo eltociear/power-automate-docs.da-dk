@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fbc18e31b571149164b7316bdaa02d2840686995
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: e6a64f60802330857f8e17c9d4ea179426307633
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74376327"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224394"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Føj flere handlinger og avancerede indstillinger til et flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Tilpas et flow ved at tilføje en eller flere avancerede indstillinger og flere handlinger for den samme udløser. Tilføj f.eks. en avanceret indstilling, der sender en mail med høj prioritet. Udover at sende en mail, hvor et element er føjet ti len SharePoint-liste, kan du oprette en fil i Dropbox, der indeholder de samme oplysninger.
 
 ## <a name="prerequisites"></a>Forudsætninger

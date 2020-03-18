@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fe7e8f685d319e11994adaf1926d2d0ab03706d7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 5a2fa063b5379999a5dcbe37a56271fccf435cae
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358571"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192364"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Introduktion til knapflows med brugerinput
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Opret et knapflow til at køre rutineopgaver med blot et tryk på en knap. Tilpas dit flow ved at tillade brugeren at angive bestemte oplysninger, der skal bruges, når knapflowet køres. Dette emne gennemgår oprettelsen af et knapflow, der tager imod input fra brugeren og derefter kører knapflowet og fremhæver, hvordan brugerinput leveres.
 
 Du kan oprette et knapflow på Power Automate-webstedet eller i mobilappen til Power Automate. Du skal bruge webstedet til dette emne.

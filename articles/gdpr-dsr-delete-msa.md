@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9ef70579798b353ddcd8a961604665a287cd63a
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 48aafe66584e42f3011b135ff8dbdc5fec69737f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368139"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193927"
 ---
 # <a name="respond-to-gdpr-data-subject-delete-requests"></a>Svar på sletteanmodninger fra fysiske personer omfattet af GDPR
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 **Retten til sletning** ved at fjerne personlige data er en central sikkerhedsdetalje i persondataforordningen. Fjernelse af personlige data inkluderer fjernelse af alle personlige data, men ikke oplysninger fra overvågningslogge.
 

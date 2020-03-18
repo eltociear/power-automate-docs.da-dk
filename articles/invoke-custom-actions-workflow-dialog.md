@@ -22,15 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 15cbfdf61a25287714f0244639ec4a3246bd845c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: a35523209e3db8444da71c0757db29fa21de08b3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355420"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195399"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Aktivér brugerdefinerede handlinger fra en arbejdsproces
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Arbejdsprocesser har mange funktioner, der understøtter forskellige virksomhedsscenarier. Kald af grundlæggende databehandlinger for en post, f.eks opret, opdater og slet fra en arbejdsproces, er svaret på forholdsvis mange virksomhedsscenarier. Hvis du kombinerer funktionerne i arbejdsprocesser med effektiviteten af brugerdefinerede handlinger, der kaldes direkte fra en arbejdsproces, føjer du et helt nyt omfang af virksomhedsscenarier til dit program uden at skulle skrive kode.  
   

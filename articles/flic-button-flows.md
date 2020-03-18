@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a9042e258c1e99aafc5e20b9d1adce9782dc09ca
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 65d9a93215030905f41e082d38789592a4267404
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74366621"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194341"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Kør dine flows ved at trykke på en Flic-smartknap
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Udløs dine flows ved at trykke på en fysisk knap, kaldet Flic, fra Shortcut Labs. Du kan for eksempel trykke på en Flic-knap for at registrere arbejdstimer, blokere din kalender, tælle antal deltagere ved et arrangement eller gemme geografiske lokationer.
 
 > [!IMPORTANT]

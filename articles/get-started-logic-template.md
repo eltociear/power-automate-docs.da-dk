@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f2e92d43a33a4a05523ae350a63aa68f9cda2d1f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8ccb933188902b89fa45b65cfec0d3d0e96de4c8
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368691"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195698"
 ---
 # <a name="create-a-flow-from-a-template-in-power-automate"></a>Opret et flow ud fra en skabelon i Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Opret et flow fra en af de mange indbyggede skabeloner, der f.eks. kan sende dig en Slack-meddelelse, når din chef sender dig en mail i Office 365.
 
 **Bemærk!** [Opret et flow fra bunden](get-started-logic-flow.md), hvis du allerede har en proces i tankerne og kan ikke finde en skabelon til den.

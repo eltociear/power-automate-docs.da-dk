@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 84b3a8956008149f80f1790a20c1388dde8737ac
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f341adb319c20a201525bb6b7a8a0c54e2da5ea3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74360227"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195031"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Opret et flow ved hjælp af Dynamics 365 (online)
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Ved hjælp af en Dynamics 365-forbindelse kan du oprette flows, der starter, når en hændelse indtræffer i Dynamics 365 eller en anden tjeneste, som derefter udfører en handling i Dynamics 365 eller en anden tjeneste. 
 
 Du kan konfigurere automatiserede flow i Power Automate mellem dine yndlingsprogrammer og -tjenester for at synkronisere filer, modtage meddelelser, indsamle data og meget mere. Du finder flere oplysninger under [Kom i gang med Power Automate](getting-started.md).

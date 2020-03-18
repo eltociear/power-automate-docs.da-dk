@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 256e874e2b70844219cd1c21e2ed37f2a96ba78c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: e9f4418ae532c3c6e2f3511ee7ee873695bc8f9f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367380"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79191949"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-power-automate"></a>Svar på anmodninger fra registrerede omfattet af GDPR for Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Læs denne artikel for at forberede dig og din organisation på EU's GDPR (General Data Protection Regulation – generel forordning om databeskyttelse). Denne artikel beskriver ikke blot, hvad Microsoft gør for at forberede sig på GDPR, men kommer også med eksempler på, hvad du kan gøre i dag for at overholde GDPR, når du bruger Power Apps, Power Automate og Common Data Service.
 

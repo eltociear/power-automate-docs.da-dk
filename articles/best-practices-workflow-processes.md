@@ -22,15 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0b52fad0c5e8e1291dadf7422dafbb5902ee4646
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: f3d02ca92b94752a8bbe6e3458fa8639de917dd8
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74356938"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193996"
 ---
 # <a name="best-practices-for-workflow-processes"></a>De bedste fremgangsmåder for arbejdsprocesser
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Dette emne indeholder de bedste fremgangsmåder til oprettelse og administration af arbejdsprocesser.  
   
@@ -62,7 +62,7 @@ I forbindelse med arbejdsprocesser, der ikke kører i baggrunden (synkront), anb
 ![Indstillingen til opbevaring af logge for mislykkede arbejdsprocesser](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Begræns antallet af arbejdsprocesser, der opdaterer det samme objekt
-Kørsel af mere end én arbejdsproces, der opdaterer det samme objekt, kan forårsage ressourcelåsproblemer. Forestil dig, at flere arbejdsprocesser kører, hvor hver mulighed for opdatering udløser en opdatering for den tilknyttede konto. Flere forekomster af disse arbejdsprocesser, der kører og forsøger at opdatere den samme kontopost på samme tid, kan resultere i ressourcelåsproblemer. Der opstår arbejdsprocesfejl, og en fejlmeddelelse, f.eks. **SQL Timeout: Kan ikke hente lås på ressourcen _ressourcenavn_** , registreres. 
+Kørsel af mere end én arbejdsproces, der opdaterer det samme objekt, kan forårsage ressourcelåsproblemer. Forestil dig, at flere arbejdsprocesser kører, hvor hver mulighed for opdatering udløser en opdatering for den tilknyttede konto. Flere forekomster af disse arbejdsprocesser, der kører og forsøger at opdatere den samme kontopost på samme tid, kan resultere i ressourcelåsproblemer. Arbejdsprocesfejl opstår, og en fejlmeddelelse som f.eks **SQL Timeout: Lås på ressource kunne ikke hentes _ressourcenavn_** , registreres. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   

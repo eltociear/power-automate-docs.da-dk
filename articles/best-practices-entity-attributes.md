@@ -19,15 +19,15 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: ffc9fef64a9eda74d8a834745204fd635125e0c2
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8a5fb3cc698f20f025089524e6198c158f710980
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74357260"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193950"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Bedste praksis for brug af enhedsattributter for forretningsprocesforløb
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 
 Ældre procesrelaterede attributter i enheder frarådes. Her er nogle oplysninger om den bedste praksis for brug af attributten *Aktiv fase* (activestageid) i enheden for forretningsprocesforløb. 

@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: d33b1e78678c7029d441bcf00f6c066d7f492a66
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ea98043ee9ab952cfd929a100cb76e42508b84bc
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74359238"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194203"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Opret brugerdefinerede svarmuligheder for godkendelsesflow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder uploader en udgiftsrapport til SharePoint, og derefter vil tillade, at godkenderen svarer med en af følgende tre muligheder: Acceptér, Angiv flere oplysninger eller Afvis.
 

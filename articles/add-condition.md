@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: aca3291bcbda1917b669107b73f84248741dee7e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3be9b2414a0f30581763622de0c7d49cb694e3b3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "75867822"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224233"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Føj en betingelse til et flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Angiv, at et flow kun skal udføre en eller flere opgaver, hvis en betingelse er sand. Angiv f.eks., at du kun skal have en mail, hvis en tweet, der indeholder et nøgleord, videresendes mindst ti gange.
 

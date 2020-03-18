@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5af881b25afb9dbc1554eaf730b21e2bf27f095d
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 624475254503f44756d97b1e59cc4896b586ab20
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367863"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193582"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="audience-and-strategy"></a>Målgruppe og strategi
 ### <a name="what-is-power-automate"></a>Hvad er Power Automate?
 Power Automate er en cloudbaseret tjeneste, som gør det praktisk og enkelt for line of business-brugere at skabe arbejdsprocesser, som automatiserer tidskrævende opgaver og processer i virksomheden på tværs af programmer og tjenester.

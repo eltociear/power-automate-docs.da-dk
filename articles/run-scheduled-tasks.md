@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e8acff386e031eba3bb48a9f8abd535f8ce57940
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4970554dee8e031a746cf604e2a628f41056b46c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74373452"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193674"
 ---
 # <a name="run-flows-on-a-schedule"></a>Kør flows efter en tidsplan
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Opret et flow, der udfører en eller flere handlinger (f.eks afsendelse af en rapport i en mail):
 
 * en gang om dagen, i time eller i minuttet

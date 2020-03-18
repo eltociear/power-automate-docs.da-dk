@@ -18,15 +18,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 46985cc33ac099c75c6e8e976aba19d7a5d6c567
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3c1eb0f208f964f2a41e26ca831c60edef0d747c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74370301"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195956"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Brug udtryk i betingelser til at kontrollere flere værdier
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 I denne gennemgang får du mere at vide om, hvordan du bruger udtryk og **betingelser** til at sammenligne flere værdier i **avanceret tilstand**.
 
 Når du opretter et flow, kan du bruge kortet [**Betingelse**](add-condition.md#add-a-condition) i grundlæggende tilstand til hurtigt at sammenligne en enkelt værdi med en anden værdi. Der vil dog nogle gange være behov for at sammenligne flere værdier. Det kan f.eks. være, at du vil kontrollere værdien af et par kolonner i et regneark eller en databasetabel.

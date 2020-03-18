@@ -12,15 +12,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c4be61dfafa17c3808eb497aa9ed7d1bcaaecbab
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 6e3e6d1ca0a1700bbfaf6d8e8fb76cc888456c2c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74373659"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193725"
 ---
 # <a name="replace-classic-common-data-service-workflows-with-flows"></a>Erstat klassiske arbejdsprocesser i Common Data Service med flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I dette emne sammenlignes Power Automate-funktioner med en klassisk arbejdsproces.
 

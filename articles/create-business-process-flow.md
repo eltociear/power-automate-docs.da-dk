@@ -22,15 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2c8e512c39805296e5885266750b59b49feca482
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ad075ec6c4b00d46f000b86aaa9166e40adda640
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74359192"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194042"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Selvstudium: Opret et forretningsprocesflow for at standardisere processer
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I dette selvstudium kan du se, hvordan du opretter et forretningsprocesforløb med Power Apps. Få mere at vide om, hvorfor du bruger forretningsprocesforløb, under [Oversigt over forretningsprocesforløb](business-process-flows-overview.md). Du kan finde oplysninger om, hvordan du opretter et forløb for en mobil opgave under [Opret et forløb for en mobil opgave](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   

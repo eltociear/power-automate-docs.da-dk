@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f2e46711637497120872848f239d59651ab875d5
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: b4e087855890d7ca94a8288793494ce1e81826b2
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358088"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193283"
 ---
 # <a name="manage-connections-in-power-automate"></a>Administrer forbindelser i Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Hvis du opretter en forbindelse i Power Automate, kan du nemt få adgang til dine data, mens du bygger et flow. Power Automate indeholder almindeligt anvendte forbindelser, herunder SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter m.m. Forbindelser deles med Power Apps, så når du opretter en forbindelse i ét produkt, viser forbindelsen sig i det andet.
 
 Du kan f.eks. bruge en forbindelse til udføre disse opgaver:

@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 7ad18de11dcd06b38a0be4ea9d076ff5ea83252e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 0908540147d867b944101f01431a111e81adf33c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358295"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193467"
 ---
 # <a name="the-admin-center"></a>Administration
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Administration er den centrale placering, hvor lejeradministratorer og miljøadministratorer administrerer en organisations datapolitikker og miljøer. De ændringer, du foretager i Administration er umiddelbart tilgængelige for brugere i organisationen.
 

@@ -16,15 +16,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 577bad2fa7e0db66c95fae5668c4a576e3c3a2d7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 2fedda5160291362d1ff4fcbcf91cec9f4e78713
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74365172"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195583"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Selvstudium: Optimer forretningsprocesflows med forgrening
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Forretningsprocesforløb fører dig gennem forskellige faser i salg, marketing eller serviceprocesser, indtil forløbet er fuldført. I simple tilfælde er et lineært forretningsprocesforløb en god mulighed. I mere komplekse scenarier kan du dog forbedre et forretningsprocesforløb med forgreninger. Hvis du har tilladelse til at oprette i forretningsprocesforløb, kan du oprette forretningsprocesforløb med flere forgreninger ved hjælp af logikken `If-Else`. Forgreningsbetingelsen kan være udformet af flere logiske udtryk, der bruger en kombination af operatorerne `AND` eller `OR`. Valg af forgrening sker automatisk, i realtid, baseret på regler, der er defineret i løbet af procesdefinitionen. Når du f.eks. sælger biler, kan du konfigurere et enkelt forretningsprocesforløb, som efter en fælles kvalificeringsfase opdeles i to separate forgreninger på baggrund af en regel (Foretrækker kunden en ny bil eller en brugt bil, er kundens budget over eller under 150.000 osv. ), én forgrening til salg af nye biler og en anden forgrening til salg af brugte biler. Du kan få flere oplysninger om forretningsprocesforløb under [Oversigt over forretningsprocesforløb](business-process-flows-overview.md).  
   

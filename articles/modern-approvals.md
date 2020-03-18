@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c174ad7fe18539a7dc1d44acf315d569f4b35a39
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4892ac2806009a1ed33b8bfb019b551aec6fce70
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74376511"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224302"
 ---
 # <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Opret og test en arbejdsproces for godkendelse med Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Med Power Automate kan du administrere godkendelse af dokumenter eller processer på tværs af flere tjenester, herunder SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk eller WordPress.
 

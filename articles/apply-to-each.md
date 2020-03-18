@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3f4ddd361eaad062a7287c1d0b33e00fc320e69e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9eb1707da3f0aa365750cbed4e69715ce818aaff
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74357904"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193766"
 ---
 # <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Brug handlingen "Anvend på hver enkelt" i Power Automate for at behandle en liste over elementer med jævne mellemrum
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Mange udløsere kan straks begynde et flow på baggrund af en hændelse, f.eks. når du modtager en ny mail i din indbakke. Disse udløsere er gode, men nogle gange du vil køre et flow, der forespørger en datakilde efter et foruddefineret interval og udfører visse handlinger på baggrund af egenskaberne for elementerne i datakilden. For at gøre dette kan du starte dit flow efter en tidsplan (f.eks. én gang pr. dag) og bruge en gennemgangshandling, f.eks **Anvend på hver enkelt** for at behandle en liste over elementer. Du kan f.eks. bruge **Anvend på hver enkelt** til at opdatere poster fra en database eller en liste over elementer fra Microsoft SharePoint.
 
 I denne gennemgang opretter vi et flow, der kører hvert 15. minut, og som gør følgende:

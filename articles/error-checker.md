@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: 1c847d4d1f84f68772af227b35ff1349f2963d39
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 229ebd44dfed2bd234bfc86ed9ab27cb438274fa
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355259"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195353"
 ---
 # <a name="the-power-automate-checker"></a>Power Automate-kontrollen
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Power Automate-kontrollen resulterer i flow i en højere kvalitet ved at sikre, at du følger den bedste praksis, når du designer flow. Når du kører kontrollen, får du indsigt i spørgsmål som "hvilke områder af mit flows implementering udgør en risiko for ydeevne eller pålidelighed?".
 

@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: feca66dc9148d6416e2bac8a6e690cee62d6aa9b
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 74a7bdb451771dd11e88dbf824c3d92383b5a66d
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74369082"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194111"
 ---
 # <a name="start-to-build-with-power-automate"></a>Begynd at oprette vha. Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Her er nogle af de måder, du kan udvide dit program på med Power Automate:
 

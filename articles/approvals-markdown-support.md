@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 34689f9f153f8c1b68be3631eac6664561e987ce
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4633df9687662c49757dd9cbb4d1d88892dfbe51
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74357444"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193628"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug Markdown i anmodninger om Power Automate-godkendelse
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Markdown)-syntaksen til at føje avanceret formatering til dine godkendelsesanmodninger.
 

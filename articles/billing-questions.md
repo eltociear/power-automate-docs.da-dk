@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 5534b96eaa8ad762d24794f84c983811bf116d7f
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 050d4bcd9bea03d41bbd403455ac6a7df9a0e1ff
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575005"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224256"
 ---
 # <a name="billing-and-metering-questions"></a>Spørgsmål om fakturering og måling
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 I denne artikel finder du svar på ofte stillede spørgsmål om fakturering og måling i Power Automate.
 

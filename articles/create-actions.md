@@ -15,15 +15,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 140afe0c93b85363b8dab9658838d985ab9e786c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 027038047dfa978a647ffcb129a16885915d4ce7
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361469"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194755"
 ---
 # <a name="create-a-custom-action"></a>Opret en brugerdefineret handling
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Du kan benytte brugerdefinerede handlinger, når du vil automatisere en serie kommandoer i systemet. Handlinger udvider den ordliste, der er tilgængelig for udviklere til at udtrykke forretningsprocesser. De vigtige verber som f.eks. Opret, Opdater, Slet og Tildel leveres af systemet, og en handling bruger disse vigtige verber til at oprette mere sigende verber som f.eks. Godkend, Eskaler, Distribuer eller Planlæg. Hvis definitionen af en forretningsproces ændres, kan en person, der ikke er udvikler, redigere den brugerdefinerede handling, så koden ikke behøver at blive ændret.  
   

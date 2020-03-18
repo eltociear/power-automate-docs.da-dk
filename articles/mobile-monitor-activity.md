@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2c02b50289988a6462ed33df92350e9e4286b785
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: aa2b5eb13479f50f88ba7f723c5d1649746c74ec
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74376810"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79196089"
 ---
 # <a name="monitor-activity-in-power-automate-from-your-phone"></a>Overvåg aktiviteten i Power Automate fra din telefon
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Få vist en oversigt over, hvor mange gange hvert flow er lykkedes eller mislykkedes i dag, i går og de forrige dage. Udforsk detaljer om hver kørsel, f.eks. hvornår den er kørt, hvor lang tid hvert trin tog og hvorfor den evt. mislykkedes.
 
 **Forudsætninger**

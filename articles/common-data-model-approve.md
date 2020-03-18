@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: eab01a20f44f68a85601ff824175f1a506ebec87
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 6346772d3eba6177577f7c5d7a151174f1a575f9
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361308"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193858"
 ---
 # <a name="build-an-approval-loop-by-using-power-automate-and-the-microsoft-common-data-service"></a>Opret en godkendelsesløkke ved hjælp af Power Automate og Microsoft Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Med Common Data Service kan du oprette flow på en måde, hvor oplysningerne gemmes i en database, der er uafhængig af et flow. Det bedste eksempel på dette er godkendelser. Hvis du gemmer status for godkendelsen i en enhed, kan dit flow arbejde oven på den.
 
 I dette eksempel skal du oprette en godkendelsesproces, der starter, når en bruger føjer en fil til Dropbox. Når filen er tilføjet, vises oplysninger om det i en app, hvor en validator kan godkende eller afvise ændringen. Hvis validatoren godkender eller afviser ændringen, sendes der en meddelelsesmail, og afviste filer slettes fra Dropbox.

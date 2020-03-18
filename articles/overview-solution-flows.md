@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94ea624378a58e92441e1c72ce3e0ff72040a7f2
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 56b90ebdf7f3655763b7e40c60b985f06604c47b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74375131"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194019"
 ---
 # <a name="overview"></a>Oversigt
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Når du er vært for dine flow i en [løsning](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), bliver de mobile, hvilket gør det nemt at flytte dem og alle deres komponenter fra ét miljø til et andet. Et typisk scenarie er en uafhængig softwareproducent (ISV), der udvikler flow i et sandkassemiljø og derefter flytter disse flow til et testmiljø. Efter at have testet disse flow flytter softwareproducenten dem til et produktionsmiljø for klienter, der køber disse flow. Denne proces er meget nemmere, når du opretter dine flow i løsninger og derefter flytter løsningerne og deres indhold.
 

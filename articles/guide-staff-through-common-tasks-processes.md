@@ -22,15 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c5cc72f79b411f8ba50120308bcaf6dd03b302e6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: af51cc703dbb42296493237bdd25387c6c15720c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368346"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194732"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Opret brugerdefineret forretningslogik via processer
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 En af det vigtigste grunde til at bruge modeldrevne apps er, at du kan definere og gennemtvinge forretningsprocesser konsekvent. Konsistente processer er med til at sikre, at brugerne af systemet kan fokusere på deres arbejde og ikke på at huske at skulle udføre et række manuelle trin. Processer kan være simple eller avancerede og kan ændre sig over tid.  
   

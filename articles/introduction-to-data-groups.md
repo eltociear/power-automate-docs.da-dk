@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 205857821402a629bebffe005525536ed42f9669
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ca3271f7c61c6835c856bc363f64882802f1556f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355236"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195606"
 ---
 # <a name="learn-all-about-data-groups"></a>Få mere at vide om datagrupper
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="what-is-a-data-group"></a>Hvad er en datagruppe?
 Datagrupper er en nem måde at kategorisere tjenesteydelser inden for en [DLP-politik (forebyggelse af datatab)](prevent-data-loss.md). Der findes to datagrupper: gruppen **Business data only** (Kun firmadata) og gruppen **No business data allowed** (Firmadata er ikke tilladt). Organisationer kan frit bestemme, hvilke tjenester der er placeret i en bestemt datagruppe. Det er en god ide at kategorisere tjenesterne efter, i hvor høj grad de påvirker organisationen. Alle tjenester er som standard placeret i datagruppen **No business data allowed** (Firmadata er ikke tilladt). Du kan administrere tjenester i en datagruppe, når du opretter eller redigerer egenskaberne for en DLP-politik fra Admin Center.
 

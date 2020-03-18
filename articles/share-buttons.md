@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3209748b03823add7622472665ce70b4cd581b1f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9b5671096bbecd9221d3849cd656548291acd4c9
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74372739"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194410"
 ---
 # <a name="share-button-flows-in-power-automate"></a>Del knapflow i Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 I mobilappen Power Automate kan du dele [knapflow](introduction-to-button-flows.md) (knapper) med andre brugere eller grupper i din organisation. Når du deler en knap, kan personen eller gruppen, du deler med, bruge din knap på samme måde, som de bruger deres egne knapper. Du kan også [dele et link](share-buttons.md#re-share-a-button) til knapper, en anden person har delt med dig. Du kan til enhver tid [stoppe med at dele](share-buttons.md#stop-sharing-a-button) dine knapper.
 
 > De skærmbilleder, der er brugt i dette dokument, er taget fra en Android-enhed. Hvis du bruger en iPhone, kan billederne se anderledes ud, men funktionaliteten er den samme.

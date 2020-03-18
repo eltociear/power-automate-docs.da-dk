@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ce726a2f4bfdbd7c57a60e5dcc25eb5cee504bce
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8f4a1fcf0feb893f3eca8ac12b6b7f725aceed10
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "75951512"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194226"
 ---
 # <a name="business-process-flows-overview"></a>Oversigt over forretningsprocesforløb
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Du kan hjælpe med at sikre, at personer angiver data på en ensartet måde og følger de samme trin, hver gang de arbejder med en kunde, ved at oprette et forretningsprocesforløb. Du kan f.eks. oprette et forretningsprocesforløb, hvis du vil have alle til at håndtere anmodninger om kundeservice på samme måde, eller hvis medarbejderne skal have godkendt en faktura, før de afgiver en ordre. Forretningsprocesforløb bruger den samme underliggende teknologi som andre processer, men de funktioner, de indeholder, er meget forskellige fra andre funktioner, der bruger processer. Du kan få mere at vide om, hvordan du opretter eller redigerer en forretningsproces, under [Opret et forretningsprocesforløb](create-business-process-flow.md).  
   

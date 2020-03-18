@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: adfbf357d1ebe31621ecf1703573d86d1e549ca8
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 521876e669e87c40f6108c46d7e4e0aee962ca34
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74354730"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194318"
 ---
 # <a name="power-automate-mobile-app-supports-microsoft-intune"></a>Power Automate-mobilappen understøtter Microsoft Intune
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Power Automate-mobilappen til iOS og Android understøtter administration af mobilapps (MAM – Mobile Application Management) i Intune uden tilmelding af enheden. Ved hjælp af MAM kan it-administratorer oprette og gennemtvinge politikker for mobildata for at beskytte organisationsdata.
 
