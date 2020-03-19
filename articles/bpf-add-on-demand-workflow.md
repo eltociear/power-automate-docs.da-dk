@@ -17,15 +17,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7f6319bd0091c4c857e7df133c36b38a0cd78891
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: bb8ca7efb83a863f3031dd18d0d9bd67ae3c5c07
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74356823"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194065"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Føj en arbejdsproces efter behov til et forretningsprocesforløb
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Du kan udløse arbejdsprocesser efter behov inde i et forretningsprocesforløb. Du kan f.eks. føje en arbejdsproces efter behov til et forretningsprocesforløb, så der oprettes en aktivitet, f.eks. en opgave eller mail hver gang et trin er fuldført. 
 
@@ -34,8 +34,8 @@ En arbejdsproces bliver aktiveret, afhængigt af hvor du slipper arbejdsprocesse
 - Globale processer efter behov. Når arbejdsprocessen slippes i området **Globale arbejdsprocesser**, udløses arbejdsprocessen ved procesaktivering eller procesarkivering (når statussen går videre til en anvendt, fuldført, genaktiveret eller afbrudt fase). 
 
 Bemærk følgende krav, når du føjer en arbejdsproces til et forretningsprocesforløb.
-- For arbejdsprocesser, der føjes til en fase: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for det samme objekt i den fase, hvor du tilføjer arbejdsprocessen.  
-- For globale arbejdsprocesser: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for det primære objekt for forretningsprocessen.
+- For arbejdsprocesser, der føjes til en fase: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for den samme enhed i den fase, hvor du tilføjer arbejdsprocessen.  
+- For globale arbejdsprocesser: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for den primære enhed for forretningsprocessen.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Føj en arbejdsproces efter behov til en fase i et forretningsprocesforløb
 

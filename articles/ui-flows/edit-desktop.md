@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0be3b3656cf9683b43d4ba22bc23b537ccc4e597
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: 49586e7035c4a1796ff624667b2562d2a64c576a
+ms.sourcegitcommit: ace3dbcbda208991201b770b9c707ec39faaa0d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244280"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79384546"
 ---
 # <a name="edit-desktop-ui-flows"></a>Rediger desktopbrugergrænsefladeflow
 
@@ -53,6 +53,7 @@ Avancerede parametre giver dig mulighed for at ændre følgende:
 
 -  Forsinkelsen, efter handlingen blev udført. Du kan f.eks. tilføje en endnu en forsinkelse ved at ændre PT0S til PT1S. Dette kan være nyttigt, når destinationsprogrammet har en langsom svartid, der ikke fuldføres før næste trin i dit flow for brugergrænsefladen.
 -   [Selektoren](edit-desktop.md#set-the-selector) for elementet i brugergrænsefladen for destinationsbrugeren.
+
 
 ## <a name="add-a-recording"></a>Tilføj en optagelse
 
@@ -161,6 +162,26 @@ Du kan hente **elementXPath** ved hjælp af [Optageren for brugergrænsefladen W
 Fjern det første element (alt før /Window), før du bruger resultatet i **elementXPath** i selektoren.
 
 Test dit flow for brugergrænsefladen for at bekræfte, at selektoren fungerer korrekt.
+
+## <a name="use-advanced-controls"></a>Brug avancerede kontrolelementer
+
+Du kan inkorporere avancerede kontrolelementer, f.eks. handlinger af typen **betingelser**, **skift sager** og **afslut** i dine flow for brugergrænseflade.
+
+Du kan udføre disse avancerede handlinger ved at udføre følgende trin i et eksisterende flow for brugergrænseflade.
+
+1. Vælg det flow for brugergrænseflade, du har oprettet > **Flere kommandoer** (...) > **Rediger**.
+
+1. Vælg **+**  > **Tilføj en handling** i rullemenuen i det flow for brugergrænsefladen, som du vil føje logik til.
+
+   ![Tilføj en handling](../media/edit-desktop/add-action.png)
+
+1. Vælg **Indbygget**, og vælg derefter en af de kontrolhandlinger, der er tilgængelige.
+
+   ![Indbygget](../media/edit-desktop/select-built-in.png)
+
+1. Fuldfør det udtryk, der skal evalueres. Du kan bruge dynamisk indhold og udtryk til at evaluere din betingelse og skifte kontrolelementer. Du kan desuden bruge et hvilket som helst output, der er genereret fra de forrige trin i flowet for brugergrænseflade.
+
+   ![Betingelseskort](../media/edit-desktop/condition-card.png)
 
 
 ## <a name="enable-coordinate-based-playback"></a>Aktivér koordinatbaseret afspilning
