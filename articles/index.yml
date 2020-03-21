@@ -2,7 +2,7 @@
 title: Dokumentation til Power Automate
 summary: Power Automate er en tjeneste, der hjælper dig med at oprette automatiserede arbejdsprocesser mellem dine favoritprogrammer og -tjenester, så du kan synkronisere filer, få meddelelser, indsamle data og meget mere.
 metadata:
-  title: Landingsside til Power Automate
+  title: Dokumentation til Power Automate
   description: Giver adgang til fremhævede områder i dokumentationen til Power Automate
   services: service
   ms.service: flow
@@ -12,12 +12,12 @@ metadata:
   author: MSFTMAN
   ms.author: Deonhe
   ms.date: 01/18/2020
-  ms.openlocfilehash: b62daba1b1c41f8d9655ddbadae8210a9fbb4a49
-  ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+  ms.openlocfilehash: c3a46514627a133e6f90abd6476ecd3d914dcdf2
+  ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 03/12/2020
-  ms.locfileid: "79194801"
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "80082139"
 landingContent:
 - title: Om Power Automate
   linkLists:
