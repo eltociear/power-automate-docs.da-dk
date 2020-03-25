@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 49586e7035c4a1796ff624667b2562d2a64c576a
-ms.sourcegitcommit: ace3dbcbda208991201b770b9c707ec39faaa0d9
+ms.openlocfilehash: e56c6559c78de3bed4dabddaffb9c02c8be49631
+ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79384546"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79437252"
 ---
 # <a name="edit-desktop-ui-flows"></a>Rediger desktopbrugergrænsefladeflow
 
@@ -182,6 +182,45 @@ Du kan udføre disse avancerede handlinger ved at udføre følgende trin i et ek
 1. Fuldfør det udtryk, der skal evalueres. Du kan bruge dynamisk indhold og udtryk til at evaluere din betingelse og skifte kontrolelementer. Du kan desuden bruge et hvilket som helst output, der er genereret fra de forrige trin i flowet for brugergrænseflade.
 
    ![Betingelseskort](../media/edit-desktop/condition-card.png)
+
+
+## <a name="handle-error-conditions"></a>Håndter fejlbetingelser
+
+Der kan opstå uventede betingelser under afspilning, og det kan medføre, at dine brugergrænsefladeflow mislykkes. Du kan bruge avancerede egenskaber til fejlhåndtering for at oprette alternative trin, når der opstår uventede betingelser. 
+
+Det drejer sig om følgende trin.
+
+1. Log på [Power Automate](https://powerautomate.microsoft.com) ved hjælp af din skole- eller arbejdskonto.
+1. Vælg **Mine flow** > **Brugergrænsefladeflow** for at få vist dine brugergrænsefladeflow.
+1. Vælg **Flere kommandoer** (de tre lodrette prikker for det brugergrænsefladeflow, du vil redigere).
+1. Vælg **Rediger**.
+1. Vælg pil ned umiddelbart inden det brugergrænsefladetrin, du vil føje fejlhåndtering til, og vælg derefter **+** (Indsæt nyt trin).
+   
+   I følgende billede indsætter vi det nye trin før trinnet **PostElementText 1**. Det betyder, at hvis **PostElementText 1** mislykkes, køres de alternative trin, som herefter definerer.
+
+      ![Billede af Indsæt nyt trin](../media/edit-desktop/insert-new-step.png) 
+
+1. Vælg **Tilføj en parallel forgrening**.
+
+    ![Billede, der viser Tilføj en parallel forgrening og andre indstillinger](../media/edit-desktop/add-parallel-branch.png)
+
+1. Vælg den handling, der skal udføres i den parallelle forgrening, hvis der opstår en fejl, når brugergrænsefladeflowet køres.
+
+   Du kan vælge **Optag-app** for at foretage en ny optagelse af den parallelle forgrening eller vælge **Afbryd** via de **indbyggede** handlinger for at afslutte brugergrænsefladeflowet på en ordentlig måde, hvis der opstår en fejl.
+
+    ![Billede, der viser indstillingerne for den parallelle forgrening](../media/edit-desktop/add-parallel-branch.png)
+
+   >[!NOTE]
+   >Den handling, du tilføjer i den parallelle forgrening, kører som standard kun, hvis det foregående trin mislykkes. Du kan vælge **...** på den parallelle forgrening > **Konfigurer kørsel efter** for at ændre standardfunktionsmåden. 
+
+      ![Billede, der viser indstillingerne, herunder Konfigurer kørsel efter](../media/edit-desktop/configure-run-after.png)
+
+1.  På denne skærm kan du vælge den betingelse, som den parallelle forgrening skal udføres på. Du kan vælge mellem fire tilgængelige indstillinger.
+
+    ![Billede, der viser indstillingerne for kørsel efter](../media/edit-desktop/run-after-options.png)
+
+    Bemærk! Du kan ikke gemme et brugergrænsefladeflow, hvor både hovedforgreningen og den parallelle forgrening er angivet til at køre på samme betingelse.
+
 
 
 ## <a name="enable-coordinate-based-playback"></a>Aktivér koordinatbaseret afspilning

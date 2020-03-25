@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 825ebceb042215c379340f1e1b7e2dae6f921c2c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 96c93771129ab0454d03e721a36d429e6cc894d5
+ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79196025"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79437164"
 ---
 # <a name="set-up-ui-flows"></a>Konfigurer brugergrænsefladeflow
 
@@ -82,11 +82,17 @@ Installationsprogrammet til flow for brugergrænsefladen indeholder alle de komp
 >[!IMPORTANT]
 >Installationsprogrammet til flow for brugergrænsefladen installerer Webdriver-komponenten og browserudvidelsen til flow for brugergrænsefladen. Begge er nødvendige for at optage, teste og køre flow for brugergrænsefladen på skrivebordet.
 
-Følg disse trin for at installere programmet til flow for brugergrænsefladen:
+Følg disse trin for at installere programmet for flow for brugergrænsefladen:
 
 1. [Download installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Åbn filen **Setup.Microsoft.Flow.UIflow.exe**. Du finder sandsynligvis denne fil i mappen **Downloads**, efter du har downloadet den i forrige trin.
 1. Følg vejledningen i installationsprogrammet til **Konfiguration af Flow for brugergrænseflade (prøveversion)** for at fuldføre installationen.
+
+### <a name="set-data-collection-options"></a>Angiv indstillinger for dataindsamling
+
+Under installationen kan du ændre standardindstillingerne, hvis du ikke vil sende forbrugsdata til Microsoft. Det gør du ved at fjerne markeringen af **Tillad, at Microsoft indsamler forbrugsdata for at forbedre flow for brugergrænseflade**.
+
+![Billede, der viser indstillingerne for dataindsamling](../media/ui-flows-setup/data-collection-settings.png)
 
 > [!WARNING]
 > Du skal fjerne programmet til flow for brugergrænsefladen og derefter geninstallere det, hvis du har brug for at ændre indstillingerne for dataindsamling. Flow for brugergrænseflade fungerer ikke længere, hvis du ændrer indstillingerne for dataindsamling uden først at fjerne programmet til flow for brugergrænsefladen.

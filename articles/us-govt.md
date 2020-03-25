@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 2c889d21336b632edf1f3746cc90846f469ecbd4
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: e74c8789975926600d4d17708a134cefb7fc0722
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195928"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80082186"
 ---
 # <a name="power-automate-us-government"></a>Power Automate til den amerikanske regering
 
@@ -225,6 +225,8 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af Flow,
 - Udløs Power Automate US Government-flow *vha.* SharePoint-lister
 
 - Udløs Power Automate US Government-flow *vha.* Dynamics 365 GCC
+
+- [AI Builder](https://docs.microsoft.com/ai-builder/) er endnu ikke tilgængelig for GCC- og GCC High-lejere.
 
 - [Godkendelser](./modern-approvals.md) er endnu ikke tilgængelige for GCC- og GCC High-lejere.
 
