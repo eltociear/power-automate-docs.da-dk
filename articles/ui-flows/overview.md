@@ -20,23 +20,23 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8739d0a3227f74532039d09c0bba8cb18e27982a
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: d17e7884960af0fb4231eac785a17683c1dadd18
+ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244190"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329862"
 ---
 # <a name="preview-introduction-to-ui-flows"></a>Prøveversion: Introduktion til brugergrænsefladeflow
 
 [Dette emne er foreløbig dokumentation og kan ændres].
 
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-<br>
-<iframe width="1129" height="635" src="https://www.youtube.com/embed/bZrrdoytTH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Flow for brugergrænsefladen indeholder egenskaber for RPA (Robotic Process Automation) til Power Automate. Du kan bruge flow for brugergrænsefladen til at automatisere gentagne opgaver i Windows- og webprogrammer. Handlinger i brugergrænsefladen (klik, tastaturinput osv.) optages og afspilles i flow for brugergrænsefladen for programmer, hvor der ikke er brugervenlige eller fuldstændige API'er.
+
+<br/>
+
+> [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
+
 
 > [!IMPORTANT]
 > - Dette er en prøveversionsfunktion.
