@@ -16,6 +16,20 @@
       href: create-team-flows.md
     - name: 'Opret et flow, der bruger Common Data Service'
       href: common-data-model-intro.md
+    - name: Læringskatalog
+      items:
+        - name: Læringskatalog
+          href: learning-catalog/learning-catalog.md
+        - name: Appfremstiller
+          href: learning-catalog/learning-catalog-app-maker.md
+        - name: Administrator
+          href: learning-catalog/learning-catalog-administrator.md
+        - name: Udvikler
+          href: learning-catalog/learning-catalog-developer.md
+        - name: Funktionel konsulent
+          href: learning-catalog/learning-catalog-functional-consultant.md
+        - name: Partner-forsalgsroller
+          href: learning-catalog/learning-catalog-sales.md
 - name: Automatiserede flows
   items:
     - name: Opret et flow fra bunden
