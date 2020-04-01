@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 06781496eecd33801cdd08768c698e2203b1f846
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 9c5180fc02a3aea9403dabe28a9f8767354bbe1c
+ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194387"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329882"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Opret et automatiseret flow ved hjælp af Common Data Service
 
@@ -71,6 +71,9 @@ Dette flow udløses, hver gang fornavnet eller efternavnet på en kontakt, som f
 
 > [!div class="mx-imgBorder"]
 > ![Filterattributter](./media/cds-connector/FilterAttributes.png)
+
+> [!IMPORTANT]
+> [Grupperet indstilling med flere valg](/powerapps/maker/common-data-service/custom-picklists) kan ikke bruges i en arbejdsproces. Hvis én inkluderes, medfører det en fejl med angivelse af, at der mangler et "obligatorisk felt"
 
 ## <a name="trigger-privileges"></a>Udløserrettigheder
 

@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/30/2019
+ms.date: 03/26/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8f5ec1e45c2dccf3553712b5662ada5262ffe4d1
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 959b7876426a78ae86bebe998332fc1846f7421e
+ms.sourcegitcommit: 7821cc858dc3fc51e3a44f1fc0c1f83962de8a2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224325"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375813"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -74,16 +74,16 @@ Dette er grænserne for en enkelt flowkørsel. Du kan se de daglige grænser und
 
 | Navn | Grænse | Noter |
 | --- | --- | --- |
-| Anvend for hver enkelt element – gratis licens|5\.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
-| Anvend for hver enkelt element – licenser af typen Office 365, Plan 1, Plan 2, Pr. bruger og Pr. flow|100.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
+| Anvend for hver enkelt element – Office 365 og gratis licenser|5\.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
+| Anvend for hver enkelt element – licenser af typen Plan 1, Plan 2, Pr. bruger og Pr. flow|100.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
 | Indtil gentagelser |5\.000 | |
-| SplitOn-elementer – gratis licens |5\.000 ||
-| SplitOn-element – licenser af typen Office 365, Plan 1, Plan 2, Pr. bruger og Pr. flow |100.000 ||
+| SplitOn-elementer – Office 365 og gratis licenser |5\.000 ||
+| SplitOn-elementer – licenser af typen Plan 1, Plan 2, Pr. bruger og Pr. flow |100.000 ||
 | Anvend for hver parallelitet |50 |Som standard køres løkker i rækkefølge (i bund og grund er parallelitet 1). Du kan konfigurere op til 50 parallelt. |
 | Udførte handlinger for hver 5. minut – gratis, Office365, Plan 1-licenser og prøveversioner | 2\.000 | Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov. |
 |Udførte handlinger for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|100.000|Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov.|
 | Handlinger for samtidige udgående kald – gratis, Office 365, Plan 1-licenser og prøveversioner | ~500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. |
-| Udførte handlinger for hver 24 timer – gratis, Office365, Plan 1-licenser og prøveversioner | ~ 2.500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. | 
+| Handlinger med samtidige udgående opkald – licenser af typen Plan 2, Pr. bruger og Pr. flow | ~ 2.500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. | 
 
 ## <a name="throughput-limits"></a>Grænser for gennemløb
 
