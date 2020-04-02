@@ -102,7 +102,7 @@
       href: custom-controls-business-process-flows.md
     - name: Bedste fremgangsmåder for attributter for forretningsprocesflows
       href: best-practices-entity-attributes.md
-- name: Flow for brugergrænseflade (prøveversion)
+- name: Flow for brugergrænseflade
   items:
     - name: Introduktion til brugergrænsefladeflow
       href: ./ui-flows/overview.md
