@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 050d4bcd9bea03d41bbd403455ac6a7df9a0e1ff
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: d1c46c6521e3267f5a2b5b8562122c92647211c7
+ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224256"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80627040"
 ---
 # <a name="billing-and-metering-questions"></a>Spørgsmål om fakturering og måling
 
@@ -93,5 +93,4 @@ Du kan løse dette problem ved at angive alle nødvendige filtre for udløseren.
   * 250 flows.
   * 15 brugerdefinerede connectors.
   * 20 forbindelser pr. API og 100 forbindelser i alt.
-* Du kan installere en gateway udelukkende i standardmiljøet.
 * Visse eksterne forbindelseskomponenter, som Twitter, implementerer begrænsning (throttling) af forbindelsen for at styre tjenestens kvalitet. Dine flows kan ikke køre, når begrænsning (throttling) er aktiveret. Hvis dine flows ikke kan køre, skal du gennemgå de detaljerede oplysninger om kørslen, der ikke kunne køre, i flowets kørselshistorik.

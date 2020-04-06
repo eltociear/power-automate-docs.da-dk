@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 617f61e1c08f7a4a51bb6916bcadf5e02691d46f
-ms.sourcegitcommit: f7d040ae93eabbc60ce922f497ab47977130d877
+ms.openlocfilehash: b73c550eb22948ea3c0e9ac14adf15674869da61
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79132929"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525062"
 ---
 # <a name="upgrade-ui-flows-app-and-connections-from-previous-releases"></a>Opgrader programmet til flow for brugergrænsefladen og forbindelser fra tidligere udgivelser
 
@@ -48,10 +48,7 @@ Der kræves ingen handling, før du enten opdaterer programmet til flow for brug
     1. Angiv dine legitimationsoplysninger for forbindelsen, og gem den derefter.
 
     >[!IMPORTANT]
-    >Sørg for at bruge de rigtige legitimationsoplysninger som skitseret i [Konfigurer forbindelser og legitimationsoplysninger til maskinen for flow for brugergrænsefladen](setup.md). Når du bruger de rigtige legitimationsoplysninger, sikrer du, at forbindelsen opdateres, og at kodestierne til de generelt tilgængelige flow for brugergrænsefladen bruges.
-
- <!-- todo      1. See (Managing UI flows app (Install, update, versions…)) for more
-            details. -->
+    >Sørg for at bruge de rigtige legitimationsoplysninger som skitseret i [Konfigurer forbindelser og legitimationsoplysninger til maskinen for flow for brugergrænsefladen](setup.md#setup-ui-flows-connections-and-machine-credentials). Når du bruger de rigtige legitimationsoplysninger, sikrer du, at forbindelsen opdateres, og at kodestierne til de generelt tilgængelige flow for brugergrænsefladen bruges.
 
 ## <a name="next-steps"></a>Næste trin
 
