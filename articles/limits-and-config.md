@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 959b7876426a78ae86bebe998332fc1846f7421e
-ms.sourcegitcommit: 7821cc858dc3fc51e3a44f1fc0c1f83962de8a2c
+ms.openlocfilehash: ebb723812a8a6805616a8e66deee13aa74618ce2
+ms.sourcegitcommit: 7d6c210192ce68ad0d0b27f67f581e307d5ef606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375813"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669852"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -50,11 +50,11 @@ Der er grænser for en enkelt udgående anmodning.
 
 ### <a name="retry-policy"></a>Prøv politik igen
 
-| Navn | Grænse |
-| --- | --- |
-| Gentagne forsøg |90 | Standarden er 4. Hvis du vil ændre standarden, skal du bruge indstillingerne for handling | 
-| Maks. forsinkelse ved nyt forsøg |1 dag | |
-| Min. forsinkelse ved nyt forsøg |5 sekunder | |
+| Navn | Grænse |Noter|
+| --- | --- | --- |
+| Gentagne forsøg |90 | Standard er 2. Hvis du vil ændre standarden, skal du bruge indstillingerne for handling. | 
+| Maks. forsinkelse ved nyt forsøg |1 dag |  |
+| Min. forsinkelse ved nyt forsøg |5 sekunder |  |
 
 ## <a name="run-duration-and-retention"></a>Varighed af kørsel og opbevaring
 Dette er grænserne for en enkelt flowkørsel.

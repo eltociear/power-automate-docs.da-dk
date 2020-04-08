@@ -1,6 +1,6 @@
 ---
-title: Få mere at vide om, hvordan du redigerer webbrugergrænsefladeflow | Microsoft Docs
-description: Få mere at vide om, hvordan du redigerer webbrugergrænsefladeflow.
+title: Få mere at vide om, hvordan du redigerer flow for brugergrænsefladen på internettet | Microsoft Docs
+description: Få mere at vide om, hvordan du redigerer flow for brugergrænsefladen på internettet.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,24 +20,20 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f29873dff5ae842d2f7b86f4f6e3e5c31bf04712
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 74c323f844c6bdc0f4cb1ad3d1a37977070a0a26
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371681"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525161"
 ---
-# <a name="edit-web-ui-flows"></a>Rediger webbrugergrænsefladeflow
+# <a name="edit-web-ui-flows"></a>Rediger flow for brugergrænsefladen på internettet
 
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Webbrugergrænsefladeflow automatiserer websteder, der kører i [den næste version af Microsoft Edge](https://www.microsoftedgeinsider.com/) eller Google Chrome. Når du har [oprettet et webbrugergrænsefladeflow](create-web.md), kan det være nødvendigt at redigere det. Følg trinnene i dette dokument for at få mere at vide om, hvordan du kan redigere webbrugergrænsefladeflow.
+Med flow for brugergrænsefladen på internettet automatiseres websteder, der kører i [Microsoft Edge (version 80 eller nyere)](https://www.microsoft.com/edge/) eller Google Chrome. Når du har [oprettet et flow for brugergrænsefladen på internettet](create-web.md), kan det være nødvendigt at redigere det. Følg trinnene i dette dokument for at få mere at vide om, hvordan du kan redigere flow for brugergrænsefladen på internettet.
 
 ## <a name="edit-in-selenium-ide"></a>Rediger i Selenium IDE
 
-Brug Selenium IDE til at redigere dine webbrugergrænsefladeflow.
+Brug Selenium IDE til at redigere dine flow for brugergrænsefladen på internettet.
 
 >[!NOTE]
 >Redigering i Selenium IDE er målrettet erfarne brugere og udviklere.
@@ -56,5 +52,5 @@ Denne avancerede funktionalitet gør det muligt for dig at bruge syntaks som \${
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Opret webbrugergrænsefladeflow](create-web.md)
-- [Kør brugergrænsefladeflow](run-ui-flow.md)
+- [Opret flow for brugergrænsefladen på internettet](create-web.md)
+- [Kør flow for brugergrænseflade](run-ui-flow.md)

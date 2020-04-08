@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8470d927204f1ba40f801c806c34ca0c78336555
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 4c8b2b02cf87abb54a587d9358a4c1f462ceb724
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193835"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80524557"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Ofte stillede spørgsmål om områder i Power Automate
 
@@ -56,11 +56,24 @@ Miljøer kan oprettes i forskellige områder og er bundet til den pågældende g
 
 Opret dit miljø i det område, der er tættest på brugerne, for at få optimal ydeevne. Hvis dine brugere befinder sig i Europa, skal du f.eks. oprette miljøerne i området Europa. Hvis brugerne befinder sig i USA, skal du oprette miljøerne i området USA.
 
-## <a name="gateways"></a>Gateways
-Gateways er:
+## <a name="region-mappings-for-power-automate-and-gateways"></a>Områdetilknytninger for Power Automate og gateways
 
-* I øjeblikket ikke tilgængelig i området Indien.
-* Understøttes kun i standardmiljøet, ikke i brugerdefinerede miljøer.
+Det område, hvor gatewayen er installeret, skal være knyttet til dit Power Automate-område. Tværgående geografiske grænser understøttes ikke. 
+
+Her er tilknytningsoplysningerne:
+
+Power Platform-område|Gatewayområde
+-----|-----
+USA, inklusive prøveversion|Det centrale USA, Det østlige USA 2, Det østlige USA, Det nordcentrale USA, Det sydcentrale USA, Det vestlige USA 2, Det vestlige centrale USA, Det vestlige USA
+Asien|Det østlige Asien, Det sydøstlige Asien
+Australien|Det østlige Australien, Det sydøstlige Australien
+Canada|Det centrale Canada, Det østlige Canada
+Europa|Det nordlige Europa, Det vestlige Europa
+Frankrig|Det centrale Frankrig, Det sydlige Frankrig
+Indien|Det centrale Indien, Det sydlige Indien, Det vestlige Indien
+Japan|Det østlige Japan, Det vestlige Japan
+Sydamerika|Det sydlige Brasilien
+Storbritannien|Det sydlige Storbritannien, Det vestlige Storbritannien
 
 ## <a name="is-power-automate-available-in-national-clouds"></a>Er Power Automate tilgængelig i nationale clouds?
 Ja. [Få mere at vide](./us-govt.md).

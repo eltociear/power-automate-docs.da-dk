@@ -1,6 +1,6 @@
 ---
 title: Administrer flow for brugergrænseflade | Microsoft Docs
-description: Administrer brugergrænsefladeflow
+description: Administrer flow for brugergrænsefladen
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,25 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d07f2dc95432a81518fcb6445911f1c6430ce623
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f780d18597989614aa0452c1723b805a753bd680
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371359"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525124"
 ---
-# <a name="manage-ui-flows"></a>Administrer brugergrænsefladeflow
-
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+# <a name="manage-ui-flows"></a>Administrer flow for brugergrænsefladen
 
 Når du har oprettet flow for brugergrænsefladen, skal du muligvis have vist, redigere eller blot kontrollere deres status. Det kan du gøre ved at gå til fanen **Flow for brugergrænseflade**.
 
 ## <a name="list-of-ui-flows"></a>Liste over flow for brugergrænseflade
 
 1. Log på Power Automate.
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (eksempel)** .
+1. Vælg **Mine flow** > **Flow for brugergrænseflade**.
 
    ![Vis alle flow for brugergrænsefladen](../media/manage-ui-flows/view-all.png "Vis alle flow for brugergrænsefladen")
 
@@ -54,7 +50,7 @@ For hver af dine flow for brugergrænsefladen kan du se oplysninger ved at vælg
 Følg disse trin for at få vist oplysninger om et flow for brugergrænsefladen:
 
 1. Log på Power Automate.
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (eksempel)** .
+1. Vælg **Mine flow** > **Flow for brugergrænseflade**.
 1. Vælg et af dine flow for brugergrænsefladen.
 
    ![Se detaljer](../media/manage-ui-flows/view-details.png "Se detaljer")

@@ -13,27 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e56c6559c78de3bed4dabddaffb9c02c8be49631
-ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
+ms.openlocfilehash: 8b0aebaa0e61758d6bc6ebeb3de7b71bde665edc
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79437252"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525111"
 ---
-# <a name="edit-desktop-ui-flows"></a>Rediger desktopbrugergrænsefladeflow
+# <a name="edit-desktop-ui-flows"></a>Rediger flow for brugergrænseflade på skrivebordet
 
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Windows-skrivebordsprogrammer automatiseres i flow for brugergrænsefladen på skrivebordet. Se [Kendte problemer](create-desktop.md#known-issues-and-solutions) for at få mere at vide om de problemer, der kan opstå, løsninger på disse problemer og scenarier, der ikke understøttes i denne prøveversion.
+Windows-skrivebordsprogrammer automatiseres i flow for brugergrænsefladen på skrivebordet. Se [Kendte problemer](create-desktop.md#known-issues-and-solutions) for at få mere at vide om de problemer, der kan opstå, løsninger på disse problemer og scenarier, der ikke understøttes i denne udgivelse.
 
 ## <a name="prerequisites"></a>Forudsætninger
 Et flow for brugergrænsefladen på skrivebordet. [Opret et flow for brugergrænsefladen på skrivebordet nu](create-desktop.md#create-and-test-desktop-ui-flows), hvis du ikke har et, der skal redigeres.
@@ -46,7 +42,7 @@ Du kan redigere din optagelse for at gøre følgende:
 
 -   Redigere værdien for handlinger, der understøtter den.
 -   Slette et trin.
--   Slette hele optagelsen.
+-   Slette optagelsen.
 -   Ændre rækkefølgen af handlinger ved hjælp af træk og slip. Vær forsigtig med dette, da det kan ødelægge sammenhængen af optagelsen.
 
 Avancerede parametre giver dig mulighed for at ændre følgende:
@@ -60,7 +56,7 @@ Avancerede parametre giver dig mulighed for at ændre følgende:
 Det kan være en god idé at optage dit flow for brugergrænsefladen i flere sessioner. Når du har fuldført din første optagelse, kan du fortsætte på følgende måde:
 
 1. Log på [Power Automate](https://flow.microsoft.com).
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)** .
+1. Vælg **Mine flow** > **Flow for brugergrænseflade**.
 1. Vælg det flow for brugergrænsefladen, du vil redigere.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Vælg **Rediger**. 
@@ -111,7 +107,7 @@ Når du har optaget et program med mindst én handling, kan du manuelt tilføje 
 Følg disse trin for at tilføje en manuel handling:
 
 1. Log på [Power Automate](https://flow.microsoft.com).
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)** .
+1. Vælg **Mine flow** > **Flow for brugergrænseflade**.
 1. Vælg det flow for brugergrænsefladen, du vil redigere.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Vælg **Rediger**. 
@@ -186,13 +182,13 @@ Du kan udføre disse avancerede handlinger ved at udføre følgende trin i et ek
 
 ## <a name="handle-error-conditions"></a>Håndter fejlbetingelser
 
-Der kan opstå uventede betingelser under afspilning, og det kan medføre, at dine brugergrænsefladeflow mislykkes. Du kan bruge avancerede egenskaber til fejlhåndtering for at oprette alternative trin, når der opstår uventede betingelser. 
+Der kan opstå uventede betingelser under afspilning, og det kan medføre, at dine flow for brugergrænsefladen mislykkes. Du kan bruge avancerede egenskaber til fejlhåndtering for at oprette alternative trin, når der opstår uventede betingelser. 
 
 Det drejer sig om følgende trin.
 
 1. Log på [Power Automate](https://powerautomate.microsoft.com) ved hjælp af din skole- eller arbejdskonto.
-1. Vælg **Mine flow** > **Brugergrænsefladeflow** for at få vist dine brugergrænsefladeflow.
-1. Vælg **Flere kommandoer** (de tre lodrette prikker for det brugergrænsefladeflow, du vil redigere).
+1. Vælg **Mine flow** > **Flow for brugergrænseflade** for at få vist dine flow for brugergrænsefladen.
+1. Vælg **Flere kommandoer** (de tre lodrette prikker for det flow for brugergrænsefladen, du vil redigere).
 1. Vælg **Rediger**.
 1. Vælg pil ned umiddelbart inden det brugergrænsefladetrin, du vil føje fejlhåndtering til, og vælg derefter **+** (Indsæt nyt trin).
    
@@ -204,9 +200,9 @@ Det drejer sig om følgende trin.
 
     ![Billede, der viser Tilføj en parallel forgrening og andre indstillinger](../media/edit-desktop/add-parallel-branch.png)
 
-1. Vælg den handling, der skal udføres i den parallelle forgrening, hvis der opstår en fejl, når brugergrænsefladeflowet køres.
+1. Vælg den handling, der skal udføres i den parallelle forgrening, hvis der opstår en fejl, når flowet for brugergrænsefladen køres.
 
-   Du kan vælge **Optag-app** for at foretage en ny optagelse af den parallelle forgrening eller vælge **Afbryd** via de **indbyggede** handlinger for at afslutte brugergrænsefladeflowet på en ordentlig måde, hvis der opstår en fejl.
+   Du kan vælge **Optag-app** for at foretage en ny optagelse af den parallelle forgrening eller vælge **Afbryd** via de **indbyggede** handlinger for at afslutte flowet for brugergrænsefladen på en ordentlig måde, hvis der opstår en fejl.
 
     ![Billede, der viser indstillingerne for den parallelle forgrening](../media/edit-desktop/add-parallel-branch.png)
 
@@ -219,7 +215,7 @@ Det drejer sig om følgende trin.
 
     ![Billede, der viser indstillingerne for kørsel efter](../media/edit-desktop/run-after-options.png)
 
-    Bemærk! Du kan ikke gemme et brugergrænsefladeflow, hvor både hovedforgreningen og den parallelle forgrening er angivet til at køre på samme betingelse.
+    Bemærk! Du kan ikke gemme et flow for brugergrænsefladen, hvor både hovedforgreningen og den parallelle forgrening er angivet til at køre på samme betingelse.
 
 
 

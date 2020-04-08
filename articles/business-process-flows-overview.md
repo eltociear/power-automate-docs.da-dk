@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8f4a1fcf0feb893f3eca8ac12b6b7f725aceed10
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: a6e936b833f6b1e1d6cf6e050031969d41e40de6
+ms.sourcegitcommit: 31692af25f91af60cf77572edcb0c986602dc9a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194226"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624854"
 ---
 # <a name="business-process-flows-overview"></a>Oversigt over forretningsprocesforløb
 
@@ -170,7 +170,7 @@ Flere standardvisninger er tilgængelige, som du kan få vist som et diagram, f.
 ![Visning af salgsprocessen for aktive salgsmuligheder](media/bpf-default-view.png)
 
 ### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interager med et objekt i et forretningsprocesforløb fra en arbejdsproces
-Du kan også interagere med et objekti et forretningsprocesforløb fra en arbejdsproces. Du kan f.eks. oprette en arbejdsproces for objektposten for forretningsprocesforløbet for at ændre den aktive fase, når et felt i objektposten Salgsmulighed bliver opdateret. Du kan finde flere oplysninger om, hvordan du gør dette, under [Automatiser faser i et forretningsprocesforløb ved hjælp af arbejdsprocesser](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
+Du kan også interagere med et objekt i et forretningsprocesforløb fra en arbejdsproces. Du kan f.eks. oprette en arbejdsproces for objektposten for forretningsprocesforløbet for at ændre den aktive fase, når et felt i objektposten Salgsmulighed bliver opdateret. Du kan finde flere oplysninger om, hvordan du gør dette, under [Automatiser faser i et forretningsprocesforløb ved hjælp af arbejdsprocesser](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
 ### <a name="run-business-process-flows-offline"></a>Kør forretningsprocesflow offline
 
@@ -190,6 +190,7 @@ De tre kommandoer, der specifikt er tilgængelige for et forretningsprocesforlø
 
 - Du kan i øjeblikket ikke oprette brugerdefinerede formularer for objekter, der er baseret på et forretningsprocesforløb.
 - Hvis en løsning indeholder et objekt i et forretningsprocesforløb, skal dette objekt føjes til løsningen manuelt, før du kan eksportere det. I modsat fald medtages objektet i forretningsprocesforløbet ikke i løsningspakken. Flere oplysninger: [Tilføj løsningskomponenter](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- Tilføjelse af procesenheden til et modeldrevet program kan resultere i begrænset funktionalitet. Få mere at vide om [oprettelse og redigering af flow for forretningsprocesser](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### <a name="next-steps"></a>Næste trin  
  [Se en kort video (4:49) om forretningsprocesforløb.](https://go.microsoft.com/fwlink/p/?linkid=842226)   

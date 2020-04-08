@@ -13,43 +13,36 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2020
+ms.date: 03/28/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 254e92db3c02cac4294b92fc5a1deec4a23e341e
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 3705d825a2b659e19975b6deeeae215bb1fad3d5
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224187"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525071"
 ---
-# <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow
-
-[Dette emne er foreløbig dokumentation og kan ændres.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Se [Kendte problemer](create-desktop.md#known-issues-and-solutions) senere i dette emne for at få mere at vide om de problemer, der kan opstå, løsninger på disse problemer og scenarier, der ikke understøttes i denne prøveversion.
-
-
-## <a name="create-a-desktop-ui-flow"></a>Opret et flow for brugergrænseflader
+# <a name="create-and-test-desktop-ui-flows"></a>Opret og test flow for brugergrænsefladen på skrivebordet
 
 I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så den lægger to tal sammen og derefter gemmer resultatet til senere brug.
+
+## <a name="create-a-desktop-ui-flow"></a>Opret et flow for brugergrænseflader
 
 > [!TIP]
 > Du kan automatisere andre Windows Desktop-apps ved at følge et lignende mønster.
 
-1. Sørg for, at din [enhed er klar](setup.md) til at oprette flow for brugergrænseflader. <!--Todo: link to the prereqs section-->
+1. Sørg for, at din [enhed er klar](setup.md#prerequisites) til at oprette flow for brugergrænseflader.
 
-1. Brug [Chromium-versionen af Microsoft Edge](https://www.microsoftedgeinsider.com) eller Google Chrome til at åbne [Power Automate](https://flow.microsoft.com), og log derefter på den samme arbejds- eller skolekonto som på din enhed.
+1. Brug [Microsoft Edge (version 80 eller nyere)](https://www.microsoftedgeinsider.com) eller Google Chrome til at åbne [Power Automate](https://flow.microsoft.com), og log derefter på med den samme arbejds- eller skolekonto som på din enhed.
 
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)**  > **Ny**.
+1. Vælg **Mine flow** > **Flow for brugergrænseflade** > **Nyt**.
 
-   ![Opret et nyt flow for brugergrænseflade](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
+   ![Opret et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
 
 1. Vælg **Skrivebord-app** og vælg derefter **Næste**.
 
@@ -62,19 +55,18 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 1. Vælg **Næste** nederst for at springe over den valgfri skærm **Konfigurer input**, da vi ikke bruger input i denne gennemgang.
 
 1.  Vælg **Download pakke**.
-1.  Åbn filen **Setup.Microsoft.Flow.UIflow.exe**. Du finder sandsynligvis denne fil i mappen **Downloads**, efter du har downloadet den i forrige trin.
-1.  Følg vejledningen i installationsprogrammet til Konfiguration af Flow for brugergrænseflade (prøveversion) for at fuldføre installationen.
+1.  Åbn filen **Setup.Microsoft.PowerAutomate.UIflow.exe**. Du finder sandsynligvis denne fil i mappen **Downloads**, efter du har downloadet den i forrige trin.
+1.  Følg vejledningen i installationsprogrammet til Konfiguration af flow for brugergrænsefladen for at fuldføre installationen.
 
     Når installationsprogrammet til flow for brugergrænsefladen er fuldført, bliver du i browseren bedt om at aktivere udvidelsen.
 
-1. På Microsoft Edge (Chromium) skal du vælge hvert advarselsikon i øverste højre hjørne af browseren og derefter vælge **Aktivér udvidelse**.
+1. I Microsoft Edge (version 80 eller nyere) skal du vælge hvert advarselsikon øverst til højre i browseren og derefter vælge **Aktivér udvidelse**.
 1. På Google Chrome skal du vælge **Aktivér udvidelse**, når du bliver bedt om det.
 
    > [!TIP]
    > Hvis du ikke fik vist prompten i din browser, skal du kontrollere følgende:
-   > - Du skal bruge browseren Microsoft Edge (Chromium) eller Google Chrome.
-   > - Du skal muligvis aktivere udvidelsen manuelt. Hvis du har Microsoft Edge (Chromium), skal du navigere til **edge://extensions**, og hvis du har Google Chrome, skal du navigere til **chrome://extensions**.
-   > - Hvis udvidelsen til flow for brugergrænsefladen i Power Automate ikke vises, skal du geninstallere den ved hjælp af [installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
+   > - Du skal bruge browseren Microsoft Edge (version 80 eller nyere) eller Google Chrome.
+   > - Du skal muligvis opdatere udvidelsen for [Microsoft Edge (version 80 eller nyere)](https://www.microsoft.com/store/collections/edgeextensions/pc) eller [Google Chrome](https://chrome.google.com/webstore/category/extensions).
 
    Fortsæt, når du har installeret udvidelsen.
 
@@ -88,7 +80,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
    Optagerkontrolelementet vises øverst på skærmen.
 
-   ![Optagerkontrolelementet](../media/create-windows-ui-flow/recorder-control.png "Optagerkontrolelementet")
+   ![Kontrolelementet Optager](../media/create-windows-ui-flow/recorder-control.png "Kontrolelementet Optager")
 
 1. Start appen Lommeregner.
 
@@ -147,8 +139,8 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 - Interaktioner i Windows (Stifinder, menuen Start, proceslinje osv.).
 
-- Webbrowsere (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla osv.).
-    Du skal se [Opret et flow for brugergrænseflade](edit-web.md) for at automatisere websteder.
+- Webbrowsere (Chrome, IE, Microsoft Edge, Firefox, Mozilla, osv.).
+    Du skal se [Opret et flow for brugergrænsefladen på internettet](create-web.md) for at automatisere websteder.
 
 -   Java-programmer.
 
@@ -194,15 +186,15 @@ Følgende handlinger optages ikke:
 
 -   Åbning af app før optagelse.
 
-<!-- -   Closed app before playback starts. -->
 
 ## <a name="unreliable-behaviors-and-workarounds-for-microsoft-office-desktop"></a>Upålidelige funktionsmåder og løsninger til Microsoft Office (computer)
+
 - Fastgør båndet, før du starter afspilning, for at undgå problemer, der kan opstå, hvis båndet er indstillet til at blive skjult automatisk under afspilning.
 - Vælg ikke elementer ved at klikke og trække. Brug f. eks. ikke Skift-klik til at markere celler i Microsoft Excel, og vælg ikke tekst i Microsoft Word eller Microsoft PowerPoint ved at trække musen.
-- Nogle elementer fungerer muligvis ikke korrekt i flow for brugergrænseflade (prøveversion) til Microsoft Word- og Microsoft PowerPoint-skrivebordsprogrammer. Punkter i menuen Filer, f. eks. start fra en tom side eller højreklik på kontrolelementer, for f.eks. at tilføje et afsnit i Microsoft Word eller ændre layoutet af dias i Microsoft PowerPoint, fungerer muligvis ikke.
+- Nogle elementer fungerer muligvis ikke korrekt i flow for brugergrænsefladen til Microsoft Word- og Microsoft PowerPoint-skrivebordsprogrammer. Punkter i menuen **Filer**, f.eks. start fra en tom side, eller højreklik på kontrolelementer for f.eks. at tilføje et afsnit i Microsoft Word eller ændre layoutet af dias i Microsoft PowerPoint fungerer muligvis ikke.
 
 ## <a name="next-steps"></a>Næste trin
 
-- Få mere at vide om, hvordan du [udløser dit flow for brugergrænseflade](run-ui-flow.md), du netop har oprettet.
+- Få mere at vide om, hvordan du [udløser det flow for brugergrænsefladen](run-ui-flow.md), du netop har oprettet.
 
-- Hvis du vil udføre mere med flow for brugergrænsefladen, kan du også afprøve flow for brugergrænsefladen med [input- og output](inputs-outputs-web.md)parametre.
+- Hvis du vil udføre mere med flow for brugergrænsefladen, kan du også oprette flow for brugergrænsefladen med [input- og outputparametre](inputs-outputs-web.md).

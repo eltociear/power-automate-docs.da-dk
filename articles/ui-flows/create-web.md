@@ -20,28 +20,24 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 90951e4244ef7caa75bedc522d1bb032e070dbef
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: fb0b3b2dcd615130764d7f4c206e04e191bb1eca
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244271"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80524613"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Opret og test flow for brugergrænsefladen på internettet
 
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Følg disse trin for at oprette et simpelt flow for brugergrænsefladen på internettet:
+Følg disse trin for at oprette et simpelt flow for brugergrænsefladen på internettet.
 
 ## <a name="create-a-web-ui-flow"></a>Opret et flow for brugergrænsefladen på internettet
 
-1. Åbn den [nyeste version af Microsoft Edge](https://www.microsoftedgeinsider.com/) eller Google Chrome, og naviger derefter til [Power Automate](https://flow.microsoft.com/).
+1. Åbn [Microsoft Edge (version 80 eller nyere)](https://www.microsoft.com/edge) eller Google Chrome, og naviger derefter til [Power Automate](https://flow.microsoft.com/).
 
 1. Log på med din arbejds- eller skolekonto, hvis det er nødvendigt.
 
-1. Vælg **Mine flow** > **Flow for brugergrænseflade (prøveversion)**  > **Ny**.
+1. Vælg **Mine flow** > **Flow for brugergrænseflade** > **Nyt**.
 
    ![Opret et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
 

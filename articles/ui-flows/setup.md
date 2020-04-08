@@ -13,28 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 96c93771129ab0454d03e721a36d429e6cc894d5
-ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
+ms.openlocfilehash: 97456d637dd272a465559d4cee8fb1d17fe3de8d
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79437164"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80524634"
 ---
-# <a name="set-up-ui-flows"></a>Konfigurer brugergrænsefladeflow
-
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-> [!IMPORTANT]
-> Funktionen Flow for brugergrænseflade udrulles i øjeblikket i flere områder. Hvis du ikke kan se funktionen i dit miljø, ikke kan oprette flow for brugergrænsefladen eller får vist en fejl, når du forsøger at køre funktionen i et flow, skal du prøve igen senere.
+# <a name="set-up-ui-flows"></a>Konfigurer flow for brugergrænsefladen
 
 Før du kan bruge din enhed til at oprette flow for brugergrænsefladen, skal du sikre, at den opfylder de krav, der er angivet her.
 
@@ -49,7 +42,7 @@ Før du kan bruge din enhed til at oprette flow for brugergrænsefladen, skal du
 
 - En enhed, der kører Windows 10 Pro, Windows Server 2016 eller Windows Server 2019.
 
-- [Microsoft Edge](https://www.microsoftedgeinsider.com)- eller Google Chrom-browser.
+- Browseren [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) eller Google Chrome.
 
 - Et [miljø](https://docs.microsoft.com/power-platform/admin/environments-overview) med en [Common Data Service-database](https://docs.microsoft.com/power-platform/admin/create-database).
 
@@ -70,8 +63,8 @@ Følgende understøttes ikke:
 
 -   Flow for brugergrænseflade på internettet
 
-    -   Højreklik
-    -   Oplysninger om brugersessionen (f.eks.: cookies) genbruges ikke under afspilning. Du skal redigere scriptet for at integrere logonoplysninger, når det kræves af websteder.
+    -   Højreklik.
+    -   Oplysninger om brugersessionen (f.eks. cookies) genbruges ikke under afspilning. Du skal redigere scriptet for at integrere logonoplysninger, når det kræves af websteder.
 
 Du finder de funktionsspecifikke begrænsninger, der er inkluderet i dokumentationen for hver funktion.
 
@@ -85,8 +78,8 @@ Installationsprogrammet til flow for brugergrænsefladen indeholder alle de komp
 Følg disse trin for at installere programmet for flow for brugergrænsefladen:
 
 1. [Download installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Åbn filen **Setup.Microsoft.Flow.UIflow.exe**. Du finder sandsynligvis denne fil i mappen **Downloads**, efter du har downloadet den i forrige trin.
-1. Følg vejledningen i installationsprogrammet til **Konfiguration af Flow for brugergrænseflade (prøveversion)** for at fuldføre installationen.
+1. Åbn filen **Setup.Microsoft.PowerAutomate.UIflow.exe**. Du finder sandsynligvis denne fil i mappen **Downloads**, efter du har downloadet den i forrige trin.
+1. Følg vejledningen i installationsprogrammet til **Konfiguration af flow for brugergrænsefladen** for at fuldføre installationen.
 
 ### <a name="set-data-collection-options"></a>Angiv indstillinger for dataindsamling
 
@@ -94,19 +87,16 @@ Under installationen kan du ændre standardindstillingerne, hvis du ikke vil sen
 
 ![Billede, der viser indstillingerne for dataindsamling](../media/ui-flows-setup/data-collection-settings.png)
 
-> [!WARNING]
-> Du skal fjerne programmet til flow for brugergrænsefladen og derefter geninstallere det, hvis du har brug for at ændre indstillingerne for dataindsamling. Flow for brugergrænseflade fungerer ikke længere, hvis du ændrer indstillingerne for dataindsamling uden først at fjerne programmet til flow for brugergrænsefladen.
-
 ## <a name="activate-the-ui-flows-browser-extension"></a>Aktivér browserudvidelsen til flow for brugergrænsefladen 
 
 Når installationsprogrammet til flow for brugergrænsefladen er fuldført, bliver du bedt om at aktivere udvidelsen i browseren.
 
-- På Microsoft Edge skal du vælge hvert advarselsikon i øverste højre hjørne af browseren og derefter vælge **Aktivér udvidelse**.
+- I [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) skal du vælge hvert advarselsikon øverst til højre i browseren og derefter vælge **Aktivér udvidelse**.
 -   På Google Chrome skal du vælge **Aktivér udvidelse**, når du bliver bedt om det.  
 
 > [!TIP]
 > Hvis du ikke fik vist prompten i din browser, skal du kontrollere følgende:
-> - Du skal bruge Microsoft Edge eller Google Chrome
+> - Du skal bruge [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) eller Google Chrome.
 > - Du skal muligvis aktivere udvidelsen manuelt. Hvis du har Microsoft Edge, skal du gå til **edge://extensions**, og hvis du har Google Chrome, skal du gå til **chrome://extensions**.
 > - Hvis udvidelsen til flow for brugergrænsefladen i Power Automate ikke vises, skal du geninstallere den ved hjælp af [installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
 
@@ -119,9 +109,9 @@ Med flow for brugergrænsefladen kan du køre Selenium IDE-scripts fra Power Aut
 
 Følg disse trin for at installere Selenium IDE:
 
-1. [Download og installér](https://go.microsoft.com/fwlink/?linkid=2107665) Selenium IDE til den nyeste version af Microsoft Edge eller Google Chrome.
+1. [Download og installér](https://go.microsoft.com/fwlink/?linkid=2107665) Selenium IDE til [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) eller Google Chrome.
 
-1. I forbindelse med Microsoft Edge skal du vælge **Tillad udvidelser fra andre butikker** og derefter vælge **Føj til Chrome**.
+1. I Microsoft Edge (version 80 eller nyere) skal du vælge **Tillad udvidelser fra andre lagre** og derefter vælge **Føj til Chrome**.
 
 ## <a name="install-the-on-premises-data-gateway"></a>Installér datagatewayen i det lokale miljø
 
@@ -131,6 +121,11 @@ Du skal bruge gatewayen til at udløse dit flow for brugergrænsefladen fra et [
 >Gatewayen kræves ikke, hvis du kun vil oprette, redigere og teste dine flow for brugergrænsefladen på din enhed.
 
 [Installér datagatewayen i det lokale miljø](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), hvis du har brug for det.
+
+
+>[!IMPORTANT]
+>Når du installerer gatewayen, bruger den som standard det område, der bruges til Power Automate.
+
 
 ## <a name="setup-ui-flows-connections-and-machine-credentials"></a>Konfigurer forbindelser og legitimationsoplysninger til maskinen for flow for brugergrænsefladen
 
@@ -144,19 +139,26 @@ Du skal bruge gatewayen til at udløse dit flow for brugergrænsefladen fra et [
 
    ![Et skærmbillede af en forbindelse](../media/ui-flows-setup/new-connection.png)
 
-1. Søg efter *Flow for brugergrænseflade*, og vælg derefter **Flow for brugergrænseflade (prøveversion).
+1. Søg efter *Flow for brugergrænseflade*, og vælg derefter **Flow for brugergrænseflade**.
 
    ![Et skærmbillede af søgefeltet](../media/ui-flows-setup/search-ui-flow.png)
 
-1. Angiv gatewayoplysninger og enhedsoplysninger for *hver* gateway: 
+1. Angiv gatewayoplysninger og enhedsoplysninger: 
 
     - **Domæne og brugernavn**: Angiv din enhedskonto. Du kan bruge en lokal konto ved hjælp af navnet på brugeren (f.eks. "NAVN PÅ MASKINE\\Bruger" eller "lokal\\Bruger") eller en Active Directory-konto såsom "DOMÆNE\\Bruger".
     - **Adgangskode**: Adgangskoden til din konto.
-    - **Vælg en gateway**: Vælg en af de gateways, du vil konfigurere.
+    - **Vælg en gateway**: Vælg den gateway, du vil bruge.
 
       ![Et skærmbillede, der viser, hvor du skal angive legitimationsoplysningerne for forbindelsen](../media/ui-flows-setup/credentials-screen.png)
 
 1. Vælg **Opret**.
+
+## <a name="troubleshoot-missing-gateway"></a>Foretag fejlfinding af manglende gateway
+
+Du kan muligvis ikke finde gatewayen på listen under oprettelse af forbindelse af følgende årsager:
+
+- Gatewayen kan være installeret i et andet område end dit Power Automate-område. Du kan løse dette problem ved at fjerne gatewayen fra enheden og derefter geninstallere den ved at vælge [det rigtige Power Automate-område](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+- Gatewayen blev slettet af ejeren.
 
 ## <a name="supported-keyboard-layouts"></a>Layouts for tilsluttet tastatur
 
@@ -201,7 +203,7 @@ Finsk     |Koreansk     |Serbisk (latin, Serbien)
 ## <a name="uninstall-ui-flows"></a>Fjern Flow for brugergrænseflade
 
 1. Åbn menuen **Start** > **Indstillinger** > **Programmer**.
-1. Søg efter **Flow for brugergrænseflade (prøveversion)** , og vælg den derefter.
+1. Søg efter **Flow for brugergrænseflade**, og vælg den derefter.
 1. Vælg **Fjern**.
 
 ## <a name="learn-more"></a>Få mere at vide

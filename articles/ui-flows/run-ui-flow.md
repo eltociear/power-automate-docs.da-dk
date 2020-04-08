@@ -13,25 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/03/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0852e8b52f7b158d8fc97316b0f719f8e557a15f
-ms.sourcegitcommit: 14ea422c0b306f738757036cc0e240584dd810f5
+ms.openlocfilehash: 7d9142fa86b256ca816cf128f8b76bae7d1c5a90
+ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79188134"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80627068"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>Kør ikke-automatiserede og automatiserede flow for brugergrænsefladen
-
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Når du har oprettet og testet et flow for brugergrænsefladen, kan du køre det fra en hændelse, en tidsplan eller en knap. Hvis du vil gøre det muligt, skal du føje dit flow for brugergrænsefladen til et [automatiseret flow](../get-started-logic-flow.md), et [flow for en knap](../introduction-to-button-flows.md), et [planlagt flow](../run-scheduled-tasks.md) eller et [forretningsprocesflow](../business-process-flows-overview.md).
 
@@ -60,7 +56,7 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
 1. Giv dit flow et navn i feltet **Navn på flow**.
 1. Søg efter "ny mail", og vælg derefter **Når en ny mail modtages (v3)** på listen over udløsere. 
     
-   ![Vælg en udløser](../media/run-ui-flow/2d4ec17d239169a46905cef1829fa3a1.png "Vælg en udløser")
+   ![Vælg en udløser](../media/run-ui-flow/select-email-trigger.png "Vælg en udløser")
 
 1. Vælg **Opret**, og vælg derefter **Nyt trin**.
 
@@ -74,12 +70,18 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
 
     - **Gateway**: Vælg den gateway, du oprettede tidligere, eller brug **Ny gateway** til at oprette en ny gateway.   
     - **Domæne og brugernavn**: Viser din arbejds- eller skolekonto fra enheden.
+       >[!Important]
+        >Sørg for, at du kan logge på enheden ved hjælp af disse legitimationsoplysninger.  
     - **Adgangskode**: Angiv adgangskoden til din arbejds- eller skolekonto.
 
       ![Indstillinger for forbindelse](../media/run-ui-flow/uiflow-connection-card.png "Indstillinger for forbindelse")
 
       >[!TIP]
-      >Hvis du ikke kan se din gateway, skal du muligvis vælge en anden forbindelse. Det gør du ved at vælge **...** øverst til højre på kortet **Kør et flow for brugergrænsefladen på skrivebordet (prøveversion)** og derefter vælge den forbindelse, du vil bruge, fra **Mine forbindelser**.
+      >Hvis du ikke kan se din gateway, er du muligvis i et miljø, hvis område er anderledes end gatewayområdet. Vælg **Foretag fejlfinding af en manglende gateway** på listen over gatewaynavne for at få mere at vide. Du kan også bekræfte, at dine gateway- og Power Automate-områder er [tilknyttet korrekt](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+
+      >[!TIP]
+      >Hvis du ikke kan se din gateway, skal du muligvis vælge en anden forbindelse. Det gør du ved at vælge **...** øverst til højre på kortet **Kør et flow for brugergrænsefladen på skrivebordet** eller **Kør et flow for brugergrænsefladen på internettet** og derefter vælge forbindelsen fra **Mine forbindelser**.
+
 
       ![Vælg en ny forbindelse](../media/run-ui-flow/select-new-connection.png "Vælg en ny forbindelse")
 
@@ -88,6 +90,8 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
    ![Vælg flow for brugergrænseflade](../media/run-ui-flow/select-ui-flow.png "Vælg flow for brugergrænseflade")
 
 1. Vælg **Gem** for at gemme dit automatiserede flow.
+ >[!TIP]
+ >Bekræft, at din gateway er online, før du udfører testen. Gå til **Data** > **Gateways** i navigationsruden, vælg gatewaynavnet, og klik på **...** . Gå derefter til **Oplysninger**, og bekræft, at **gatewaystatussen** er **online**. Hvis **gatewaystatussen** er **offline**, skal du bekræfte, at enheden er slået til og har forbindelse til internettet. 
 
 1. Test flowet ved at sende en mail for at udløse det. Du kan se, at de trin, du optog, bliver afspillet i dit flow for brugergrænsefladen. 
 
@@ -117,92 +121,110 @@ Når de køres automatiseret, logges flow for brugergrænsefladen automatisk på
 
 Når de køres ikke-automatiseret, bruger flow for brugergrænsefladen en eksisterende Windows-brugersession.
 
-Flow for brugergrænsefladen vælger mellem ikke-automatiseret og automatiseret tilstand afhængigt af tilstanden af maskinen, som beskrevet senere i denne artikel.
+Når du føjer et flow for brugergrænsefladen til et flow, kan du vælge, om dit flow for brugergrænsefladen skal køre automatiseret eller ikke-automatiseret. Her er nogle vigtige forskelle mellem automatiserede og ikke-automatiserede kørsler:
 
 ### <a name="unattended-mode"></a>Automatiseret tilstand
 
-Hvis du vil køre flow for brugergrænsefladen automatiseret, skal destinationsmaskinen være tilgængelig, og alle brugerne skal være logget af. Låste Windows-brugersessioner forhindrer, at flow for brugergrænsefladen kører.
+Hvis du vil køre flow for brugergrænsefladen automatiseret, skal destinationsmaskinen være tilgængelig, og alle brugerne skal være logget af. 
 
-Flow for brugergrænsefladen udfører følgende:
-1. Flow for brugergrænsefladen opretter, administrerer og udgiver derefter Windows-brugersessionen på destinationsenhederne.
+>[!IMPORTANT]
+>Låste Windows-brugersessioner forhindrer, at flow for brugergrænsefladen kører.
 
-1. Automatiserede kørsler af flow for brugergrænsefladen kører på enheder med skærmen låst.
+Der udføres følgende i flow for brugergrænsefladen:
+1. Windows-brugersessionen oprettes, administreres og udgives derefter på destinationsenhederne ved hjælp af flow for brugergrænsefladen.
 
-1. Windows 10-enheder kan ikke køre automatiseret, hvis der er aktive Windows-brugersessioner på enheden (selv låste). Du får vist følgende fejl: *Flow for brugergrænsefladen kan ikke udføres. Der er en låst eller inaktiv Windows-brugersession på destinationsenheden*.
+1. Automatiserede flow for brugergrænsefladen kører på enheder med skærmen låst, så ingen kan se flowet, mens det køres.
+
+1. Windows 10-enheder kan ikke køre automatiseret, hvis der er aktive Windows-brugersessioner til stede (selv en låst). Du får vist følgende fejl: *Flow for brugergrænsefladen kan ikke udføres. Der er en låst eller inaktiv Windows-brugersession på destinationsenheden*.
 
 1. Hvis du har en låst Windows-brugersession åben i Windows Server med den samme bruger, som flowet for brugergrænsefladen skal køre som, får du vist den samme fejl: *Flow for brugergrænsefladen kan ikke udføres. Der er en låst eller inaktiv Windows-brugersession på destinationsenheden*.
 
 ### <a name="attended-mode"></a>Ikke-automatiseret tilstand
 Hvis du vil køre et ikke-automatiseret flow for brugergrænsefladen, skal du have en aktiv Windows-brugersession, der stemmer overens med navnet på den bruger, som er konfigureret for din forbindelse. Sessionen må ikke være låst.
 
-Når kørslen af et ikke-automatiseret flow for brugergrænsefladen startes på destinationsmaskinen, anbefales det, at du undgår interaktioner med din enhed (f.eks. at flytte musen), indtil udførelsen er fuldført.
+Når et automatiseret flow for brugergrænsefladen starter på destinationsmaskinen, anbefaler vi, at du undgår at interagere med enheden, indtil kørslen er fuldført.
 
 
 ## <a name="schedule-multiple-ui-flows-on-the-same-device"></a>Planlæg flere flow for brugergrænsefladen på den samme enhed
 
-Du kan planlægge at køre flere flow for brugergrænsefladen på en eller flere enheder. Hvis mere end én kørsel af et flow for brugergrænsefladen udløses på den samme enhed, organiserer backend for flow for brugergrænsefladen kørslerne ved at følge disse regler:
+Du kan planlægge at køre flere flow for brugergrænsefladen på en eller flere enheder. Hvis der udløses mere end ét flow for brugergrænsefladen, som skal køre på den samme enhed, følger Power Automate disse regler:
 
-1.  Det første flow for brugergrænsefladen sendes til destinationsenheden.
+1.  Det første flow for brugergrænsefladen køres på destinationsenheden.
 
-1.  Andre flow for brugergrænsefladen sættes i kø, og de vises som **ventende** på siden med oplysninger om flow for brugergrænsefladen eller gatewayen.
+1.  Andre flow for brugergrænsefladen sættes i kø, og de vises som **Ventende** på siden med oplysninger om flow for brugergrænsefladen eller gatewayen.
 
-1.  Det næste flow for brugergrænsefladen sendes, når hver kørsel er fuldført.
+1.  Det næste flow for brugergrænsefladen vælges, når hver kørsel er fuldført.
 
 >[!NOTE]
->Disse organiseringsregler gælder for begge flow for brugergrænsefladen, der er planlagt af den samme bruger eller af forskellige brugere på den samme enhed.
+>Disse orkestreringsregler gælder for kørsler af flow for brugergrænsefladen, der er planlagt af en hvilken som helst bruger eller af forskellige brugere på den samme enhed.
 
 >[!IMPORTANT]
->Hvis der er for mange flow for brugergrænsefladen i udførelseskøen, kan der opstå timeout. Kørsler af flow for brugergrænsefladen mislykkes i øjeblikket, hvis de ikke køres inden for 30 minutter, efter de er blevet udløst.
+>Hvis der er for mange flow for brugergrænsefladen i udførelseskøen, kan der opstå timeout. Kørsler af flow for brugergrænsefladen mislykkes, hvis de ikke køres inden for 30 minutter, efter de blev udløst.
+
+## <a name="load-balance-requests-across-gateways-in-a-cluster"></a>Anmodninger om justering af belastning på tværs af gateways i en klynge
+
+Du kan vælge at distribuere kørsler af flow for brugergrænsefladen jævnt på tværs af gateways i en klynge. Valget af en gateway under justering af belastning er som standard vilkårlig.
+
+Følg [disse trin for at tilføje en gateway og oprette en klynge](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
+
+>[!NOTE]
+>Medlemmer af offlinegatewayen i en klynge vil påvirke ydeevnen negativt. Deaktiver eller fjern disse medlemmer.
+
+Hvis du vil angive justering af belastning på siden med oplysninger om Power Automate-gatewayen, skal du navigere til **Data** -> **Gateways** og derefter vælge din gatewayklynge. 
+
+På siden med oplysninger om gatewayen skal du slå Kør på alle gateways i klyngen til. Dermed distribueres kørsler af flow for brugergrænsefladen til alle gateways i den pågældende klynge.
+
+   ![Distribuer kørsel af flow for brugergrænsefladen på gatewayklynge](../media/run-ui-flow/gw_cluster.png "Distribuer kørsel af flow for brugergrænsefladen på gatewayklynge")
+   
+>[!IMPORTANT]
+>Hvis du bruger lokale Windows-konti, skal alle maskiner i klyngen have den samme lokale konto med samme adgangskode. Brug disse legitimationsoplysninger, når du opretter forbindelse til flowet for brugergrænsefladen.
+>Hvis du bruger maskiner, der er forbundet med Active Directory eller Azure AD, skal du bekræfte, at den brugerkonto, du bruger til at oprette forbindelse til flowet for brugergrænsefladen, kan få adgang til alle maskiner i klyngen.
+   
+## <a name="best-practices-to-avoid-timeouts-and-distribute-load-across-machines"></a>Bedste praksis for at undgå timeout og distribuere belastning på tværs af maskiner
+
+Hvis du planlægger at køre flere flow for brugergrænsefladen, er der en række strategier, som du kan indføre for at distribuere belastningen og sikre, at alle dine flow for brugergrænsefladen kører uden at overbelaste destinationsmaskinerne, eller at der ikke opstår timeout, fordi der kører flere flow for brugergrænsefladen samtidigt. Du kan enten:
+
+1. Planlægge, at dine flow for brugergrænsefladen kører på forskellige tidspunkter af dagen, så du dermed spreder belastningen over tid. Dette fungerer bedst, hvis du har en enkelt eller et begrænset antal maskiner, der kan køre arbejdsbelastninger, og du kan styre udløserne (f.eks. planlagte flow), der starter dit flow for brugergrænsefladen.
+1. Oprette klynger af maskiner, der kan køre flow for brugergrænsefladen med identiske konfigurationer parallelt. 
+1. Oprette flere flow, der hver især bruger en separat forbindelse til at henvende sig til forskellige maskiner. 
+
+Når du følger disse strategier, kan du undgå, at forskellige flow for brugergrænsefladen konkurrerer med hinanden om at køre på den samme enhed, og at de i nogle tilfælde mislykkedes pga. timeout. 
+
+>[!NOTE]
+>Hvis du kører flow for brugergrænsefladen i automatiseret tilstand, skal du forudse, hvor mange flow for brugergrænsefladen organisationen planlægger at køre parallelt, og derefter købe et passende antal automatiserede tilføjelsesprogrammer. 
+
 
 ## <a name="rerun-failed-ui-flows"></a>Kør mislykkede flow for brugergrænsefladen igen
 
-Hvis kørslen af et flow for brugergrænsefladen mislykkes, kan du enten prøve at køre den, efter du har rettet årsagen til denne fejl, eller i visse tilfælde foretage fejlfinding af den mislykkede kørsel.
+Hvis et flow for brugergrænsefladen mislykkes, skal du løse problemet og derefter forsøge følgende trin for at køre det igen: 
 
-1. Gå til siden med oplysninger om flow for brugergrænsefladen, og identificer den kørsel, du vil køre igen.
+   1. Gå til siden med oplysninger, og identificer den mislykkede kørsel.
 
-1. Vælg det overordnede flow for den kørsel, du er interesseret i.
-
-   Denne fører dig til den overordnede kørsel af flow, hvor flowet for brugergrænsefladen mislykkedes.
-
-1. Vælg knappen for indsendelse igen i handlingsmenuen.
+   1. Vælg knappen **Genindsend** i handlingsmenuen.
 
 ## <a name="troubleshoot-failures"></a>Foretag fejlfinding af fejl
 
-### <a name="failed-ui-flows"></a>Mislykkede flow for brugergrænsefladen
+1. Hvis dit automatiserede flow for brugergrænsefladen mislykkes med meddelelsen **En ny session kan ikke oprettes**, skal du følge disse trin for at løse problemet:
 
-1. Hvis dit automatiserede flow for brugergrænsefladen mislykkes med fejlmeddelelsen **En ny session kan ikke oprettes**, skal du følge disse trin for at løse problemet:
+    - På Windows 10 skal du bekræfte, at du ikke har en aktiv brugersession låst eller oplåst på din destinationsenhed.
+    - På Windows Server 2016 eller Windows Server 2019 skal du bekræfte, at du ikke har nået det maksimale antal aktive brugersessioner, der er konfigureret på din enhed. Flow for brugergrænsefladen kan ikke køres, hvis der ikke kan oprettes nye sessioner.
 
-    1.  På Windows 10 skal du bekræfte, at du ikke har en aktiv brugersession låst eller oplåst på din destinationsenhed.
-    1.  På Windows Server 2016 eller Windows Server 2019 skal du bekræfte, at du ikke har nået det maksimale antal aktive brugersessioner, der er konfigureret på din maskine, ellers kan flow for brugergrænsefladen ikke oprette nye sessioner til at køre nye flow for brugergrænsefladen.
+1. Hvis du kører flow for brugergrænsefladen på et operativsystem, der ikke er på engelsk, og du får vist meddelelsen *502 – Forkert anmodning*, skal du bekræfte, at du har fulgt [trinnene til at opgradere dine flow for brugergrænsefladen fra prøveversionen](upgrade.md).
 
-### <a name="ui-flows-app-status"></a>Status af programmet til flow for brugergrænsefladen
 
-Programmet til flow for brugergrænsefladen er den software, du installerer på din lokale maskine, som administrerer og udfører kørsler af flow for brugergrænsefladen. Det gør det muligt for vores cloudtjeneste til flow for brugergrænsefladen at kommunikere og organisere flow for brugergrænsefladen på din maskine.
+1. Hvis **gatewaystatussen** er **offline**, skal du bekræfte, at enheden er slået til og har forbindelse til internettet. Du kan også foretage [fejlfinding af gatewayen](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot).
 
-På listen over gateways og siden med oplysninger om gatewayen kan du se den aktuelle status af programmet til flow for brugergrænsefladen for hver enhed.
+1. Hvis **gatewaystatussen** er **online**, kan du prøve følgende handlinger:
 
-![Et skærmbillede, der viser listen over gateways](../media/run-ui-flow/gateway-list.png)
+   - Bekræft, at programmet og tjenesterne til flow for brugergrænsefladen kører på din enhed.
 
-Dit program til flow for brugergrænsefladen kan have en af følgende tilstande:
-
-1. **Tilgængelig**: Programmet til flow for brugergrænsefladen er online og klar til at køre flow for brugergrænsefladen.
-
-1. **Kører**: Et eller flere flow for brugergrænsefladen kører på maskinen. Alle andre flow for brugergrænsefladen, som backend sender til destinationsenheden, sættes i kø og venter på en plads til at blive kørt.
-
-1. **Ret forbindelse til gateway**: Cloudtjenesten til flowet for brugergrænsefladen kan ikke nå destinationsenheden, sandsynligvis fordi der er et problem med gatewayforbindelsen. For at løse dette problem skal du gå til forbindelsen og bekræfte, at de legitimationsoplysninger, du bruger, er korrekte.
-
-1. **Ukendt**: Denne status betyder, at backend ikke kan nå programmet til flow for brugergrænsefladen.
-
-    1. Hvis **gatewaystatussen** er **offline**, skal du bekræfte, at enheden er slået til og har forbindelse til internettet. Du kan også foretage [fejlfinding af gatewayen](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot)
-
-    1. Hvis **gatewaystatussen** er **online**, kan du prøve følgende handlinger:
-
-        1. Bekræft, at programmet og tjenesterne til flow for brugergrænsefladen kører på din enhed.
-
-        1. Genstart tjenesten til flowet for brugergrænsefladen på enheden.
+   - Genstart tjenesten til flowet for brugergrænsefladen på enheden.
 
 ## <a name="learn-more"></a>Få mere at vide
 
  - Installér [datagatewayen i det lokale miljø](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
  - Dokumentation til [brug af datagatewayprogrammet i det lokale miljø](https://docs.microsoft.com/flow/gateway-manage).
  - [Foretag fejlfinding](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) af datagatewayen i det lokale miljø.
+
+
+
