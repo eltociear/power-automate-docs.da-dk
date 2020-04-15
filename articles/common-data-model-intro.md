@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,21 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 333f5b92df92cc384b9517a9ccf1d6bb0164c07b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: ac149bcd62da4ee737f23f894e1f99773f843ada
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194295"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862601"
 ---
-# <a name="create-a-flow-that-uses-the-common-data-service"></a>Opret et flow, der bruger Common Data Service
+# <a name="create-a-flow-that-uses-common-data-service"></a>Opret et flow, der bruger Common Data Service
 
 Du kan forbedre driftseffektiviteten med en samlet visning af virksomhedsdata ved at oprette et flow, der bruger [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Udrul denne sikre forretningsdatabase, der omfatter korrekt udformede standardforretningsenheder (f.eks. salg, indkøb, kundeservice og produktivitet) i din organisation. Gem organisationens data i en eller flere [brugerdefinerede enheder](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), som giver adskillige fordele i forhold til eksterne datakilder, såsom Microsoft Excel og Salesforce.
 
@@ -38,7 +38,7 @@ Udnyt f.eks. Common Data Service i Power Automate på følgende vigtige måder:
     Du kan finde detaljerede trin under procedurerne, der angives senere under dette emne.
 * I stedet for at [oprette en godkendelsesløkke via mail](wait-for-approvals.md) skal du oprette et flow, der gemmer godkendelsestilstanden i en enhed, og oprette en brugerdefineret app, hvor brugerne kan godkende eller afvise elementer.
   
-    Du kan få vist detaljerede trin under [Oprette en godkendelsesløkke vha. Common Data Service](common-data-model-approve.md).
+    Du kan få vist detaljerede trin under [Oprette en godkendelsesløkke ved hjælp af Common Data Service](common-data-model-approve.md).
 
 **Forudsætninger**
 

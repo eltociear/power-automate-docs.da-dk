@@ -13,24 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2019
+ms.date: 04/06/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9c5180fc02a3aea9403dabe28a9f8767354bbe1c
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: 3fcf12f42f01d0777a5caeac6308e14b439da002
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329882"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862647"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Opret et automatiseret flow ved hjælp af Common Data Service
 
 
-Med Common Data Service-connectoren kan du oprette flows, der startes af hændelser for oprettelse og opdatering på Common Data Service-databasen. Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster på Common Data Service-databasen.
+Med Common Data Service-connectoren kan du oprette flows, der startes af hændelser for oprettelse og opdatering på Common Data Service-databasen. Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster i Common Data Service.
 
 ## <a name="initiate-a-flow-from-common-data-service"></a>Start et flow fra Common Data Service
 

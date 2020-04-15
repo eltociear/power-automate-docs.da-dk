@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2019
+ms.date: 04/06/2020
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7458b3cb08ca1ce3e29a9d0d29e1bec91d46f7ea
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 4b1c10fd0365f370f1cd408528f6555a14d8fbbf
+ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193191"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80801442"
 ---
 # <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Opret flow fra OneDrive for Business-startpanelet
 
@@ -41,9 +41,9 @@ I denne gennemgang opretter vi et enkelt flow, hvor en af de mange [OneDrive for
 ## <a name="create-a-flow-that-requests-manager-approval-for-a-file-in-onedrive-for-business"></a>Opret et flow, der anmoder om lederens godkendelse af en fil i OneDrive for Business
 
 1. Log på OneDrive for Business.
-1. Find og vælg derefter den fil, som du vil oprette flowet for.
+1. Find og vælg derefter den fil, du vil oprette flowet for.
 1. Vælg linket **Vis handlinger** (tre prikker).
-1. Vælg **Flow** > **Opret et flow**.
+1. Vælg **Automatiser** > **Power Automate** > **Opret et flow**.
 
      ![Opret flow](./media/onedrive-launch-panel/create-flow.png) 
 

@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/30/2019
+ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: 414c14b02b0543dc3992253192020b7453b9e2e0
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 75fa66b3be68ef86a78448b9b5868581cb0a9b0f
+ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192892"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80801409"
 ---
 # <a name="sharepoint-remind-me"></a>SharePoint-påmindelser
 
@@ -35,9 +35,13 @@ Med SharePoint-lister og -biblioteker kan du definere brugerdefinerede metadatak
 ## <a name="create-a-reminder-flow"></a>Opret et påmindelsesflow
 
  1. Opret en [SharePoint-liste](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) med mindst én datetime-kolonne i den aktuelle visning. 
- 1. Vælg **Flow** > **Angiv en påmindelse** > **Dato for deaktivering** (dette er kolonnen med datetime for påmindelsen).
+ 1. Vælg **Automate** > **Angiv en påmindelse** > **Dato for deaktivering** (dette er kolonnen med datetime for påmindelsen).
 
      ![Vælg et påmindelsesflow](media/create-sharepoint-reminder-flows/select-reminder-flow.png)
+
+1. Du kan eventuelt få brug for at logge på de tjenester, denne Power Automate-skabelon bruger.
+     
+1. Vælg **Fortsæt**.
 
 1. Angiv et **flownavn** og antallet af dage før datetime-kolonneposten, hvor du vil modtage påmindelsen på kortet **Angiv en påmindelse**.
 

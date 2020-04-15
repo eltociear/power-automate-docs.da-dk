@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/07/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 39291e74b16727abe04c20c16eddeaa6d9871091
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 16d92a2d8aad6e39ff5e2eb446438dc769b1baf8
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195675"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862670"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Reaktion på sletteanmodninger fra den registrerede i forbindelse med GDPR i Power Automate
 
@@ -50,7 +50,7 @@ I følgende tabel vises, hvilke personlige data der slettes automatisk, og hvilk
 
 *Hver af disse ressourcer indeholder posterne "Oprettet af" og "Ændret af", som indeholder personlige data. Af sikkerhedsmæssige årsager gemmes disse poster, indtil ressourcen slettes.
 
-** For de miljøer, der indeholder en Common Data Service-database, gemmes miljøtilladelserne, dvs. hvilke brugere der har fået tildelt rollerne Miljøopretter og Miljøadministrator, som poster i Common Data Service-databasen. Under [Udfør DSR-anmodninger imod Common Data Service-kundedata](https://go.microsoft.com/fwlink/?linkid=872251) kan du finde en vejledning i, hvordan du besvarer DSR-anmodninger for brugere, der anvender Common Data Service.
+**For de miljøer, der indeholder en Common Data Service-database, gemmes miljøtilladelserne, dvs. hvilke brugere der har fået tildelt rollerne Miljøopretter og Miljøadministrator, som poster i Common Data Service. Under [Udfør DSR-anmodninger imod Common Data Service-kundedata](https://go.microsoft.com/fwlink/?linkid=872251) kan du finde en vejledning i, hvordan du besvarer DSR-anmodninger for brugere, der anvender Common Data Service.
 
 For de data og ressourcer, der kræver manuel gennemgang, findes følgende funktioner i Power Automate til søgning efter og ændring af private oplysninger for en bestemt bruger:
 
@@ -77,7 +77,7 @@ Her er opdelingen af oplevelser, som en administrator kan slette opdelt efter de
 |Tilladelser til brugerdefineret connector|Power Automate-udviklerportal| ||
 |Oversigt over godkendelser|Microsoft Power Apps-udviklerportal*|||
 
-* Med introduktionen af Common Data Service forholder det sig sådan, at hvis en database oprettes i miljøet, gemmes miljøtilladelserne og tilladelserne til modeldrevne apps som poster i forekomsten af Common Data Service-databasen. Under [Udfør DSR-anmodninger imod Common Data Service-kundedata](https://go.microsoft.com/fwlink/?linkid=872251) kan du finde en vejledning i, hvordan du besvarer DSR-anmodninger for brugere, der anvender Common Data Service.
+*Med introduktionen af Common Data Service forholder det sig sådan, at hvis en database oprettes i miljøet, gemmes miljøtilladelserne og tilladelserne til modeldrevne apps som poster i forekomsten af Common Data Service. Under [Udfør DSR-anmodninger imod Common Data Service-kundedata](https://go.microsoft.com/fwlink/?linkid=872251) kan du finde en vejledning i, hvordan du besvarer DSR-anmodninger for brugere, der anvender Common Data Service.
 
 \*\* En administrator kan kun få adgang til disse ressourcer fra Power Automate-udviklerportalen, hvis administratoren har fået tildelt adgang fra Power Automate Administration.
 
@@ -278,7 +278,7 @@ En administrator kan tildele administratoradgang til et miljø, der er oprettet 
 
 Brugere kan få tildelt tilladelser (f.eks. miljøadministrator, miljøudvikler osv.) i et miljø, der er gemt i tjenesten Power Automate-tjenesten, som en "rolletildeling".
 
-Med introduktionen af Common Data Service forholder det sig sådan, at hvis en database oprettes i miljøet, gemmes disse "rolletildelinger" som poster i forekomsten af Common Data Service-databasen.
+Med introduktionen af Common Data Service forholder det sig sådan, at hvis en database oprettes i miljøet, gemmes disse "rolletildelinger" som poster i Common Data Service.
 
 Du kan finde flere oplysninger om, hvordan du fjerner en brugers tilladelse i et miljø, ved at navigere til [Brug af miljøer i Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 

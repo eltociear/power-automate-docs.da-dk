@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/28/2017
+ms.date: 04/07/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4c8b2b02cf87abb54a587d9358a4c1f462ceb724
-ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
+ms.openlocfilehash: a87845247f57e58edf7170dc3e8da721db7d275e
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524557"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862509"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Ofte stillede spørgsmål om områder i Power Automate
 
@@ -52,6 +52,7 @@ Administratorer kan identificere området, hvis de logger på Power Automate [Ad
 * Frankrig
 
 ## <a name="what-features-are-specific-to-a-given-region"></a>Hvilke funktioner er specifikke for et bestemt område?
+
 Miljøer kan oprettes i forskellige områder og er bundet til den pågældende geografiske placering. Når du opretter et flow i et miljø, installeres dette flow i datacentre på den pågældende geografiske placering. Dette gælder for alle elementer, du opretter i det pågældende miljø, herunder Common Data Model, flow, forbindelser, gateways, apps og brugerdefinerede connectors.
 
 Opret dit miljø i det område, der er tættest på brugerne, for at få optimal ydeevne. Hvis dine brugere befinder sig i Europa, skal du f.eks. oprette miljøerne i området Europa. Hvis brugerne befinder sig i USA, skal du oprette miljøerne i området USA.

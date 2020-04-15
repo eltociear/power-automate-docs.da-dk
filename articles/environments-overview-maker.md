@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,22 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/27/2017
+ms.date: 04/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d62aa0870af1be0e05e0a3799d02cfdfe705e3c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: b797fc6e4a2e7835a7322f9fc55d50c96d113031
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195422"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862555"
 ---
 # <a name="choosing-an-environment"></a>Valg af et miljø
-
 
 I denne artikel introduceres du til **miljøer** i Power Automate, hvor du kan oprette og isolere dine flow, gateways, forbindelser og andre ressourcer på en sikker måde.
 
@@ -46,7 +45,7 @@ Når du opretter et flow, vælger du, hvilket miljø der skal hoste flowet, og h
 
 Scenarie|Anbefaling
 -----|-----
-Du vil gerne oprette et flow, der anvender en forbindelse til Microsoft Common Data Service.|Placer flowet og Common Data Service i det samme miljø. Dette sikrer, at alle dataene er isoleret i det pågældende miljø (isoleringsgrænse).
+Du vil gerne oprette et flow, der anvender en forbindelse til Common Data Service.|Placer flowet og Common Data Service i det samme miljø. Dette sikrer, at alle dataene er isoleret i det pågældende miljø (isoleringsgrænse).
 Du opretter et flow til HR-afdelingen. Du vil sikre, at kun brugere i HR-afdelingen har adgang til flowet.|Opret et miljø, og sørg for kun at føje HR-brugere til miljøet. Placer flowet og andre ressourcer, som flowet bruger, i dette miljø.
 Der er brugere i Europa, der benytter et flow til at vise data i SharePoint.|Opret et miljø i Europa, og opret derefter dit flow og SharePoint-forbindelsen til flowet. Dette miljø i Europa giver de europæiske brugere den bedste ydeevne, da alle ressourcer er lokale for Europa (datalokalitet).
 
@@ -85,7 +84,7 @@ Før du opretter et flow, skal du vælge det miljø, hvor flowet og dets ressour
 Overvej følgende faktorer, når du vælger det miljø, der skal være vært for dine flow:
 
 * Du kan kun oprette gateways i standardmiljøet. Hvis du vil bruge en gateway til at oprette forbindelse mellem dit flow og data i det lokale miljø, skal du derfor bruge standardmiljøet.
-* Microsoft Common Data Service-databaser er knyttet til et bestemt miljø. Hvis du vil oprette en proces, der bruger Common Data Server, skal du derfor oprette flowet i det miljø, der er vært for databasen.
+* Common Data Service er knyttet til et bestemt miljø. Hvis du vil oprette en proces, der bruger Common Data Service, skal du derfor oprette flowet i det miljø, der er vært for databasen.
 * Du kan se alle de miljøer, du kan redigere ressourcer i. Du skal dog få en administrator til at tilføje dig som opretter for alle de miljøer, du vil oprette flow i.
 
 > [!NOTE]

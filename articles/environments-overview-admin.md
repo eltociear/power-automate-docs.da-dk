@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/22/2017
+ms.date: 04/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 7a2ff7c0957e52f076ccc0cc7fdcb4d09109a404
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 0e0b312ce5e962052770eb44fd1a61c2f19c8e4f
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194364"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862693"
 ---
 # <a name="using-environments-within-power-automate"></a>Brug af miljøer i Power Automate
 
@@ -173,15 +173,15 @@ Muligheden for at oprette og redigere et databaseskema og oprette forbindelse ti
 
 Ja, flow kan eksporteres fra ét miljø og importeres til et andet miljø.
 
-### <a name="which-license-includes-the-common-data-service"></a>Hvilken licens omfatter Common Data Service?
+### <a name="which-license-includes-common-data-service"></a>Hvilken licens omfatter Common Data Service?
 
-Kun Microsoft Power Apps Plan 2 indeholder rettigheder til at oprette databaser med Common Data Service. Alle betalte planer (Power Automate Plan 1 og 2 og Microsoft Power Apps Plan 1 og 2) har ret til at bruge Common Data Service.
+Kun Microsoft Power Apps Plan 2 indeholder rettigheder til at oprette databaser med Common Data Service. Alle betalte planer (Power Automate Plan 1 og 2 og Microsoft Power Apps Plan 1 og 2) har dog ret til at bruge Common Data Service.
 
 Vælg en plan, der passer til dig, ved at gå til siden [Priser på Power Automate](https://flow.microsoft.com/pricing/).
 
 I dokumentet [Spørgsmål om fakturering](billing-questions.md) kan du finde svar på ofte stillede spørgsmål om fakturering.
 
-### <a name="can-the-common-data-service-be-used-outside-of-an-environment"></a>Kan Common Data Service benyttes uden for et miljø?
+### <a name="can-common-data-service-be-used-outside-of-an-environment"></a>Kan Common Data Service benyttes uden for et miljø?
 
 Nej. Common Data Service kræver et miljø. [Læs mere](common-data-model-intro.md) om det.
 

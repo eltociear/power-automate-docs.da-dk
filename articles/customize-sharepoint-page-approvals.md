@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/29/2019
+ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: fee8eedddd39226d01ee4dde72bc66fcdfcdfda6
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 5fa6c10245c5fbc974ae96dd926c8e5b193aaab4
+ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194180"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80801521"
 ---
 # <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Administrer SharePoint-sidegodkendelser med Power Automate
 
@@ -40,9 +40,15 @@ Du skal være administrator af SharePoint-websteder for at kunne udføre aktivit
 
     ![Vælg flowet for sidegodkendelse](media/customize-sharepoint-page-approvals/pages.png)
 
-1. Vælg **Flow**, og vælg derefter **Konfigurer flow for sidegodkendelse**.
+1. Vælg **Automate** > **Power Automate** > **Konfigurer flow for sidegodkendelse**.
     
     ![Vælg flowet for sidegodkendelse](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
+
+1. Vælg **Opret flow**.
+
+1. Du kan eventuelt få brug for at logge på de tjenester, denne Power Automate-skabelon bruger.
+
+1. Vælg **Fortsæt**.
 
 1. Angiv et **navn på flowet**, mindst ét navn i feltet **Godkendere**, og vælg derefter **Opret**.
     

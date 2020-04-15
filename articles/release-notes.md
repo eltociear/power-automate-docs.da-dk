@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,21 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/31/2018
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 51f8d56a7dd5c94a782c67569dea686f21f7c754
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 7f4da4123d5623348513d9b14a75d1f03b3e17dc
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193812"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862739"
 ---
 # <a name="release-notes"></a>Produktbemærkninger
+
+>[!NOTE]
+>Udgivelsesplaner spores nu [her](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## <a name="top-questions"></a>De mest populære spørgsmål
 1. Mit flow mislykkedes. Hvordan løser jeg problemet?
@@ -597,7 +600,7 @@ Nu kan du se de nye moderne SharePoint Online-lister, der omfatter Power Automat
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) om denne version.
 
 ### <a name="release-2016-08-08"></a>Version udgivet 08-08-2016
-Offentlig prøveversion Microsoft Common Data Service, der er integreret i Power Automate. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/flow-and-common-data-model/) om denne version.
+Offentlig prøveversion Common Data Service, der er integreret i Power Automate. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/flow-and-common-data-model/) om denne version.
 
 ### <a name="release-2016-08-05"></a>Version udgivet 08-05-2016
 * **SharePoint i det lokale miljø** – Ligesom med SharePoint Online kan du oprette flow omkring SharePoint-lister og biblioteker i det lokale miljø, enten ved hjælp af foruddefinerede skabeloner eller ved at bygge dem helt fra bunden.
@@ -654,6 +657,9 @@ Hvis du har brugt Logikflow som en del af [Microsoft Power Apps](https://powerap
 * Du kan få vist en oversigt for hver kontrol og kørsel i flowet.
 * Når du gemmer et flow, kan du [straks se det i aktion](see-a-flow-run.md) ved blot at udføre den udløsende handling.
 * Vi har et [nyt community](https://go.microsoft.com/fwlink/?LinkID=787467), hvor du kan diskutere Flow eller [indsende dine idéer](https://go.microsoft.com/fwlink/?LinkID=787474).
+
+>[!NOTE]
+>Udgivelsesplaner spores nu [her](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## <a name="next-steps"></a>Næste trin
 Hvis du har nogen problemer, der ikke allerede er omfattet af disse produktbemærkninger eller af [Ofte stillede spørgsmål](frequently-asked-questions.md), skal du [tilmelde dig vores community](https://go.microsoft.com/fwlink/?LinkID=787467) for at stille spørgsmål eller [kontakte support](https://go.microsoft.com/fwlink/?LinkID=787479).

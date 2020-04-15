@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,21 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6346772d3eba6177577f7c5d7a151174f1a575f9
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 218e4fffd1ba86fec1c38a8322774f642ab64001
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193858"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862762"
 ---
-# <a name="build-an-approval-loop-by-using-power-automate-and-the-microsoft-common-data-service"></a>Opret en godkendelsesløkke ved hjælp af Power Automate og Microsoft Common Data Service
+# <a name="build-an-approval-loop-by-using-power-automate-and-common-data-service"></a>Opret en godkendelsesløkke ved hjælp af Power Automate og Common Data Service
 
 Med Common Data Service kan du oprette flow på en måde, hvor oplysningerne gemmes i en database, der er uafhængig af et flow. Det bedste eksempel på dette er godkendelser. Hvis du gemmer status for godkendelsen i en enhed, kan dit flow arbejde oven på den.
 
@@ -140,7 +140,7 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Tilføj en handling](./media/common-data-model-approve/add-action.png)
 2. I feltet, der indeholder **Søg efter flere handlinger**, skal du skrive eller indsætte **Common Data Service**, og derefter skal du klikke eller trykke på **Common Data Service – opret objekt**.
    
-    ![Opret et objekt i Common Data Model](./media/common-data-model-approve/cdm-create-object.png)
+    ![Opret et objekt i Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
 3. Under **objektet** skal du skrive eller indsætte **Gennemse** og derefter klikke eller trykke på **Gennemse Dropbox-filer**.
    
     ![Vælg objektet](./media/common-data-model-approve/choose-entity-flow.png)

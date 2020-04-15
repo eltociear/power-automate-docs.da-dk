@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/06/2017
+ms.date: 04/06/2020
 ms.author: matp
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f341adb319c20a201525bb6b7a8a0c54e2da5ea3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 9f6f7554d73c0b14a26905ca1f3a706ab03797cd
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195031"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862532"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Opret et flow ved hjælp af Dynamics 365 (online)
 
@@ -34,7 +34,7 @@ Ved hjælp af en Dynamics 365-forbindelse kan du oprette flows, der starter, nå
 Du kan konfigurere automatiserede flow i Power Automate mellem dine yndlingsprogrammer og -tjenester for at synkronisere filer, modtage meddelelser, indsamle data og meget mere. Du finder flere oplysninger under [Kom i gang med Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> Hvis du vil aktivere en flowudløser, skal **Ændringssporing** være aktiveret for den Common Data Service-enhed, der bruges sammen med flowet. Flere oplysninger: [Aktivér ændringssporing for at kontrollere datasynkronisering](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> Hvis du vil aktivere en Power Automate-udløser, skal **Ændringssporing** være aktiveret for den Common Data Service-enhed, der bruges sammen med flowet. Flere oplysninger: [Aktivér ændringssporing for at kontrollere datasynkronisering](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Opret et flow fra en skabelon
 Du kan oprette et flow ved hjælp af en af de mange tilgængelige skabeloner, såsom disse eksempler:

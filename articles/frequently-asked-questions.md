@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2017
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 624475254503f44756d97b1e59cc4896b586ab20
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193582"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862486"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -43,7 +43,7 @@ Power Automate har to forskellige målgrupper:
 Power Automate indeholder funktioner, der hjælper line of business-brugere med at oprette automatiserede arbejdsprocesser. Logic Apps er en Azure-tjeneste, der indeholder alle de samme fantastiske funktioner som Power Automate samt ekstra funktioner såsom integration i Azure Resource Manager og på Azure Portal, PowerShell og xPlat CLI, Visual Studio og andre connectors. [Få mere at vide om Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
 
 ### <a name="how-does-power-automate-fit-in-microsofts-overall-business-application-platform-strategy"></a>Hvordan passer Power Automate ind i Microsofts overordnede strategi for platforme til virksomhedsprogrammer?
-Power Automate er en del af en effektiv platform til virksomhedsprogrammer, der kan tilpasses, og som omfatter Power Apps, Common Data Service, Dynamics 365 og Office 365. Denne platform gør det muligt for vores kunder, vores partnere og vores softwareproducentpartnere at udvikle særlige løsninger til deres egne virksomheder, deres branche, til funktionelle roller eller endda til bestemte geografiske områder. De line of business-brugere, der forstår deres forretningsmæssige behov bedst muligt, kan nu nemt analysere, oprette og forenkle data og processer. Professionelle udviklere kan nemt udvide deres line of business inden for automatisering, analyse og apps til at bruge Azure-tjenester som Functions, App Service og Logic Apps. API-forbindelser, gateways og Microsoft Common Data Service gør det muligt at få mere værdi ud af de tjenester eller data, der allerede er i brug, enten i cloudmiljøet eller i det lokale miljø.
+Power Automate er en del af en effektiv platform til virksomhedsprogrammer, der kan tilpasses, og som omfatter Power Apps, Common Data Service, Dynamics 365 og Office 365. Denne platform gør det muligt for vores kunder, vores partnere og vores softwareproducentpartnere at udvikle særlige løsninger til deres egne virksomheder, deres branche, til funktionelle roller eller endda til bestemte geografiske områder. De line of business-brugere, der forstår deres forretningsmæssige behov bedst muligt, kan nu nemt analysere, oprette og forenkle data og processer. Professionelle udviklere kan nemt udvide deres line of business inden for automatisering, analyse og apps til at bruge Azure-tjenester som Functions, App Service og Logic Apps. API-forbindelser, gateways og Common Data Service gør det muligt at få mere værdi ud af de tjenester eller data, der allerede er i brug, enten i cloudmiljøet eller i det lokale miljø.
 
 ## <a name="functionality"></a>Funktionalitet
 ### <a name="what-do-i-need-to-use-power-automate"></a>Hvad skal jeg have for at bruge Power Automate?
@@ -98,7 +98,7 @@ Du kan få adgang til datakilderne i din egen it-infrastruktur via [datagatewaye
 Skabeloner er færdigbyggede flows til populære og almindelige scenarier. Brugen af en skabelon kræver kun, at du har adgang til tjenesterne i skabelonen, og at du udfylder de nødvendige indstillinger.
 
 ### <a name="what-data-sources-will-i-be-able-to-connect-to"></a>Hvilke datakilder kan jeg oprette forbindelse til?
-Du kan oprette forbindelse til mere end 100 standardtjenester fra Microsoft og tredjeparter, for eksempel Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server og flere. Du kan også oprette forbindelse til kvalitetstjenester, såsom Salesforce og Common Data Service til Power Apps.
+Du kan oprette forbindelse til mere end 100 standardtjenester fra Microsoft og tredjeparter, for eksempel Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server og flere. Du kan også oprette forbindelse til kvalitetstjenester, som Salesforce og Common Data Service.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Hvordan opretter jeg forbindelse til en REST-API i mit flow?
 Du kan oprette forbindelse til alle REST-API'er, der bruger JSON og understøtter mindst én af flere end 10 godkendelsesmetoder ved at oprette [en brugerdefineret connector](developer/register-custom-api.md).
