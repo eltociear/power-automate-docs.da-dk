@@ -20,28 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d17e7884960af0fb4231eac785a17683c1dadd18
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: cdd901c75e7245126760200cc94d28555dc4a33a
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329862"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80801527"
 ---
-# <a name="preview-introduction-to-ui-flows"></a>Prøveversion: Introduktion til brugergrænsefladeflow
+# <a name="introduction-to-ui-flows"></a>Introduktion til brugergrænsefladeflow
 
-[Dette emne er foreløbig dokumentation og kan ændres].
-
-Flow for brugergrænsefladen indeholder egenskaber for RPA (Robotic Process Automation) til Power Automate. Du kan bruge flow for brugergrænsefladen til at automatisere gentagne opgaver i Windows- og webprogrammer. Handlinger i brugergrænsefladen (klik, tastaturinput osv.) optages og afspilles i flow for brugergrænsefladen for programmer, hvor der ikke er brugervenlige eller fuldstændige API'er.
+Flow for brugergrænsefladen tilfører egenskaber for RPA (Robotic Process Automation) til Power Automate. Du kan bruge flow for brugergrænsefladen til at automatisere gentagne opgaver i Windows- og webprogrammer. Handlinger i brugergrænsefladen (klik, tastaturinput osv.) optages og afspilles i flow for brugergrænsefladen for programmer, hvor der ikke er brugervenlige eller fuldstændige API'er.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
 
-
-> [!IMPORTANT]
-> - Dette er en prøveversionsfunktion.
-> - En prøveversionsfunktion kan have begrænset tilgængelighed og funktionalitet. En prøveversionsfunktion er tilgængelig før en officiel version udgives, så kunderne kan få tidlig adgang til den og give feedback.
-> - Funktionen Flow for brugergrænseflade udrulles i øjeblikket i flere områder. Hvis du ikke kan se funktionen i dit miljø, ikke kan oprette flow for brugergrænsefladen eller får vist en fejl, når du forsøger at køre funktionen i et flow, skal du prøve igen senere.
 
 Du kan begynde med det samme:
 
