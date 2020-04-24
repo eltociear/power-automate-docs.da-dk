@@ -243,9 +243,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultat:**
 
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**    
-**~~Bold, strike-through text~~**  
+Anvend _fremhævning_ i kommentarer til at udtrykke **stærke** holdninger og pointere <s>rettelser</s>   
+**_Fed, kursiv tekst_**    
+**~~Fed, gennemstreget tekst~~**  
 
 
 ## <a name="special-characters"></a>Specialtegn
