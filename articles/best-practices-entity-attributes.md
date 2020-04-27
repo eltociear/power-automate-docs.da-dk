@@ -19,12 +19,12 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: 8a5fb3cc698f20f025089524e6198c158f710980
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: b9a4a2968a251efd360a043d23e837eaeb746e4e
+ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193950"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82081186"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Bedste praksis for brug af enhedsattributter for forretningsprocesforløb
 
@@ -45,7 +45,7 @@ Nu, hvor feltet *Aktiv fase* (activestageid) frarådes for relaterede enheder, k
 I version 9.0 og nyere opretter hvert forretningsprocesforløb sin egen Common Data Service-enhed, der som regel har det samme navn som forretningsprocesforløbet. Hvis du vil rapportere om forretningsprocesforløbet, skal du vælge enheden for det forretningsprocesforløb, du vil rapportere om, og derefter oprette visninger og diagrammer på samme måde, som du gjorde før.
 
 I vores eksempel skal du følge disse trin for at gå til enheden **Kundeemne til salgsproces for salgsmulighed**:
-1. Gå til https://make.powerapps.com
+1. Gå til [https://make.powerapps.com](https://make.powerapps.com).
 1. Vælg **Data**.
 1. Vælg **Enheder**.
 1. Angiv filteret til **Alle**.
