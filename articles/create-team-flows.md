@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/21/2017
+ms.date: 11/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 697f41960a62c7da2eee9bc34bb174d39ed2c44b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: b4479c2df6b8c7a1d5c269a8e0a48f15c1dda275
+ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195054"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153534"
 ---
 # <a name="create-team-flows"></a>Opret teamflows
 
@@ -55,7 +55,7 @@ Hvis du vil oprette et teamflow, skal du have en [betalt Power Automate-plan](ht
 Følg disse trin for at oprette et teamflow eller føje flere ejere til et teamflow.
 
 1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flow**.
-2. Markér personikonet for det flow, du vil ændre:
+2. Vælg **Flere kommandoer**, og vælg derefter **Del** for det flow, du vil dele:
    
     ![teamikon](./media/create-team-flows/addowner1.png)
 3. Angiv navn, mailadresse eller gruppenavn på den person eller gruppe, du vil tilføje som ejer:
@@ -86,18 +86,16 @@ Du kan tilføje SharePoint-lister som medejere til et flow, så alle, der har re
 > 
 > 
 
-1. Markér personikonet for det flow, du vil ændre:
+1. Vælg **Flere kommandoer**, og vælg derefter **Del** for det flow, du vil dele:
    
-    ![vælg ikonet for personer](./media/create-team-flows/removeowner1.png)
+    ![vælg ikonet for personer](./media/create-team-flows/addowner1.png)
 2. Markér ikonet **Slet** for den ejer, du vil fjerne:
    
     ![vælg Slet](./media/create-team-flows/removeowner2.png)
 3. I bekræftelsesdialogboksen skal du markere **Fjern denne ejer**:
    
     ![bekræft fjernelse](./media/create-team-flows/removeowner3.png)
-4. Tillykke &mdash; den bruger eller gruppe, du har fjernet, er ikke længere angivet som ejer af flowet:
-   
-    ![brugeren er fjernet](./media/create-team-flows/removeowner4.png)
+4. Tillykke &mdash; den bruger eller gruppe, du har fjernet, er ikke længere angivet som ejer af flowet.
 
 
 ## <a name="update-connection-owner"></a>Opdater ejeren af forbindelsen

@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: 75fa66b3be68ef86a78448b9b5868581cb0a9b0f
-ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
+ms.openlocfilehash: b5930ca6fa663d92497ec48b3cc6220d8c891d44
+ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80801409"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82081163"
 ---
 # <a name="sharepoint-remind-me"></a>SharePoint-påmindelser
 
@@ -47,7 +47,7 @@ Med SharePoint-lister og -biblioteker kan du definere brugerdefinerede metadatak
 
     ![Angiv oplysninger om påmindelsesflow](media/create-sharepoint-reminder-flows/set-reminder-details.png)
 
-1. Vælg **Opret** på kortet **Angiv en påmindelse**.
+1. På kortet **Angiv en påmindelse** skal du vælge **Opret** .
 
 1. Du modtager følgende meddelelse, der angiver, at flowet blev oprettet:
 

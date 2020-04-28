@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4633df9687662c49757dd9cbb4d1d88892dfbe51
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 5b7ca2db5a4f04e60484eb758faaa3938fcc60c9
+ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193628"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153413"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug Markdown i anmodninger om Power Automate-godkendelse
 
@@ -35,14 +35,16 @@ I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Mark
 > [!IMPORTANT]
 > Mails med godkendelsesanmodninger er *handlingsrettede meddelelser*. Hvis din [Microsoft Outlook-klient](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) ikke understøtter handlingsrettede meddelelser, vises der godkendelsesanmodninger i HTML-format. 
 
+> [!IMPORTANT]
+> Alle Markdown-gengivelser har implementeringsforskelle. Se flere oplysninger i afsnittet [Kundesupport](#client-support).
+
 ## <a name="headers"></a>Headers (Overskrifter)
 
 Strukturér dine kommentarer ved hjælp af overskrifter. Længere kommentarer inddeles under overskrifter, så det er lettere at læse dem.
 
 Start en linje med hash-tegnet `#` for at angive en overskrift. Organiser dine bemærkninger med underoverskrifter ved at starte en linje med yderligere hash-tegn, f.eks. `####`. Op til seks overskriftsniveauer understøttes.
 
-**Eksempel:**
-
+**Eksempel:**  
 ```Markdown
 # This is a H1 header
 ## This is a H2 header
@@ -51,33 +53,34 @@ Start en linje med hash-tegnet `#` for at angive en overskrift. Organiser dine b
 ##### This is a H5 header
 ```
 
-**Resultat:**
-
+**Resultat:**  
 ![Eksportér flow](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## <a name="paragraphs-and-line-breaks"></a>Afsnits- og linjeskift
 
-Gør det lettere at læse din tekst ved at opdele den med afsnits- eller linjeskift. Angiv to mellemrum før linjeskift, hvis du vil starte et nyt afsnit, eller angiv to linjeskift efter hinanden, hvis du vil starte et nyt afsnit.   
+Gør det lettere at læse din tekst ved at opdele den med afsnits- eller linjeskift. Angiv to mellemrum før linjeskiftet for at tvinge de fleste klienter til at starte en ny linje.  
    
-**Eksempel**
-
-Tilføj linjer mellem teksten vha. Enter.
-Det giver bedre plads i teksten og gør den lettere at læse.
+**Eksempel:**  
+```Markdown
+This is line 1.(space, space)
+Now text will appear on the next line.
+```
 
 **Resultat:**    
-Tilføj linjer mellem teksten vha. Enter.      
-Det giver bedre plads i teksten og gør den lettere at læse.
+Dette er linje 1.  
+Nu vises teksten på den næste linje. 
 
+**Eksempel 2**  
+```Markdown
+This is line 1.(space, space)  
 
-**Eksempel 2**
-
-Tilføj to mellemrum før slutningen af linjen.(mellemrum, mellemrum)     
-Dette giver plads mellem afsnit.
+Line 2 has extra space before it.
+```
 
 **Resultat:**  
-Tilføj to mellemrum før slutningen af linjen.   
+Dette er linje 1.  
 
-Dette giver plads mellem afsnit.
+Der er et ekstra mellemum foran linje 2.
   
 
 ## <a name="lists"></a>Lister
@@ -88,43 +91,36 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
 
 ### <a name="ordered-or-numbered-lists"></a>Sorterede eller nummererede lister
 
-**Eksempel:**
-
+**Eksempel:**  
 ```Markdown
 0. First item.
 0. Second item.
 0. Third item.
 ```
 
-**Resultat:**
-
+**Resultat:**  
 1. First item.
 2. Second item.
 3. Third item.
 
 ### <a name="bullet-lists"></a>Punktopstilling
 
-**Eksempel:**
-
-<pre>
-
+**Eksempel:**  
+```Markdown
 - Item 1
 - Item 2
 - Item 3
+```
 
-</pre>
-
-**Resultat:**
-
+**Resultat:**  
 - Item 1
 - Item 2
 - Item 3
 
 ### <a name="nested-lists"></a>Indlejrede lister
 
-**Eksempel:**
-<pre>
-
+**Eksempel:**  
+```Markdown
 1. First item.
    - Item 1
    - Item 2
@@ -133,11 +129,9 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
    - Nested item 1
    - Nested item 2
    - Nested item 3
-
-</pre>
+```
 
 **Resultat:**  
-
 1. First item.
 
     - Item 1
@@ -159,37 +153,13 @@ Du kan angive tekstlinks for din URL-adresse ved hjælp af standardsyntaksen for
 [Link Text](Link URL)
 ```
 
-**Eksempel:**
-<pre>
-&#91;Power Automate](https://flow.microsoft.com)
-</pre>
-
-**Resultat:**
-
+**Eksempel:**  
+```Markdown
 [Power Automate](https://flow.microsoft.com)
+```
 
-### <a name="anchor-links"></a>Forankrede links
-
-Der tildeles et forankret id til alle overskrifter, når de gengives i HTML-format. Id er overskriftsteksten, hvor mellemrummene er erstattet af bindestreger (-), og der kun bruges små bogstaver.
-
-**Eksempel:**
-
-<pre>
-###Link to a heading in the page
-</pre>
-
-<br/>
-
-**Resultat:**
-
-Syntaksen for et forankret link til en sektion...
-
-<pre>
-[Link to a heading in the page](#link-to-a-heading-in-the-page)
-</pre> 
-<br/>
-Id'et består udelukkende af små bogstaver, og der skelnes mellem store og små bogstaver i linket, så sørg for at bruge små bogstaver, også selvom der i selve overskriften bruges store bogstaver.
-
+**Resultat:**  
+[Power Automate](https://flow.microsoft.com)
 
 ## <a name="tables"></a>Tabeller
 
@@ -199,23 +169,18 @@ Organiser strukturerede data med tabeller.
 - Adskil tabelceller ved hjælp af en lodret streg `|` 
 - De to første linjer i en tabel indikerer kolonneoverskrifterne og justeringen af elementer i tabellen
 - Brug koloner (`:`), når du inddeler overskrift og brødtekst i tabeller, for at angive kolonnejustering (til venstre, i midten, til højre) 
-- Brug <br>-koden i HTML for at starte en ny linje (`<br/>`) (fungerer i en wiki, men ikke andre steder)  
+- Hvis du vil starte en ny linje, skal du bruge koden for linjeskift i HTML(`<br/>`)
 - Husk at afslutte de enkelte rækker med vognretur eller linjeskift. 
 
-**Eksempel:**
-
-```
+**Eksempel:**  
+```Markdown
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
 
-
-
-
 **Resultat:**  
-
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
@@ -231,22 +196,17 @@ Du kan fremhæve tekst ved at anvende fed, kursiv eller gennemstreget tekst:
 
 Kombiner disse elementer for at fremhæve tekst på flere måder.    
 
-**Eksempel:**
-
-<pre>
+**Eksempel:**  
+```Markdown
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
 **_Bold, italicized text_**  
 **~~Bold, strike-through text~~**
-</pre>
+```
 
-<br/>
-
-**Resultat:**
-
+**Resultat:**  
 Anvend _fremhævning_ i kommentarer til at udtrykke **stærke** holdninger og pointere <s>rettelser</s>   
 **_Fed, kursiv tekst_**    
 **~~Fed, gennemstreget tekst~~**  
-
 
 ## <a name="special-characters"></a>Specialtegn
 
@@ -289,3 +249,17 @@ Anvend _fremhævning_ i kommentarer til at udtrykke **stærke** holdninger og po
 
 </tbody>
 </table>
+
+## <a name="client-support"></a>Klientsupport
+
+Det er ikke alle klienter, der overholder præcist samme Markdown, eller som overholde en Markdown overhovedet. Power Automate-teamet samarbejder med klientejere, når det er muligt, for at løse disse begrænsninger, men det er ikke altid muligt at løse problemet. Her er en tabel med en beskrivelse af de kendte begrænsninger på tværs af klienten.
+
+| Funktion | PA Portal | PA Mobile App | Outlook Desktop | Outlook Web | Teams | Teams Mobile |  
+|---------|--------|---------------|-----------------|-------------|-------|--------------|
+| **Headers** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
+| **Nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
+| **Indlejrede nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
+| **Tabeller** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
+| **Billeder** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** |
+| **Tvungne linjeskift** | Ja | Ja | **_Nej_** (brug en tom linje i stedet) | Ja | Ja | Ja |
+| **Tomme linjer** | **_Nej_** | **_Nej_** | Ja | Ja | **_Nej_** | Ja |

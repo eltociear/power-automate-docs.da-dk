@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ebb723812a8a6805616a8e66deee13aa74618ce2
-ms.sourcegitcommit: 7d6c210192ce68ad0d0b27f67f581e307d5ef606
+ms.openlocfilehash: 478949c1d0579e399f4125e67c1e40103d889900
+ms.sourcegitcommit: e709e8c4a62df6fdb0ca06f3f8afb5c639c76632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "80669852"
+ms.lasthandoff: 04/26/2020
+ms.locfileid: "82159532"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -61,13 +61,16 @@ Dette er grænserne for en enkelt flowkørsel.
 
 | Navn | Grænse | Noter |
 | --- | --- | --- |
-| Varighed af kørsel |30 dage |Omfatter arbejdsprocesser med ventende trin, såsom godkendelser. Efter 30 dage opstår der timeout for eventuelle afventende trin. Godkendelser, der er opstået timeout for, fjernes fra godkendelsescenteret. Hvis nogen forsøger at godkende en anmodning, hvor der er opstået timeout, får de vist en fejlmeddelelse. |
+| Varighed af kørsel |30 dage |Omfatter arbejdsprocesser med ventende trin, såsom godkendelser. Efter 30 dage opstår der timeout for eventuelle afventende trin. |
 | Lageropbevaring |30 dage |Dette er fra starttidspunkt for kørslen. |
 | Minimuminterval for gentagelse |1 minut | |
 | Maksimuminterval for gentagelse |500 dage | |
 | Maks. opbevaring af kørselshistorik |28 dage ifølge GDPR regler. | |
 |Minimum interval for udsættelse – gratis licens og Plan 1-licens|5 sekunder||
 |Minimum interval for udsættelse – Plan 2-licens|1 sekund||
+
+>[!TIP]
+>Individuelle connectors kan også have deres egne grænser.
 
 ## <a name="looping-and-debatching-limits"></a>Grænser for løkker og fjernelse af batchinddeling
 Dette er grænserne for en enkelt flowkørsel. Du kan se de daglige grænser under [grænser for og fordelinger af grænser](https://aka.ms/platformlimits).
