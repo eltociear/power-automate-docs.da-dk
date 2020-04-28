@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/30/2019
+ms.date: 04/26/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b1894bbaa69e3c9093ccc93d6a7928a92d56535f
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 722cf0c0f56a67b46f7f20ae76c2e98a86121f69
+ms.sourcegitcommit: e709e8c4a62df6fdb0ca06f3f8afb5c639c76632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192064"
+ms.lasthandoff: 04/26/2020
+ms.locfileid: "82159555"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>DLP-politikker (forebyggelse af datatab)
 
@@ -52,7 +52,7 @@ Du opretter en DLP-politik for tydeligt at definere, hvilke forbrugerforbindelse
 * Tilladelser som enten miljøadministrator eller lejeradministrator.
 
     Du kan få mere at vide om tilladelser i [artiklen om miljøer](environments-overview-admin.md).
-* En [P2-licens til Power Automate](billing-questions.md).
+
 
 ## <a name="create-a-dlp-policy"></a>Opret en DLP-politik
 
