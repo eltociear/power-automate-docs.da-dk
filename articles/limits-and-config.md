@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/26/2020
+ms.date: 04/26/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 478949c1d0579e399f4125e67c1e40103d889900
-ms.sourcegitcommit: e709e8c4a62df6fdb0ca06f3f8afb5c639c76632
+ms.openlocfilehash: 06230d493fd43a9d9e23f4faebd6e1c6dc8d8045
+ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2020
-ms.locfileid: "82159532"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189582"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -156,3 +156,6 @@ graph.microsoft.com </br>graph.windows.net</br>|https|Adgang til Azure AD Graph 
 *.azureedge.net|https|Adgang til CDN for Power Automate.
 nps.onyx.azure.net|https|Adgang til NPS (Net Promotor Score).
 webshell.suite.office.com|https|Adgang til Office i forbindelse med header og søgning. Du kan finde flere oplysninger under [URL-adresser til og intervaller for Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)
+
+### <a name="approval-email-delivery"></a>Levering af godkendelsesmails
+Se flere oplysninger om routing af godkendelsesmails i [artiklen Levering af godkendelsesmails](https://go.microsoft.com/fwlink/?linkid=2128304).

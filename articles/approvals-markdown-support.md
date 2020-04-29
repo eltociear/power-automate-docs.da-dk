@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/23/2018
+ms.date: 4/27/2020
 ms.author: gcorvera
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b7ca2db5a4f04e60484eb758faaa3938fcc60c9
-ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
+ms.openlocfilehash: 739d407df91661a6a82aa72f2891a3dac3bda3cf
+ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153413"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189605"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug Markdown i anmodninger om Power Automate-godkendelse
 
@@ -37,6 +37,20 @@ I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Mark
 
 > [!IMPORTANT]
 > Alle Markdown-gengivelser har implementeringsforskelle. Se flere oplysninger i afsnittet [Kundesupport](#client-support).
+
+## <a name="client-support"></a>Klientsupport
+
+Markdown-understøttelsen blandt klienter stemmer ikke overens. Power Automate-teamet arbejder på at løse disse uoverensstemmelser. Der er dog stadig uoverensstemmelser. I følgende tabel kan du se de kendte begrænsninger blandt de understøttede klienter.
+
+| Funktion | Power Automate | Power Automate-mobilapp | Outlook Desktop | Outlook Web | Teams | Teams-mobilapp |  
+|---------|--------|---------------|-----------------|-------------|-------|--------------|
+| **Headers** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
+| **Nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
+| **Indlejrede nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
+| **Tabeller** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
+| **Billeder** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** |
+| **Tvungne linjeskift** | Ja | Ja | **_Nej_** (brug en tom linje i stedet) | Ja | Ja | Ja |
+| **Tomme linjer** | **_Nej_** | **_Nej_** | Ja | Ja | **_Nej_** | Ja |
 
 ## <a name="headers"></a>Headers (Overskrifter)
 
@@ -249,17 +263,3 @@ Anvend _fremhævning_ i kommentarer til at udtrykke **stærke** holdninger og po
 
 </tbody>
 </table>
-
-## <a name="client-support"></a>Klientsupport
-
-Det er ikke alle klienter, der overholder præcist samme Markdown, eller som overholde en Markdown overhovedet. Power Automate-teamet samarbejder med klientejere, når det er muligt, for at løse disse begrænsninger, men det er ikke altid muligt at løse problemet. Her er en tabel med en beskrivelse af de kendte begrænsninger på tværs af klienten.
-
-| Funktion | PA Portal | PA Mobile App | Outlook Desktop | Outlook Web | Teams | Teams Mobile |  
-|---------|--------|---------------|-----------------|-------------|-------|--------------|
-| **Headers** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
-| **Nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
-| **Indlejrede nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
-| **Tabeller** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
-| **Billeder** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** | **_Nej_** |
-| **Tvungne linjeskift** | Ja | Ja | **_Nej_** (brug en tom linje i stedet) | Ja | Ja | Ja |
-| **Tomme linjer** | **_Nej_** | **_Nej_** | Ja | Ja | **_Nej_** | Ja |
