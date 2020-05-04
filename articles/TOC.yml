@@ -44,6 +44,8 @@
       href: flows-teams.md
     - name: Opret tilpassede kortflows i Teams
       href: create-adaptive-cards-teams.md
+    - name: Opret et flow med Common Data Service (aktuelt miljø)
+      href: connection-cds-native.md
     - name: Opret et flow med Common Data Service
       href: connection-cds.md
     - name: Opret et flow med Dynamics 365
