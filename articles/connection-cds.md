@@ -13,24 +13,27 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/06/2020
+ms.date: 04/26/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3fcf12f42f01d0777a5caeac6308e14b439da002
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 18719ac34d84298dd813b0241d00b652ae172ef6
+ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862647"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82727923"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Opret et automatiseret flow ved hjælp af Common Data Service
 
+>[!IMPORTANT]
+>Der er tre connectors tilgængelige til at oprette forbindelse til Common Data Service. Brug den anbefalede [Common Data Service-connector (aktuelt miljø)](./connection-cds-native.md). Den **Common Data Service-connector**, der er beskrevet i denne artikel, og [Dynamics 365-connectoren](https://docs.microsoft.com/connectors/dynamicscrmonline/) er tilgængelige, hvis du ikke kan bruge den anbefalede connector.
 
-Med Common Data Service-connectoren kan du oprette flows, der startes af hændelser for oprettelse og opdatering på Common Data Service-databasen. Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster i Common Data Service.
+
+Med Common Data Service-connectoren kan du oprette flow, der startes af oprettelses- og opdateringshændelser i Common Data Service-databasen. Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster i Common Data Service.
 
 ## <a name="initiate-a-flow-from-common-data-service"></a>Start et flow fra Common Data Service
 
@@ -72,9 +75,6 @@ Dette flow udløses, hver gang fornavnet eller efternavnet på en kontakt, som f
 > [!div class="mx-imgBorder"]
 > ![Filterattributter](./media/cds-connector/FilterAttributes.png)
 
-> [!IMPORTANT]
-> [Grupperet indstilling med flere valg](/powerapps/maker/common-data-service/custom-picklists) kan ikke bruges i en arbejdsproces. Hvis én inkluderes, medfører det en fejl med angivelse af, at der mangler et "obligatorisk felt"
-
 ## <a name="trigger-privileges"></a>Udløserrettigheder
 
 Hvis du vil oprette et flow, der udløses via oprettelse, opdatering eller sletning af en post, skal brugeren have tilladelser på brugerniveau til at oprette, læse, skrive og slette for posten til tilbagekald af registreringen. Derudover skal brugeren, afhængigt af de områder der er defineret, muligvis have mindst samme niveau af læserettigheder for det samme objekt.  [Få mere at vide](https://docs.microsoft.com/power-platform/admin/database-security) om miljøsikkerhed.
@@ -86,7 +86,7 @@ Brug en af følgende handlinger til at skrive data til Common Data Service:
 - Opret en ny post
 - Opdater en post
 
-Her er et eksempel på oprettelsen af en opfølgningsopgave, når den angivne bruger opretter en ny kontopost.  
+Her er et eksempel på oprettelsen af en opfølgningsopgave, når den givne bruger opretter en ny kontopost.  
 
 > [!div class="mx-imgBorder"]
 > ![Opfølgningsopgave](./media/cds-connector/Regarding.png)
@@ -115,11 +115,4 @@ Hvis du har en udløser, der er registreret for opdateringen af en post, kører 
 > Hvis du har to opdateringer, der sker inden for få sekunder efter hinanden, kan flowet derfor blive udløst mere end én gang med det nyeste versionerede indhold.
 
 Flowkørsler kan blive forsinkede, hvis der er en ordrebeholdning af systemjob i miljøet.  Hvis denne forsinkelse forekommer, udløses dit flow, når systemjobbet til aktivering af flowet kører.
-
-### <a name="call-any-common-data-service-action"></a>Kald Common Data Service-handling
-
-Automatiserede arbejdsprocesser kan kalde alle handlinger i Common Data Service. Dette omfatter alt fra opfyldelse af en salgsordre til eksport af en Microsoft Excel-fil.
-
- ![Alle handlinger](./media/cds-connector/all-actions.png "alle handlinger")
-
 

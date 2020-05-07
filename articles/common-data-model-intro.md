@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 04/27/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ac149bcd62da4ee737f23f894e1f99773f843ada
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 7138d8f0aefc06799f5023204126e1a95494ba20
+ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862601"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82727954"
 ---
 # <a name="create-a-flow-that-uses-common-data-service"></a>Opret et flow, der bruger Common Data Service
 
@@ -48,7 +48,7 @@ Udnyt f.eks. Common Data Service i Power Automate på følgende vigtige måder:
 * Hvis du ikke har brugt Common Data Service før, skal du åbne fanen **Enheder** på [powerapps.com](https://web.powerapps.com/#/entities) og derefter klikke eller trykke på **Opret min database**.
 
 ## <a name="sign-in-to-your-environment"></a>Log på dit miljø
-1. Åbn [Power Automate-portalen](https://flow.microsoft.com), og klik eller tryk derefter på **Log på** i øverste højre hjørne.
+1. Åbn [Power Automate](https://flow.microsoft.com), og klik eller tryk derefter på **Log på** i øverste højre hjørne.
    
     **Bemærk**! Du skal muligvis åbne menuen øverst til venstre til at få vist knappen **Log på**.
    

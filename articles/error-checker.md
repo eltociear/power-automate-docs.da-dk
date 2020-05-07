@@ -1,6 +1,6 @@
 ---
-title: Find og løs fejl ved hjælp af Power Automate-kontrollen | Microsoft Docs
-description: Find og løs fejl hurtigt med Power Automate-kontrollen.
+title: Find og løs fejl ved hjælp af Flowkontrol i Power Automate | Microsoft Docs
+description: Find og løs fejl hurtigt med Flowkontrol i Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,28 +20,28 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: 229ebd44dfed2bd234bfc86ed9ab27cb438274fa
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 2f1dd4beffdcf31a1070928195dbd3895e479e3d
+ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195353"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200368"
 ---
-# <a name="the-power-automate-checker"></a>Power Automate-kontrollen
+# <a name="find-and-fix-errors-with-flow-checker"></a>Find og løs fejl med Flowkontrol
 
 
-Power Automate-kontrollen resulterer i flow i en højere kvalitet ved at sikre, at du følger den bedste praksis, når du designer flow. Når du kører kontrollen, får du indsigt i spørgsmål som "hvilke områder af mit flows implementering udgør en risiko for ydeevne eller pålidelighed?".
+Flowkontrol i Power Automate resulterer i flow i en højere kvalitet ved at sikre, at du følger den bedste praksis, når du designer flow. Når du kører kontrollen, får du indsigt i spørgsmål som "hvilke områder af mit flows implementering udgør en risiko for ydeevne eller pålidelighed?".
 
 For hvert enkelt problem, som kontrollen identificerer, vil kontrolelementet pege på bestemte forekomster i flowet, hvor du bør overveje at foretage forbedringer. Du lærer også, hvordan du implementerer disse forbedringer ved at følge den detaljerede vejledning.
 
 Kontrollen er altid aktiv og vises på kommandolinjen i designeren. Der vises en rød prik i kontrollen, når der registreres en eller flere fejl, potentielle fejl eller advarsler i dit flow.
 
-![Kontrol](media/checker/checker-in-designer.png "Kontrol")
+![Flowkontrol](media/checker/checker-in-designer.png "Flowkontrol")
 
 
 ## <a name="view-errors-or-warnings-in-the-checker"></a>Få vist fejl eller advarsler i kontrollen
 
-Når du designer dit flow, kan du vælge knappen Flowkontrol for at åbne kontrollen og få vist fejl og advarsler. 
+Når du designer dit flow, kan du vælge knappen **Flowkontrol** for at åbne kontrollen og få vist fejl og advarsler. 
 
 Kontrollen åbnes også automatisk, når du gemmer flowet, hvis der er fejl eller advarsler.  Når kontrollen åbnes, vises alle fejl og advarsler i dit flow. I hvert afsnit fremhæver kontrollen de handlinger, hvor fejlen eller advarslen forekommer. 
 

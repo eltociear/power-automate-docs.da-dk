@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: ea98043ee9ab952cfd929a100cb76e42508b84bc
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: dc2eaf9ac0ffc0edb10f5cb096ee98dad6aac55d
+ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194203"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200416"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Opret brugerdefinerede svarmuligheder for godkendelsesflow
 
@@ -41,40 +41,39 @@ Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder 
 ## <a name="create-approval-flow"></a>Opret godkendelsesflow
 1. Log på [Power Automate](https://flow.microsoft.com).
 1. Vælg **Mine flow** på navigationslinjen til venstre.
-1. Vælg **Nyt** > **Opret fra bunden**.
+1. Vælg **Ny** > **Automatiseret – fra bunden**.
 
     ![Muligheden Opret fra bunden](media/create-approval-response-options/create-approval-response-options.png)
 
-1. På den skærm, der åbnes, skal du vælge **Opret fra bunden**. 
+1. På den skærm, der åbnes, skal du angive et navn for dit flow i **Flownavn**. 
+  
+1. Søg efter **SharePoint** i **Vælg dit flows udløser**, vælg **Når et element oprettes** på listen over udløsere, og vælg derefter **Opret**.
 
-    ![Vælg Opret fra bunden](media/create-approval-response-options/create-from-blank.png)
-
-1. Søg efter **SharePoint**, og vælg derefter **Når der oprettes et element** på listen over udløsere. 
+   ![Vælg Opret fra bunden](media/create-approval-response-options/create-from-blank.png)
 
 1. Angiv **Webstedsadressen** og **Navnet på listen** på SharePoint. 
 
-1. Vælg **Nyt trin**, søg efter **Godkendelse**, og vælg derefter **Start, og vent på en godkendelse (v2)** .
+   >[!TIP]
+   >Vælg **Angiv brugerdefineret værdi** i feltet **Webstedsadresse**, før du angiver tekst i **Webstedsadresse**.
 
-1. På kortet **Start, og vent på et godkendelse (v2)** skal du vælge listen **Godkendelsestype**.
+1. Vælg **Nyt trin**, søg efter **Godkendelse**, og vælg derefter **Start, og vent på en godkendelse**.
+
+1. På kortet **Start, og vent på en godkendelse** skal du vælge listen **Godkendelsestype**.
+
+1. Vælg **Brugerdefinerede svar – Vent på et svar**.
 
     ![Godkendelsestype](media/create-approval-response-options/select-approval-type.png)
-
-1. Vælg **Brugerdefinerede svar – Vent på et svar (Premium)** .
-
-    ![Brugerdefinerede svar](media/create-approval-response-options/select-custom-responses.png)
 
     Derefter skal du oprette de brugerdefinerede svar, som dine godkendere skal bruge, når de besvarer en godkendelsesanmodning for en medarbejderudgift.
 
 
-1. I feltet **Element for svarmuligheder – 1** skal du angive **Acceptér** og derefter vælge **Tilføj et nyt element**. 
+1. I feltet **Element for svarmuligheder** skal du angive **Acceptér** og derefter vælge **Tilføj et nyt element**. 
 
     ![Brugerdefineret svar 1](media/create-approval-response-options/enter-response-1.png)
 
-1. I feltet **Element for svarmuligheder – 2** skal du angive **Afvis** og derefter vælge **Tilføj et nyt element**.
+1. I feltet **Element for svarmuligheder** skal du angive **Afvis** og derefter vælge **Tilføj et nyt element**.
 
-    ![Brugerdefineret svar 2](media/create-approval-response-options/enter-response-2.png)
-
-1. I feltet **Element for svarmuligheder – 3** skal du angive **Angiv flere oplysninger**.
+1. I feltet **Element for svarmuligheder** skal du angive **Angiv flere oplysninger**.
 
     ![Brugerdefineret svar 3](media/create-approval-response-options/enter-response-3.png)   
     
