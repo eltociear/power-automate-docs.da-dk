@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/30/2019
+ms.date: 05/07/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d1c46c6521e3267f5a2b5b8562122c92647211c7
-ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
+ms.openlocfilehash: a8b4ee39a7d40df41a1c8012a33860a77a51a092
+ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80627040"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895878"
 ---
 # <a name="billing-and-metering-questions"></a>Spørgsmål om fakturering og måling
 
@@ -45,7 +45,7 @@ Se på denne [abonnementsside](https://portal.office.com/account/#subscriptions)
 
 ## <a name="how-do-i-switch-plans"></a>Hvordan skifter jeg plan?
 
-Vælg **Få mere at vide om** > **priser** i den øverste navigationsmenu, og vælg derefter den plan, som du vil skifte til.
+Vælg **Få mere at vide om**> **priser** i den øverste navigationsmenu, og vælg derefter den plan, som du vil skifte til.
 
 ![Få mere at vide > Prisfastsættelse](./media/billing-questions/learn-pricing.png)
 
@@ -90,7 +90,6 @@ Du kan løse dette problem ved at angive alle nødvendige filtre for udløseren.
 ## <a name="other-limits-and-caveats"></a>Andre begrænsninger og advarsler
 
 * Hver konto kan have så mange som:
-  * 250 flows.
   * 15 brugerdefinerede connectors.
   * 20 forbindelser pr. API og 100 forbindelser i alt.
 * Visse eksterne forbindelseskomponenter, som Twitter, implementerer begrænsning (throttling) af forbindelsen for at styre tjenestens kvalitet. Dine flows kan ikke køre, når begrænsning (throttling) er aktiveret. Hvis dine flows ikke kan køre, skal du gennemgå de detaljerede oplysninger om kørslen, der ikke kunne køre, i flowets kørselshistorik.
