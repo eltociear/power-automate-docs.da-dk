@@ -2,7 +2,7 @@
 2. Angiv **send mail** i søgefeltet på kortet **Vælg en handling**.
    
     ![søg efter mailhandling](media/modern-approvals/search-send-email-no.png)
-3. Vælg handlingen **Office 365 Outlook – Send en mail**.
+3. Vælg handlingen **Office 365 Outlook - Send en mail**.
    
     ![vælg handlingen send mail](media/modern-approvals/select-send-email-no.png)
 4. Konfigurer mailkortet, så det passer til dine behov.

@@ -1,0 +1,1 @@
+Eksempelvisningsfunktionerne er ikke beregnet til produktionsformål og kan have begrænset funktionalitet. Disse funktioner er tilgængelige før en officiel udgivelse, så kunderne kan få tidlig adgang og give feedback.

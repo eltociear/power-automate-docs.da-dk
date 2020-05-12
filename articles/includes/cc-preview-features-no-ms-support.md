@@ -1,0 +1,1 @@
+Microsoft yder ikke support til denne eksempelvisningsfunktion. Microsoft Dynamics 365 Teknisk support kan ikke hjælpe dig med problemer eller spørgsmål. Eksempelvisningsfunktionerne er ikke beregnet til brug i produktionen, og de er underlagt særlige [supplerende vilkår for anvendelse](https://go.microsoft.com/fwlink/p/?LinkId=511446).

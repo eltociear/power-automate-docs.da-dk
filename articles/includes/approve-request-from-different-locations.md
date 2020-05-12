@@ -1,11 +1,11 @@
-Hvis du er godkender i et godkendelsesflow, modtager du en mail, hver gang nogen opretter en anmodning. Anmodningen om godkendelse sendes også til godkendelsescentret. Du kan derefter godkende eller afvise anmodninger via mailen, fra godkendelsescentret eller fra appen Power Automate.
+Hvis du er godkender i et godkendelsesflow, modtager du en mail, hver gang nogen opretter en anmodning. Anmodningen om godkendelse sendes også til godkendelsescentret. Du kan derefter godkende eller afvise anmodninger fra mailen, godkendelsescentret eller Power Automate-appen.
 
 Sådan godkender du en anmodning:
 
 ### <a name="from-email"></a>Fra mail
 1. Vælg **Godkend** på den mail, du modtager, når et element er føjet til SharePoint Online-listen.
    
-     Bemærk! Hvis du bruger en mobilenhed, hvor appen Power Automate er installeret, startes appen Power Automate Ellers åbnes godkendelsescenteret i browseren.
+     Bemærk! Hvis du bruger en mobilenhed, hvor Power Automate-appen er installeret, startes Power Automate-appen, ellers åbnes godkendelsescentret i browseren.
    
     ![mail med anmodning](media/modern-approvals/email-approval-request.png)
 2. Angiv en kommentar, og vælg derefter knappen **Bekræft**.
@@ -18,15 +18,15 @@ Sådan godkender du en anmodning:
     ![log på](media/modern-approvals/sign-in.png)
 2. Vælg fanen **Godkendelser**.
    
-    ![opret fra bunden af](media/modern-approvals/approvals-tab.png)
+    ![opret fra bunden](media/modern-approvals/approvals-tab.png)
 3. Vælg **Godkend** på den anmodning, du vil godkende.
    
-    ![opret fra bunden af](media/modern-approvals/approvals-cards.png)
+    ![opret fra bunden](media/modern-approvals/approvals-cards.png)
 4. Tilføj en bemærkning, og vælg derefter knappen **Bekræft**.
    
     ![tilføj bemærkning og bekræft derefter](media/modern-approvals/approval-selection-card.png)
 
-### <a name="from-the-power-automate-app"></a>Fra appen Power Automate
+### <a name="from-the-power-automate-app"></a>Fra Power Automate-appen
 1. På mobiltelefonen, hvor appen Power Automate er installeret, skal du vælge **Godkend** fra mailen med anmodning om godkendelse.
 2. Vælg **Bekræft** i øverste højre hjørne af skærmen.
    

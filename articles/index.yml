@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Dokumentation til Power Automate
+title: Power Automate-dokumentation
 summary: Power Automate er en tjeneste, der hjælper dig med at oprette automatiserede arbejdsprocesser mellem dine favoritprogrammer og -tjenester, så du kan synkronisere filer, få meddelelser, indsamle data og meget mere.
 metadata:
-  title: Dokumentation til Power Automate
+  title: Power Automate-dokumentation
   description: Giver adgang til fremhævede områder i dokumentationen til Power Automate
   services: service
   ms.service: flow
@@ -16,8 +16,8 @@ metadata:
   ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "80082139"
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "3295860"
 landingContent:
 - title: Om Power Automate
   linkLists:
@@ -27,11 +27,11 @@ landingContent:
       url: /power-automate/getting-started
     - text: Tilmeld dig Power Automate
       url: /power-automate/sign-up-sign-in
-    - text: Ofte stillede spørgsmål om Power Automate
+    - text: Ofte stillede spørgsmål til Power Automate
       url: /power-automate/frequently-asked-questions
   - linkListType: learn
     links:
-    - text: Lær om Power Automate
+    - text: Lær at bruge Power Automate
       url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate
   - linkListType: video
     links:
@@ -41,15 +41,15 @@ landingContent:
     links:
     - text: Udgivelsesplaner
       url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features
-- title: Opret flow ved hjælp af Power Automate
+- title: Opret flow ved brug af Power Automate
   linkLists:
   - linkListType: get-started
     links:
-    - text: Automatiserede flows
+    - text: Automatiserede flow
       url: /power-automate/get-started-logic-flow
-    - text: Knapflows
+    - text: Knapflow
       url: /power-automate/introduction-to-button-flows
-    - text: Planlagte flows
+    - text: Planlagte flow
       url: /power-automate/run-scheduled-tasks
     - text: Godkendelsesflows
       url: /power-automate/modern-approvals
@@ -69,13 +69,13 @@ landingContent:
       url: /power-automate/ui-flows/overview
   - linkListType: how-to-guide
     links:
-    - text: Konfigurer brugergrænsefladeflow
+    - text: Konfigurer flow for brugergrænseflade
       url: /power-automate/ui-flows/setup
     - text: Opret flow for brugergrænseflade til skrivebord
       url: /power-automate/ui-flows/create-desktop
     - text: Opret flow for brugergrænseflade til web
       url: /power-automate/ui-flows/create-web
-    - text: Kør brugergrænsefladeflow
+    - text: Kør flow for brugergrænseflade
       url: /power-automate/ui-flows/run-ui-flow
   - linkListType: video
     links:
@@ -119,13 +119,13 @@ landingContent:
     links:
     - text: Foretag fejlfinding af et flow
       url: /power-automate/fix-flow-failures
-    - text: Brug Power Automate-kontrol
+    - text: Brug af Power Automate-kontrol
       url: /power-automate/error-checker
     - text: Power Automate-community
       url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
     - text: Power Automate-blog
       url: https://flow.microsoft.com/en-us/blog/
-    - text: Power Automate-licenser
+    - text: Power Automate-licensering
       url: /power-automate/billing-questions
-    - text: Planer i forbindelse med Power Automate US Government-planer
+    - text: Power Automate-planer for offentlige amerikanske myndigheder
       url: /power-automate/us-govt

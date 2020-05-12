@@ -6,7 +6,7 @@
     ![vælg mine flow](media/modern-approvals/select-my-flows.png)
 3. Vælg **Opret fra bunden**.
    
-    ![opret fra bunden af](media/modern-approvals/blank-template.png)
+    ![opret fra bunden](media/modern-approvals/blank-template.png)
 
-4. Vælg knappen **Opret fra bunden af**.
+4. Vælg knappen **Opret fra bunden**.
 
