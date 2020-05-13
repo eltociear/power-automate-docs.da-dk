@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e78ba6de412a067ae21eb4a11a5b1a7d5165448c
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: bd7d85dc2ec30147202c2838f00c7de6c7c587ad
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329902"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852661"
 ---
 # <a name="get-started-with-power-automate"></a>Introduktion til Power Automate 
 
@@ -46,7 +46,7 @@ Power Automate er en af hjørnestenene i Power Platform. Den består af en platf
 | [Flow for knapper](introduction-to-button-flows.md)              | Kør gentagne opgaver fra et hvilket som helst sted, når som helst, via din mobilenhed.                        |                                                                                        |
 | [Planlagte flow](run-scheduled-tasks.md)                    | Opret et flow, der udfører en eller flere opgaver efter en tidsplan.             |                                                                                        |
 | [Forretningsprocesflow](business-process-flows-overview.md) | Definer en række trin, der skal følges for at opnå det ønskede resultat.                 | Menneskelige processer                                                                        |
-| [Flow for brugergrænseflade (prøveversion)](ui-flows/overview.md)                                                | Optag og automatiser afspilning af manuelle trin på ældre software.                    | Skrivebords- og webprogrammer, der ikke har API'er tilgængelige til automatisering.    |
+| [Flow for brugergrænseflade](ui-flows/overview.md)                                                | Optag og automatiser afspilning af manuelle trin på ældre software.                    | Skrivebords- og webprogrammer, der ikke har API'er tilgængelige til automatisering.    |
 
 Du kan oprette og administrere alle flow via fanen **Mine flow** i Power Automate.
 

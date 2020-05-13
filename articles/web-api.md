@@ -3,19 +3,19 @@ title: Flow gemmes nu i Common Data Service og bruger den omfattende web-API
 description: Flow gemmes nu i Common Data Service og bruger den omfattende web-API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 03/05/2019
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195767"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852755"
 ---
 # <a name="power-automate-web-api"></a>Power Automate-web-API
 
@@ -48,6 +48,7 @@ Du skal starte med at skabe URL-adressen for at komme i gang med at oprette anmo
      | Indien          | crm8        |
      | US Government  | crm9        |
      | Storbritannien | crm11       |
+     |De Forenede Arabiske Emirater |   crm15|
 
 Du kan også hente listen over forekomster, der er tilgængelige for dig, programmatisk via metoden [Hent forekomster](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) i API'en til Online Management.
 

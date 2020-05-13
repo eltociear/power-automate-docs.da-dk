@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 0e0b312ce5e962052770eb44fd1a61c2f19c8e4f
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: e1c2a93fb011b6f20ecaf79fb0bf95212a2506d4
+ms.sourcegitcommit: 2c9cffb59ef2382648a80966ebbf0fe8eafebe64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862693"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "83002593"
 ---
 # <a name="using-environments-within-power-automate"></a>Brug af miljøer i Power Automate
 
@@ -175,9 +175,7 @@ Ja, flow kan eksporteres fra ét miljø og importeres til et andet miljø.
 
 ### <a name="which-license-includes-common-data-service"></a>Hvilken licens omfatter Common Data Service?
 
-Kun Microsoft Power Apps Plan 2 indeholder rettigheder til at oprette databaser med Common Data Service. Alle betalte planer (Power Automate Plan 1 og 2 og Microsoft Power Apps Plan 1 og 2) har dog ret til at bruge Common Data Service.
-
-Vælg en plan, der passer til dig, ved at gå til siden [Priser på Power Automate](https://flow.microsoft.com/pricing/).
+Du kan få adgang til Common Data Service med en af [Power Automate-licenserne](https://flow.microsoft.com/pricing).
 
 I dokumentet [Spørgsmål om fakturering](billing-questions.md) kan du finde svar på ofte stillede spørgsmål om fakturering.
 

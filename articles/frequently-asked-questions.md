@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
+ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862486"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895840"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -113,7 +113,7 @@ Du kan dele flows på en af følgende måder:
 * For flows, der kan køres manuelt, kan du også give andre personer eller grupper i din organisation tilladelse til blot at køre flowet.
 
 ### <a name="how-many-flows-can-i-have"></a>Hvor mange flows kan jeg have?
-Power Automate leveres med op til 50 flow. Hvis du har brug for flere, kan du anmode om dem.
+Du kan oprette et ubegrænset antal flow, afhængigt af den [type licens](https://flow.microsoft.com/pricing) du har.
 
 ### <a name="where-do-i-get-started-with-power-automate"></a>Hvor kommer jeg i gang med Power Automate?
 Du kan komme i gang med følgende ressourcer:

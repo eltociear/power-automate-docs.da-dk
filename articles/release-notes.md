@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7f4da4123d5623348513d9b14a75d1f03b3e17dc
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 82e175f463e9cbc264b6ac388e90eaa3433211b4
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862739"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852670"
 ---
 # <a name="release-notes"></a>Produktbemærkninger
 
@@ -61,7 +61,7 @@ Du kan få oplysninger om nye funktioner, der er udgivet til Power Automate, her
 ### <a name="release-2018-09-24"></a>Version 24-09-2018
 
 - **Administratoradgang til hjælp og support** – åbn supportanmodninger til Power Automate i Administration på Power-platformen, og angiv yderligere oplysninger om fejlen i din arbejdsproces.
-- **Redesignet Flow-community** – det er nu blevet nemmere at finde det, du skal bruge, i Flow-community'et.
+- **Redesignet Power Automate-community** – det er nu blevet nemmere at finde det, du skal bruge, i Power Automate-community'et.
 - **Forbedringer af Microsoft Teams-connectoren** – nye udløsere til Microsoft Teams, så du kan køre et flow, når der er nye meddelelser i en kanal.
 - **Flere SharePoint-handlinger** – der er nye handlinger til flytning af filer osv. i SharePoint-connectoren.
 - **Nye administratoranalyserapporter** – miljø- og lejerrapporter er føjet til Administration for virksomhedsapp-platformen.
@@ -242,7 +242,7 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 ### <a name="release-2017-11-02"></a>Version udgivet 02-11-2017
 
 - **Overvågningslogføring** – Power Automate-overvågningshændelser er nu tilgængelige i Office 365 Security & Compliance Center for alle lejere.
-- **Programrettelser til Flow-widget** – problemet i Flow-mobilappen, der resulterede i, at knapper ikke blev indlæst i widgetten, er blevet løst.
+- **Programrettelser til Flow-widget** – problemet i Power Automate-mobilappen, der resulterede i, at knapper ikke blev indlæst i widgetten, er blevet løst.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/security-and-compliance-center/) om denne version.
 
@@ -274,7 +274,7 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 ### <a name="release-2017-09-25---q3-update-for-power-automate"></a>Version udgivet 25-09-2017 – Q3-opdatering til Power Automate
 
 - **Dybere SharePoint-integration i First Release** – -der er nye send til review-flow til øjeblikkelig brug og et Flow-panel til indsamling af input, når du kører et flow for First Release-lejere.
-- **Dynamics 365-apps** – Flow er nu integreret i brugergrænsefladen for Dynamics 365-apps, f. eks. Dynamics 365 Sales og Dynamics 365 Customer Service.
+- **Dynamics 365-apps** – Power Automate er nu integreret i brugergrænsefladen for Dynamics 365-apps, f.eks. Dynamics 365 Sales og Dynamics 365 Customer Service.
 - **Microsoft Trust Center** – Power Automate er nu opført i Microsoft Trust Center med certificeringer som f.eks. HIPAA, ISO og SOC.
 - **Forbrugsanalyser** – hvert flow indeholder et integreret Power BI-dashboard med grundlæggende forbrugsanalyser.
 - **Overvåg logføring i First Release** –alle flowadministrationshændelser logføres i Office 365 Security and Compliance Center for First Release-lejere.
@@ -296,7 +296,7 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 
 
 ### <a name="release-2017-08-25"></a>Version udgivet 25-08-2017
-* **Dokumentegenskaber og mere til SharePoint** - [Læs og angiv egenskaber for SharePoint-dokumentbiblioteket](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), og brug flere felter som links til SharePoint-elementet.
+* **Dokumentegenskaber og mere til SharePoint**- [Læs og angiv egenskaber for SharePoint-dokumentbiblioteket](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), og brug flere felter som links til SharePoint-elementet.
 * **Flowsamlinger** – Flowsamlinger er et sæt af skabelonsamlinger, der er organiseret efter rolle eller efter vertikal.
 * **Videredeling af knapper** – Når du deler knapper med dine kolleger, kan de også videredele dem med andre.
 * **Saml lister fra knapper** – Definer rullelister med indstillinger, som brugerne kan vælge fra, når de trykker på knappen.
@@ -357,7 +357,7 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/seven-connectors-and-html/) om denne version.
 
 ### <a name="release-2017-06-04"></a>Version udgivet 04-06-2017
-* **Offentlig tilgængelig til Windows Phone** - [Power Automate-mobilappen er udgivet, så den er offentligt tilgængelig til Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
+* **Offentlig tilgængelig til Windows Phone**- [Power Automate-mobilappen er udgivet, så den er offentligt tilgængelig til Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
 * **Mails ved flowfejl** – Få besked via mail, når du har et flow, der ikke lykkes. Disse mails om fejl udsendes kun én gang om ugen, og de kan slås til og fra af brugeren.
 * **Vælg en handling for tabeller** – Brug den nye Select-handling til at ændre det kolonnesæt, der skal inkluderes i tabeller.
 * **Microsoft Forms-connector** – Microsoft Forms er en ny del af Office 365 Education, der giver lærere og studerende mulighed for hurtigt og nemt at oprette brugerdefinerede test, undersøgelser, spørgeskemaer, registreringer og meget mere.
@@ -367,7 +367,7 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) om denne version.
 
 ### <a name="release-2017-05-23"></a>Version udgivet 23-05-2017
-* **Microsoft Teams-forbindelse** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) er et chatbaserede arbejdsområde i Office 365, der samler personer, samtaler og indhold – sammen med de værktøjer, de forskellige teams skal bruge, så de nemt kan samarbejde for at opnå mere.
+* **Microsoft Teams-forbindelse**- [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) er et chatbaserede arbejdsområde i Office 365, der samler personer, samtaler og indhold – sammen med de værktøjer, de forskellige teams skal bruge, så de nemt kan samarbejde for at opnå mere.
 * **Widgets på iOS og Android** – Power Automate-widgets er knapgenveje, som giver dig en lettere og hurtigere måde at udløse de enkelte knapper på direkte fra startsiden.
 * **Opret trin til "fejlhåndtering"** – Definer et eller flere trin for at køre, når en handling er mislykkes. Du kan f.eks. få en meddelelse straks, hvis flowet kan ikke oprette en post i Dynamics 365.
 * **Heltal og flydende variabler** – Initialiser og forøg eller formindsk tællere i en flowkørsel til at tælle, hvor mange gange et bestemt logiksæt køres.
@@ -415,7 +415,7 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 ### <a name="release-2017-04-11"></a>Version udgivet 11-04-2017
 * **Nye handlinger til oprettelse af tabeller og lister** – Nye handlinger Opret HTML-tabel, Opret CSV-tabel og Joinforbind, som kan behandle lister over elementer (i stedet for den tidligere Anvend kun for hver enkelt).
 * **Indsæt trin hvor som helst** – Du kan nu indsætte et nyt trin et vilkårligt sted i arbejdsprocessen uden at skulle trække og slippe.
-* **Fire nye tjenester** – Flow understøtter nu 10 til 8-planlægning, Act!, Inoreader og Computer Vision-API. Med Computer Vision-API kan du behandle billeder for at få tekstindholdet (kendt som OCR) eller automatisk mærke billeder baseret på deres indhold.
+* **Fire nye tjenester** – Power Automate understøtter nu 10 til 8-planlægning, Act!, Inoreader og Computer Vision-API. Med Computer Vision-API kan du behandle billeder for at få tekstindholdet (kendt som OCR) eller automatisk mærke billeder baseret på deres indhold.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) om denne version.
 
@@ -592,7 +592,7 @@ Power Automate er nu tilgængelig for alle – prøveversionen var i starten ude
 Nu kan du se de nye moderne SharePoint Online-lister, der omfatter Power Automate-integration. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/microsoft-flow-integration-with-sharepoint-modern-lists-preview/) om denne version.
 
 ### <a name="release-2016-08-13"></a>Version udgivet 13-08-2016
-* **Visual Studio Team Services** – Med Flow kan du nu oprette forbindelse mellem VSTS og en lang række tjenester, herunder O365 Email, Slack, Trello og Wunderlist.
+* **Visual Studio Team Services** – med Power Automate kan du nu oprette forbindelse mellem VSTS og en lang række tjenester, herunder O365 Email, Slack og Trello.
 * **Forbedringer af SharePoint** – SharePoint-lister understøtter flere forskellige datatyper, lige fra simple objekter, som enkeltstående tekstlinjer samt Dato og klokkeslæt, til komplekse objekter, som Person eller gruppe, Opslag og Valg.
 * **Test af O365 Outlook-forbindelser** – Hver gang du opretter en ny forbindelse i O365 Outlook, testes den nu for at sikre, at du er klar til at bruge den.
 * **Boolesk kontrolelement** – Vi har også tilføjet et boolesk kontrolelement for at præcisere, hvilke værdier du skal angive i booleske indtastningsfelter, f.eks. Har vedhæftede filer i udløseren Når der modtages en ny mail.
@@ -656,7 +656,7 @@ Hvis du har brugt Logikflow som en del af [Microsoft Power Apps](https://powerap
 * Du kan [publicere dine egne skabeloner](publish-a-template.md) i galleriet, når du har tilpasset et flow.
 * Du kan få vist en oversigt for hver kontrol og kørsel i flowet.
 * Når du gemmer et flow, kan du [straks se det i aktion](see-a-flow-run.md) ved blot at udføre den udløsende handling.
-* Vi har et [nyt community](https://go.microsoft.com/fwlink/?LinkID=787467), hvor du kan diskutere Flow eller [indsende dine idéer](https://go.microsoft.com/fwlink/?LinkID=787474).
+* Vi har et [nyt community](https://go.microsoft.com/fwlink/?LinkID=787467), hvor du kan diskutere Power Automate eller [indsende dine idéer](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
 >Udgivelsesplaner spores nu [her](https://docs.microsoft.com/dynamics365/release-plans/).

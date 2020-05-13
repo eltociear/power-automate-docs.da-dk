@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b797fc6e4a2e7835a7322f9fc55d50c96d113031
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: b1ad11b90b9682f68c6c8f22d350313f0c2edb75
+ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862555"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82973108"
 ---
 # <a name="choosing-an-environment"></a>Valg af et miljø
 
@@ -49,7 +49,10 @@ Du vil gerne oprette et flow, der anvender en forbindelse til Common Data Servic
 Du opretter et flow til HR-afdelingen. Du vil sikre, at kun brugere i HR-afdelingen har adgang til flowet.|Opret et miljø, og sørg for kun at føje HR-brugere til miljøet. Placer flowet og andre ressourcer, som flowet bruger, i dette miljø.
 Der er brugere i Europa, der benytter et flow til at vise data i SharePoint.|Opret et miljø i Europa, og opret derefter dit flow og SharePoint-forbindelsen til flowet. Dette miljø i Europa giver de europæiske brugere den bedste ydeevne, da alle ressourcer er lokale for Europa (datalokalitet).
 
-Du skal være Power Automate-administrator for at oprette miljøer. Administratorer styrer, hvem der har adgang til miljøer. Du kan finde oplysninger om, hvordan du kan oprette og administrere miljøer, i emnet [Administration af miljøer](environments-overview-admin.md).
+Alle brugere med den rette licens kan oprette miljøer i Power Platform Administration som standard, medmindre standardindstillingen for, **hvem der kan oprette produktionsmiljøer**, er blevet ændret fra **Alle** til **Kun bestemte administratorer**.
+
+
+Du kan finde oplysninger om, hvordan du kan oprette og administrere miljøer, i emnet [Administration af miljøer](environments-overview-admin.md).
 
 ## <a name="switching-environments"></a>Skift af miljøer
 
@@ -83,7 +86,6 @@ Før du opretter et flow, skal du vælge det miljø, hvor flowet og dets ressour
 
 Overvej følgende faktorer, når du vælger det miljø, der skal være vært for dine flow:
 
-* Du kan kun oprette gateways i standardmiljøet. Hvis du vil bruge en gateway til at oprette forbindelse mellem dit flow og data i det lokale miljø, skal du derfor bruge standardmiljøet.
 * Common Data Service er knyttet til et bestemt miljø. Hvis du vil oprette en proces, der bruger Common Data Service, skal du derfor oprette flowet i det miljø, der er vært for databasen.
 * Du kan se alle de miljøer, du kan redigere ressourcer i. Du skal dog få en administrator til at tilføje dig som opretter for alle de miljøer, du vil oprette flow i.
 

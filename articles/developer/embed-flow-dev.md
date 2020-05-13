@@ -13,18 +13,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2019
+ms.date: 05/05/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6ca077b6a7b0d04f184ddf8a716dd677713e0667
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9ab8c2c7c0b830aa908a7445757418d4ff073921
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74364620"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852714"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integrer Power Automate på websteder og i programmer
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -54,7 +54,7 @@ Du starter ved at tilføje denne kode for at vise Power Automate-skabelonerne p�
 | Parameter | Beskrivelse |
 | --- | --- |
 | landestandard |Koden på fire bogstaver for visning af skabelonen. F.eks. repræsenterer `en-us` amerikansk engelsk, og `de-de` repræsenterer tysk. |
-| søgeord |Søgeordet til de skabeloner, du vil have vist i visningen. Søg f.eks. på `wunderlist` for at få vist skabeloner til Wunderlist. |
+| søgeord |Søgeordet til de skabeloner, du vil have vist i visningen. Søg f.eks. efter `SharePoint` for at få vist skabeloner til SharePoint. |
 | antallet af skabeloner |Det antal skabeloner, du vil have vist i visningen. |
 | destination |Den side, der åbnes, når brugeren vælger skabelonen. Angiv `details` for at vise oplysningerne om skabelonen, eller angiv `new` for at åbne Power Automate-designeren. |
 | category |Filtrerer til den angivne skabelonkategori. | 
@@ -65,18 +65,17 @@ Hvis destinationsparameteren er `new`, åbnes Power Automate-designeren, når br
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>Overførsel af yderligere parametre til flowskabelonen
 
-Hvis brugeren er i en specifik kontekst på dit websted eller i dit program, kan du overføre denne kontekst til flowet. F.eks. åbner en bruger måske en skabelon til *Giv mig besked, når et element føjes til en liste*, mens vedkommende ser på en bestemt liste i Wunderlist. Følg disse trin for at overføre liste-id'et som en *parameter* til flowet:
+Hvis brugeren er i en specifik kontekst på dit websted eller i dit program, kan du overføre denne kontekst til flowet. En bruger åbner måske en skabelon til *Når et element føjes til en liste*, mens vedkommende ser på en bestemt liste i SharePoint. Følg disse trin for at overføre liste-id'et som en *parameter* til flowet:
 
 1. Angiv parameteren i flowskabelonen, inden du udgiver den. En parameter ser sådan ud `@{parameters('parameter_name')}`.
 1. Overfør parameteren i iframe-kildens forespørgselsstreng. Tilføj f.eks `&parameters.listName={the name of the list}`, hvis du har en parameter med navnet **listName**.
 
 ### <a name="full-sample"></a>Komplet eksempel
 
-Hvis du vil vise de øverste fire Wunderlist-skabeloner på tysk og starte brugeren med **myCoolList**, skal du bruge denne kode:
+Hvis du vil vise de øverste fire SharePoint-skabeloner på tysk og have brugeren til at starte med **myCoolList**, skal du benytte denne kode:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
-&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## <a name="use-the-authenticated-flow-widgets"></a>Brug de godkendte flowwidgets
