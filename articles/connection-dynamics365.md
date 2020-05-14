@@ -25,34 +25,34 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862532"
+ms.locfileid: "3299117"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Opret et flow ved hjælp af Dynamics 365 (online)
 
 Ved hjælp af en Dynamics 365-forbindelse kan du oprette flows, der starter, når en hændelse indtræffer i Dynamics 365 eller en anden tjeneste, som derefter udfører en handling i Dynamics 365 eller en anden tjeneste. 
 
-Du kan konfigurere automatiserede flow i Power Automate mellem dine yndlingsprogrammer og -tjenester for at synkronisere filer, modtage meddelelser, indsamle data og meget mere. Du finder flere oplysninger under [Kom i gang med Power Automate](getting-started.md).
+I Power Automate kan du installere automatiserede arbejdsprocesser mellem dine yndlingsapps og -tjenester for at synkronisere filer, modtage meddelelser, samle data og meget mere. Du kan finde flere oplysninger under [Introduktion til Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> Hvis du vil aktivere en Power Automate-udløser, skal **Ændringssporing** være aktiveret for den Common Data Service-enhed, der bruges sammen med flowet. Flere oplysninger: [Aktivér ændringssporing for at kontrollere datasynkronisering](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> Hvis du vil aktivere en Power Automate-udløser, skal **Ændringssporing** være aktiveret for det Common Data Service-objekt, der bruges sammen med flowet. Flere oplysninger: [Aktivér ændringssporing for at kontrollere datasynkronisering](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Opret et flow fra en skabelon
 Du kan oprette et flow ved hjælp af en af de mange tilgængelige skabeloner, såsom disse eksempler:
 
 * Når et objekt er oprettet i Dynamics 365, kan du oprette et listeelement i SharePoint.
 * Opret poster for potentielle kunder i Dynamics 365 fra en Excel-tabel.
-* Kopiér konti i Dynamics 365 til kunder i Dynamics 365 til handlinger.
+* Kopier Dynamics 365-konti til kunder i Dynamics 365 for Operations.
 
 Hvis du vil oprette et flow fra en skabelon, skal du følge disse trin.
 
-1. Log på [Power Automate-webstedet](https://flow.microsoft.com/).
+1. Log på [Power Automate-websitet](https://flow.microsoft.com/).
 2. Klik eller tryk på **Tjenester**, og klik eller tryk derefter på **Dynamics 365**.
 3. Der er adskillige tilgængelige skabeloner. Vælg den ønskede skabelon for at komme i gang.
 
-## <a name="create-a-task-from-a-lead"></a>Opret en opgave fra en potentiel kunde
+## <a name="create-a-task-from-a-lead"></a>Opret en opgave fra et kundeemne
 Hvis en skabelon ikke er tilgængelig i forbindelse med det, du søger, kan du oprette et flow fra bunden. Denne gennemgang viser, hvordan du opretter en opgave i Dynamics 365, hver gang der oprettes en potentiel kunde i Dynamics 365.
 
-1. Log på [Power Automate-webstedet](https://flow.microsoft.com/).
+1. Log på [Power Automate-websitet](https://flow.microsoft.com/).
 2. Klik eller tryk på **Mine flows**, og klik eller tryk derefter på **Opret fra bunden**.
 3. Klik eller tryk på **Dynamics 365 – når en post oprettes** på listen over flowudløsere.
 4. Hvis du bliver bedt om det, skal du logge på Dynamics 365.
@@ -87,7 +87,7 @@ Hvis en skabelon ikke er tilgængelig i forbindelse med det, du søger, kan du o
 ## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Opret en Wunderlist-opgave fra en Dynamics 365-opgave
 Denne gennemgang viser, hvordan du opretter en opgave i [Wunderlist](https://www.wunderlist.com), hver gang der oprettes en opgave i Dynamics 365. Wunderlist er en internetbaseret tjeneste, som du kan bruge til at oprette opgavelister, tilføje påmindelser eller spore ærinder.
 
-1. Log på [Power Automate-webstedet](https://flow.microsoft.com/).
+1. Log på [Power Automate-websitet](https://flow.microsoft.com/).
 2. Klik eller tryk på **Mine flows**, og klik eller tryk derefter på **Opret fra bunden**.
 3. Klik eller tryk på **Dynamics 365 – når en post oprettes** på listen over flowudløsere.
 4. Under **Organisationsnavn** skal du vælge den Dynamics 365-instans, hvor du vil have flowet til at lytte.
@@ -108,23 +108,23 @@ Når udløseren udløses, modtager flowet en meddelelse, men flowet kører med d
 ## <a name="specify-advanced-options"></a>Angiv avancerede indstillinger
 Når du føjer et trin til et flow, du kan klikke eller trykke på **Vis avancerede indstillinger** for at tilføje et filter eller en ordre fra forespørgsel, der styrer, hvordan dataene filtreres i flowet.
 
-Du kan f.eks. bruge en filterforespørgsel til at hente udelukkende aktive kontakter, og du kan sortere dem efter efternavn. Det gør du ved at indtaste OData-filterforespørgslens **statuskode lig med 1** og vælge **Efternavn** fra den dynamiske indholdsrude. Find flere oplysninger om filter og rækkefølge af forespørgsler på [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) og [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
+Du kan for eksempel bruge en filterforespørgsel til kun at hente aktive kontakter, og du kan sortere dem efter efternavn. Det gør du ved at indtaste OData-filterforespørgslens **statuskode lig med 1** og vælge **Efternavn** fra den dynamiske indholdsrude. Find flere oplysninger om filter og rækkefølge af forespørgsler på [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) og [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
 
-  ![Flowrækkefølge efter forespørgsel](./media/connection-dynamics365/flow-orderby-query.png)
+  ![Flow – sortér efter-forespørgsel](./media/connection-dynamics365/flow-orderby-query.png)
 
 ### <a name="best-practices-when-using-advanced-options"></a>Bedste fremgangsmåder ved brug af avancerede indstillinger
 Når du tilføjer en værdi til et felt, skal du få felttypen til at passe, uanset om du angiver en værdi eller vælger en fra den dynamiske indholdsrude.
 
 | Felttype | Sådan bruger du | Her finder du | Navn | Datatype |
 | --- | --- | --- | --- | --- |
-| Tekstfelter |Tekstfelter kræver en enkelt tekstlinje eller dynamisk indhold, der er et teksttypefelt. Eksempler indbefatter felterne **Kategori** og **Underkategori**. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Opgave** > **Felter** |**kategori** |**Enkelt tekstlinje** |
-| Heltalsfelter |Nogle felter kræver heltal eller dynamisk indhold, der er af typen heltalsfelt. Eksempler indbefatter **Procent fuldført** og **Varighed**. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Opgave** > **Felter** |**procentfuldført** |**Helt tal** |
-| Datofelter |Nogle felter kræver en angivet dato i formatet dd-mm-åå eller dynamisk indhold, der er af typen datofelt. Eksempler indbefatter **Oprettet den**, **Startdato**, **Faktisk startdato**, **Seneste tid for i venteposition**, **Faktisk slutdato**, og **Forfaldsdato**. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Opgave** > **Felter** |**oprettetden** |**Dato og klokkeslæt** |
+| Tekstfelter |Tekstfelter kræver en enkelt tekstlinje eller dynamisk indhold, der er et teksttypefelt. Eksempler på felter er **Kategori** og **Underkategori**. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Opgave** > **Felter** |**kategori** |**Enkelt tekstlinje** |
+| Heltalsfelter |Nogle felter kræver heltal eller dynamisk indhold, der er af typen heltalsfelt. Eksempler indbefatter **Procent fuldført** og **Varighed**. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Opgave** > **Felter** |**procentfuldført** |**Heltal** |
+| Datofelter |Nogle felter kræver en angivet dato i formatet dd-mm-åå eller dynamisk indhold, der er af typen datofelt. Eksempler indbefatter **Oprettet den**, **Startdato**, **Faktisk startdato**, **Seneste tid for i venteposition**, **Faktisk slutdato**, og **Forfaldsdato**. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Opgave** > **Felter** |**createdon** |**Dato og klokkeslæt** |
 | Felter, der kræver både et post-id og en opslagstype |Nogle felter, der refererer til en anden objektpost, kræver både post-id'et og opslagstypen. |**Indstillinger** > **Tilpasninger** > **Tilpas systemet** > **Enheder** > **Konto** > **Felter** |**kontoid** |**Primær nøgle** |
-|Grupperet indstilling|Felter med grupperede indstillinger kræver en kendt heltalsværdi, for at den videresendes til denne type felt.  I tilpasningsområdet i Dynamics 365 kan du få vist felterne med grupperede indstillinger, som understøtter feltet med heltalsværdien, sammen med dets respektive mærkat.|Indstillinger > Tilpasning > Tilpas systemet > Enheder > Konto > Felter | Foretrukket kontaktmetode| Helt tal|
+|Grupperet indstilling|Felter med grupperede indstillinger kræver en kendt heltalsværdi, for at den videresendes til denne type felt.  I tilpasningsområdet i Dynamics 365 kan du få vist felterne med grupperede indstillinger, som understøtter feltet med heltalsværdien, sammen med dets respektive mærkat.|Indstillinger > Tilpasning > Tilpas systemet > Enheder > Konto > Felter | Foretrukken kontaktmetode| Heltal|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Flere eksempler på felter, der kræver både et post-id og en opslagstype
-Som en udvidelse af den forrige tabel, er her flere eksempler på felter, der ikke virker med værdier, der vælges i listen over dynamisk indhold. I stedet kræver felterne, at der både angives et post-id og en opslagstype i felterne i Power Apps.
+Som en udvidelse af den forrige tabel, er her flere eksempler på felter, der ikke virker med værdier, der vælges i listen over dynamisk indhold. I stedet kræver felterne både et post-id og en opslagstype, der angives i felterne i Power Apps.
 
 * **Ejer** og **Ejertype**.
   
@@ -158,9 +158,9 @@ Se [Find post-id](#find-the-records-id) for at finde en posts id senere under de
 2. Klik eller tryk på værktøjslinjen Handlinger, eller klik eller tryk på **Pop-ud**
    ![Pop-udposten](./media/connection-dynamics365/popout.png) (eller klik eller tryk på **MAIL ET LINK** for at kopiere hele URL-adressen til dit standard mailprogram).
    
-    I webbrowserens adresselinje indeholder URL-adressens post-id mellem % 7b og % 7d kodningstegn.
+    I webbrowserens adresselinje indeholder URL-adressens post-id'et mellem kodningstegnene %7b og %7d.
    
-   ![Post-id](./media/connection-dynamics365/recordid.png)
+   ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## <a name="related-topics"></a>Relaterede emner
 [Fejlfinding i et flow](fix-flow-failures.md)

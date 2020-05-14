@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 34e17dbb8fdc1c3b3f6ba835b80c687504b9abd6
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195836"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298369"
 ---
 # <a name="wait-for-approval-in-power-automate"></a>Vent på godkendelse i Power Automate
 
@@ -44,12 +44,12 @@ Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til go
 
 ## <a name="add-an-event-to-trigger-the-flow"></a>Tilføj en begivenhed, der udløser flowet
 
-1. Log på [Power Automate](https://flow.microsoft.com), vælg **Mine flow** på den øverste navigationslinje, og vælg derefter **Opret fra bunden af**.
+1. Log på [Power Automate](https://flow.microsoft.com), vælg **Mine flows** på den øverste navigationslinje, og vælg derefter **Opret fra bunden**.
 
-1. Markér afkrydsningsfeltet **Søg blandt hundredvis af forbindelser og udløsere**, angiv **nyt element**, og gå derefter til **SharePoint – når et element oprettes**.
+1. Markér afkrydsningsfeltet **Søg blandt hundredvis af connectorer og udløsere**, angiv **nyt element**, og gå derefter til **SharePoint – når et element oprettes**.
 
-1. Hvis du bliver bedt om det, skal du logge på SharePoint.
-1. Under **Webstedsadresse** skal du angive URL-adressen på det SharePoint-websted, der indeholder din liste.
+1. Log på SharePoint, hvis du bliver bedt om det.
+1. Under **Websiteadresse** skal du angive URL-adressen på det SharePoint-website, der indeholder din liste.
 
 1. Under **Listenavn** skal du vælge den liste, du oprettede tidligere. Hvis du følger med, er navnet **Projejektsporing**.
 
@@ -59,9 +59,9 @@ Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til go
 
 1. Vælg knappen **Nyt trin**, og vælg derefter **Tilføj en handling.**
 
-1. I feltet **Søg i alle forbindelser og handlinger** skal du skrive eller indsætte **send mail** og derefter vælge **Office 365 Outlook – Send en mail med valgmuligheder**.
+1. I feltet **Søg i alle connectorer og handlinger** skal du skrive eller indsætte **send mail**, og derefter skal du vælge **Office 365 Outlook – send en mail med valgmuligheder**.
 
-1. Hvis du bliver bedt om det, skal du logge på Office 365 Outlook.
+1. Log på Office 365 Outlook, hvis du bliver bedt om det.
 
 1. Vælg feltet **Til**, og vælg derefter tokenet **Tildelt til mail**.
 
@@ -84,7 +84,7 @@ Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til go
 
 1. Vælg **Tilføj en handling** i området **Hvis ja**.
 
-1. I feltet **Søg i alle forbindelser og handlinger** skal du skrive eller indsætte **send mail** og derefter vælge **Office 365 Outlook – Send en mail**.
+1. I feltet **Søg i alle connectorer og handlinger** skal du skrive eller indsætte **send mail**, og derefter skal du vælge **Office 365 Outlook – send en mail**.
 
 1. I feltet **Til** skal du angive en modtager. f.eks. **Oprettet via mail**.
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 38f81184ceacb04bd1a1fae54f79f1c674c9ba49
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194249"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297841"
 ---
 # <a name="edit-a-solution-aware-flow"></a>Rediger et løsningsorienteret flow
 
@@ -35,7 +35,7 @@ Følg disse trin for at redigere et løsningsorienteret flow.
 > [!IMPORTANT]
 > Stop dit flow, før du begynder at redigere det. Ellers kan du miste dine ændringer.
 
-1. Log på Power Automate, og vælg derefter **Løsninger** på navigationslinjen.
+1. Log på Power Automate, og vælg derefter **Løsninger** fra den venstre navigationslinje.
 1. Vælg den løsning, der indeholder det flow, du vil redigere.
 
    ![](./media/edit-solution-aware-flow/new-flow-inside-solution.png)
@@ -52,6 +52,6 @@ Følg disse trin for at redigere et løsningsorienteret flow.
 
 * [Opret en løsning](./overview-solution-flows.md)
 * [Opret et flow i en løsning](./create-flow-solution.md)
-* [Eksportér en løsning](./export-flow-solution.md)
-* [Importér en løsning](./import-flow-solution.md)
+* [Eksportere en løsning](./export-flow-solution.md)
+* [Importere en løsning](./import-flow-solution.md)
 * [Fjern et løsningsorienteret flow](./remove-solution-aware-flow.md)

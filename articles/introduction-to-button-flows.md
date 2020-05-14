@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: de691667b2c3b50d2bcbddf1684a0b1ed4608294
-ms.sourcegitcommit: d6c12fe9b38201519003fdf7754a5404eb4efea5
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79542531"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298149"
 ---
 # <a name="introducing-instant-flows"></a>Introduktion til øjeblikkelige flow
 
 ## <a name="what-are-instant-flows"></a>Hvad er øjeblikkelige flow?
-Vi har vist alle nogle rutineopgaver, som vi ville ønske, at vi kunne køre med blot et klik på en knap. Det kan f.eks. være, at du skal sende en hurtig mail til dit team for at minde dem om at deltage i dagens teammøde, eller du vil starte et nyt Visual Studio Online-build af koden, efter at du har fået besked om, at der ikke er planlagt flere opdateringer resten af dagen. Med øjeblikkelige flow kan du udføre disse og mange andre typer opgaver ved at trykke på en knap på din mobilenhed.
+Vi har vist alle nogle rutineopgaver, som vi ville ønske, at vi kunne køre med blot et klik på en knap. Du har f.eks. brug for hurtigt at sende en mail til teamet for at minde dem om at deltage i den daglige teamsynkronisering, eller du vil starte et nyt Visual Studio Online-build af din kodebase, når du har fået besked om, at der ikke er planlagt flere indtjekninger i løbet af dagen. Med øjeblikkelige flow kan du udføre disse og mange andre typer opgaver ved at trykke på en knap på din mobilenhed.
 
 **Bemærk!** Du kan oprette øjeblikkelige flow enten fra din mobilenhed eller i Power Automate.  
   ![Oversigtsbillede](./media/introduction-to-button-flows/buttons-montage.png)  
@@ -66,11 +66,11 @@ I denne vejledning opretter vi en knap, der starter et Visual Studio Online (VSO
    ![Skærmbilledet Nyt build](./media/introduction-to-button-flows/create-button-8.png)  
 9. Du skal nu konfigurere egenskaberne for pushmeddelelsen på kortet **Send en pushmeddelelse**. Som standard konfigureres denne pushmeddelelse til at sende et HTML-link til en webside, der viser statussen for buildet:  
    ![Skærmbilledet Pushmeddelelser](./media/introduction-to-button-flows/create-button-9.png)  
-10. Vælg knappen **Opret flow** for at gemme dit øjeblikkelige flow: ![Knappen Opret flow](./media/introduction-to-button-flows/create-button-10.png)  
+10. Vælg knappen **Opret flow** for at gemme dit øjeblikkelige flow: ![Opret flow-knap](./media/introduction-to-button-flows/create-button-10.png)  
 11. Efter et øjeblik skulle du få vist denne bekræftelse på dit flow:  
-    ![Meddelelse om fuldførelse](./media/introduction-to-button-flows/create-button-11.png)  
+    ![Udført-meddelelse](./media/introduction-to-button-flows/create-button-11.png)  
 
-Tillykke, du har oprettet et øjeblikkeligt flow! Nu kan du køre dette øjeblikkelige flow under fanen **Knapper** i appen Flow, når du vil. Du skal blot trykke på "knappen" for at køre flowet. Mobilappen Power Automate er tilgængelig til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+Tillykke, du har oprettet et øjeblikkeligt flow! Nu kan du køre dette øjeblikkelige flow under fanen **Knapper** i appen Flow, når du vil. Du skal blot trykke på "knappen" for at køre flowet. Power Automate-mobilappen er tilgængelig for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>Fra din mobilenhed
 
@@ -98,12 +98,12 @@ I appen:
 9. Se alle dine flows under fanen **Mine flows**.  
    ![Billede af Vis alle flow](./media/introduction-to-button-flows/create-button-from-mobile-9.png)  
 
-Tillykke, du har oprettet et øjeblikkeligt flow! Nu kan du køre dette øjeblikkelige flow under fanen **Knapper** i appen Flow, når du vil. Du skal blot trykke på "knappen" for at køre flowet. Appen Flow fås i øjeblikket til Android- og iOS-mobilenheder.  
+Tillykke, du har oprettet et øjeblikkeligt flow! Nu kan du køre dette øjeblikkelige flow under fanen **Knapper** i appen Flow, når du vil. Du skal blot trykke på "knappen" for at køre flowet. Flow-appen fås i øjeblikket til Android- og iOS-mobilenheder.  
 
 ![Billede af Nyt øjeblikkeligt flow](./media/introduction-to-button-flows/create-button-from-mobile-10.png)  
 
 ## <a name="trigger-an-instant-flow"></a>Udløs et øjeblikkeligt flow
-Nu, hvor du har oprettet et øjeblikkeligt flow, skal du køre det. Da du kun kan køre øjeblikkelige flow fra appen Flow, skal du have installeret Flow på din Android- eller iOS-mobilenhed.  
+Nu, hvor du har oprettet et øjeblikkeligt flow, skal du køre det. Da du kun kan køre øjeblikkelige flow fra Flow-appen, skal du have installeret Flow på din Android- eller iOS-mobilenhed.  
 
 1. Start appen Flow, tryk på fanen **Knapper** nederst på siden, og tryk på den *knap*, der repræsenterer det øjeblikkelige flow, du vil udløse:  
    ![Udløs flowet](./media/introduction-to-button-flows/trigger-button-1.png)   
@@ -145,7 +145,7 @@ Under fanen **Mine flows** i appen Flow:
    ![Billede af Opdater flow](./media/introduction-to-button-flows/manage-flow-3.png)   
 
    Tryk på **Kørselshistorik** for at se resultaterne af alle kørsler for et øjeblikkeligt flow:    
-   ![Få vist kørselshistorik](./media/introduction-to-button-flows/manage-flow-4.png)  
+   ![Vis historik over kørsel](./media/introduction-to-button-flows/manage-flow-4.png)  
 
    Hvis du deaktiverer et flow, vil det ikke længere være tilgængeligt under fanen **Knapper**:    
    ![Deaktiverede flow er ikke under fanen Knapper](./media/introduction-to-button-flows/manage-flow-5.png)  
@@ -153,5 +153,5 @@ Under fanen **Mine flows** i appen Flow:
 ## <a name="next-steps"></a>Næste trin
 * [Del øjeblikkelige flow](share-buttons.md).
 * Lær at bruge [tokens, der udløser knap](introduction-to-button-trigger-tokens.md), til at sende data i realtid, når dine øjeblikkelige flow køres.
-* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installer Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 

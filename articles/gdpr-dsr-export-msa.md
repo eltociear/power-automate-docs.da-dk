@@ -1,6 +1,6 @@
 ---
-title: Eksportanmodninger fra registrerede omfattet af Power Automate GDPR for Microsoft-konti (MSA) | Microsoft Docs
-description: Få mere at vide om, hvordan du kan bruge Power Automate til at svare på eksportanmodninger fra registrerede omfattet af GPDR for Microsoft-konti.
+title: Anmodninger i Power Automate om eksport af dataemner omfattet af GDPR for Microsoft-konti (MSA) | Microsoft Docs
+description: Lær, hvordan du kan bruge Power Automate til at svare på anmodninger om eksport af dataemner omfattet af GPDR for Microsoft-konti.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 487f19badd67650c686c9e497cad739ee1560885
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195081"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297445"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Svar på eksportanmodninger fra registrerede omfattet af GDPR for Power Automate
+# <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Besvarelse af anmodninger i Power Automate om eksport af dataemner omfattet af GDPR
 
 
 Som led i vores bestræbelser på at være med dig gennem hele processen omkring den generelle forordning om databeskyttelse (GDPR) har vi udviklet denne dokumentation. Denne dokumentation beskriver ikke blot, hvad Microsoft gør for at forberede sig på GDPR, men kommer også med eksempler på, hvad du kan gøre i dag med Microsoft for at overholde GDPR, når du bruger Power Automate.
@@ -38,11 +38,11 @@ Som led i vores bestræbelser på at være med dig gennem hele processen omkring
 
 Brug [Microsoft-dashboard til beskyttelse af personlige oplysninger](https://account.microsoft.com/privacy/) eller [Power Automate](https://flow.microsoft.com/) til at finde eller eksportere personlige data for en bestemt bruger.
 
-|Personlige data|Placering|
+|Personlige data|Lokation|
 |-----------------|-------------------|
 |Produkt- og tjenesteaktivitet|Microsoft-dashboard til beskyttelse af personlige oplysninger|
 |Flow|Power Automate-udviklerportal|
-|Kørselsoversigt|Power Automate-udviklerportal|
+|Kørselshistorik|Power Automate-udviklerportal|
 |Aktivitetsopdatering|Power Automate-udviklerportal|
 |Forbindelser|Power Automate-udviklerportal|
 
@@ -61,7 +61,7 @@ Brug [Microsoft-dashboard til beskyttelse af personlige oplysninger](https://acc
     ![Download dine data](./media/gdpr-dsr-export-msa/create-archive.png)
 1. Der oprettes et nyt arkiv. Vælg **Download** for at hente dine eksporterede data om produkt- og tjenesteaktivitet.
 
-    ![Download](./media/gdpr-dsr-export-msa/download.png)
+    ![Hent](./media/gdpr-dsr-export-msa/download.png)
 
 ## <a name="export-a-flow"></a>Eksportér et flow
 
@@ -75,7 +75,7 @@ En slutbruger, der har adgang til et flow, kan eksportere flowet ved at følge d
 
     ![Eksportér flow](./media/gdpr-dsr-export/export-flow.png)
 
-1. Vælg **Pakke (.zip)** .
+1. Vælg **Pakke (.zip)**.
 
 Dit flow er nu tilgængeligt som en zip-komprimeret pakke. Du kan finde flere oplysninger i blogindlægget om, [hvordan du eksporterer og importerer et flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
@@ -89,17 +89,17 @@ En slutbruger, der har adgang til et flow, kan eksportere data ved at følge dis
 1. Vælg linket **Mine flow**, og vælg derefter det flow, som du vil eksportere kørselsoversigten for.
 1. I ruden **KØRSELSOVERSIGT** skal du vælge **Se alle**.
 
-    ![Kørselsoversigt](./media/gdpr-dsr-export/run-history.png)
+    ![Kørselshistorik](./media/gdpr-dsr-export/run-history.png)
 
 1. Vælg **Download CSV**.
 
-    ![Download CSV](./media/gdpr-dsr-export/download-csv.png)
+    ![Hent CSV](./media/gdpr-dsr-export/download-csv.png)
 
-Kørselsoversigten downloades som en .csv-fil, som kan åbnes i Microsoft Excel eller i en teksteditor, hvor du kan analysere resultaterne.
+Kørselshistorikken downloades som en .csv-fil, som kan åbnes i Microsoft Excel eller i et tekstredigeringsprogram, hvor du kan analysere resultaterne.
 
 ## <a name="export-a-users-activity-feed"></a>Eksportér en brugers aktivitetsopdatering
 
-I [Power Automate](https://flow.microsoft.com/) viser aktivitetsopdateringen en brugers oversigt over aktiviteter, fejl og beskeder. Brugere kan få vist deres aktivitetsopdatering ved at følge disse trin:
+I [Power Automate](https://flow.microsoft.com/) viser aktivitetsopdateringen en brugers historik over aktiviteter, fejl og beskeder. Brugere kan få vist deres aktivitetsopdatering ved at følge disse trin:
 
 1. Log på [Power Automate](https://flow.microsoft.com/), vælg klokkeikonet i nærheden af øverste højre hjørne, og vælg derefter **Vis alle aktiviteter**.
 
@@ -116,4 +116,4 @@ Forbindelser gør det muligt for flow at oprette forbindelse til API'er, SaaS-pr
 1. Log på [Power Automate](https://flow.microsoft.com/), vælg tandhjulsikonet i nærheden af øverste højre hjørne, og vælg derefter **Forbindelser**.
 
     ![Vis forbindelser](./media/gdpr-dsr-export/show-connections.png)
-1. Kopiér resultaterne, og indsæt dem derefter i en teksteditor, f.eks. Microsoft Word.
+1. Kopiér resultaterne, og indsæt dem derefter i et tekstredigeringsprogram, f.eks. Microsoft Word.

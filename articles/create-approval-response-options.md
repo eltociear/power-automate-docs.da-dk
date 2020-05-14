@@ -25,12 +25,12 @@ ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200416"
+ms.locfileid: "3299425"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Opret brugerdefinerede svarmuligheder for godkendelsesflow
 
 
-Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder uploader en udgiftsrapport til SharePoint, og derefter vil tillade, at godkenderen svarer med en af følgende tre muligheder: Acceptér, Angiv flere oplysninger eller Afvis.
+Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder uploader en udgiftsrapport til SharePoint, og derefter vil tillade, at godkenderen svarer med en af følgende tre muligheder: Acceptér, Der kræves flere oplysninger eller Afvis.
 
 
 ## <a name="prerequisites"></a>Forudsætninger
@@ -45,20 +45,20 @@ Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder 
 
     ![Muligheden Opret fra bunden](media/create-approval-response-options/create-approval-response-options.png)
 
-1. På den skærm, der åbnes, skal du angive et navn for dit flow i **Flownavn**. 
+1. Angiv et navn til flowet i **Flownavn**på den skærm, der vises. 
   
-1. Søg efter **SharePoint** i **Vælg dit flows udløser**, vælg **Når et element oprettes** på listen over udløsere, og vælg derefter **Opret**.
+1. Søg efter **SharePoint** i **Vælg flowetsudløser**, vælg **Når der oprettes et element** på listen over udløsere, og Vælgderefter **Opret**.
 
    ![Vælg Opret fra bunden](media/create-approval-response-options/create-from-blank.png)
 
-1. Angiv **Webstedsadressen** og **Navnet på listen** på SharePoint. 
+1. Angiv **Websiteadresse** og **Listenavn** for SharePoint. 
 
    >[!TIP]
-   >Vælg **Angiv brugerdefineret værdi** i feltet **Webstedsadresse**, før du angiver tekst i **Webstedsadresse**.
+   >Vælg **Angiv brugerdefineret værdi** i feltet **Websiteadresse**, før du indtaster tekst i **Websiteadresse**.
 
 1. Vælg **Nyt trin**, søg efter **Godkendelse**, og vælg derefter **Start, og vent på en godkendelse**.
 
-1. På kortet **Start, og vent på en godkendelse** skal du vælge listen **Godkendelsestype**.
+1. På kortet **Start og vent på en godkendelse** skal du vælge listen **Godkendelsestype**.
 
 1. Vælg **Brugerdefinerede svar – Vent på et svar**.
 
@@ -73,7 +73,7 @@ Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder 
 
 1. I feltet **Element for svarmuligheder** skal du angive **Afvis** og derefter vælge **Tilføj et nyt element**.
 
-1. I feltet **Element for svarmuligheder** skal du angive **Angiv flere oplysninger**.
+1. I feltet **Element for svarmuligheder** skal du angive **Der kræves flere oplysninger**.
 
     ![Brugerdefineret svar 3](media/create-approval-response-options/enter-response-3.png)   
     

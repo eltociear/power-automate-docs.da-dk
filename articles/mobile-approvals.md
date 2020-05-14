@@ -21,17 +21,17 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 513200d18ac2a845cd63a6d269513f3bcb45118c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193973"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297621"
 ---
-# <a name="approve-requests-on-your-mobile-device-by-using-power-automate"></a>Godkend anmodninger på en mobilenhed vha. Power Automate
+# <a name="approve-requests-on-your-mobile-device-by-using-power-automate"></a>Godkend anmodninger på en mobilenhed ved hjælp af Power Automate
 
-Hvis et flow identificerer dig som godkender, og du har installeret mobilappen til Power Automate, modtager du en pushmeddelelse, når der anmodes om din godkendelse.
+Hvis et flow identificerer dig som godkender, og du har installeret mobilappen for Power Automate, modtager du en pushmeddelelse, når du anmodes om godkendelse.
 
-Denne artikel fører dig gennem nogle almindelige scenarier, som med stor sandsynlighed vil opstå, når du administrerer godkendelsesanmodninger i mobilappen til Power Automate.
+Denne artikel fører dig gennem nogle almindelige scenarier, som sandsynligvis opstå, når du administrerer godkendelsesanmodninger i mobilappen for Power Automate.
 
 > [!NOTE]
 > Billederne i dette emne kommer fra en Android-enhed; slutbrugerens oplevelse i iOS ligner dog denne.
@@ -41,12 +41,12 @@ Denne artikel fører dig gennem nogle almindelige scenarier, som med stor sandsy
 ## <a name="prerequisites"></a>Forudsætninger
 Hvis du vil fuldføre denne gennemgang, skal du:
 
-* Bruge en [Android](https://aka.ms/flowmobiledocsandroid)- eller [iOS](https://aka.ms/flowmobiledocsios)-enhed, der kører mobilappen til Power Automate.
+* En [Android](https://aka.ms/flowmobiledocsandroid)- eller [iOS](https://aka.ms/flowmobiledocsios)-enhed, der kører mobilappen for Power Automate.
 * Være udpeget som godkender i et godkendelsesflow.
 * Have ventende godkendelsesanmodninger.
 
 ## <a name="view-pending-requests"></a>Få vist ventende anmodninger
-1. Åbne mobilappen til Power Automate.
+1. Åbn mobilappen for Power Automate.
    
     ![åbn mobilappen](./media/mobile-approvals/open-app.png)
 2. Vælg **GODKENDELSER** i øverste højre hjørne.
@@ -63,7 +63,7 @@ Hvis du ikke har nogen ventende godkendelsesanmodninger, kan du oprette et [godk
 2. Vælg **GODKEND** på den anmodning, du vil godkende.
    
     ![vælg godkend](./media/mobile-approvals/select-approve.png)
-3. (Valgfrit) vælg **Tilføj kommentar (valgfrit)** .
+3. (Valgfrit) vælg **Tilføj kommentar (valgfrit)**.
    
     ![vælg Tilføj en kommentar](./media/mobile-approvals/select-add-comment.png)
    

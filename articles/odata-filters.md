@@ -21,17 +21,17 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6a71b3ae1e72588dc6fb21aad83631a91ae1d4ba
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193035"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297709"
 ---
-# <a name="filter-and-copy-data-with-power-automate"></a>Filtrer og kopiér data med Power Automate
+# <a name="filter-and-copy-data-with-power-automate"></a>Filtrer og kopier data med Power Automate
 
 Denne gennemgang viser, hvordan du opretter et flow, der overvåger en kilde til nye eller ændrede elementer og derefter kopierer disse ændringer til en destination. Du kan oprette et flow som dette, hvis dine brugere indtaster data på én placering, men dit team skal bruge dem på en anden placering eller i et andet format.
 
-Under denne gennemgang kopieres der data fra en Microsoft SharePoint-[liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (kilden) til en [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (destinationen), men du kan kopiere data til eller fra enhver af de mere end [150 tjenester](https://flow.microsoft.com/connectors/), som Power Automate understøtter.
+I denne gennemgang kopieres data fra en Microsoft SharePoint-[liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (kilden) til en [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (destinationen), men du kan kopiere data mellem alle de mere end [150 tjenester](https://flow.microsoft.com/connectors/), som Power Automate understøtter.
 
 > [!IMPORTANT]
 > Ændringer, som du foretager i destinationen, kopieres ikke til kilden, fordi tovejssynkronisering ikke understøttes. Hvis du forsøger at konfigurere tovejssynkronisering, skal du oprette en uendelig løkke, hvor ændringer sendes uendeligt mellem kilde og destination.
@@ -41,8 +41,8 @@ Under denne gennemgang kopieres der data fra en Microsoft SharePoint-[liste](htt
 ## <a name="prerequisites"></a>Forudsætninger
 * Adgang til en datakilde og en destination. Denne gennemgang omfatter ikke trin til oprettelse af kilden og destinationen.
 * Adgang til [Power Automate](https://flow.microsoft.com).
-* En grundlæggende forståelse af, hvordan dine data er gemt.
-* Kendskab til de grundlæggende funktioner i oprettelse af flow. Du kan gennemse, hvordan du tilføjer [handlinger, udløsere](multi-step-logic-flow.md#add-another-action) og [betingelser](add-condition.md). I de følgende trin forudsættes det, at du ved, hvordan disse handlinger udføres.
+* En grundlæggende forståelse af, hvordan dine data lagres.
+* Kendskab til grundlæggende oplysninger om oprettelse af flow. Du kan gennemse, hvordan du tilføjer [handlinger, udløsere](multi-step-logic-flow.md#add-another-action) og [betingelser](add-condition.md). I de følgende trin forudsættes det, at du ved, hvordan disse handlinger udføres.
 
 > [!TIP]
 > Hvert kolonnenavn i kilden og destinationen behøver ikke at stemme overens, men du skal angive data til alle *påkrævede* kolonner, når du indsætter eller opdaterer et element. Power Automate identificerer de påkrævede felter for dig.
@@ -50,16 +50,16 @@ Under denne gennemgang kopieres der data fra en Microsoft SharePoint-[liste](htt
 > 
 
 ## <a name="quick-overview-of-the-steps"></a>Hurtig oversigt over trinnene
-Hvis du er fortrolig med Power Automate, kan du bruge disse hurtige trin til at kopiere data fra én datakilde til en anden:
+Hvis du kender Power Automate godt, kan du bruge disse hurtige trin til at kopiere data fra én datakilde til en anden:
 
 1. Identificer den kilde, du vil overvåge, og den destination, som du vil kopiere ændrede data til. Bekræft, at du har adgang til begge.
-2. Vælg mindst én kolonne, der entydigt identificerer elementer i kilden og destinationen. I eksemplet, der følger, bruger vi kolonnen **Titel**, men du kan bruge en hvilken som helst kolonne du vil.
-3. Konfigurer en udløser, der overvåger kilden til ændringer.
+2. Identificer mindst én kolonne, der entydigt identificerer elementer i kilden og destinationen. I eksemplet, der følger, bruger vi kolonnen **Titel**, men du kan bruge en hvilken som helst kolonne du vil.
+3. Konfigurer en udløser, der overvåger kilden for ændringer.
 4. Søg i destinationen for at se, om det ændrede element findes.
 5. Brug en **betingelse** som denne:
-   * Hvis det nye eller ændrede element ikke findes i destinationen, kan du oprette det.
-   * Hvis det nye eller ændrede element findes i destinationen, kan du opdatere det.
-6. Udløs dit flow, og bekræft derefter, at nye eller ændrede elementer, kopieres fra kilden til destinationen.
+   * Hvis det nye eller ændrede element ikke findes i destinationen, skal det oprettes.
+   * Hvis det nye eller ændrede element findes i destinationen, skal det opdateres.
+6. Udløs dit flow, og bekræft derefter, at nye eller ændrede elementer kopieres fra kilden til destinationen.
 
 > [!NOTE]
 > Hvis du ikke tidligere har oprettet forbindelse til SharePoint eller Azure SQL Database, skal du følge vejledningen, når du bliver bedt om at logge på.
@@ -68,22 +68,22 @@ Hvis du er fortrolig med Power Automate, kan du bruge disse hurtige trin til at 
 
 Her er de detaljerede trin til oprettelse af flowet.
 
-## <a name="monitor-the-source-for-changes"></a>Overvåg kilden til ændringer
-1. Log på [Power Automate](https://flow.microsoft.com), vælg **Mine flow** > **Opret fra bunden af**.
-2. Søg efter **SharePoint** > Vælg udløseren **SharePoint – Når et element oprettes eller ændres** på listen med udløsere.
+## <a name="monitor-the-source-for-changes"></a>Overvåg kilden for ændringer
+1. Log på [Power Automate](https://flow.microsoft.com), og vælg **Mine flows** > **Opret fra bunden**.
+2. Søg efter **SharePoint** > vælg udløseren **SharePoint – Når et element oprettes eller ændres** på listen med udløsere.
 3. Angiv **Webstedsadresse**, og vælg derefter **Listenavn** på kortet **Når et element oprettes eller ændres**.
    
-    Angiv **Webstedsadresse** og **Listenavn** for den SharePoint-listen, som dit flow overvåger for at finde eventuelle nye eller opdaterede elementer.
+    Angiv **Websiteadresse** og **Listenavn** for den SharePoint-listen, som dit flow overvåger for at finde eventuelle nye eller opdaterede elementer.
    
     ![konfigurer sharepoint-udløser](media/odata-filters/configure-sharepoint-trigger.png)
 
-## <a name="search-the-destination-for-the-new-or-changed-item"></a>Søg i destinationen efter det nye eller ændrede element
+## <a name="search-the-destination-for-the-new-or-changed-item"></a>Søg efter det nye eller ændrede element i destinationen
 Vi bruger handlingen **SQL Server – Hent rækker** til at søge i destinationen efter det nye eller ændrede element.
 
 1. Vælg **Nyt trin** > **Tilføj en handling**.
 2. Søg efter **Hent rækker**, vælg **SQL Server – Hent rækker**, og vælg derefter den tabel, du vil overvåge, på listen **Tabelnavn**.
 3. Vælg **Vis avancerede indstillinger**.
-4. I feltet **Filterforespørgsel** skal du angive **Titel eq '** , vælge tokenet **Titel** på listen med dynamisk indhold og derefter angive **'** .
+4. I feltet **Filterforespørgsel** skal du angive **Titel eq '**, vælge tokenet **Titel** på listen med dynamisk indhold og derefter angive **'**.
    
     I det forrige trin forudsættes det, at du matcher titlerne på rækkerne i kilden og destinationen.
    
@@ -113,7 +113,7 @@ På kortet Betingelse:
     ![konfigurer en betingelse](media/odata-filters/configure-condition.png)
 5. Vælg **Rediger i avanceret tilstand**.
    
-    Når avanceret tilstand åbnes, kan du se udtrykket **\@equals(body('Get_rows')?['value'], 0)** i feltet. Rediger udtrykket, ved at tilføje **length()** omkring funktionen **body('Get_items')? ["værdi"]** . Hele udtrykket ser nu således ud: **@equals(length(body('Get_rows')?["værdi"]), 0)**
+    Når avanceret tilstand åbnes, kan du se udtrykket **\@equals(body('Get_rows')?['value'], 0)** i feltet. Rediger udtrykket, ved at tilføje **length()** omkring funktionen **body('Get_items')? ["værdi"]**. Hele udtrykket ser nu således ud: **@equals(length(body('Get_rows')?['value']), 0)**
    
     Kortet **Betingelse** ligner nu denne afbildning:
    
@@ -126,7 +126,7 @@ På kortet Betingelse:
 
 Når dit flow "henter" elementer fra destinationen, er der to mulige resultater.
 
-| Resultat | Næste trin |
+| Resultatet | Næste trin |
 | --- | --- |
 | Elementet findes |[Opdater elementet](odata-filters.md#update-the-item-in-the-destination) |
 | Elementet findes ikke |[Opret et nyt element](odata-filters.md#create-the-item-in-the-destination) |

@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525062"
+ms.locfileid: "3298677"
 ---
 # <a name="upgrade-ui-flows-app-and-connections-from-previous-releases"></a>Opgrader programmet til flow for brugergrænsefladen og forbindelser fra tidligere udgivelser
 

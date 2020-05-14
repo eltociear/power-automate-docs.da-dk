@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: faa0b50a9a525d5abaa818d05be8a97e6ad6663b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192777"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297313"
 ---
 # <a name="troubleshooting-a-flow"></a>Fejlfinding af et flow
 
@@ -40,7 +40,7 @@ Mailen med reparationstip indeholder følgende afsnit:
 
 Navn|Beskrivelse
 ---|---
-Klokkeslæt|Viser det klokkeslæt, hvor flowet først mislykkedes.
+Periode|Viser det klokkeslæt, hvor flowet først mislykkedes.
 Hvad skete der?|Indeholder en beskrivelse af det problem, der forårsagede fejlen i flowet.
 Hvordan løser jeg problemet?|Indeholder tip til løsning af det problem, der forårsager fejlen i flowet.
 Tip til fejlfinding|Indeholder oplysninger om, hvor mange gange flowet mislykkedes, og et link til at prøve flowet igen med de samme inputdata.
@@ -54,7 +54,7 @@ Hvis dit flow mislykkes, kan du også foretage fejlfinding af det direkte i Powe
 ## <a name="identify-the-error"></a>Identificer fejlen
 Før du kan udbedre et flow, skal du identificere, hvorfor det ikke fungerer. Klik eller tryk på ikonet for meddelelser øverst på webportalen (eller åbn fanen **Aktivitet** i mobilappen), og klik eller tryk derefter på dit flow på den viste liste.
 
-![Meddelelser](./media/fix-flow-failures/notifications-toolbar.png)
+![Beskeder](./media/fix-flow-failures/notifications-toolbar.png)
 
 Der vises detaljer om flowet, og for mindst ét trin vises et ikon med et rødt udråbstegn. Åbn dette trin, og gennemse fejlmeddelelsen.
 
@@ -62,14 +62,14 @@ Der vises detaljer om flowet, og for mindst ét trin vises et ikon med et rødt 
 
 
 ## <a name="authentication-failures"></a>Godkendelsesfejl
-I mange tilfælde fungerer flowet ikke, fordi der er en godkendelsesfejl. Hvis du har denne type fejl, indeholder fejlmeddelelsen **Uautoriseret** eller fejlkoden **401** eller **403** vises. Du kan normalt løse en godkendelsesfejl ved at opdatere forbindelsen:
+I mange tilfælde fungerer flowet ikke på grund af en godkendelsesfejl. Hvis du har denne type fejl, indeholder fejlmeddelelsen **Uautoriseret** eller fejlkoden **401** eller **403** vises. Du kan normalt løse en godkendelsesfejl ved at opdatere forbindelsen:
 
 1. Øverst på webportalen skal du klikke eller trykke på tandhjulsikonet for at åbne menuen **Indstillinger** og derefter klikke eller trykke på **Forbindelser**.
 2. Rul til den forbindelse, som du så fejlmeddelelsen **Uautoriseret** for.
 3. Ud for forbindelsen skal du klikke eller trykke på linket **Bekræft adgangskode** i meddelelsen om den forbindelse, der ikke er godkendt.
 4. Kontrollér dine legitimationsoplysninger ved at følge de anvisninger, der vises. Vend tilbage til det fejlbehæftede flow, og klik eller tryk derefter på **Send igen**.
    
-    Flowet nu køre som forventet.
+    Flowet bør nu køre som forventet.
 
 ## <a name="action-configuration"></a>Konfiguration af handling
 Der kan også opstå fejl i et flow, hvis en indstilling under kørslen ikke fungerer som forventet. I dette tilfælde indeholder fejlmeddelelsen **Forkert anmodning** eller **Blev ikke fundet**, eller fejlkoden **400** eller **404** vises.

@@ -1,6 +1,6 @@
 ---
-title: Anmodninger om kontolukning fra registrerede omfattet af Power Automate GDPR for Microsoft-konti (MSA) | Microsoft Docs
-description: Få mere at vide om, hvordan du kan bruge Power Automate til at svare på anmodninger om kontolukning fra registrerede omfattet af GPDR for Microsoft-konti.
+title: Anmodninger i Power Automate om kontolukning for dataemner omfattet af GDPR for Microsoft-konti (MSA) | Microsoft Docs
+description: Lær at bruge Power Automate til at svare på anmodninger om kontolukning for dataemner omfattet af GPDR for Microsoft-konti.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 10f232e45a53cea30892f512b626246fec16deed
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195629"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297819"
 ---
-# <a name="responding-to-gdpr-data-subject-account-close-requests-for-power-automate"></a>Besvar anmodninger om kontolukning fra registrerede omfattet af GDPR for Power Automate
+# <a name="responding-to-gdpr-data-subject-account-close-requests-for-power-automate"></a>Besvarelse af anmodninger i Power Automate om kontolukning for dataemner omfattet af GDPR
 
 
 **Retten til sletning** af personlige data er en central sikkerhedsdetalje i persondataforordningen. Denne ret inkluderer fjernelse af alle personlige data, men ikke oplysninger fra overvågningslogge. Når en bruger beslutter at lukke sin Microsoft-konto (MSA), slettes brugerens underliggende data også.
@@ -37,7 +37,7 @@ Disse ressourcer indeholder personlige data, der slettes automatisk, når en bru
 |Ressourcer, der indeholder personlige data|
 |------|
 |Produkt- og tjenesteaktivitet|
-|Kørselsoversigt|
+|Kørselshistorik|
 |Flow|
 |Aktivitetsopdatering|
 |Brugeroplysninger|
@@ -67,4 +67,4 @@ Disse trin beskriver, hvordan du selv kan lukke din Micorsoft-konto som følge a
 ## <a name="learn-more"></a>Få mere at vide
 
 * Introduktion til [Power Automate](getting-started.md)
-* Se [nyhederne](release-notes.md) i Power Automate
+* Lær [nyheder i](release-notes.md) med Power Automate

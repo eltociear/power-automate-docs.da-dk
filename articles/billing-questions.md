@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 08/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: a8b4ee39a7d40df41a1c8012a33860a77a51a092
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: d1c46c6521e3267f5a2b5b8562122c92647211c7
+ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895878"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3298897"
 ---
 # <a name="billing-and-metering-questions"></a>Spørgsmål om fakturering og måling
 
@@ -33,7 +33,7 @@ ms.locfileid: "82895878"
 I denne artikel finder du svar på ofte stillede spørgsmål om fakturering og måling i Power Automate.
 
 >[!NOTE]
-> Fra og med den 1. oktober 2019 bruger Power Apps og Power Automate en [ny licensmodel](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq). 
+> Power Apps og Power Automate bruger en [ny licensmodel](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq), der starter den 1. oktober 2019. 
 
 ## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>Hvor kan jeg finde ud af, hvilke planer for prisfastsættelse der er tilgængelige?
 
@@ -45,7 +45,7 @@ Se på denne [abonnementsside](https://portal.office.com/account/#subscriptions)
 
 ## <a name="how-do-i-switch-plans"></a>Hvordan skifter jeg plan?
 
-Vælg **Få mere at vide om**> **priser** i den øverste navigationsmenu, og vælg derefter den plan, som du vil skifte til.
+Vælg **Få mere at vide om** > **priser** i den øverste navigationsmenu, og vælg derefter den plan, som du vil skifte til.
 
 ![Få mere at vide > Prisfastsættelse](./media/billing-questions/learn-pricing.png)
 
@@ -53,13 +53,13 @@ Vælg **Få mere at vide om**> **priser** i den øverste navigationsmenu, og væ
 
 Hvis du har en gratis version eller en prøveversion, skal du klikke eller trykke på gearikonet i det øverste navigationspanel for at få vist dit aktuelle forbrug i forhold til versionen. 
 
-![Knappen Settings](./media/billing-questions/settings.png)
+![Knappen Indstillinger](./media/billing-questions/settings.png)
 
-Hvis du har en betalt plan, samles kørsler i puljer på tværs af alle brugere i organisationen. Vi arbejder på funktioner, der viser tilgængelige kvoter og forbrug på tværs af en organisation.
+Hvis du har en plan med en betalt version, samles kørsler i puljer på tværs af alle brugere i din organisation. Vi arbejder på funktioner, der viser tilgængelige kvoter og forbrug på tværs af en organisation.
 
 ## <a name="what-happens-if-my-usage-exceeds-the-limits"></a>Hvad sker der, hvis mit forbrug overskrider grænsen?
 
-Power Automate sætter fart i dine kørsler af flow.
+Power Automate sætter fart på kørslen af dine flows.
 
 ## <a name="where-can-i-find-more-information-regarding-the-usage-limits"></a>Hvor kan jeg finde flere oplysninger om forbrugsgrænserne?
 
@@ -67,15 +67,15 @@ Besøg [siden om prisfastsættelse](https://flow.microsoft.com/pricing/), og se 
 
 ## <a name="what-happens-if-i-try-to-execute-runs-too-frequently"></a>Hvad sker der, hvis jeg forsøger at udføre kørsler for ofte?
 
-Din version bestemmer, hvor ofte dine flows køres. Hvis du bruger den gratis version, kan dine flow f.eks. kun køres hvert 15. minut. Hvis et flow udløses mindre end 15 minutter efter dets sidste kørsel, stilles det i kø, indtil de 15 minutter er gået.
+Din plan bestemmer, hvor ofte dine flow køres. Hvis du bruger den gratis version, kan dine flow f.eks. kun køres hvert 15. minut. Hvis et flow udløses mindre end 15 minutter efter dets sidste kørsel, stilles det i kø, indtil de 15 minutter er gået.
 
 ## <a name="what-counts-as-a-run"></a>Hvad anses som en kørsel?
 
-Hver gang et flow udløses, uanset om det er automatisk eller startes manuelt, anses det som en kørsel. Kontrol af nye data, der ikke anses for at være kørsler.
+Hver gang et flow udløses, uanset om det er automatisk eller startes manuelt, anses det som en kørsel. Søgning efter nye data anses ikke for at være kørsler.
 
 ## <a name="are-there-differences-between-microsoft-accounts-and-work-or-school-accounts-for-billing"></a>Er der forskel på Microsoft-konti og arbejds- eller skolekonti, hvad angår fakturering?
 
-Ja. Hvis du logger på med en Microsoft-konto (såsom en konto, der ender på @outlook.com eller @gmail.com), kan du kun bruge den gratis version. Hvis du vil udnytte funktionerne i betalingsversionen, skal du logge på med et arbejds- eller skolemailadresse.
+Ja. Hvis du logger på med en Microsoft-konto (f.eks. en konto, der ender på @outlook.com eller @gmail.com), kan du kun bruge den gratis version. Hvis du vil udnytte funktionerne i betalingsversionen, skal du logge på med et arbejds- eller skolemailadresse.
 
 ## <a name="im-trying-to-upgrade-but-im-told-my-account-isnt-eligible"></a>Jeg forsøger at opgradere, men får at vide, at min konto ikke er berettiget.
 
@@ -90,6 +90,7 @@ Du kan løse dette problem ved at angive alle nødvendige filtre for udløseren.
 ## <a name="other-limits-and-caveats"></a>Andre begrænsninger og advarsler
 
 * Hver konto kan have så mange som:
+  * 250 flow
   * 15 brugerdefinerede connectors.
   * 20 forbindelser pr. API og 100 forbindelser i alt.
-* Visse eksterne forbindelseskomponenter, som Twitter, implementerer begrænsning (throttling) af forbindelsen for at styre tjenestens kvalitet. Dine flows kan ikke køre, når begrænsning (throttling) er aktiveret. Hvis dine flows ikke kan køre, skal du gennemgå de detaljerede oplysninger om kørslen, der ikke kunne køre, i flowets kørselshistorik.
+* Visse eksterne forbindelseskomponenter, som Twitter, implementerer begrænsning (throttling) af forbindelsen for at styre tjenestens kvalitet. Dine flows kan ikke køre, når begrænsning (throttling) er aktiveret. Hvis dine flow mislykkes, kan du gennemse oplysningerne om de kørsler, der mislykkedes, i flowets kørselshistorik.

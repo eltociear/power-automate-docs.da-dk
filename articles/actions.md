@@ -19,29 +19,29 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c165213949d72fa9e7aacbc28d076969677a8802
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192915"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296653"
 ---
 # <a name="use-actions"></a>Brug af handlinger
 
 
-Handlinger åbner op for en lang række muligheder for oprettelse af forretningslogik. I forbindelse med handlinger kan du oprette, opdatere, slette, tildele eller udføre handlingen. En handling opretter en brugerdefineret meddelelse internt. Udviklere kalder disse handlinger "meddelelser". Hver af disse meddelelser er baseret på de handlinger, der udføres på en objektpost. Hvis målet for en proces er at oprette en post, derefter opdatere den og derefter tildele den, er der tre separate trin. Hvert trin er defineret af funktionaliteten i objektet – ikke nødvendigvis dine forretningsprocesser.  
+Handlinger åbner op for en lang række muligheder for oprettelse af forretningslogik. I forbindelse med handlinger kan du oprette, opdatere, slette, tildele eller udføre handlingen. Internt opretter en handling en brugerdefineret meddelelse. Udviklere refererer til disse handlinger som "meddelelser". Hver af disse meddelelser er baseret på handlinger, der udføres på en forekomst af et objekt. Hvis målet med en proces er at oprette en post, opdatere den og derefter tildele den, er der tre separate trin. Hvert trin defineres af funktionerne for objektet – ikke nødvendigvis af din forretningsproces.  
   
-Handlinger gør det muligt at definere et enkelt verbum (eller en meddelelse), der svarer til en handling, du har brug for at udføre for din virksomhed. Disse nye meddelelser drives af en proces eller funktionsmåde, i stedet for hvad der kan foretages med et objekt. Disse meddelelser kan svare til verber som Eskaler, Konverter, Planlæg, Diriger eller Godkend, afhængigt af hvad du har brug for. Tilføjelsen af disse verber er med til at levere en mere omfattende ordliste, så du nemt kan definere dine forretningsprocesser. Du kan anvende denne mere omfattende ordliste fra klienter eller integrationer i stedet for at skulle skrive handlingen i klienter. Det gør det også lettere, fordi du kan administrere og logge gennemførelsen eller den manglende gennemførelse af hele handlingen som en enkelt enhed.  
+Handlinger gør det muligt at definere et enkelt verbum (eller en enkelt meddelelse), der stemmer overens med en handling, du skal udføre for virksomheden. Disse nye meddelelser styres af en proces eller funktionsmåde i stedet for det, der kan udføres med et objekt. Disse meddelelser kan svare til verber som Escalate, Convert, Schedule, Route eller Approve – alt det, du har brug for. Tilføjelsen af disse verber er med til at give dig et større ordforråd, så du kan definere dine forretningsprocesser på en mere flydende måde. Du kan bruge dette større ordforråd fra klienter eller integrationer i stedet for at skulle skrive handlingen i klienter. Det gør det også lettere, da du kan administrere og logføre succes eller fejl for hele handlingen som en enkelt enhed.  
   
 <a name="BKMK_ConfigurableMessages"></a>   
-## <a name="configurable-messages"></a>Meddelelser, der kan konfigureres  
- Når en handling er defineret og aktiveret, kan en udvikler bruge denne meddelelse som alle andre meddelelser, der leveres af platformen. En væsentlig forskel er dog, at en person, der ikke er udvikler, kan ændre, hvad der skal ske, når denne meddelelse bruges. Du kan konfigurere handlingen for at redigere trin, efterhånden som dine virksomhedsprocesser ændres. Brugerdefineret kode, der bruger denne meddelelse, behøver ikke at blive ændret, så længe procesargumenterne ikke ændres.  
+## <a name="configurable-messages"></a>Konfigurerbare meddelelser  
+ Når en handling er defineret og aktiveret, kan en udvikler bruge denne meddelelse som en hvilken som helst anden meddelelse, der leveres af platformen. Men en vigtig forskel er, at nu kan en bruger, der ikke er udvikler, anvende ændringer på det, der skal udføres, når meddelelsen bruges. Du kan konfigurere handlingen til at ændre trin, efterhånden som forretningsprocesserne ændres. En brugerdefineret kode, der bruger meddelelsen, behøver ikke at blive ændret, så længe processens argumenter ikke ændres.  
   
- Arbejdsprocesser og plug-ins leverer fortsat lignende funktionalitet til definition af automatisering. Arbejdsprocesser gør det stadig muligt for en person, der ikke er udvikler, at anvende ændringer. Men forskellen er, hvordan forretningsprocesserne er sammensat, og hvordan en udvikler kan skrive kode. En handling er en meddelelse, der fungerer på samme niveau som en af de meddelelser, der leveres af platformen. Udviklere kan registrere plug-ins til handlinger.  
+ Processer i arbejdsprocessen og plug-ins indeholder samme funktioner for definition af automatisering. Processer i arbejdsprocessen gør det stadig muligt for en bruger, der ikke er udvikler, at anvende ændringer. Men forskellen er den måde, forretningsprocesserne er udviklet på, og den måde, en udvikler kan skrive kode på. En handling er en meddelelse, der fungerer på samme niveau som alle meddelelser, der leveres af platformen. Udviklere kan registrere plug-ins til handlinger.  
   
 <a name="BKMK_GlobalMessages"></a>   
 ## <a name="global-messages"></a>Globale meddelelser 
  
- I modsætning til arbejdsprocesser eller [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) i Common Data Service, behøver en handling ikke at være knyttet til et bestemt objekt. Du kan definere "globale" handlinger, der kan kaldes separat.
+ I modsætning til Common Data Service-arbejdsprocesser eller -[plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) behøver en handling ikke at blive knyttet til et bestemt objekt. Du kan definere "globale" handlinger, der kan kaldes separat.
 
 ## <a name="next-steps"></a>Næste trin
 

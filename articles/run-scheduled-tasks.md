@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4970554dee8e031a746cf604e2a628f41056b46c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193674"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296631"
 ---
 # <a name="run-flows-on-a-schedule"></a>Kør flows efter en tidsplan
 
@@ -36,12 +36,12 @@ Opret et flow, der udfører en eller flere handlinger (f.eks afsendelse af en ra
 * efter et antal dage, timer eller minutter, du angiver
 
 ## <a name="create-a-recurring-flow"></a>Opret et tilbagevendende flow
-1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flow** på øverste navigationslinje.
+1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flows** på den øverste navigationslinje.
    
     ![Indstilling for Mine flows](./media/run-scheduled-tasks/create-flow.png)
 2. Vælg **Opret fra bunden**.
    
-    ![Opret et flow fra bunden](./media/run-scheduled-tasks/create-from-blank.png)
+    ![Opret en proces fra bunden](./media/run-scheduled-tasks/create-from-blank.png)
 3. I feltet **Søg i alle forbindelser og udløsere** skal du skrive **Gentagelse** og derefter vælge **Tidsplan – Gentagelse**.
    
     ![Find udløser for gentagelse](./media/run-scheduled-tasks/select-recurrence.png)
@@ -52,9 +52,9 @@ Opret et flow, der udfører en eller flere handlinger (f.eks afsendelse af en ra
     ![Angiv gentagelse](./media/run-scheduled-tasks/specify-recurrence.png)
 
 ## <a name="specify-advanced-options"></a>Angiv avancerede indstillinger
-1. Følg trinnene i det forrige afsnit, og vælg derefter **Vis avancerede indstillinger**.
+1. Følg trinnene i forrige afsnit, og vælg derefter **Vis avancerede indstillinger**.
    
-    **Bemærk!** Disse indstillinger ændres på baggrund af de værdier, der er angivet for **Interval** og **Frekvens**. Hvis dit skærmbillede ikke svarer til nedenstående grafik, skal du kontrollere, at **Interval** og **frekvens** er angivet til samme værdier som vist i grafikken.
+    **Bemærk**! Disse indstillinger ændres på baggrund af de værdier, der er angivet for **Interval** og **Frekvens**. Hvis dit skærmbillede ikke svarer til nedenstående grafik, skal du kontrollere, at **Interval** og **frekvens** er angivet til samme værdier som vist i grafikken.
 2. Vælg en **Tidszone** for at angive, om **Starttidspunktet** afspejler en lokal tidszone, Universal Coordinated Time (UTC) osv.
 3. Angiv et **Starttidspunkt** i følgende format:
    <br>YYYY-MM-DDTHH:MM:SSZ
@@ -67,12 +67,12 @@ Opret et flow, der udfører en eller flere handlinger (f.eks afsendelse af en ra
 6. Tilføj den eller de handlinger, flowet skal udføre, som beskrevet under [Opret et flow fra bunden](get-started-logic-flow.md).
 
 ## <a name="delay-a-flow"></a>Udskyd et flow
-1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flow** på øverste navigationslinje.
+1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flows** på den øverste navigationslinje.
    
-    ![Opret et flow fra bunden](./media/run-scheduled-tasks/create-flow.png)
+    ![Opret en proces fra bunden](./media/run-scheduled-tasks/create-flow.png)
 2. Vælg **Opret fra bunden**.
    
-    ![Opret et flow fra bunden](./media/run-scheduled-tasks/create-from-blank.png)
+    ![Opret en proces fra bunden](./media/run-scheduled-tasks/create-from-blank.png)
 3. Angiv en hændelse som beskrevet under [Opret et flow fra bunden](get-started-logic-flow.md).
 4. Vælg **Nyt trin**, og vælg derefter **Tilføj en handling**.
    

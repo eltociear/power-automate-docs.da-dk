@@ -21,19 +21,19 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ce9a943f50ef5c8cc69e5dbf8fde796a75e4cdf9
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195795"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296741"
 ---
-# <a name="manage-flows-in-power-automate-from-your-phone"></a>Administrer flow i Power Automate fra din telefon
+# <a name="manage-flows-in-power-automate-from-your-phone"></a>Administrer flows i Power Automate fra din telefon
 
 Få vist en liste over alle de flows, du har oprettet, og få vist hændelser og handlinger for hvert enkelt flow, aktivér eller deaktiver dem, og udforsk kørselsoversigten.
 
 **Forudsætninger**
 
-* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows) på en [understøttet enhed](getting-started.md#use-the-mobile-app). I grafikken til dette emne er iPhone-versionen af appen anvendt, men grænsefladen på en Android- og Windows Phone-enhed ser ligesådan ud.
+* Installer Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows) på en [understøttet enhed](getting-started.md#use-the-mobile-app). I grafikken til dette emne er iPhone-versionen af appen anvendt, men grænsefladen på en Android- og Windows Phone-enhed ser ligesådan ud.
 * Hvis du ikke allerede har et flow, kan du oprette et på [webstedet for Power Automate](https://flow.microsoft.com/). For lettere at kunne teste dit flow kan du bruge et, du selv kan udløse i stedet for at vente på en ekstern hændelse.
 
 Flowet i dette selvstudium kører, når du modtager en mail fra en bestemt adresse:
@@ -46,7 +46,7 @@ Når flowet kører, sender det en brugerdefineret pushmeddelelse med følgende s
 
 ![Send meddelelse til slæk](./media/mobile-manage-flows/create-event.png)
 
-**Bemærk!** Du kan også [overvåge flowaktivitet](mobile-monitor-activity.md) fra mobilappen.
+**Bemærk**! Du kan også [overvåge flowaktivitet](mobile-monitor-activity.md) fra mobilappen.
 
 ## <a name="manage-a-flow"></a>Administrer et flow
 1. Åbn mobilappen, og tryk derefter på **Mine flows** i bunden af skærmen for at få vist alle dine flows.

@@ -1,6 +1,6 @@
 ---
 title: Oversigt over miljøer for administratorer | Microsoft Docs
-description: Brug, opret og administrer miljøer i Power Automate
+description: Brug, oprettelse og administration af miljøer i Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,48 +13,48 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 04/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: e1c2a93fb011b6f20ecaf79fb0bf95212a2506d4
-ms.sourcegitcommit: 2c9cffb59ef2382648a80966ebbf0fe8eafebe64
+ms.openlocfilehash: 0e0b312ce5e962052770eb44fd1a61c2f19c8e4f
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "83002593"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3299029"
 ---
 # <a name="using-environments-within-power-automate"></a>Brug af miljøer i Power Automate
 
 
-## <a name="benefits"></a>Fordele
+## <a name="benefits"></a>Forsikringsydelser
 
 Miljøer giver følgende fordele:
 
 * **Datalokalitet**: Miljøer kan oprettes i forskellige områder, og de er bundet til den pågældende geografiske placering. Når du opretter et flow i et miljø, distribueres dette flow til alle datacentre på den pågældende geografiske placering. Det giver også en ydelsesmæssig fordel.
 
-    Hvis dine brugere befinder sig i Europa, skal du oprette og bruge miljøet i området Europa. Hvis dine brugere befinder sig i USA, skal du oprette og bruge miljøet i området USA. 
+    Hvis dine brugere befinder sig i Europa, skal du oprette og bruge miljøet i området Europa. Hvis brugerne befinder sig i USA, skal du oprette og bruge miljøet i USA. 
 
     > [!IMPORTANT]
     > Hvis du sletter miljøet, slettes alle flow i dette miljø også. Dette gælder for alle elementer, du opretter i det pågældende miljø, herunder forbindelser, gateways, Power Apps og meget mere.
-* **Forebyggelse af datatab**: Som administrator ønsker du ikke flow, der modtager data fra en intern placering (f.eks *OneDrive for Business* eller en SharePoint-liste, der indeholder lønoplysninger) og derefter slår dataene op offentligt (f.eks. på *Twitter*). Brug Forebyggelse af datatab til at styre, hvilke tjenester der kan dele data i din Power Automate-udrulning.
+* **Forebyggelse af datatab:** Som administrator ønsker du ikke flows, der modtager data fra en intern placering (f.eks *OneDrive for Business* eller en SharePoint-liste, der indeholder lønoplysninger) og derefter slår dataene op offentligt (f.eks. på *Twitter*). Brug forebyggelse af datatab til at styre, hvilke tjenester der kan dele data i din Power Automate-udrulning.
 
-    Du kan f.eks. føje tjenesterne *SharePoint* og *OneDrive for Business* til en politik, der kun tillader firmadata. Alle flow, der er oprettet i dette miljø, kan bruge tjenesterne *SharePoint* og *OneDrive for Business*. De kan dog ikke dele data med andre tjenester, som ikke er inkluderet i politikken, der kun tillader firmadata.
+    Du kan f.eks. føje tjenesterne *SharePoint* og *OneDrive for Business* til en politik, der kun tillader virksomhedsdata. Alle flows, der er oprettet i dette miljø, kan bruge tjenesterne *SharePoint* og *OneDrive for Business*. De kan dog ikke dele data med andre tjenester, som ikke er inkluderet i politikken, der kun tillader firmadata.
 
   > [!NOTE]
   > Forebyggelse af datatab fås med nogle licens-SKU'er, herunder P2-licensen.
 
 * **Isoleringsgrænse for alle ressourcer**: Alle flow, gateways, forbindelser, brugerdefinerede connectors osv., der er placeret i et specifikt miljø. De findes ikke i andre miljøer.
-* **Common Data Service**: Her er dine muligheder, hvis du vil oprette et flow, hvor der indsættes data i en tjeneste:
+* **Common Data Service**: Her er dine muligheder, hvis du vil oprette et flow, der indsætter data i en tjeneste:
 
-  * Indsæt data i en Excel-fil, og gem Excel-filen på en cloudlagerkonto, f.eks OneDrive.
+  * Indsæt data i en Excel-fil, og gem Excel-filen på en cloudstoragekonto, f.eks OneDrive.
   * Opret en SQL Database, og gem derefter dine data i den.
   * Brug Common Data Service til at gemme dine data.
 
-    Der kan maks. være én database til dine flow i hvert miljø i Common Data Service. Adgangen til Common Data Service afhænger af den licens, du har købt. Common Data Service er ikke inkluderet i den gratis licens.
+    Der kan maksimalt være én database til dine flows i hvert miljø i Common Data Service. Adgang til Common Data Service afhænger af, hvilken licens du har købt. Common Data Service er ikke inkluderet i den gratis licens.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -65,13 +65,13 @@ Selvom miljøer giver mange fordele, medfører de også nye begrænsninger. Den 
 **Standard**miljøet deles af alle brugere, og alle brugere kan oprette flow i **standard**miljøet.
 
 > [!TIP]
-> Hvis du er bruger af prøveversionen, findes alle eksisterende flows i standardmiljøet. En *bruger af prøveversionen* er en person, der bruger Power Automate, før det er offentligt tilgængeligt.
+> Hvis du er bruger af prøveversionen, findes alle eksisterende flows i standardmiljøet. En *prøveversionsbruger* er en person, der har brugt Power Automate, inden den er generelt tilgængelig (GA).
 
 ## <a name="the-admin-center"></a>Administration
 
 Administratorer kan bruge Administration til at oprette og administrere miljøer. Her er de to måder, du kan åbne Administration på:
 
-### <a name="option-1-select-settings"></a>Mulighed 1: Vælg Indstillinger
+### <a name="option-1-select-settings"></a>Mulighed 1: Vælg indstillinger
 
 1. Log på [flow.microsoft.com](https://flow.microsoft.com).
 1. Vælg tandhjulet Indstillinger, og vælg **Administration** på listen:
@@ -85,7 +85,7 @@ Gå til [admin.flow.microsoft.com](https://admin.flow.microsoft.com), og log på
 
 ## <a name="create-an-environment"></a>Opret et miljø
 
-1. Vælg [Miljøer](https://admin.flow.microsoft.com) i **Power Automate Administration**: Du kan se alle eksisterende miljøer: ![Miljøer](./media/environments-overview-admin/environments-list.png)
+1. I [Power Automate Administration](https://admin.flow.microsoft.com) skal du vælge **Miljøer**. Du kan se alle eksisterende miljøer: ![Miljøer](./media/environments-overview-admin/environments-list.png)
 2. Vælg **Nyt miljø**, og angiv derefter de påkrævede oplysninger:
 
 
@@ -93,7 +93,7 @@ Gå til [admin.flow.microsoft.com](https://admin.flow.microsoft.com), og log på
    |------------------|-------------------------------------------------------------------------------------------------------------|
    | Miljønavn |              Angiv navnet på dit miljø, f.eks. `Human Resources` eller `Europe flows`.              |
    |      Område      | Vælg den placering, hvor dit miljø skal hostes. Du opnår den bedste ydeevne ved at bruge et område, der er tæt på dine brugere. |
-   | Miljøtype |                  Vælg en miljøtype på baggrund af din licens: Produktion eller Prøveversion.                   |
+   | Miljøtype |                  Vælg en miljøtype på baggrund af din licens: Produktion eller Prøve.                   |
 
      ![indstillinger for miljø](./media/environments-overview-admin/new-environment-dialog.png)
 3. Klik på **Opret miljø**.
@@ -107,7 +107,7 @@ Du kan nu føje brugere til miljøet.
 
 ## <a name="manage-your-existing-environments"></a>Administrer dine eksisterende miljøer
 
-1. Vælg **Miljøer** i [Power Automate Administration](https://admin.flow.microsoft.com):
+1. I [Power Automate Administration](https://admin.flow.microsoft.com) skal du vælge **Miljøer**:
 
    ![menuelementet miljøer](./media/environments-overview-admin/select-environments.png)
 1. Vælg et miljø for at åbne dets egenskaber.
@@ -147,7 +147,7 @@ Du kan nu føje brugere til miljøet.
     Du kan se alle eksisterende rettighedssæt og muligheder for at redigere eller slette roller.
 
     Vælg **Nyt rettighedssæt** for at oprette et nyt rettighedssæt.
-1. Hvis du valgte **Opret database** til at gemme dine data: Denne database er en del af Common Data Service. Når du klikker på fanen **Sikkerhed**, bliver du bedt om at navigere til **Dynamics 365-instansadministration**, hvor der kan angives rollebaseret sikkerhed.
+1. Hvis du valgte **Opret database** for at gemme dine data, indgår denne database i Common Data Service. Når du klikker på fanen **Sikkerhed**, bliver du bedt om at navigere til **Dynamics 365-instansadministration**, hvor der kan angives rollebaseret sikkerhed.
 ![sikkerhedsindstillinger for dynamics](./media/environments-overview-admin/Security-Link-D365.png)
 
 1. Vælg brugeren på listen over brugere i miljøet/instansen.
@@ -158,12 +158,12 @@ Du kan nu føje brugere til miljøet.
    ![tildel rolle til bruger](./media/environments-overview-admin/D365-Assign-Role.png)
 
 > [!NOTE]
-> Brugere eller grupper, der er tildelt til disse miljøroller, har ikke automatisk adgang til miljøets database (hvis den findes) og skal have tildelt særskilt adgang af ejeren af databasen. 
+> Brugere eller grupper, der er tildelt til disse miljøroller, får ikke automatisk adgang til miljøets database (hvis den findes) og skal have tildelt særskilt adgang af en databaseejer. 
 >
 >
 
 ### <a name="database-security"></a>Databasesikkerhed
-Muligheden for at oprette og redigere et databaseskema og oprette forbindelse til lagrede data i en database, som klargøres i dit miljø, styres af databasens brugerroller og rettighedssæt. Du kan administrere brugerrollerne og rettighedssættene for dit miljøs database via afsnittene **Brugerroller** og **Rettighedssæt** på fanen **Sikkerhed**. 
+Muligheden for at oprette og redigere et databaseskema og oprette forbindelse til lagrede data i en database, som klargøres i dit miljø, styres af databasens brugerroller og rettighedssæt. Du kan administrere brugerrollerne og rettighedssættene for dit miljøs database fra afsnittet **User roles** (Brugerroller) og **Permission sets** (Rettighedssæt) på fanen **Security** (Sikkerhed). 
 
    ![tildel rolle til bruger](./media/environments-overview-admin/D365-Assign-Role.png)
 
@@ -173,17 +173,19 @@ Muligheden for at oprette og redigere et databaseskema og oprette forbindelse ti
 
 Ja, flow kan eksporteres fra ét miljø og importeres til et andet miljø.
 
-### <a name="which-license-includes-common-data-service"></a>Hvilken licens omfatter Common Data Service?
+### <a name="which-license-includes-common-data-service"></a>Hvilken licens indeholder Common Data Service?
 
-Du kan få adgang til Common Data Service med en af [Power Automate-licenserne](https://flow.microsoft.com/pricing).
+Kun Microsoft Power Apps Plan 2 indeholder rettigheder til at oprette databaser med Common Data Service. Alle betalte planer (Power Automate Plan 1 og 2 og Microsoft Power Apps Plan 1 og 2) har dog ret til at anvende Common Data Service.
+
+Vælg en plan, der passer til dig, ved at gå til siden [Priser på Power Automate](https://flow.microsoft.com/pricing/).
 
 I dokumentet [Spørgsmål om fakturering](billing-questions.md) kan du finde svar på ofte stillede spørgsmål om fakturering.
 
-### <a name="can-common-data-service-be-used-outside-of-an-environment"></a>Kan Common Data Service benyttes uden for et miljø?
+### <a name="can-common-data-service-be-used-outside-of-an-environment"></a>Kan Common Data Service bruges uden for et miljø?
 
 Nej. Common Data Service kræver et miljø. [Læs mere](common-data-model-intro.md) om det.
 
-### <a name="what-regions-include-power-automate"></a>Hvilke områder dækker Power Automate?
+### <a name="what-regions-include-power-automate"></a>Hvilke områder indeholder Power Automate?
 
 Power Automate understøtter de fleste af de områder, som Office 365 understøtter. Se [oversigten over områder](regions-overview.md) for at få flere oplysninger.
 

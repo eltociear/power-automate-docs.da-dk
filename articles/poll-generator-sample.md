@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b19a5b58db4680786ade089731846f0f8000d164
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868221"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297291"
 ---
 # <a name="create-a-poll-sample"></a>Opret et eksempel på en afstemning
 
-Eksemplet på **oprettelsen af en afstemning** er en inputformular i et adaptivt kort, der er designet til at sende afstemninger til Microsoft Teams. Erstat den viste tekst på dette kort for at tilpasse den til afstemningen. Dette adaptive kort gør det muligt for dig at følge forskellige beslutningsstier, afhængigt af de svar, der angives i afstemningsværdierne, eller antallet af stemmer for kortforbrugerne.
+Eksemplet på **opret en afstemning** er en inputformular i et adaptivt kort, der er designet til at sende afstemninger til Microsoft Teams. Erstat den viste tekst på dette kort for at tilpasse den til afstemningen. Dette adaptive kort gør det muligt for dig at følge forskellige beslutningsstier, afhængigt af de svar, der angives i afstemningsværdierne, eller antallet af stemmer for kortforbrugerne.
 
 ![Eksempel på afstemning](media/adaptive-cards/poll.png)
 

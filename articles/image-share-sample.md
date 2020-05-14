@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0d310eb96a69f66b8f45718554f36ba8b2a51989
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868727"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297929"
 ---
 # <a name="image-share-sample"></a>Eksempel på billeddeling 
 
-Eksemplet på **en formular til billeddeling** er et adaptivt kort, der er beregnet til deling af fotos, der er blevet sendt til SharePoint, og som kan være en afhængighed for en proces, der skal udføres (f.eks. processer, der er relateret til inspektion, overholdelse og overvågning). Dette kort er et adaptivt kort, der kun er beregnet til visning.
+Eksemplet på **Billeddelingsformular** er et adaptivt kort, der er designet til deling af fotos, der er blevet sendt til SharePoint, og som kan være en afhængighed for en proces, der skal udføres (f.eks. processer, der er relateret til inspektion, overholdelse og overvågning). Dette kort er et adaptivt kort, der kun er beregnet til visning.
 
 ![Et adaptivt kort, der kun er beregnet til visning](media/adaptive-cards/image-share.png)
 

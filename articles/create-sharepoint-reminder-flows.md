@@ -1,6 +1,6 @@
 ---
 title: Opret et påmindelsesflow for SharePoint-elementer | Microsoft Docs
-description: Opret flow, der minder dig om forfaldsdatoer for SharePoint-elementer.
+description: Opret flows, der minder dig om forfaldsdatoer for SharePoint-elementer.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,26 +20,26 @@ ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/23/2020
-ms.locfileid: "82081163"
+ms.locfileid: "3299271"
 ---
-# <a name="sharepoint-remind-me"></a>SharePoint-påmindelser
+# <a name="sharepoint-remind-me"></a>Påmind mig i SharePoint
 
 
-Med SharePoint-lister og -biblioteker kan du definere brugerdefinerede metadatakolonner til at spore datoer. Med Power Automates integration med SharePoint kan du nemt oprette påmindelsesflow på basis af datetime-kolonner i SharePoint. Med påmindelsesflow modtager du en personlig underretning via mail med et forudbestemt antal dage forud for en dato i et dokument eller element i SharePoint.
+Med SharePoint-lister og -biblioteker kan du definere brugerdefinerede metadatakolonner til sporing af datoer. Med Power Automates integration med SharePoint kan du nemt oprette påmindelsesflows ud fra DateTime-kolonner i SharePoint. Med påmindelsesflows modtager du en personlig advarsel via mail et forudbestemt antal dage før en dato i et dokument eller element i SharePoint.
 
 ## <a name="prerequisites"></a>Forudsætninger
 - Adgang til Microsoft SharePoint Online.
-- En SharePoint-liste eller et bibliotek med en datetime-kolonne.
+- En SharePoint-liste eller et bibliotek med en DateTime-kolonne.
 - Adgang til Power Automate.
 
 ## <a name="create-a-reminder-flow"></a>Opret et påmindelsesflow
 
- 1. Opret en [SharePoint-liste](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) med mindst én datetime-kolonne i den aktuelle visning. 
+ 1. Opret en [SharePoint-liste](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) med mindst én DateTime-kolonne i den aktuelle visning. 
  1. Vælg **Automate** > **Angiv en påmindelse** > **Dato for deaktivering** (dette er kolonnen med datetime for påmindelsen).
 
      ![Vælg et påmindelsesflow](media/create-sharepoint-reminder-flows/select-reminder-flow.png)
 
-1. Du kan eventuelt få brug for at logge på de tjenester, denne Power Automate-skabelon bruger.
+1. Du kan eventuelt få brug for at logge på de tjenester, som denne Power Automate-skabelon bruger.
      
 1. Vælg **Fortsæt**.
 
@@ -47,7 +47,7 @@ Med SharePoint-lister og -biblioteker kan du definere brugerdefinerede metadatak
 
     ![Angiv oplysninger om påmindelsesflow](media/create-sharepoint-reminder-flows/set-reminder-details.png)
 
-1. På kortet **Angiv en påmindelse** skal du vælge **Opret** .
+1. Vælg **Opret** på kortet **Angiv en påmindelse**.
 
 1. Du modtager følgende meddelelse, der angiver, at flowet blev oprettet:
 
@@ -60,11 +60,11 @@ Du modtager en påmindelse via mail, der er baseret på posten **Mind mig om det
 
 ## <a name="edit-your-flow"></a>Rediger dit flow
 
-Påmindelsesflowet er ligesom ethvert andet flow, så du kan få adgang til og redigere det via [Power Automate](https://flow.microsoft.com).
+Påmindelsesflowet er som ethvert andet flow, så du kan få adgang til og redigere det via [Power Automate](https://flow.microsoft.com).
 
 ## <a name="learn-more"></a>Få mere at vide
 
-- Kom i gang med [Power Automate](https://flow.microsoft.com).
+- Introduktion til [Power Automate](https://flow.microsoft.com).
 - Angiv et [påmindelsesflow](https://support.office.com/article/set-a-reminder-flow-23c0e172-1fc1-4ac8-a9db-cd0b81d634d8) i SharePoint.
 
 

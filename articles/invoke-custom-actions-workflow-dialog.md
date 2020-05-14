@@ -1,6 +1,6 @@
 ---
-title: Aktivér brugerdefinerede handlinger fra en arbejdsproces | MicrosoftDocs
-description: Få mere at vide om, hvordan du aktiverer en brugerdefineret handling fra en arbejdsproces
+title: Aktivering af brugerdefinerede handlinger fra en arbejdsproces | Microsoft Docs
+description: Lær, hvordan du aktiverer en brugerdefineret handling fra en arbejdsproces
 ms.custom: ''
 ms.date: 11/22/2018
 ms.reviewer: ''
@@ -23,35 +23,35 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: a35523209e3db8444da71c0757db29fa21de08b3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195399"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297907"
 ---
-# <a name="invoke-custom-actions-from-a-workflow"></a>Aktivér brugerdefinerede handlinger fra en arbejdsproces
+# <a name="invoke-custom-actions-from-a-workflow"></a>Aktivere brugerdefinerede handlinger fra en arbejdsproces
 
 
-Arbejdsprocesser har mange funktioner, der understøtter forskellige virksomhedsscenarier. Kald af grundlæggende databehandlinger for en post, f.eks opret, opdater og slet fra en arbejdsproces, er svaret på forholdsvis mange virksomhedsscenarier. Hvis du kombinerer funktionerne i arbejdsprocesser med effektiviteten af brugerdefinerede handlinger, der kaldes direkte fra en arbejdsproces, føjer du et helt nyt omfang af virksomhedsscenarier til dit program uden at skulle skrive kode.  
+Arbejdsprocesser har mange funktioner, der understøtter forskellige virksomhedsscenarier. Kald af grundlæggende databehandlinger for en post, f.eks opret, opdater og slet fra en arbejdsproces, er svaret på forholdsvis mange virksomhedsscenarier. Men hvis du parer funktionerne i arbejdsprocesserne med brugerdefinerede handlinger, der aktiveres direkte fra en arbejdsproces, kan du føje en hel ny række virksomhedsscenarier til dit program uden at skulle skrive kode.  
   
- Lad os se på et scenarie, hvor en brugerdefineret handling aktiveres fra en arbejdsproces. Vi aktiverer en brugerdefineret handling for at anmode om den overordnedes godkendelse, når en rabat for en bestemt salgsmulighed overstiger 20 %.  
+ Lad os se på det scenario, hvor en brugerdefineret handling aktiveres fra en arbejdsproces. Vi aktiverer en brugerdefineret handling for at anmode om den overordnedes godkendelse, når en rabat for en bestemt salgsmulighed overstiger 20 %.  
   
 <a name="action"></a>   
 ## <a name="example-create-a-custom-action-using-the-opportunity-entity"></a>Eksempel: Opret en brugerdefineret handling ved hjælp af salgsmulighedsobjektet
   
 1. Åbn [Løsningsoversigt](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), og vælg **Processer**.  
   
-2.  Vælg **Ny** på navigationslinjen. Navngiv processen, og vælg kategorien **Handling**.  
+2.  Vælg **Ny** på navigationslinjen. Giv processen et navn, og vælg kategorien **Handling**.  
   
- Til at anmode om en godkendelse af rabatten bruger vi en brugerdefineret handling, der kaldes **Godkendelsesproces**. Vi har tilføjet en inputparameter **SpecialNotes**, og trinnet **Send mail** for at oprette en ny meddelelse og sende en anmodning til den overordnedes godkendelse, som vist her.  
+ Hvis du vil anmode om godkendelse af rabatten, bruger vi en brugerdefineret handling, vi kalder **Godkendelsesproces**. Vi har tilføjet en inputparameter, **SpecialNotes** og et **Send e-mail**-trin til at oprette en ny meddelelse og sende en anmodning om lederens godkendelse, som vist her.  
   
  ![Tilføj et trin – send mail](media/enable-custom-action-approval-proces-sadd-email.png "Tilføj et trin – send mail")  
   
- Vælg **Angiv egenskaber** for at konfigurere meddelelsen. Når formularen åbnes, kan du bruge **Formularassistent** til at føje særlige noter og andre oplysninger til meddelelsen, som vist på skærmbilledet. Du tilføjer særlige noter ved at placere markøren, der hvor du vil have noterne vist i meddelelsen. Vælg derefter **Argumenter** under **Søg efter**  i **Formularassistent** på den første rulleliste, og vælg **SpecialNotes** på den anden rulleliste og derefter **OK**.  
+ Hvis du vil konfigurere mailmeddelelsen, skal du vælge **Angiv egenskaber**. Når formularen åbnes, kan du bruge **formularassistenten** til at tilføje bemærkninger og andre oplysninger i mailen, som fremhævet i skærmbilledet. Du tilføjer de særlige bemærkninger ved at placere markøren, hvor du vil have bemærkningerne vist i meddelelsen, og derefter skal du i **formularassistenten**under **Søg efter** vælge **Argumenter** i den første rulleliste og vælge **SpecialNotes** i den anden rulleliste og derefter vælge **OK**.  
   
- ![Konfigurer mail](media/enable-custom-action-approval-process-setup-email.png "Konfigurer mail")  
+ ![Konfigurere mail](media/enable-custom-action-approval-process-setup-email.png "Konfigurer mail")  
   
- Før du kan aktivere handlingen fra en arbejdsproces, skal du aktivere den. Når du har aktiveret handlingen, kan du få vist dens egenskaber ved at vælge **Vis egenskaber**.  
+ Før du kan aktivere handlingen fra en arbejdsproces, skal du aktivere den. Når du har aktiveret handlingen, du kan få vist dens egenskaber ved at vælge **Vis egenskaber**.  
   
  ![Aktivér brugerdefineret handling – godkendelsesproces](media/enable-custom-action-approval-process-activate-action.png "Aktivér brugerdefineret handling – godkendelsesproces")  
   
@@ -60,13 +60,13 @@ Arbejdsprocesser har mange funktioner, der understøtter forskellige virksomheds
   
 1. Åbn [Løsningsoversigt](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), og vælg **Processer**.   
   
-2.  Vælg **Ny** på navigationslinjen. Navngiv processen, og vælg kategorien **Arbejdsproces**.  
+2.  Vælg **Ny** på navigationslinjen. Giv processen et navn, og vælg kategorien **Arbejdsproces**.  
   
- Vi har oprettet en arbejdsproces, der aktiverer den brugerdefinerede handling **Godkendelsesproces**, når den overordnedes godkendelse af en rabat på mere end 20 % for en salgsmulighed er påkrævet.  
+ Vi har oprettet en arbejdsproces, der kalder den brugerdefinerede handling i **godkendelsesprocessen**, når lederens godkendelse af en rabat på over 20% for en salgsmulighed er påkrævet.  
   
  ![Angiv handlingsegenskaber fra arbejdsproces](media/enable-custom-action-from-workflow.png "Angiv handlingsegenskaber fra arbejdsproces")  
   
- Du kan angive handlingens inputegenskaber ved at vælge **Angiv egenskaber**. Vi har tilføjet et navn for den konto, der er relateret til salgsmuligheden i de særlige noter. Vælg **Konto** under **Søg efter** i **Formularassistent** på den første rulleliste, vælg **Kontonavn** på den anden rulleliste, og vælg derefter **OK**. Egenskaben **Target** er påkrævet og udfyldes af systemet. **{Opportunity(Opportunity)}** i egenskaben **Target** er den samme salgsmulighed, som den kaldende arbejdsproces kører på. Du kan også vælge en bestemt salgsmulighed for egenskaben Target ved hjælp af opslag.  
+ Du kan angive egenskaber for handlingens inputegenskaber ved at vælge **Angiv egenskaber**. Vi har tilføjet et navn på den konto, der er relateret til salgsmuligheden i de særlige bemærkninger. I **formularassistenten**under **Søg efter** skal du vælge **Firma** i den første rulleliste, vælge **Firmanavn** i den anden rulleliste og derefter vælge **OK**. Egenskaben **Mål** er påkrævet, og den udfyldes af systemet. **{Opportunity(Opportunity)}** i egenskaben **Destination** er den samme salgsmulighed, som den kaldende arbejdsproces kører på. Du kan også vælge en bestemt salgsmulighed for egenskaben Target ved hjælp af opslag.  
   
  ![Angiv inputparametre for handlingen ApprovalProcess](media/enable-customaction-workflow-set-properties.png "Angiv inputparametre for handlingen ApprovalProcess")  
   

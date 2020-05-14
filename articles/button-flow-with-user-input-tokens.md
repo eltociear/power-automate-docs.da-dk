@@ -21,33 +21,33 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 5a2fa063b5379999a5dcbe37a56271fccf435cae
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192364"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297203"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Introduktion til knapflows med brugerinput
 
 Opret et knapflow til at køre rutineopgaver med blot et tryk på en knap. Tilpas dit flow ved at tillade brugeren at angive bestemte oplysninger, der skal bruges, når knapflowet køres. Dette emne gennemgår oprettelsen af et knapflow, der tager imod input fra brugeren og derefter kører knapflowet og fremhæver, hvordan brugerinput leveres.
 
-Du kan oprette et knapflow på Power Automate-webstedet eller i mobilappen til Power Automate. Du skal bruge webstedet til dette emne.
+Du kan oprette et knapflow på webstedet Power Automate eller mobilappen til Power Automate. Du skal bruge webstedet til dette emne.
 
 ### <a name="prerequisites"></a>Forudsætninger
-* En konto på Power Automate-webstedet.
+* En konto på websitet for Power Automate.
 
 ## <a name="open-the-template"></a>Åbn skabelonen
-1. Log på [Power Automate-webstedet](https://flow.microsoft.com), indtast **Visual Studio** i søgefeltet, og klik eller tryk derefter på søgeikonet for at finde alle skabeloner, der vedrører Visual Studio:
+1. Log på [Power Automate-websitet](https://flow.microsoft.com), indtast **Visual Studio** i søgefeltet, og klik eller tryk derefter på søgeikonet for at finde alle skabeloner, der vedrører Visual Studio:
    
     ![](./media/button-flow-with-user-input-tokens/1.png)  
-2. Vælg skabelonen **Åbn en fejl med andenprioritet i Visual Studio**:
+2. Vælg skabelonen **Åbn en fejl med prioritet 2 i Visual Studio**:
    
     ![](./media/button-flow-with-user-input-tokens/2.png)  
 3. Vælg knappen **Brug denne skabelon**:
    
     ![](./media/button-flow-with-user-input-tokens/3.png)  
    
-    Denne skabelon bruger VSTS (Visual Studio Team Services) og tjenesten for pushmeddelelser. Du skal logge på disse tjenester, hvis du ikke har en forbindelse til nogen af dem. **Log på**-knappen vises kun, hvis du vil logge på en tjeneste.
+    Denne skabelon bruger Visual Studio Team Services (VSTS) og tjenesten for pushmeddelelser. Du skal logge på disse tjenester, hvis du ikke har en forbindelse til nogen af dem. **Log på**-knappen vises kun, hvis du vil logge på en tjeneste.
 4. Når du logger på alle de nødvendige tjenester, skal du vælge **Fortsæt**-knappen:
    
     ![](./media/button-flow-with-user-input-tokens/4.png)  
@@ -59,7 +59,7 @@ Du kan oprette et knapflow på Power Automate-webstedet eller i mobilappen til P
 1. Vælg **Rediger** på udløserkortet:
    
     ![](./media/button-flow-with-user-input-tokens/6.png)  
-2. Vælg **+** -ikonet for at udvide siden, så du kan tilføje brugerdefinerede inputfelter:
+2. Vælg **+**-ikonet for at udvide siden, så du kan tilføje brugerdefinerede inputfelter:
    
     ![](./media/button-flow-with-user-input-tokens/7.png)
 3. Indtast **inputtitlen** og **inputbeskrivelsen** af hvert brugerdefinerede felt, du vil gøre tilgængeligt, når en person kører dit flow.  
@@ -113,7 +113,7 @@ I denne gennemgang, skal du bruge mobilappen til Power Automate til at køre det
 5. Indtast alvorsgraden af den fejl, du rapporterer, og tryk derefter på **Udført**.  
     ![](./media/button-flow-with-user-input-tokens/runmt3-2.png)  
    
-    Flowet køres.
+    Flowet kører.
 6. (valgfrit) Tryk på fanen **Aktivitet** for at få vist resultaterne.
    
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
@@ -128,10 +128,10 @@ Dine knapflow kan også acceptere udvidede datatyper. Her er listen over datainp
 
 - Tekst
 - Rullelister (f.eks. alternativknapper)
-- Mailadresse
+- E-mail-adresse
 - Fil (f.eks. et foto på din telefon)
 - Afkrydsningsfelt for ja eller nej
-- Tal
+- Antal
 - Dato (med en kalendervælger)
 
 Hvis du vil bruge disse inputtyper, skal du tilføje udløseren **Udløs et flow manuelt** og derefter føje en af disse typer til dit flow:

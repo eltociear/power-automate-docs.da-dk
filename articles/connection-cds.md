@@ -25,15 +25,15 @@ ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/02/2020
-ms.locfileid: "82727923"
+ms.locfileid: "3331077"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Opret et automatiseret flow ved hjælp af Common Data Service
 
 >[!IMPORTANT]
->Der er tre connectors tilgængelige til at oprette forbindelse til Common Data Service. Brug den anbefalede [Common Data Service-connector (aktuelt miljø)](./connection-cds-native.md). Den **Common Data Service-connector**, der er beskrevet i denne artikel, og [Dynamics 365-connectoren](https://docs.microsoft.com/connectors/dynamicscrmonline/) er tilgængelige, hvis du ikke kan bruge den anbefalede connector.
+>Der er tre connectorer tilgængelige til oprettelse af forbindelse til Common Data Service. Brug den anbefalede connector for [Common Data Service (aktuelt miljø)](./connection-cds-native.md). **Common Data Service-connectoren**, som beskrives i denne artikel, og [Dynamics 365-connectoren](https://docs.microsoft.com/connectors/dynamicscrmonline/) kan også bruges, hvis du ikke kan bruge den anbefalede connector.
 
 
-Med Common Data Service-connectoren kan du oprette flow, der startes af oprettelses- og opdateringshændelser i Common Data Service-databasen. Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster i Common Data Service.
+Med Common Data Service-connectoren kan du oprette flows, der startes ved at oprette og opdatere hændelser i Common Data Service. Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster i Common Data Service.
 
 ## <a name="initiate-a-flow-from-common-data-service"></a>Start et flow fra Common Data Service
 
@@ -56,11 +56,11 @@ Hvis den valgte udløser kræver, at der vælges et miljø, kan du vælge `(Curr
 Du kan bruge områder til at bestemme, om dit flow kører, hvis du opretter en ny post, hvis en ny post oprettes af en bruger i din forretningsenhed, eller hvis der oprettes en ny post af brugere i din organisation.
 
 > [!div class="mx-imgBorder"]
-> ![Vælg område](./media/cds-connector/Scopes.png)
+> ![Vælg omfang](./media/cds-connector/Scopes.png)
 
-|Område|Timing af udløser|
+|Scope|Timing af udløser|
 | --- | --- |
-|Forretningsenhed|Handling, der udføres på en post, der ejes af din forretningsenhed|
+|Afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed|
 |Organisation|Handling, der udføres af en hvilken som helst person i organisationen eller databasen|
 |Overordnet: Underordnet afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed eller en underordnet afdeling|
 |Bruger|Handling, der udføres på en post, der ejes af dig|
@@ -73,7 +73,7 @@ Udløsere, der kører, når en post opdateres, kan også bruges til filtrering a
 Dette flow udløses, hver gang fornavnet eller efternavnet på en kontakt, som flowbrugeren ejer, opdateres.
 
 > [!div class="mx-imgBorder"]
-> ![Filterattributter](./media/cds-connector/FilterAttributes.png)
+> ![Filtrér attributter](./media/cds-connector/FilterAttributes.png)
 
 ## <a name="trigger-privileges"></a>Udløserrettigheder
 
@@ -84,9 +84,9 @@ Hvis du vil oprette et flow, der udløses via oprettelse, opdatering eller sletn
 Brug en af følgende handlinger til at skrive data til Common Data Service:
 
 - Opret en ny post
-- Opdater en post
+- Opdatering af en post
 
-Her er et eksempel på oprettelsen af en opfølgningsopgave, når den givne bruger opretter en ny kontopost.  
+Her er et eksempel på oprettelse af en opfølgningsopgave, når den angivne bruger opretter en ny kontopost.  
 
 > [!div class="mx-imgBorder"]
 > ![Opfølgningsopgave](./media/cds-connector/Regarding.png)

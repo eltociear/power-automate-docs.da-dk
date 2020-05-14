@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d74cbdb6c03d65a7902a81194491ef67feda6bb2
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192018"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297467"
 ---
 # <a name="create-a-flow-in-a-solution"></a>Opret et flow i en løsning
 
@@ -74,7 +74,7 @@ Du skal have mindst én løsning, før du kan oprette et løsningsorienteret flo
 ## <a name="learn-more"></a>Få mere at vide
 
 * [Opret en løsning](./overview-solution-flows.md)
-* [Eksportér en løsning](./export-flow-solution.md)
-* [Importér en løsning](./import-flow-solution.md)
+* [Eksportere en løsning](./export-flow-solution.md)
+* [Importere en løsning](./import-flow-solution.md)
 * [Rediger et løsningsorienteret flow](./edit-solution-aware-flow.md)
 * [Fjern et løsningsorienteret flow](./remove-solution-aware-flow.md)

@@ -21,26 +21,26 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9b0d2986e33aa65f9c5a0abc06d3beda116dbdc1
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192087"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298083"
 ---
 # <a name="create-a-flow-in-power-automate"></a>Opret et flow i Power Automate
 
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
-Opret et flow, der udfører en eller flere opgaver automatisk, når det udløses af en hændelse. Opret f.eks. et flow, der giver dig besked via mail, når nogen sender et tweet, der indeholder et nøgleord, som du angiver. I dette eksempel er afsendelsen af et tweet hændelsen, og afsendelsen af mail er handlingen.
+Opret et flow, der automatisk udfører en eller flere handlinger, f.eks. afsendelse af mail, når der indtræffer hændelser, f.eks. at en person føjer en række til en SharePoint-liste. Opret f.eks. et flow, der giver dig besked via mail, når nogen sender et tweet, der indeholder et nøgleord, som du angiver. I dette eksempel er afsendelsen af et tweet hændelsen, og afsendelsen af mail er handlingen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
 * En konto på [flow.microsoft.com](https://flow.microsoft.com)
 * En Twitter-konto
-* Office 365-legitimationsoplysninger
+* Legitimationsoplysninger for Office 365
 
-## <a name="specify-an-event-to-start-the-flow"></a>Angiv en hændelse for at starte flowet
+## <a name="specify-an-event-to-start-the-flow"></a>Angiv en hændelse, der skal starte flowet
 
 Først skal du skal vælge, hvilken hændelse eller *udløser* der starter dit flow.
 
@@ -54,7 +54,7 @@ Først skal du skal vælge, hvilken hændelse eller *udløser* der starter dit f
    >[!TIP]
    >Connectors understøtter flere godkendelsestyper. SQL Server understøtter f.eks. Azure AD, SQL Server-godkendelse, Windows-godkendelse og SQL-forbindelsesstreng. Brugere vælger, hvilken type godkendelse de vil bruge til at konfigurere en connector.
 
-1. Hvis du ikke allerede har oprettet forbindelse mellem din Twitter-konto og Power Automate, skal du vælge **Log på Twitter** og derefter angive dine legitimationsoplysninger.
+1. Hvis du ikke allerede har tilsluttet din Twitter-konto til Power Automate, skal du vælge **Log på Twitter** og derefter angive dine legitimationsoplysninger.
 
 1. I feltet **Søgetekst** skal du skrive det nøgleord, du vil finde.
 
@@ -112,7 +112,7 @@ Først skal du skal vælge, hvilken hændelse eller *udløser* der starter dit f
    * Hvis du vil redigere et flow, skal du vælge blyantsikonet, der svarer til det flow, du vil redigere.
 
        ![Vælg flow](./media/get-started-logic-flow/select-flow.png)
-   * Hvis du vil slette et flow, skal du vælge ikonet **...** , vælge **Slet** og derefter vælge **Slet** i den meddelelsesboks, der vises.
+   * Hvis du vil slette et flow, skal du vælge ikonet **... **, vælge **Slet** og derefter vælge **Slet** i den meddelelsesboks, der vises.
 
        ![Ikonet Slet](./media/get-started-logic-flow/delete-icon.png)
    * For at få vist kørselsoversigten i et flow skal du vælge flowet fra siden **Mine flows** og derefter få vist historikken i afsnittet **KØRSELSOVERSIGT** på siden, der åbnes.

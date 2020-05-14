@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cd312fea655dfc652cf92a440801da2fdb17ebe4
-ms.sourcegitcommit: c6c4150daadbcc38ef1a33a5903df531b8461ace
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75942971"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297027"
 ---
 # <a name="use-custom-controls-in-business-process-flows"></a>Anvend brugerdefinerede kontrolelementer i forretningsprocesflow
 
@@ -42,7 +42,7 @@ Her er de trin, du skal følge for at føje brugerdefinerede kontrolelementer ti
 1. Konfigurer brugerdefinerede kontrolelementer i en relateret enhedsformular.
 1. Generering og eksport af formularen til forretningsprocesflow.
 1. Kopiér brugerdefinerede kontrolelementkonfigurationer til forretningsprocesflowformularen fra den relaterede enhedsformular.
-1. Importér tilpasningerne tilbage i Common Data Service.
+1. Importer tilpasningerne tilbage til Common Data Service.
 
 Følg disse trin for at få en [detaljeret gennemgang af tilføjelsen af brugerdefinerede kontrolelementer](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Preview-Custom-Controls-in-Business-Process-Flows/ba-p/263237) til trinnene i forretningsprocesflow.
 

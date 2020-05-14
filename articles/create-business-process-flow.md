@@ -1,5 +1,5 @@
 ---
-title: Opret et forretningsprocesforløb i Power Apps | MicrosoftDocs
+title: Oprette et forretningsprocesforløb i Power Apps | MicrosoftDocs
 description: Få mere at vide om, hvordan du opretter et forretningsprocesforløb
 ms.custom: ''
 ms.date: 08/17/2018
@@ -23,23 +23,23 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ad075ec6c4b00d46f000b86aaa9166e40adda640
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194042"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296851"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Selvstudium: Opret et forretningsprocesflow for at standardisere processer
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Selvstudium: Opret et forretningsprocesforløb for at standardisere processer
 
 
-I dette selvstudium kan du se, hvordan du opretter et forretningsprocesforløb med Power Apps. Få mere at vide om, hvorfor du bruger forretningsprocesforløb, under [Oversigt over forretningsprocesforløb](business-process-flows-overview.md). Du kan finde oplysninger om, hvordan du opretter et forløb for en mobil opgave under [Opret et forløb for en mobil opgave](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+Dette selvstudium viser, hvordan du opretter et forretningsprocesforløb i Power Apps. Få mere at vide om, hvorfor du bruger forretningsprocesforløb, under [Oversigt over forretningsprocesforløb](business-process-flows-overview.md). Du kan finde oplysninger om oprettelse af en mobilopgaveproces under [Oprette en mobilopgaveproces](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  Når en bruger starter et forretningsprocesforløb, vises processens faser og trin i proceslinjen øverst i en formular:  
   
  ![Forretningsproces med faser](media/business-process-stages.png "Forretningsproces med faser")  
   
  > [!TIP]
- >  Når du har oprettet en definition af et forretningsprocesforløb, kan du styre, hvem der kan oprette, læse, opdatere eller slette forekomsten af forretningsprocesforløbet. I forbindelse med servicerelaterede processer kan du f.eks. give kundeservicemedarbejdere fuld adgang til at ændre forekomsten af forretningsprocesforløb, men give sælgere skrivebeskyttet adgang til forekomsten, så de kan overvåge eftersalgsaktiviteter for deres kunder. Hvis du vil angive sikkerhed for en definition af et forretningsprocesforløb, som du opretter, skal du vælge **Aktivér sikkerhedsroller** på handlingslinjen.  
+ >  Når du har oprettet en definition af et forretningsprocesforløb, kan du styre, hvem der kan oprette, læse, opdatere eller slette forekomsten af forretningsprocesforløbet. For servicerelaterede processer kan du f.eks. give fuld adgang til kundeservicemedarbejdere for at ændre forekomsten af forretningsprocesforløbet, men give skrivebeskyttet adgang til forekomsten for sælgere, så de kan overvåge eftersalgsaktiviteter for deres kunder. Hvis du vil angive sikkerhed for en definition til et forretningsprocesforløb, som du opretter, skal du vælge **Aktivér sikkerhedsroller** på handlingslinjen.  
   
 <a name="BKMK_Createbusinessprocessflows"></a>
 
@@ -55,17 +55,17 @@ Du har brug for [Flowplan 2](https://preview.flow.microsoft.com/pricing/) for at
   
 3.  Vælg **Ny** på værktøjslinjen **Handlinger**.  
   
-4.  I dialogboksen **Opret proces** skal du udfylde de obligatoriske felter:  
+4.  I dialogboksen **Opret proces** skal du udfylde de krævede felter:  
   
-    -   Angiv et navn til processen. Navnet på processen behøver ikke at være entydigt, men det skal give mening for de personer, der skal vælge en proces. Du kan ændre dette senere.  
+    -   Angiv et procesnavn. Navnet på processen behøver ikke at være entydigt, men det skal være beskrivende for brugere, der skal vælge en proces. Du kan ændre dette senere.  
   
     -   På listen **Kategori** skal du vælge **Forretningsprocesforløb**.  
   
-         Du kan ikke ændre kategorien, når du har oprettet processen.  
+         Når processen først er oprettet, kan kategorien ikke ændres.  
   
-    -   På listen **Enhed** skal du vælge den enhed, du vil basere processen på.  
+    -   På listen **Objekt** skal du vælge det objekt, du vil basere processen på.  
   
-         Den enhed, du vælger, påvirker de felter, der er tilgængelige for trin, som kan føjes til den første fase i procesforløbet. Hvis du ikke kan finde den ønskede enhed, skal du sørge for, at den grupperede indstilling Forretningsprocesforløb er angivet for enheden (der oprettes felter) i definitionen af enheden. Du kan ikke ændre dette, når du har gemt processen.  
+         Det objekt, du vælger, påvirker de felter, der er tilgængelige for de trin, der kan føjes til den første fase i procesforløbet. Hvis du ikke kan finde den ønskede enhed, skal du sørge for, at den grupperede indstilling Forretningsprocesforløb er angivet for enheden (der oprettes felter) i definitionen af enheden. Du kan ikke ændre dette, når du har gemt processen.  
   
 5. Vælg **OK**.  
   
@@ -73,23 +73,23 @@ Du har brug for [Flowplan 2](https://preview.flow.microsoft.com/pricing/) for at
   
  ![Vindue med forretningsprocesforløb, hvor hovedelementerne vises](media/business-process-flow-window-showing-main-elements.png "Vindue med forretningsprocesforløb, hvor hovedelementerne vises")  
   
-6. **Tilføj faser.** Hvis dine brugere vil gå fra én forretningsfase til en anden i processen:  
+6. **Tilføj faser.** Hvis brugerne vil gå fra én virksomhedsfase til en anden i processen:  
   
-    1.  Træk en komponent af typen **Fase** fra fanen **Komponenter**, og slip den på et plustegn (+) i designeren.  
+    1.  Trække komponenten **Fase** fra fanen **Komponenter**, og slip den ved et plustegn (+) i designeren.  
   
         ![Træk en forretningsprocesfase](media/drag-business-process-stage.png "Træk en forretningsprocesfase")  
   
-    2.  Hvis du vil angive egenskaberne for en fase, skal du vælge fasen og derefter angive egenskaberne under fanen **Egenskaber** i højre side af skærmen:  
+    2.  Hvis du vil angive egenskaberne for en fase, skal du vælge fasen og derefter angive egenskaberne under fanen **Egenskaber** i højre side af skærmbilledet:  
   
-        -   Angiv det viste navn.  
+        -   Angiv et visningsnavn.  
   
-        -   Hvis du ønsker det, kan du vælge en kategori for fasen.  Kategorien (f.eks **Kvalificer** eller **Udvikling**) vises som en dobbeltvinkel på proceslinjen.  
+        -   Hvis du ønsker det, kan du vælge en kategori for fasen.  Kategorien (f.eks. **Kvalificer** eller **Udvikl**) vises som en chevron på proceslinjen.  
   
             ![Dobbeltvinkel på forretningsproceslinjen](media/business-process-bar-chevron.png "Dobbeltvinkel på forretningsproceslinjen")  
   
-        -   Når du er færdig med at ændre egenskaber, skal du vælge knappen **Anvend**.  
+        -   Når du er færdig med at ændre egenskaberne, skal du vælge knappen **Anvend**.  
   
-7. **Føj trin til en fase.** Hvis du vil se trinnene i en fase, skal du vælge **Oplysninger** i nederste højre hjørne af fasen. Sådan tilføjer du flere trin:  
+7. **Tilføj trin i en fase.** For at få vist trinene i en fase skal du vælge **Detaljer** i nederste højre hjørne af fasen. Sådan tilføjes flere trin:  
   
     1.  Træk komponenten **Trin** til fasen fra fanen **Komponenter**.  
   
@@ -97,146 +97,146 @@ Du har brug for [Flowplan 2](https://preview.flow.microsoft.com/pricing/) for at
   
     2.  Vælg trinnet, og angiv derefter egenskaber under fanen **Egenskaber**:  
   
-        1.  Angiv trinnets viste navn.  
+        1.  Angiv et vist navn til trinnet.  
   
-        2.  Hvis du ønsker, at brugerne skal angive data for at fuldføre et trin, skal du vælge det relevante felt på rullelisten.  
+        2.  Hvis du ønsker, at brugerne skal angive data for at fuldføre et trin, skal du vælge det rette felt på rullelisten.  
   
-        3.  Vælg **Påkrævet**, hvis brugerne skal udfylde feltet for at fuldføre trinnet, før de går videre til næste fase i processen.  
+        3.  Vælg **Krævet**, hvis brugerne skal udfylde feltet for at fuldføre trinnet, før de går til den næste fase i processen.  
   
-        4.  Vælg **Anvend**, når du er færdig.  
+        4.  Vælg **Gem**, når du er færdig.  
   
-8. **Føj en forgrening (betingelse) til processen.** Sådan tilføjer du en forgreningsbetingelse:  
+8. **Føj en ny forgrening (betingelse) til processen.** Sådan tilføjes en forgreningsbetingelse:  
   
     1.  Træk komponenten **Betingelse** fra fanen **Komponenter** til et plustegn (+) mellem to faser.  
   
         ![Føj en betingelse til et forretningsprocesflow](media/add-condition-business-process-flow.png "Føj en betingelse til et forretningsprocesforløb")  
   
-    2.  Vælg betingelsen, og angiv derefter egenskaber under fanen **Egenskaber**. Du kan finde flere oplysninger om forgreningsegenskaber under [Optimer forretningsprocesforløb med forgrening](enhance-business-process-flows-branching.md). Når du er færdig med at angive egenskaber for betingelsen, skal du vælge **Anvend**.  
+    2.  Vælg betingelsen, og angiv derefter egenskaber under fanen **Egenskaber**. Du kan finde flere oplysninger om forgreningsegenskaber under [Forbedre forretningsprocesforløb med forgrening](enhance-business-process-flows-branching.md). Når du har angivet egenskaberne for betingelsen, skal du vælge **Anvend**.  
   
 9. **Tilføj en arbejdsproces.** Sådan aktiverer du en arbejdsproces:  
   
-    1.  Træk en komponent af typen **Arbejdsproces** fra fanen **Komponenter** til en fase eller til elementet **Global arbejdsproces** i designeren.   Om du føjer den til den ene eller den anden, afhænger af følgende:  
+    1.  Træk komponenten **Arbejdsproces** fra fanen **Komponenter** til en fase eller til elementet **Global arbejdsproces** i designer.   Den, du kan føje til den, afhænger af følgende:  
   
-       - **Træk den til en fase**, når du vil udløse arbejdsprocessen ved starten eller slutningen af fasen. Arbejdsproceskomponenten skal være baseret på den samme primære enhed som fasen.  
+       - **Træk den til en fase**, når arbejdsprocessen skal udløses ved start eller afslutning af fasen. Arbejdsproceskomponenten skal være baseret på det samme primære objekt som fasen.  
   
-       - **Træk den til elementet Global arbejdsproces**, når du vil udløse arbejdsprocessen, når processen aktiveres, eller når processen arkiveres (når status ændres til **Fuldført** eller **Afbrudt**). Arbejdsproceskomponenten skal være baseret på den samme primære enhed som processen.  
+       - **Træk den til elementet Global arbejdsproces**, når arbejdsprocessen skal udløses, når processen er aktiveret, eller når processen er arkiveret (når status ændres til **Fuldført** eller **Afbrudt**). Arbejdsproceskomponenten skal være baseret på det samme primære objekt som processen.  
   
     2.  Vælg arbejdsprocessen, og angiv derefter egenskaber under fanen **Egenskaber**:  
   
-       1.  Angiv det viste navn.  
+       1.  Angiv et visningsnavn.  
   
        2.  Vælg, hvornår arbejdsprocessen skal udløses.  
   
-       3.  Søg efter en eksisterende aktiv arbejdsproces efter anmodning, der svarer til faseenheden, eller opret en ny arbejdsproces ved at vælge **Ny**.  
+       3.  Søg efter en eksisterende anmodet arbejdsproces, der stemmer overens med faseobjektet, eller opret en ny arbejdsproces ved at vælge **Ny**.  
   
-       4.  Vælg **Anvend**, når du er færdig.  
+       4.  Vælg **Gem**, når du er færdig.  
   
-       Du kan finde flere oplysninger om arbejdsprocesser under [Arbejdsprocesser](../common-data-service/workflow-processes.md).  
+       Du kan finde flere oplysninger om arbejdsprocesser i [Arbejdsprocesser](../common-data-service/workflow-processes.md).  
   
 10. Hvis du vil validere forretningsprocesforløbet, skal du vælge **Valider** på handlingslinjen.  
   
-11. Hvis du vil gemme processen som et udkast, mens du fortsætter med at arbejde med den, skal du vælge **Gem** på handlingslinjen.  
+11. Hvis du vil gemme processen som en kladde, mens du fortsætter med at arbejde på den, skal du vælge **Gem** på handlingslinjen.  
   
     > [!IMPORTANT]
-    >  Så længe en proces er et udkast, kan andre ikke bruge den.  
+    >  Så længe en proces er i kladdeform, vil brugere ikke kunne bruge den.  
   
-12. Hvis du vil aktivere processen og gøre den tilgængelig for dit team, skal du vælge **Aktivér** på handlingslinjen.  
+12. Hvis du vil aktivere processen og gøre den tilgængelig for dit team, skal du vælge **Aktiver** på handlingslinjen.  
 
-13. Hvis du vil have kontrol over, hvem der kan oprette, læse, opdatere eller slette forekomsten af forretningsprocesforløbet, skal du vælge **Rediger sikkerhedsroller** på kommandolinjen i designeren. I forbindelse med servicerelaterede processer kan du f.eks. give kundeservicemedarbejdere fuld adgang til at ændre forekomsten af forretningsprocesforløb, men give sælgere skrivebeskyttet adgang til forekomsten, så de kan overvåge eftersalgsaktiviteter for deres kunder.
+13. Hvis du vil kunne styre, hvem der kan oprette, læse, opdatere eller slette forekomsten af forretningsprocesforløbet, skal du vælge **Rediger sikkerhedsroller** på kommandolinjen i designeren. For servicerelaterede processer kan du f.eks. give fuld adgang til kundeservicemedarbejdere for at ændre forekomsten af forretningsprocesforløbet, men give skrivebeskyttet adgang til forekomsten for sælgere, så de kan overvåge eftersalgsaktiviteter for deres kunder.
 
-  På skærmen **Sikkerhedsroller** skal du vælge navnet på en rolle for at åbne siden med oplysninger om sikkerhedsroller. Vælg fanen Forretningsprocesforløb, og tildel derefter relevante rettigheder til forretningsprocesforløbet for en sikkerhedsrolle.
+  På skærmbilledet **Sikkerhedsroller** skal du vælge navnet på en rolle for at åbne siden med oplysninger om sikkerhedsrollen. Vælg fanen Forretningsprocesforløb og tildel derefter relevante rettigheder til forretningsprocesforløbet for en sikkerhedsrolle.
 
   > [!NOTE]
   > Sikkerhedsrollerne Systemadministrator og Systemtilpasser har som standard adgang til nye forretningsprocesforløb.
 
    ![Tildel rettigheder til et forretningsprocesforløb](media/bpf-assign-privileges.png)
 
-  Angiv rettigheder ved at vælge de relevante alternativknapper, og klik på Gem. Du kan finde flere oplysninger om rettigheder under [Rettigheder i forretningsprocesforløb](business-process-flows-overview.md#BKMK_MultipleBPF).
+  Angiv rettigheder ved at vælge de relevante alternativknapper, og klik på Gem. Du kan finde flere oplysninger om rettigheder under [Rettigheder for forretningsprocesforløb](business-process-flows-overview.md#BKMK_MultipleBPF).
 
-  Derefter skal du huske at tildele sikkerhedsrollen til de relevante brugere i din organisation.
+  Derefter skal du tildele sikkerhedsrollen til de relevante brugere i organisationen.
 
 > [!TIP] 
->  Her er nogle tip, du kan bruge, når du arbejder med dit opgaveforløb i designervinduet:  
+>  Her er nogle få tip at huske på, mens du arbejder på din opgaveproces i designervinduet:  
 >   
-> - Hvis du vil tage et øjebliksbillede af alt i vinduet med forretningsprocesforløbet, skal du vælge **Øjebliksbillede** på handlingslinjen. Dette er nyttigt, hvis du f.eks. vil dele og have kommentarer til processen fra et gruppemedlem.  
-> - Brug minioversigten til hurtigt at navigere til forskellige dele af processen. Dette er nyttigt, når du har en kompliceret proces, der ruller ud over skærmen.  
-> - Hvis du vil tilføje en beskrivelse af forretningsprocessen, skal du vælge **Oplysninger** under processens navn i venstre hjørne af vinduet med forretningsprocesforløbet. Du kan bruge op til 2000 tegn.  
+> - Hvis du vil tage et øjebliksbillede af alt i vinduet med forretningsprocesforløbet, skal du vælge **Øjebliksbillede** på handlingslinjen. Dette er f.eks. nyttigt, hvis du vil dele og modtage kommentarer om processen fra et teammedlem.  
+> - Brug minikortet til hurtigt at navigere til forskellige dele af processen. Dette er nyttigt, når du har en kompliceret proces, der ruller ud af skærmbilledet.  
+> - Hvis du vil tilføje en beskrivelse til forretningsprocessen, skal du vælge **Detaljer** under procesnavnet i venstre hjørne af vinduet med forretningsprocesforløbet. Du kan bruge op til 2.000 tegn.  
   
 <a name="BKMK_Editbusinessprocessflows"></a>   
-## <a name="edit-a-business-process-flow"></a>Rediger et forretningsprocesforløb  
- Hvis du vil redigere forretningsprocesforløb, skal du åbne løsningsoversigten, vælge **Processer** og derefter vælge det **forretningsprocesforløb** på listen over processer, du vil redigere.  
+## <a name="edit-a-business-process-flow"></a>Redigere et forretningsprocesforløb  
+ For at redigere forretningsprocesser skal du åbne løsningsoversigten, vælge **Processer** og derefter vælge **Forretningsprocesforløb** på listen over processer, du vil redigere.  
   
- Når du vælger navnet på den forretningsproces, du vil redigere, på listen over processer, åbnes den i designeren, hvor du kan foretage de opdateringer, som du ønsker. Udvid **Oplysninger** under navnet på processen for at omdøbe den eller tilføje en beskrivelse og få vist yderligere oplysninger.  
+ Når du vælger navnet på forretningsprocesforløbet, som du vil redigere på listen over processer, åbnes det i designeren, hvor du kan foretage opdateringer, du ønsker. Udvid **Detaljer** under navnet på processen for at omdøbe den eller tilføje en beskrivelse og få vist flere oplysninger.  
   
  ![Udvidet detaljesektion i et forretningsprocesforløb](media/business-process-flow-details.png "Sektion med udvidede oplysninger i et forretningsprocesforløb")  
   
   
 ## <a name="other-things-to-know-about-business-process-flows"></a>Andre ting, du skal vide om forretningsprocesforløb
- **Rediger faser**  
-Forretningsprocesforløb kan bestå af op til 30 faser.    
+ **Redigere faser**  
+Forretningsprocesforløb kan indeholde op til 30 faser.    
   
 Du kan tilføje eller ændre følgende egenskaber for en fase:  
   
-- **Fasens navn**  
+- **Fasenavn**  
   
-- **Enhed**. Du kan ændre enheden for alle faser med undtagelse af den første.  
+- **Objekt**. Du kan ændre objektet for alle faser, undtagen den første.  
   
-- **Fasekategori**. I en kategori kan du gruppere faser efter typen af handling. Dette er nyttigt for rapporter, der grupperer poster efter den fase, de er i. Indstillingerne for fasekategorien kommer fra den globale grupperede indstilling Fasekategori. Du kan føje yderligere indstillinger til denne globale grupperede indstilling og ændre etiketterne for eksisterende indstillinger, hvis du ønsker det. Du kan også slette disse indstillinger, hvis du ønsker det, men vi anbefaler, at du bevarer de eksisterende indstillinger. Du kan ikke tilføje nøjagtigt den samme indstilling igen, hvis du sletter den. Hvis de ikke skal bruges, kan du ændre etiketten til "Brug ikke".  
+- **Fasekategori**. Med en kategori kan du gruppere faser efter en type handling. Det er nyttigt i forbindelse med rapporter, der grupperer poster efter den fase, de er i. Indstillinger for fasekategorien kommer fra de globale grupperede indstillinger for fasekategorien. Du kan evt. føje yderligere indstillinger til denne globale grupperede indstilling og ændre etiketterne for eksisterende indstillinger. Du kan også slette disse indstillinger, hvis du vil, men vi anbefaler, at du bevarer de eksisterende indstillinger. Du kan ikke tilføje præcist den samme indstilling igen, hvis du sletter den. Hvis du ikke ønsker, at de skal bruges, kan du ændre etiketten til "Brug ikke".  
   
-- **Relation**. Angiv en relation, når den foregående fase i processen er baseret på en anden enhed. For den fase, der i øjeblikket er defineret, skal du vælge **Vælg relationer** for at identificere en relation, der skal bruges, når du flytter mellem de to faser. Det anbefales, at du vælger en relation af følgende årsager:  
+- **Relation**. Angiv en relation, når den foregående fase i processen er baseret på en anden enhed. For den fase, der er under udarbejdelse, skal du vælge **Vælg relationer** for at identificere en relation, der skal bruges, når du flytter mellem de to faser. Det anbefales, at du vælger en relation for følgende fordele:  
   
-    -   For relationer er der ofte defineret attributtilknytninger, der automatisk overfører data mellem poster og dermed minimerer indtastning af data.  
+    -   Relationer har ofte attributtilknytninger defineret, der automatisk overfører data mellem poster, hvilket minimerer dataindtastning.  
   
-    -   Når du vælger **Næste fase** på proceslinjen for en post, vises alle poster, der bruger relationen, i procesforløbet, hvilket medfører større genbrug af poster i processen. Du kan desuden bruge arbejdsprocesser til at automatisere oprettelsen af poster, så brugeren blot kan vælge den i stedet for at oprette en, og dermed yderligere strømline processen.  
+    -   Når du vælger **Næste fase** på proceslinjen for en post, vises alle de poster, der bruger forholdet i procesforløbet, hvilket fremmer genbrug af poster i processen. Desuden kan du bruge arbejdsprocesser til at automatisere oprettelse af poster, så brugeren blot vælger den i stedet for at oprette en, for yderligere at strømline processen.  
   
-**Rediger trin**  
- De enkelte faser kan bestå af op til 30 trin.    
+**Redigere trin**  
+ Hver fase kan have op til 30 trin.    
   
 **Tilføj forgrening**  
-Du kan få mere at vide om, hvordan du føjer en forgrening til en fase, under [Optimer forretningsprocesforløb med forgrening](enhance-business-process-flows-branching.md).  
+Du kan få mere for at vide om, hvordan du føjer en forgrening til en fase, under [Forbedre forretningsprocesforløb med forgrening](enhance-business-process-flows-branching.md).  
   
-Hvis du vil gøre et forretningsprocesforløb tilgængeligt, så andre kan bruge det, skal du angive rækkefølgen for procesforløbet, aktivere sikkerhedsroller og aktivere det.  
+Hvis du vil give andre mulighed for at bruge et forretningsprocesforløb, skal du sortere procesforløbet, aktivere sikkerhedsroller og aktivere det.  
   
-**Angiv rækkefølge for procesforløb**  
- Når du har mere end ét forretningsprocesforløb for en enhed (posttype), skal du angive, hvilken proces der automatisk tildeles til nye poster. På kommandolinjen skal du vælge **Angiv rækkefølge for procesforløb**. For nye poster eller poster, der ikke allerede har tilknyttet et procesforløb, bruges det første forretningsprocesforløb, som en bruger har adgang til.  
+**Angiv procesforløbrækkefølge**  
+ Når du har mere end ét forretningsprocesforløb for et objekt (posttype), skal du angive, hvilken proces der tildeles automatisk til nye poster. På kommandolinjen vælger du **Ordreprocesforløb**. For nye poster eller poster, der ikke allerede har tilknyttet et procesforløb, bruges det første forretningsprocesforløb, som en bruger har adgang til.  
   
 **Aktivér sikkerhedsroller**  
 Brugere har adgang til et forretningsprocesforløb afhængigt af den rettighed, der er defineret for forretningsprocesforløbet i den sikkerhedsrolle, der er tildelt til brugerne. 
 
-Det er kun sikkerhedsrollerne **Systemadministrator** og **Systemtilpasser**, der som standard kan se et nyt forretningsprocesforløb. 
+Det er som standard kun sikkerhedsrollerne **Systemadministrator** og **Systemtilpasser**, der kan få vist et nyt forretningsprocesforløb. 
 
 Hvis du vil angive rettigheder til et forretningsprocesforløb, skal du åbne forretningsprocesforløbet til redigering og derefter vælge **Rediger sikkerhedsroller** på kommandolinjen i designeren af forretningsprocesforløb. Se trin 13 under [Opret et forretningsprocesforløb](#create-a-business-process-flow), der er vist tidligere i dette emne.
   
 **Aktivér**  
-Før andre kan bruge forretningsprocesforløbet, skal du aktivere det. Vælg **Aktivér** på kommandolinjen. Når du har bekræftet aktiveringen, er forretningsprocesforløbet klar til brug. Hvis et forretningsprocesforløb indeholder fejl, kan du ikke aktivere det, før fejlene er rettet.  
+Før andre kan bruge forretningsprocesforløbet, skal du aktivere det. Vælg **Aktivér** på kommandolinjen. Når du har bekræftet aktiveringen, er forretningsprocesforløbet klart til brug. Hvis et forretningsprocesforløb indeholder fejl, kan du ikke aktivere det, før fejlene er rettet.  
 
 ## <a name="add-an-on-demand-action-to-a-business-process-flow"></a>Føj en handling efter anmodning til et forretningsprocesforløb
-I opdateringen Dynamics 365 (online), version 9.0 introduceres der en funktion til forretningsprocesforløb: automatisering af forretningsprocesforløb med handlingstrin. Du kan føje en knap til et forretningsprocesforløb, der udløser en handling eller en arbejdsproces.
+Opdateringen Dynamics 365 (online) version 9.0 introducerer en ny funktion til forretningsprocesforløb: automatisering af forretningsprocesforløb med handlingstrin. Du kan føje en knap til et forretningsprocesforløb, der udløser en handling eller en arbejdsproces.
 
-### <a name="add-on-demand-workflows-or-actions-using-an-action-step"></a>Tilføj arbejdsprocesser eller handlinger efter anmodning ved hjælp af et handlingstrin
-Lad os antage, at Contoso-organisationen som led i processen til kvalifikation af salgsmuligheder kræver, at alle salgsmuligheder gennemses af en udpeget reviewer. Derfor har Contoso-organisationen oprettet en handling, der: 
+### <a name="add-on-demand-workflows-or-actions-using-an-action-step"></a>Tilføje anmodede arbejdsprocesser eller handlinger ved hjælp af et handlingstrin
+Lad os antage, at virksomheden Contoso som en del af processen til kvalificering af salgsmuligheder kræver, at alle salgsmuligheder skal gennemses af en angivet reviewer. Efterfølgende har Contoso-organisationen oprettet en handling, der: 
 
-- Opretter en opgavepost, som tildeles til revieweren af salgsmuligheder. 
-- Vedhæfter "Klar til gennemsyn" til salgsmulighedsemnet. 
+- Opretter en opgavepost, der er tilknyttet til revieweren af salgsmuligheden. 
+- Føjer "Klar til gennemsyn" til salgsmulighedsemnet. 
 
-Derudover skal Contoso være i stand til at køre disse handlinger efter anmodning. For at disse opgaver skal integreres i processen til kvalifikation af salgsmuligheder, skal handlingerne vises i forretningsprocesforløbet for salgsmuligheder. Hvis du vil aktivere denne funktionalitet, skal du vælge **Som et handlingstrin i et forretningsprocesforløb**.
-![Kan køre som et forretningsprocesforløb.](media/action-available-to-run.png)
+Derudover skal Contoso kunne køre disse handlinger efter behov. For at integrere disse opgaver i processen til kvalificering af salgsmuligheden, skal handlingerne vises i forretningsprocesforløbet for salgsmuligheden. Du kan aktivere denne funktion ved at vælge **Som et handlingstrin i et forretningsprocesforløb**.
+![Kan køres som et forretningsprocesforløb.](media/action-available-to-run.png)
 
-Som det næste føjes handlingstrinnet til Contosos forretningsprocesforløb for salgsmuligheder. Derefter valideres og opdateres procesforløbet.
+Derefter føjes handlingstrinnet til Contosos forretningsprocesforløb for salgsmuligheden. Derefter valideres og opdateres procesforløbet.
 
-![Handling, der føjes til forretningsprocesforløbet for salgsmuligheder.](media/add-action-to-bpf.png)
+![Handling, der er føjet til forretningsprocesforløb for salgsmulighed.](media/add-action-to-bpf.png)
 
-Nu kan medlemmer af Contosos salgsstyrke starte handlingen fra trinnet **Kvalificer salgsmulighed** i forretningsprocesforløbet ved at vælge **Udfør**.
+Nu kan medlemmer af Contosos salgsafdeling starte handlingen fra forretningsprocestrinnet **Kvalificering af salgsmulighed** efter behov ved at vælge **Udfør**.
 
 ![Udfør handling.](media/action-execute.png)
 
 > [!IMPORTANT]
-> - Forretningsprocesforløbet skal inkludere et handlingstrin for at kunne udføre en handling eller arbejdsproces efter anmodning. Hvis handlingstrinnet kører en arbejdsproces, skal arbejdsprocessen konfigureres til at køre efter anmodning.
-> - Den enhed, der er knyttet til handlingen eller arbejdsprocessen, skal være den samme som den enhed, der er knyttet til forretningsprocesforløbet.
+> - Hvis du vil kunne udføre en handling eller en arbejdsproces efter anmodning, skal forretningsprocesforløbet indeholde et handlingstrin. Hvis handlingstrinnet kører en arbejdsproces, skal arbejdsprocessen være konfigureret til at køre efter behov.
+> - Det objekt, der er knyttet til handlingen eller arbejdsprocessen, skal være det samme som det objekt, der er knyttet til forretningsprocesforløbet.
 
 ### <a name="limitation-of-using-action-steps-in-a-business-process-flow"></a>Begrænsning af brug af handlingstrin i et forretningsprocesforløb
 
-- Handlinger er ikke tilgængelige som handlingstrin, hvis input- eller outputparametrene er af typen Entity, EntityCollection eller OptionSet (valgliste). Handlinger med mere end én outputparameter af typen EntityReference eller et vilkårligt antal inputparametre af typen EntityReference er ikke tilgængelige som handlingstrin. Handlinger, der ikke er tilknyttet en primær enhed (global handling), er ikke tilgængelige som handlingstrin.
+- Handlinger er ikke tilgængelige som handlingstrin, hvis input- eller outputparametrene er af typen Entity, EntityCollection eller OptionSet (valgliste). Handlinger med mere end én EntityReference-outputparameter eller et hvilket som helst antal EntityReference-inputparametre er ikke tilgængelige som handlingstrin. Handlinger, der ikke er tilknyttet en primær enhed (global handling), er ikke tilgængelige som handlingstrin.
 
 ## <a name="instant-flows-in-business-process-flows"></a>Øjeblikkelige flow i forretningsprocesforløb?
 
@@ -258,8 +258,8 @@ I den forbindelse skal du gøre to ting:
 1. Vælg **Løsninger** i navigationsmenuen i Power Automate.
 1. Vælg **Standardløsning** på listen over de løsninger, der vises. 
 1. Vælg menuen **+ Ny**, og vælg derefter **Flow** på den liste, der vises.
-1. Søg efter, og vælg derefter connectoren **Common Data Service**.
-1. Søg efter, og vælg derefter udløseren **Når en post vælges** på listen over **Common Data Service**-udløsere.
+1. Søg efter og vælg derefter connectoren for **Common Data Service**.
+1. Søg efter, og vælg derefter udløseren **Når der slettes en post** på listen over **Common Data Service**-udløsere.
 1. Angiv **Miljø** til **Standard**, og angiv derefter **Enhedsnavn** til **Kundeemne til salgsproces for salgsmulighed**.
 1. Tilføj et tekstindtastningsfelt, hvor brugeren kan angive linket til forslaget.
 
@@ -333,8 +333,8 @@ I den forbindelse skal du gøre to ting:
 
    ![Fortolk JSON](media/instant-flow-json-date.png "Fortolk JSON")
 
-  1. Tilføj handlingen **Hent post** fra **Common Data Service**-connectoren.
-  1. Angiv **Miljø** til **(Aktuel)** , **Enhedsnavn** til **Kundeemne til salgsproces for salgsmulighed** og **Elementidentifikator** til **BPFFlowStageEntityRecordID**.
+  1. Tilføj handlingen **Hent post** fra connectoren for **Common Data Service**.
+  1. Angiv **Miljø** til **(Aktuel)**, **Enhedsnavn** til **Kundeemne til salgsproces for salgsmulighed** og **Elementidentifikator** til **BPFFlowStageEntityRecordID**.
 
      ![Tilføj en post](media/instant-flow-add-record.png)
 
@@ -369,9 +369,9 @@ Når du har brug for at se en liste over de forretningsprocesforløb, du er invo
 
 ![Visning med godkendelsesflow for det samlede handlingscenter](media/action-center-bpf.png "Visning med godkendelsesflow for det samlede handlingscenter")
 
-I det samlede handlingscenter kan du se alle forretningsprocesser, hvor du har fået tildelt mindst én Common Data Service enhedspost, som processen bruger. Hvis en forretningsproces f. eks. bruger enhederne **Kundeemne** og **Salgsmulighed** i Common Data Service, kan du se alle forekomster af denne proces, hvor enheden Kundeemne eller enheden Salgsmulighed er tildelt til dig.
+I det samlede handlingscenter kan du se alle forretningsprocesser, hvor du har fået tildelt mindst én Common Data Service-objektpost, som processen bruger. Hvis en forretningsproces f.eks. bruger enhederne **Kundeemne** og **Salgsmulighed** i Common Data Service, kan du se alle forekomster af denne proces, hvor enheden Kundeemne eller enheden Salgsmulighed er tildelt til dig.
 
-Få vist alle de instanser, der i øjeblikket arbejdes på, under fanen **Aktiv**. Under denne fane kan du se følgende oplysninger:
+Få vist alle forekomster, der aktuelt arbejdes med, under fanen **Aktiv**. Under denne fane kan du få vist følgende oplysninger:
 
 - Processens navn.
 - Den aktuelle fase for hver proces.

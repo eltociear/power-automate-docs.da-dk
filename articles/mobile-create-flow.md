@@ -21,24 +21,24 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 393ae5f6a86363610c26aea78a04748f34dc4f97
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193605"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296763"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Opret et flow fra din telefon vha. Power Automate
+# <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Opret et flow fra din telefon ved hjælp af Power Automate
 
 Opret et flow fra din telefon ved hjælp af en skabelon, som du kan finde ved at søge på en liste over tjenester, gennemse kategorier eller angive nøgleord. Følg trinnene i dette emne for at oprette et flow, der sender en pushmeddelelse til din telefon, når du modtager en mail fra din chef.
 
-Hvis du ikke er fortrolig med Power Automate, kan du [få vist en oversigt](getting-started.md).
+Hvis du ikke kender Power Automate, kan du [få vist en oversigt](getting-started.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
-* En [konto for Power Automate](sign-up-sign-in.md).
+* En [konto til Power Automate](sign-up-sign-in.md).
 * Mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows) på en [understøttet enhed](getting-started.md#use-the-mobile-app). I grafikken til dette emne er iPhone-versionen af appen anvendt, men grænsefladen på en Android- eller Windows Phone-enhed ser ligesådan ud.
 * Hvis du vil bruge den skabelon, der er demonstreret under dette emne, skal du også bruge:
   
-  * Legitimationsoplysninger til Office 365.
+  * Legitimationsoplysninger for Office 365.
   * Pushmeddelelser, der er aktiveret på telefonen.
 
 ## <a name="find-a-template"></a>Find en skabelon
@@ -63,7 +63,7 @@ Hvis du ikke er fortrolig med Power Automate, kan du [få vist en oversigt](gett
     ![Pushmeddelelser](./media/mobile-create-flow/push-notifications.png)
 4. På søgelinjen skal du skrive **mail** og derefter trykke på skabelonen for at sende en pushmeddelelse, når du modtager en meddelelse fra din chef.
    
-    ![Vælg skabelon](./media/mobile-create-flow/choose-template.png)
+    ![Vælg en skabelon](./media/mobile-create-flow/choose-template.png)
 5. På skærmbilledet, der viser oplysninger om den valgte skabelon, skal du trykke på **Anvend denne skabelon**.
    
     ![Bekræft skabelon](./media/mobile-create-flow/confirm-template.png)

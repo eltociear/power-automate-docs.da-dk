@@ -1,6 +1,6 @@
 ---
-title: Opret flow, der sender adaptive kort til Microsoft Teams | Microsoft Docs
-description: Lær, hvordan du opretter flows, der sender indhold med omfattende formatering sammen med adaptive kort til Microsoft Teams.
+title: Opret flows, der sender tilpassede kort til Microsoft Teams | Microsoft Docs
+description: Lær, hvordan du opretter flows, der sender indhold med omfattende formatering sammen med tilpassede kort til Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 01/04/2020
 ms.author: deonhe
 ms.openlocfilehash: 186526427d8de7ee05dd6860e302faae5ac1d97f
-ms.sourcegitcommit: 0761c15339ba3de6036f7fe5251aa8ad9173ee8b
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75902253"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297423"
 ---
 # <a name="create-your-first-adaptive-card"></a>Opret dit første adaptive kort
 
@@ -34,7 +34,7 @@ I begge tilfælde skal du skitsere, hvilke datasæt du vil dele og/eller de data
 ## <a name="prerequisites"></a>Forudsætninger
 
 <!-- Is it still called Flow App? -->
-- Microsoft Teams, hvor appen Flow er installeret.
+- Microsoft Teams med Flow App installeret.
 
 ## <a name="add-an-action"></a>Tilføj en handling
 
@@ -43,14 +43,14 @@ I denne proces skal du tilføje en handling, der skal bruge dataene fra tidliger
 1. Log på Power Automate.
 1. Vælg **Mine flow** på navigationslinjen foroven.
 1. Vælg **Ny** > **Øjeblikkeligt fra bunden**.
-1. Navngiv dit flow.
+1. Giv dit flow et navn.
 1. Vælg **Udløs et flow manuelt** som udløser.
 1. Vælg **Opret**.
 
     <!-- | [./media/image5.png](./media/image5.png) | [./media/image6.png](./media/image6.png) | -->
 
 1. Vælg **Nyt trin**.
-1. Søg efter **Microsoft Teams**, og vælg derefter **Post et adaptivt kort til en Teams-kanal, og vent på svar** som handlingen.
+1. Søg efter **Microsoft Teams**, og vælg derefter **Send et adaptivt kort til en Teams-kanal, og vent på svar** som handling.
 1. Vælg det **Team** og den **Kanal**, du vil poste kortet til.
 1. Indsæt denne JSON i **meddelelsesfeltet**.
 
@@ -144,7 +144,7 @@ I denne proces skal du tilføje en handling, der skal bruge dataene fra tidliger
 1. Vælg **Nyt trin**, og søg derefter efter, og vælg en af handlingerne under **Send en mail**, som du har adgang til. 
 1. Angiv mailmodtageren som den person, der har valgt knappen Øjeblikkeligt (brug tagget **Mail** fra det dynamiske indhold fra **udløseren**).
 1. Konfigurer **brødteksten** i mailen som følger. Erstat ordene i krøllede parenteser "{}" med dynamiske tokens:  
-    **Dit afstemningssvar var {acPollChoices}** (acPollChoices er dynamisk indhold fra handlingen Vent på svar).  **Det blev indsendt af {User Name}** (brugernavnet er dynamisk indhold fra udløseren)
+    **Dit afstemningssvar var {acPollChoices}** (acPollChoices er dynamisk indhold fra handlingen Vent på svar).  **Det blev sendt af {Brugernavn}** (Brugernavn er dynamisk indhold fra udløseren)
 
 ## <a name="test-your-adaptive-card"></a>Test dit adaptive kort
 
@@ -195,16 +195,16 @@ De mest almindelige problemer, du vil støde på, når du opretter adaptive kort
 
     - Kontrollér, at pladsholderværdier, teksttypografier og Markup Language er justeret i henhold til skemakravene for adaptive kort (se **Bedste praksis for adaptive kort-skema** [her](https://adaptivecards.io/explorer/))
 
-    - Udnyt valideringen af adaptive kort i **Visual Studio Code**. Hvis du vil installere den fra Visual Studio Code-programmet, skal du åbne markedspladsen for udvidelser og søge efter **fremviser til adaptive kort**.
+    - Udnyt valideringen af adaptive kort i **Visual Studio Code**. Hvis du vil installere den fra Visual Studio Code-programmet, skal du åbne markedspladsen for udvidelser og søge efter **Fremviser til adaptive kort**.
 
-      ![Udvidelse til Visual Studio Code](media/adaptive-cards/visual-studio-code-extension.png)
+      ![Visual Studio Code-filtypenavn](media/adaptive-cards/visual-studio-code-extension.png)
   
-Afkortet skærmbillede af udvidelsen til fremviser til adaptive kort, der er installeret i Visual Studio Code (genvej: Ctrl+V+A, når den er aktiveret).
+Afkortet skærmbillede af udvidelsen Fremviser til adaptive kort, der er installeret i Visual Studio Code (genvej: Ctrl+V+A når aktiveret).
 
 - Fejl efter indsendelsen af adaptivt kort skyldes ofte følgende:
 
     - Brug af en handling, der ikke omfatter 'Vent på svar' i navnet  
         
-        ![Prøv igen](media/adaptive-cards/try-again.png)
+        ![Forsøg igen](media/adaptive-cards/try-again.png)
 
     - Forsøger at indsende kortet mere end én gang. Hvert enkelt tilpasset kort kan kun indsendes én gang, hvorefter alle yderligere indsendelser vil blive ignoreret.

@@ -21,21 +21,21 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 74a7bdb451771dd11e88dbf824c3d92383b5a66d
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194111"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298061"
 ---
-# <a name="start-to-build-with-power-automate"></a>Begynd at oprette vha. Power Automate
+# <a name="start-to-build-with-power-automate"></a>Begynd at bygge med Power Automate
 
 
-Her er nogle af de måder, du kan udvide dit program på med Power Automate:
+Her er nogle af de måder, du kan udvide din applikation på med Power Automate:
 
 * Skab og opret forbindelse til en brugerdefineret connector.
 * Del din brugerdefinerede connector med alle Power Automate-brugere.
 * Integrer flowoplevelsen i en app.
-* Fremhæv alle brugerdefinerede connectors, så brugerne kan interagere med Power Automate på den måde, der er bedst for dem.
+* Fremhæv alle brugerdefinerede connectorer, så brugerne kan interagere med Power Automate på den måde, der er bedst for dem.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -43,11 +43,11 @@ Her er nogle af de måder, du kan udvide dit program på med Power Automate:
 
 ## <a name="create-a-custom-connector"></a>Opret en brugerdefineret connector
 
-Hvis du har en webtjeneste, som du vil oprette forbindelse til via Power Automate, skal du først oprette en brugerdefineret connector. Når du registrerer en brugerdefineret connector, kan du lære Power Automate om egenskaberne i webtjenesten, herunder den godkendelse, den kræver, de udløsere og handlinger, den understøtter, samt parametrene og outputtene for hver af disse handlinger.
+Hvis du har en webtjeneste, som du vil oprette forbindelse til fra Power Automate, skal du først oprette en brugerdefineret connector. Når du registrerer en brugerdefineret connector, kan du lære Power Automate om egenskaberne i webtjenesten, herunder den godkendelse, den kræver, de udløsere og handlinger, den understøtter, samt parametrene og outputtene for hver af disse handlinger.
 
 Følg dette selvstudium for at få mere at vide om, hvordan du [registrerer og anvender brugerdefinerede connectorer](https://powerapps.microsoft.com/tutorials/register-custom-api/). Når du har registreret din brugerdefinerede connector, kan du dele den i din organisation til testformål.
 
-## <a name="share-a-custom-connector-with-all-power-automate-users"></a>Del en brugerdefineret connector med alle Power Automate-brugere.
+## <a name="share-a-custom-connector-with-all-power-automate-users"></a>Del en brugerdefinerede connector med alle Power Automate-brugere
 
 Når du har testet den brugerdefinerede connector fuldt ud, skal du starte [evalueringsprocessen](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) for at få den godkendt af Microsoft til deling med alle andre Power Automate-brugere.
 

@@ -1,6 +1,6 @@
 ---
 title: Datagateways i det lokale miljø | Microsoft Docs
-description: Denne artikel er en oversigt over datagatewayen i det lokale miljø til Power Automate.
+description: Denne artikel er en oversigt over datagatewayen i det lokale miljø for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2a0e2d3ff9fb39019ef4b8f37a7715229844c388
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224348"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297731"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Hvad er en datagateway i det lokale miljø?
 
 
-Datagatewayen i det lokale miljø fungerer som en bro, der giver hurtig og sikker dataoverførsel mellem lokale data (data, der ikke er i cloudmiljøet) og adskillige Microsoft-cloudtjenester. Disse cloudtjenester omfatter Power BI, Power Apps, Power Automate, Azure Analysis Services og Azure Logic Apps. Ved hjælp af en gateway kan organisationer opbevare databaser og andre datakilder på deres netværk i det lokale miljø og samtidig sikkert bruge disse lokale data i cloudtjenester.
+Datagateway'en i det lokale miljø fungerer som en bro, der giver hurtig og sikker dataoverførsel mellem lokale data (data, der ikke er i cloudmiljøet) og adskillige Microsoft-cloudtjenester. Disse cloud-tjenester omfatter Power BI, Power Apps, Power Automate, Azure Analysis Services og Azure Logic Apps. Ved hjælp af en gateway kan organisationer opbevare databaser og andre datakilder på deres netværk i det lokale miljø og samtidig sikkert bruge disse lokale data i cloudtjenester.
 
 ## <a name="how-the-gateway-works"></a>Sådan virker gatewayen
 
@@ -44,7 +44,7 @@ Der er to forskellige typer gateways til hvert sit scenarie:
 
 - **Datagateway i det lokale miljø** gør det muligt for flere brugere at oprette forbindelse til flere datakilder i det lokale miljø. Du kan bruge en datagateway i det lokale miljø til alle understøttede tjenester med en enkelt gatewayinstallation. Denne gateway er velegnet til komplekse scenarier, hvor flere personer tilgår flere datakilder.
 
-- **Datagateway i det lokale miljø (personlig tilstand)** gør det muligt for én bruger at oprette forbindelse til datakilder og kan ikke deles med andre. En datagateway i det lokale miljø (personlig tilstand) kan kun bruges med Power BI. Denne gateway er velegnet til scenarier, hvor du er den eneste, der opretter rapporter, og du ikke behøver at dele datakilder med andre.
+- **Datagateway i det lokale miljø (personlig tilstand)** gør det muligt for én bruger at oprette forbindelse til datakilder og kan ikke deles med andre. En datagateway i det lokale miljø (personlig tilstand) kan kun bruges sammen med Power BI. Denne gateway er velegnet til scenarier, hvor du er den eneste, der opretter rapporter, og du ikke behøver at dele datakilder med andre.
 
 ## <a name="use-a-gateway"></a>Brug en gateway
 

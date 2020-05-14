@@ -1,5 +1,5 @@
 ---
-title: Klassiske arbejdsprocesser i Common Data Service | MicrosoftDocs
+title: Klassiske arbejdsprocesser i Common Data Service | Microsoft Docs
 ms.custom: ''
 ms.date: 08/27/2019
 ms.reviewer: matp
@@ -15,139 +15,139 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 53bc2b24da55c8700412b527c7f27934e5515bc4
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195744"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298325"
 ---
-# <a name="classic-common-data-service-workflows"></a>Klassiske Common Data Service-arbejdsprocesser 
+# <a name="classic-common-data-service-workflows"></a>Klassiske arbejdsprocesser i Common Data Service 
 
 
 Arbejdsprocesser automatiserer forretningsprocesser uden en brugergrænseflade. Arbejdsprocesser bruges normalt til at starte de automatiseringer, der ikke kræver brugerinput.
 
 > [!IMPORTANT]
-> Brug flow i stedet for klassiske arbejdsprocesser til at automatisere dine forretningsprocesser. Flere oplysninger: [Erstat klassiske arbejdsprocesser i Common Data Service med flow](replace-workflows-with-flows.md)  
+> Brug flow i stedet for klassiske arbejdsprocesser til at automatisere dine forretningsprocesser. Flere oplysninger: [Erstat klassiske Common Data Service-arbejdsprocesser med flows](replace-workflows-with-flows.md)  
   
  Hver arbejdsproces er knyttet til et enkelt objekt. Når du konfigurerer arbejdsprocesser, er der fire primære områder, du skal have med i dine overvejelser:  
   
--   Hvornår du skal starte dem?  
+-   Hvornår skal starte dem?  
   
--   Skal de køre som en realtidsarbejdsproces eller en arbejdsproces i baggrunden?  
+-   Bør de køre som realtidsarbejdsprocesser eller som arbejdsprocesser i baggrunden?  
   
 -   Hvilke handlinger skal de udføre?  
   
--   Under hvilke betingelser skal handlingerne udføres?  
+-   Under hvilke betingelser skal handlinger udføres?  
   
- I dette emne introduceres, hvordan du finder arbejdsprocesser, og hvornår du skal starte dem, og om de skal køre i realtid eller som baggrundsjob. Du kan få flere oplysninger om de handlinger, de skal udføre, og betingelserne i [Konfiguration af arbejdsprocesser](configure-workflow-steps.md).  
+ I emnet forklares det, hvordan du finder processer i arbejdsprocesser, og det beskrives, hvornår du skal starte dem, og om de skal køre i realtid eller i baggrunden. Du kan finde oplysninger om de handlinger, de skal udføre, samt betingelserne, under [Konfigurere arbejdsprocesser](configure-workflow-steps.md).  
   
 <a name="BKMK_WhereToCustomizeWorkflows"></a>   
-## <a name="where-do-you-customize-workflow-processes"></a>Hvor tilpasses arbejdsprocesser?  
- Du kan få vist arbejdsprocesserne i din organisation ved at få vist noden **Processer** i **standardløsningen** og filtrere på de processer, der har **kategorien** **Arbejdsproces**.  
+## <a name="where-do-you-customize-workflow-processes"></a>Hvor skal du tilpasse processer i arbejdsprocessen?  
+ Du kan også se arbejdsprocesserne i din organisation ved at få vist noden **Processer** i **Standardløsning** og filtrere på processer, hvor **Arbejdsproces** er angivet til **Kategori**.  
   
  ![Processer, der er filtreret efter arbejdsproces i Dynamics 365](media/workflow-processes-filtered.PNG "Processer, der er filtreret efter arbejdsproces i Dynamics 365")  
   
  Afhængigt af hvordan appen er bygget, kan brugere oprette eller ændre deres arbejdsprocesser i appen. 
  
-Udviklere kan oprette arbejdsprocesser ved hjælp af oplysningerne i [udviklervejledningen til Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/workflow/workflow-extensions), og de løsninger, som du køber, omfatter muligvis arbejdsprocesser, som du kan ændre.  
+Udviklere kan oprette arbejdsprocesser ved hjælp af oplysningerne i [Udviklervejledning til Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/workflow/workflow-extensions), og løsninger, du køber, kan inkludere arbejdsprocesser, du måske kan ændre.  
   
 <a name="BKMK_WorkflowProperties"></a>   
-## <a name="workflow-properties"></a>Egenskaber for arbejdsproces  
- Vælg **Processer** i løsningsoversigten, og klik på **Ny**.  
+## <a name="workflow-properties"></a>Arbejdsprocesegenskaber  
+ I løsningsoversigten skal du vælge **Processer** og klikke på **Ny**.  
   
- Når du opretter en arbejdsproces, kræver dialogboksen **Opret proces**, at du angiver tre egenskaber, som alle processerne har:  
+ Når du opretter en arbejdsproces i dialogboksen **Opret proces** skal du angive tre egenskaber, som alle processer har:  
   
  ![Oprettelse af en arbejdsproces i Dynamics 365](media/create-workflow.PNG "Oprettelse af en arbejdsproces i Dynamics 365")  
   
  **Procesnavn**  
- Navnet på arbejdsprocessen behøver ikke at være entydigt, men hvis du regner med at have en masse arbejdsprocesser, kan du bruge en navngivningskonvention for at kunne skelne mellem processerne. Du kan anvende standardpræfikser til navnet på arbejdsprocessen. Præfikset kan beskrive funktionen af arbejdsprocessen eller afdelingen i virksomheden. På den måde kan du gruppere lignende elementer på listen over arbejdsprocesser.  
+ Navnet på arbejdsprocessen behøver ikke at være entydigt, men hvis du regner med at have en masse arbejdsprocesser, kan du bruge en navngivningskonvention for at kunne skelne mellem processerne. Det kan være en god idé at benytte standardpræfikser til navnet på arbejdsprocessen. Præfikset beskriver måske funktionen for arbejdsprocessen eller afdelingen i virksomheden. Dette vil hjælpe dig med at gruppere lignende elementer på listen over arbejdsprocesser.  
   
  **Kategori**  
- Denne egenskab fastsætter, at dette er en arbejdsproces.  
+ Denne egenskab fastslår, at dette er en arbejdsproces.  
   
- **Objekt**  
- Hver arbejdsproces skal være angivet til et enkelt objekt. Du kan ikke ændre objektet, når arbejdsprocessen er oprettet.  
+ **Enhed**  
+ Hver proces i arbejdsprocessen skal angives for et enkelt objekt. Du kan ikke ændre objektet, når processen i arbejdsprocessen er oprettet.  
   
  **Kør denne arbejdsproces i baggrunden (anbefales)**  
- Denne indstilling vises, når du vælger arbejdsproces som kategori. Indstillingen angiver, om arbejdsprocessen er en i realtid eller kører i baggrunden. Arbejdsprocesser i realtid kører med det samme (synkront), og arbejdsprocesser i baggrunden kører asynkront. De tilgængelige konfigurationsindstillinger afhænger af dit valg til denne indstilling. Arbejdsprocesser i baggrunden tillader vent-betingelser, der ikke er tilgængelige for arbejdsprocesser i realtid. Så længe du ikke bruger disse vent-betingelser, kan du på et senere tidspunkt konvertere arbejdsprocesser i baggrunden til arbejdsprocesser i realtid og arbejdsprocesser i realtid til arbejdsprocesser i baggrunden. Du kan finde flere oplysninger om vent-betingelser i [Angivelse af betingelser for arbejdsproceshandlinger](configure-workflow-steps.md#BKMK_SettingConditionsForWorkflowActions).  
+ Denne indstilling vises, når du vælger arbejdsproces som kategori. Denne indstilling bestemmer, om arbejdsprocessen er en arbejdsproces i realtid eller i baggrunden. Arbejdsprocesser i realtid køres straks (synkront), og arbejdsprocesser i baggrunden kører asynkront. De tilgængelige konfigurationsindstillinger afhænger af dit valg for denne indstilling. Arbejdsprocesser i baggrunden tillader vent-betingelser, der ikke er tilgængelige for arbejdsprocesser i realtid. Så længe du ikke bruger disse vent-betingelser, kan du senere konvertere arbejdsprocesser i baggrunden til arbejdsprocesser i realtid og arbejdsprocesser i realtid til arbejdsprocesser i baggrunden. Du kan finde flere oplysninger om vent-betingelser i [Angive betingelser for arbejdsproceshandlinger](configure-workflow-steps.md#BKMK_SettingConditionsForWorkflowActions).  
   
- Du har også indstillingen **Type** til at angive, om du vil oprette en ny arbejdsproces fra bunden eller vælge at starte fra en eksisterende skabelon. Når du vælger **Ny proces fra en eksisterende skabelon (vælg på listen)** , kan du vælge mellem de tilgængelige arbejdsprocesser, der tidligere er blevet gemt som en processkabelon.  
+ Du kan også bruge indstillingen **Type** til at angive, om du vil oprette en ny arbejdsproces fra bunden eller starte fra en eksisterende skabelon. Når du vælger **Ny proces ud fra en eksisterende skabelon (vælg på listen)**, kan du vælge blandt de tilgængelige processer i arbejdsprocessen, der tidligere er gemt som en processkabelon.  
   
  Når du har oprettet arbejdsprocessen, eller hvis du redigerer en eksisterende, har du følgende yderligere egenskaber:  
   
  ![Fanen Generelt i en arbejdsproces](media/create-workflow-general-tab.PNG "Fanen Generelt i en arbejdsproces")  
   
  **Aktivér som**  
- Du kan vælge **processkabelon** til at oprette et avanceret udgangspunktet for andre skabeloner. Hvis du vælger denne indstilling, når du har aktiveret arbejdsprocessen, anvendes skabelonen ikke, men er i stedet tilgængelig i dialogboksen **Opret proces**, hvis du vælger **Type**: **Ny proces fra en eksisterende skabelon (vælg på liste)**  
+ Du kan vælge **Processkabelon** for at oprette et udgangspunkt for andre skabeloner. Hvis du vælger denne indstilling, anvendes arbejdsprocessen ikke, når du har aktiveret den, men i stedet bliver den tilgængelig og kan vælges i dialogboksen **Opret proces**, hvis du vælger **Type**: **Ny proces ud fra en eksisterende skabelon (vælg på listen)**  
   
- Processkabeloner er praktiske, når du har et antal lignende arbejdsprocesser og gerne vil definere dem uden at duplikere den samme logik.  
+ Processkabeloner er praktiske, når du har en række lignende processer i arbejdsprocessen, og du vil definere dem uden at kopiere den samme logik.  
   
 > [!NOTE]
->  Redigering af en processkabelon ændrer ikke funktionsmåderne i andre arbejdsprocesser, der tidligere er oprettet ved hjælp af den pågældende skabelon. En ny arbejdsproces, der er oprettet ved hjælp af en skabelon, er en kopi af indholdet i skabelonen.  
+>  Hvis du redigerer en processkabelon, ændres funktionsmåden ikke for andre processer i arbejdsprocessen, der tidligere er oprettet ved at bruge den som skabelon. En ny arbejdsproces, der oprettes ved hjælp af en skabelon, er en kopi af indholdet i skabelonen.  
   
- **Tilgængelig til kørsel**  
- Dette afsnit indeholder indstillinger, der beskriver, hvordan arbejdsprocessen er klar til at blive kørt.  
+ **Kan køres**  
+ Dette afsnit indeholder indstillinger, der beskriver, hvordan arbejdsprocessen er tilgængelig til kørsel.  
   
  **Kør denne arbejdsproces i baggrunden (anbefales)**  
- Dette afkrydsningsfelt afspejler den indstilling, du valgte, da du oprettede arbejdsprocessen. Indstillingen er deaktiveret, men du kan ændre den i menuen **Handlinger** ved at vælge enten **Konverter til en arbejdsproces i realtid** eller **Konverter til en arbejdsproces i baggrunden**.  
+ Dette afkrydsningsfelt afspejler den indstilling, du valgte, da du oprettede arbejdsprocessen. Denne indstilling er deaktiveret, men du kan ændre den i menuen **Handlinger** ved at vælge enten **Konvertér til en arbejdsproces i realtid** eller **Konvertér til en arbejdsproces i baggrunden**.  
   
  **Som en proces efter behov**  
- Vælg denne indstilling, hvis du vil tillade brugere at køre denne arbejdsproces fra kommandoen **Kør arbejdsproces**.  
+ Vælg denne indstilling, hvis du vil give brugerne mulighed for at køre denne arbejdsproces fra kommandoen **Kør arbejdsproces**.  
   
  **Som en underordnet proces**  
- Vælg denne indstilling, hvis du vil tillade, at arbejdsprocessen skal kunne startes fra en anden arbejdsproces.  
+ Vælg denne indstilling, hvis arbejdsprocessen skal være tilgængelig og kunne startes fra en anden arbejdsproces.  
   
- **Opbevaring af arbejdsproces**  
- Dette afsnit indeholder en indstilling til sletning af en arbejdsproces, når udførelsen af arbejdsprocessen er blevet fuldført.  
+ **Opbevaring af arbejdsprocesjob**  
+ Dette afsnit indeholder en indstilling for sletning af en arbejdsproces, når udførelsen af arbejdsprocessen er fuldført.  
   
  **Slet automatisk fuldførte arbejdsprocesjob (for at spare plads på harddisken)**  
- Vælg denne indstilling, hvis du vil have, at et fuldført arbejdsprocesjob automatisk slettes.  
+ Vælg denne indstilling, hvis du ønsker, at et fuldført arbejdsprocesjob skal slettes automatisk.  
   
 > [!NOTE]
->  Arbejdsprocesjob slettes ikke umiddelbart efter fuldførelsen, men kort tid efter via en batchproces.  
+>  Arbejdsprocesjobbene slettes ikke umiddelbart efter fuldførelse, men snart efter via en batchproces.  
   
  **Omfang**  
- For objekter, der ejes af brugeren, er indstillingerne **Organisation**, **Overordnet: Underordnede afdelinger**, **Forretningsenhed** eller **Bruger**. For enheder, der ejes af organisationen, er den eneste mulighed **Organisation**.  
+ I forbindelse med brugerejede objekter er indstillinger **Organisation**, **Overordnet: Underafdelinger**, **Afdeling** eller **Bruger**. I forbindelse med organisationsejede objekter er den eneste indstilling **Organisation**.  
   
- Hvis omfanget er **Organisation**, kan arbejdsproceslogikken anvendes for en vilkårlig post i organisationen. I modsat fald kan arbejdsprocessen kun anvendes til et undersæt af poster, der ligger inden for omfanget.  
-  
-> [!NOTE]
->  Standardværdien for omfang er **Bruger**. Kontrollér, at omfangsværdien er relevant, før du aktiverer arbejdsprocessen.  
-  
- **Start, når**  
- Brug indstillingerne i dette afsnit til at angive, hvornår en arbejdsproces skal starte automatisk. Du kan konfigurere en arbejdsproces i realtid til at blive kørt før bestemte hændelser. Dette er en meget effektiv funktion, fordi arbejdsprocessen kan stoppe handlingen, før den finder sted. Flere oplysninger: [Brug af arbejdsprocesser i realtid](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Valgmulighederne er:  
-  
-- **Post oprettes**  
-  
-- **Poststatus ændres**  
-  
-- **Post tildeles**  
-  
-- **Postfelter ændres**  
-  
-- **Post slettes**  
+ Hvis omfang er **Organisation**, kan arbejdsproceslogikken anvendes på alle poster i organisationen. Ellers kan arbejdsprocessen kun anvendes på et delsæt af poster, er inden for omfanget.  
   
 > [!NOTE]
->  Vær opmærksom på, at de handlinger og betingelser, du definerer for arbejdsprocessen, ikke er klar over, hvornår arbejdsprocessen køres. Hvis du f.eks. definerer en arbejdsproces for at opdatere posten, kan denne handling ikke udføres af en arbejdsproces i realtid, før posten oprettes. En post, der ikke findes, kan ikke opdateres. På samme måde kan en arbejdsproces i baggrunden ikke opdatere en post, der er blevet slettet, selvom du kan definere denne handling for arbejdsprocessen. Det mislykkes, hvis du konfigurerer en arbejdsproces til at udføre en handling, der ikke kan udføres, hvorefter hele arbejdsprocessen mislykkes.  
+>  Standardværdien for omfang er **Bruger**. Husk at kontrollere, at omfangets værdi er relevant, før du aktiverer arbejdsprocessen.  
+  
+ **Start når**  
+ Brug indstillingerne i denne sektion til at angive, hvornår en arbejdsproces skal starte automatisk. Du kan konfigurere en arbejdsproces i realtid til at blive kørt før bestemte hændelser. Dette er en meget effektiv funktion, fordi arbejdsprocessen kan stoppe handlingen, før den finder sted. Flere oplysninger: [Brug af arbejdsprocesser i realtid](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Valgmulighederne er:  
+  
+- **Posten er oprettet**  
+  
+- **Ændringer af poststatus**  
+  
+- **Posten er tildelt**  
+  
+- **Ændring af postfelter**  
+  
+- **Posten er slettet**  
+  
+> [!NOTE]
+>  Husk, at de handlinger og betingelser, du definerer for arbejdsprocessen, ikke ved, hvornår arbejdsprocessen køres. Hvis du f.eks. definerer en arbejdsproces, der skal opdatere posten, kan denne handling ikke udføres af en arbejdsproces i realtid, før posten er oprettet. En post, der ikke findes, kan ikke opdateres. På samme måde kan en arbejdsproces i baggrunden ikke opdatere en post, der er blevet slettet, selvom du kan definere denne handling for arbejdsprocessen. Hvis du konfigurerer en arbejdsproces, der skal udføre en handling, der ikke kan udføres, lykkes den ikke, og hele arbejdsprocessen lykkes ikke.  
   
  **Udfør som**  
- Denne indstilling er kun tilgængelig, hvis du har fjernet markeringen af indstillingen **Kør denne arbejdsproces i baggrunden (anbefales)** , da du oprettede arbejdsprocessen, eller hvis du på et senere tidspunkt konverterede en arbejdsproces i baggrunden til en arbejdsproces i realtid.  
+ Denne indstilling er kun tilgængelig, hvis du fjernede markeringen i indstillingen **Kør denne arbejdsproces i baggrunden (anbefales)**, da du oprettede arbejdsprocessen, eller hvis du senere har konverteret en arbejdsproces i baggrunden til en arbejdsproces i realtid.  
   
 <a name="BKMK_SecurityContextOfWorkflowProcesses"></a>   
-## <a name="security-context-of-workflow-processes"></a>Sikkerhedskonteksten for arbejdsprocesser  
- Når en arbejdsproces i baggrunden konfigureres som en proces efter behov og startes af en bruger ved hjælp kommandoen **Kør arbejdsproces**, er de handlinger, som arbejdsprocessen kan udføre, begrænset til dem, som brugeren kan udføre på baggrund af de rettigheder og adgangsniveauer, der er defineret af den eller de sikkerhedsroller, der er angivet for brugerens konto.  
+## <a name="security-context-of-workflow-processes"></a>Sikkerhed for processer i arbejdsprocessen  
+ Når en arbejdsproces i baggrunden er konfigureret som en anmodet arbejdsproces og startes af en bruger ved hjælp af kommandoen **Kør arbejdsproces**, er de handlinger, den pågældende arbejdsproces kan udføre, begrænset til dem, som brugeren kan udføre ud fra de rettigheder og adgangsniveauer, der er defineret af den eller de sikkerhedsroller, der er angivet for brugerkontoen.  
   
- Når en arbejdsproces i baggrunden starter på baggrund af en hændelse, fungerer arbejdsprocessen i konteksten af den person, der ejer processen, som regel den person, der oprettede arbejdsprocessen.  
+ Når en arbejdsproces i baggrunden startes baseret på en hændelse, som arbejdsprocessen fungerer for, er den person, der ejer den, som regel den person, som har oprettet arbejdsprocessen.  
   
- I forbindelse med arbejdsprocesser i realtid har du indstillingen **Udfør som**, og du kan vælge, om arbejdsprocessen skal anvende sikkerhedskonteksten for ejeren af arbejdsprocessen eller den bruger, der har ændret posten. Hvis din arbejdsproces inkluderer handlinger, som alle brugere ikke skal kunne udføre baseret på sikkerhedsbegrænsninger, skal du vælge at få arbejdsprocessen kørt som ejer af arbejdsprocessen.  
+ For arbejdsprocesser i realtid har du indstillingen **Udfør som**, og du kan vælge, om arbejdsprocessen skal anvende sikkerhedskonteksten for ejeren af arbejdsprocessen eller den bruger, der har foretaget ændringer af posten. Hvis arbejdsprocessen indeholder handlinger, som alle brugere ikke kan udføre på baggrund af begrænsninger, skal du vælge at køre arbejdsprocessen som ejeren af arbejdsprocessen.  
   
 <a name="BKMK_ActivatingWorkflows"></a>   
-## <a name="activate-a-workflow"></a>Aktivér en arbejdsproces  
- Arbejdsprocesser kan kun redigeres, mens de er deaktiveret. Før en arbejdsproces kan bruges manuelt eller anvendes som følge af hændelser, skal den aktiveres. Før en arbejdsproces kan aktiveres, skal den indeholde mindst ét trin. Du kan finde oplysninger om konfiguration af trin i [Konfiguration af arbejdsprocesser](configure-workflow-steps.md)  
+## <a name="activate-a-workflow"></a>Aktivere en arbejdsproces  
+ Arbejdsprocesser kan kun redigeres, hvis de er deaktiverede. Før en arbejdsproces kan bruges manuelt eller anvendes på grund af hændelser, skal den aktiveres. Før en arbejdsproces kan aktiveres, skal den indeholde mindst ét trin. Du kan finde oplysninger om konfigurationstrin i [Konfiguration af arbejdsprocesser](configure-workflow-steps.md)  
   
- En arbejdsproces kan kun aktiveres eller deaktiveres af ejeren af arbejdsprocessen eller af en person, der har rettighed til at **handle på vegne af en anden bruger**, f.eks systemadministratoren.  Årsagen til dette er, at en ondsindet bruger kunne ændre en persons arbejdsproces, uden at vedkommende ville opdage ændringen. Du kan tildele en arbejdsproces, som du ejer, igen ved at ændre ejeren. Dette felt er på fanen **Administration**. Hvis du er ikke systemadministrator, og du har brug for at redigere en arbejdsproces, der ejes af en anden bruger, skal personen deaktivere arbejdsprocessen og tildele den til dig. Når du er færdig med at redigere arbejdsprocessen, kan du tildele arbejdsprocessen tilbage til vedkommende, så den kan blive aktiveret.  
+ En arbejdsproces kan kun aktiveres eller deaktiveres af ejeren af arbejdsprocessen eller af en person med rettigheden **Vær stedfortræder for en anden bruger**, f.eks. systemadministratoren.  Grunden til dette er, at der en ondsindet bruger kunne ændre en anden persons arbejdsproces, uden at denne person er opmærksom på ændringen. Du kan tildele en arbejdsproces, du ejer, ved at ændre ejeren. Dette felt findes under fanen **Administration**. Hvis du ikke er systemadministrator, og du skal redigere en arbejdsproces, der ejes af en anden bruger, skal den anden bruger deaktivere den og tildele den til dig. Når du er færdig med at redigere arbejdsprocessen, kan du tildele den til brugeren igen, så brugeren kan aktivere den.  
   
- Arbejdsprocesser i realtid kræver, at brugeren har rettigheden **Aktivér processer i realtid**. Da der er større risiko for, at arbejdsprocesser i realtid påvirker systemets ydeevne, bør kun personer, der kan evaluere den potentielle risiko, tildeles denne rettighed.  
+ Arbejdsprocesser i realtid kræver, at brugeren har rettigheden **Aktivér processer i realtid**. Da der er større risiko for, at arbejdsprocesser i realtid påvirker systemets ydeevne, skal denne rettighed kun tildeles til personer, der kan evaluere den potentielle risiko.  
   
  Arbejdsprocesser gemmes, når de er aktiveret, så det er ikke nødvendigt at gemme dem, før du aktiverer dem.  
   

@@ -1,6 +1,6 @@
 ---
-title: Power Automate til den amerikanske regering
-description: Indeholder oplysninger om beskrivelse, planer og begrænsninger i forbindelse med Power Automate US Government-tjenesten
+title: Power Automate US Government
+description: Indeholder oplysninger om Power Automate US Government-servicebeskrivelse, -planer og -begrænsninger
 services: ''
 suite: flow
 author: msftman
@@ -19,14 +19,14 @@ ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153391"
+ms.locfileid: "3299337"
 ---
-# <a name="power-automate-us-government"></a>Power Automate til den amerikanske regering
+# <a name="power-automate-us-government"></a>Power Automate US Government
 
 
-For at imødegå de unikke krav, der er under stadig ændring, i den offentlige sektor i USA har Microsoft oprettet Power Automate US Government-planer. I dette afsnit kan du se en oversigt over funktioner, der er specifikke for Power Automate US Government. Vi anbefaler, at du læser dette supplerende afsnit samt emnet [Introduktion](https://docs.microsoft.com/flow/getting-started) til Power Automate-tjenesten. Denne tjeneste kaldes ofte bare *Flow GCC*.
+For at imødegå de entydige krav i den offentlige sektor i USA, som hele tiden ændres, har Microsoft oprettet Power Automate US Government-planer. Dette afsnit indeholder en oversigt over funktioner, der er specifikke for Power Automate US Government. Vi anbefaler, at du læser dette supplerende afsnit samt emnet [Introduktion](https://docs.microsoft.com/flow/getting-started) for Power Automate-tjenesten. Denne tjeneste kaldes ofte bare *Flow GCC*.
 
-Beskrivelsen af Power Automate US Government-tjenesten er et tillæg til generelle beskrivelse af Power Automate-tjenesten. Den definerer de unikke forpligtelser og forskelle i forhold til de generelle Power Automate-tilbud, der har været tilgængelige til vores kunder siden oktober 2016.
+Beskrivelsen af Power Automate US Government-tjenesten er et tillæg til den generelle beskrivelse af Power Automate-tjenesten. Den definerer de entydige forpligtelser og forskelle sammenlignet med de generelle Power Automate-tilbud, der har været tilgængelige for vores kunder siden oktober 2016.
 
 ## <a name="about-power-automate-us-government-environments-and-plans"></a>Om Power Automate US Government-miljøer og -planer
 
@@ -44,17 +44,17 @@ Ud over funktionerne og egenskaberne i Power Automate kan de organisationer, der
 
 - Power Automate US Government overholder alle certificeringer og godkendelser, som er påkrævet af kunder i den amerikanske offentlige sektor.
 
-Fra september 2019 kan berettigede kunder vælge at udrulle Power Automate US Government til **GCC High**-miljøet, hvilket muliggør enkeltlogon og problemfri integration med udrulninger af Microsoft Office 365 GCC High. 
+Fra september 2019 kan berettigede kunder vælge at installere Power Automate US Government i **Høj GCC**-miljøet, som muliggør enkeltlogon og problemfri integration med Microsoft Office 365 GCC High-udrulninger. 
 
-Microsoft har udviklet platformen og driftsprocedurerne, så de opfylder kravene, der er tilpasset strukturen for overholdelse af DISA SRG IL4-standarderne. Vi forventer, at underleverandører til det amerikanske forsvarsministerium og andre føderale myndigheder, der i øjeblikket udnytter Office 365 GCC High, så de kan bruge GCC High-udrulningsmuligheden i Power Automate. Dette muliggør og kræver, at kunden bruger Azure AD Government til kundeidentiteter, i modsætning til GCC, som bruger den offentlige Azure AD. Til underleverandører til det amerikanske forsvarsministerium bruger Microsoft tjenesten på en måde, der gør det muligt for disse kunder at overholde ITAR- og DFARS-reglerne, som det dokumenteres og kræves i deres kontrakter med det amerikanske forsvarsministerium.
+Microsoft har udviklet platformen og driftsprocedurerne, så de opfylder kravene, der er tilpasset strukturen for overholdelse af DISA SRG IL4-standarderne. Vi forventer, at underleverandører til det amerikanske forsvarsministerium og andre føderale myndigheder, der i øjeblikket udnytter Office 365 GCC High, så de kan bruge GCC High-udrulningsmuligheden i Power Automate. Dette muliggør og kræver, at kunden bruger Azure AD Government til kundeidentiteter, i modsætning til GCC, som bruger det offentlige Azure AD. Til underleverandører til det amerikanske forsvarsministerium bruger Microsoft tjenesten på en måde, der gør det muligt for disse kunder at overholde ITAR- og DFARS-reglerne, som det dokumenteres og kræves i deres kontrakter med det amerikanske forsvarsministerium.
 
-## <a name="customer-eligibility"></a>Berettigelse for kunden
+## <a name="customer-eligibility"></a>Kundens berettigelse
 
-Power Automate US Government er tilgængelig til (1) amerikanske føderale, statslige, lokale, stammemæssige og områdemæssige offentlige institutioner og (2) andre enheder, der håndterer data, som er underlagt offentlige krav og bestemmelser, samt i de tilfælde, hvor brugen af Power Automate US Government er egnet til at imødekomme disse krav, såfremt det vurderes, at kunden er berettiget til denne brug. Microsofts validering af berettigelse omfatter bekræftelse af håndtering af data i henhold til ITAR (International Traffic in Arms Regulations), retshåndhævelsesdata i henhold til FBI's CJIS-politik (Criminal Justice Information Services) eller andre offentligt regulerede eller kontrollerede data. Validering kan kræve sponsorat af en offentlig myndighed med specifikke krav til håndteringen af data.
+Power Automate US Government er tilgængelig for (1) amerikanske føderale, statslige, lokale, tribale og regionale offentlige institutioner og (2) andre enheder, der håndterer data, der er underlagt offentlige krav og bestemmelser, samt i de tilfælde, hvor brugen af Power Automate US Government er egnet til at imødekomme disse krav, såfremt det vurderes, at kunden er berettiget til denne brug. Microsofts validering af berettigelse omfatter bekræftelse af håndtering af data i henhold til ITAR (International Traffic in Arms Regulations), retshåndhævelsesdata i henhold til FBI's CJIS-politik (Criminal Justice Information Services) eller andre offentligt regulerede eller kontrollerede data. Validering kan kræve sponsorat af en offentlig myndighed med specifikke krav til håndteringen af data.
 
-Enheder med spørgsmål om berettigelse til Power Automate US Government skal kontakte deres kontoteam. Microsoft validerer berettigelsen igen, når kundekontrakter om Power Automate US Government fornyes.
+Enheder med spørgsmål om berettigelse til Power Automate US Government skal kontakte deres kontoteam. Microsoft validerer berettigelse igen, når kundekontrakter om Power Automate US Government fornyes.
 
-## <a name="power-automate-us-government-plans"></a>Planer i forbindelse med Power Automate US Government-planer
+## <a name="power-automate-us-government-plans"></a>Power Automate US Government-planer
 
 Adgang til Power Automate US Government-planer er begrænset til de tilbud, der er beskrevet i følgende afsnit; hver enkelt plan tilbydes som et månedsabonnement og kan gives i licens til et ubegrænset antal brugere:
 
@@ -62,40 +62,40 @@ Adgang til Power Automate US Government-planer er begrænset til de tilbud, der 
 
 - Power Automate/Power Apps Plan 2 US Government
 
-- Ud over de separate planer er Power Automate- og Power Apps-funktionerne også inkluderet i visse Office 365 US Government- og Dynamics 365 US Government-planer, hvilket giver kunderne mulighed for at udvide og tilpasse Office 365 og Dynamics 365 med Power Automate- og Power Apps-funktioner.
+- Ud over de separate planer, er Power Automate- og Power Apps-funktioner også inkluderet i visse Office 365 US Government- og Dynamics 365 US Government-planer, der gør det muligt for kunderne at udvide og tilpasse Office 365 og Dynamics 365 med Power Automate- og Power Apps-funktioner.
 
 > [!NOTE]
 > Licenser er tilgængelige i kundelejere fra midten af april 2019.
 
-Yderligere oplysninger samt oplysninger om forskellene i funktionaliteten mellem disse licensgrupper er beskrevet mere detaljeret her: [Oplysninger om Power Automate-licenser](https://flow.microsoft.com/pricing/).
+Yderligere oplysninger samt oplysninger om forskellene i funktionaliteten mellem disse licensgrupper er beskrevet mere detaljeret her: [Power Automate-licensoplysninger](https://flow.microsoft.com/pricing/).
 
-Power Automate US Government er tilgængelig gennem volumenlicens og Cloud Solution Provider-købskanaler.
+Power Automate US Government er tilgængelig via udbyder af volumenlicens-og Cloud Solution Provider-købskanaler.
 
 ## <a name="differences-between-customer-data-and-customer-content"></a>Forskelle i kundedata og kundeindhold
 
 Kundedata, som defineret i Vilkår for onlinetjenester, betyder alle data, herunder alle tekst-, lyd-, video- eller billedfiler og al software, der er leveret til Microsoft af eller på vegne af kunder ved hjælp af en onlinetjeneste.
 
-Kundeindhold refererer til et bestemt undersæt af kundedata, der er oprettet direkte af brugere, f.eks. indhold, der er gemt i databaser gennem poster i [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)-enhederne (f.eks. kontaktoplysninger). Indhold opfattes generelt som fortrolige oplysninger og som et led i normale tjenestehandlinger sendes de ikke ukrypteret via internettet.
+Kundeindhold henviser til en bestemt del af kundedata, der er direkte oprettet af brugere, f.eks. indhold, der er lagret i databaser via poster i [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)-objekter (f.eks. kontaktoplysninger). Indhold opfattes generelt som fortrolige oplysninger og som et led i normale tjenestehandlinger sendes de ikke ukrypteret via internettet.
 
-Du kan få flere oplysninger om, hvordan Power Automate beskytter kundedata, i [Microsoft Online Services Center for sikkerhed og rettigheder](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
+Du kan finde flere oplysninger om, hvordan Power Automate beskytter kundedata, på [Microsoft Sikkerhedscenter for onlinetjenester](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
-## <a name="data-segregation-for-government-community-cloud"></a>Dataopdeling for Government Community Cloud
+## <a name="data-segregation-for-government-community-cloud"></a>Opdeling af data for Government Community Cloud
 
-Når Power Automate-tjenesten er klargjort som en del af Power Automate US Government, tilbydes den i overensstemmelse med NIST Special Publication 800-145 (National Institute of Standards og Technology).
+Når Power Automate-tjenesten er klargjort som en del af Power Automate US Government, tilbydes den i overensstemmelse med National Institute of Standards and Technology (NIST) Special Publication 800-145.
 
-Microsoft refererer til dette tilbud som Government Community Cloud (GCC).
+Microsoft kalder dette tilbud for Government Community Cloud (GCC).
 
-Ud over den logiske adskillelse af kundeindhold på programlaget giver Power Automate Government-tjenesten din organisation et sekundært lag af fysisk adskillelse i forbindelse med kundeindhold ved hjælp af en infrastruktur, der er adskilt fra den infrastruktur, der bruges til kommercielle Power Automate-kunder. Dette omfatter brugen af Azure-tjenester i Azures Government Cloud. Du kan få mere at vide under [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
+Ud over den logiske opdeling af kundeindhold på programniveau giver Power Automate Government-tjenesten din organisation et sekundært lag af fysisk opdeling af kundeindhold ved hjælp af infrastrukturer, der er adskilt fra den infrastruktur, der anvendes til kommercielle Power Automate-kunder. Dette omfatter brug af Azure-tjenester i Azures Government Cloud. Du kan få mere at vide under [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
 
 ## <a name="customer-content-located-within-the-united-states"></a>Kundeindhold, der er placeret i USA
 
 Power Automate US Government kører i datacentre, som fysisk er placeret i USA, og her gemmes kundeindhold som inaktive data i datacentre, der fysisk kun er placeret i USA.
 
-## <a name="restricted-data-access-by-administrators"></a>Begrænset dataadgang for administratorer
+## <a name="restricted-data-access-by-administrators"></a>Begrænset dataadgang af administratorer
 
-Microsoft-administratorers adgang til Power Automate US Government-kundeindhold er begrænset til medarbejdere, der er amerikanske statsborgere. Der udføres et baggrundstjek af disse medarbejdere i overensstemmelse med de relevante regeringsstandarder.
+Adgang til Power Automate US Government-kundeindhold for Microsoft-administratorer er begrænset til medarbejdere, der er amerikanske statsborgere. Disse personer gennemgår baggrundsundersøgelser i overensstemmelse med relevante offentlige standarder.
 
-Power Automate-supportmedarbejdere og tekniske medarbejder har som udgangspunkt ikke adgang til kundeindhold, der hostes i Power Automate US Government. Alle medarbejdere, der anmoder om midlertidig tilladelse, som giver dem adgang til kundeindhold, skal først bestå følgende baggrundstjek.
+Power Automate-support og tekniske servicemedarbejdere har ikke løbende adgang til kundeindhold, der har Power Automate US Government som vært. Alle medarbejdere, der anmoder om midlertidig tilladelse, som giver dem adgang til kundeindhold, skal først bestå følgende baggrundstjek.
 
 |Screening og baggrundstjek af Microsoft-personale <sup>1</sup>| Beskrivelse|
 |---------------------------------------------------------------|-----------------------------------|
@@ -110,59 +110,59 @@ Power Automate-supportmedarbejdere og tekniske medarbejder har som udgangspunkt 
 | Kontrol af fingeraftryk| Kontrol af fingeraftryk i forhold til FBI's databaser|
 | Screening af CJIS-baggrund| Gennemgang af kriminalhistorik med statslige domfældelser på føderalt og statsligt plan af en statsudnævnt CSA-myndighed i hver enkelt stat, der har tilmeldt sig Microsofts CJIS IA-program |
 
-<sup>1</sup> Gælder kun for medarbejdere med midlertidig eller stående adgang til kundeindhold, der hostes i Power Automate US Government (GCC).
+<sup>1</sup> Gælder kun for personer med midlertidig eller løbende adgang til kundeindhold, der har Power Automate US Government (GCC) som vært.
 
-## <a name="certifications-and-accreditations"></a>Certificeringer og akkrediteringer
+## <a name="certifications-and-accreditations"></a>Certificeringer og godkendelser
 
-Power Automate US Government er udviklet til at understøtte FedRAMP-akkreditering (Federal Risk and Authorization Management Program) på niveauet High Impact (Stor indvirkning). Dette program resulterer i justering iht. DoD DISA IL2. FedRAMP-artefakter er tilgængelige til gennemsyn af føderale kunder, som skal overholde FedRAMP. Føderale myndigheder kan gennemse disse artefakter som et led i deres gennemgang for at udstede en ATO (dvs. driftsgodkendelse).
+Power Automate US Government er udviklet til at understøtte Federal Risk and Authorization Management Program-akkrediteringen (FedRAMP) på et niveau med høj effekt. Dette program resulterer i justering iht. DoD DISA IL2. FedRAMP-artefakter er tilgængelige til gennemsyn af føderale kunder, som skal overholde FedRAMP. Føderale myndigheder kan gennemse disse artefakter som et led i deres gennemgang for at udstede en ATO (dvs. driftsgodkendelse).
 
 > [!NOTE]
 > I øjeblikket gennemgås Power Automate US Government-tjenester i forhold til FedRAMP, men de er tildelt en SAR (Security Assessment Report) af en kvalificeret [3PAO](https://www.fedramp.gov/3pao-requirements-update/).
 
 Da Microsoft vil opdatere FedRAMP-artefakter som en del af standardgennemgangscyklusserne, opdateres indholdet tilsvarende.
 
-Power Automate US Government indeholder funktioner, der er udviklet til at understøtte kundernes CJIS-politikkrav til retshåndhævelsesinstanser. Gå til produktsiden for Power Automate US Government i Center for sikkerhed og rettigheder for at få flere detaljerede oplysninger om certificeringer og akkrediteringer.
+Power Automate US Government har funktioner, der er designet til et understøtte kunders krav til CJIS-politik for retshåndhævende myndigheder. Gå til produktsiden for Power Automate US Government i Center for sikkerhed og rettigheder for at få flere detaljerede oplysninger om certificeringer og akkrediteringer.
 
-Microsoft har udviklet platformen og driftsprocedurerne, så de opfylder kravene, der er tilpasset strukturen for overholdelse af DISA SRG IL4-standarderne. Microsoft forventer, at underleverandører til det amerikanske forsvarsministerium og andre føderale myndigheder, der i øjeblikket benytter Microsoft Office 365 GCC High, bruger GCC High-udrulningsmuligheden i Power Automate, hvilket muliggør og kræver, at kunderne bruger Azure AD Government til kundeidentiteter, i modsætning til GCC, som bruger den offentlige Azure AD. Til underleverandører til det amerikanske forsvarsministerium bruger Microsoft tjenesten på en måde, der gør det muligt for disse kunder at overholde ITAR- og DFARS-reglerne.
+Microsoft har udviklet platformen og driftsprocedurerne, så de opfylder kravene, der er tilpasset strukturen for overholdelse af DISA SRG IL4-standarderne. Microsoft forventer, at vores amerikanske forsvarsministeriums kontraktansatte kundebase og andre føderale myndigheder, der i øjeblikket benytter Microsoft Office 365 GCC High, vil bruge GCC High-udrulningen for Power Automate US Government, som gør det muligt for og kræver, at kunder benytter Azure AD Government til kundeidentiteter, i modsætning til GCC, som udnytter det offentlige Azure AD. Til underleverandører til det amerikanske forsvarsministerium bruger Microsoft tjenesten på en måde, der gør det muligt for disse kunder at overholde ITAR- og DFARS-reglerne.
 
 ## <a name="power-automate-us-government-and-other-microsoft-services"></a>Power Automate US Government og andre Microsoft-tjenester
 
 Power Automate US Government indeholder flere funktioner, der tillader brugere at oprette forbindelse til og integrere med andre af Microsofts tjenestetilbud til store virksomheder, f.eks. Office 365 US Government, Dynamics 365 US Government og Power Apps US Government.
 
-Power Automate US Government kører i Microsofts datacentre i overensstemmelse med en offentlig cloududrulningsmodel med flere lejere; klientprogrammer, herunder, men ikke begrænset til webbrugerklienten, Power Automate-mobilprogrammet (når det er tilgængeligt) og et vilkårligt klientprogram fra tredjepart, som opretter forbinder til Power Automate US Government, er ikke en del af Power Automate US Governments akkrediteringsgrænse. Government-kunder er ansvarlige for at administrere disse.
+Power Automate US Government kører i Microsoft-datacentre i overensstemmelse med en offentlig skyimplementeringsmodel for flere lejere. Dog er klientprogrammer, herunder men ikke begrænset til webbrugerklienten, Power Automate-mobilapplikationen (når tilgængelig) og alle tredjepartsklientprogrammer, der kan oprette forbindelse til Power Automate US Government, ikke omfattet af akkrediteringsgrænsen for Power Automate US Government. Government-kunder er ansvarlige for at administrere disse.
 
-Power Automate US Government udnytter brugergrænsefladen for Office 365-kundeadministratorer i forbindelse med kundeadministration og fakturering.
+Power Automate 365 US Government udnytter Office 365-kundeadministratorens brugergrænseflade til administration af kunder og fakturering.
 
-Power Automate US Government vedligeholder de faktiske ressourcer, informationsflow og dataadministration samtidig med, at man stoler på, at Office 365 leverer de visuelle formater, som kundeadministratoren får vist via administrationskonsollen. I forbindelse med FedRAMP ATO-nedarvning anvender Power Automate US Government Azure ATO'er (herunder Azure for Government) til henholdsvis infrastruktur- og platformstjenester.
+Power Automate US Government vedligeholder de faktiske ressourcer, informationsstrøm og datastyring og anvender Office 365 til at levere de visuelle layouttyper, der præsenteres for kundeadministratoren gennem deres administrationskonsol. Med henblik på FedRAMP ATO-arv udnytter Power Automate US Government Azure (herunder Azure for Government) ATO'er til henholdsvis infrastruktur og platformservice.
 
-Hvis du bruger Active Directory Federation Services (AD FS) 2.0 og opretter politikker for at sikre, at brugerne opretter forbindelse til tjenesterne vha. enkeltlogon, vil alt kundeindhold, der er midlertidigt cachelagret, være placeret i USA.
+Hvis du implementerer brugen af Active Directory Federation Services (AD FS) 2.0 og konfigurerer politikker for at sikre, at brugerne opretter forbindelse til tjenester via enkeltlogon, er alt kundeindhold, der midlertidigt er gemt, placeret i USA.
 
-## <a name="power-automate-us-government-and-third-party-services"></a>Power Automate US Government og tredjepartstjenester
+## <a name="power-automate-us-government-and-third-party-services"></a>Power Automate US Government og tredjepartsservicer
 
-Power Automate US Government giver mulighed for at integrere tredjepartsprogrammer i tjenesten via [Connectorer](https://docs.microsoft.com/connectors/index). Disse tredjepartsprogrammer og -tjenester kan omfatte lagring, overførsel og behandling af din organisations kundedata på tredjepartssystemer, der ligger uden for Power Automate US Government-infrastrukturen og derfor ikke er dækket af de angivne standarder og forpligtelser til databeskyttelse, der ligger i Power Automate US Government.
+Power Automate US Government giver mulighed for at integrere tredjepartsprogrammer i tjenesten via [connectorer](https://docs.microsoft.com/connectors/index). Disse tredjepartsprogrammer og -tjenester kan omfatte lagring, overførsel og behandling af kundedata i din organisation på tredjepartssystemer, der ligger uden for Power Automate US Government-infrastrukturen og derfor ikke er omfattet af Power Automate US Governments overholdelse af angivne standarder og databeskyttelse.
 
 > [!TIP]
 > Gennemse erklæringerne om beskyttelse af personlige oplysninger og overholdelse af angivne standarder, som angivet af tredjeparter, når den relevante brug af disse tjenester i din organisation skal vurderes.
 
-## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government og Azure-tjenester
+## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government og Azure Services
 
-Power Automate US Government-tjenesterne udrulles til Microsoft Azure Government. Azure Active Directory (Azure AD) er ikke en del af Power Automate US Government-akkrediteringsgrænsen, men er afhængig af en kundes [Azure AD](https://azure.microsoft.com/services/active-directory/)-lejer i forbindelse med kundens lejer- og id-funktioner, herunder godkendelse, samlet godkendelse og licenser.
+Power Automate US Government-services er udrullet til Microsoft Azure Government. Azure Active Directory (Azure AD) er ikke en del af Power Automate US Government-akkrediteringsgrænsen, men er afhængig af en kundes [Azure AD](https://azure.microsoft.com/services/active-directory/)-lejer i forbindelse med kundens lejer og identitetsfunktioner, herunder godkendelse, Federated Authentication og licenser.
 
-Når en bruger i en organisation anvender ADFS forsøg til at få adgang til Power Automate US Government, omdirigeres brugeren til en logonside, der hostes på organisationens ADFS-server.
+Når en bruger i en organisation, der bruger ADFS, forsøger at få adgang til Power Automate US Government, omdirigeres brugeren til en logon-side, der hostes af organisationens ADFS-server.
 
 Brugeren angiver sine legitimationsoplysninger på organisationens ADFS-server. Organisationens ADFS-server forsøger at godkende legitimationsoplysningerne ved hjælp af organisationens Active Directory-infrastruktur.
 
 Hvis godkendelsen lykkes, udsteder organisationens ADFS-server en SAML-anmodning (Security Assertion Markup Language), der indeholder oplysninger om brugerens id og gruppemedlemskab.
 
-Kundens ADFS-server signerer denne anmodning ved hjælp af den ene halvdel af et asymmetrisk nøglepar, og derefter sender den anmodningen til Azure AD via krypteret TLS. Azure AD validerer signaturen ved hjælp af den anden halvdel af det asymmetriske nøglepar, og giver derefter adgang baseret på anmodningen.
+ADFS-kundeserveren underskriver denne billet ved hjælp af halvdelen af et asymmetrisk nøglepar og sender derefter billetten til Azure AD via krypteret TLS. Azure AD validerer signaturen ved hjælp af den anden halvdel af det asymmetriske nøglepar og giver derefter adgang baseret på billetten.
 
-Oplysningerne om brugerens id og gruppemedlemskab forbliver krypteret i Azure AD. Det er med andre ord kun begrænsede oplysninger, der kan identificere brugeren, der gemmes i Azure AD.
+Oplysningerne om brugerens identitet og gruppemedlemskab forbliver krypterede i Azure AD. Med andre ord gemmes kun begrænsede brugeridentificerbare oplysninger i Azure AD.
 
-Du kan finde alle oplysninger om Azure AD-sikkerhedsarkitekturen og kontrolimplementeringen i Azure SSP.
+Flere oplysninger om Azure AD-sikkerhedsarkitektur og implementering af kontrolelementer findes i Azure SSP.
 
-Azure AD-kontoadministrationstjenesterne hostes på fysiske servere, der administreres af Microsoft Global Foundation Services (GFS). Netværksadgangen til disse servere styres af GFS-administrerede netværksenheder ved hjælp af regler, der er angivet af Azure. Brugerne interagerer ikke direkte med Azure AD.
+Azure AD-kontoadministrationstjenester er tilknyttet fysiske servere, der administreres af Microsoft Global Foundation Services (GFS). Netværksadgangen til disse servere styres af GFS-administrerede netværksenheder ved hjælp af regler, der er angivet af Azure. Brugere interagerer ikke direkte med Azure AD.
 
-## <a name="power-automate-us-government-service-urls"></a>URL-adresser til Power Automate US Government-tjenesten
+## <a name="power-automate-us-government-service-urls"></a>Power Automate US Government-URL-serviceadresser
 
 Du kan bruge forskellige URL-adresser til at få adgang til Power Automate US Government-miljøer som vist i følgende tabel. Tabellen indeholder også de kommercielle URL-adresser som kontekstafhængig reference, som du muligvis allerede kender.
 
@@ -203,9 +203,9 @@ Se [IP-områder](https://www.microsoft.com/download/confirmation.aspx?id=57063) 
 Se [IP-områder](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud. usgovtexas og AzureCloud. usgovvirginia for at give adgang til Common Data Service-forekomster, som brugere og administratorer kan oprette i din lejer. 
 
 
-## <a name="connectivity-between-power-automate-us-government-and-public-azure-cloud-services"></a>Forbindelse mellem Power Automate US Government- og Public Azure Cloud-tjenester
+## <a name="connectivity-between-power-automate-us-government-and-public-azure-cloud-services"></a>Forbindelse mellem Power Automate US Government og Public Azure Cloud-tjenester
 
-Azure er fordelt på flere cloudmiljøer. Som standard har lejere tilladelse til at åbne firewallregler for en cloudspecifik instans, men det er anderledes for netværk på tværs af cloudmiljøer, hvor der kræves åbning af specifikke firewallregler for at kommunikere mellem tjenester. Hvis du er Power Automate-kunde, og du har eksisterende SQL-instanser i den offentlige Azure-cloud, som du skal bruge til at få adgang, skal du åbne specifikke firewallporte i SQL til Azure Government Cloud IP-pladsen for følgende datacentre:
+Azure er fordelt blandt adskillige cloud-tjenester. Som standard har lejere tilladelse til at åbne firewallregler for en cloudspecifik instans, men det er anderledes for netværk på tværs af cloudmiljøer, hvor der kræves åbning af specifikke firewallregler for at kommunikere mellem tjenester. Hvis du er Power Automate-kunde, og du har eksisterende SQL-instanser i den offentlige Azure-cloud, som du skal bruge til at få adgang, skal du åbne specifikke firewallporte i SQL til Azure Government Cloud IP-pladsen for følgende datacentre:
 
 - USGov Virginia
 - USGov Texas
@@ -214,25 +214,25 @@ Se dokumentet [Azure IP-intervaller og -tjenestetags – US Government Cloud](ht
 
 ## <a name="on-premises-data-gateway-configuration"></a>Konfigurer en datagateway i det lokale miljø
 
-Installér en [datagateway i det lokale miljø](https://docs.microsoft.com/flow/gateway-manage) for at overføre data hurtigt og sikkert mellem en lærredsapp, der er bygget i Power Automate og en datakilde, der ikke er i cloudmiljøet. Eksempler omfatter SQL Server-databaser eller SharePoint-websteder i det lokale miljø.
+Installér en [datagateway i det lokale miljø](https://docs.microsoft.com/flow/gateway-manage) for at overføre data hurtigt og sikkert mellem en lærredsapp, der er bygget i Power Automate og en datakilde, der ikke er i cloudmiljøet. Eksempler omfatter SQL Server-databaser eller SharePoint-websites i det lokale miljø.
 
 Hvis din organisation (lejer) allerede har konfigureret og oprettet forbindelse til datagatewayen i det lokale miljø for Power BI US Government, vil den proces, som din organisation udførte for at aktivere den, også muliggøre forbindelse til Power Automate i det lokale miljø. Hvis du ikke kan oprette forbindelse til din lejer, skal du muligvis gå gennem en hvidlistningsproces, som aktiverer denne egenskab for lejeren. Hvis denne situation opstår, kan du åbne en supportanmodning for at få taget højde for dine behov. Supportteamet følger en fastlagt proces i forbindelse med løsningen af din anmodning.
 
-## <a name="power-automate-us-government-feature-limitations"></a>Funktionsbegrænsninger i Power Automate US Government
+## <a name="power-automate-us-government-feature-limitations"></a>Begrænsninger i Power Automate US Government-funktioner
 
 Nogle af de funktioner, der er tilgængelige i den kommercielle version af Flow, er ikke tilgængelige for Flow US Government-kunder. Flow-teamet arbejder aktivt på at gøre disse funktioner tilgængelige for US Government-kunder og opdaterer denne artikel, når funktionerne bliver tilgængelige.
 
-- Udløs Power Automate US Government-flow *vha.* SharePoint-lister
+- Udløser Power Automate US Government-flow *fra*SharePoint-lister
 
-- Udløs Power Automate US Government-flow *vha.* Dynamics 365 GCC
+- Udløser Power Automate US Government-flow *fra* Dynamics 365 GCC
 
-- [AI Builder](https://docs.microsoft.com/ai-builder/) er endnu ikke tilgængelig for GCC- og GCC High-lejere.
+- [AI Builder](https://docs.microsoft.com/ai-builder/) er endnu ikke tilgængelig til GCC- og GCC High-lejere.
 
 - [Godkendelser](./modern-approvals.md) er endnu ikke tilgængelige for GCC- og GCC High-lejere.
 
 - [Forbrugsanalyse](https://flow.microsoft.com/blog/admin-analytics/)
 
-- [Power Automate-mobilapp](https://docs.microsoft.com/flow/mobile-manage-flows)
+- [Power Automate-mobilapplikation](https://docs.microsoft.com/flow/mobile-manage-flows)
 
 - [Indsender skabeloner](https://docs.microsoft.com/flow/publish-a-template)
 
@@ -243,7 +243,7 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af Flow,
 
 - [Power BI](https://docs.microsoft.com/connectors/powerbi/) – Power Automate US Government understøtter ikke Power BI på nuværende tidspunkt.
 
-- [Power Platform Administration](https://docs.microsoft.com/power-platform/admin/admin-documentation) – Du kan bruge Administration til at [åbne supportanmodninger](https://docs.microsoft.com/power-platform/admin/get-help-support), men der er ikke andre funktioner tilgængelig i US Government-lejere i øjeblikket.
+- [Power Platform Administration](https://docs.microsoft.com/power-platform/admin/admin-documentation) – Du kan brug administrationen til at [åbne supportanmodninger](https://docs.microsoft.com/power-platform/admin/get-help-support), men andre funktioner er i øjeblikket ikke tilgængelige for US Government-lejere.
 
 ### <a name="see-also"></a>Se også
 

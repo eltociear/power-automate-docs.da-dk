@@ -15,16 +15,16 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: d65be1552c3e748e4910c4fb942a60322f6f1e19
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74363263"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296565"
 ---
-# <a name="work-with-business-process-flows-using-code"></a>Arbejd med forretningsprocesforløb ved hjælp af kode
+# <a name="work-with-business-process-flows-using-code"></a>Arbejd med forretningsprocesflows ved hjælp af kode
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Med et *forretningsprocesforløb* kan du oprette mere effektive og strømlinede salgs- og serviceprocesser samt andre forretningsprocesser. Der oprettes en visualisering af din forretningsproces ved at placere specielle kontrolelementer øverst i objektformularerne. Brugerne føres gennem forskellige faser i salgs-, marketing- og serviceprocesser, indtil forløbet er fuldført. Hver proces understøtter flere faser og trin. Du kan tilføje eller fjerne trin, ændre rækkefølgen af trin eller føje nye objekter til forretningsprocesforløbet.  
+Med et *forretningsprocesforløb* kan du oprette mere effektive og strømlinede salgs- og serviceprocesser samt andre forretningsprocesser. Der oprettes en visualisering af din forretningsproces ved at placere specielle kontrolelementer øverst i objektformularerne. Brugere bliver ført gennem forskellige faser af salgs-, marketing- og serviceprocesser hen mod afslutning. Hver proces understøtter flere faser og trin. Du kan tilføje eller fjerne trin, ændre rækkefølgen af trin eller føje nye objekter til forretningsprocesforløbet.  
   
 Forskellige forekomster af forretningsprocesforløb kan køre samtidigt i den samme objektpost. Brugerne kan skifte mellem samtidige forretningsprocesforekomster og genoptage deres arbejde i en aktuel fase i processen. 
 
@@ -36,9 +36,9 @@ Dette emne indeholder oplysninger om, hvordan du programmeringsmæssigt kan arbe
 <a name="PrereqsBPF"></a>   
 ## <a name="prerequisites-for-business-process-flow"></a>Forudsætninger for forretningsprocesforløb 
 
-Brugerdefinerede poster og poster med opdaterede brugergrænsefladeformularer kan indgå i et forretningsprocesforløb. For de opdaterede brugergrænsefladeobjekter er egenskaben <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> angivet til `true`. 
+Brugerdefinerede poster og poster med opdaterede brugergrænsefladeformularer kan indgå i et forretningsprocesforløb. De opdaterede brugergrænsefladeobjekter har egenskaben <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> indstillet til `true`. 
 
-Du aktiverer et objekt for forretningsprocesforløbet ved at angive egenskaben <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> til `true`.
+Hvis du vil aktivere et objekt for forretningsprocesforløbet, skal du indstille egenskaben <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> til `true`.
 
 > [!IMPORTANT]
 >  Aktivering af et objekt for forretningsprocesforløb er en envejsproces. Du kan ikke tilbageføre den.
@@ -62,7 +62,7 @@ Et forretningsprocesforløb gemmes i objektet <xref:Microsoft.Dynamics.CRM.workf
 
 <a name="BPFEntity"></a>   
 ## <a name="business-process-flow-entity"></a>Objekt i forretningsprocesforløb 
- Når du aktiverer en definition af et forretningsprocesforløb ved at ændre tilstanden for den tilsvarende objektpost `Workflow` eller ved hjælp af designeren til forretningsprocesforløb, oprettes et brugerdefineret objekt med følgende navn automatisk for at gemme forekomster af det aktiverede forretningsprocesforløb: " *\<activesolutionprefix >* _ *\<uniquename >* ", hvor uniquename er afledt af det navn, du angiver.  
+ Når du aktiverer en definition af et forretningsprocesforløb ved at ændre tilstanden for den tilsvarende objektpost `Workflow` eller ved hjælp af designeren til forretningsprocesforløb, oprettes et brugerdefineret objekt med følgende navn automatisk for at gemme forekomster af det aktiverede forretningsprocesforløb: "*\<activesolutionprefix >*_*\<uniquename >*", hvor uniquename er afledt af det navn, du angiver.  
   
  Hvis du f.eks. angav "My Custom BPF" som navn på definitionen af forretningsprocesforløbet og bruger standardudgiveren (new) til din aktive løsning, bliver navnet på det brugerdefinerede objekt, der oprettes til lagring af procesforekomster, "new_mycustombpf".  
   
@@ -78,7 +78,7 @@ Du kan hente navnet på objektet for forretningsprocesforløbet på en af følge
 - **Ved hjælp af brugergrænsefladen**: Brug tilpasningsbrugergrænsefladen til at gå til forretningsprocesforløbsobjektet:
 
     ![](media/bpf-entity-name.png)
-- **Ved hjælp af Web-API'en**: Brug følgende anmodning:
+- **Ved hjælp af Web-API'EN**: Brug følgende anmodning:
 
     **Anmodning**
 
@@ -86,7 +86,7 @@ Du kan hente navnet på objektet for forretningsprocesforløbet på en af følge
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
-    **Svar**
+    **Response**
     ```
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
@@ -130,9 +130,9 @@ Du kan hente navnet på objektet for forretningsprocesforløbet på en af følge
 <a name="BPFSecurity"></a>   
 ## <a name="manage-security-for-business-process-flows"></a>Administrer sikkerhed for forretningsprocesflowet
 
-Det brugerdefinerede objekt, der automatisk oprettes under aktivering af et forretningsprocesflow til lagring af instanser af forretningsprocesflow overholder standardsikkerhedsmodellen som ethvert andet brugerdefineret objekt i Common Data Service. Det betyder, at rettigheder, der er tildelt på disse objekter definerer runtime-tilladelserne for brugerne til forretningsprocesforløb.
+Det brugerdefinerede objekt, der oprettes automatisk under aktivering af en forretningsprocesforløb for at gemme forekomster af forretningsprocesforløb, overholder standardsikkerhedsmodellen for alle andre brugerdefinerede objekter i Common Data Service. Det betyder, at rettigheder, der er tildelt på disse objekter definerer runtime-tilladelserne for brugerne til forretningsprocesforløb.
 
-Det brugerdefinerede objekt for forretningsprocesflowet har organisationsomfang. De almindelige tilladelser til oprettelse, hentning, opdatering og sletning for denne enhed definerer den tilladelse, som brugere har baseret på deres tildelte roller. Når det brugerdefinerede objekt for forretningsprocesflowet er oprettet, er det som standard kun sikkerhedsrollerne **Systemadministrator** og **Systemtilpasser**, der tildeles adgang til det, og du skal udtrykkeligt give tilladelser til det nye objekt for forretningsprocesflowet (f.eks. **My Custom BPF**) for andre sikkerhedsroller efter behov.
+Det brugerdefinerede objekt i forretningsprocesforløbet har organisationsomfang. De almindelige tilladelser til oprettelse, hentning, opdatering og sletning for denne enhed definerer den tilladelse, som brugere har baseret på deres tildelte roller. Når det brugerdefinerede objekt for forretningsprocesflowet er oprettet, er det som standard kun sikkerhedsrollerne **Systemadministrator** og **Systemtilpasser**, der tildeles adgang til det, og du skal udtrykkeligt give tilladelser til det nye objekt for forretningsprocesflowet (f.eks. **My Custom BPF**) for andre sikkerhedsroller efter behov.
 
 ![](media/bpf-privileges.png)
 
@@ -143,7 +143,7 @@ Det brugerdefinerede objekt for forretningsprocesflowet har organisationsomfang.
 > [!IMPORTANT]
 > Skift til en anden procesforekomst for en objektpost understøttes kun via brugergrænsefladen (klient) eller programmeringsmæssigt ved hjælp af oplysninger, der er tilgængelige i dette afsnit. Du kan ikke længere bruge `SetProcess`-meddelelsen (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> eller <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) til at skifte processer ved hjælp af programmering (angiv et andet forretningsprocesflow som den aktive procesforekomst) for destinationsobjektposten. 
 
- Lad os se nærmere på følgende eksempel, hvor vi har et forretningsprocesflow på tværs af objekter, "My Custom BPF", med 3 faser: S1:Konto, S2:Konto og S3:Kontakt. 
+ Lad os se nærmere på følgende eksempel, hvor vi har et forretningsprocesflow på tværs af objekter, "My Custom BPF", med 3 faser: S1:Account, S2:Account og S3:Contact. 
 
  ![](media/sample-bpf.png)
  
@@ -175,7 +175,7 @@ Du opretter en objektpost for et forretningsprocesforløb ved at angive følgend
     GET [Organization URI]/api/data/v9.0/processstages?$select=stagename&$filter=processid/workflowid eq 2669927e-8ad6-4f95-8a9a-f1008af6956f HTTP/1.1
     ```
 
-    **Svar**
+    **Response**
 
     ```http
     {
@@ -217,7 +217,7 @@ Accept: application/json
 }
 ```
 
-**Svar**
+**Response**
 
 ```http
 HTTP/1.1 204 No Content
@@ -225,7 +225,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/new_mycustombpfs(cc3f721b-026e-e811-80ff-00155d513100)
 ```
 
-Bemærk, at hvis du vil oprette en forekomst for definitionen af forretningsprocesforløbet med den aktive fase angivet som en ***anden*** fase end den første fase, skal du også angive `traversedpath` i din anmodning. Den gennemgåede sti er den kommaseparerede tekststreng for procesfase-id'er, der repræsenterer besøgte faser i forekomsten af forretningsprocesforløbet. Følgende anmodning opretter en forekomst for en kontopost (ID=679b2464-71b5-e711-80f5-00155d513100) og en aktiv fase, der er angivet som den anden fase, F2 (ID=19a11fc0-3398-4214-8522-cb2a97f66e4b).
+Bemærk, at hvis du vil oprette en forekomst for definitionen af forretningsprocesforløbet med den aktive fase angivet som en ***anden*** fase end den første fase, skal du også angive `traversedpath` i din anmodning. Den gennemgåede sti er den kommaseparerede tekststreng for procesfase-id'er, der repræsenterer besøgte faser i forekomsten af forretningsprocesforløbet. Følgende anmodning opretter en forekomst for enkontopost (ID= 679b2464-71b5-e711-80f5-00155d513100) og aktiv faseangivet som anden fase, F2 (ID= 19a11fc0-3398-4214-8522-cb2a97f66e4b).
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -265,23 +265,23 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Skift tilstanden for en procesforekomst: Afbryd, genaktiver eller udfør 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Skift tilstand for en procesforekomst: Afbryd, genaktiver eller afslut 
 
 En procesforekomst kan have en af følgende tilstande: **Aktiv**, **Afsluttet** eller **Afbrudt**. Tilstanden bestemmes af følgende attributter for procesforekomstposten:
 
 - **statecode**: Viser statussen for procesforekomsten.
 
-    |Værdi|Navn|
+    |Værdi|Etiket|
     |-----|-----|
     |0    |Aktiv|
-    |1    |Inaktiv|
+    |0    |Inaktiv|
 
-- **statuscode**: Viser oplysninger om status for procesforekomst.
+- **statuscode**: Viser oplysninger om status for procesforekomsten.
 
-    |Værdi|Navn|
+    |Værdi|Etiket|
     |-----|-----|
-    |1    |Aktiv|
-    |2    |Afsluttet|
+    |0    |Aktiv|
+    |2    |Udført|
     |3    |Afbrudt|
 
 Hvis du vil **afbryde** en procesforekomst, skal du bruge følgende anmodning, og angive værdierne `statecode` og `statuscode` korrekt:
@@ -332,32 +332,32 @@ Brug følgende Web-API-anmodning:
 DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
 ```  
 
-**Svar**
+**Response**
 
 Hvis posten findes, får du et normalt svar med status 204 for at angive, at sletningen blev fuldført. Hvis objektet ikke findes, får du et svar med status 404.
 
 ## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>Brug meddelelserne RetrieveProcessInstances og RetrieveActivePath
 
-Brug meddelelsen `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> eller <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) til at hente alle forekomster af et forretningsprocesforløb for en objektpost på tværs af alle forretningsprocesdefinitioner. De forekomster af en forretningsprocesforløb, der returneres for et objekt, er sorteret på baggrund af attributten `modifiedon` for forekomsten. Den senest ændrede forekomst af forretningsprocesforløb er f.eks. den *første* post i den returnerede samling. Den senest ændrede forekomst af forretningsprocesforløbet er den, der er aktiv i brugergrænsefladen for en objektpost.  
+Brug meddelelsen `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> eller <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) til at hente alle forekomster af et forretningsprocesforløb for en objektpost på tværs af alle forretningsprocesdefinitioner. Forekomsterne i forretningsprocesforløbet, som er returneret for et objekt, bestilles ud fra attributten `modifiedon` for forekomsten. Den senest ændrede forekomst af forretningsprocesforløb er f.eks. den *første* post i den returnerede samling. Den senest ændrede forekomst af forretningsprocesforløbet er den, der er aktiv i brugergrænsefladen for en objektpost.  
   
 Hver forekomstpost i et forretningsprocesforløb, der returneres for en objektpost som følge af brugen af meddelelsen `RetrieveProcessInstances`, gemmer id'et for den aktive fase i attributten `processstageid`, der kan bruges til at finde den aktive fase og derefter flytte til den forrige eller næste fase. Det gør du ved først at finde den aktive sti til en forekomst af et forretningsprocesforløb og de faser, der er tilgængelige i forekomsten af forretningsprocesforløbet, ved hjælp af meddelelsen `RetrieveActivePath` (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> eller <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
   
  Når du har oplysninger om den aktive fase og den aktive sti for et forretningsprocesforløb, kan du bruge oplysningerne til at gå til den forrige eller næste fase på den aktive sti. Hvis du går fremad i faserne, skal det ske i sekvenser, dvs. du kan kun gå videre til den næste fase på den aktive sti.   
   
- Du kan få vist hele kodeeksemplet med brugen af disse to metoder og fasenavigation ved hjælp af [Organization Service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata) i [Eksempel: Arbejd med forretningsprocesflow](sample-work-business-process-flows.md). 
+ Du kan få vist hele kodeeksemplet med brugen af disse to metoder og fasenavigation ved hjælp af [Organization Service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata) i [Eksempel: Arbejd med forretningsprocesforløb](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
 ## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Anvend forretningsprocesforløb under oprettelse af en objektpost
 
-Dette afsnit indeholder oplysninger om standardfunktionsmåden for automatisk anvendelse af forretningsprocesflow for nye objektposter, der er oprettet i Common Data Service, og hvordan du kan tilsidesætte den for at anvende et forretningsprocesflow efter eget valg for nye objektposter.
+Dette afsnit indeholder oplysninger om standardfunktionsmåden for automatisk anvendelse af forretningsprocesforløb på nye objektposter, der er oprettet i Common Data Service, og hvordan du kan tilsidesætte det for at anvende et forretningsprocesforløb efter eget valg på nye objektposter.
 
-I forbindelse med et objekt, der har flere definerede forretningsprocesforløb, anvender systemet som standard et forretningsprocesforløb for den nye objektpost ved hjælp af følgende logik i flere trin:
+For et objekt, hvor der er defineret flere forretningsprocesforløb, anvender systemet som standard et forretningsprocesforløb til det nye objekt ved hjælp af følgende logik i flere trin:
 1. Identificer alle forretningsprocesforløb, der gælder for den nye objektpost, på baggrund af attributten **Workflow.PrimaryEntity** i posterne for definitionen af forretningsprocesforløbet.
-2. Identificer de definitioner af forretningsprocesforløb, som den aktuelle bruger har adgang til. Du kan finde oplysninger om, hvordan adgang til et forretningsprocesforløb fastsættes og styres, i [Administrer sikkerhed for forretningsprocesforløb](#BPFSecurity) tidligere i dette emne.<br/>  
+2. Identificer de definitioner for forretningsprocesforløbet, som den aktuelle bruger har adgang til. Du kan finde oplysninger om, hvordan adgang til et forretningsprocesforløb fastsættes og styres, i [Administrer sikkerhed for forretningsprocesforløb](#BPFSecurity) tidligere i dette emne.<br/>  
 3. Alle definitioner af forretningsprocesforløb i systemet er underlagt en global rækkefølge pr. objekt. Rækkefølgen af forretningsprocesforløbet er gemt i attributten **Workflow.ProcessOrder**. Definitionerne af et forretningsprocesforløb for et objekt er sorteret på baggrund af denne rækkefølge, og det objekt med den mindste værdi i rækkefølgen er valgt.
-4. Hvis objektposten er oprettet ud fra et virksomhedsprogram (appmodul), anvendes flere niveauer af filtrering for at vælge det forretningsprocesforløb, der skal anvendes automatisk for den nye objektpost. Når brugerne arbejder i en app, kan de kun få adgang til de relevante objekter, forretningsprocesforløb, visninger og formularer, de har adgang i kraft af de sikkerhedsroller, der er tildelt virksomhedsprogrammet. 
-    - Hvis virksomhedsprogrammet ikke indeholder noget forretningsprocesforløb, anvendes forretningsprocesforløbet, som beskrevet indtil trin 3.
-    - Hvis virksomhedsappen har et eller flere forretningsprocesforløb, er det kun det forretningsprocesforløb, der præsenteres i appen, der er gældende. I dette tilfælde, når brugeren arbejder i konteksten af et virksomhedsprogram, filtreres listen med forretningsprocesforløb fra trin 3 yderligere til dem, der er del af det virksomhedsprogram, der er til stede i appmodulet, og sorteres på baggrund af procesrækkefølgen. 
+4. Hvis objektposten er oprettet ud fra en forretningsapp (appmodul), anvendes til sidst et eller flere filtreringsniveauer for at vælge det forretningsprocesforløb, der skal anvendes automatisk på den nye objektpost.Når brugerne arbejder i en app, kan de kun få adgang til relevante objekter, forretningsprocesforløb, visninger og formularer, som de har adgang til i henhold til de sikkerhedsroller, der er tildelt til forretningsappen. 
+    - Hvis forretningsappen ikke indeholder noget forretningsprocesforløb, anvendes forretningsprocesforløbet som forklaret indtil trin 3.
+    - Hvis forretningsappen har et eller flere forretningsprocesforløb, gælder kun de forretningsprocesforløb, der findes i appen. Når brugeren arbejder i en forretningsappkontekst, filtreres listen over forretningsprocesforløb fra trin 3 i dette er tilfælde yderligere med dem, der indgår i den forretningsapp, der allerede findes i appmodulet, og sorteres i procesrækkefølgen. 
     - Hvis der ikke er nogen forretningsprocesforløb i et virksomhedsprogram for objektet eller et, som brugeren har adgang til, anvendes der ikke noget forretningsprocesforløb for den nye objektpost.
 
 Du kan tilsidesætte, at standardlogikken for forretningsprocesforløb anvendes automatisk til nye objektposter. Det gør du ved at angive attributten **ProcessId** for objektet til en af følgende værdier, mens du opretter en ny objektpost:
@@ -373,7 +373,7 @@ Hvis du ikke angiver en værdi for attributten **ProcessId**, mens du opretter e
 
 De ældre procesrelaterede attributter (f.eks **ProcessId**, **StageId** og **TraversedPath**) for objekter, der er aktiveret for forretningsprocesforløb, frarådes allerede. Manipulation af disse ældre procesrelaterede attributter for målobjektposter garanterer ikke overensstemmelse med tilstanden for forretningsprocesforløbet, og er ***ikke*** et understøttet scenarie. Den anbefalede måde er at bruge attributterne for forretningsprocesforløbet som beskrevet tidligere i afsnittet [Opret, hent, opdater og slet objektposter i forretningsprocesforløb (procesforekomster)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
 
-Den eneste undtagelse til dette er ved at ændre attributten **ProcessId** vha. programmering, samtidig med at du opretter en objektpost til at tilsidesætte standardanvendelsen af forretningsprocesforløbet til den nye post, som forklaret i det forrige afsnit: [Anvend forretningsprocesforløb under oprettelse af en objektpost](#ApplyBPF).
+Den eneste undtagelse til dette er ved at ændre attributten **ProcessId** programmatisk, samtidig med at du opretter en objektpost til at tilsidesætte standardanvendelsen af forretningsprocesforløbet til den nye post, som forklaret i det forrige afsnit : [Anvend forretningsprocesforløb, mens du opretter en objektpost](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>Understøttelse på klientsiden af programmering til forretningsprocesforløb  
@@ -381,7 +381,7 @@ Den eneste undtagelse til dette er ved at ændre attributten **ProcessId** vha. 
   
 <a name="BKMK_MaxSettings"></a>   
 ## <a name="maximum-number-of-processes-stages-and-steps"></a>Det maksimale antal processer, faser og trin  
- Standardværdien for det maksimale antal aktiverede forretningsprocesforløb er 10 pr. objekt. Du kan angive en anden værdi ved hjælp af attributten `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. Hvis værdien er større end 10, kan det påvirke systemets ydeevne, når du skifter processer eller åbner en post, der har et tildelt forretningsprocesforløb. Dette kan være særligt mærkbart, hvis processer strækker sig over flere objekter.  
+ Standardværdien for det maksimale antal aktiverede forretningsprocesforløb er 10 pr. objekt. Du kan angive en anden værdi ved hjælp af `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`-attributten. Hvis værdien imidlertid er større end 10, vil systemets ydeevnen måske blive forringet, når du skifter processer eller åbner en post, der har et tildelt forretningsprocesforløb. Det kan være særlig mærkbart, hvis processerne strækker sig over flere objekter.  
   
  Følgende indstillinger kan ikke tilpasses:  
   

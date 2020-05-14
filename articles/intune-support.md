@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 521876e669e87c40f6108c46d7e4e0aee962ca34
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194318"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297533"
 ---
 # <a name="power-automate-mobile-app-supports-microsoft-intune"></a>Power Automate-mobilappen understøtter Microsoft Intune
 
@@ -31,14 +31,14 @@ Power Automate-mobilappen til iOS og Android understøtter administration af mob
 
 Organisationer vil gerne have mere kontrol over de data, der er placeret på medarbejdernes mobilenheder. Organisationer vil måske begrænse, hvordan disse data flyttes til enheden, og sikre, at dataene fjernes, hvis medarbejderen forlader organisationen.
 
-## <a name="what-is-microsoft-application-management-mam"></a>Hvad er administration af mobilapps (MAM)?
+## <a name="what-is-microsoft-application-management-mam"></a>Hvad er Microsoft Application Management (MAM)?
 
 MAM gør det muligt for organisationer at oprette politikker, der styrer, hvordan apps bruges i en lejer. Dette omfatter gennemtvingelse af kryptering af appdata, begrænsning af muligheden for at kopiere eller udtrække data til kun godkendte programmer eller gennemtvingelse af en pinkode på en enhed.
 
 ### <a name="prerequisites"></a>Forudsætninger
 
 - En [beskyttelsespolitik for apps](https://docs.microsoft.com/intune/app-protection-policies) i Intune.
-- En Azure Active Directory-gruppe (Azure AD).
+- En Azure Active Directory (Azure AD)-gruppe.
 - Firmaportal. En af de vigtigste fordele ved at bruge MAM er, at enhederne ikke behøver at være tilmeldt MAM i Intune. Det eneste, der kræves, er Firmaportal, som er tilgængelig fra App Store og Google Play Butik.
 - Version 2.31.0 af Power Automate-mobilappen til iOS, Android eller Windows Phone.
 

@@ -1,5 +1,5 @@
 ---
-title: Oversigt over områder til Power Automate | Microsoft Docs
+title: Oversigt over områder i Power Automate | Microsoft Docs
 description: Oversigt med spørgsmål og svar om områder i Power Automate
 services: ''
 suite: flow
@@ -25,7 +25,7 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862509"
+ms.locfileid: "3299139"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Ofte stillede spørgsmål om områder i Power Automate
 
@@ -76,7 +76,7 @@ Japan|Det østlige Japan, Det vestlige Japan
 Sydamerika|Det sydlige Brasilien
 Storbritannien|Det sydlige Storbritannien, Det vestlige Storbritannien
 
-## <a name="is-power-automate-available-in-national-clouds"></a>Er Power Automate tilgængelig i nationale clouds?
+## <a name="is-power-automate-available-in-national-clouds"></a>Er Power Automate tilgængelig i nationale skyer?
 Ja. [Få mere at vide](./us-govt.md).
 
 ## <a name="what-outbound-ip-addresses-are-used-in-each-region"></a>Hvilke udgående IP-adresser bruges i hvert område?

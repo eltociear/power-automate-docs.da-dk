@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4eaafb1a551cc3333cde2058aebc41076b0267bd
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194157"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297137"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Kør dine flows med fysiske bttns fra The Button Corporation (prøveversion)
 
@@ -70,7 +70,7 @@ Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at
    
     ![log på](./media/bttn-button-flows/sign-into-flow.png)
    
-    Bemærk! Du kan også oprette flow i mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+    Bemærk! Du kan også oprette flows i Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Skriv **bttn** i søgefeltet, og vælg derefter søgeikonet.
    
     ![søg](./media/bttn-button-flows/bttn-search-template.png)
@@ -80,13 +80,13 @@ Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at
    
     ![supportskabelon](./media/bttn-button-flows/bttn-select-template.png)
 
-### <a name="authorize-power-automate-to-connect-to-your-bttn"></a>Giv Power Automate tilladelse til at oprette forbindelse til din bttn
+### <a name="authorize-power-automate-to-connect-to-your-bttn"></a>Tillad Power Automate at oprette forbindelse til din bttn
 1. Hvis du bliver bedt om det, skal du logge på bttn og Office 365 Outlook-tjenester, og dermed aktiveres knappen **Fortsæt**.
    
     ![legitimationsoplysninger](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. Når du logger på bttn-tjenesten, skal du give Power Automate tilladelse til at bruge dine bttns.
    
-    **Vigtigt**! Hvis du ikke giver Power Automate tilladelse til at bruge dine bttns, kan du ikke se eller oprette forbindelse til dem fra Power Automate.
+    **Vigtigt!** Hvis du ikke giver Power Automate tilladelse til at bruge dine bttns, kan du ikke se eller oprette forbindelse til dem fra Power Automate.
    
     ![giv tilladelse](./media/bttn-button-flows/authorize-bttn.png)
 3. Når du er logget på begge tjenester, skal du vælge **Fortsæt**.
@@ -120,11 +120,11 @@ Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at
 
 ## <a name="troubleshooting"></a>Fejlfinding
 * Hvis dit flow ikke blev udløst, skal du logge på webstedet for The Button Corporation og bekræfte, om knapaktiviteten (tryk på knappen) registreres.
-* Du kan også analysere kørselsaktiviteten på webstedet Power Automate og kontrollere, om der er fejlmeddelelser.
+* Du kan også analysere kørselsaktiviteten på webstedet for Power Automate og kontrollere, om der er fejlmeddelelser.
 
 ## <a name="more-information"></a>Flere oplysninger
 * [Del knapflows](share-buttons.md).
 * Se, hvordan du kan bruge [knapudløsertokens](introduction-to-button-trigger-tokens.md) til at sende aktuelle data, når dine knapflows køres.
-* [Installér appen Power Automate til Android](https://aka.ms/flowmobiledocsandroid).
-* [Installér appen Power Automate til iOS](https://aka.ms/flowmobiledocsios).
+* [Installer Power Automate-appen for Android](https://aka.ms/flowmobiledocsandroid).
+* [Installer Power Automate-appen for iOS](https://aka.ms/flowmobiledocsios).
 

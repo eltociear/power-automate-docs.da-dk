@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d2a7cbf1f3bb582853583a790e2bd26f319655d3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195721"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297489"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Kom godt i gang med tokens, der udløser knap
 
@@ -34,23 +34,23 @@ Tokens, der udløser knap, er datapunkter, der er kendte og tilgængelige for en
 
 For eksempel, hvis du kører et knapflow på en smarttelefon, er det sandsynligt, at **telefonen kender tiden** på din aktuelle placering samt datoen og din nuværende adresse. I denne sammenhæng bestemmes tidspunktet, datoen og adressen for telefonens placering på tidspunktet for kørslen af knapflowet. De er automatisk tilgængelige til brug i et hvilket som helst knapflow, der bliver udført på enheden. Du kan bruge disse udløsertokens til at opbygge nyttige flows, der kan minimere gentagne opgaver, såsom at angive din placering eller at spore, hvor meget tid du brugte på en bestemt opgave eller et tjenestekald.
 
-### <a name="list-of-button-trigger-tokens"></a>Liste over tokens, der udløser knap?
+### <a name="list-of-button-trigger-tokens"></a>Liste over knapudløsende tokens
 Her er listen over tilgængelige tokens, der udløser knap, når du opretter dine knapflows.
 
 | Parameter | Beskrivelse |
 | --- | --- |
-| By |Byen, som enheden kører flowet i, bliver lokaliseret. |
-| Land/område |Landet/området, som enheden kører flowet i, bliver lokaliseret. |
-| Komplet adresse |Den komplette adresse, som enheden kører flowet på, bliver lokaliseret. |
-| Breddegrad |Breddegraden, hvor enheden kører flowet, bliver lokaliseret. |
-| Længdegrad |Længdegraden, hvor enheden kører flowet, bliver lokaliseret. |
-| Postnummer |Postnummeret, hvor enheden kører flowet, bliver lokaliseret. |
-| Stat |Staten, som enheden kører flowet i, bliver lokaliseret. |
-| Gade |Gaden, som enheden kører flowet i, bliver lokaliseret. |
-| Tidsstempel |Tidspunktet i området, hvor enheden kører flowet, bliver lokaliseret. |
-| Dato |Datoen i området, hvor enheden kører flowet, bliver lokaliseret. |
+| By |Byen, hvor den enhed, der kører flowet, er placeret. |
+| Land/område |Landet/området, hvor den enhed, der kører flowet, er placeret. |
+| Komplet adresse |Den komplette adresse, hvor den enhed, der kører flowet, er placeret. |
+| Breddegrad |Breddegraden, hvor den enhed, der kører flowet, er placeret. |
+| Længdegrad |Længdegraden, hvor den enhed, der kører flowet, er placeret. |
+| PostalCode |Postnummeret, hvor den enhed, der kører flowet, er placeret. |
+| Område |Staten, hvor den enhed, der kører flowet, er placeret. |
+| Gade |Gaden, hvor den enhed, der kører flowet, er placeret. |
+| Tidsstempel |Tidspunktet i det område, hvor den enhed, der kører flowet, er placeret. |
+| Dato |Datoen i det område, hvor den enhed, der kører flowet, er placeret. |
 | Brugernavn |Brugernavnet på personen, der er logget på enheden, som kører flowet. |
-| Brugerens e-mail-adresse |E-mail-adressen på den person, der er logget på enheden, som kører flowet. |
+| Brugermail |E-mail-adressen på den person, der er logget på enheden, som kører flowet. |
 
 ## <a name="create-a-button-flow-that-uses-trigger-tokens"></a>Opret et knapflow, der bruger udløsertokens
 Når du opretter en knap, kan du bruge udløsertokens til at tilføje avanceret funktionalitet til din knap.
@@ -61,7 +61,7 @@ Under denne gennemgang vises skærmbilleder fra en Android-enhed, men du får do
 
 ### <a name="prerequisites"></a>Forudsætninger
 * En arbejds- eller skolemailadresse eller en [Microsoft-konto](https://account.microsoft.com/about?refd=www.microsoft.com) med adgang til Power Automate.
-* Mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 
 Lad os komme i gang:
 
@@ -81,11 +81,11 @@ Lad os komme i gang:
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/7.png)  
 8. Tryk på parameteren for **Komplet adresse**, tryk derefter på **Opret**  
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/8.png)  
-9. Tryk på **Udført**. Nu har du oprettet dit knapflow.  
+9. Tryk på **Udført**. Nu er dit knapflow oprettet.  
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Kør knapflowet
-**BEMÆRK**! Dette knapflow sender din aktuelle placering via e-mail.  
+**BEMÆRK!**: Dette knapflow sender din aktuelle placering via e-mail.  
 
 1. Tryk på kategorien for **Knapper** i bunden af skærmen. Her ser du en liste over knapper, som du har tilladelse til at bruge. Tryk på den knap, der repræsenterer det knapflow, du netop har oprettet:  
    ![token, der udløser knap](./media/introduction-to-button-trigger-tokens/10.png)  

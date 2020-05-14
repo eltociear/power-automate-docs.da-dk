@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 1df42c58cb02f8d62e016b071b3ce556b06a0efe
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195882"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298391"
 ---
 # <a name="design-flows-in-microsoft-visio"></a>Design flow i Microsoft Visio
 
@@ -70,7 +70,7 @@ Power Automate-designeren er et meget omfattende værktøj, hvori du kan konfigu
 
    ![Grundlæggende BPMN-figurer](./media/visio-flows/bpmn-basic-shapes.png)
 
-## <a name="prepare-to-export-your-workflow-to-power-automate"></a>Forbered eksport af din arbejdsproces til Power Automate
+## <a name="prepare-to-export-your-workflow-to-power-automate"></a>Forberede eksport af arbejdsprocessen til Power Automate
 
 Følg disse trin for at forberede din arbejdsproces, så du kan eksportere den til Power Automate.
 
@@ -99,9 +99,9 @@ Din arbejdsproces er klar til at blive eksporteret, når der ikke er flere probl
 
 1. Du bør se en rapport for vellykket handling, der ligner denne.
 
-    ![Vellykket](./media/visio-flows/export-create-flow-success.png)
+    ![Fuldført](./media/visio-flows/export-create-flow-success.png)
 
-Du kan nu køre eller redigere dit flow fra Power Automate-designeren ligesom med alle andre flow.
+Du kan nu køre eller redigere dit flow fra Power Automate-designeren ligesom med alle andre flows.
 
 >[!TIP]
 > Brug egenskaberne for deling og kommentering i Visio til at samarbejde med flere interessenter og hurtigt oprette en komplet arbejdsproces.

@@ -23,32 +23,32 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f3d02ca92b94752a8bbe6e3458fa8639de917dd8
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193996"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297093"
 ---
-# <a name="best-practices-for-workflow-processes"></a>De bedste fremgangsmåder for arbejdsprocesser
+# <a name="best-practices-for-workflow-processes"></a>Anbefalede fremgangsmåder for arbejdsprocesser
 
 
-Dette emne indeholder de bedste fremgangsmåder til oprettelse og administration af arbejdsprocesser.  
+Dette emne indeholder bedste praksis for oprettelse og administration af processer i arbejdsprocessen.  
   
 <a name="BKMK_AvoidInfiniteLoops"></a>   
 ## <a name="avoid-infinite-loops"></a>Undgå uendelige løkker  
- Det er muligt at oprette logik i en arbejdsproces, der starter en uendelig løkke, hvilket forbruger serverressourcer og påvirker ydeevnen. Den typiske situation, hvor der kan opstå en uendelig løkke, er, hvis du har en arbejdsproces, der er konfigureret til at starte, når en attribut er blevet opdateret og derefter opdaterer den pågældende attribut i arbejdsproceslogikken. Opdateringshandlingen udløser den samme arbejdsproces, der opdaterer posten og udløser arbejdsprocessen igen og igen.  
+ Der kan oprettes logik i en arbejdsproces, som starter en uendelig løkke, der forbruger serverressourcer og påvirker ydeevne. Den situation, en uendelig løkke typisk kan opstå i, er, hvis en arbejdsproces er konfigureret til at starte, når en attribut opdateres, og attributten derefter opdateres i logikken for arbejdsprocessen. Opdateringshandlingen udløser samme arbejdsproces, der opdaterer posten og udløser arbejdsprocessen, igen og igen.  
   
- De arbejdsprocesser, du opretter, omfatter logik til at registrere og stoppe uendelige løkker. Hvis en arbejdsproces kører mere end et bestemt antal gange for en bestemt post i et kort tidsrum, mislykkes processen med følgende fejl: **Dette arbejdsprocesjob blev annulleret, fordi den arbejdsproces, der startede det, indeholdt en uendelig løkke. Ret arbejdsproceslogikken, og prøv igen**. Det maksimale antal gange er 16.  
+ De arbejdsprocesser, du opretter, inkluderer logik, der kan registrere og standse uendelige løkker. Hvis en proces i en arbejdsproces køres mere end et bestemt antal gange på en bestemt post i en kort periode, lykkes processen ikke på grund af følgende fejl: **Dette arbejdsprocesjob blev annulleret, fordi den arbejdsproces, der startede det, indeholdt en uendelig løkke. Ret arbejdsproceslogikken, og prøv igen**. Grænsen for antal gange er 16.  
   
 <a name="BKMK_UseWorkflowTemplates"></a>   
-## <a name="use-workflow-templates"></a>Brug af arbejdsprocesskabeloner  
- Hvis du har arbejdsprocesser, der ligner hinanden, og du forventer at oprette flere arbejdsprocesser, der følger det samme mønster, kan du gemme din arbejdsproces som en arbejdsprocesskabelon. Næste gang du så skal oprette en lignende arbejdsproces, kan du oprette arbejdsprocessen ved hjælp af skabelonen og undgå at angive alle betingelserne og handlingerne fra bunden.  
+## <a name="use-workflow-templates"></a>Bruge arbejdsprocesskabeloner  
+ Hvis du har arbejdsprocesser, der ligner hinanden, og du regner med at skulle oprette flere arbejdsprocesser, der følger samme mønster, kan du gemme arbejdsprocessen som en arbejdsprocesskabelon. Næste gang du skal oprette en lignende arbejdsproces, kan du oprette arbejdsprocessen ved hjælp af skabelonen og undgå at angive alle betingelser og handlinger fra bunden.  
   
- I dialogboksen **Opret proces** skal du vælge **Ny proces fra en eksisterende skabelon (vælg på liste)** .  
+ I dialogboksen **Opret proces** skal du vælge **Ny proces ud fra en eksisterende skabelon (vælg på listen )**.  
   
 <a name="BKMK_UseChildWorkflows"></a>   
-## <a name="use-child-workflows"></a>Brug underordnede arbejdsprocesser  
- Hvis du anvender den samme logik i forskellige arbejdsprocesser eller betingede grene, skal du definere logikken som en underordnet arbejdsproces, så du ikke behøver at replikere denne logik manuelt i hver arbejdsproces eller i hver betingede forgrening. Dette er med til at gøre det lettere at vedligeholde dine arbejdsprocesser. I stedet for at undersøge mange arbejdsprocesser, der muligvis anvender den samme logik, kan du blot opdatere én arbejdsproces.  
+## <a name="use-child-workflows"></a>Bruge underordnede arbejdsprocesser  
+ Hvis du anvender samme logik i forskellige arbejdsprocesser eller i betingede forgreninger, kan du definere logikken som en underordnet arbejdsproces, så du ikke behøver at kopiere logikken manuelt i hver arbejdsproces eller hver betinget forgrening. Derved bliver arbejdsprocesserne nemmere at vedligeholde. I stedet for at undersøge mange arbejdsprocesser, der muligvis anvender den samme logik, kan du blot opdatere én arbejdsproces.  
   
 ## <a name="automatically-delete-completed-workflow-jobs"></a>Slet automatisk fuldførte arbejdsprocesjob
 I forbindelse med arbejdsprocesser, der kører i baggrunden, anbefaler vi at vælge indstillingen **Slet automatisk fuldførte arbejdsprocesjob (for at spare plads på harddisken)** i arbejdsprocesdefinitionen. Markering af dette afkrydsningsfelt gør det muligt for systemet at slette arbejdsproceslogge for vellykkede kørsler for at spare plads. Bemærk, at logge fra mislykkede arbejdsprocesudførelser altid gemmes i fejlfindingsøjemed.  
@@ -56,13 +56,13 @@ I forbindelse med arbejdsprocesser, der kører i baggrunden, anbefaler vi at væ
 ![Opbevaring af arbejdsproces](media/workflow-job-retention.png)
 
 <a name="BKMK_AutoDeleteCompletedWorkflowJobs"></a>   
-## <a name="keep-logs-for-workflow-jobs-that-encountered-errors"></a>Opbevar logge for arbejdsprocesjob, hvor der opstod fejl  
+## <a name="keep-logs-for-workflow-jobs-that-encountered-errors"></a>Bevar logge for arbejdsprocesjob, hvor der opstod fejl  
 I forbindelse med arbejdsprocesser, der ikke kører i baggrunden (synkront), anbefaler vi, at markere indstillingen **til at opbevare logge for arbejdsprocesjob, hvor der opstod fejl** i arbejdsprocesdefinitionen. Når du vælger denne indstilling, gemmes logge fra mislykkede arbejdsprocesudførelser altid i fejlfindingsøjemed. Logge fra vellykkede synkrone arbejdsprocesudførelser slettes altid for at spare plads.   
 
 ![Indstillingen til opbevaring af logge for mislykkede arbejdsprocesser](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Begræns antallet af arbejdsprocesser, der opdaterer det samme objekt
-Kørsel af mere end én arbejdsproces, der opdaterer det samme objekt, kan forårsage ressourcelåsproblemer. Forestil dig, at flere arbejdsprocesser kører, hvor hver mulighed for opdatering udløser en opdatering for den tilknyttede konto. Flere forekomster af disse arbejdsprocesser, der kører og forsøger at opdatere den samme kontopost på samme tid, kan resultere i ressourcelåsproblemer. Arbejdsprocesfejl opstår, og en fejlmeddelelse som f.eks **SQL Timeout: Lås på ressource kunne ikke hentes _ressourcenavn_** , registreres. 
+Kørsel af mere end én arbejdsproces, der opdaterer det samme objekt, kan forårsage ressourcelåsproblemer. Forestil dig flere kørende arbejdsprocesser, hvor alle opdateringer af salgsmuligheder udløser en opdatering af det tilknyttede firma. Flere forekomster af disse arbejdsprocesser, der kører og forsøger at opdatere den samme kontopost på samme tid, kan resultere i ressourcelåsproblemer. Der opstår arbejdsprocesfejl, og en fejlmeddelelse, f.eks. **SQL Timeout: Kan ikke hente lås på ressourcen _ressourcenavn_**, registreres. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   

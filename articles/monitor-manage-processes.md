@@ -1,5 +1,5 @@
 ---
-title: Overvåg og administrer arbejdsprocesser med Power Apps | MicrosoftDocs
+title: Overvåg og administrer arbejdsprocesser med Power Apps | Microsoft Docs
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e4042b71e6913f1008f506697fa39291b3cbf59a
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224279"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298259"
 ---
 # <a name="monitor-and-manage-workflow-processes"></a>Overvåg og administrer arbejdsprocesser
 
@@ -34,45 +34,45 @@ ms.locfileid: "79224279"
 Hvis du vil overvåge og styre processer, skal du finde processen, evaluere statussen og udføre de handlinger, der er nødvendige for at løse problemerne.  
   
 <a name="BKMK_MonitorAsyncWorkflows"></a>   
-## <a name="monitoring-background-workflows"></a>Overvågning af arbejdsprocesser i baggrunden  
- Arbejdsprocesser i baggrunden genererer systemjobposter for at spore processernes status. Du kan få adgang til oplysninger om disse systemjob flere forskellige steder i programmet:  
+## <a name="monitoring-background-workflows"></a>Overvåge baggrundsarbejdsprocesser  
+ Baggrundsarbejdsprocesser genererer systemjobposter til registrering af deres status. Du kan få adgang til oplysninger om disse systemjob flere forskellige steder i programmet:  
   
  **[Indstillinger](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Systemjob**  
- Dette omfatter alle typer systemjob. Du skal filtrere poster for dem, hvor **Systemjobtype** er **Arbejdsproces**.  
+ Dette omfatter alle typer af systemjob. Du skal filtrere posterne efter dem, hvor **Systemjobtype** er **Arbejdsproces**.  
   
  **Fra arbejdsprocessen**  
- Åbn definitionen af arbejdsprocessen i baggrunden, og gå til fanen **Processession**. Her vises kun systemjob for den pågældende arbejdsproces i baggrunden.  
+ Åbn baggrundsarbejdsprocesdefinitionen, og gå til fanen **Processession**. Dette vises kun systemjob for denne arbejdsproces i baggrunden.  
   
  **Fra posten**  
- Du kan redigere objektformularen, så navigationen omfatter relationen **Baggrundsprocesser**. Her vises alle de systemjob, der er startet i konteksten for posten.  
+ Du kan redigere objektformularen, så navigationen indeholder relationen **Baggrundsprocesser**. Dette viser alle de systemjob, der er startet i forbindelse med posten.  
   
 > [!NOTE]
 >  Hvis et asynkront systemjob (arbejdsproces) mislykkes flere gange i træk, begynder systemet at udskyde udførelsen af jobbet med længere og længere tidsintervaller imellem, så administratoren eller appopretteren kan undersøge og løse problemet. Når jobbet starter igen, udføres det normalt.  
   
 <a name="BKMK_ActionsOnRunningWorkflows"></a>   
-### <a name="actions-on-running-background-workflows"></a>Handlinger på aktive arbejdsprocesser i baggrunden  
- Mens en arbejdsproces i baggrunden kører, har du mulighed for at **annullere**, **afbryde den midlertidigt** eller **udsætte** arbejdsprocessen. Hvis du tidligere har afbrudt en arbejdsproces midlertidigt, kan du **genoptage** den.  
+### <a name="actions-on-running-background-workflows"></a>Handlinger på kørende baggrundsarbejdsprocesser  
+ Mens en baggrundsarbejdsproces kører, kan du vælge indstillingerne **Annuller**, **Pause** eller **Udskyd**. Hvis du tidligere har sat en arbejdsproces på pause, kan du vælge **Genoptag**.  
   
 <a name="BKMK_MonitorSyncWorkflows"></a>   
-## <a name="monitoring-real-time-workflows-and-actions"></a>Overvågning af arbejdsprocesser i realtid og handlinger  
- Arbejdsprocesser i realtid og handlinger bruger ikke systemjobposter, fordi de opstår med det samme. De fejl, der måtte opstå, vises til brugeren i programmet med overskriften **Fejl i forretningsproces**.  
+## <a name="monitoring-real-time-workflows-and-actions"></a>Overvåge arbejdsprocesser og handlinger i realtid  
+ Arbejdsprocesser og handlinger i realtid anvender ikke systemjobposter, da de forekommer med det samme. Eventuelle fejl, der opstår, vises til brugeren i programmet med overskriften **Fejl i forretningsproces**.  
   
- Der er ingen logge for fuldførte handlinger. Du kan aktivere logføring af fejl ved at markere afkrydsningsfeltet **Bevar logge for arbejdsprocesjob, hvor der opstod fejl**  i området **Opbevaring af arbejdsproceslog** nederst på fanen **Administration** for processen.  
+ Der er ingen logfil for vellykkede handlinger. Du kan aktivere logføring for fejl ved at markere indstillingen **Bevar logge for arbejdsprocesjob, hvor der opstod fejl** i området **Opbevaring af arbejdsproceslog** nederst på fanen **Administration** for processen.  
   
- Hvis du vil have vist en log over fejl for en bestemt proces, skal du åbne definitionen af arbejdsprocessen i realtid eller handlingen og gå til fanen **Processession**. Her vises kun de eventuelle fejl, der er logget for denne proces.  
+ Hvis du vil have vist en log over fejl for en bestemt proces, skal du åbne definitionen for realtidsarbejdsprocessen eller -handlingen og gå til fanen **Processession**. Derved vises kun eventuelle fejl, som er logført for denne proces.  
   
- Hvis du vil have vist alle fejl for en proces, skal du gå til **Avanceret søgning** og oprette en visning med fejl på processionsessionsobjektet.  
+ Hvis du vil have vist alle fejlene for en proces, skal du gå til **Avanceret søgning** og oprette en visning med fejl på processessionsobjektet.  
   
 <a name="BKMK_StatusOfWorkflowProcesses"></a>   
-## <a name="status-of-workflow-processes"></a>Status over arbejdsprocesser  
- Når du får vist en liste over arbejdsprocesser, kan den enkelte proces have en af følgende værdier **Fase** eller **Statusårsag**:  
+## <a name="status-of-workflow-processes"></a>Status for arbejdsprocesser  
+ Når du får vist en liste over arbejdsprocesser, kan hver enkelt proces have en af følgende værdier for **Status** og **Statusårsag**:  
   
-|Stat|Statusårsag|  
+|Område|Statusårsag|  
 |-----------|-------------------|  
 |Klar|Venter på ressourcer|  
-|Suspenderet|Venter|  
-|Låst|Igangværende<br /><br /> Afbrudt midlertidigt<br /><br /> Annullerer|  
-|Fuldført|Lykkedes<br /><br /> Mislykket<br /><br /> Annulleret|  
+|Afbrudt|Venter|  
+|Låst|I gang<br /><br /> Venter<br /><br /> Annullerer|  
+|Fuldførte|Fuldført<br /><br /> Mislykkedes<br /><br /> Annullerede|  
 
 ## <a name="deleting-process-log-records"></a>Sletning af proceslogposter
 
@@ -81,7 +81,7 @@ Hvis din organisation bruger arbejdsprocesser i baggrunden eller forretningsproc
 1. Gå til **Indstillinger** > **Dataadministration** > **Massesletning af poster**.
 2. Vælg **Ny** i området **Massesletning af poster**. 
 3. Vælg **Næste** på startsiden i **Guiden Massesletning**.
-4. Vælg **Systemjob** på listen **Søg i**.
+4. Vælg **Systemjob** på listen **Søg efter**.
 5. Følgende betingelser bruges til at oprette et job til massesletning af poster for at slette proceslogposter. 
  - **Systemjobtypen er lig med Arbejdsproces**. Dette er målrettet arbejdsprocesposter. 
  - **Status er lig med Fuldført**. Jobbet kan kun køres mod fuldførte arbejdsprocesser.

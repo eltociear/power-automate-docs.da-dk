@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3be9b2414a0f30581763622de0c7d49cb694e3b3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224233"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296675"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Føj en betingelse til et flow
 
@@ -38,7 +38,7 @@ Angiv, at et flow kun skal udføre en eller flere opgaver, hvis en betingelse er
 
 ## <a name="add-a-condition"></a>Tilføj en betingelse
 
-1. I [Power Automate](https://flow.microsoft.com) skal du vælge **Mine flow** på den øverste navigationslinje.
+1. Vælg **Mine flows** på navigationslinjen i [Power Automate](https://flow.microsoft.com).
 
     Du skal muligvis logge på, hvis du ikke allerede er logget på.
 

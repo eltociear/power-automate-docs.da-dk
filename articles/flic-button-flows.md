@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 65d9a93215030905f41e082d38789592a4267404
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194341"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297401"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Kør dine flows ved at trykke på en Flic-smartknap
 
@@ -37,10 +37,10 @@ Udløs dine flows ved at trykke på en fysisk knap, kaldet Flic, fra Shortcut La
 > 
 
 ## <a name="prerequisites"></a>Forudsætninger
-Hvis du vil bruge Flic sammen med Power Automate, skal du have foretaget følgende:
+For at bruge Flics sammen med Power Automate skal du have:
 
 * Adgang til [Power Automate](https://flow.microsoft.com).
-* Downloade Flic-mobilappen til [Android](https://play.google.com/store/apps/details?id=io.flic.app) eller [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) og bruge den til at danne par mellem en eller flere Flic-knapper.
+* Downloadet Flic-mobilappen til [Android](https://play.google.com/store/apps/details?id=io.flic.app) eller [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) og bruge den til at parre en eller flere Flics.
 
 ## <a name="configure-flic-properties"></a>Konfigurer Flic-egenskaber
 Brug Flic-mobilappen til at programmere Flic-hændelser. Der er følgende hændelser:
@@ -53,12 +53,12 @@ I dette skærmbillede kan du se eksempler på, hvordan konfigurationen af Flic-k
 
 ![Konfigurer Flic-knapper](./media/flic-button-flows/configure-flic-actions.png)
 
-Når du har knyttet en Flic-hændelse til Power Automate, kan du vælge den pågældende Flic-knap som udløser for dine flow. Du skal vælge udløseren senere i denne gennemgang.
+Når du har knyttet en Flic-hændelse til Power Automate, kan du derefter vælge den pågældende Flic som udløser for dine flows. Du skal vælge udløseren senere i denne gennemgang.
 
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Opret et flow, der udløses af en Flic-knap
 I denne gennemgang bruger vi en Flic-knap til at køre et flow, som optager, hvor lang tid en kunde bruger hos hver kunde. Konsulenten trykker på sin Flic-knap, når han ankommer hos kunden, og han trykker på den igen, når han forlader kunden. Hvert tryk på Flic-knappen kører det flow, som knappen er knyttet til. Flowet gemmer derefter det aktuelle klokkeslæt i Google Sheets og sender en meddelelse i en mail. Mailen indeholder detaljer om kørslen af flowet.
 
-Bemærk! Husk, at du skal have brugt Flic-mobilappen til at danne par med og konfigurere mindst én **click**-handling for at udløse Power Automate. I dette skærmbillede har jeg konfigureret **click**-handlingen til at udløse Power Automate. Senere i denne gennemgang konfigurerer vi vores flow til at blive udløst, når der trykkes én gang på Flic-knappen (et klik).
+Bemærk! Husk, at du skal have brugt Flic-mobilappen til at parre og konfigurere mindst én **klik**-handling for at udløse Power Automate. I dette skærmbillede har jeg konfigureret **klik**-handlingen til at udløse Power Automate. Senere i denne gennemgang konfigurerer vi vores flow til at blive udløst, når der trykkes én gang på Flic-knappen (et klik).
 
    ![flic-konfiguration](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -135,7 +135,7 @@ Hvis du har fulgt med i vejledningen, kan du trykke på Flic-knappen én gang fo
 2. Åbn dit regneark i Google Sheets. Du skulle nu gerne se, at kolonnerne **Kliktype** og **Tidspunkt** er udfyldt med henholdsvis "click" og klokkeslættet.
    
     ![se kørselsresultaterne](./media/flic-button-flows/flic-google-sheet-after-run.png)
-3. Du kan også se resultatet af kørslen fra Power Automate-webstedet eller fra mobilappen Power Automate. Her er et skærmbillede af min testkørsel
+3. Du kan også se resultatet af kørslen fra websitet for Power Automate eller mobilappen Power Automate. Her er et skærmbillede af min testkørsel
    
     ![gem dit flow](./media/flic-button-flows/flic-test-run-results-portal.png)
 4. Sådan ser brødteksten i mailmeddelelsen, som jeg har modtaget fra kørslen af flowet, ud.
@@ -147,5 +147,5 @@ Som en øvelse kan du prøve at udvide dit flow til automatisk at registrere din
 ## <a name="more-information"></a>Flere oplysninger
 * [Del knapflows](share-buttons.md).
 * Se, hvordan du kan bruge [knapudløsertokens](introduction-to-button-trigger-tokens.md) til at sende aktuelle data, når dine knapflows eksekveres.
-* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installer Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 

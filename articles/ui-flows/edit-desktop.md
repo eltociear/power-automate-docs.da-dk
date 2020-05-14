@@ -25,9 +25,9 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525111"
+ms.locfileid: "3298809"
 ---
-# <a name="edit-desktop-ui-flows"></a>Rediger flow for brugergrænseflade på skrivebordet
+# <a name="edit-desktop-ui-flows"></a>Rediger desktopbrugergrænsefladeflow
 
 Windows-skrivebordsprogrammer automatiseres i flow for brugergrænsefladen på skrivebordet. Se [Kendte problemer](create-desktop.md#known-issues-and-solutions) for at få mere at vide om de problemer, der kan opstå, løsninger på disse problemer og scenarier, der ikke understøttes i denne udgivelse.
 
@@ -60,7 +60,7 @@ Det kan være en god idé at optage dit flow for brugergrænsefladen i flere ses
 1. Vælg det flow for brugergrænsefladen, du vil redigere.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Vælg **Rediger**. 
-1. Vælg **næste trin**.
+1. Vælg **Nyt trin**.
 
    ![Nyt trin](../media/edit-desktop/new-step.png "Nyt trin")
 
@@ -167,7 +167,7 @@ Du kan udføre disse avancerede handlinger ved at udføre følgende trin i et ek
 
 1. Vælg det flow for brugergrænseflade, du har oprettet > **Flere kommandoer** (...) > **Rediger**.
 
-1. Vælg **+**  > **Tilføj en handling** i rullemenuen i det flow for brugergrænsefladen, som du vil føje logik til.
+1. Vælg **+** > **Tilføj en handling** i rullemenuen i det flow for brugergrænsefladen, som du vil føje logik til.
 
    ![Tilføj en handling](../media/edit-desktop/add-action.png)
 
@@ -182,13 +182,13 @@ Du kan udføre disse avancerede handlinger ved at udføre følgende trin i et ek
 
 ## <a name="handle-error-conditions"></a>Håndter fejlbetingelser
 
-Der kan opstå uventede betingelser under afspilning, og det kan medføre, at dine flow for brugergrænsefladen mislykkes. Du kan bruge avancerede egenskaber til fejlhåndtering for at oprette alternative trin, når der opstår uventede betingelser. 
+Der kan opstå uventede betingelser under afspilning, og det kan medføre, at dine brugergrænsefladeflow mislykkes. Du kan bruge avancerede egenskaber til fejlhåndtering for at oprette alternative trin, når der opstår uventede betingelser. 
 
 Det drejer sig om følgende trin.
 
-1. Log på [Power Automate](https://powerautomate.microsoft.com) ved hjælp af din skole- eller arbejdskonto.
-1. Vælg **Mine flow** > **Flow for brugergrænseflade** for at få vist dine flow for brugergrænsefladen.
-1. Vælg **Flere kommandoer** (de tre lodrette prikker for det flow for brugergrænsefladen, du vil redigere).
+1. Log på [Power Automate](https://powerautomate.microsoft.com) med din skole- eller arbejdskonto.
+1. Vælg **Mine flow** > **Brugergrænsefladeflow** for at få vist dine brugergrænsefladeflow.
+1. Vælg **Flere kommandoer** (de tre lodrette prikker for det brugergrænsefladeflow, du vil redigere).
 1. Vælg **Rediger**.
 1. Vælg pil ned umiddelbart inden det brugergrænsefladetrin, du vil føje fejlhåndtering til, og vælg derefter **+** (Indsæt nyt trin).
    
@@ -200,9 +200,9 @@ Det drejer sig om følgende trin.
 
     ![Billede, der viser Tilføj en parallel forgrening og andre indstillinger](../media/edit-desktop/add-parallel-branch.png)
 
-1. Vælg den handling, der skal udføres i den parallelle forgrening, hvis der opstår en fejl, når flowet for brugergrænsefladen køres.
+1. Vælg den handling, der skal udføres i den parallelle forgrening, hvis der opstår en fejl, når brugergrænsefladeflowet køres.
 
-   Du kan vælge **Optag-app** for at foretage en ny optagelse af den parallelle forgrening eller vælge **Afbryd** via de **indbyggede** handlinger for at afslutte flowet for brugergrænsefladen på en ordentlig måde, hvis der opstår en fejl.
+   Du kan vælge **Optag-app** for at foretage en ny optagelse af den parallelle forgrening eller vælge **Afbryd** via de **indbyggede** handlinger for at afslutte brugergrænsefladeflowet på en ordentlig måde, hvis der opstår en fejl.
 
     ![Billede, der viser indstillingerne for den parallelle forgrening](../media/edit-desktop/add-parallel-branch.png)
 
@@ -215,7 +215,7 @@ Det drejer sig om følgende trin.
 
     ![Billede, der viser indstillingerne for kørsel efter](../media/edit-desktop/run-after-options.png)
 
-    Bemærk! Du kan ikke gemme et flow for brugergrænsefladen, hvor både hovedforgreningen og den parallelle forgrening er angivet til at køre på samme betingelse.
+    Bemærk! Du kan ikke gemme et brugergrænsefladeflow, hvor både hovedforgreningen og den parallelle forgrening er angivet til at køre på samme betingelse.
 
 
 
@@ -256,5 +256,5 @@ Følg disse trin, når du har optaget et script til flow for brugergrænsefladen
 
 - Få mere at vide om, hvordan du [kører det flow for brugergrænsefladen](run-ui-flow.md) du lige har redigeret.
 
-- Hvis du vil udføre mere med flow for brugergrænsefladen, kan du også afprøve flow for brugergrænsefladen med [input- og output](inputs-outputs-web.md)parametre.
+- Hvis du vil foretage dig mere med flow for brugergrænseflader, kan du også afprøve flow for brugergrænseflader med [input- og output](inputs-outputs-web.md)parametre.
 

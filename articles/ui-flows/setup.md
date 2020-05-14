@@ -25,9 +25,9 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524634"
+ms.locfileid: "3298765"
 ---
-# <a name="set-up-ui-flows"></a>Konfigurer flow for brugergrænsefladen
+# <a name="set-up-ui-flows"></a>Konfigurer brugergrænsefladeflow
 
 Før du kan bruge din enhed til at oprette flow for brugergrænsefladen, skal du sikre, at den opfylder de krav, der er angivet her.
 
@@ -36,13 +36,13 @@ Før du kan bruge din enhed til at oprette flow for brugergrænsefladen, skal du
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Enten en [betalt](https://flow.microsoft.com/pricing/) Power Automate-plan eller en [prøveversion](https://flow.microsoft.com/manage/) af den.
+- Enten en [betalt](https://flow.microsoft.com/pricing/) eller en [prøveversion](https://flow.microsoft.com/manage/) af en Power Automate-plan.
 
 - En arbejds- eller skolekonto til at logge på din Windows-enhed med administratorrettigheder og Power Automate.
 
-- En enhed, der kører Windows 10 Pro, Windows Server 2016 eller Windows Server 2019.
+- En enhed, der kører Windows 10 Pro Windows Server 2016 eller Windows Server 2019.
 
-- Browseren [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) eller Google Chrome.
+- [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) eller en Google Chrome-browser.
 
 - Et [miljø](https://docs.microsoft.com/power-platform/admin/environments-overview) med en [Common Data Service-database](https://docs.microsoft.com/power-platform/admin/create-database).
 
@@ -98,14 +98,14 @@ Når installationsprogrammet til flow for brugergrænsefladen er fuldført, bliv
 > Hvis du ikke fik vist prompten i din browser, skal du kontrollere følgende:
 > - Du skal bruge [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 eller nyere) eller Google Chrome.
 > - Du skal muligvis aktivere udvidelsen manuelt. Hvis du har Microsoft Edge, skal du gå til **edge://extensions**, og hvis du har Google Chrome, skal du gå til **chrome://extensions**.
-> - Hvis udvidelsen til flow for brugergrænsefladen i Power Automate ikke vises, skal du geninstallere den ved hjælp af [installationsprogrammet til flow for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
+> - Hvis udvidelsen til flows for brugergrænsefladen i Power Automate ikke vises, skal du geninstallere den ved hjælp af [installationsprogrammet til flows for brugergrænsefladen](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 
 ## <a name="install-selenium-ide-to-automate-web-applications"></a>Installér Selenium IDE for at automatisere webprogrammer
 
 Selenium IDE er et værktøj i åben kildekode, der giver dig mulighed for at optage og afspille personlige interaktioner på websteder.
 
-Med flow for brugergrænsefladen kan du køre Selenium IDE-scripts fra Power Automate og gemme dem på en sikker måde (med passende it-styring) i Common Data Service.
+Med flows for brugergrænsefladen kan du køre Selenium IDE-scripts fra Power Automate og gemme dem på en sikker måde (med passende it-styring) i Common Data Service.
 
 Følg disse trin for at installere Selenium IDE:
 
@@ -146,7 +146,7 @@ Du skal bruge gatewayen til at udløse dit flow for brugergrænsefladen fra et [
 1. Angiv gatewayoplysninger og enhedsoplysninger: 
 
     - **Domæne og brugernavn**: Angiv din enhedskonto. Du kan bruge en lokal konto ved hjælp af navnet på brugeren (f.eks. "NAVN PÅ MASKINE\\Bruger" eller "lokal\\Bruger") eller en Active Directory-konto såsom "DOMÆNE\\Bruger".
-    - **Adgangskode**: Adgangskoden til din konto.
+    - **Adgangskode**: Adgangskoden for din konto.
     - **Vælg en gateway**: Vælg den gateway, du vil bruge.
 
       ![Et skærmbillede, der viser, hvor du skal angive legitimationsoplysningerne for forbindelsen](../media/ui-flows-setup/credentials-screen.png)
@@ -157,7 +157,7 @@ Du skal bruge gatewayen til at udløse dit flow for brugergrænsefladen fra et [
 
 Du kan muligvis ikke finde gatewayen på listen under oprettelse af forbindelse af følgende årsager:
 
-- Gatewayen kan være installeret i et andet område end dit Power Automate-område. Du kan løse dette problem ved at fjerne gatewayen fra enheden og derefter geninstallere den ved at vælge [det rigtige Power Automate-område](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+- Gatewayen kan være installeret i et andet område end dit Power Automate-område. Du kan løse dette problem ved at fjerne gatewayen fra enheden og derefter geninstallere den ved at vælge [det rette Power Automate-område](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
 - Gatewayen blev slettet af ejeren.
 
 ## <a name="supported-keyboard-layouts"></a>Layouts for tilsluttet tastatur
@@ -196,7 +196,7 @@ Kinesisk (traditionelt)   |   Hindi   |   Polsk  |   Thai
 Kroatisk    |   Ungarsk   |   Portugisisk (Brasilien) |   Tyrkisk
 Tjekkisk   |   Indonesisk  |   Portugisisk (Portugal)       |Ukrainsk
 Dansk  |   Italiensk |   Rumænsk    |   Vietnamesisk
-Nederlandsk       |Japansk   |   Russisk 
+Hollandsk       |Japansk   |   Russisk 
 Estisk    |Kasakhisk |   Serbisk (kyrillisk, Serbien)  
 Finsk     |Koreansk     |Serbisk (latin, Serbien)
 
@@ -209,7 +209,7 @@ Finsk     |Koreansk     |Serbisk (latin, Serbien)
 ## <a name="learn-more"></a>Få mere at vide
 
 - [Opgrader dine flow for brugergrænsefladen](upgrade.md) fra tidligere udgivelser
-- Få mere at vide om, hvordan du [opretter flow for brugergrænsefladen på skrivebordet](create-desktop.md).
+- Få mere at vide om [oprettelse af skrivebordsflow for brugergrænsefladen](create-desktop.md).
 - Få mere at vide om, hvordan du [opretter flow for brugergrænsefladen på internettet](create-web.md).
 - Få mere at vide om, hvordan du kører [flow for brugergrænsefladen](run-ui-flow.md).
 - Få mere at vide om, hvordan du [administrerer flow for brugergrænsefladen](manage.md).

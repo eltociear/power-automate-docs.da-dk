@@ -25,9 +25,9 @@ ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153534"
+ms.locfileid: "3299315"
 ---
-# <a name="create-team-flows"></a>Opret teamflows
+# <a name="create-team-flows"></a>Opret teamflow
 
 Opret et teamflow ved at tilføje andre i organisationen som ejere. Alle ejere af et teamflow kan udføre følgende handlinger:
 
@@ -37,7 +37,7 @@ Opret et teamflow ved at tilføje andre i organisationen som ejere. Alle ejere a
 * Tilføj og fjern andre medejere (men ikke opretteren af flowet).
 * Slet flowet.
 
-Hvis du er opretter eller ejer af et teamflow, vises det under fanen **Teamflow** i [Power Automate](https://flow.microsoft.com).
+Hvis du er opretter eller ejer af et teamflow, bliver det anført på fanen **Teamflows** på [Power Automate](https://flow.microsoft.com).
 
 ![fanen Teamflows](./media/create-team-flows/addowner5.png)
 
@@ -49,12 +49,12 @@ Hvis du er opretter eller ejer af et teamflow, vises det under fanen **Teamflow*
 Ejere kan bruge tjenester i et flow, men de kan ikke ændre legitimationsoplysningerne for en forbindelse, der er oprettet af en anden ejer.
 
 ## <a name="prerequisites"></a>Forudsætninger
-Hvis du vil oprette et teamflow, skal du have en [betalt Power Automate-plan](https://flow.microsoft.com/pricing/). Du skal desuden være opretter eller ejer for at tilføje eller fjerne ejere fra et teamflow.
+Du skal have en [betalt Power Automate-plan](https://flow.microsoft.com/pricing/) for at oprette et teamflow. Du skal desuden være opretter eller ejer for at tilføje eller fjerne ejere fra et teamflow.
 
 ## <a name="create-a-team-flow"></a>Opret et teamflow
 Følg disse trin for at oprette et teamflow eller føje flere ejere til et teamflow.
 
-1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flow**.
+1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flows**.
 2. Vælg **Flere kommandoer**, og vælg derefter **Del** for det flow, du vil dele:
    
     ![teamikon](./media/create-team-flows/addowner1.png)
@@ -73,7 +73,7 @@ Følg disse trin for at oprette et teamflow eller føje flere ejere til et teamf
 
 ## <a name="add-a-list-as-a-co-owner"></a>Tilføj en liste som medejer
 
-Du kan tilføje SharePoint-lister som medejere til et flow, så alle, der har redigeringstilladelse til listen automatisk får redigeringstilladelse til flowet. Når flowet er delt, kan du blot distribuere et link til det.
+Du kan tilføje SharePoint-lister som medejere til et flow, så alle, der har redigeringstilladelse til listen, automatisk får redigeringstilladelse til flowet. Når flowet er delt, kan du blot distribuere et link til det.
 
 > [!TIP]
 > Brug en liste, når flowet er forbundet med SharePoint, og brug en gruppe i andre tilfælde.
@@ -95,7 +95,7 @@ Du kan tilføje SharePoint-lister som medejere til et flow, så alle, der har re
 3. I bekræftelsesdialogboksen skal du markere **Fjern denne ejer**:
    
     ![bekræft fjernelse](./media/create-team-flows/removeowner3.png)
-4. Tillykke &mdash; den bruger eller gruppe, du har fjernet, er ikke længere angivet som ejer af flowet.
+4. Tillykke – den bruger eller gruppe, du har fjernet, er ikke længere angivet som ejer af flowet.
 
 
 ## <a name="update-connection-owner"></a>Opdater ejeren af forbindelsen

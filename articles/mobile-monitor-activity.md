@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: aa2b5eb13479f50f88ba7f723c5d1649746c74ec
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79196089"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298215"
 ---
-# <a name="monitor-activity-in-power-automate-from-your-phone"></a>Overvåg aktiviteten i Power Automate fra din telefon
+# <a name="monitor-activity-in-power-automate-from-your-phone"></a>Overvåg aktivitet Power Automate fra din telefon
 
 Få vist en oversigt over, hvor mange gange hvert flow er lykkedes eller mislykkedes i dag, i går og de forrige dage. Udforsk detaljer om hver kørsel, f.eks. hvornår den er kørt, hvor lang tid hvert trin tog og hvorfor den evt. mislykkedes.
 
@@ -35,7 +35,7 @@ Få vist en oversigt over, hvor mange gange hvert flow er lykkedes eller mislykk
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZuYZ64K3tI?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows) på en [understøttet enhed](getting-started.md#use-the-mobile-app). I grafikken til dette emne er iPhone-versionen af appen anvendt, men grænsefladen på en Android- og Windows Phone-enhed ser ligesådan ud.
+* Installer Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows) på en [understøttet enhed](getting-started.md#use-the-mobile-app). I grafikken til dette emne er iPhone-versionen af appen anvendt, men grænsefladen på en Android- og Windows Phone-enhed er tilsvarende.
 * Hvis du ikke allerede har et flow, kan du oprette et på [webstedet for Power Automate](https://flow.microsoft.com/). For lettere at kunne teste dit flow kan du bruge et, du selv kan udløse i stedet for at vente på en ekstern hændelse.
 
 Flowet i dette selvstudium kører, når du modtager en mail fra en bestemt adresse:
@@ -53,7 +53,7 @@ Når flowet kører, sender det en brugerdefineret pushmeddelelse med følgende s
 ## <a name="display-a-summary-of-activity"></a>Få vist en aktivitetsoversigt
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-1. Hvis dit flow ikke har kørt før, skal du udløse en kørsel for at generere data.
+1. Hvis dit flow ikke har kørt før, kan du udløse en kørsel for at generere data.
    
     Det kan tage lidt tid, før dataene vises i appen.
 2. Åbn mobilappen, der som standard viser fanen **Aktivitet**.
@@ -79,11 +79,11 @@ Når flowet kører, sender det en brugerdefineret pushmeddelelse med følgende s
 4. Tryk på **Tilbage** for at vende tilbage til aktivitetsoversigt.
 5. Hvis du vil filtrere aktivitetsoversigten, skal du trykke på ikonet i øverste højre hjørne.
    
-    Du kan få vist alle poster, kun poster over mislykkede kørsler eller kun poster, der inkluderer pushmeddelelser.
+    Du kan få vist alle poster, kun de poster, der mislykkedes, eller kun de poster, der inkluderer pushmeddelelser.
    
-    ![Vis alle kørsler, kun mislykkede kørsler eller kun meddelelser](./media/mobile-monitor-activity/activity-filter.png)
+    ![Få vist alle kørsler, kun mislykkede eller kun meddelelser](./media/mobile-monitor-activity/activity-filter.png)
 
-## <a name="show-details-of-a-run"></a>Vis detaljer for en kørsel
+## <a name="show-details-of-a-run"></a>Få vist detaljer for en kørsel
 1. I aktivitetsoversigten skal du trykke på en post for at få vist detaljer for den seneste kørsel.
    
      Hver enkelt hændelse og handling vises med et ikon, der angiver, om hændelsen eller handlingen er lykkedes eller mislykkedes. Hvis den lykkedes, vises det også, hvor lang tid den tog (i sekunder).

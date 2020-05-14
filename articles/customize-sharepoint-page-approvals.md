@@ -1,6 +1,6 @@
 ---
-title: Administrer SharePoint-sidegodkendelser med Power Automate | Microsoft Docs
-description: Få mere at vide om, hvordan du administrerer SharePoint-sidegodkendelser med Power Automate.
+title: Administrer sidegodkendelser for SharePoint med Power Automate | Microsoft Docs
+description: Få mere at vide om at administrere sidegodkendelser for SharePoint med Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,33 +20,33 @@ ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/07/2020
-ms.locfileid: "80801521"
+ms.locfileid: "3298985"
 ---
-# <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Administrer SharePoint-sidegodkendelser med Power Automate
+# <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Administrer sidegodkendelser for SharePoint med Power Automate
 
 
-Administratorer af SharePoint-websteder kan bruge Power Automate til at kræve, at nye eller opdaterede webstedssider godkendes, før de publiceres.
+Administratorer af SharePoint-websitet kan bruge Power Automate til at kræve, at nye eller opdaterede websitesider godkendes, før de publiceres.
 
-I denne artikel får du mere at vide om, hvordan du konfigurerer dit SharePoint-websted til at bruge et flow for at kræve, at ændringer af webstedet godkendes, før de publiceres.
+I denne artikel får du mere at vide om, hvordan du konfigurerer dit SharePoint-website til at bruge et flow for at kræve, at ændringer af websitet godkendes, før de publiceres.
 
-## <a name="configure-sharepoint-for-page-approvals"></a>Konfigurer SharePoint til sidegodkendelse
+## <a name="configure-sharepoint-for-page-approvals"></a>Konfigurer SharePoint til sidegodkendelser
 
 ### <a name="prerequisites"></a>Forudsætninger 
 
-Du skal være administrator af SharePoint-websteder for at kunne udføre aktiviteterne i denne artikel.
+Du skal være administrator af SharePoint-websitet for at kunne udføre aktiviteterne i denne artikel.
 
-1. Log på SharePoint som administrator af webstedet.
+1. Log på SharePoint som administrator af websitet.
 1. Vælg **Sider** på navigationslinjen.
 
     ![Vælg flowet for sidegodkendelse](media/customize-sharepoint-page-approvals/pages.png)
 
-1. Vælg **Automate** > **Power Automate** > **Konfigurer flow for sidegodkendelse**.
+1. Vælg **Automatiser** > **Power Automate** > **Konfigurer flow for sidegodkendelse**.
     
     ![Vælg flowet for sidegodkendelse](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
 
 1. Vælg **Opret flow**.
 
-1. Du kan eventuelt få brug for at logge på de tjenester, denne Power Automate-skabelon bruger.
+1. Du kan eventuelt få brug for at logge på de tjenester, som denne Power Automate-skabelon bruger.
 
 1. Vælg **Fortsæt**.
 
@@ -54,7 +54,7 @@ Du skal være administrator af SharePoint-websteder for at kunne udføre aktivit
     
     ![Vælg flowet for sidegodkendelse](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
 
-Det er det hele. Hver gang en side tilføjes eller redigeres nu, sendes der en godkendelsesanmodning til de **godkendere**, du har angivet i flowet.
+Det var det! Hver gang en side tilføjes eller redigeres nu, sendes der en godkendelsesanmodning til de **godkendere**, du har angivet i flowet.
 
 Flowet for sidegodkendelse er ligesom et hvilket som helst andet flow, så det er angivet under fanen **Mine flow**.
 
@@ -78,7 +78,7 @@ Godkendere modtager en mail, når der er en anmodning om godkendelse af en side.
 
 ## <a name="customize-page-approval-flows"></a>Tilpas flow for sidegodkendelse
 
-Da sidegodkendelser bruger Power Automate i baggrunden, er flowet for godkendelse af sider tilgængeligt for webstedsejere, så de kan redigere og tilføje brugerdefineret forretningslogik i flowet. Hvis du vil redigere flowet, kan webstedsejeren vælge **Flow** og derefter vælge **Se dine flow** på bibliotekssiderne for at finde sidegodkendelsesflowet.
+Da sidegodkendelser bruger Power Automate i baggrunden, er flowet for sidegodkendelse tilgængeligt for websiteejere, så de kan redigere og tilføje brugerdefineret forretningslogik i flowet. Hvis du vil redigere flowet, kan webstedsejeren vælge **Flow** og derefter vælge **Se dine flow** på bibliotekssiderne for at finde sidegodkendelsesflowet.
 
 ## <a name="learn-more"></a>Få mere at vide
 

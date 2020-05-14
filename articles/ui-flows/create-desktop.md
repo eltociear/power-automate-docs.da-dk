@@ -25,9 +25,9 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525071"
+ms.locfileid: "3298853"
 ---
-# <a name="create-and-test-desktop-ui-flows"></a>Opret og test flow for brugergrænsefladen på skrivebordet
+# <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow
 
 I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så den lægger to tal sammen og derefter gemmer resultatet til senere brug.
 
@@ -85,12 +85,12 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 1. Start appen Lommeregner.
 
      >[!TIP]
-     >Når du holder musemarkøren over kontrolelementer i appen, kan du se en blå kontur rundt om hvert enkelt kontrolelement. Vent altid på den blå markering, før du vælger et kontrolelement.
+     >Når du holder musen over kontrolelementer i programmet, kan du se en blå kontur rundt om hvert enkelt kontrolelement. Vent altid på den blå markering, før du vælger et kontrolelement.
      >
      >Hvis elementet ikke er fremhævet med blåt, optages det muligvis ikke korrekt.
 
-1. Vælg **Optag** fra optagerkontrolelementet.
-1. Vælg det første tal, vælg **+** , vælg det andet tal, og vælg derefter **=** .
+1. Vælg **Optag** i optagerkontrolelementet.
+1. Vælg det første tal, vælg **+**, vælg det andet tal, og vælg derefter **=**.
 
     ![Appen Lommeregner](../media/create-windows-ui-flow/app-to-record.png "Appen Lommeregner")
     
@@ -106,7 +106,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 1. Vælg det kort, der starter med "Kør scriptet <app name>", for at få vist skærmbilleder af de trin, der er optaget.
 
      >[!TIP]
-     >Vælg **...**  > **Slet** for at fjerne eventuelle identiske trin.
+     >Vælg **...** > **Slet** for at fjerne eventuelle identiske trin.
 
     ![Vis trin, der er optaget](../media/create-windows-ui-flow/show-recorded-steps.png "Vis trin, der er optaget")
 
@@ -128,7 +128,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 - Det kan være en god idé at tilføje handlingen [**Luk**](edit-desktop.md#add-a-manual-action)i slutningen af dit flow for brugergrænseflade, fordi flow for brugergrænseflader starter en ny forekomst af programmerne med hver test eller kørsel.
 
-- Vælg **...**  > **Slet** på kortet med handlinger, der er optaget, for at fjerne eventuelle unødvendige/identiske handlinger.
+- Vælg **...** > **Slet** på kortet med handlinger, der er optaget, for at fjerne eventuelle unødvendige/identiske handlinger.
 
 - Højreklik afspilles muligvis ikke korrekt. Hvis det er tilfældet, skal du klikke til venstre under optagelsen for at få flow for brugergrænseflade til at fokusere på destinationsbrugergrænsefladen og derefter højreklikke.
 
@@ -140,7 +140,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 - Interaktioner i Windows (Stifinder, menuen Start, proceslinje osv.).
 
 - Webbrowsere (Chrome, IE, Microsoft Edge, Firefox, Mozilla, osv.).
-    Du skal se [Opret et flow for brugergrænsefladen på internettet](create-web.md) for at automatisere websteder.
+    Du skal se [Opret et flow for brugergrænseflade](create-web.md) for at automatisere websteder.
 
 -   Java-programmer.
 
@@ -150,7 +150,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 -   Microsoft Office 2016 og tidligere. 
 
--   Microsoft Office Online.
+-   Microsoft Office online.
 
 ### <a name="unsupported-configurations"></a>Ikke-understøttede konfigurationer
 
@@ -160,7 +160,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 -   Flere forekomster af et program, hvor titlerne på hovedvinduet er identiske.
 
--   Programvinduer med identiske titler, f. eks. Microsoft Outlook med flere nye mailvinduer af typen **Ikke-navngivet – meddelelse (HTML)** samtidig.
+-   Programvinduer med identiske titler, f.eks. Microsoft Outlook med flere nye mailvinduer af typen **Ikke-navngivet – meddelelse (HTML)** samtidig.
 
 -   Samtidige optagelsessessioner på en given enhed.
 
@@ -190,8 +190,8 @@ Følgende handlinger optages ikke:
 ## <a name="unreliable-behaviors-and-workarounds-for-microsoft-office-desktop"></a>Upålidelige funktionsmåder og løsninger til Microsoft Office (computer)
 
 - Fastgør båndet, før du starter afspilning, for at undgå problemer, der kan opstå, hvis båndet er indstillet til at blive skjult automatisk under afspilning.
-- Vælg ikke elementer ved at klikke og trække. Brug f. eks. ikke Skift-klik til at markere celler i Microsoft Excel, og vælg ikke tekst i Microsoft Word eller Microsoft PowerPoint ved at trække musen.
-- Nogle elementer fungerer muligvis ikke korrekt i flow for brugergrænsefladen til Microsoft Word- og Microsoft PowerPoint-skrivebordsprogrammer. Punkter i menuen **Filer**, f.eks. start fra en tom side, eller højreklik på kontrolelementer for f.eks. at tilføje et afsnit i Microsoft Word eller ændre layoutet af dias i Microsoft PowerPoint fungerer muligvis ikke.
+- Vælg ikke elementer ved at klikke og trække. Brug f.eks. ikke Skift-klik til at markere celler i Microsoft Excel, og vælg ikke tekst i Microsoft Word eller Microsoft PowerPoint ved at trække musen.
+- Nogle elementer fungerer muligvis ikke korrekt i flow for brugergrænsefladen til Microsoft Word- og Microsoft PowerPoint-skrivebordsprogrammer. Punkter i menuen **Filer**, f.eks. start fra en tom side eller højreklik på kontrolelementer, for f.eks. at tilføje et afsnit i Microsoft Word eller ændre layoutet af dias i Microsoft PowerPoint, fungerer muligvis ikke.
 
 ## <a name="next-steps"></a>Næste trin
 

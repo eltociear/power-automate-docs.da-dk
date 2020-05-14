@@ -1,6 +1,6 @@
 ---
 title: Forstå datahandlinger | Microsoft Docs
-description: Få mere at vide om at udføre handlinger, f.eks. oprette en HTML-tabel, oprette en CSV-tabel, skrive en meddelelse, joinforbinde, vælge og filtrere en matrix med Power Automate.
+description: Få mere at vide om at udføre handlinger, f.eks. oprette en HTML-tabel, oprette en CSV-tabel, skrive, forbinde, vælge og filtrere matrix med Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0541a89ad0fe5f8d7dae0acfc6f257be7532ef15
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195064"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297555"
 ---
 # <a name="use-data-operations-with-power-automate"></a>Brug datahandlinger med Power Automate
 
-I denne gennemgang får du mere at vide om nogle af de populære datahandlinger i Power Automate, f.eks. at skrive en meddelelse, joinforbinde, vælge, filtrere en matrix, oprette en tabel og opdele JSON, som er tilgængelige til redigering af data, når du opretter flow.
+I denne gennemgang får du mere at vide om nogle af de populære datahandlinger i Power Automate, f.eks. at skrive, forbinde, vælge, filtrere matrix, oprette tabel og fortolke JSON-tekst, som er tilgængelig, for at håndtere data, når du opretter flows.
 
 ## <a name="prerequisites"></a>Forudsætninger
 * Adgang til Power Automate.
@@ -92,7 +92,7 @@ og du vil omforme de indgående data ved at omdøbe "first" til "FirstName", "la
 
 ````[ { "FirstName": "Deon", "FamilyName": "Herb", "FullName": "Deon Herb" }, { "FirstName": "K", "FamilyName": "Herb", "FullName": "K Herb" } ]````.
 
-Det gør du på følgende måde:
+Dette gør du på denne måde:
 
 1. Føj handlingen **Anmodning/Svar – Svar** (anmodning) til dit flow.
 2. Vælg **Anvend eksempel på nyttedata til at generere skema** fra kortet **Anmodning**.

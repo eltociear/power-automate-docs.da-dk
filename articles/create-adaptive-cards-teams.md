@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 3ba5f24bf24f57242441fab2770bce881bc78b69
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192111"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297379"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
@@ -49,8 +49,8 @@ Følg disse trin for at oprette et flow, der sender et tilpasset kort til den ge
     
     ![Gentagelseskort](media/create-adaptive-cards-teams/recurrence-card.png)
     
-1. Vælg **næste trin**.
-1. Søg efter **tilpasset**, vælg **Microsoft Teams**, og vælg derefter den **Send dine egne tilpassede kort som Flow bot til en kanal (prøveversion)** .
+1. Vælg **Nyt trin**.
+1. Søg efter **tilpasset**, vælg **Microsoft Teams**, og vælg derefter handlingen **Send dine egne tilpassede kort som flowrobotten til en kanal (eksempel)**.
 
    ![Tilpasset kort](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 

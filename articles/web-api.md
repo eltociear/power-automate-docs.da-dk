@@ -1,28 +1,28 @@
 ---
-title: Flow gemmes nu i Common Data Service og bruger den omfattende web-API
-description: Flow gemmes nu i Common Data Service og bruger den omfattende web-API.
+title: Flows gemmes nu i Common Data Service og bruger den omfattende web-API
+description: Flows gemmes nu i Common Data Service og bruger den omfattende web-API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 04/28/2020
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852755"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298347"
 ---
-# <a name="power-automate-web-api"></a>Power Automate-web-API
+# <a name="power-automate-web-api"></a>Power Automate Web API
 
 
-Fremover gemmes alle flow i Common Data Service og gør brug af [den omfattende web-API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
+Fremover gemmes alle flows i Common Data Service og gør brug af [den omfattende web-API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
-Dette indhold dækker administrationen af flow, som er inkluderet under fanen **Løsninger** i Power Automate. I øjeblikket understøtter disse API'er ikke flow under **Mine flow**.
+Dette indhold dækker administrationen af flows, som er inkluderet på fanen **Løsninger** i Power Automate. I øjeblikket understøtter disse API'er ikke flow under **Mine flow**.
 
 ## <a name="compose-http-requests"></a>Udarbejd HTTP-anmodninger
 
@@ -46,15 +46,14 @@ Du skal starte med at skabe URL-adressen for at komme i gang med at oprette anmo
      | Australien      | crm6        |
      | Japan          | crm7        |
      | Indien          | crm8        |
-     | US Government  | crm9        |
+     |  US Government  | crm9        |
      | Storbritannien | crm11       |
-     |De Forenede Arabiske Emirater |   crm15|
 
 Du kan også hente listen over forekomster, der er tilgængelige for dig, programmatisk via metoden [Hent forekomster](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) i API'en til Online Management.
 
 Hver anmodning til web-API'en skal have headerne `Accept` og `Content-type` angivet til `application/json`.
 
-Udfyld til sidst headeren `Authorization` med et Azure AD-ihændehavertoken. [Få mere at vide om](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth), hvordan du får et Azure AD-ihændehavertoken til Common Data Service. Se f.eks. denne anmodning:
+Udfyld til sidst headeren `Authorization` med et Azure AD-ihændehavertoken. Du kan [lære](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth), hvordan du får et Azure AD-ihændehavertoken for Common Data Service. Se f.eks. denne anmodning:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -91,9 +90,9 @@ Svaret indeholder en liste over flow fra dette miljø:
 
 Som vist ovenfor kan du hente listen over arbejdsprocesser ved at kalde `GET` på `workflows`. Hver arbejdsproces har mange egenskaber, men de mest relevante er:
 
-| Navn på egenskab     | Beskrivelse                                              |
+| Egenskabsnavn     | Beskrivelse                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | Kategorien for flowet. De forskellige typer er: 0 − klassiske arbejdsprocesser i Common Data Service, 1 − klassiske dialogbokse i Common Data Service, 2 − forretningsregler, 3 − klassiske handlinger i Common Data Service, 4 − forretningsprocesforløb og 5 − automatiserede, øjeblikkelige eller planlagte flow. |
+| category          | Kategorien for flowet. De forskellige typer er: 0 − klassiske arbejdsprocesser i Common Data Service, 1 − klassiske dialogbokse i Common Data Service, 2 − forretningsregler, 3 − klassiske handlinger i Common Data Service, 4 − flows for forretningsprocesser og 5 − automatiserede, øjeblikkelige eller planlagte flows. |
 | statecode         | Statussen for flowet. Statussen kan være **0** − Fra eller **1** − Til.|
 | workflowuniqueid  | Det entydige id for denne installation af flowet. |
 | workflowid        | Det entydige id for et flow på tværs af alle importer. |
@@ -101,14 +100,14 @@ Som vist ovenfor kan du hente listen over arbejdsprocesser ved at kalde `GET` p�
 | _ownerid_value    | Det entydige id for den bruger eller det team, der ejer flowet. Dette er et id fra objektet systemusers i Common Data Service. |
 | modifiedon        | Den sidste gang, flowet blev opdateret. |
 | ismanaged         | Angiver, om flowet blev installeret via en administreret løsning. |
-| name              | Det viste navn, du har givet flowet. |
+| navn              | Det viste navn, du har givet flowet. |
 | _modifiedby_value | Den sidste bruger, som opdaterede flowet. Dette er et id fra objektet systemusers i Common Data Service. |
 | _createdby_value  | Den bruger, som oprettede flowet. Dette er et id fra objektet systemusers i Common Data Service. |
 | type              | Angiver, om flowet er et kørende flow eller en skabelon, der kan bruges til at oprette yderligere flow. 1 − flow, 2 − aktivering eller 3 − skabelon. |
 | beskrivelse       | Den brugerangivne beskrivelsen af flowet. |
 | clientdata        | En strengkodet JSON af et objekt, der indeholder connectionReferences og definitionen af flowet. |
 
-Du kan også anmode om bestemte egenskaber, filtrere listen over flow m.m., som beskrevet i [dokumentationen for forespørgsel om data i API til Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Denne forespørgsel returnerer f.eks. kun de automatiserede, øjeblikkelige eller planlagte flow, der i øjeblikket er på:
+Du kan også anmode om bestemte egenskaber, filtrere listen over flows m.m., som beskrevet i [dokumentationen om Common Data Service API'er til oprettelse af forespørgsler om data](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Denne forespørgsel returnerer f.eks. kun de automatiserede, øjeblikkelige eller planlagte flow, der i øjeblikket er på:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -116,7 +115,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-## <a name="create-a-flow"></a>Opret et flow
+## <a name="create-a-flow"></a>Opret et forløb
 
 Kald `POST` i samlingen `workflows` for at oprette et flow. De krævede egenskaber for automatiserede, øjeblikkelige og planlagte flow er: category, name, type, primaryentity og clientdata. Brug `none` som primaryentity for disse typer flow.
 
@@ -142,10 +141,10 @@ Det vigtigste afsnit er `clientdata`, der indeholder de connectionReferences, so
 
 Der er tre egenskaber:
 
-| Navn på egenskab  | Beskrivelse                                                 |
+| Egenskabsnavn  | Beskrivelse                                                 |
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identificerer forbindelsen. Du kan se connectionName ved at gå til siden **Forbindelser** og derefter kopiere det fra forbindelsens URL-adresse. |
-| source         | Enten `Embedded` eller `Invoker`. `Invoker` er kun gyldig til øjeblikkelige flow, som er dem, hvor brugeren vælger en knap til at køre flowet, og angiver, at slutbrugeren leverer forbindelsen. I dette tilfælde bruges connectionName kun på designtidspunktet. Hvis forbindelsen er `Embedded`, betyder det, at det connectionName, du angiver, altid bruges. |
+| kilde         | Enten `Embedded` eller `Invoker`. `Invoker` er kun gyldig til øjeblikkelige flow, som er dem, hvor brugeren vælger en knap til at køre flowet, og angiver, at slutbrugeren leverer forbindelsen. I dette tilfælde bruges connectionName kun på designtidspunktet. Hvis forbindelsen er `Embedded`, betyder det, at det connectionName, du angiver, altid bruges. |
 | id             | Identifikator for connectoren. Id'et starter altid med `/providers/Microsoft.PowerApps/apis/` og efterfølges derefter af navnet på connectoren, som du kan kopiere fra forbindelsens URL-adresse eller ved at vælge connectoren på siden **Connectorer**. |
 
 Når du udfører anmodningen `POST`, modtager du headeren `OData-EntityId`, som indeholder `workflowid` for dit nye flow.
@@ -195,7 +194,7 @@ Authorization: Bearer ey...
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>Se alle brugere, som et flow er delt med
 
-Til angivelse af en liste over brugere med adgang bruges en *funktion* i Common Data Service. Denne funktion anvender en enkelt parameter af `Target`:
+Angivelse af brugerne med adgang til en *funktion* i Common Data Service. Denne funktion anvender en enkelt parameter af `Target`:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
@@ -248,8 +247,8 @@ Parameteren `AccessMask` er et felt med følgende værdier for forskellige tilla
 
 | Navn         | Beskrivelse                                          |
 | ------------ | ---------------------------------------------------- |
-| None         | Ingen adgang                                           |
-| ReadAccess   | Ret til at læse flowet.                          |
+| Intet         | Ingen adgang                                           |
+| Læseadgang   | Ret til at læse flowet.                          |
 | WriteAccess  | Ret til at opdatere flowet.                        |
 | DeleteAccess | Ret til at slette flowet.                        |
 | ShareAccess  | Ret til at dele flowet.                         |
@@ -310,9 +309,9 @@ Du kan derefter gemme denne fil i versionsstyring og/eller bruge en hvilken som 
 
 Kald handlingen `ImportSolution` for at importere en løsning.
 
-| Navn på egenskab                    | Beskrivelse                               |
+| Egenskabsnavn                    | Beskrivelse                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | Hvis der er eksisterende forekomster af disse flow i Common Data Service, skal dette flag angives til `true` for at importere dem. Ellers overskrives de ikke. |
+| OverwriteUnmanagedCustomizations | Hvis der findes forekomster af disse flows i Common Data Service, skal dette flag angives til `true` for at importere dem. Ellers overskrives de ikke. |
 | PublishWorkflows                 | Angiver, om klassiske arbejdsprocesser i Common Data Service aktiveres ved import. Denne indstilling gælder ikke for andre typer af flow. |
 | ImportJobId                      | Giver et nyt entydigt GUID, som kan bruges til at spore importjobbet. |
 | CustomizationFile                | En grundlæggende 64-kodet zip-fil, der indeholder løsningen. |
@@ -340,4 +339,4 @@ Authorization: Bearer ey...
 
 Dette kald returnerer statussen for importhandlingen, herunder `progress` (procentdelen af fuldførelsen), `startedon` og `completedon` (hvis importen er afsluttet).
 
-Når importen er fuldført, skal du konfigurere forbindelserne til flowet, da `connectionNames` sandsynligvis vil være anderledes i destinationsmiljøet (hvis forbindelserne overhovedet findes). Hvis du konfigurerer nye forbindelser i destinationsmiljøet, skal ejeren af de forskellige flow oprette dem i Power Automate-designeren. Hvis forbindelserne allerede er konfigureret i det nye miljø, kan du udføre handlingen `PATCH` for flowets `clientData` og angive navnene på forbindelserne.
+Når importen er fuldført, skal du konfigurere forbindelserne til flowet, da `connectionNames` sandsynligvis vil være anderledes i destinationsmiljøet (hvis forbindelserne overhovedet findes). Hvis du konfigurerer nye forbindelser i destinationsmiljøet, skal ejeren af de forskellige flows oprette dem i Power Automate-designeren. Hvis forbindelserne allerede er konfigureret i det nye miljø, kan du udføre handlingen `PATCH` for flowets `clientData` og angive navnene på forbindelserne.

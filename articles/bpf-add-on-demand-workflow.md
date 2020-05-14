@@ -18,11 +18,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bb8ca7efb83a863f3031dd18d0d9bd67ae3c5c07
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194065"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297115"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Føj en arbejdsproces efter behov til et forretningsprocesforløb
 
@@ -34,17 +34,17 @@ En arbejdsproces bliver aktiveret, afhængigt af hvor du slipper arbejdsprocesse
 - Globale processer efter behov. Når arbejdsprocessen slippes i området **Globale arbejdsprocesser**, udløses arbejdsprocessen ved procesaktivering eller procesarkivering (når statussen går videre til en anvendt, fuldført, genaktiveret eller afbrudt fase). 
 
 Bemærk følgende krav, når du føjer en arbejdsproces til et forretningsprocesforløb.
-- For arbejdsprocesser, der føjes til en fase: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for den samme enhed i den fase, hvor du tilføjer arbejdsprocessen.  
-- For globale arbejdsprocesser: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for den primære enhed for forretningsprocessen.
+- For arbejdsprocesser, der føjes til en fase: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for det samme objekt i den fase, hvor du tilføjer arbejdsprocessen.  
+- For globale arbejdsprocesser: Du kan kun bruge aktive arbejdsprocesser efter behov, der er oprettet for det primære objekt for forretningsprocessen.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Føj en arbejdsproces efter behov til en fase i et forretningsprocesforløb
 
 Du tilføjer en arbejdsproces efter behov fra designeren til forretningsprocesforløb ved at trække arbejdsproceskomponenten til en fase i processen eller til afsnittet globale arbejdsprocesser. 
 
-På webstedet [PowerApps](https://make.powerapps.com) skal du vælge **Modeldrevet** (nederst til venstre i navigationsruden). 
+På [PowerApps](https://make.powerapps.com)-webstedet skal du vælge **Modelbaseret** (i navigationsruden nederst til venstre). 
 
 Åbn designeren til forretningsprocesforløb. Det kan du gøre på to måder.
-- Hvis forretningsprocesforløbet allerede er føjet til en app, skal du gå til **Apps** og vælge **...**  ud for den relevante app og derefter vælge **Rediger**. I appdesigneren skal du vælge forretningsprocesforløbet og derefter vælge ![Åbn designer til forretningsprocesforløb](media/dynamics365-open-designer.PNG).  
+- Hvis forretningsprocesforløbet allerede er føjet til en app, skal du gå til **Apps** og vælge **... ** ud for den relevante app og derefter vælge **Rediger**. I appdesigneren skal du vælge forretningsprocesforløbet og derefter vælge ![Åbn designer til forretningsprocesforløb](media/dynamics365-open-designer.PNG).  
 - Du kan også åbne [Løsningsoversigt](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), vælge **Processer** i venstre navigationsrude og derefter vælge det relevante forretningsprocesforløb. 
 
 Beslut, om arbejdsprocessen skal udløses af en af følgende hændelser i et forretningsprocesforløb. 

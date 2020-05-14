@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 28199ab8b2a2dbf18ef89b905b2bdd362ff9e82b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194088"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298237"
 ---
 # <a name="manage-sequential-approvals-with-power-automate"></a>Administrer sekventielle godkendelser med Power Automate
 
@@ -34,7 +34,7 @@ Nogle arbejdsprocesser kræver forhåndsgodkendelse, før den endelige godkender
 I denne gennemgang opretter vi et sekventielt godkendelsesflow til administration af medarbejderes anmodning om ferie.
 
 > [!NOTE]
-> SharePoint bruges kun som et eksempel. Det er ikke nødvendigt for at oprette godkendelsesflow. Du kan bruge en af de mere end 200 tjenester, som Power Automate kan integreres med, til at køre dine flow.
+> SharePoint bruges kun som et eksempel. Det er ikke nødvendigt for at oprette godkendelsesflows. Du kan bruge en af de mere end 200 tjenester, som Power Automate kan integreres med, til at køre dine flows.
 
 
 ## <a name="detailed-steps-in-the-flow"></a>Detaljerede trin i flowet
@@ -43,7 +43,7 @@ Flowet:
 1. Starter, når en medarbejder opretter en anmodning om ferie på en [SharePoint Online-liste](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
 2. Tilføjer anmodningen om ferie i godkendelsescentret og sender derefter en mail med anmodningen til forhåndsgodkenderen.
 3. Sender en mail med afgørelsen om forhåndsgodkendelse til medarbejderen.
-4. Opdaterer SharePoint Online-listen med afgørelsen og kommentarer fra forhåndsgodkenderen.
+4. Opdaterer SharePoint Online-listen med godkenderens tidlige afgørelse og kommentarer.
    
    Bemærk! Hvis anmodningen er forhåndsgodkendt, fortsætter flowet med disse trin:
 5. Sender anmodningen til den endelige godkender.
@@ -59,9 +59,9 @@ I dette billede opsummeres ovenstående trin:
 
 I forbindelse med denne gennemgang skal SharePoint Online-listen, som du opretter, indeholde følgende kolonner:
 
-   ![Kolonner i SharePoint-liste](./media/sequential-modern-approvals/sharepoint-columns.png)
+   ![SharePoint-listekolonner](./media/sequential-modern-approvals/sharepoint-columns.png)
 
-Noter navnet og URL-adressen på SharePoint Online-listen. Vi skal bruge disse elementer senere, når vi konfigurerer udløseren **SharePoint – Når der oprettes et nyt element**.
+Noter navnet og URL-adressen på SharePoint Online-listen. Vi bruger disse elementer senere, når du skal konfigurere udløseren **SharePoint – Når der oprettes et nyt element**.
 
 ## <a name="create-your-flow-from-the-blank-template"></a>Opret dit flow fra den tomme skabelon
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]

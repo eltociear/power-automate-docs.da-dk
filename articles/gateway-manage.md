@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 33c2e0e6a3a35e23d0889cd19908a055cc7f5f5e
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193559"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297665"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administrer en datagateway i det lokale miljø i Power Automate.
+# <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Adminsitrer en datagateway i det lokale miljø i Power Automate
 
 
-Installer og administrer en datagateway i det lokale miljø for at integrere en række cloudbaserede apps sikkert med dine data og apps i det lokale miljø med Power Automate.
+Installer og administrer en datagateway i det lokale miljø for at integrere en række cloudbaserede apps sikkert med dine data og apps i det lokale miljø gennem Power Automate.
 
 Med en gateway kan du oprette forbindelse til data i det lokale miljø via disse forbindelser:
 
@@ -38,7 +38,7 @@ Med en gateway kan du oprette forbindelse til data i det lokale miljø via disse
 * Brugerdefinerede connectorer, som du opretter
 * DB2
 * Filsystem
-* HTTP med Microsoft Azure Active Directory
+* Http med Azure AD
 * Informix
 * MySQL
 * Oracle Database
@@ -67,12 +67,12 @@ Hvis du vil installere en gateway, skal du følge trinnene i [Installer en datag
 
 ## <a name="view-your-gateways"></a>Se dine gateways
 
-I øverste højre hjørne af [Power Automate-webstedet](https://flow.microsoft.com) skal du vælge tandhjulsikonet og derefter vælge **Gateways**.
+I øverste højre hjørne af [Power Automate-websstet](https://flow.microsoft.com) skal du vælge tandhjulsikonet og derefter vælge **Gateways**.
 
 ![Gateway under administration][1]
 
 > [!NOTE]
-> Hvis du har oprettet eller har fået adgang til en gateway i Power Apps, vises den pågældende gateway på listen **Mine gateways** i Power Automate.
+> Hvis du har oprettet eller har fået adgang til en gateway i Power Apps, vises denne gateway på listen **Mine gateways** i Power Automate.
 
 ## <a name="cluster-your-gateways"></a>Opret klynger til dine gateways
 

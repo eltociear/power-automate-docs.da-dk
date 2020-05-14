@@ -21,18 +21,18 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e6a64f60802330857f8e17c9d4ea179426307633
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224394"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297511"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Føj flere handlinger og avancerede indstillinger til et flow
 
-Tilpas et flow ved at tilføje en eller flere avancerede indstillinger og flere handlinger for den samme udløser. Tilføj f.eks. en avanceret indstilling, der sender en mail med høj prioritet. Udover at sende en mail, hvor et element er føjet ti len SharePoint-liste, kan du oprette en fil i Dropbox, der indeholder de samme oplysninger.
+Tilpas et flow ved at tilføje en eller flere avancerede indstillinger og flere handlinger for den samme udløser. Tilføj f.eks. en avanceret indstilling, der sender en mail med høj prioritet. Udover at sende en mail, hvor et element er føjet til en SharePoint-liste, kan du oprette en fil i Dropbox, der indeholder de samme oplysninger.
 
 ## <a name="prerequisites"></a>Forudsætninger
-* [Opret et flow](get-started-logic-flow.md)
+* [Opret et forløb](get-started-logic-flow.md)
 
 ## <a name="add-another-action"></a>Tilføj en anden handling
 I denne procedure skal du tilføje en handling midt i flowet. Denne handling gemmer en fil i din Dropbox og arkiverer elementet på listen.

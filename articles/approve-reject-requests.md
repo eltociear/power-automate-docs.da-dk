@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d02bce2ba97df31814d6488eca90d5c69733e7dd
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193881"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297049"
 ---
 # <a name="manage-approval-requests-in-power-automate"></a>Administrer godkendelsesanmodninger i Power Automate
 
-Power Automate gør det nemt at automatisere [arbejdsprocesser for godkendelse](modern-approvals.md). I denne gennemgang du få mere at vide om, hvordan du kan få vist, godkende og afvise godkendelsesanmodninger, der er sendt fra Power Automate.
+Power Automate gør det nemt at automatisere [arbejdsprocesser for godkendelser](modern-approvals.md). I denne gennemgang får du mere at vide om, hvordan du kan få vist, godkende og afvise godkendelsesanmodninger, der er sendt fra Power Automate.
 
 ## <a name="view-pending-approval-requests"></a>Få vist ventende anmodninger om godkendelse
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
@@ -46,5 +46,5 @@ Power Automate gør det nemt at automatisere [arbejdsprocesser for godkendelse](
 * Opret [godkendelsesflows.](modern-approvals.md)
 * Opret [sekventielle godkendelsesflows.](sequential-modern-approvals.md)
 * Opret [parallelle godkendelsesflows.](parallel-modern-approvals.md)
-* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installer Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 

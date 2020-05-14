@@ -1,6 +1,6 @@
 ---
 title: Oversigt over adaptive kort til Teams | Microsoft Docs
-description: Få mere at vide om brug af adaptive kort i Microsoft Teams.
+description: Lær at bruge adaptive kort med Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7b39474bbc59ba059fd73f2edc7f9b5750edbec2
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868750"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298303"
 ---
 # <a name="overview-of-adaptive-cards-for-microsoft-teams"></a>Oversigt over adaptive kort til Microsoft Teams
 

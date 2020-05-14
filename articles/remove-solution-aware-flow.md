@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: a026354671627d8d8714e0da1d0d6e8011387da8
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193789"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296587"
 ---
 # <a name="remove-a-solution-aware-flow"></a>Fjern et løsningsorienteret flow
 
@@ -37,7 +37,7 @@ Handling|Resultat
 Fjern fra denne løsning|Flowet fjernes fra den valgte løsning, men forbliver i miljøet. Du kan bruge flowet i andre løsninger i miljøet på et senere tidspunkt.
 Slet fra dette miljø|Flowet slettes. Det er ikke tilgængeligt i miljøet.
 
-1. Log på Power Automate, og vælg derefter **Løsninger** på navigationslinjen.
+1. Log på Power Automate, og vælg derefter **Løsninger** fra den venstre navigationslinje.
 1. Vælg den løsning, der indeholder det flow, du vil slette.
 
    ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
@@ -50,6 +50,6 @@ Slet fra dette miljø|Flowet slettes. Det er ikke tilgængeligt i miljøet.
 
 - [Opret en løsning](./overview-solution-flows.md)
 - [Opret et flow i en løsning](./create-flow-solution.md)
-- [Eksportér en løsning](./export-flow-solution.md)
-- [Importér en løsning](./import-flow-solution.md)
+- [Eksportere en løsning](./export-flow-solution.md)
+- [Importere en løsning](./import-flow-solution.md)
 - [Rediger et løsningsorienteret flow](./edit-solution-aware-flow.md)

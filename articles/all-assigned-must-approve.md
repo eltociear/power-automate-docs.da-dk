@@ -25,7 +25,7 @@ ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153453"
+ms.locfileid: "3299293"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Opret et godkendelsesflow, som kræver, at alle skal godkende
 
@@ -42,15 +42,15 @@ Denne type godkendelsesforløb er nyttig i en organisation, der kræver, at en p
 ## <a name="prerequisites"></a>Forudsætninger
 
 * Adgang til [Power Automate](https://flow.microsoft.com), Microsoft Office 365 Outlook og Microsoft Office 365-brugere.
-* En SharePoint-[liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
+* En SharePoint[-liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
     I denne gennemgang forudsættes det, at du har oprettet en SharePoint-liste, der bruges til at anmode om ferier. Se gennemgangen af de [parallelle godkendelser](parallel-modern-approvals.md), hvor du kan finde et detaljeret eksempel på, hvordan SharePoint-listen kan se ud.
-* Kendskab til de grundlæggende funktioner i oprettelse af flow.
+* Kendskab til grundlæggende oplysninger om oprettelse af flow.
 
     Du kan gennemse, hvordan du tilføjer [handlinger, udløsere](multi-step-logic-flow.md#add-another-action) og [betingelser](add-condition.md). I de følgende trin forudsættes det, at du ved, hvordan disse handlinger udføres.
 
 > [!NOTE]
-> I denne gennemgang bruger vi SharePoint og Office 365 Outlook, men du kan bruge andre tjenester, f.eks. Zendesk, Salesforce, Gmail eller en af de mere end [200 tjenester](https://flow.microsoft.com/connectors/), som Power Automate understøtter.
+> Selv om vi bruger SharePoint og Office 365 Outlook i denne gennemgang, kan du bruge andre tjenester, f.eks. Zendesk, Salesforce, Gmail eller en af de mere end [200 tjenester](https://flow.microsoft.com/connectors/), som Power Automate understøtter.
 >
 >
 
@@ -65,25 +65,25 @@ Der bruges tokens i denne gennemgang. Hvis du vi have vist listen over tokens, s
 
 Log på [Power Automate](https://flow.microsoft.com), og udfør derefter følgende trin for at oprette dit flow.
 
-1. Vælg **Mine flow** > **Nyt** > **Automatisk fra tom** øverst til venstre på skærmen.
-1. Navngiv dit flow, og tilføj derefter udløseren **SharePoint – Når et element oprettes eller ændres**.
-1. Angiv **webstedsadressen** på det SharePoint-websted, der hoster din liste med ferieanmodninger, og vælg derefter en liste efter **Listenavn**.
-1. Vælg **Nyt trin**, tilføj Office 365-handlingen **Hent leder (V2)** , markér feltet **Bruger (UPN)** , og føj derefter tokenet **Oprettet efter mail** til det.
+1. Vælg **Mine flows** > **Ny** > **Automatiseret – fra bunden** øverst til højre på skærmen.
+1. Giv dit flow et navn, og tilføj derefter udløseren for **SharePoint – Når et element oprettes eller redigeres**.
+1. Angiv **Webstedsadresse** til det SharePoint-websted, der er vært for din liste med ferieanmodninger, og vælg derefter en liste fra **Listenavn**.
+1. Vælg **Nyt trin**, tilføj handlingen **Hent chef (V2)** for Office 365, markér afkrydsningsfeltet **Bruger (UPN)**, og føj derefter tokenet **Oprettet af mail** til det.
 
     Tokenet **Oprettet af mail** er placeret i kategorien **Når et element oprettes eller ændres** på listen **Dynamisk indhold**. Dette token giver dynamisk adgang til data om chefen for den person, der oprettede elementet på SharePoint.
 
-1. Vælg **Nyt trin**, tilføj en anden Office 365-handling af typen **Hent leder (V2)** , og føj derefter tokenet **Mail** til feltet **Bruger (UPN)** .
+1. Vælg **Nyt trin**, tilføj en anden handling af **Hent chef (V2)** for Office 365, og føj derefter tokenet **Mail** til feltet **Bruger (UPN)**.
 
-    Tokenet **Mail** er placeret i kategorien **Hent leder (V2)** på listen **Dynamisk indhold**. Dette token giver dynamisk adgang til chefens chefs mailadresse.
+    Tokenet **Mail** er placeret i kategorien **Hent chef (V2)** på listen **Dynamisk indhold**. Dette token giver dynamisk adgang til chefens chefs mailadresse.
 
-    Du kan også omdøbe kortet **Hent leder (V2)** til noget, der giver mening, f.eks. "Spring niveauchef over".
-1. Vælg **Nyt trin**, tilføj handlingen **Start, og vent på en godkendelse**, og vælg derefter **Godkend/afvis – alle skal godkende** på listen **Godkendelsestype**.
+    Du kan også omdøbe kortet **Hent chef (V2) 2** til noget, der giver mening, f.eks. "Spring niveauchef over".
+1. Vælg **Nyt trin**, tilføj handlingen **Start og vent for en godkendelse**, og vælg derefter **Godkend/afvis – Alle skal godkende** på listen **Godkendelsestype**.
 
    > [!IMPORTANT]
    > Hvis en af godkenderne afviser, anses godkendelsesanmodningen for at være afvist for alle godkendere.
    >
    >
-1. Brug følgende tabel som vejledning i forbindelse med udfyldelse af kortet **Start, og vent på en godkendelse**.
+1. Brug følgende tabel som en vejledning til at fuldføre kortet **Start og vent på en godkendelse**.
 
    | Felt | Beskrivelse |
    | --- | --- |
@@ -95,48 +95,48 @@ Log på [Power Automate](https://flow.microsoft.com), og udfør derefter følgen
    |  Beskrivelse af elementlinket |En tekst med beskrivelse til **elementlinket**. |
 
    > [!TIP]
-   > Handlingen **Start, og vent på en godkendelse** indeholder flere tokens, herunder **Svar** og **Resultat**. Brug disse tokens i flowet til at levere detaljeret rapportering af resultaterne efter kørsel af et flow til en godkendelsesanmodning .
+   > Handlingen **Start og vent på en godkendelse** indeholder flere tokens, herunder **Svar** og **Resultat**. Brug disse tokens i flowet til at levere detaljeret rapportering af resultaterne efter kørsel af et flow til en godkendelsesanmodning .
    >
    >
 
-    Kortet **Start, og vent på en godkendelse** er en skabelon til den godkendelsesanmodning, der sendes til godkendere. Du kan konfigurere det på den måde, der er mest anvendelig i din organisation. Her er et eksempel.
+    Kortet **Start og vent på en godkendelse** er en skabelon til godkendelsesanmodning, der sendes til godkendere. Du kan konfigurere det på den måde, der er mest anvendelig i din organisation. Her er et eksempel.
 
-    ![Start, og vent på en godkendelse](media/all-assigned-must-approve/start-an-approval-card.png)
+    ![Start og vent på en godkendelse](media/all-assigned-must-approve/start-an-approval-card.png)
 
-    Når et flow med handlingen **Start, og vent på en godkendelse** er konfigureret med **Godkend/afvis – alle skal godkende**, ventes der, indtil alle, som handlingen er **Tildelt til**, godkender, eller mindst én, som handlingen er **Tildelt til**, afviser godkendelsesanmodningen.
+    Når der er konfigureret et flow med handlingen **Start og vent på en godkendelse** med **Godkend/afvis – Alle skal godkende**, venter den, indtil alle **Tildelt til** har godkendt eller mindst en **Tildelt til** har afvist godkendelsesanmodningen.
 
     >[!TIP]
-    >Tilføj et trin at typen **Betingelse**, hvis du ønsker, at flowet skal kontrollere svaret i forbindelse med godkendelsesanmodningen og udføre forskellige handlinger basret på **Resultatet**. **Resultatet** kan være **Godkend** eller **Afvis**. 
+    >Tilføj trinnet **Betingelse**, hvis du vil have flowet til at kontrollere svaret på godkendelsesanmodningen og udføre forskellige handlinger på baggrund af **Resultat**. **Resultat** kan være **Godkend** eller **Afvis**. 
 
-    Lad os fortsætte med flowet og sende en mail, når der er truffet afgørelse om godkendelsesanmodningen.
+    Lad os fortsætte flowet og sende en mail, når der træffes beslutning om godkendelsesanmodningen.
 
-1. Vælg **Nyt trin**, søg efter "Send en mail", tilføj Office 365 Outlook-handlingen **Send en mail (V2)** , og konfigurer derefter handlingen for at sende en mail med resultaterne af anmodningen til den person, der ønsker ferie.
+1. Vælg **Nyt trin**, søg efter "Send en e-mail", tilføj handlingen **Send en e-mail (V2)** for Office 365 Outlook, og konfigurer derefter handlingen til at sende en e-mail med resultaterne fra anmodningen til den person, der vil have ferie.
 
-    Her følger et eksempel på, hvordan kortet **Send en mail (V2)** eventuelt kan se ud.
+    Her er et eksempel på, hvordan kortet **Send en mail (V2)** kan se ud.
 
     ![send en mail](media/all-assigned-must-approve/send-an-email-card.png)
 
 > [!NOTE]
-> En vilkårlig handling, der følger handlingen **Start, og vent på en godkendelse** køres på baggrund af dit valg på listen **Godkendelsestype** på kortet **Start, og vent på en godkendelse**. I følgende tabel vises funktionsmåden baseret på det, du har valgt.
+> En vilkårlig handling, der følger efter kørsler af handlingen **Start og vent på en godkendelse** ud fra dit valg på listen **Godkendelsestype** på kortet **Start og vent på en godkendelse**. I følgende tabel vises funktionsmåden baseret på det, du har valgt.
 >
 >
 
 ### <a name="approval-types-and-their-behaviors"></a>Godkendelsestyper og deres funktionsmåder
 
-| Godkendelsestype | Adfærd |
+| Godkendelsestype | Funktionsmåde |
 | --- | --- |
-| Godkend/afvis – Alle skal godkende | Der kræves godkendelse eller afvisning af **alle** godkendere for at fuldføre anmodningen. </p> De handlinger, der følger efter handlingen **Start, og vent på en godkendelse**, køres, efter at **alle** godkenderne godkender, eller når en enkelt afvisning foretages.|
-| Godkend/afvis – Første til at svare | Godkendelse eller afvisning af en vilkårlig godkender fuldfører anmodningen.  </p> De handlinger, der følger handlingen **Start, og vent på en godkendelse**, køres, efter at en vilkårlig godkender træffer en beslutning.|
-| Kundesvar – Vent på alle svar | Alle godkendere skal svare for at fuldføre processen. |
-| Kundesvar – Vent på ét svar | Et svar fra en vilkårlig godkender fuldfører processen. |
+| Godkend/afvis – Alle skal godkende | Godkendelse eller afvisning er nødvendig, for at **alle** godkendere kan fuldføre anmodningen. </p> De handlinger, der følger efter kørsler af handlingen **Start og vent på en godkendelse**, efter at **alle** godkenderne har godkendt, eller når en enkelt afvisning er udført.|
+| Godkend/afvis – Første til at svare | Godkendelse eller afvisning af enhver godkender, fuldfører anmodningen.  </p> De handlinger, der følger efter kørsel af handlingen **Start og vent på en godkendelse**, efter en af godkenderne har besluttet sig.|
+| Brugerdefinerede svar – Vent på alle svar | Alle godkendere skal reagere for at fuldføre processen. |
+| Brugerdefinerede svar – Vent på ét svar | Et svar fra enhver godkender fuldfører processen. |
 
-Øverst på skærmen skal du vælge **Gem** for at gemme dit flow.
+Vælg **Gem** øverst på skærmen for at gemme dit flow.
 
 Tillykke, dit flow er fuldført! Hvis du har fulgt gennemgangen, ligner dit flow denne afbildning.
 
 ![samlet flowafbildning](media/all-assigned-must-approve/overall-flow.png)
 
-Når et element føjes til din SharePoint-liste, eller et element ændres, udløses dit flow, og der sendes godkendelsesanmodninger til alle godkendere, der er angivet i feltet **Tildelt til** på kortet **Start, og vent på en godkendelse**. Dit flow sender godkendelsesanmodninger via mobilappen Power Automate og via mail. Den person, der opretter elementet i SharePoint, modtager en mail, hvor resultaterne er opsummeret, og som klart angiver, om anmodningen blev godkendt eller afvist.
+Hver gang et element føjes til din SharePoint-liste, eller et element ændres, udløses dit flow og sender godkendelsesanmodninger til alle godkendere, der er anført i feltet **Tildelt til** på kortet **Start og vent på en godkendelse**. Dit flow sender godkendelsesanmodninger via mobilappen Power Automate og via mail. Den person, der opretter elementet i SharePoint, modtager en mail, hvor resultaterne er opsummeret, og som klart angiver, om anmodningen blev godkendt eller afvist.
 
 Her er et eksempel på den godkendelsesanmodning, der sendes til hver godkender.
 

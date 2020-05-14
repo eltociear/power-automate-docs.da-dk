@@ -1,6 +1,6 @@
 ---
-title: Brug input og output i flow for brugergrænsefladen på internettet | Microsoft Docs
-description: Brug input og output i flow for brugergrænsefladen på internettet
+title: Brug input og output i webbrugergrænsefladeflow | Microsoft Docs
+description: Brug input og output i webbrugergrænsefladeflow
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,21 +25,21 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525031"
+ms.locfileid: "3298699"
 ---
-# <a name="use-inputs-and-outputs-in-web-ui-flows"></a>Brug input og output i flow for brugergrænsefladen på internettet
+# <a name="use-inputs-and-outputs-in-web-ui-flows"></a>Brug input og output i webbrugergrænsefladeflow
 
 Du kan definere input, der skal overføres til dine automatiserede programmer under afspilning. Du kan også overføre *output* fra dine automatiserede programmer til dit flow.
 
-## <a name="define-inputs-for-a-web-ui-flow"></a>Definer input til et flow for brugergrænsefladen på internettet
+## <a name="define-inputs-for-a-web-ui-flow"></a>Definer input til et webbrugergrænsefladeflow
 
-Input til et flow for brugergrænsefladen giver dig mulighed for at overføre oplysninger fra en ekstern kilde, f.eks. en database eller et andet flow for brugergrænsefladen, til den ældre destinationssoftware, som du kan automatisere.
+Input til et brugergrænsefladeflow giver dig mulighed for at overføre oplysninger fra en ekstern kilde, f.eks. en database eller et andet brugergrænsefladeflow, til den ældre destinationssoftware, som du kan automatisere.
 
 En hvilken som helst variabel, der bruges (læses) før initialisering (som regel udført via kommandoer til **lagring**), behandles automatisk som en inputvariabel, og den vises på handlingskortet **Kør et flow for brugergrænsefladen på internettet**.
 
 Du kan bruge variabler via strenginterpolering og f.eks. ændre destinationsfeltet for klik-kommandoen til "id =\${elementId}". Du kan også ændre kommandoens værdifelt til "\${inputText}".
 
-Kommandoen **set window size** og kommandoen **type** på følgende skærmbilleder bruger ikke-initialiserede variabler \${Width}, \${Height} og \${Search}. Disse variabler bliver inputværdier.
+Kommandoen **set window size** og kommandoen **type** på følgende skærmbilleder bruger ikke-initialiserede variabler \${Width}, \${Height} og \${search}. Disse variabler bliver inputværdier.
 
 ![Set window size og type](../media/inputs-outputs-web/set-window-size.png "Set window size og type")
 
@@ -47,7 +47,7 @@ Du kan bruge variabler direkte i nogle kommandoer, forEach-kommandoens destinati
 
 Se [Selenium-kommandoer](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) for at finde ud af, hvilke kommandoer der tager imod variabelnavne direkte.
 
-## <a name="define-outputs-for-a-web-ui-flow"></a>Definer output til et flow for brugergrænsefladen på internettet
+## <a name="define-outputs-for-a-web-ui-flow"></a>Definer output til et webbrugergrænsefladeflow
 
 Alle variabler, der er defineret i Selenium-scriptet, bliver automatisk en outputværdi. Brug følgende kommandoer til at angive variabler:
 
@@ -69,6 +69,6 @@ Alle variabler, der er defineret i Selenium-scriptet, bliver automatisk en outpu
 
 ## <a name="next-steps"></a>Næste trin
 
-- Få mere at vide om [oprettelse af flow for brugergrænsefladen på internettet](create-web.md).
-- Få mere at vide om [udløsningen af flow for brugergrænsefladen](run-ui-flow.md).
+- Få mere at vide om [oprettelsen webbrugergrænsefladeflow](create-web.md).
+- Få mere at vide om [udløsningen af brugergrænsefladeflow](run-ui-flow.md).
 

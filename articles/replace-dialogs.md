@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 8d3ce37fee1a4650454cc2c47af0d19fe37da96d
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193697"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296697"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Erstat dialoger med forretningsprocesforløb eller lærredsapps
 
@@ -41,18 +41,18 @@ Denne tabel indeholder dialogfunktionerne og de tilsvarende funktioner i forretn
 |Dialogfunktionalitet  | Funktionalitet i forretningsprocesforløb?  | Funktionalitet i lærredsapps?  |
 |---------|---------|---------|
 |Side     | Ja <br/> (fase i forretningsproces)    | Ja <br/> (appskærm)        |
-|Kun spørgsmål   |  Nej    |  Ja <br/> (etiketter)        |
+|Kun spørgsmål   |  No    |  Ja <br/> (etiketter)        |
 |Spørgsmål og svar     |  Ja <br/> (kun enhedsattributter)    | Ja <br/> (etiketter og inputfelter)    |
 |Inputargumenter     |  Begrænset <br/> (trin i fase i forretningsproces)    | Ja <br/> (parametre for forespørgselsstreng)     |
-|Variabler   |  Nej     |  Ja       |
-|Forespørgselsvariabler    |  Nej     |  Ja     |
+|Variabler   |  No     |  Ja       |
+|Forespørgselsvariabler    |  No     |  Ja     |
 |Betinget forgreningslogik    |  Ja     | Ja <br/>  (gå til en hvilken som helst skærm i appen)    |
-|Genbrug <br/> (start som underordnet dialog)   |  Nej     | Ja <br/> (gå til en hvilken som helst skærm i appen, start en anden app i et nyt vindue)     |
-|Kør arbejdsprocesser ved start/slut    |   Ja      |  Nej <br/> (brug et forløb i stedet)  |
-|Kør arbejdsprocesser ved input    | Ja    | Nej <br/> (brug et forløb i stedet)   |
-|Kør arbejdsprocesser ved sideovergang   |  Ja       | Nej <br/> (brug et forløb i stedet)    |
-|Begynd at bruge en URL-adresse  |   Nej      |  Ja     |
-|Logføring af session    |  Ja       |  Nej     |
+|Genbrug <br/> (start som underordnet dialog)   |  No     | Ja <br/> (gå til en hvilken som helst skærm i appen, start en anden app i et nyt vindue)     |
+|Kør arbejdsprocesser ved start/slut    |   Ja      |  No <br/> (brug et forløb i stedet)  |
+|Kør arbejdsprocesser ved input    | Ja    | No <br/> (brug et forløb i stedet)   |
+|Kør arbejdsprocesser ved sideovergang   |  Ja       | No <br/> (brug et forløb i stedet)    |
+|Begynd at bruge en URL-adresse  |   No      |  Ja     |
+|Logføring af session    |  Ja       |  No     |
 |SDK-support   |  Ja     |  Ja     |
 
 ### <a name="additional-capabilities-with-business-process-flows"></a>Yderligere funktioner med forretningsprocesforløb
@@ -106,7 +106,7 @@ Endelig skal du [definere navigation på skærmbillederne](/powerapps/maker/canv
 
 Hvis du vil gøre denne app tilgængelig for brugere, skal du publicere appen. Overvej, hvordan et sådant scenarie kan transformeres, hvis det bliver tilgængelig som en separat app, der leverer opkaldsscripts og understøtter hurtig dataindtastning.
 
-Forestil dig, at du vil integrere denne oplevelse i Dynamics 365 Sales. Hvis du vil gøre dette, skal du starte med at oprette en iframe i en Dynamics 365 Sales-formular. Derefter skal du gå til sektionen **Apps** i Power Apps-menuen, vælge den app, du netop har publiceret, kopiere weblinket under fanen **Oplysninger** og indsætte det som URL-adressen til din iframe. 
+Forestil dig, at du vil integrere denne oplevelse i Dynamics 365 Sales. Hvis du vil gøre dette, skal du starte med at oprette en iframe i en Dynamics 365 Sales-formular. Derefter skal du gå til sektionen **Apps** i Power Apps-menuen, vælge den app, du netop har publiceret, kopiere weblinket under fanen **Detaljer** og indsætte det som URL-adressen til din iframe. 
 
 Vi kan gå et skridt videre og antage, at du ønsker, at denne app bliver tilgængelig direkte fra kundeemnets hovedformular, og at den knyttes til kundeemnet, så appen ikke kræver, at brugeren vælger et kundeemne i det første skærmbillede. Hvis du vil sende relevante oplysninger til appen, kan du blot ændre iframe-URL-adressen for at tilføje en forespørgselsstreng, der indeholder disse oplysninger, f.eks. id for kundeemne eller konto, ved hjælp af JavaScript, som kører ved en bestemt hændelse, f.eks. ved indlæsning af formularen. Derefter skal du opdatere appen for at fjerne det første skærmbillede (til valg af kundeemne) og i stedet få adgang til de værdier, der er overført til appen via forespørgselsstrengen ved hjælp af [funktionen Param](/powerapps/maker/canvas-apps/functions/function-param).
 
@@ -119,7 +119,7 @@ Kan jeg starte en lærredsapp som en pop op fra en knap på kommandolinjen?
 - Ja. Hvis du vil gøre dette, skal du bare indstille mål-URL-adressen til URL-adressen i din lærredsapp, som kan hentes fra sektionen **Oplysninger** i appen, som beskrevet tidligere.
 
 Kan arbejdsprocesser kaldes fra en lærredsapp?
-- Dette understøttes ikke. Vi anbefaler, at du i stedet bruger et forløb. Flere oplysninger: [Introduktion til knapflow med brugerinput](button-flow-with-user-input-tokens.md)
+- Dette understøttes ikke. Vi anbefaler, at du i stedet bruger et forløb. Flere oplysninger: [Introduktion til knapflows med brugerinput](button-flow-with-user-input-tokens.md)
 
 Kan jeg automatisk konvertere dialoger til forretningsprocesforløb eller lærredsapps?
 - Du kan ikke automatisk konvertere dialoger til forretningsprocesforløb eller lærredsapps.
@@ -127,6 +127,6 @@ Kan jeg automatisk konvertere dialoger til forretningsprocesforløb eller lærre
 
 ## <a name="see-also"></a>Se også
 [Selvstudium: Opret et forretningsprocesforløb for at standardisere processer](create-business-process-flow.md) </br>
-[Hvad er lærredsapps i Power Apps?](/powerapps/maker/canvas-apps/getting-started)
+[Hvad er lærred-apps i Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 
 

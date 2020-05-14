@@ -1,6 +1,6 @@
 ---
-title: Find og løs fejl ved hjælp af Flowkontrol i Power Automate | Microsoft Docs
-description: Find og løs fejl hurtigt med Flowkontrol i Power Automate.
+title: Søg efter og løs fejl med Flowkontrol i Power Automate | Microsoft Docs
+description: Søg efter og løs fejl hurtig med Flowkontrol i Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,12 +25,12 @@ ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200368"
+ms.locfileid: "3299447"
 ---
-# <a name="find-and-fix-errors-with-flow-checker"></a>Find og løs fejl med Flowkontrol
+# <a name="find-and-fix-errors-with-flow-checker"></a>Søg efter og løs fejl med Flowkontrol
 
 
-Flowkontrol i Power Automate resulterer i flow i en højere kvalitet ved at sikre, at du følger den bedste praksis, når du designer flow. Når du kører kontrollen, får du indsigt i spørgsmål som "hvilke områder af mit flows implementering udgør en risiko for ydeevne eller pålidelighed?".
+Flowkontrol i Power Automate fremmer flows af højere kvalitet ved at sikre, at du følger den bedste praksis, når du designer flows. Når du kører kontrollen, får du indsigt i spørgsmål som "hvilke områder af mit flows implementering udgør en risiko for ydeevne eller pålidelighed?".
 
 For hvert enkelt problem, som kontrollen identificerer, vil kontrolelementet pege på bestemte forekomster i flowet, hvor du bør overveje at foretage forbedringer. Du lærer også, hvordan du implementerer disse forbedringer ved at følge den detaljerede vejledning.
 
@@ -53,7 +53,7 @@ Udvid hvert afsnit for at få mere at vide om, hvordan du retter fejl eller adva
 
 ## <a name="learn-more"></a>Få mere at vide
 
-[Kom godt i gang med Power Automate](getting-started.md)
+[Introduktion til Power Automate](getting-started.md)
 
 
 

@@ -25,11 +25,11 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862762"
+ms.locfileid: "3299205"
 ---
 # <a name="build-an-approval-loop-by-using-power-automate-and-common-data-service"></a>Opret en godkendelsesløkke ved hjælp af Power Automate og Common Data Service
 
-Med Common Data Service kan du oprette flow på en måde, hvor oplysningerne gemmes i en database, der er uafhængig af et flow. Det bedste eksempel på dette er godkendelser. Hvis du gemmer status for godkendelsen i en enhed, kan dit flow arbejde oven på den.
+Med Common Data Service kan du oprette flows på en måde, hvor oplysningerne gemmes i en database, der er uafhængig af et flow. Det bedste eksempel på dette er godkendelser. Hvis du gemmer status for godkendelsen i en enhed, kan dit flow arbejde oven på den.
 
 I dette eksempel skal du oprette en godkendelsesproces, der starter, når en bruger føjer en fil til Dropbox. Når filen er tilføjet, vises oplysninger om det i en app, hvor en validator kan godkende eller afvise ændringen. Hvis validatoren godkender eller afviser ændringen, sendes der en meddelelsesmail, og afviste filer slettes fra Dropbox.
 
@@ -108,7 +108,7 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Angiv titelfelt](./media/common-data-model-approve/set-title-field.png)
 6. Klik eller tryk på **Opret** i nærheden af nederste venstre hjørne.
    
-    ![Opret et objekt](./media/common-data-model-approve/create-button.png)
+    ![Oprette et objekt](./media/common-data-model-approve/create-button.png)
 7. (valgfrit) Når listen over objekter vises igen, skal du maksimere browservinduet, hvis det ikke allerede er maksimeret, og derefter klikke eller trykke på kolonneoverskriften **Type**. Listen sorteres, så de brugerdefinerede objekter, f.eks. det, du lige har oprettet, vises øverst.
 
 ## <a name="sign-in-and-create-a-flow"></a>Log på, og opret et flow
@@ -138,7 +138,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 1. Klik eller tryk på **Nyt trin**, og klik eller tryk derefter på **Tilføj en handling**.
    
     ![Tilføj en handling](./media/common-data-model-approve/add-action.png)
-2. I feltet, der indeholder **Søg efter flere handlinger**, skal du skrive eller indsætte **Common Data Service**, og derefter skal du klikke eller trykke på **Common Data Service – opret objekt**.
+2. I feltet, der indeholder **Søg efter flere handlinger**, skal du skrive eller indsætte **Common Data Service** og derefter klikke eller trykke på **Common Data Service – Opret objekt**.
    
     ![Opret et objekt i Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
 3. Under **objektet** skal du skrive eller indsætte **Gennemse** og derefter klikke eller trykke på **Gennemse Dropbox-filer**.
@@ -182,7 +182,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 6. Nederst på handlingen **Foretag indtil** skal du klikke eller trykke på **Tilføj en handling**.
    
     ![Tilføj en handling i en foretag indtil](./media/common-data-model-approve/add-action-in-dountil.png)
-7. I feltet, der indeholder **Søg efter flere handlinger**, skal du skrive **Fælles**, og derefter skal du klikke eller trykke på **Common Data Service – hent objekt**.
+7. I feltet, der indeholder **Søg efter flere handlinger**, skal du skrive **Almindelig** og derefter klikke eller trykke på **Common Data Service – Hent objekt**.
    
     ![Hent et objekt](./media/common-data-model-approve/get-object.png)
 8. Under **navneområdet** skal du klikke eller trykke på databasen.
@@ -251,13 +251,13 @@ Ved at følge trinnene i dette afsnit opretter du:
 2. Klik eller tryk på **Luk**, og klik eller tryk derefter på **Udført**.
 3. I Dropbox skal du tilføje mindst to filer til den mappe, du har angivet: en til at teste godkendelse og en til at teste afvisning.
 
-## <a name="build-the-app"></a>Opret appen
+## <a name="build-the-app"></a>Byg appen
 1. Log på [powerapps.com](https://make.powerapps.com), og klik eller tryk derefter på **Ny app** nederst i venstre navigationslinje.
    
     ![Opret en app i en browser](./media/common-data-model-approve/new-app-button.png)
 2. I den dialogboks, der vises, skal du klikke eller trykke på den indstilling, der åbner enten Power Apps Studio til Windows eller Power Apps Studio til internettet.
 3. Hvis du har åbnet Power Apps Studio til Windows, skal du klikke eller trykke på **Ny** på den venstre navigationslinje.
-4. Under **Opret en app fra dine data** skal du klikke eller trykke på **Telefonlayout** i feltet **Common Data Service**.
+4. Under **Opret en app ud fra data** skal du klikke eller trykke på **Telefonlayout** i feltet **Common Data Service**.
    
     ![Opret app](./media/common-data-model-approve/afd-cdm.png)
 5. I feltet **Søg** skal du skrive eller indsætte **Gennemse**.
@@ -269,7 +269,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 7. Klik eller tryk på **Opret forbindelse** i nærheden af nederste højre hjørne.
    
     ![Knappen Opret forbindelse](./media/common-data-model-approve/connect-button.png)
-8. Hvis åbningsskærmen i introduktionspræsentation vises, kan du se præsentationen for at blive fortrolig med Power Apps (eller du kan klikke eller trykke på **Spring over**).
+8. Hvis åbningsskærmen i introduktionspræsentationen vises, kan du gennemse præsentationen for at blive fortrolig med Power Apps (ellers kan du klikke eller trykke på **Spring over**).
    
     ![Introduktionspræsentation](./media/common-data-model-approve/quick-tour.png)
    
@@ -296,7 +296,7 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Angiv data til meddelelsestekst](./media/common-data-model-approve/set-body.png)
 
 ## <a name="test-the-overall-solution"></a>Test den overordnede løsning
-1. Åbn Vis udskrift i Power Apps ved at klikke eller trykke på afspilningsknappen i øverste venstre hjørne.
+1. Åbn Vis udskrift i Power Apps ved at klikke eller trykke afspilningsknappen i øverste venstre hjørne.
    
     ![Åbn Vis udskrift](./media/common-data-model-approve/open-preview.png)
 2. Klik på den første fil på listen, og klik eller tryk på pilen for at få vist detaljer om filen.

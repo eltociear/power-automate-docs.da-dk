@@ -21,21 +21,21 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dae11e0a355d4e3f40b3829981c1b8da6f363748
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193904"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298127"
 ---
-# <a name="import-a-solution"></a>Importér en løsning
+# <a name="import-a-solution"></a>Importere en løsning
 
 
 > [!TIP]
-> Hvis du ønsker, at dine flow skal starte automatisk, når du har importeret en løsning, skal du bruge connectoren fra Common Data Service (nuværende miljø) i dit flow, når du opretter den.
+> Hvis du ønsker, at dine flows skal starte automatisk, når du har importeret en løsning, skal du bruge connectoren fra Common Data Service (aktuelt miljø) i dit flow, når du opretter det.
 
 Når du har eksporteret din løsning, kan du importere den til et hvilket som helst miljø, der opfylder forudsætningerne. Følg disse trin for at importere en løsning:
 
-1. Log på Power Automate, og vælg derefter **Løsninger** på navigationslinjen.
+1. Log på Power Automate, og vælg derefter **Løsninger** fra den venstre navigationslinje.
 
    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
@@ -65,5 +65,5 @@ Når du har eksporteret din løsning, kan du importere den til et hvilket som he
 
 - [Opret en løsning](./overview-solution-flows.md)
 - [Opret et flow i en løsning](./create-flow-solution.md)
-- [Eksportér en løsning](./export-flow-solution.md)
+- [Eksportere en løsning](./export-flow-solution.md)
 - [Rediger et løsningsorienteret flow](./edit-solution-aware-flow.md)

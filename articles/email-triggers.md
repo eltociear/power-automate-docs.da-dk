@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f7588a3ca1db5c62a4e60380575542671e8d408d
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192298"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297863"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Udløs et flow baseret på mailegenskaber
 
@@ -36,12 +36,12 @@ Brug udløseren **Når en ny mail modtages** til at oprette et flow, der køres,
 | Mappe |Udløs et flow, når du modtager mails i en bestemt mappe. Denne egenskab kan være praktisk, hvis du har regler, der sender mails til andre mapper. |
 | Til |Udløs et flow baseret på den adresse, som en mail blev sendt til. Denne egenskab kan være praktisk, hvis du modtager mail, der er sendt til forskellige mailadresser, i den samme indbakke. |
 | Fra |Udløs et flow baseret på afsenderens mailadresse. |
-| Prioritet |Udløs et flow baseret på den prioritet, som mails blev sendt med. En mail kan sendes med høj, normal eller lav prioritet. |
+| Vigtighed |Udløs et flow baseret på den prioritet, som mails blev sendt med. En mail kan sendes med høj, normal eller lav prioritet. |
 | Har vedhæftet fil |Udløs et flow baseret på tilstedeværelsen af vedhæftede filer i indgående mails. |
 | Emnefilter |Søg efter tilstedeværelsen af bestemte ord i emnet i en mail. Derefter kører dit flow *handlinger*, der er baseret på resultaterne af din søgning. |
 
 > [!IMPORTANT]
-> Alle [Power Automate-planer](https://flow.microsoft.com/pricing/) indeholder en kørselskvote. Kontrollér altid egenskaber i flowets udløser, når det er muligt. Hvis du gør det, undgår du at bruge kørselskvoten uden grund. Hvis du kontrollerer en egenskab i en betingelse, tælles de enkelte kørsler med i din plans kørselskvote, også selvom den filterbetingelse, du har angivet, ikke er opfyldt. 
+> Hver [Power Automate-plan](https://flow.microsoft.com/pricing/) indeholder en kørselskvote. Kontrollér altid egenskaber i flowets udløser, når det er muligt. Hvis du gør det, undgår du at bruge kørselskvoten uden grund. Hvis du kontrollerer en egenskab i en betingelse, tælles de enkelte kørsler med i din plans kørselskvote, også selvom den filterbetingelse, du har angivet, ikke er opfyldt. 
 
 Hvis du f.eks. undersøger *fra*-adressen for en mail i en betingelse, tæller hver kørsel med i din plans kørselskvote, også selvom den ikke er *fra* den adresse, du kontrollerer.
 > 
@@ -50,9 +50,9 @@ Hvis du f.eks. undersøger *fra*-adressen for en mail i en betingelse, tæller h
 I følgende gennemgange kontrollerer vi alle egenskaberne i udløseren **Når en ny mail modtages**. Få mere at vide ved at gå til siderne med [ofte stillede spørgsmål om fakturering](billing-questions.md#what-counts-as-a-run) og [priser](https://ms.flow.microsoft.com/pricing/).
 
 ## <a name="prerequisites"></a>Forudsætninger
-* En konto, der har adgang til [Power Automate](https://flow.microsoft.com)
+* En konto med adgang til [Power Automate](https://flow.microsoft.com)
 * En Office 365 Outlook-konto
-* Mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows)
+* Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows)
 * Forbindelser til Office, Outlook og pushmeddelelsestjenesten
 
 ## <a name="trigger-a-flow-based-on-an-emails-subject"></a>Udløs et flow baseret på emnet i mailen
@@ -79,7 +79,7 @@ Lad os komme i gang:
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Navngiv dit flow. Gem det derefter ved at vælge **Opret flow** øverst på siden.
+1. Giv dit flow et navn. Gem det derefter ved at vælge **Opret flow** øverst på siden.
    
     ![Gem flow](./media/email-triggers/email-triggers-subject-notification.png)
 

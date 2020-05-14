@@ -1,6 +1,6 @@
 ---
-title: Læringskatalog til Power Automate
-description: Find alle træningsmuligheder til Power Automate
+title: Kursuskatalog for Power Automate
+description: Find alle undervisningsmuligheder for Power Automate
 author: loreleishannonmsft
 ms.topic: article
 ms.date: 03/17/2020
@@ -10,11 +10,11 @@ ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 03/27/2020
-ms.locfileid: "80330130"
+ms.locfileid: "3298567"
 ---
-# <a name="learning-catalog-for-power-automate"></a>Læringskatalog til Power Automate
+# <a name="learning-catalog-for-power-automate"></a>Kursuskatalog for Power Automate
 
-Find den rette onlinetræning, de rette personlige workshops og de rette arrangementer til din rolle som Power Apps-bruger.
+Find den rigtige onlineundervisning, fysiske workshops og arrangementer for din rolle som bruger af Power Apps.
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -22,11 +22,11 @@ Find den rette onlinetræning, de rette personlige workshops og de rette arrange
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-    ### <a name="business-and-technical-decision-makers"></a>Beslutningstagere i erhvervslivet og tekniske beslutningstagere
+    ### <a name="business-and-technical-decision-makers"></a>Beslutningstagere på forretningsmæssige og tekniske områder
 
     Beslutter du, om der skal investeres i nye teknologier? 
 
-    [Læringskatalog til beslutningstagere i erhvervslivet og tekniske beslutningstagere](learning-catalog-bdm.md#)
+    [Undervisningskatalog for beslutningstagere på forretningsmæssige og tekniske områder](learning-catalog-bdm.md#)
 
         :::column-end:::
     :::column:::
@@ -37,7 +37,7 @@ Find den rette onlinetræning, de rette personlige workshops og de rette arrange
 
     [Læringskatalog til appoprettere](learning-catalog-app-maker.md#)
 
-    [Kom i gang](learning-catalog-app-maker.md#get-started)
+    [Introduktion](learning-catalog-app-maker.md#get-started)
 
     [Opret flow](learning-catalog-app-maker.md#create-flows)
 
@@ -52,7 +52,7 @@ Find den rette onlinetræning, de rette personlige workshops og de rette arrange
 
     Har du brug for at skrive kode for at integrere med andre datakilder, udvide kernesystemets funktionalitet eller bygge et komplekst program?
 
-    [Læringskatalog til udviklere](learning-catalog-developer.md)
+    [Kursuskatalog for udviklere](learning-catalog-developer.md)
 
         :::column-end:::
     :::column:::
@@ -61,7 +61,7 @@ Find den rette onlinetræning, de rette personlige workshops og de rette arrange
 
     Har du brug for at sørge for, at systemer og data kører, er klargjort og sikret døgnet rundt?
 
-    [Læringskatalog til administratorer](learning-catalog-administrator.md)
+    [Kursuskatalog for administratorer](learning-catalog-administrator.md)
 
     :::column-end:::
 :::row-end:::
@@ -81,7 +81,7 @@ Find den rette onlinetræning, de rette personlige workshops og de rette arrange
 
     Er du implementeringsekspert for et virksomhedsdomæne? 
 
-    [Læringskatalog til funktionelle programkonsulenter](learning-catalog-functional-consultant.md)
+    [Kursuskatalog for konsulent for anvendelse af funktioner](learning-catalog-functional-consultant.md)
 
     [Introduktion](learning-catalog-functional-consultant.md#get-started)
 

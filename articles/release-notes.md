@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 82e175f463e9cbc264b6ac388e90eaa3433211b4
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: 7f4da4123d5623348513d9b14a75d1f03b3e17dc
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852670"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3299183"
 ---
 # <a name="release-notes"></a>Produktbemærkninger
 
@@ -43,13 +43,13 @@ ms.locfileid: "82852670"
    * Læs om [tilføjelse af betingelser](add-condition.md).
    * Hvis du ønsker flere cases i et flow, skal du vælge **Tilføj betingelse** i en eksisterende betingelse.
    * Opret et avanceret udtryk ved at referere til [en funktion i Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
-3. Hvordan fungerer licensering sammen med Office 365?
+3. Hvordan fungerer Office 365-licensering?
    
-   * Hvis du bruger Office 365, får du fuld adgang gennem Power Automate til Office 365-planen. Du kan få flere oplysninger i [Planer for prissætning for Power Automate](https://flow.microsoft.com/pricing/).
-   * Hvis du er administrator, kan du se oplysninger om [licenser til Power Automate](organization-q-and-a.md), inklusive med Office 365.
+   * Hvis du er Office 365-bruger, får du fuld adgang gennem Power Automate til Office 365-planen. Du kan finde flere oplysninger i [prisplaner for Power Automate](https://flow.microsoft.com/pricing/).
+   * Hvis du er administrator, kan du se oplysninger om [licensering for Power Automate](organization-q-and-a.md), herunder med Office 365.
 
 ## <a name="known-issues"></a>Kendte problemer
-1. SharePoint-lister på Mine websteder, som ikke er af typen *Brugerdefineret liste*, understøttes ikke. Du kan omgå problemet ved at oprette en brugerdefineret liste på et SharePoint-standardwebsted.
+1. SharePoint-lister på Mine websites, som ikke er af typen *Brugerdefineret liste*, understøttes ikke. Du kan omgå problemet ved at oprette en brugerdefineret liste på et SharePoint-standardwebsted.
 2. Filudløsere aktiveres ikke for filer, der tilføjes i indlejrede mapper i den valgte mappe.
 
 ## <a name="whats-new"></a>Nyheder
@@ -60,10 +60,10 @@ Du kan få oplysninger om nye funktioner, der er udgivet til Power Automate, her
 
 ### <a name="release-2018-09-24"></a>Version 24-09-2018
 
-- **Administratoradgang til hjælp og support** – åbn supportanmodninger til Power Automate i Administration på Power-platformen, og angiv yderligere oplysninger om fejlen i din arbejdsproces.
-- **Redesignet Power Automate-community** – det er nu blevet nemmere at finde det, du skal bruge, i Power Automate-community'et.
-- **Forbedringer af Microsoft Teams-connectoren** – nye udløsere til Microsoft Teams, så du kan køre et flow, når der er nye meddelelser i en kanal.
-- **Flere SharePoint-handlinger** – der er nye handlinger til flytning af filer osv. i SharePoint-connectoren.
+- **Administratoradgang til hjælp og support** – Åbn supportanmodninger til Power Automate i Administration på Power-platformen, og angiv yderligere oplysninger om fejlen i din arbejdsproces.
+- **Redesignet Flow-community** – det er nu blevet nemmere at finde det, du skal bruge, i Flow-community'et.
+- **Forbedringer af Microsoft Teams-connectoren** – Nye udløsere for Microsoft Teams, så du kan køre et flow, når der er nye meddelelser i en kanal.
+- **Flere SharePoint-handlinger** – Der er nye handlinger til flytning af filer osv. i SharePoint-connectoren.
 - **Nye administratoranalyserapporter** – miljø- og lejerrapporter er føjet til Administration for virksomhedsapp-platformen.
 - **Integration af Power-forespørgsel** – En Power-forespørgselsoplevelse, der gør det muligt for oprettere at skabe et miks af data fra SQL Server, er under udvikling.
 
@@ -71,17 +71,17 @@ Du kan få oplysninger om nye funktioner, der er udgivet til Power Automate, her
 
 ### <a name="release-2018-08-31"></a>Version udgivet 08-31-2018
 
-- **Test dit flow ved hjælp af eksempeldata** – Brug eksempeldata fra connectorer til at teste dit flow, når du bygger det i Power Automate-designeren. Når du har testet dit flow med eksempeldata, kan du bekræfte, at flowet kører som forventet, når det er udrullet i produktionen.
-- **Fem nye connectorer** – vi har tilføjet fire nye administrationsconnectorer: Power Apps for App Makers, Power platform for Admins, Power Apps for Admins, Power Automate for Admins og Microsoft School Data Sync.
+- **Test dit flow ved hjælp af eksempeldata** - Brug eksempeldata fra connectorer til at teste dit flow, når du bygger det i Power Automate-designeren. Når du har testet dit flow med eksempeldata, kan du bekræfte, at flowet kører som forventet, når det er udrullet i produktionen.
+- **Fem nye connectorer** – Vi har tilføjet fire nye administrationsconnectorer: Power Apps for App Makers:, Power Platform for Admins, Power Apps for Admins, Power Automate til administratorer og Microsoft School Data Sync.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/test-data-management-connectors/) om denne version.
 
 ### <a name="release-2018-08-24"></a>Version udgivet 08-24-2018
 
-- **Nye skabeloner til synkronisering af kalender** – Nye kalender skabeloner, der kopierer begivenhederne fra Google Kalender og Office 365 eller Outlook.com.
-- **Understøttelse af flere værdi til SharePoint** – Læsning af og skrivning til felter med flere værdier i SharePoint af typen Valg, Person eller Opslag.
-- **Send godkendelser på vegne af andre brugere i din organisation** – Send godkendelser på vegne af andre brugere i din organisation – for eksempel den person, der har uploadet filen til SharePoint-listen i stedet for den person, der oprettede flowet.
-- **Flere inputtyper for knapper** – Knapper har to nye inputtyper: Tal og Ja/Nej
+- **Nye skabeloner for synkronisering af kalender** – Nye kalenderskabeloner, der kopierer begivenhederne fra Google Kalender og Office 365 eller Outlook.com.
+- **Understøttelse af flere værdier for SharePoint** – Læs og skriv til felter med flere værdier i SharePoint af typen Valg, Person eller Opslag.
+- **Send godkendelser på vegne af andre brugere i din organisation** – Send godkendelser på vegne af andre brugere i din organisation, f.eks. den person, der har uploadet filen til SharePoint-listen i stedet for den person, der oprettede flowet.
+- **Flere inputtyper for knapper** – Knapper har to nye inputtyper: Tal og Ja/Nej.
 - **Connectoropdateringer** – En ny NetDocuments-connector, forbedringer af Azure-connectorer med mere.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/button-types-more/) om denne version.
@@ -94,11 +94,11 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 
 ### <a name="release-2018-07-23"></a>Version udgivet 23-07-2018
 
-- **Byg og kør flows fra Excel** – Med den nye knap **Flow** (åbnes via fanen **Data** på båndet) kan du oprette og udløse automatiseringer fra Power Automate på dine tabeldata i Excel. Automatiser databehandling eller kopiering/import af data.
+- **Byg og kør flows fra Excel** – Med den nye knap **Flow** (åbnes via fanen **Data** på båndet) kan du oprette og udløse automatiseringer fra Power Automate for dine tabeldata i Excel. Automatiser databehandling eller kopiering/import af data.
 - **Opret et forretningsprocesforløb** – Et forretningsprocesforløb er en ny type interaktiv proces med høj sikkerhed, som er baseret på Common Data Service. Brug disse nye flows til at definere en række faser og trin, som skal følges. De kan flyttes frem og tilbage efter behov.
 - **Opret et flow til Microsoft To-Do i Outlook Web App** – Hvis en person er \@nævnt i Outlook Web App, får vedkommende vist en genvej til oprettelse af et flow. Dette flow opretter automatisk opgaver for den \@førnævnte person i Microsoft To-Do på baggrund af indholdet af mailen.
-- **Understøttelse af SharePoint-visning** – SharePoint-connector understøtter nu valg af en bestemt SharePoint-visning for udløsere og handlinger. Dette filtrerer kolonnerne, så der kun vises de felter, der er en del af den valgte visning.
-- **Fire nye connectorer** – Føjet til Azure IoT Central – en yderst skalerbar IoT SaaS-løsning (Software som en service) – Survey 123, LMS365 og ProjectWise Design Integration.
+- **Understøttelse af SharePoint-visning** – SharePoint-connectoren understøtter nu valg af en bestemt SharePoint-visning for udløsere og handlinger. Dette filtrerer kolonnerne, så der kun vises de felter, der er en del af den valgte visning.
+- **Fire nye connectorer** – Tilføjet Azure IoT Central – en yderst skalerbar IoT SaaS-løsning (Software som en service) – Survey 123, LMS365 og ProjectWise Design Integration.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/) om denne version.
 
@@ -116,17 +116,17 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 - **Forbedringer af Teams Flow-robotten** – Flow-robotten i Microsoft Teams kan køre flowknapper og beskrive dine flows.
 - **Tre nye connectorer** – Tilføjet understøttelse af Marketo, ElasticOCR og DynamicSignal. 
 - **Yderligere oplysninger om deling** – Yderligere oplysninger tilføjes, når du deler eller kører delte flows. Dermed ved du præcist, hvilke tilladelser andre personer får.
-- **Automatisk trimning af SharePoint-URL-adresser** – Når du kopierer og indsættet en URL-adresse til SharePoint i browseren, kan den indeholde tekst, der ikke vedrører webstedet. Denne tekst fjernes automatisk, så du bare kan oprette forbindelse til webstedet.
+- **Automatisk trimning af URL-adresser for SharePoint** – Når du kopierer og indsætter en URL-adresse for SharePoint i browseren, kan den indeholde tekst, der ikke vedrører websitet. Denne tekst fjernes automatisk, så du bare kan oprette forbindelse til websitet.
 - **Dokumentation om GDPR anmodninger** – Vi har oprettet en omfattende vejledning og et omfattende værktøjssæt til store organisationer, så de kan håndtere Data Subject Rights-anmodninger.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/) om denne version.
 
 ### <a name="release-2018-05-21"></a>Version 2018-05-21
 
-- **Flows "ejes af" SharePoint-lister og -biblioteker** – De flows, der kan bruges med SharePoint-lister og -biblioteker, kan deles med disse lister eller biblioteker. I stedet for blive delt med brugere eller grupper, bliver de også delt med alle, der har adgang til listen. Når brugere tilføjes på eller fjernes fra listen eller biblioteket, bliver deres medlemskab automatisk ændret derefter.
+- **Flows "ejes af" SharePoint-lister og -biblioteker** – De flows, der kan bruges sammen med SharePoint-lister og -biblioteker, kan deles med disse lister eller biblioteker. I stedet for blive delt med brugere eller grupper, bliver de også delt med alle, der har adgang til listen. Når brugere tilføjes på eller fjernes fra listen eller biblioteket, bliver deres medlemskab automatisk ændret derefter.
 - **Analyse med fejloplysninger** – En ny integreret rapport med oplysninger om alle de fejl, der sker i et flow.
 - **Del flows med Office 365-grupper** – Du kan gøre en moderne Office 365-gruppe til ejer af et flow, og du kan dele knapflows med Office 365-grupper, så alle i gruppen kan køre flowet.
-- **Forbedringer til SharePoint-connector** – Der er to nye funktioner for SharePoint-connectorer: Udløs flows, når elementer eller filer slettes, og foretag kald til ethvert HTTP-slutpunkt, som SharePoint REST-API'et understøtter.
+- **Forbedringer af SharePoint-connectorer** – Der er to nye funktioner for SharePoint-connectorer: Udløs flows, når elementer eller filer slettes, og foretag kald til ethvert HTTP-slutpunkt, som SharePoint REST-API'et understøtter.
 - **To nye connectorer** – Tilføj understøttelse af Azure Data Factory og MailParser
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/share-with-sharepoint-office-365/) om denne version.
@@ -135,13 +135,13 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 
 - **Tekst i RTF-format i godkendelsesmeddelelser** – Brug nedskrivning til at formatere de godkendelsesdetaljer, du sender.
 - **Knapper med flere valg** – Opret flowknapper, der bruger en liste med flere valg til at indsamle mere end én værdi ad gangen.
-- **Arbejd med større flow** – Power Automate-mobilappen understøtter nu visning i liggende format, og webdesigneren har et vandret rullepanel.
+- **Arbejd med bredere flows** – Power Automate-mobilappen understøtter nu visning i liggende format, og webdesigneren har et vandret rullepanel.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) om denne version.
 
 ### <a name="release-2018-04-12"></a>Version udgivet 12-04-2018
 
-- **Returner data til Power Apps fra et flow** – Opret flows, der kan kaldes fra en app, som er bygget vha. Power Apps, og returner data til appen igen. Brug den visuelle træk og slip-flowdesigner til at oprette den logik, du skal bruge til dine apps. 
+- **Returner data til Power Apps fra et flow** – Opret flows, der kan kaldes fra en app, som er bygget med Power Apps, og returner data til appen igen. Brug den visuelle træk og slip-flowdesigner til at oprette den logik, du skal bruge til dine apps. 
 - **Føj flere poster til matrixinput** – Føj en listegenerator til Power Automate, som f.eks. kan bruges til at tilføje flere vedhæftede filer i en mail.
 - **Test flows med tidligere kørte data** – Føj en ny testflowknap til den designer, du kan bruge til at teste dit flow med udløserdata fra tidligere kørte flows.
 - **Nye workflow()-felter** – Du kan nu få adgang til miljønavne og viste flownavne vha. udtrykket workflow().
@@ -150,7 +150,7 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 
 ### <a name="release-2018-04-04"></a>Version udgivet 04-04-2018
 
-- **Godkendelser i Common Data Service** – Moderne godkendelser er baseret på den nyeste version af Common Data Service. Det betyder, at du kan udvikle processer, der læser status for de godkendelser, du sender eller modtager vha. Common Data Service-connectoren.
+- **Godkendelser på Common Data Service** – Moderne godkendelser er baseret på den nyeste version af Common Data Service. Det betyder, at du kan udvikle flows, der læser status for de godkendelser, du sender eller modtager med Common Data Service-connectoren.
 - **Find fejl, der gælder for hver enkelt** – Hop direkte til fejl i løkker i visningen af flowkørslen, også selvom der er hundredvis af elementer i løkken.
 - **Videretildel godkendelser** – Du kan tildele modtagne godkendelser til en anden person i organisationen for at delegere godkendelsen til vedkommende. 
 - **Lokalelister** – Office 365 Outlook-connectoren har tilføjet handlinger for at hente lokaledata i din organisation.
@@ -164,11 +164,11 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 ### <a name="release-2018-03-13"></a>Version udgivet 13-03-2018
 
 - **Godkendelseshistorik** – Se alle de anmodninger om godkendelse, du har sendt, herunder de tilhørende svar, de kommentarer, der er sendt, og det nøjagtige tidspunkt for hændelserne.
-- **Fire nye connectorer** – Tilføj Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse og Pitney Bowes Tax Calculator.
+- **Fire nye connectorer** – Tilføjet Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse og Pitney Bowes Tax Calculator.
 - **Værktøjstip til dynamisk indhold** – Hold markøren hen over dynamisk indhold for at se, hvor det kom fra i handlinger, og få vist eksempler på udtryk uden at åbne editoren med de fuldstændige udtryk.
 - **Samtidighedskontrol** – Aktivér samtidighedskontrol for at sikre, at et givet flow kun har én kørsel ad gangen.
 - **Eksponentielt gentaget forsøg** – En ny type gentagelsespolitik, der fordeler gentagne forsøg eksponentielt i en tidsperiode.
-- **Overenssstemmelse i forbindelse med tilgængelighed** – Udgiv nye dokumenter om overensstemmelse, der beskriver, hvordan Power Automate opfylder standarderne for tilgængelighed.
+- **Overenssstemmelse i forbindelse med tilgængelighed** – Udgivet nye dokumenter om overensstemmelse, der beskriver, hvordan Power Automate opfylder standarderne for tilgængelighed.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/approval-history-accessibility/) om denne version.
 
@@ -181,10 +181,10 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 
 ### <a name="release-2018-01-29"></a>Version udgivet 29-01-2018
 
-- **Flow i Microsoft Teams** – Fra Teams kan du oprette og administrere flows, gennemgå dine modtagne og sendte godkendelser og starte flows direkte i Teams-desktopappen eller på teams.microsoft.com – [få mere at vide her](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
+- **Flow i Microsoft Teams** – Fra Teams kan du oprette og administrere flows, gennemgå dine modtagne og sendte godkendelser og starte flows direkte i Teams-skrivebordsappen eller på teams.microsoft.com – [få mere at vide her](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
 - **Meddelelser om redigering af delte flows** – Når et flow, du ejer, ændres af en kollega, får du en mail med besked om, hvem der har ændret flowet.
 - **Nye udtryk** – Der er tilføjet to nye udtryk: Et til at opdele URL-adresser i tekst og et til at arbejde med JSON-objekter.
-- **Tre nye connectorer** – i denne uge er der to nye Plumsail-connectorer: Plumsail SP og Plumsail-formularer og en ny connector til kintone.
+- **Tre nye connectorer** – I denne uge er der to nye Plumsail-connectorer, Plumsail SP og Plumsail Forms, samt en ny connector til kintone.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) om denne version.
 
@@ -198,7 +198,7 @@ Power Automate-prøveversionsprogrammet giver mulighed for at få tidlig adgang 
 
 ### <a name="release-2017-12-20"></a>Version udgivet 20-12-2017
 
-Power Automate Analytics er nu tilgængelig i alle Power Automate-områder, hvorfor du kan få indsigt i tilstanden af de flow, der kører i dit miljø.
+Power Automate Analytics er nu tilgængelig i alle Power Automate-områder, hvorfor du kan få indsigt i tilstanden af de flows, der kører i dit miljø.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/) om denne version.
 
@@ -206,7 +206,7 @@ Power Automate Analytics er nu tilgængelig i alle Power Automate-områder, hvor
 ### <a name="release-2017-12-14"></a>Version udgivet 14-12-2017
 
 - **Forbedringer af Outlook Connector** – du kan gemme en mail som en EML-fil, svare på kalenderinvitationer automatisk og udløse flow, når du nævnes i en mailtråd.
-- **Forbedringer af forbindelser**  – Power Automate kan huske dine senest anvendte forbindelser og viser alle de nyligt tilføjede connectorer.
+- **Forbedringer af forbindelser** – Power Automate kan huske dine senest anvendte forbindelser og viser alle de nyligt tilføjede connectorer.
 - **Fem nye connectorer** – Azure Container Instances, Azure Kusto, Metatask, Microsoft To-Do og Plumsail Documents er blevet tilføjet.
 - **HTTP-forbedringer** – HTTP-handlingen understøtter nu Chunked-kodning.
 
@@ -214,14 +214,14 @@ Power Automate Analytics er nu tilgængelig i alle Power Automate-områder, hvor
 
 ### <a name="release-2017-12-05"></a>Version udgivet 05-12-2017
 
-Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giver dig mulighed for at føje værdier til et flow, når du kører det i din SharePoint-liste eller i et dokumentbibliotek.
+Power Automate-startpanelet er nu tilgængeligt i alle områder. Dette panel giver dig mulighed for at føje værdier til et flow, når du kører det i din SharePoint-liste eller i et dokumentbibliotek.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) om denne version.
 
 
 ### <a name="release-2017-11-28"></a>Version udgivet 28-11-2017
 
-- **Administrerede metadata** – læs data fra og skriv til kolonner i SharePoint, der bruger typen administrerede metadata (dvs. taksonomi).
+- **Administrerede metadata** – Læs data fra og skriv til kolonner i SharePoint, der bruger typen administrerede metadata (dvs. taksonomi).
 - **Føj til matrixer** – føj elementer til slutningen af matrixer ved hjælp af en ny variabel handling til tilføjelse til matrixer.
 - **Tago** – en ny connector til Tago, som giver nem tilslutning af elektronikenheder med eksterne data for at opnå bedre beslutninger ved hjælp af kontekstafhængige analyser.
 - **iPhone X** – en ny version af Power Automate-appen, der bruger fuldskærmstilstand på iPhone X, og som har forbedret hastighed ved billedoverførsler.
@@ -230,19 +230,19 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 
 ### <a name="release-2017-11-09"></a>Version udgivet 09-11-2017
 
-- **OneDrive for Business-integration** – der er [nu en flowknap i OneDrive for Business](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/), der kan oprette eller udløse flow for valgte filer eller mapper.
+- **OneDrive for Business-integration** – Der er [nu en flowknap i OneDrive for Business](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/), der kan oprette eller udløse flows for valgte filer eller mapper.
 - **Planner-udløsere** – starter flow, når en ny opgave oprettes, når en opgave tildeles til dig, eller når en opgave er fuldført.
 - **Vedhæftede filer i SharePoint** – Arbejd med vedhæftede filer i elementer på en SharePoint-liste: Vis, hent, tilføj eller slet vedhæftede filer.
 - **Connector til flowadministration** – opret flow, der automatiserer administrationen af andre flow i dit miljø (f.eks. ved at føje tilladelser til flow automatisk).
 - **Fire nye connectorer** – Azure Custom Vision Service, D&B Optimizer, Enadoc og Derdak SIGNL4 er blevet tilføjet. 
-- **Flere connectorhandlinger** – kør SQL-forespørgsler, få hurtigere mailudløsere, brug en hvilken som helst metode med HTTP med Azure AD og meget mere.
+- **Flere connectorhandlinger** – Kør SQL-forespørgsler, få hurtigere mailudløsere, brug en hvilken som helst metode med HTTP med Azure AD og meget mere.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/planner-triggers-connector-improvements/) om denne version.
 
 ### <a name="release-2017-11-02"></a>Version udgivet 02-11-2017
 
 - **Overvågningslogføring** – Power Automate-overvågningshændelser er nu tilgængelige i Office 365 Security & Compliance Center for alle lejere.
-- **Programrettelser til Flow-widget** – problemet i Power Automate-mobilappen, der resulterede i, at knapper ikke blev indlæst i widgetten, er blevet løst.
+- **Programrettelser til Flow-widget** – problemet i Flow-mobilappen, der resulterede i, at knapper ikke blev indlæst i widgetten, er blevet løst.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/security-and-compliance-center/) om denne version.
 
@@ -251,7 +251,7 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 - **Indlejret anvend på hver** – du kan tilføje anvend på hver-handlinger samt filtrere og vælge i andre anvend på hver-objektbeholderhandlinger.
 - **Handlinger for dato og klokkeslæt** – nye handlinger til hentning af lokale tidspunkter samt til tilføjelse, fratrækkelse eller formatering af tidspunkter.
 - **Fire nye connectorer** – Content Moderator, Docparser, Microsoft Kaizala og Pitney Bowes Data Validation er blevet tilføjet.
-- **Forbedret forbindelsesoplevelse** – beskeder på Power Automate-portalen, når en forbindelse er beskadiget, og bedre forbindelsesoplysninger.
+- **Forbedret forbindelsesoplevelse** – Meddelelser i Power Automate-portalen, når en forbindelse er beskadiget, og bedre forbindelsesoplysninger.
 - **På farten-samling** – en ny samling skabeloner til [medarbejdere på farten](https://flow.microsoft.com/collections/onthego/).
 - **Input fra mailadresseknap** – få mailadresser fra brugere, når de kører knapper.
 - **Input fra filknap** – hent overførte filer, f.eks billeder, fra brugere, når de kører knapper.
@@ -265,20 +265,20 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 ### <a name="release-2017-10-03"></a>Version udgivet 03-10-2017
 
 - **Alle skal godkende** – en anmodning om godkendelse skal sendes til mere end én person for at få alle, der har modtaget anmodningen, til at godkende den.
-- **Nye OneDrive for Business-handlinger** – generer PDF'er for filer, der er lagret på OneDrive for Business og fire andre nye handlinger.
+- **Nye OneDrive for Business-handlinger** – Generer PDF'er for filer, der er lagret på OneDrive for Business og fire andre nye handlinger.
 - **Apache Impala-connector** – Apache Impala (incubating) er en open source, oprindelig analytisk database til Apache Hadoop.
 - **Tilføj flowbeskrivelser** – giv dine flow beskrivelser, så dine kolleger kan få vist et resumé af, hvad flowet kan, når du deler det.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/all-must-approve-and-onedrive/) om denne version.
 
-### <a name="release-2017-09-25---q3-update-for-power-automate"></a>Version udgivet 25-09-2017 – Q3-opdatering til Power Automate
+### <a name="release-2017-09-25---q3-update-for-power-automate"></a>Version 2017-09-25 - Q3-opdatering til Power Automate
 
-- **Dybere SharePoint-integration i First Release** – -der er nye send til review-flow til øjeblikkelig brug og et Flow-panel til indsamling af input, når du kører et flow for First Release-lejere.
-- **Dynamics 365-apps** – Power Automate er nu integreret i brugergrænsefladen for Dynamics 365-apps, f.eks. Dynamics 365 Sales og Dynamics 365 Customer Service.
-- **Microsoft Trust Center** – Power Automate er nu opført i Microsoft Trust Center med certificeringer som f.eks. HIPAA, ISO og SOC.
+- **Dybere SharePoint-integration i First Release** – Der er nye brugsklare flows for afsendelse til gennemgang og et Flow-panel til indsamling af input, når du kører et flow for First Release-lejere.
+- **Dynamics 365-apps** – Flow er nu integreret i brugergrænsefladen for Dynamics 365-apps, f. eks. Dynamics 365 Sales og Dynamics 365 Customer Service.
+- **Microsoft Sikkerhedscenter** – Power Automate er nu anført i Microsoft Sikkerhedscenter med certificeringer som f.eks. HIPAA, ISO og SOC.
 - **Forbrugsanalyser** – hvert flow indeholder et integreret Power BI-dashboard med grundlæggende forbrugsanalyser.
-- **Overvåg logføring i First Release** –alle flowadministrationshændelser logføres i Office 365 Security and Compliance Center for First Release-lejere.
-- **Seks nye connectorer** – LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy og Azure Log Analytics Data Collection er blevet tilføjet.
+- **Overvåg logføring i First Release** – Alle flowadministrationshændelser logføres i Office 365 Security and Compliance Center for First Release-lejere.
+- **Seks nye connectorer** – Tilføjet LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy og Azure Log Analytics Data Collection.
 - **SQL-udløsere** – kør flow, når en ny række tilføjes, eller en række opdateres i en SQL-tabel.
 - **Brugerdefinerede connectorer i det lokale miljø** – brugerdefinerede connectorer kan nu bruge datagatewayen i det lokale miljø til at oprette forbindelse til interne slutpunkter på netværket.
 
@@ -289,14 +289,14 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 - **Hent flowhistorik** – hent kørselsoversigten for et flow som en CSV-fil, der åbnes i Excel.
 - **Avanceret gentagelse** – opret tilbagevendende tidsplaner for at udløse flow, så de f.eks. kun udløses på ugedage.
 - **IntelliSense** – når du skriver i udtryk, kommer IntelliSense med forslag til parametre.
-- **Fire nye connectorer** – connectorer til Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish og FlowForma er blevet tilføjet.
-- **Deling af links** – en ny handling til at generere links, der kan deles, til OneDrive-filer eller Azure Storage-blobs.
+- **Fire nye connectorer** – Tilføjet connectorer til Azure AD HTTP-tjenester, Amazon Redshift, Azure Event Grid Publish og FlowForma
+- **Deling af links** – En ny handling til at generere links, der kan deles, til OneDrive-filer eller Azure Storage-blobs.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/download-history-recurrence/) om denne version.
 
 
 ### <a name="release-2017-08-25"></a>Version udgivet 25-08-2017
-* **Dokumentegenskaber og mere til SharePoint**- [Læs og angiv egenskaber for SharePoint-dokumentbiblioteket](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), og brug flere felter som links til SharePoint-elementet.
+* **Dokumentegenskaber og mere til SharePoint** - [Læs og angiv egenskaber for SharePoint-dokumentbiblioteket](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), og brug flere felter som links til SharePoint-elementet.
 * **Flowsamlinger** – Flowsamlinger er et sæt af skabelonsamlinger, der er organiseret efter rolle eller efter vertikal.
 * **Videredeling af knapper** – Når du deler knapper med dine kolleger, kan de også videredele dem med andre.
 * **Saml lister fra knapper** – Definer rullelister med indstillinger, som brugerne kan vælge fra, når de trykker på knappen.
@@ -312,12 +312,12 @@ Power Automate Launch Panel er nu tilgængeligt i alle regioner. Dette panel giv
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/four-connector-action-settings/) om denne version.
 
-### <a name="release-2017-07-27---q2-update-for-power-automate"></a>Version udgivet 27-07-2017 – Q2-opdatering til Power Automate
+### <a name="release-2017-07-27---q2-update-for-power-automate"></a>Version 2017-07-27 - Q2-opdatering til Power Automate
 * **Importér og eksporter** – eksporter og importér flowløsninger på tværs af miljøer eller fra test til produktion. 
 * **Brug udtryk i handlinger** – angiv udtryk i en hvilken som helst handling, og få indbygget hjælp til brugen af dem.
-* **Udvid til Azure Logic Apps** – gem dine flows som Azure Logic App-ressource, som kan installeres via Visual Studio- eller Azure Portal.
-* **Administratorsynlighed** – hent brug af Power Automate i din lejer for at se, præcis hvor og hvordan flows bruges.
-* **Flows i Dynamics 365** – brug flows i Dynamics 365 til drift og finans, Business Edition.
+* **Udvid til Azure Logic Apps** – Gem dine flows som Azure Logic App-ressource, som kan installeres via Visual Studio- eller Azure-portalen.
+* **Administrators synlighed** – Download forbrug af Power Automate til din lejer for at se, præcis hvor og hvordan flows bruges.
+* **Strømme i dynamik 365** – Brug flows i Dynamics 365 for Operations & Financials, Business Edition.
 * **Find scenarier på en nemmere måde** – gennemse alt, hvad en forbindelse kan gøre, og brug derefter en eventuel udløser som startpunkt til oprettelse af flows.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/q2-2017-update/) om denne version.
@@ -350,48 +350,48 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 ### <a name="release-2017-06-15"></a>Version udgivet 15-06-2017
 * **Konvertering af indhold** – En ny connector, der kan konvertere HTML-indhold til almindelig tekst, er nyttig til håndtering af HTML-formaterede mails.
 * **Tre nye databaseconnectorer** – Tilføjet skrivebeskyttet understøttelse af MySQL, PostgreSQL og Teradata. Der oprettes forbindelse til disse connectorer via datagatewayen i det lokale miljø.
-* **Tre andre connectorer** – Opret forbindelse til Azure Application Insights, Calendly og Teamwork-projekter.
+* **Tre andre connectorer** – Opret forbindelse til Azure Application Insights-, Calendly og Teamwork-projekter.
 * **Bedre visualisering til fejlhåndtering** – Trin, der kører efter opståede fejl, vises nu med røde punkterede pile, så du nemt kan identificere dem.
 * **Detaljeruden for kørsel** – Når et flow mislykkes, vises der nu en ny rude til højre, som indeholder nogle trinvise vejledninger i, hvordan du kan rette dit flow.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/seven-connectors-and-html/) om denne version.
 
 ### <a name="release-2017-06-04"></a>Version udgivet 04-06-2017
-* **Offentlig tilgængelig til Windows Phone**- [Power Automate-mobilappen er udgivet, så den er offentligt tilgængelig til Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
+* **Generel tilgængelighed for Windows Phone** - [Power Automate-mobilappen er udgivet, så den er generelt tilgængelig for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
 * **Mails ved flowfejl** – Få besked via mail, når du har et flow, der ikke lykkes. Disse mails om fejl udsendes kun én gang om ugen, og de kan slås til og fra af brugeren.
 * **Vælg en handling for tabeller** – Brug den nye Select-handling til at ændre det kolonnesæt, der skal inkluderes i tabeller.
 * **Microsoft Forms-connector** – Microsoft Forms er en ny del af Office 365 Education, der giver lærere og studerende mulighed for hurtigt og nemt at oprette brugerdefinerede test, undersøgelser, spørgeskemaer, registreringer og meget mere.
-* **Office 365 Enterprise K1-plan** – Power Apps og Power Automate er nu inkluderet i Office 365 Enterprise K1-planen med visse kvoter.
+* **Office 365 Enterprise K1-plan** – Power Apps og Power Automate er nu inkluderet i Office 365 Enterprise K1-planen med bestemte kvoter.
 * **HTTP-headere er lettere** – På samme måde som med Select-handlingen kan du angive et navn og en værdi for headeren ved blot at udfylde tekstfelterne for handlingen.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) om denne version.
 
 ### <a name="release-2017-05-23"></a>Version udgivet 23-05-2017
-* **Microsoft Teams-forbindelse**- [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) er et chatbaserede arbejdsområde i Office 365, der samler personer, samtaler og indhold – sammen med de værktøjer, de forskellige teams skal bruge, så de nemt kan samarbejde for at opnå mere.
-* **Widgets på iOS og Android** – Power Automate-widgets er knapgenveje, som giver dig en lettere og hurtigere måde at udløse de enkelte knapper på direkte fra startsiden.
+* **Microsoft Teams-connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) er et chatbaserede arbejdsområde i Office 365, der samler personer, samtaler og indhold – sammen med de værktøjer, de forskellige teams skal bruge, så de nemt kan samarbejde og opnå mere.
+* **Widgets på iOS og Android** – Power Automate-widgets er knapgenveje, så du lettere og hurtigere kan udløse de enkelte knapper direkte fra startsiden.
 * **Opret trin til "fejlhåndtering"** – Definer et eller flere trin for at køre, når en handling er mislykkes. Du kan f.eks. få en meddelelse straks, hvis flowet kan ikke oprette en post i Dynamics 365.
 * **Heltal og flydende variabler** – Initialiser og forøg eller formindsk tællere i en flowkørsel til at tælle, hvor mange gange et bestemt logiksæt køres.
 * **Side med flowoplysninger** – Når du vælger et flow på listen **Mine flows**, kan du se en side med oplysninger om det pågældende flow, f.eks. hvem der har adgang til det samt kørselshistorikken.
 * **Kvoter for flowkørsler for administratorer** – Administratorer kan nu overvåge brugen af flowkørsler på tværs af en organisation i forhold til kvoten for almindelige kørsler i virksomheden. Dermed kan de få en specifikation af kvoterne, så de kan forstå, hvilke licenser der bidrager til deres kvote.
 * **Forbedringer af udløsning af HTTP-anmodninger** – Brug forskellige HTTP-metoder, og tilføj stisegmenter for anmodningsudløseren.
-* **To partnerforbindelser** – Power Automate kan nu oprette forbindelse til Parserr, en tjeneste til mailfortolkning, samt Cognito Forms, der er en tjeneste til onlineformularer.
+* **To partnerconnectorer** – Power Automate kan nu oprette forbindelse til Parserr, en tjeneste til mailfortolkning, samt Cognito Forms, der er en tjeneste til onlineformularer.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/error-handling/) om denne version.
 
 ### <a name="release-2017-05-12"></a>Version udgivet 12-05-2017
-* **Integration med SharePoint-dokumentbiblioteker** – Du kan vælge en vilkårlig fil i et dokumentbibliotek og starte et flow, f.eks. sende det til din chef til godkendelse, [og meget mere](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
+* **Integration med SharePoint-dokumentbiblioteker** – Du kan vælge en vilkårlig fil i et dokumentbibliotek og starte et flow, f.eks. sende det til din chef til godkendelse [og meget mere](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
 * **Microsoft Planner-forbindelse** – Med Microsoft Planner kan du nemt samle teams, opgaver, dokumenter og samtaler og få bedre resultater.
 * **Administratorvisning af licenser** – Administratorer kan se alle Power Automate- og Power Apps-licenser (til både prøve- og betalingsversion) i Power Automate Administration.
-* **Power Apps Community-plan** – Power Apps Community-planen er en gratis plan til enkeltpersoner, så de kan udforske, lære om og opbygge færdigheder i forbindelse med Power Apps, Power Automate og Common Data Service.
+* **Power Apps Community-plan** – Power Apps Community-planen er en gratis planlægning for de enkelte brugere, så de kan udforske, lære og opbygge færdigheder for Power Apps, Power Automate og Common Data Service.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/planner-community-and-licenses/) om denne version.
 
 ### <a name="release-2017-05-09"></a>Version udgivet 09-05-2017
-* **Microsoft Azure Active Directory-connector** – Der er en ny connector til udførelse af administratorhandlinger fra Power Automate, herunder oprette brugere eller føje dem til grupper.
+* **Azure AD-connector** – Der er en ny connector til udførelse af administratorhandlinger fra Power Automate, herunder oprette brugere eller føje dem til grupper.
 * **Forbedringer til Office 365 Outlook** – Flows kan nu udløses af delte postkasser og sende mails til en delt postkasse. De kan også oprette eller læse automatiske svar.
 * **Tilgængelig i Canada** – Du kan nu oprette dine flows i Canada.
 * **Opret brugerdefinerede API-webhooks** – Udviklere af brugerdefinerede connectors kan nu føje udløsere til deres brugerdefinerede API'er med webhooks.
-* **Administrer flowejere i administratorcenteret** – Miljøadministratorer kan administrere flowejere i Power Automate-administratorcenteret.
+* **Administrer flowejere i Administration** – Miljøadministratorer kan administrere flowejere i Power Automate Administration.
 * **Connector-dokumentation** – Vi har nu en [komplet connector-dokumentation på docs.microsoft.com](https://docs.microsoft.com/Connectors/).
 * **To partnertjenester** – To nye partnertjenester er udgivet: Nexmo og Paylocity.
 
@@ -399,15 +399,15 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 
 ### <a name="release-2017-04-27"></a>Version udgivet 27-04-2017
 * **Byg flows med parallelle trin** – Opret flows med parallel udførelse: Det betyder, at du kan have to eller flere trin, der kører på præcis samme tid.
-* **Fem nye understøttede tjenester** – fem nye tjenester: Approvals, Benchmark Email, Capsule CRM, LiveChat og Outlook Customer Manager.
-* **Overvåg nye forsøg for handlinger** – Power Automate vil prøve igen, når der opstår fejl i tjenester. Se nu, hvor mange automatiske genforsøg, der forekom, og oplysninger om, hvad der er sket.
+* **Fem nye understøttede tjenester** – Fem nye tjenester: Approvals, Benchmark Email, Capsule CRM, LiveChat og Outlook Customer Manager.
+* **Overvåg genforsøg for handlinger** – Power Automate vil prøve igen, når der sker fejl med tjenester. Se nu, hvor mange automatiske genforsøg, der forekom, og oplysninger om, hvad der er sket.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/parallel-actions/) om denne version.
 
-### <a name="release-2017-04-17---q1-update-for-power-automate"></a>Version udgivet 17-04-2017 – Q1-opdatering til Power Automate
-* **Moderne godkendelsesoplevelser** – Opret arbejdsprocesser, hvor godkendere kan godkende sikkert i Power Automate-mobilappen eller via det samlede godkendelsescenter på Power Automate-webstedet.
+### <a name="release-2017-04-17---q1-update-for-power-automate"></a>Version 2017-04-17 - Q1-opdatering til Power Automate
+* **Moderne godkendelsesoplevelser** – Opret arbejdsprocesser, hvor godkendere kan godkende sikkert i Power Automate-mobilappen eller via det samlede godkendelsescenter på Power Automate-websitet.
 * **Offentlig tilgængelighed af teamflows** – Flere personer kan eje og administrere et flow sammen med teamflows, der nu er offentligt tilgængelige.
-* **Skab forbindelser til Power Automate** – Alle kan sende deres egne Power Automate-forbindelser gratis, så resten af verden kan bruge dem.
+* **Byg connectorer til Power Automate** – Alle kan sende deres egen Power Automate-connector gratis, så resten af verden kan bruge dem.
 * **En "kost"-designer** – For visse skabeloner præsenterer en ny version af designeren kun de felter, der kræves for at oprette et flow. Det forenkler oplevelsen.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/q1-2017-update/) om denne version.
@@ -415,7 +415,7 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 ### <a name="release-2017-04-11"></a>Version udgivet 11-04-2017
 * **Nye handlinger til oprettelse af tabeller og lister** – Nye handlinger Opret HTML-tabel, Opret CSV-tabel og Joinforbind, som kan behandle lister over elementer (i stedet for den tidligere Anvend kun for hver enkelt).
 * **Indsæt trin hvor som helst** – Du kan nu indsætte et nyt trin et vilkårligt sted i arbejdsprocessen uden at skulle trække og slippe.
-* **Fire nye tjenester** – Power Automate understøtter nu 10 til 8-planlægning, Act!, Inoreader og Computer Vision-API. Med Computer Vision-API kan du behandle billeder for at få tekstindholdet (kendt som OCR) eller automatisk mærke billeder baseret på deres indhold.
+* **Fire nye tjenester** – Flow understøtter nu 10 til 8-planlægning, Act!, Inoreader og Computer Vision-API. Med Computer Vision-API kan du behandle billeder for at få tekstindholdet (kendt som OCR) eller automatisk mærke billeder baseret på deres indhold.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) om denne version.
 
@@ -433,13 +433,13 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 ### <a name="release-2017-03-15"></a>Version udgivet 15-03-2017
 * **Del knapper med kolleger** – Du kan nu dele flowknapper med andre, hvilket gør det nemt for enhver virksomhedsbruger at udføre hurtige opgaver.
 * **Udløs knapper fra startskærmen** – Genveje til flowknapper fra startsiden eller låseskærmbilleder på mobile enheder gør det hurtigere end nogensinde at udløse et flow.
-* **Teamflow i Power Automate-appen** – Du kan nu se de flow, der har andre ejere, i Power Automate-appen til iOS eller Android.
+* **Teamflows i Power Automate-appen** – Du kan nu se de flows, der har andre ejere, i Power Automate-appen til iOS eller Android.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/button-sharing/) om denne version.
 
 ### <a name="release-2017-03-10"></a>Version udgivet 10-03-2017
 * **Forbedret oplevelse af brugerdefineret connector** – Du kan nu bruge en Postman-samling til at oprette en brugerdefineret connector og redigere, tilføje og teste handlinger.
-* **To nye tjenester** – Power Apps-meddelelser og understøttelse af PivotalTracker blev tilføjet.
+* **To nye tjenester** – Tilføjet Power Apps-meddelelser og understøttelse af PivotalTracker.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/new-updates-custom-api/) om denne version.
 
@@ -493,7 +493,7 @@ Du kan nu se status for alle anmodninger, du har sendt, som afventer godkendelse
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/managing-runs/) om denne version.
 
 ### <a name="release-2016-12-29"></a>Version 29-12-2016
-Power Automate understøtter nu DocuSign så eSignatures og digital transaktionsstyring, SurveyMonkey, kan håndteres til webbaserede undersøgelser samt OneNote-noteappen (kun erhvervskonti).
+Power Automate understøtter nu DocuSign for at kunne håndtere eSignatures og digital transaktionsstyring, SurveyMonkey til webbaserede undersøgelser samt OneNote-noteappen (kun erhvervskonti).
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/final-2016-services/) om denne version.
 
@@ -516,15 +516,15 @@ Du kan nu udnytte værdifulde oplysninger, når du udløser et knapflow, f.eks. 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/guided-learning-and-two-services/) om denne version.
 
 ### <a name="release-2016-11-23"></a>Version udgivet 23-11-2016
-* **Support af vigtige Power BI-beskeder i Flow** – Omsæt indsigt til handling ved at udløse flows fra vigtige Power BI-databeskeder.
+* **Understøttelse af Power BI-advarsel i flow** – Omsæt indsigt til handling ved at udløse flows fra vigtige Power BI-databeskeder.
 * **Forbedringer af mobilprogrammet** – Tilføjede muligheden for at oprette flows fra bunden af som en udvidelse af den allerede eksisterende mulighed med oprettelse på basis af skabeloner. Vi har også forbedret ydeevnen, når der vises kørsler af flows.
-* **Otte nye tjenester** – Du kan nu oprette forbindelse til Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure Cosmos DB, Cognitive Services, Ansigtsregistrerings-API, HipChat og Wordpress.
+* **Otte nye tjenester** – Du kan nu oprette forbindelse til Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure Cosmos DB, Cognitive Services Face API, HipChat og Wordpress.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) om denne version.
 
 ### <a name="release-2016-11-15"></a>Version udgivet 15-11-2016
-* **Power Automate Partner Program** – Power Automate har nu et certificeret partnerprogram til at knytte forbindelser og drage fordel af forskellige virksomhedens talenter og erfaring med Power Automate over hele verden.
-* **Seks nye tjenester** – vi udgiver også seks tjenester i denne uge: Asana, Campfire, EasyRedmine, JIRA, Redmine og Vimeo.
+* **Power Automate-partnerprogram** – Power Automate har nu et certificeret partnerprogram til at knytte forbindelser og drage fordel af forskellige virksomhedens talenter og erfaring med Power Automate over hele verden.
+* **Seks nye tjenester** – Vi frigiver også seks tjenester i denne uge: Asana, Campfire, EasyRedmine, JIRA, Redmine og Vimeo.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/partner-program-six-new-services/) om denne version.
 
@@ -532,7 +532,7 @@ Du kan nu udnytte værdifulde oplysninger, når du udløser et knapflow, f.eks. 
 * **Prisfastsættelse og licenser** – nu tilgængelig i både gratis og betalte planer samt som en del af Office 365 og Dynamics 365.
 * **Power Automate Administration** - Klar til brug i virksomheder med det nye Administration. I Administration kan du administrere miljøer inde i organisationen.
 * **Politikker til forebyggelse af datatab** – Administratorer kan oprette politikker til forebyggelse af datatab for at styre datastrømmen mellem tjenester.
-* **Android-tilgængelighed** – Power Automate-telefonappen fås nu til både iOS og Android. Appen gør det muligt for dig at modtage beskeder, overvåge aktiviteter og starte flows med et tryk på en knap.
+* **Tilgængelighed i Android** – Power Automate-telefonappen er nu tilgængelig for både iOS og Android. Appen gør det muligt for dig at modtage beskeder, overvåge aktiviteter og starte flows med et tryk på en knap.
 * **Designnyheder** – Du kan nu søge i det dynamiske indhold, der overføres fra trin til trin, hvilket gør det meget hurtigere at henvise til de ønskede data.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/announcing-ga/) om denne version.
@@ -540,7 +540,7 @@ Du kan nu udnytte værdifulde oplysninger, når du udløser et knapflow, f.eks. 
 ### <a name="release-2016-10-26"></a>Version 26-10-2016
 * **Knapflows** – Der er utallige handlinger, vi gerne vil kunne udløse når og hvor som helst. Med knapflows kan du nu få dem klaret med et enkelt klik på en knap fra din mobilenhed.
 * **Bekendtgørelse af miljøer** – Miljøer er særlige områder til lagring og administration af organisationens flows. Miljøer er geografisk placeret, hvilket betyder, at flows, apps og virksomhedsdata i et miljø, findes i det område, hvor miljøet er placeret.
-* **Seks nye tjenester** – Tilføjelse af understøttelse af Bit.ly, Cognitive Services Text Analytics, Dynamics NAV, Dynamics 365 for Financials, Instapaper og Pinterest.
+* **Seks nye tjenester** – Tilføjet understøttelse af Bit.ly, Cognitive Services Text Analytics, Dynamics NAV, Dynamics 365 for Financials, Instapaper og Pinterest.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/environments-for-makers/) om denne version.
 
@@ -555,21 +555,21 @@ Du kan nu udnytte værdifulde oplysninger, når du udløser et knapflow, f.eks. 
 Flowoprettelse er nu tilgængelig fra mobiltelefonen. Gennemse vores omfattende skabelongalleri, naviger gennem vores liste over tjenester, eller vælge en skabelonkategori, du kan dykke ned i. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/mobile-creation/) om denne version.
 
 ### <a name="release-2016-09-22"></a>Version udgivet 22-09-2016
-* **Microsoft Graph-personvælger** – En ny Microsoft Graph-personvælger er integreret direkte i Power Automate brugergrænseflade og kan hjælpe dig med at vælge den rigtige kontakt eller mailadresse.
+* **Microsoft Graph-personvælger** – En ny Microsoft Graph-personvælger er integreret direkte i Power Automate-brugergrænseflade og kan hjælpe dig med at vælge den rettee kontakt eller mailadresse.
 * **Understøttelse af Microsoft Dynamics AX** – Du kan nu udføre handlinger på dine Dynamics AX Online-handlingsdata inde fra dine flow, det gælder lige fra oprettelse af nye poster til forespørgsel om data.
 * **To nye tjenester fra partnere** – Nu kan du bruge appFigures eller Insightly fra dine flow.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/more-september-updates/) om denne version.
 
 ### <a name="release-2016-09-14"></a>Version udgivet 14-09-2016
-* **Integration på dit websted eller i din app** – Udviklere kan nu integrere Power Automate direkte i deres programmer eller på deres websteder, så det bliver nemmere for brugerne at automatisere deres personlige eller arbejdsmæssige opgaver.
+* **Integration på dit website eller i din app** – Udviklere kan nu integrere Power Automate direkte i deres apps eller på deres websites, så det bliver nemmere for brugerne at automatisere deres personlige eller arbejdsmæssige opgaver.
 * **Brug et flow som et HTTP-slutpunkt** – Nu kan du bruge et flow som en HTTP-API. I et flow er der en udløser, der kaldes Anmodning, og du kan vælge at besvare den indgående anmodning ved at tilføje et svarkort.
 * **Understøttelse af Todoist** – Todoist giver dig overblik over alle dine projekter, både på arbejdet og derhjemme.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/extend-web-site-application/) om denne version.
 
 ### <a name="release-2016-09-01"></a>Version udgivet 01-09-2016
-Power Automate er nu tilgængelig for alle – prøveversionen var i starten udelukkende tilgængelig for arbejds- eller skolemailadresser, f.eks. dem, der blev brugt sammen med Office 365 Business eller Office 365 Enterprise. I dag er prøveversionen officielt tilgængelig og gratis for alle brugere, uanset hvilken mail du har. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/available-for-everyone/) om denne version.
+Power Automate er nu tilgængelig for alle – prøveversionen var i starten udelukkende tilgængelig for arbejds- eller skole-mailadresser, f.eks. dem, der blev brugt sammen med Office 365 Business eller Office 365 Enterprise. I dag er prøveversionen officielt tilgængelig og gratis for alle brugere, uanset hvilken mail du har. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/available-for-everyone/) om denne version.
 
 ### <a name="release-2016-08-31"></a>Version udgivet 31-08-2016
 * **Indlejrede betingelser** – nu kan du tilføje en anden (eller tredje osv.) betingelse i en betingelse.
@@ -592,7 +592,7 @@ Power Automate er nu tilgængelig for alle – prøveversionen var i starten ude
 Nu kan du se de nye moderne SharePoint Online-lister, der omfatter Power Automate-integration. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/microsoft-flow-integration-with-sharepoint-modern-lists-preview/) om denne version.
 
 ### <a name="release-2016-08-13"></a>Version udgivet 13-08-2016
-* **Visual Studio Team Services** – med Power Automate kan du nu oprette forbindelse mellem VSTS og en lang række tjenester, herunder O365 Email, Slack og Trello.
+* **Visual Studio Team Services** – Med Power Automate kan du nu oprette forbindelse mellem VSTS og en lang række tjenester, herunder O365 Email, Slack, Trello og Wunderlist.
 * **Forbedringer af SharePoint** – SharePoint-lister understøtter flere forskellige datatyper, lige fra simple objekter, som enkeltstående tekstlinjer samt Dato og klokkeslæt, til komplekse objekter, som Person eller gruppe, Opslag og Valg.
 * **Test af O365 Outlook-forbindelser** – Hver gang du opretter en ny forbindelse i O365 Outlook, testes den nu for at sikre, at du er klar til at bruge den.
 * **Boolesk kontrolelement** – Vi har også tilføjet et boolesk kontrolelement for at præcisere, hvilke værdier du skal angive i booleske indtastningsfelter, f.eks. Har vedhæftede filer i udløseren Når der modtages en ny mail.
@@ -600,7 +600,7 @@ Nu kan du se de nye moderne SharePoint Online-lister, der omfatter Power Automat
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) om denne version.
 
 ### <a name="release-2016-08-08"></a>Version udgivet 08-08-2016
-Offentlig prøveversion Common Data Service, der er integreret i Power Automate. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/flow-and-common-data-model/) om denne version.
+Offentlig prøveversion af Common Data Service integreret i Power Automate. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/flow-and-common-data-model/) om denne version.
 
 ### <a name="release-2016-08-05"></a>Version udgivet 08-05-2016
 * **SharePoint i det lokale miljø** – Ligesom med SharePoint Online kan du oprette flow omkring SharePoint-lister og biblioteker i det lokale miljø, enten ved hjælp af foruddefinerede skabeloner eller ved at bygge dem helt fra bunden.
@@ -628,7 +628,7 @@ Forbindelse til Power Automate i det lokale miljø ved hjælp af datagateway i d
 
 ### <a name="release-2016-06-20"></a>Version udgivet 20-06-2016
 * **Vi præsenterer den nye mobilapp til Power Automate** – I dag glæder det os at kunne præsentere et andet højdepunkt i vores tilbud: En mobilapp, der nu kan hentes på iOS (snart også på Android) og giver dig mulighed for at administrere, holde styr på og udforske dine automatiserede arbejdsprocesser når som helst og hvor som helst.  
-* **Enkeltlogon** – Vi har implementeret enkeltlogon, der gør det muligt at blive godkendt i Power Automate med andre Microsoft-tjenester, som Office 365.
+* **Enkeltlogon** – Vi har implementeret enkeltlogon, der gør det muligt at blive godkendt i Power Automate med andre Microsoft-tjenester såsom Office 365.
 
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/welcome-to-flow-now-more-mobile/) om denne version.
 
@@ -647,16 +647,16 @@ Forbindelse til Power Automate i det lokale miljø ved hjælp af datagateway i d
 [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) om denne version.
 
 ### <a name="release-2016-05-07"></a>Version udgivet 07-05-2016
-To nye tjenester er tilføjet: Microsoft Project Online og Mandrill fra Mailchimp. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) om denne version.
+Tilføjet to nye tjenester: Microsoft Project Online og Mandrill by Mailchimp. [Få mere at vide, og stil spørgsmål](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) om denne version.
 
 ### <a name="release-2016-04-27---public-preview"></a>Version 27-04-2016 – Offentlig prøveversion
-Hvis du har brugt Logikflow som en del af [Microsoft Power Apps](https://powerapps.microsoft.com), indeholder prøveversionen af Power Automate flere nye funktioner:
+Hvis du har brugt logiske flows som en del af [Microsoft Power Apps](https://powerapps.microsoft.com), indeholder prøveversionen af Power Automate flere nye funktioner:
 
 * Du kan nu gennemse et galleri med masser af skabeloner og sortere efter popularitet, navn eller udgivelsesdato.
 * Du kan [publicere dine egne skabeloner](publish-a-template.md) i galleriet, når du har tilpasset et flow.
 * Du kan få vist en oversigt for hver kontrol og kørsel i flowet.
 * Når du gemmer et flow, kan du [straks se det i aktion](see-a-flow-run.md) ved blot at udføre den udløsende handling.
-* Vi har et [nyt community](https://go.microsoft.com/fwlink/?LinkID=787467), hvor du kan diskutere Power Automate eller [indsende dine idéer](https://go.microsoft.com/fwlink/?LinkID=787474).
+* Vi har et [nyt community](https://go.microsoft.com/fwlink/?LinkID=787467), hvor du kan diskutere Flow eller [indsende dine idéer](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
 >Udgivelsesplaner spores nu [her](https://docs.microsoft.com/dynamics365/release-plans/).

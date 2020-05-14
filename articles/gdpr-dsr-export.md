@@ -1,6 +1,6 @@
 ---
-title: Eksportanmodninger fra registrerede omfattet af GDPR i Power Automate | Microsoft Docs
-description: Få mere at vide om, hvordan du bruger Power Automate til at svare på eksportanmodninger fra registrerede omfattet af GPDR.
+title: Anmodninger i Power Automate om eksport af dataemner omfattet af GDPR | Microsoft Docs
+description: Lær, hvordan du kan bruge Power Automate til at svare på anmodninger om eksport af dataemner omfattet af GPDR.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: df82a2aa48a8e85c950757ef4f72a6f7ee88e071
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192041"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298017"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Svar på eksportanmodninger fra registrerede omfattet af GDPR for Power Automate
+# <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Besvarelse af anmodninger i Power Automate om eksport af dataemner omfattet af GDPR
 
 
 Som led i vores bestræbelser på at være med dig gennem hele processen omkring den generelle forordning om databeskyttelse (GDPR) har vi udviklet denne dokumentation. Denne dokumentation beskriver ikke blot, hvad Microsoft gør for at forberede sig på GDPR, men kommer også med eksempler på, hvad du kan gøre i dag med Microsoft for at overholde GDPR, når du bruger Power Automate.
@@ -36,25 +36,25 @@ Som led i vores bestræbelser på at være med dig gennem hele processen omkring
 
 *Retten til videregivelse af oplysninger* gør det muligt for en fysisk person at anmode om en kopi af hans eller hendes personlige data i elektronisk format, dvs. i et format, der er "struktureret, almindeligt brugt, kan læses af en maskine, og som er kompatibelt", og som kan sendes til en anden datacontroller.
 
-Power Automate indeholder følgende funktioner, som du kan bruge til at finde eller eksportere de personlige data for en bestemt bruger:
+Power Automate tilbyder følgende funktioner til søgning efter eller eksport af personlige data for en bestemt bruger:
 
-* **Webstedsadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/).
+* **Websiteadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/).
 
-* **PowerShell-adgang:**  [PowerShell-cmdlet'er til Power Apps Administration](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell-adgang:** [Power Apps Admin PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Kundedata**|**Webstedsadgang**|**PowerShell-adgang**|
 |-----------------|------------------|-------------------|
-|Systemoprettede logge|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
-|Kørselsoversigt|Power Automate-udviklerportal||
+|Systemgenererede logge|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
+|Kørselshistorik|Power Automate-udviklerportal||
 |Flow|Power Automate-udviklerportal||
 |Flowtilladelser| Power Automate-udviklerportal og Power Automate Administration||
 |Brugeroplysninger||Power Apps-cmdlet'er|
 |Forbindelser|Power Automate-udviklerportal|Power Apps-cmdlet'er |
 |Forbindelsestilladelser|Power Automate-udviklerportal|Power Apps-cmdlet'er |
-|Brugerdefinerede forbindelser|Power Automate-udviklerportal|Power Apps-cmdlet'er |
+|Brugerdefinerede connectorer|Power Automate-udviklerportal|Power Apps-cmdlet'er |
 |Tilladelser til brugerdefineret connector|Power Automate-udviklerportal|Power Apps-cmdlet'er |
-|Gateway|Power Automate-udviklerportal|PowerShell-cmdlet'er til datagateway i det lokale miljø|
-|Gatewaytilladelser|Power Automate-udviklerportal|PowerShell-cmdlet'er til datagateway i det lokale miljø|
+|Gateway|Power Automate-udviklerportal|PowerShell-cmdlets til datagateway i det lokale miljø|
+|Gatewaytilladelser|Power Automate-udviklerportal|PowerShell-cmdlets til datagateway i det lokale miljø|
 
 ## <a name="export-a-flow"></a>Eksportér et flow
 
@@ -68,7 +68,7 @@ Enten en slutbruger eller en administrator, der har givet sig selv adgang til fl
 
     ![Eksportér flow](./media/gdpr-dsr-export/export-flow.png)
 
-1. Vælg **Pakke (.zip)** .
+1. Vælg **Pakke (.zip)**.
 
 Dit flow er nu tilgængeligt som en zip-komprimeret pakke. Du kan finde flere oplysninger i blogindlægget om, [hvordan du eksporterer og importerer et flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
@@ -82,23 +82,23 @@ Enten en slutbruger eller en administrator, som er tildelt adgang til flowet via
 1. Vælg linket **Mine flow**, og vælg derefter det flow, som du vil eksportere kørselsoversigten for.
 1. I ruden **KØRSELSOVERSIGT** skal du vælge **Se alle**.
 
-    ![Kørselsoversigt](./media/gdpr-dsr-export/run-history.png)
+    ![Kørselshistorik](./media/gdpr-dsr-export/run-history.png)
 
 1. Vælg **Download CSV**.
 
-    ![Download CSV](./media/gdpr-dsr-export/download-csv.png)
+    ![Hent CSV](./media/gdpr-dsr-export/download-csv.png)
 
-Kørselsoversigten hentes som en .csv-fil, som kan åbnes i Microsoft Excel eller i en teksteditor, hvor du kan analysere resultaterne yderligere.
+Kørselsoversigten downloades som en .csv-fil, som kan åbnes i Microsoft Excel eller i et tekstredigeringsprogram, hvor du kan analysere resultaterne yderligere.
 
 ## <a name="export-a-users-activity-feed"></a>Eksportér en brugers aktivitetsopdatering
 
-I [Power Automate](https://flow.microsoft.com/) viser aktivitetsopdateringen en brugers oversigt over aktiviteter, fejl og beskeder. Alle brugere kan få vist deres aktivitetsopdatering ved at følge disse trin:
+I [Power Automate](https://flow.microsoft.com/) viser aktivitetsopdateringen en brugers historik over aktiviteter, fejl og beskeder. Alle brugere kan få vist deres aktivitetsopdatering ved at følge disse trin:
 
 1. Log på [Power Automate](https://flow.microsoft.com/), vælg klokkeikonet i nærheden af øverste højre hjørne, og vælg derefter **Vis alle aktiviteter**.
 
     ![Vis aktivitetsopdatering](./media/gdpr-dsr-export/show-activity-feed.png)
 
-1. På skærmen **Aktivitet** skal du kopiere resultaterne og derefter indsætte dem i en dokumenteditor, f.eks. Microsoft Word.
+1. På skærmen **Aktivitet** kan du kopiere resultaterne og derefter indsætte dem i et dokumentredigeringsprogram, f.eks. Microsoft Word.
 
     ![Vis aktivitetsopdatering](./media/gdpr-dsr-export/export-activity-feed.png)
 
@@ -109,9 +109,9 @@ Forbindelser gør det muligt for flow at oprette forbindelse til API'er, SaaS-pr
 1. Log på [Power Automate](https://flow.microsoft.com/), vælg tandhjulsikonet i nærheden af øverste højre hjørne, og vælg derefter **Forbindelser**.
 
     ![Vis forbindelser](./media/gdpr-dsr-export/show-connections.png)
-1. Kopiér resultaterne, og indsæt dem derefter i en dokumenteditor, f.eks. Microsoft Word.
+1. Kopiér resultaterne, og indsæt dem derefter i et dokumentredigeringsprogram, f.eks. Microsoft Word.
 
-Power Apps Admin PowerShell-cmdlet'er
+Power Apps PowerShell-cmdlet'er til administratorer
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -124,13 +124,13 @@ Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "User
 
 ## <a name="export-a-list-of-a-users-connection-permissions"></a>Eksportér en liste over en brugers forbindelsestilladelser
 
-En bruger kan eksportere tildelingerne af forbindelsesroller for alle de forbindelser, som brugeren har adgang til, ved hjælp af funktionen Get-ConnectionRoleAssignment i [PowerShell-cmdlet'erne til Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
+En bruger kan eksportere tildelingerne af forbindelsesroller for alle de forbindelser, de har adgang til, ved hjælp af funktionen Get-ConnectionRoleAssignment i [Power Apps PowerShell-cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
 ```
-PowerShell-cmdlet'er til Power Apps Administration
+Power Apps PowerShell-cmdlet'er til administratorer
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -150,18 +150,18 @@ Udfør disse trin for at eksportere en liste over brugerdefinerede connectors:
 1. Naviger til [Power Automate](https://flow.microsoft.com).
 1. Vælg **tandhjuls**ikonet for at få vist indstillinger.
 1. Vælg **Brugerdefinerede connectors**.
-1. Kopiér og indsæt listen over brugerdefinerede connectors i en teksteditor, f.eks. Microsoft Word.
+1. Kopiér og indsæt listen over brugerdefinerede connectors i et tekstredigeringsprogram, f.eks. Microsoft Word.
 
     ![Eksportér brugerdefinerede connectors](./media/gdpr-dsr-export/export-custom-connectors.png)
 
-Ud over den oplevelse, der leveres i Power Automate, kan du bruge funktionen Get-Connector fra [Power Apps PowerShell-cmdlet'er](https://go.microsoft.com/fwlink/?linkid=871804) til at eksportere alle brugerdefinerede connectors.
+Ud over de funktioner, der leveres i Power Automate, kan du bruge funktionen Get-Connector fra [Power Apps PowerShell-cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) til at eksportere alle brugerdefinerede connectorer.
 
 ~~~~
 Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
 ~~~~
 
-PowerShell-cmdlet'er til Power Apps Administration
+Power Apps PowerShell-cmdlet'er til administratorer
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -174,14 +174,14 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 
 ## <a name="export-a-users-custom-connector-permissions"></a>Eksportér en brugers tilladelser til brugerdefinerede connectors
 
-En bruger kan eksportere alle tilladelser til brugerdefinerede connectors, som brugeren har oprettet via funktionen Get-ConnectorRoleAssignment i [Power Apps PowerShell-cdmlet'er](https://go.microsoft.com/fwlink/?linkid=871804).
+En bruger kan eksportere alle tilladelser til brugerdefinerede connectorer, de har oprettet via funktionen Get-ConnectorRoleAssignment i [Power Apps PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
 ```
 
-PowerShell-cmdlet'er til Power Apps Administration
+Power Apps PowerShell-cmdlet'er til administratorer
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -194,9 +194,9 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 ## <a name="export-approval-history"></a>Eksportér oversigt over godkendelser
 
-Oversigten over Power Automate-godkendelser henter en oversigtsliste over godkendelser, der er modtaget af eller sendt til en bruger. Alle brugere kan få vist en oversigt over deres godkendelser ved at:
+Oversigten over Power Automate-godkendelser viser en historisk registrering af godkendelser, der er modtaget af eller sendt til en bruger. Alle brugere kan få vist en oversigt over deres godkendelser ved at:
 
-1. Logge på [Power Automate](https://flow.microsoft.com/), vælge **Godkendelser** og derefter vælge **Oversigt**.
+1. Log på [Power Automate](https://flow.microsoft.com/), vælg **Godkendelser**, og vælg derefter **Oversigt**.
 
     ![Få vist oversigt over godkendelser](./media/gdpr-dsr-export/view-approval-history.png)
 
@@ -207,7 +207,7 @@ Oversigten over Power Automate-godkendelser henter en oversigtsliste over godken
 ## <a name="export-user-details"></a>Eksportér brugeroplysninger
 Brugeroplysningerne er en forbindelse mellem en bruger og en specifik lejer. En administrator kan eksportere disse oplysninger ved at foretage et kald til cmdlet'en **Get AdminFlowUserDetails** og overføre brugerens objekt-id.
 
-PowerShell-cmdlet'er til Power Apps Administration
+Power Apps PowerShell-cmdlet'er til administratorer
 
 ```PowerShell
 Add-PowerAppsAccount

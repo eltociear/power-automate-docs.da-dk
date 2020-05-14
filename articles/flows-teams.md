@@ -1,6 +1,6 @@
 ---
-title: Få mere at vide om, hvordan du opretter og administrerer flow i Microsoft Teams | Microsoft Docs
-description: Opret og administrer flow for at sende meddelelser efter behov, @mention brugere og kanaler, postkort med svarmuligheder og meget mere.
+title: Få mere at vide om, hvordan du opretter og administrerer flows i Microsoft Teams | Microsoft Docs
+description: Opret og administrer flows for at sende meddelelser efter behov, @omtale brugere og kanaler, sende kort med svarmuligheder og meget mere.
 services: ''
 suite: flow
 documentationcenter: na
@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 1fbd0c6b1f6a7cd453f6c1a336f5ce450e236c5e
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195652"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296829"
 ---
 # <a name="power-automate-in-teams"></a>Power Automate i Teams
 
@@ -30,9 +30,9 @@ ms.locfileid: "79195652"
 1. Adgang til Microsoft Teams.
 1. Adgang til Power Automate.
 
-## <a name="install-the-power-automate-app-in-teams"></a>Installér Power Automate-appen i Teams
+## <a name="install-the-power-automate-app-in-teams"></a>Installer Power Automate-appen i Teams
 
-Følg disse trin for at installere Power Automate-appen i Microsoft Teams.
+Følg denne fremgangsmåde for at installere Power Automate-appen i Microsoft Teams.
 
 1. Log på Microsoft Teams.
 
@@ -44,11 +44,11 @@ Følg disse trin for at installere Power Automate-appen i Microsoft Teams.
 
     ![Vælg appen Flow](media/flows-teams/select-flow-app.png)
 
-1. Vælg **Installér**.
+1. Vælg **Installer**.
 
     ![Installationsknap](media/flows-teams/select-install.png)
 
-1. Power Automate er nu installeret.
+1. Power Automate er installeret nu.
 
     ![Installeret](media/flows-teams/flow-installed.png)
 
@@ -78,13 +78,13 @@ Følg disse trin for at installere Power Automate-appen i Microsoft Teams.
     Om|Viser version og andre oplysninger om Power Automate.
 
 
-    Du kan nu se alle de flow, du har oprettet, via Power Automate-designeren (hvis der er nogen). 
+    Du kan nu se alle de flows, du har oprettet i Power Automate-designeren (hvis der er nogen). 
 
-    Du kan også oprette flow ud fra en brugerdefineret skabelon eller en tom skabelon på samme måde som med Power Automate-designer. 
+    Du kan også oprette flows ud fra en brugerdefineret skabelon eller en tom skabelon på samme måde som i Power Automate-designeren. 
 
 ## <a name="manage-approvals"></a>at administrere godkendelser
 
-Du kan administrere [godkendelser](modern-approvals.md) i Microsoft Teams, på samme måde som du ville gøre i Power Automate. Følg disse trin for at administrere dine godkendelser:
+Du kan administrere [godkendelser](modern-approvals.md) i Microsoft Teams, ligesom du ville gøre i Power Automate. Følg disse trin for at administrere dine godkendelser:
 
 1. Log på Microsoft Teams.
 1. Vælg fanen **Godkendelser**.
@@ -93,10 +93,10 @@ Du kan administrere [godkendelser](modern-approvals.md) i Microsoft Teams, på s
 
     Du vil se følgende underfaner:
 
-    Fane|Formål
+    Tabulator|Formål
     ----|-----|
     Modtaget|Viser de godkendelsesanmodninger, du har modtaget, og som afventer handling fra dig.
-    Sendt|Viser de godkendelsesanmodninger, du har sendt, og som afventer handling fra andre.
+    Sendte|Viser de godkendelsesanmodninger, du har sendt, og som afventer handling fra andre.
     Oversigt|Viser modtagne og sendte godkendelsesanmodninger.
     Opret godkendelsesflow|Opret godkendelsesflow.
 

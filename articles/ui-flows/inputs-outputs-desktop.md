@@ -25,9 +25,9 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524833"
+ms.locfileid: "3298787"
 ---
-# <a name="use-inputs-and-outputs-in-desktop-ui-flows"></a>Brug input og output i flow for brugergrænsefladen på skrivebordet
+# <a name="use-inputs-and-outputs-in-desktop-ui-flows"></a>Brug input og output i desktopbrugergrænsefladeflow
 
 Brug input til at overføre oplysninger fra en ekstern kilde, f.eks. en database eller en hvilken som helst understøttet connector til den ældre software, som automatiseres ved hjælp af flow for brugergrænsefladen.
 
@@ -111,7 +111,7 @@ Dit output er nu tilgængeligt i det dedikerede område i guiden.
 Hvert output har:
 
 -  Et outputnavn, som blev defineret under optagelsen.
--  En beskrivelse: Dette felt kan være meget nyttigt, når du definerer mange output under en optagelse og gerne nemt vil identificere dem senere.
+-  En beskrivelse: Dette felt kan være meget nyttigt, når du definerer mange output under en optagelse og gerne vil identificere dem på et senere tidspunkt.
 -  Et handlingsnavn: Den handling, som outputtet er defineret i, i dit flow for brugergrænsefladen.
 
 ## <a name="delete-an-output-from-a-ui-flow"></a>Slet et output fra et flow for brugergrænsefladen
@@ -140,7 +140,7 @@ Når du tester flow for brugergrænsefladen, kan du validere dine ændringer og 
 
 ## <a name="learn-more"></a>Få mere at vide
 
-- Få mere at vide om [udløsningen af flow for brugergrænsefladen](run-ui-flow.md).
+- Få mere at vide om [udløsningen af brugergrænsefladeflow](run-ui-flow.md).
 
 
 

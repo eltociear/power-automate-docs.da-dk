@@ -13,26 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/28/2020
+ms.date: 04/26/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4e130133affb2d1a458842d2bd9f9e22ff2b27a3
-ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
+ms.openlocfilehash: 06230d493fd43a9d9e23f4faebd6e1c6dc8d8045
+ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82973085"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3299403"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
 Dette emne indeholder oplysninger om de aktuelle grænser for og konfigurationsoplysninger om flows.
-
->[!TIP]
->Tjek [priserne](https://flow.microsoft.com/pricing) for at få oplysninger om de forskellige planer, der fås.
 
 ## <a name="request-limits"></a>Anmodningsgrænser
 Der er grænser for en enkelt udgående anmodning.
@@ -55,7 +52,7 @@ Der er grænser for en enkelt udgående anmodning.
 
 | Navn | Grænse |Noter|
 | --- | --- | --- |
-| Gentagne forsøg |90 | Standard er 2. Hvis du vil ændre standarden, skal du bruge indstillingerne for handling. | 
+| Antal ekstra forsøg |90 | Standard er 2. Hvis du vil ændre standarden, skal du bruge indstillingerne for handling. | 
 | Maks. forsinkelse ved nyt forsøg |1 dag |  |
 | Min. forsinkelse ved nyt forsøg |5 sekunder |  |
 
@@ -73,20 +70,20 @@ Dette er grænserne for en enkelt flowkørsel.
 |Minimum interval for udsættelse – Plan 2-licens|1 sekund||
 
 >[!TIP]
->Individuelle connectors kan også have deres egne grænser.
+>De enkelte connectorer kan også have deres egne grænser.
 
 ## <a name="looping-and-debatching-limits"></a>Grænser for løkker og fjernelse af batchinddeling
 Dette er grænserne for en enkelt flowkørsel. Du kan se de daglige grænser under [grænser for og fordelinger af grænser](https://aka.ms/platformlimits).
 
 | Navn | Grænse | Noter |
 | --- | --- | --- |
-| Anvend for hver enkelt element – Office 365 og gratis licenser|5\.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
+| Anvend for hver enkelt element – Office 365 og gratis licenser|5.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
 | Anvend for hver enkelt element – licenser af typen Plan 1, Plan 2, Pr. bruger og Pr. flow|100.000 |Du kan bruge filterhandlingen til at filtrere større matrixer efter behov. |
-| Indtil gentagelser |5\.000 | |
-| SplitOn-elementer – Office 365 og gratis licenser |5\.000 ||
+| Indtil gentagelser |5.000 | |
+| SplitOn-elementer – Office 365 og gratis licenser |5.000 ||
 | SplitOn-elementer – licenser af typen Plan 1, Plan 2, Pr. bruger og Pr. flow |100.000 ||
 | Anvend for hver parallelitet |50 |Som standard køres løkker i rækkefølge (i bund og grund er parallelitet 1). Du kan konfigurere op til 50 parallelt. |
-| Udførte handlinger for hver 5. minut – gratis, Office365, Plan 1-licenser og prøveversioner | 2\.000 | Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov. |
+| Udførte handlinger for hver 5. minut – gratis, Office365, Plan 1-licenser og prøveversioner | 2.000 | Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov. |
 |Udførte handlinger for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|100.000|Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov.|
 | Handlinger for samtidige udgående kald – gratis, Office 365, Plan 1-licenser og prøveversioner | ~500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. |
 | Handlinger med samtidige udgående opkald – licenser af typen Plan 2, Pr. bruger og Pr. flow | ~ 2.500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. | 
@@ -95,10 +92,10 @@ Dette er grænserne for en enkelt flowkørsel. Du kan se de daglige grænser und
 
 |Navn|Grænse|Noter|
 |---|---|---|
-|Slutpunkt for kørsel – antal læste kald tilladt for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|6\.000||
+|Slutpunkt for kørsel – antal læste kald tilladt for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|6.000||
 |Slutpunkt for kørsel – antal læste kald tilladt for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|60.000||
-|Slutpunkt for kørsel: Aktivér kald for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|4\.500||
-|Slutpunkt for kørsel: Antal aktiverede kald for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|45.000||
+|Slutpunkt for kørsel: Aktivér kald for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|4.500||
+|Slutpunkt for kørsel: Antal aktiverede kald tilladt for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|45.000||
 |Mængden af tilladt gennemløb for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|600 MB||
 |Mængden af tilladt gennemløb for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|6 GB||
 |Mængden af indholdsflow, der er tilladt for at producere (handlingsinput/outputs) pr. time – licensen af typen gratis, Office 365, Plan 1, Plan 2, Pr. bruger og Pr. flow|200 GB||
@@ -111,12 +108,12 @@ Dette er grænserne for et enkelt flow.
 | --- | --- | --- |
 | Handlinger pr. arbejdsproces |500|Du kan tilføje indlejrede arbejdsprocesser for at udvide efter behov. |
 | Tilladt dybde for handlingsindlejring |8 |Du kan tilføje indlejrede arbejdsprocesser for at udvide efter behov. |
-| Maksimalt antal tegn pr. udtryk |8\.192 | |
+| Maksimalt antal tegn pr. udtryk |8.192 | |
 | `action`/`trigger` navnegrænse |80 | |
 | `description` længdegrænse |256 | |
 
-## <a name="sharepoint-limits"></a>SharePoint-begrænsninger
-Der er [begrænsninger](https://docs.microsoft.com/connectors/sharepointonline/#limits) for, hvordan du kan bruge Microsoft SharePoint med Power Automate og Power Apps.
+## <a name="sharepoint-limits"></a>SharePoint-grænser
+Der er [begrænsninger](https://docs.microsoft.com/connectors/sharepointonline/#limits) for, hvordan du kan bruge Microsoft SharePoint sammen med Power Automate og Power Apps.
 
 ## <a name="ip-address-configuration"></a>Konfiguration af IP-adresse
 Den IP-adresse, Power Automate-anmodninger sendes fra, afhænger af det [område](regions-overview.md), hvor det [miljø](environments-overview-admin.md), som indeholder flowet, er placeret. Vi publicerer i øjeblikket ikke FQDN'er, der er tilgængelige for flowscenarier.
@@ -124,10 +121,10 @@ Den IP-adresse, Power Automate-anmodninger sendes fra, afhænger af det [område
 >[!IMPORTANT]
 > Nogle kald af et flow kommer fra de IP-adresser, der er angivet i dokumentationen til [Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses). Følgende er eksempler på disse opkald: HTTP eller HTTP + OpenAPI.
 
-### <a name="logic-apps"></a>Logic Apps
+### <a name="logic-apps"></a>Logikapps
 Opkald, der foretages fra et flow, går direkte gennem tjenesten Azure Logic App. Følgende er eksempler på disse opkald: HTTP eller HTTP + OpenAPI. Se [i dokumentationen til Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses), hvilke IP-adresser der anvendes af denne tjeneste.
 
-### <a name="connectors"></a>Forbindelser
+### <a name="connectors"></a>Connectorer
 Kald fra en connector i et flow (f.eks. SQL-API eller SharePoint-API), kommer fra de IP-adresser, der er angivet her:
 
 | Område | Udgående IP-adresse |
@@ -139,8 +136,7 @@ Kald fra en connector i et flow (f.eks. SQL-API eller SharePoint-API), kommer fr
 | Indien  | 104.211.81.192 – 104.211.81.207, 52.172.211.12, 40.78.194.240 – 40.78.194.255, 13.71.125.22, 104.211.146.224 – 104.211.146.239, 104.211.189.218 |
 | Japan | 13.78.108.0 – 13.78.108.15, 13.71.153.19, 40.74.100.224 – 40.74.100.239, 104.215.61.248 |
 | Sydamerika | 191.233.203.192-191.233.203.207, 104.214.19.48-104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| De Forenede Arabiske Emirater | 40.120.8.0 – 40.120.8.31, 20.37.74.192 – 20.37.74.207, 20.45.67.28|
-| Storbritannien | 51.140.148.0-51.140.148.15, 51.140.80.51, 51.140.211.0-51.140.211.15, 51.141.47.105 |
+| Storbritannien | 51.140.148.0 til 51.140.148.15, 51.140.80.51, 51.140.211.0 til 51.140.211.15, 51.141.47.105 |
 | USA | 13.89.171.80 – 13.89.171.95, 52.173.245.164, 40.71.11.80 – 40.71.11.95, 40.71.249.205, 40.70.146.208 – 40.70.146.223, 52.232.188.154, 52.162.107.160 – 52.162.107.175, 52.162.242.161, 40.112.243.160 – 40.112.243.175, 104.42.122.49|
 | Eksempel (USA)  | 13.71.195.32 – 13.71.195.47, 52.161.102.22, 13.66.140.128 – 13.66.140.143, 52.183.78.157 |
 
@@ -155,11 +151,11 @@ management.azure.com|https|Adgang til Azure Resource Manager.
 login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Adgang til Active Directory Authentication Library (ADAL).
 graph.microsoft.com </br>graph.windows.net</br>|https|Adgang til Azure AD Graph API - for hentning af brugeroplysninger som f.eks. et profilbillede.
 *.azure-apim.net|https|Adgangen til Runtime for forbindelser.
-*.flow.microsoft.com|https|Adgang til Power Automate-webstedet.
-*.powerapps.com|https|Adgang til Power Apps-webstedet.
-*.azureedge.net|https|Adgang til CDN for Power Automate.
+*.flow.microsoft.com|https|Adgang til Power Automate-websitet.
+*.powerapps.com|https|Adgang til Power Apps-websitet.
+*.azureedge.net|https|Adgang til Power Automate CDN.
 nps.onyx.azure.net|https|Adgang til NPS (Net Promotor Score).
 webshell.suite.office.com|https|Adgang til Office i forbindelse med header og søgning. Du kan finde flere oplysninger under [URL-adresser til og intervaller for Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)
 
-### <a name="approval-email-delivery"></a>Levering af godkendelsesmails
-Se flere oplysninger om routing af godkendelsesmails i [artiklen Levering af godkendelsesmails](https://go.microsoft.com/fwlink/?linkid=2128304).
+### <a name="approval-email-delivery"></a>Levering af mail til godkendelse
+Du kan finde flere oplysninger om godkendelse af e-mail-routing i [artiklen om levering af mail til godkendelse](https://go.microsoft.com/fwlink/?linkid=2128304).

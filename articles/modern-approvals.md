@@ -21,20 +21,20 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4892ac2806009a1ed33b8bfb019b551aec6fce70
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224302"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297775"
 ---
-# <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Opret og test en arbejdsproces for godkendelse med Power Automate
+# <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Opret og test en godkendelsesarbejdsproces med Power Automate
 
 
-Med Power Automate kan du administrere godkendelse af dokumenter eller processer på tværs af flere tjenester, herunder SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk eller WordPress.
+Med Power Automate kan du styre godkendelse af dokumenter eller processer hen over flere tjenester, herunder SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk eller WordPress.
 
 Hvis du vil oprette en arbejdsproces til godkendelse, skal du tilføje handlingen **Godkendelser – Start en godkendelse** for et vilkårligt flow. Når du tilføjer denne handling, kan dit flow administrere godkendelse af dokumenter eller processer. Du kan for eksempel oprette dokumentgodkendelsesflows, der godkender fakturaer, arbejdsordrer eller salgstilbud. Du kan også oprette procesgodkendelsesflows, der godkender anmodninger om ferie, overarbejde eller rejseplaner.
 
-Godkendere kan svare på anmodninger via deres mailindbakke, [godkendelsescentret](https://flow.microsoft.com/manage/approvals/received/) på Power Automate-webstedet eller Power Automate-appen.
+Godkendere kan svare på anmodninger fra deres mailindbakke, [godkendelsescentret](https://flow.microsoft.com/manage/approvals/received/) på websitet for Power Automate eller Power Automate-appen.
 
 ## <a name="create-an-approval-flow"></a>Opret et godkendelsesflow
 Her er et overblik over det flow, vi opretter og tester:
@@ -55,9 +55,9 @@ Hvis du vil fuldføre denne gennemgang, skal du have adgang til:
 
 At oprette disse kolonner på SharePoint Online-listen:
 
-   ![SharePoint Online-listekolonner.](./media/modern-approvals/sharepoint-list-fields.png)
+   ![SharePoint Online-listekolonner](./media/modern-approvals/sharepoint-list-fields.png)
 
-Noter navnet og URL-adressen på SharePoint Online-listen. Du skal bruge disse emner senere, når du konfigurerer udløseren **SharePoint – Når der oprettes et element**.
+Noter navnet og URL-adressen på SharePoint Online-listen. Du skal bruge disse elementer senere, når du konfigurerer udløseren **SharePoint – Når der oprettes et element**.
 
 ## <a name="create-your-flow-from-the-blank-template"></a>Opret dit flow fra den tomme skabelon
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
@@ -151,7 +151,7 @@ Nu, hvor vi har oprettet flowet, er det tid til at teste det.
 
 ## <a name="create-long-running-approvals"></a>Opret langvarige godkendelser
 
-Hvis det er sandsynligt, at dit flow skal køre i mere end 30 dage, bør du overveje at gemme dine godkendelser i Common Data Service. Det gør det muligt for dig at oprette flow, som reagerer på svar på godkendelsesanmodninger, selv efter der opstår timeout for den oprindelige kørsel af flowet. Det gør du ved at bruge to flow – ét til at sende en godkendelsesanmodning og ét til at køre forretningslogik for svarene på godkendelsesanmodningen – baseret på handlingen **Opret en godkendelse (v2)** . Få mere at vide om [langvarige godkendelser](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
+Hvis det er sandsynligt, at dit flow skal køre i mere end 30 dage, bør du overveje at gemme dine godkendelser i Common Data Service. Dette gør det muligt for dig at oprette flows, der reagerer på svar på godkendelsesanmodninger, selv efter at den oprindelige flowkørsel får timeout. Det kan du gøre ved at bruge to flows, det ene til at sende en godkendelsesanmodning og det andet til at køre forretningslogik på svarene på godkendelsesanmodningen baseret på handlingen **Opret en godkendelse (v2)**. Få mere at vide om [langvarige godkendelser](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
 
 >[!TIP]
 > Hvis du bruger moderne mailklienter, behøver du ikke at bekymre dig om, om der stadig kræves en anmodning, da Power Automate automatisk opdaterer mailen for at indikere, at godkendelsen er fuldført.
@@ -167,11 +167,11 @@ Nogle gange vil du måske annullere en godkendelsesanmodning, som du har sendt. 
 >Du kan altid vælge fanen **Oversigt** for at få vist de godkendelsesanmodninger, du har annulleret.
 
 >[!NOTE]
-> Annulleringsfunktionen understøttes for handlingen **Opret en godkendelse (v2)** .
+> Annulleringsfunktionen understøttes for handlingen **Opret en godkendelse (v2)**.
 
 ## <a name="request-approvals-from-guest-users"></a>Anmod om godkendelser fra gæstebrugere
 
-Du kan sende godkendelsesanmodninger til personer uden for din organisation. Det gør du ved at bruge Azure AD-gæstebrugere (Azure Active Directory) ved [at invitere brugere fra andre lejere som gæster](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
+Du kan sende godkendelsesanmodninger til personer uden for din organisation. Til dette formål kan du bruge Azure Active Directory (Azure AD)-gæstebrugere ved at [invitere brugere fra andre lejere som gæster](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
 
 Når du tildeler en rolle til en gæst, giver dette gæsten den tilladelse, der kræves for at deltage i godkendelsesprocessen.
 
@@ -182,4 +182,4 @@ Nu, hvor du har oprettet og testet dit flow, skal du sørge for, at andre ved, h
 * Få vist og administrer [ventende godkendelsesanmodninger](approve-reject-requests.md)
 * Opret [sekventielle godkendelsesflows.](sequential-modern-approvals.md)
 * Opret [parallelle godkendelsesflows.](parallel-modern-approvals.md)
-* Installér mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installer Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).

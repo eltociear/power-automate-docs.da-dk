@@ -1,6 +1,6 @@
 ---
 title: Administrer flow for brugergrænseflade | Microsoft Docs
-description: Administrer flow for brugergrænsefladen
+description: Administrer brugergrænsefladeflow
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,9 +25,9 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525124"
+ms.locfileid: "3298721"
 ---
-# <a name="manage-ui-flows"></a>Administrer flow for brugergrænsefladen
+# <a name="manage-ui-flows"></a>Administrer brugergrænsefladeflow
 
 Når du har oprettet flow for brugergrænsefladen, skal du muligvis have vist, redigere eller blot kontrollere deres status. Det kan du gøre ved at gå til fanen **Flow for brugergrænseflade**.
 
@@ -53,7 +53,7 @@ Følg disse trin for at få vist oplysninger om et flow for brugergrænsefladen:
 1. Vælg **Mine flow** > **Flow for brugergrænseflade**.
 1. Vælg et af dine flow for brugergrænsefladen.
 
-   ![Se detaljer](../media/manage-ui-flows/view-details.png "Se detaljer")
+   ![Vis detaljer](../media/manage-ui-flows/view-details.png "Vis detaljer")
 
 ## <a name="learn-more"></a>Få mere at vide
 

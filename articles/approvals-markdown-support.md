@@ -1,6 +1,6 @@
 ---
-title: Brug Markdown til at formatere Power Automate-godkendelser | Microsoft Docs
-description: Lær, hvordan du kan bruge Markdown til at formatere anmodninger om Power Automate-godkendelse.
+title: Brug markdown til at formatere Power Automate-godkendelser | Microsoft Docs
+description: Lær, hvordan du kan bruge markdown til at formatere anmodninger om Power Automate-godkendelse.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,9 +25,9 @@ ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189605"
+ms.locfileid: "3299381"
 ---
-# <a name="use-markdown-in-power-automate-approval-requests"></a>Brug Markdown i anmodninger om Power Automate-godkendelse
+# <a name="use-markdown-in-power-automate-approval-requests"></a>Brug markdown i Power Automate-godkendelsesanmodninger
 
 
 I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Markdown)-syntaksen til at føje avanceret formatering til dine godkendelsesanmodninger.
@@ -36,15 +36,15 @@ I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Mark
 > Mails med godkendelsesanmodninger er *handlingsrettede meddelelser*. Hvis din [Microsoft Outlook-klient](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) ikke understøtter handlingsrettede meddelelser, vises der godkendelsesanmodninger i HTML-format. 
 
 > [!IMPORTANT]
-> Alle Markdown-gengivelser har implementeringsforskelle. Se flere oplysninger i afsnittet [Kundesupport](#client-support).
+> Alle markdown-gengivelser indeholder implementeringsforskelle. Se afsnittet [Klientsupport](#client-support) for at få flere oplysninger.
 
 ## <a name="client-support"></a>Klientsupport
 
-Markdown-understøttelsen blandt klienter stemmer ikke overens. Power Automate-teamet arbejder på at løse disse uoverensstemmelser. Der er dog stadig uoverensstemmelser. I følgende tabel kan du se de kendte begrænsninger blandt de understøttede klienter.
+Markdown-support mellem klienter er ikke ensartet. Power Automate-teamet arbejder på at løse disse uoverensstemmelser, men der er stadig forskelle. I tabellen nedenfor kan du se de kendte begrænsninger for de understøttede klienter.
 
-| Funktion | Power Automate | Power Automate-mobilapp | Outlook Desktop | Outlook Web | Teams | Teams-mobilapp |  
+| Funktion | Power Automate | Power Automate-mobilapp | Outlook-skrivebord | Outlook Web | Grupper | Teams Mobile-app |  
 |---------|--------|---------------|-----------------|-------------|-------|--------------|
-| **Headers** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
+| **Sidehoveder** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
 | **Nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
 | **Indlejrede nummererede lister** | Ja | Ja | **_Nej_** | Ja | Ja | Ja |
 | **Tabeller** | Ja | Ja | Ja | Ja | **_Nej_** | **_Nej_** |
@@ -52,7 +52,7 @@ Markdown-understøttelsen blandt klienter stemmer ikke overens. Power Automate-t
 | **Tvungne linjeskift** | Ja | Ja | **_Nej_** (brug en tom linje i stedet) | Ja | Ja | Ja |
 | **Tomme linjer** | **_Nej_** | **_Nej_** | Ja | Ja | **_Nej_** | Ja |
 
-## <a name="headers"></a>Headers (Overskrifter)
+## <a name="headers"></a>Sidehoveder
 
 Strukturér dine kommentarer ved hjælp af overskrifter. Længere kommentarer inddeles under overskrifter, så det er lettere at læse dem.
 
@@ -72,7 +72,7 @@ Start en linje med hash-tegnet `#` for at angive en overskrift. Organiser dine b
 
 ## <a name="paragraphs-and-line-breaks"></a>Afsnits- og linjeskift
 
-Gør det lettere at læse din tekst ved at opdele den med afsnits- eller linjeskift. Angiv to mellemrum før linjeskiftet for at tvinge de fleste klienter til at starte en ny linje.  
+Gør det lettere at læse din tekst ved at opdele den med afsnits- eller linjeskift. Indtast to mellemrum før linjeskiftet for at tvinge de fleste klienter til at starte en ny linje.  
    
 **Eksempel:**  
 ```Markdown
@@ -80,9 +80,9 @@ This is line 1.(space, space)
 Now text will appear on the next line.
 ```
 
-**Resultat:**    
+**Resultat:**   
 Dette er linje 1.  
-Nu vises teksten på den næste linje. 
+Nu vises teksten på næste linje. 
 
 **Eksempel 2**  
 ```Markdown
@@ -94,7 +94,7 @@ Line 2 has extra space before it.
 **Resultat:**  
 Dette er linje 1.  
 
-Der er et ekstra mellemum foran linje 2.
+Der er mere afstand før linje 2.
   
 
 ## <a name="lists"></a>Lister
@@ -183,7 +183,7 @@ Organiser strukturerede data med tabeller.
 - Adskil tabelceller ved hjælp af en lodret streg `|` 
 - De to første linjer i en tabel indikerer kolonneoverskrifterne og justeringen af elementer i tabellen
 - Brug koloner (`:`), når du inddeler overskrift og brødtekst i tabeller, for at angive kolonnejustering (til venstre, i midten, til højre) 
-- Hvis du vil starte en ny linje, skal du bruge koden for linjeskift i HTML(`<br/>`)
+- Hvis du vil starte en ny linje, skal du bruge HTML-koden for linjeskift (`<br/>`)
 - Husk at afslutte de enkelte rækker med vognretur eller linjeskift. 
 
 **Eksempel:**  
@@ -195,7 +195,7 @@ Organiser strukturerede data med tabeller.
 ```
 
 **Resultat:**  
-| Heading 1 | Heading 2 | Heading 3 |  
+| Overskrift 1 | Overskrift 2 | Overskrift 3 |  
 |-----------|:---------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
@@ -219,7 +219,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultat:**  
 Anvend _fremhævning_ i kommentarer til at udtrykke **stærke** holdninger og pointere <s>rettelser</s>   
-**_Fed, kursiv tekst_**    
+**_Fed, kursiv tekst_**   
 **~~Fed, gennemstreget tekst~~**  
 
 ## <a name="special-characters"></a>Specialtegn

@@ -16,42 +16,42 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 027038047dfa978a647ffcb129a16885915d4ce7
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194755"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297335"
 ---
 # <a name="create-a-custom-action"></a>Opret en brugerdefineret handling
 
 
-Du kan benytte brugerdefinerede handlinger, når du vil automatisere en serie kommandoer i systemet. Handlinger udvider den ordliste, der er tilgængelig for udviklere til at udtrykke forretningsprocesser. De vigtige verber som f.eks. Opret, Opdater, Slet og Tildel leveres af systemet, og en handling bruger disse vigtige verber til at oprette mere sigende verber som f.eks. Godkend, Eskaler, Distribuer eller Planlæg. Hvis definitionen af en forretningsproces ændres, kan en person, der ikke er udvikler, redigere den brugerdefinerede handling, så koden ikke behøver at blive ændret.  
+Du kan benytte brugerdefinerede handlinger, når du vil automatisere en serie kommandoer i systemet. Handlinger udvider det ordforråd, der er tilgængeligt for udviklere til at beskrive forretningsprocesser. Grundlæggende verber som f.eks. Opret, Opdater, Slet og Tildel, som leveres af systemet, anvendes af en handling til at oprette mere udtryksfulde verber som f.eks. Godkend, Eskaler, Distribuer eller Planlæg. Hvis definitionen af en forretningsproces ændres, kan en person, der ikke er udvikler, redigere den brugerdefinerede handling, så koden ikke behøver at blive ændret.  
   
 <a name="create"></a>   
 ## <a name="create-an-action"></a>Opret en handling  
   
 > [!IMPORTANT]
->  Hvis du opretter en handling, der skal medtages som en del af en løsning, der skal distribueres, kan du oprette den i konteksten af løsningen. Gå til **[Indstillinger](/powerapps/maker/model-driven-apps/advanced-navigation#settings)**  > **Løsninger**, og find den ikke-administrerede løsning, som denne handling skal være en del af. Vælg derefter **Ny** > **Proces** i menulinjen. Dette sikrer, at det tilpasningspræfiks, der er forbundet med navnet på handlingen, er konsistent med andre komponenter i løsningen. Når du har oprettet handlingen, kan du ikke ændre præfikset.  
+>  Hvis du opretter en handling, der skal medtages som en del af en løsning, der skal distribueres, kan du oprette den i konteksten af løsningen. Gå til **[Indstillinger](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Løsninger**, og find den ikke-administrerede løsning, som denne handling skal være en del af. Derefter skal du vælge **Ny** > **Proces** på menulinjen. Derved sikres, at det tilpasningspræfiks, der er knyttet til navnet på handlingen, er konsistent med andre komponenter i løsningen. Når du har oprettet handlingen, kan du ikke ændre præfikset.  
   
- På samme måde som arbejdsprocesser har handlinger følgende egenskaber i dialogboksen **Opret proces**.  
+ Som i processer i arbejdsprocessen har handlinger følgende egenskaber i dialogboksen **Opret proces**.  
   
- **Process Name**  
- Når du har angivet et navn til processen, oprettes et entydigt navn for processen ved at fjerne eventuelle mellemrum eller specialtegn i procesnavnet.  
+ **Procesnavn**  
+ Når du har indtastet et navn til processen, oprettes der et entydigt navn for den ved at fjerne eventuelle mellemrum eller specialtegn i procesnavnet.  
   
  **Kategori**  
- Denne egenskab fastsætter, at dette er en handlingsproces. Du kan ikke ændre dette, når du har gemt processen.  
+ Denne egenskab fastslår, at dette er en handlingsproces. Du kan ikke ændre dette, når du har gemt processen.  
   
  **Enhed**  
- I forbindelse med handlingsprocesser kan du vælge et objekt til angivelse af kontekst for arbejdsprocessen på samme måde som andre typer processer, men du kan også vælge **None (global)** . Brug denne indstilling, hvis din handling ikke kræver konteksten for et bestemt objekt. Du kan ikke ændre dette, når du har gemt processen.  
+ Med handlingsprocesser kan du vælge et objekt for at give en kontekst for arbejdsprocessen på samme måde som andre typer processer, men du har også mulighed for at vælge **Ingen (organisation)**. Brug denne indstilling, hvis din handling ikke kræver konteksten for et bestemt objekt. Du kan ikke ændre dette, når du har gemt processen.  
   
  **Type**  
  Brug denne egenskab til at vælge, om du bygger en ny handling fra bunden eller starter fra en eksisterende skabelon.  
  
 I modsætning til arbejdsprocesser behøver du ikke at angive følgende indstillinger:  
   
-- **Start, når**: Handlinger starter, når kode kalder den meddelelse, der er genereret for koden.  
+- **Start når**: Handlinger starter, når kode kalder den meddelelse, der er oprettet for dem.  
   
-- **Omfang**: Handlinger kører altid i konteksten af den kaldende bruger.  
+- **Omfang**: Handlinger køres altid i forbindelse med kald til bruger.  
   
 - **Kør i baggrunden**: Handlinger er altid arbejdsprocesser i realtid.  
   
@@ -64,33 +64,33 @@ Handlinger har også noget, som arbejdsprocesser ikke har – input- og outputar
 ## <a name="edit-an-action"></a>Rediger en handling  
  Du skal deaktivere processer, før du kan redigere dem.  
   
- Du kan redigere en handling, der blev oprettet som en del af en ikke-administreret løsning, eller som er inkluderet i en løsning, der er installeret i din organisation. Hvis denne løsning er en administreret løsning, kan du muligvis ikke redigere den. Løsningsudgiveren har mulighed for at redigere de administrerede egenskaber, så den handling, der er installeret sammen med en administreret løsning, ikke kan redigeres.  
+ Du kan redigere en handling, som er oprettet som en del af en ikke-administreret løsning eller inkluderet i en løsning, der er installeret i organisationen. Hvis det er en administreret løsning, kan du muligvis ikke redigere den. Løsningsudgiveren har mulighed for at redigere de administrerede egenskaber, så den handling, der installeres sammen med en administreret løsning, ikke kan redigeres.  
   
- Når en handling gemmes, genereres et entydigt navn baseret på navnet på processen. Dette entydige navn har det tilpasningspræfiks, der tilføjes af løsningsudgiveren. Dette er navnet på den meddelelse, som en udvikler bruger i sin kode.  
+ Når en handling gemmes, oprettes der et entydigt navn på basis af procesnavn. Det entydige navn er tildelt tilpasningspræfikset fra løsningsudgiveren. Det er navnet på den meddelelse, som en udvikler bruger i kode.  
   
  Når du redigerer en handling, har du følgende muligheder:  
   
  **Procesnavn**  
- Når processen er oprettet, og det entydige navn er genereret ud fra procesnavnet, kan du redigere procesnavnet. Du kan anvende en navngivningskonvention for at gøre det nemmere at finde bestemte processer.  
+ Når processen er oprettet, og det entydige navn er genereret ud fra procesnavnet, kan du redigere procesnavnet. Du kan evt. anvende en navngivningskonvention for at gøre det nemmere at finde bestemte processer.  
   
  **Entydigt navn**  
- Når en handling gemmes, genereres et entydigt navn baseret på navnet på processen. Dette entydige navn har det tilpasningspræfiks, der tilføjes af løsningsudgiveren. Dette er navnet på den meddelelse, som en udvikler bruger i sin kode. Du skal ikke ændre dette entydige navn, hvis processen er blevet aktiveret, og der er kode, der forventer at kalde handlingen ved hjælp af dette navn.  
+ Når en handling gemmes, oprettes der et entydigt navn på basis af procesnavn. Det entydige navn er tildelt tilpasningspræfikset fra løsningsudgiveren. Det er navnet på den meddelelse, som en udvikler bruger i kode. Du skal ikke ændre det entydige navn, hvis processen er aktiveret, og der er kode, som forventer kald til handlingen ved hjælp af dette navn.  
   
 > [!IMPORTANT]
->  Når handlingen er aktiveret, og kode er udviklet til at bruge et entydigt navn, må det entydige navn ikke ændres uden også at ændre den kode, der refererer til det entydige navn.  
+>  Når handlingen er aktiveret, og koden er skrevet, så den bruger et entydigt navn, må det entydige navn ikke ændres uden også at ændre den kode, der henviser til det.  
   
  **Aktivér annullering af opdatering**  
- Generelt vil processer, der understøtter transaktioner, "fortryde" (eller annullere) hele handlingen, hvis en del af processerne mislykkes. Der er dog visse undtagelser til dette. Nogle af de handlinger, som udviklere skriver i kode, der igangsættes af handlingen, understøtter muligvis ikke transaktioner. Hvis koden for eksempel udfører handlinger i andre systemer, der er uden for transaktionens rammer. De kan ikke fortrydes af den handling, der kører i en app. Nogle meddelelser i platformen understøtter ikke transaktioner. Men alt, hvad du kan foretage dig i brugergrænsefladen for handlingen, understøtter transaktioner. Alle de handlinger, der er en del af en arbejdsproces i realtid, opfattes som værende i transaktionen, men med handlinger har du mulighed for at fravælge dette.  
+ Generelt fortryder (eller annullerer) processer, der understøtter transaktioner, hele handlingen, hvis en del af dem mislykkes. Der er visse undtagelser. Visse handlinger, som udviklere kan foretage i kode, der er startet af handlingen, understøtter måske ikke transaktioner. Det kan f.eks. være, hvis koden udfører handlinger i andre systemer, der er uden for omfanget af transaktionen. Disse kan ikke annulleres af den handling, der kører i en app. Nogle meddelelser på platformen understøtter ikke transaktioner. Men alt det, du kun kan gøre med brugergrænsefladen for handlingen, understøtter transaktioner. Alle handlinger, der er en del af en arbejdsproces i realtid, overvejes i transaktionen, men med handlinger har du mulighed for at fravælge dette.  
   
- Du bør kontakte den udvikler, der skal bruge denne meddelelse, for at bestemme, om den skal være i transaktionen eller ej. En handling skal normalt være i transaktionen, hvis de handlinger, der udføres af forretningsprocessen, ikke giver mening, medmindre de alle fuldføres. Det klassiske eksempel er overførsel af midler mellem to bankkonti. Hvis du hæver penge fra én konto, skal du sætte dem ind på en anden. Hvis den ene mislykkes, mislykkes begge.  
+ Du bør henvende dig til den udvikler, der skal anvende denne meddelelse, for at finde ud af, om den skal være i transaktionen eller ej. Generelt skal en handling være i transaktionen, hvis de handlinger, der udføres af forretningsprocessen ikke giver mening, medmindre de alle er fuldført. Det klassiske eksempel er overførsel af arbejdskapital mellem to bankkonti. Hvis du hæver arbejdskapital fra én konto, skal du deponere den i den anden. Hvis den ene ikke lykkes, mislykkes begge.  
   
 > [!NOTE]
->  Du kan ikke aktivere annullering, hvis en brugerdefineret handling kaldes direkte fra en arbejdsproces. Du kan aktivere annullering, hvis en handling udløses af en webtjenestemeddelelse i Power Apps.  
+>  Du kan ikke aktivere annullering af opdateringen, hvis en brugerdefineret handling aktiveres direkte inde fra en arbejdsproces. Du kan aktivere annullering af opdateringen, hvis en handling er udløst af en meddelelse fra en Power Apps-webtjeneste.  
   
  **Aktivér som**  
- Som alle andre processer kan du aktivere processen som en skabelon og bruge den som et avanceret startpunkt for processer, der følger et ens mønster.  
+ På samme måde som med alle processer kan du aktivere processen som en skabelon og bruge den som et avanceret udgangspunkt for processer, der følger et lignende mønster.  
   
- **Definer procesargumenter**  
+ **Definere procesargumenter**  
  I dette område skal du angive alle de data, som handlingen forventes at starte, og hvilke data der udelades af handlingen. Flere oplysninger: [Definer procesargumenter](#define-process-arguments)  
   
  **Tilføj faser og trin**  
@@ -98,44 +98,44 @@ Handlinger har også noget, som arbejdsprocesser ikke har – input- og outputar
 
 <a name="BKMK_DefineProcessArgs"></a>   
 ## <a name="define-process-arguments"></a>Definer procesargumenter  
- Når en udvikler bruger en meddelelse, begynder vedkommende muligvis med nogle data, som de kan medtage i meddelelsen. Hvis du f.eks. vil oprette en ny sagspost, er det muligvis sagstitelværdien, der medtages som et inputargument.  
+ Når en udvikler bruger en meddelelse, begynder vedkommende muligvis med nogle data, som de kan medtage i meddelelsen. Hvis du f.eks. vil oprette en ny sagspost, er det måske sagens titelværdi, der skal overføres som inputargument.  
   
- Når meddelelsen er færdig, skal udvikleren muligvis overføre nogle data, der blev ændret eller genereret af meddelelsen, til en anden handling i deres kode. Disse data er outputargumentet.  
+ Når meddelelsen er færdig, skal udvikleren muligvis overføre visse data, der er ændret eller genereret af meddelelsen, til en anden handling i koden. Disse data er outputargumentet.  
   
- Både input- og outputargumenter skal have et navn, en type, og nogle oplysninger, f.eks. om argumentet altid er påkrævet. Du kan også angive en beskrivelse.  
+ Både input- og outputargumenter skal have et navn, en type og visse oplysninger, der fortæller, om argumentet altid er påkrævet. Du kan også angive en beskrivelse.  
   
- Navnet på meddelelsen og oplysningerne om alle procesargumenterne repræsenterer meddelelsens "signatur". Når en handling er aktiveret og bruges i kode, må signaturen ikke ændres. Hvis denne signatur ændres, mislykkes den kode, der bruger meddelelsen. Den eneste undtagelse til dette er ved at ændre en af parametrene, så det ikke er altid påkrævet.  
+ Navnet på meddelelsen og oplysningerne om alle procesargumenter repræsenterer "signaturen" for meddelelsen. Når en handling er aktiveret, og den bruges i kode, må signaturen ikke ændres. Hvis signaturen ændres, medfører det, at kode, der bruger meddelelsen, mislykkes. Den eneste undtagelse er, at du kan ændre en af de parametrene, så den ikke altid er påkrævet.  
   
- Du kan ændre rækkefølgen af argumenterne ved at sortere dem eller flytte dem op eller ned, da argumenterne er identificeret efter navn og ikke i rækkefølge. Kode, der bruger meddelelsen, ødelægges heller ikke, når du ændrer beskrivelsen.  
+ Du kan ændre rækkefølgen af argumenterne ved at sortere dem eller flytte dem op eller ned, fordi argumenterne identificeres ved navn, ikke ved rækkefølgen. Og hvis du ændrer beskrivelsen, afbrydes kode, der bruger meddelelsen, ikke.  
   
 ### <a name="action-process-argument-types"></a>Argumenttyper for handlingsprocesser  
- I nedenstående tabel beskrives argumenttyperne for handlingsprocesser.  
+ I følgende tabel beskrives argumenttyperne for handlingsprocesser.  
   
-|Type|Beskrivelse|  
+|Skriv|Beskrivelse|  
 |----------|-----------------|  
-|Boolesk|En `true` eller `false` værdi.|  
+|Boolesk|En værdi af typen `true` eller `false`.|  
 |DateTime|En værdi, der gemmer oplysninger om dato og klokkeslæt.|  
-|Decimal|En talværdi med decimalpræcision. Bruges, når præcision er yderst vigtigt.|  
-|Entity|En post for det angivne objekt. Når du vælger Entity, aktiveres rullelisten, og du kan vælge objekttypen.|  
-|EntityCollection|En samling af objektets poster.|  
-|EntityReference|Et objekt, der indeholder navnet, id'et og typen for en objektpost, som entydigt identificerer posten. Når du vælger EntityReference, aktiveres rullelisten, og du kan vælge objekttypen.|  
-|Float|En talværdi med decimalpræcision. Bruges, når data kommer fra en måling, der ikke er helt præcis.|  
-|Integer|Et helt tal.|  
-|Money|En værdi, der gemmer data om en vis mængde penge.|  
-|Picklist|En værdi, der repræsenterer en indstilling for attributten OptionSet.|  
-|String|En tekstværdi.|  
+|Decimal|En talværdi med antal decimaler. Bruges, når præcisionstal er yderst vigtige.|  
+|Objekt|En post for det angivne objekt. Når du vælger Objekt, aktiveres rullelisten, hvor du kan vælge objekttypen.|  
+|EntityCollection|En samling objektposter.|  
+|EntityReference|Et objekt, der indeholder navn, id og typen af objektpost, der entydigt identificerer det. Når du vælger EntityReference, aktiveres rullelisten, hvor du kan vælge objekttypen.|  
+|Flydende|En talværdi med antal decimaler. Bruges, når data stammer fra en måleenhed, der ikke er fuldstændig præcis.|  
+|Heltal|Et heltal.|  
+|Penge|En værdi, der gemmer data om et pengebeløb.|  
+|Valgliste|En værdi, der repræsenterer en indstilling for en OptionSet-attribut.|  
+|Streng|En tekstværdi.|  
   
 > [!NOTE]
-> **EntityCollection**-argumentværdier kan ikke angives i brugergrænsefladen for betingelser eller handlinger. Disse angives til brug af udviklere i brugerdefineret kode. Flere oplysninger: [Opret dine egne handlinger](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) 
+> Værdier for argumentet **EntityCollection** kan ikke angives i brugergrænsefladen for betingelser eller handlinger. Disse angives til brug af udviklere i brugerdefineret kode. Flere oplysninger: [Opret dine egne handlinger](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) 
   
 <a name="BKMK_AddStagesConditionsAndActions"></a>   
 ### <a name="add-stages-and-steps"></a>Tilføj faser og trin  
- Handlinger er en type processer, der er meget lig arbejdsprocesser i realtid. Alle de trin, der kan bruges i arbejdsprocesser i realtid, kan bruges i handlinger. Du kan finde oplysninger om de trin, der kan bruges til både arbejdsprocesser i realtid og handlinger, i [Arbejdsprocesfaser og -trin](configure-workflow-steps.md).  
+ Handlinger er en type processer, der er meget lig arbejdsprocesser i realtid. Alle de trin, der kan bruges i arbejdsprocesser i realtid, kan bruges i handlinger. Du kan finde oplysninger om de trin, der kan bruges til både arbejdsprocesser i realtid og handlinger, i [Faser og trin i arbejdsprocessen](configure-workflow-steps.md).  
   
- Ud over de trin, som kan bruges til arbejdsprocesser i realtid, har handlinger også trinnet **Tildel værdi**.  I handlinger kan disse kun bruges til at angive outputargumenter. Du kan bruge formularassistenten til at angive outputargumenter til specifikke værdier eller, mere sandsynligt, til værdier fra den post, som handlingen kører imod, poster, der er relateret til den pågældende post med en mange til én-relation, poster, der er oprettet i et tidligere trin, eller værdier, der er en del af selve processen.  
+ Ud over de trin, der kan bruges til arbejdsprocesser i realtid, har handlinger også trinnet **Tildel værdi**.  I handlinger kan disse kun bruges til at angive outputargumenter. Du kan bruge formularassistenten til at angive outputargumenter til specifikke værdier eller, mere sandsynligt, til værdier fra den post, som handlingen kører imod, poster, der er relateret til den pågældende post med en mange til én-relation, poster, der er oprettet i et tidligere trin, eller værdier, der er en del af selve processen.  
   
 ## <a name="next-steps"></a>Næste trin  
- [Aktivér brugerdefinerede handlinger fra en arbejdsproces](invoke-custom-actions-workflow-dialog.md)   
+ [Aktivere brugerdefinerede handlinger fra en arbejdsproces](invoke-custom-actions-workflow-dialog.md)   
 
  
  

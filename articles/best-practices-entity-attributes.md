@@ -24,7 +24,7 @@ ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/23/2020
-ms.locfileid: "82081186"
+ms.locfileid: "3299249"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Bedste praksis for brug af enhedsattributter for forretningsprocesforløb
 
@@ -40,7 +40,7 @@ Når du tidligere ville rapportere om forretningsprocesser efter fase, skulle du
 
 Nu, hvor feltet *Aktiv fase* (activestageid) frarådes for relaterede enheder, kan der rapporteres om forretningsprocessforløb på to måder.
 
-### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Mulighed 1: Visninger og diagrammer i enhed for forretningsprocesforløb **(anbefales)**
+### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Mulighed 1: visninger og diagrammer i enhed for forretningsprocesforløb **(anbefales)**
 
 I version 9.0 og nyere opretter hvert forretningsprocesforløb sin egen Common Data Service-enhed, der som regel har det samme navn som forretningsprocesforløbet. Hvis du vil rapportere om forretningsprocesforløbet, skal du vælge enheden for det forretningsprocesforløb, du vil rapportere om, og derefter oprette visninger og diagrammer på samme måde, som du gjorde før.
 
@@ -59,11 +59,11 @@ Her kan du definere visninger og diagrammer på samme måde, som du gør i andre
 
 En fordel ved denne fremgangsmåde er, at du kan bruge en enkelt visning eller et enkelt diagram til at rapportere om forretningsprocesforløb, der spænder over flere enheder.
 
-Desuden kan du i takt med, at enheden for forretningsprocesforløbet ikke er forskellig fra andre brugerdefinerede enheder i Common Data Service, kan du føje brugerdefinerede felter til enheden for at spore eventuelle oplysninger, du har brug for.
+Desuden kan du i takt med, at objektet for forretningsprocesforløbet ikke er forskellig fra andre brugerdefinerede objekter i Common Data Service, kan du føje brugerdefinerede felter til enheden for at spore eventuelle oplysninger, du har brug for.
 
 ### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Mulighed 2: Kopiér aktiv fase til en relateret enhed
 
-Hvis du vil fortsætte med at rapportere om den relaterede enhed, skal du oprette et flow for at kopiere feltet *Aktiv fase* (activestageid) fra enheden for forretningsprocesforløb til et brugerdefineret felt i de relaterede Common Data Service-enheder.
+Hvis du vil fortsætte med at rapportere om det relaterede objekt, skal du oprette et flow for at kopiere feltet *Aktiv fase* (activestageid) fra objektet for forretningsprocesforløbet til et brugerdefineret felt i de relaterede Common Data Service-objekter.
 
 Her er et par ting, du skal være opmærksom på, når du bruger denne fremgangsmåde:
 
@@ -102,10 +102,10 @@ Der kan være tilfælde, hvor automatisering, der er baseret på forretningsproc
 -   Afslut automatisk **Salgsproces for salgsmulighed**, når telefonopkaldsaktiviteten for lukning er fuldført.
 
 > [!TIP]
-> Brug klassiske Common Data Service-arbejdsprocesser eller flow, du definerer på enheden for forretningsprocesforløbet.
+> Brug klassiske Common Data Service-arbejdsprocesser eller flow, du definerer på objektet for forretningsprocesforløbet.
 > 
 
-Hvis du vil oprette en klassisk Common Data Service arbejdsproces, der opretter aktiviteter for interne løsningsgennemgange og følger op på kunden i fasen **Foreslå**  for **Salgsproces for salgsmulighed**:
+Hvis du vil oprette en klassisk arbejdsproces for Common Data Service, som opretter aktiviteter for interne løsningsgennemgange og følger op på kunden i fasen **Foreslå** for **Salgsproces for salgsmulighed**:
 
 1. Opret den i enheden **Salgsproces for salgsmulighed**, og indstil den til at køre, hver gang feltet **Aktiv fase** for enheden ændres. 
 1. Definer en betingelse for at kontrollere, om feltet **Aktiv fase** er lig med **Foreslå**. 

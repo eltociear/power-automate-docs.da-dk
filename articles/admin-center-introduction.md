@@ -25,7 +25,7 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862716"
+ms.locfileid: "3299227"
 ---
 # <a name="the-admin-center"></a>Administration
 

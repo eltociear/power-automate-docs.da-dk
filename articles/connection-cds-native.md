@@ -1,6 +1,6 @@
 ---
-title: Opret et automatiseret flow med Common Data Service-connector (aktuelt miljø) | Microsoft Docs
-description: Opret arbejdsprocesser ved hjælp af en Common Data Service-connector og Power Automate
+title: Opret et automatiseret flow med en connector for Common Data Service (aktuelt miljø) | Microsoft Docs
+description: Opret arbejdsprocesser ved hjælp af en connector for Common Data Service (aktuelt miljø) og Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,55 +25,55 @@ ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728533"
+ms.locfileid: "3331102"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Opret et automatiseret flow ved hjælp af Common Data Service (aktuelt miljø)
 
 >[!IMPORTANT]
->Der er tre connectors tilgængelige til at oprette forbindelse til Common Data Service. I denne artikel beskrives den anbefalede [Common Data Service-connector (aktuelt miljø)](./connection-cds.md) til oprettelse af forbindelse til Common Data Service. [Common Data Service-connectoren](./connection-cds.md) og [Dynamics 365-connectoren](https://docs.microsoft.com/connectors/dynamicscrmonline/) er også tilgængelige, hvis du ikke kan bruge den anbefalede connector.
+>Der er tre connectorer tilgængelige til oprettelse af forbindelse til Common Data Service. Denne artikel dækker den anbefalede [Common Data Service-connector (aktuelt miljø)](./connection-cds.md) til oprettelse af forbindelse til Common Data Service. [Common Data Service-connectoren](./connection-cds.md) og [Dynamics 365-connectoren](https://docs.microsoft.com/connectors/dynamicscrmonline/) kan også bruges, hvis du ikke kan bruge den anbefalede connector.
 
 
-Du skal [oprette løsningsorienterede](./overview-solution-flows.md) flow for at bruge Common Data Service-connectoren (aktuelt miljø). 
+Du skal [oprette løsningsorienterede](./overview-solution-flows.md) flows for at bruge connectoren for Common Data Service (aktuelt miljø). 
 
-De flow, du opretter, kan udløses, når en Common Data Service post oprettes, opdateres eller slettes.
+De flows, du opretter, kan blive udløst, når der oprettes, opdateres eller slettes en Common Data Service-post.
 
 Du kan også udføre handlinger for oprettelse, opdatering, hentning og sletning for poster i Common Data Service.
 
-## <a name="initiate-a-flow-with-common-data-service-current-environment"></a>Initier et flow med Common Data Service (aktuelt miljø)
+## <a name="initiate-a-flow-with-common-data-service-current-environment"></a>Start et flow med Common Data Service (aktuelt miljø)
 
-Brug udløseren **Når en post oprettes, opdateres eller slettes** til at initiere dit flow:
+Brug udløseren **Når der oprettes, opdateres eller slettes en post** for at starte dit flow:
 
    ![Vælg en udløser](./media/cds-connector-native/native-trigger.png)
 
-Når du har valgt en udløser, skal du konfigurere:
+Når du har valgt en udløser, skal du konfigurere følgende:
 
-- En betingelse for udløseren.
-- Navnet på enheden.
-- Området for udløseren.
+- Angiv en betingelse for udløseren:
+- Navnet på objektet.
+- Omfanget af udløseren.
 
-### <a name="trigger-condition"></a>Udløserbetingelsen
+### <a name="trigger-condition"></a>Udløserbetingelse
 
-Du kan tilføje en af disse betingelser for at bestemme, nøjagtigt hvornår dit flow udløses.
+Du kan tilføje en af disse betingelser for at afgøre præcist, hvornår dit flow skal udløses.
 
    ![Vælg en udløser](./media/cds-connector-native/trigger-conditions.png)
 
-### <a name="the-entity-name"></a>Enhedens navn
+### <a name="the-entity-name"></a>Objektnavnet
 
-Vælg en af de mange tilgængelige enheder for at angive den enhed, udløseren arbejder med.
+Vælg et af de mange objekter, der er tilgængelige, for at angive det objekt, som udløseren skal køres for.
 
    ![Vælg en udløser](./media/cds-connector-native/entity-names.png)
 
-### <a name="scope"></a>Område
+### <a name="scope"></a>Scope
 
-Brug områder til at afgøre, om dit flow kører, når du, en person i din afdeling eller en anden bruger i din organisation opretter en post.
+Brug omfang til at afgøre, om dit flow skal køres, når du, en person i afdelingen eller en bruger i organisationen opretter en post.
 
-![Vælg område](./media/cds-connector-native/scopes.png)
+![Vælg omfang](./media/cds-connector-native/scopes.png)
 
-Her er detaljerne for hvert enkelt område.
+Her er oplysningerne om de enkelte omfang.
 
-|Område|Timing af udløser|
+|Scope|Timing af udløser|
 | --- | --- |
-|Forretningsenhed|Handling, der udføres på en post, der ejes af din forretningsenhed|
+|Afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed|
 |Organisation|Handling, der udføres af en hvilken som helst person i organisationen eller databasen|
 |Overordnet: Underordnet afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed eller en underordnet afdeling|
 |Bruger|Handling, der udføres på en post, der ejes af dig|
@@ -86,19 +86,19 @@ Udløsere, der kører, når en post opdateres, kan også bruges til filtrering a
 
 Dette flow udløses, hver gang fornavnet eller efternavnet på en kontakt, som flowbrugeren ejer, opdateres.
 
-![Filterattributter](./media/cds-connector-native/filtering-attributes.png)
+![Filtrér attributter](./media/cds-connector-native/filtering-attributes.png)
 
 ## <a name="trigger-privileges"></a>Udløserrettigheder
 
-Hvis du vil oprette et flow, der udløses via oprettelse, opdatering eller sletning af en post, skal brugeren have tilladelser på brugerniveau til at oprette, læse, skrive og slette for posten til **tilbagekald af registreringen**. Derudover skal brugeren, afhængigt af de områder der er defineret, muligvis have mindst samme niveau af læserettigheder for det samme objekt.  [Få mere at vide](https://docs.microsoft.com/power-platform/admin/database-security) om miljøsikkerhed.
+Hvis du vil oprette et flow, der udløses ud fra oprettelse, opdatering eller sletning af en post, skal brugeren have tilladelser på brugerniveau til at oprette, læse, skrive og slette for objektet **Registrering af tilbagekald**. Derudover skal brugeren, afhængigt af de områder der er defineret, muligvis have mindst samme niveau af læserettigheder for det samme objekt.  [Få mere at vide](https://docs.microsoft.com/power-platform/admin/database-security) om miljøsikkerhed.
 
 ## <a name="write-data-into-common-data-service"></a>Skriv data til Common Data Service
 
 Brug en af følgende handlinger til at skrive data til Common Data Service:
 
-![Filterattributter](./media/cds-connector-native/actions.png)
+![Filtrér attributter](./media/cds-connector-native/actions.png)
 
-Her er et eksempel på et flow, der sender en meddelelse med navnet og den årlige omsætning, hver gang en **konto** **oprettes** af en person i **området** for afdelingen.
+Her er et eksempel på et flow, der sender en notifikation med navnet og den årlige omsætning, hver gang en **konto** **oprettes** af en person inden for afdelingens **omfang**.
 
 > ![Opfølgningsopgave](./media/cds-connector-native/example-flow.png)
 
@@ -116,16 +116,16 @@ Hvis du vil skrive data til felterne Kunde, Ejer og Angående, skal to felter ud
 
 ### <a name="enable-upsert-behavior"></a>Aktivér upsert-funktionsmåde
 
-Du kan udnytte handlingen til **opdatering af en post** til at aktivere upsert-handlinger, som opdaterer posten, hvis den allerede findes, eller opretter en ny post. Du aktiverer upsert ved at angive objektet og en GUID-nøgle. Hvis posten med den angivne type og nøgle findes, foretages en opdatering. I modsat fald oprettes en post med den angivne nøgle.
+Du kan udnytte handlingen **opdater en post** til at aktivere upsert-handlinger, som opdaterer posten, hvis den allerede findes, eller opretter en ny post. Du aktiverer upsert ved at angive objektet og en GUID-nøgle. Hvis posten med den angivne type og nøgle findes, foretages en opdatering. I modsat fald oprettes en post med den angivne nøgle.
 
 ### <a name="trigger-behavior"></a>Funktionsmåde for udløser
 
 Hvis du har en udløser, der er registreret for opdateringen af en post, kører flowet for hver *bindende* opdatering af den givne post. Tjenesten starter dit flow asynkront og med den nyttelast, som indsamles på det tidspunkt, hvor aktiveringen finder sted.
 
 > [!NOTE]
-> Hvis du har to opdateringer, der sker inden for få sekunder efter hinanden, kan flowet blive udløst mere end én gang med det nyeste versionerede indhold.
+> Hvis du har to opdateringer, der sker inden for få sekunder efter hinanden, kan flowet derfor blive udløst mere end én gang med det nyeste versionerede indhold.
 
-Flowkørsler kan blive forsinkede, hvis der er en ordrebeholdning af systemjob i miljøet. Hvis denne forsinkelse forekommer, udløses dit flow, når systemjobbet til start af flowet kører.
+Flowkørsler kan blive forsinkede, hvis der er en ordrebeholdning af systemjob i miljøet. Hvis denne forsinkelse forekommer, udløses dit flow, når det systemjob, der skal starte flowet, bliver kørt.
 
 
 

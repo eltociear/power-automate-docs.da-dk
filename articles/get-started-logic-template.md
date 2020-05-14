@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 8ccb933188902b89fa45b65cfec0d3d0e96de4c8
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195698"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297797"
 ---
 # <a name="create-a-flow-from-a-template-in-power-automate"></a>Opret et flow ud fra en skabelon i Power Automate
 
@@ -37,7 +37,7 @@ Opret et flow fra en af de mange indbyggede skabeloner, der f.eks. kan sende dig
 
 * En konto på [flow.microsoft.com](https://flow.microsoft.com)
 * En Slack-konto
-* Office 365-legitimationsoplysninger
+* Legitimationsoplysninger for Office 365
 
 ## <a name="choose-a-template"></a>Vælg en skabelon
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJK8cYdjAic?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
@@ -74,6 +74,6 @@ Når din chef nu sender dig en mail, modtager du en Slack-meddelelse, der indeho
 ## <a name="next-steps"></a>Næste trin
 * [Se dit flow i aktion](see-a-flow-run.md)
 * [Udgiv din egen skabelon](publish-a-template.md)
-* [Brug en skabelon til Common Data Service](common-data-model-intro.md)
+* [Brug en skabelonen til Common Data Service](common-data-model-intro.md)
 * [Kom i gang med teamflows](create-team-flows.md), og inviter andre til at samarbejde med dig om at designe flows.
 

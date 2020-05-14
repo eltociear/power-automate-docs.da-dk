@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 1506902cdd6afe90d7e12a910e2e14519cae7554
-ms.sourcegitcommit: c6c4150daadbcc38ef1a33a5903df531b8461ace
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75942994"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296939"
 ---
 # <a name="create-approval-flows-with-attachments"></a>Opret godkendelsesflow med vedhæftede filer
 
-Nogle gange har du brug for at få en fil godkendt til forretningsmæssige formål. Det kan du heldigvis bruge Power Automate-godkendelser til. Lad os f.eks. sige, at du er revisor, og du vil have en faktura godkendt. Det kan du oprette et øjeblikkeligt flow til, som gør det muligt for dig at sende filen til godkendelse ved blot at trykke på en knap og vælge den fil, der skal sendes.
+Nogle gange har du brug for at få en fil godkendt til forretningsmæssige formål. Du kan heldigvis bruge Power Automate-godkender til at udføre dette. Lad os f.eks. sige, at du er revisor, og du vil have en faktura godkendt. Det kan du oprette et øjeblikkeligt flow til, som gør det muligt for dig at sende filen til godkendelse ved blot at trykke på en knap og vælge den fil, der skal sendes.
 
 I denne artikel får du mere at vide om, hvordan du opretter et godkendelsesflow, der sender en vedhæftet fil, som godkenderen skal gennemgå, før vedkommende beslutter sig for, om anmodningen skal godkendes.
 

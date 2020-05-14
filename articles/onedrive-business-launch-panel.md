@@ -1,6 +1,6 @@
 ---
-title: Opret flow fra OneDrive for Business-startpanelet | Microsoft Docs
-description: Opret flow fra OneDrive for Business-startpanelet.
+title: Opret flows fra OneDrive for Business-startpanelet | Microsoft Docs
+description: Opret flows fra OneDrive for Business-startpanelet.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,9 +25,9 @@ ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/07/2020
-ms.locfileid: "80801442"
+ms.locfileid: "3298963"
 ---
-# <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Opret flow fra OneDrive for Business-startpanelet
+# <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Opret flows fra OneDrive for Business-startpanelet
 
 
 Ligesom med Power Automate-[startpanelet i SharePoint](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) kan du køre flow for bestemte filer i OneDrive for Business. 
@@ -69,7 +69,7 @@ I denne gennemgang opretter vi et enkelt flow, hvor en af de mange [OneDrive for
 
 
 >[!TIP]
->Selvom denne gennemgang viser, hvordan du opretter et flow ud fra en skabelon, kan du også oprette et flow fra bunden af for at bruge en af de hundredvis af connectors, der er tilgængelige i Power Automate.
+>Selvom denne gennemgang viser, hvordan du opretter et flow ud fra en skabelon, kan du også oprette et flow fra bunden af for at bruge en af de hundredvis af connectorer, der er tilgængelige i Power Automate.
 
 ## <a name="learn-more"></a>Få mere at vide
 

@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 9c7ed87d62ff6fc7370d5b57053239c8bfbeb591
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193444"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296807"
 ---
 # <a name="sharing-and-connectors-admin-analytics-reports"></a>Administrationsanalyserapporter for deling og forbindelser
 
@@ -38,7 +38,7 @@ Fra et delingsperspektiv kan du få mere at vide om, hvem dine appbrugere er og 
 
 ## <a name="view-shared-flows-reports"></a>Få vist rapporter over delte flow
 
-1. Log på [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
+1. Log på [Power Platform Administration](https://admin.powerplatform.microsoft.com/).
 1. Vælg **Analyse** på navigationslinjen i venstre side.
 1. Vælg fanen **Delt**, og få vist listen over flow, der er delt i din organisation.
  
@@ -47,7 +47,7 @@ Fra et delingsperspektiv kan du få mere at vide om, hvem dine appbrugere er og 
 
 ## <a name="view-connectors-report"></a>Vis forbindelsesrapport
 
-1. Log på [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
+1. Log på [Power Platform Administration](https://admin.powerplatform.microsoft.com/).
 1. Vælg **Analyse** på navigationslinjen i venstre side.
 1. Vælg fanen **Forbindelser**, og få vist en liste over de forbindelser, der er i brug i din organisation.
  
@@ -68,7 +68,7 @@ Resultaterne i disse rapporter er baseret på det valgte miljø. Sådan ændrer 
 
 ## <a name="learn-more"></a>Få mere at vide
 
-[Kom i gang med Power Automate](getting-started.md)
+[Introduktion til Power Automate](getting-started.md)
 
 
 

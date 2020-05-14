@@ -21,38 +21,38 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b4e087855890d7ca94a8288793494ce1e81826b2
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193283"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296719"
 ---
 # <a name="manage-connections-in-power-automate"></a>Administrer forbindelser i Power Automate
 
-Hvis du opretter en forbindelse i Power Automate, kan du nemt få adgang til dine data, mens du bygger et flow. Power Automate indeholder almindeligt anvendte forbindelser, herunder SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter m.m. Forbindelser deles med Power Apps, så når du opretter en forbindelse i ét produkt, viser forbindelsen sig i det andet.
+Hvis du opretter en forbindelse i Power Automate, kan du nemt få adgang til dine data, mens du bygger et flow. Power Automate indeholder almindeligt anvendte forbindelser, herunder SharePoint, , SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter og meget mere. Forbindelser deles med Power Apps, så når du opretter en forbindelse i ét produkt, viser forbindelsen sig i det andet.
 
 Du kan f.eks. bruge en forbindelse til udføre disse opgaver:
 
-* opdatere en SharePoint-liste.
-* hente data fra en Excel-fil i din OneDrive for Business- eller Dropbox-konto.
-* sende mail i Office 365.
-* sende et tweet.
+* Opdatere en SharePoint-liste.
+* Hente data fra en Excel-fil i din OneDrive for Business- eller Dropbox-konto.
+* Sende mail i Office 365.
+* Sende et tweet.
 
 Du kan oprette en forbindelse i flere forskellige scenarier, såsom:
 
 * oprette et [flow vha. en skabelon](get-started-logic-template.md)
 * oprette et [flow fra bunden](get-started-logic-flow.md) eller opdatere et eksisterende flow
-* oprette en forbindelse direkte på [Power Automate-webstedet][1]
+* Oprettelse af en direkte forbindelse på [Power Automate-websitet][1]
 
-I dette emne vises, hvordan du kan administrere forbindelser på [Power Automate-webstedet][1].
+I dette emne vises, hvordan du kan administrere forbindelser på [Power Automate-websitet][1].
 
-## <a name="add-a-connection"></a>Opret en forbindelse
-1. På [Power Automate-webstedet][1] skal du logge på med din arbejds- eller organisationskonto.
+## <a name="add-a-connection"></a>Tilføj en forbindelse
+1. På [Power Automate-websitet][1] skal du logge på med din arbejds- eller organisationskonto.
 2. Vælg gearikonet i det øverste højre hjørne, og vælg derefter **Forbindelser**.
    
     ![Vælg Forbindelser](./media/add-manage-connections/connections-menu.png)
 3. Vælg **Opret forbindelse**.
-4. På listen over **tilgængelige forbindelser** skal du vælge den forbindelse, du vil oprette, f.eks. SharePoint.
+4. På listen over **Tilgængelige forbindelser** skal du vælge den forbindelse, du vil oprette, f.eks. SharePoint.
 5. Vælg knappen **Opret forbindelse**, og indtast derefter dine legitimationsoplysninger for at oprette forbindelsen.
 
 Når forbindelsen er oprettet, angives den under **Mine forbindelser**.
@@ -75,7 +75,7 @@ Fra og med denne skrivelse understøtter SQL Server og SharePoint Server datagat
    
     Når forbindelsen er oprettet, angives den under **Mine forbindelser**.
 
-## <a name="delete-a-connection"></a>Slet en forbindelse
+## <a name="delete-a-connection"></a>Sletning af en forbindelse
 1. Gå til siden **Mine forbindelser**, og vælg derefter skraldespandsikonet for den forbindelse, du vil slette.
    
     ![Slet forbindelse](./media/add-manage-connections/delete-connection.png)
@@ -93,12 +93,12 @@ Du kan opdatere en forbindelse, der ikke virker, fordi dine kontooplysninger ell
     ![Bekræft adgangskode](./media/add-manage-connections/verify-password.png)
 2. Når du bliver bedt om det, skal du opdatere din forbindelse med nye legitimationsoplysninger.
 
-Når du opdaterer en forbindelse, opdateres den for både Power Apps og Power Automate.
+Når du opdaterer en forbindelse, opdateres den både for Power Apps og Power Automate.
 
 ## <a name="troubleshoot-a-connection"></a>Fejlfinding af forbindelse
 Afhængigt af organisationens politikker skal du muligvis bruge den samme konto for at logge på Power Automate og oprette en forbindelse til SharePoint, Office 365 eller OneDrive for Business.
 
-Du får f.eks. tilladelse til at logge på Power Automate med *yourname@outlook.com* , men blokeres, når du forsøger at oprette forbindelse til SharePoint med *yourname@contoso.com* . Du kan i stedet logge på Power Automate med *yourname@contoso.com* , og så kan du oprette forbindelse til SharePoint.
+Du kan f.eks. logge på Power Automate med *ditnavn@outlook.com*, men blive blokeret, når du forsøger at oprette forbindelse SharePoint med *ditnavn@contoso.com*. Du kan i stedet logge ind på Power Automate med *ditnavn@contoso.com*, og du kan oprette forbindelse til SharePoint.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com

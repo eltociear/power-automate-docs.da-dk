@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524613"
+ms.locfileid: "3298831"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Opret og test flow for brugergrænsefladen på internettet
 
@@ -123,6 +123,6 @@ For at løse problemet skal brugeren manuelt redigere scriptet for at indsætte 
 
 - Få mere at vide om, hvordan du [kører flow for brugergrænsefladen](run-ui-flow.md).
 
-- Hvis du vil udføre mere med flow for brugergrænsefladen, kan du også afprøve flow for brugergrænsefladen med [input- og output](inputs-outputs-web.md)parametre.
+- Hvis du vil foretage dig mere med flow for brugergrænseflader, kan du også afprøve flow for brugergrænseflader med [input- og output](inputs-outputs-web.md)parametre.
 
  

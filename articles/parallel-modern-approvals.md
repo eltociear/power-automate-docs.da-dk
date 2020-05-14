@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9515fee127c1130803f075c6b6a08802a7c1eaea
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192455"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296983"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Opret arbejdsprocesser for parallel godkendelse med Power Automate
 
 
-I en arbejdsproces for parallel godkendelse skal flere personer godkende elementer, f.eks. fakturaer, indkøbsordrer, anmodninger om ferie osv. De enkelte personers godkendelse er uafhængig af alle andre godkendere.
+I en arbejdsgang med parallel godkendelse kræves der flere personer til at godkende varer som fakturaer, indkøbsordrer, ferieanmodninger osv. Hver persons godkendelse er uafhængig af alle andre godkendere.
 
 I denne gennemgang bruger vi Power Automate til at oprette et flow, som kan automatisere en arbejdsproces for parallel godkendelse. I dette flow automatiseres processen for en medarbejders anmodning om ferie, der kræver godkendelse af alle personer (eller team), som medarbejderen jævnligt arbejder under. Medarbejderne bruger en [SharePoint-liste](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7) til at anmode om ferie. Ferie skal godkendes af medarbejderens direkte chef, salgsteamet og personaleafdelingen. De enkelte anmodninger om ferie sendes til de enkelte godkendere for at blive afgjort. Flowet sender en mail med statusændringer, og derefter opdateres SharePoint med afgørelserne.
 
@@ -40,7 +40,7 @@ I denne gennemgang bruger vi Power Automate til at oprette et flow, som kan auto
 
 Den SharePoint Online-liste, som du opretter, skal indeholde følgende kolonner:
 
-   ![Kolonner i SharePoint-liste](./media/parallel-modern-approvals/sharepoint-columns.png)
+   ![SharePoint-listekolonner](./media/parallel-modern-approvals/sharepoint-columns.png)
 
 Noter navnet og URL-adressen på SharePoint Online-listen. Vi skal bruge disse elementer senere til at konfigurere udløseren **SharePoint – Når der oprettes et element**.
 
@@ -58,7 +58,7 @@ Noter navnet og URL-adressen på SharePoint Online-listen. Vi skal bruge disse e
 
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
-## <a name="name-and-save-your-flow"></a>Navngiv og gem dit flow
+## <a name="name-and-save-your-flow"></a>Navngiv dit flow, og gem det
 
 1. Angiv et navn til dit flow, og vælg derefter ikonet **Gem** for at gemme det arbejde, vi har udført hidtil.
 
@@ -75,7 +75,7 @@ Noter navnet og URL-adressen på SharePoint Online-listen. Vi skal bruge disse e
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 > [!IMPORTANT]
-> Denne handling sender anmodningen om ferie til mailadressen i feltet **Tildelt til** og indsætter derefter tokenet **Mail** fra listen **Hent leder (v2)** .
+> Denne handling sender anmodningen om ferie til mailadressen i feltet **Tildelt til** og indsætter derefter tokenet **Mail** fra listen **Hent leder (v2)**.
 > 
 > 
 

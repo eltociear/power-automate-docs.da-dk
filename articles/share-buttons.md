@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9b5671096bbecd9221d3849cd656548291acd4c9
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194410"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296917"
 ---
-# <a name="share-button-flows-in-power-automate"></a>Del knapflow i Power Automate
+# <a name="share-button-flows-in-power-automate"></a>Del knapflows i Power Automate.
 
-I mobilappen Power Automate kan du dele [knapflow](introduction-to-button-flows.md) (knapper) med andre brugere eller grupper i din organisation. Når du deler en knap, kan personen eller gruppen, du deler med, bruge din knap på samme måde, som de bruger deres egne knapper. Du kan også [dele et link](share-buttons.md#re-share-a-button) til knapper, en anden person har delt med dig. Du kan til enhver tid [stoppe med at dele](share-buttons.md#stop-sharing-a-button) dine knapper.
+I mobilappen Power Automate kan du dele [knapflows](introduction-to-button-flows.md) (knapper) med andre brugere eller grupper i din organisation. Når du deler en knap, kan personen eller gruppen, du deler med, bruge din knap på samme måde, som de bruger deres egne knapper. Du kan også [dele et link](share-buttons.md#re-share-a-button) til knapper, en anden person har delt med dig. Du kan til enhver tid [stoppe med at dele](share-buttons.md#stop-sharing-a-button) dine knapper.
 
 > De skærmbilleder, der er brugt i dette dokument, er taget fra en Android-enhed. Hvis du bruger en iPhone, kan billederne se anderledes ud, men funktionaliteten er den samme.
 > 
@@ -38,15 +38,15 @@ I mobilappen Power Automate kan du dele [knapflow](introduction-to-button-flows.
 Benyt [disse trin](share-buttons.md#use-shared-buttons) for at bruge en knap, som andre deler med dig.
 
 ## <a name="prerequisites"></a>Forudsætninger
-Hvis du vil dele knapper, har du brug for følgende:
+Hvis du vil dele knapper, skal du have:
 
-* En konto, der har adgang til [Power Automate](https://flow.microsoft.com).
-* Et flow, du kan dele.
-* En mobilenhed med mobilappen Power Automate til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
+* En konto med adgang til [Power Automate](https://flow.microsoft.com).
+* Et flow til at dele.
+* En mobilenhed med Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 * En gruppe eller en bruger i din organisation, som du vil dele din knap med.
 
 ## <a name="share-a-button"></a>Del en knap
-Du kan dele en knap fra fanen **Knapper** i mobilappen Power Automate.
+Du kan dele en knap fra fanen **Knapper** i Power Automate-mobilappen.
 
 1. Tryk på det lille ikon ud for den knap, du vil dele.
    
@@ -92,7 +92,7 @@ Du kan få vist alle grupper eller brugere, som en knap deles med, ved at følge
    
     ![få vist knapbrugere](./media/share-buttons/share-button-flows-button-users-list.png)
 
-## <a name="stop-sharing-a-button"></a>Stop med at dele en knap
+## <a name="stop-sharing-a-button"></a>Stop deling af en knap
 Du kan stoppe delingen af en knap ved at følge disse trin under fanen **Knapper**:
 
 1. Tryk på det lille ikon ud for den knap, du ikke længere vil dele.
@@ -107,10 +107,10 @@ Du kan stoppe delingen af en knap ved at følge disse trin under fanen **Knapper
     ![stop med at dele knap](./media/share-buttons/share-button-flows-remove-user-result.png)
 
 ## <a name="monitor-the-run-history"></a>Overvåg kørselshistorikken
-Hele kørselshistorikken, herunder de kørsler, der er initieret af en person, som en knap er delt med, vises kun under fanen **Aktivitet** i knapopretterens Power Automate-mobilapp.
+Al kørselshistorik, herunder de kørsler, der er initieret af en person, som en knap er delt med, vises kun under fanen **Aktivitet** i knapopretterens Power Automate-mobilapp.
 
 ## <a name="use-shared-buttons"></a>Brug delte knapper
-Før du kan køre en knap, som en person har delt med dig, skal du føje den til din fane **Knapper** på siden **Tilføj knapper**.
+Før du kan køre en knap, som en person har delt med dig, skal du føje den til fanen **Knapper** fra siden **Tilføj knapper**.
 
 1. Tryk på **HENT FLERE** (eller banneret **Nye knapper er tilgængelige**, hvis det vises) på fanen **Knapper**.
    
@@ -125,7 +125,7 @@ Før du kan køre en knap, som en person har delt med dig, skal du føje den til
 Du kan dele et link til en knap, der er blevet delt med dig.
 
 1. Vælg **...** ud for den knap, du vil dele.
-2. Vælg **Link til deling af knappen**.
+2. Vælg **Del knaplink**.
    
     ![link til at dele en knap igen](./media/share-buttons/re-share-button.png)
 3. Vælg den app, du vil bruge til at dele knappen, og følg derefter trinnene til at sende knappen til den person, du vil dele den med.
@@ -138,7 +138,7 @@ Hvis du ikke længere vil bruge en knap, der er delt med dig, kan du fjerne den 
     ![fjern knap](./media/share-buttons/share-button-flows-added-shared-button.png)
 2. Tryk på **Fjern** på den viste menu.
 
-Det var det. Knappen vises ikke længere under fanen **Knapper** i appen Power Automate.
+Det var det hele. Knappen vises ikke længere under fanen **Knapper** i appen Power Automate.
 
 > [!NOTE]
 > Når du har fjernet en delt knap, kan du tilføje den igen ved at vælge **HENT FLERE** under fanen **Knapper**.

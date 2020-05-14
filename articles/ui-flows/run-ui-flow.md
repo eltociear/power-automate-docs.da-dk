@@ -25,7 +25,7 @@ ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 04/03/2020
-ms.locfileid: "80627068"
+ms.locfileid: "3298919"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>Kør ikke-automatiserede og automatiserede flow for brugergrænsefladen
 
@@ -35,11 +35,11 @@ Når du har oprettet og testet et flow for brugergrænsefladen, kan du køre det
 
 - Du skal bruge [datagatewayen i det lokale miljø](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409), før flowet for brugergrænsefladen udløses af Power Automate på din enhed.
    
-   Gatewayen er en sikker forbindelse i virksomhedsklassen mellem Power Automate og din enhed (hvor dit flow for brugergrænsefladen kører). Power Automate bruger gatewayen til at få adgang til din enhed i det lokale miljø, så den kan udløse dine flow for brugergrænsefladen fra en hændelse, en tidsplan eller en knap.
+   Gatewayen er en sikker forbindelse i virksomhedsklassen mellem Power Automate og din enhed (hvor dit flow for brugergrænsefladen kører). Power Automate bruger gatewayen til at få adgang til din enhed i det lokale miljø, så den kan udløse dine flows for brugergrænsefladen fra en hændelse, en tidsplan eller en knap.
 - En arbejds- eller skolekonto. 
 
    >[!IMPORTANT]
-   >Du skal bruge samme arbejds- eller skolekonto til at konfigurere gatewayen, til at logge på Power Automate og til at logge på din Windows-enhed.
+   >Du skal bruge samme arbejds- eller skolekonto til at konfigurere gatewayen, til at logge på Power Automate og din Windows-enhed.
    
 
 ## <a name="run-your-ui-flow-from-an-event-button-schedule-or-business-process-flow"></a>Kør dit flow for brugergrænsefladen fra en hændelse, en knap, et tidsplan eller et forretningsprocesflow
@@ -72,7 +72,7 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
     - **Domæne og brugernavn**: Viser din arbejds- eller skolekonto fra enheden.
        >[!Important]
         >Sørg for, at du kan logge på enheden ved hjælp af disse legitimationsoplysninger.  
-    - **Adgangskode**: Angiv adgangskoden til din arbejds- eller skolekonto.
+    - **Adgangskode**: Angiv din adgangskode til din arbejds- eller skolekonto.
 
       ![Indstillinger for forbindelse](../media/run-ui-flow/uiflow-connection-card.png "Indstillinger for forbindelse")
 
@@ -91,7 +91,7 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
 
 1. Vælg **Gem** for at gemme dit automatiserede flow.
  >[!TIP]
- >Bekræft, at din gateway er online, før du udfører testen. Gå til **Data** > **Gateways** i navigationsruden, vælg gatewaynavnet, og klik på **...** . Gå derefter til **Oplysninger**, og bekræft, at **gatewaystatussen** er **online**. Hvis **gatewaystatussen** er **offline**, skal du bekræfte, at enheden er slået til og har forbindelse til internettet. 
+ >Bekræft, at din gateway er online, før du udfører testen. Gå til **Data** > **Gateways** i navigationsruden, vælg gatewaynavnet, og klik på **...**. Gå derefter til **Oplysninger**, og bekræft, at **gatewaystatussen** er **online**. Hvis **gatewaystatussen** er **offline**, skal du bekræfte, at enheden er slået til og har forbindelse til internettet. 
 
 1. Test flowet ved at sende en mail for at udløse det. Du kan se, at de trin, du optog, bliver afspillet i dit flow for brugergrænsefladen. 
 
@@ -117,7 +117,7 @@ Når du definerer input og output i et flow for brugergrænsefladen, kan du over
 
 Når du opretter flow for brugergrænsefladen, kører du dem enten i **ikke-automatiseret** eller i **automatiseret** tilstand. Automatiseret er bedst til programmer, der ikke har brug for menneskelig overvågning.
 
-Når de køres automatiseret, logges flow for brugergrænsefladen automatisk på de enheder, der kører Windows 10, Windows Server 2016 eller Windows Server 2019. Når automatiseringen er fuldført, logges flow for brugergrænsefladen af enheden og rapporterer sin aktivitet i Power Automate.
+Når de køres automatisk, logges flows for brugergrænsefladen automatisk på de destinationsenheder, der kører Windows 10, Windows Server 2016 eller Windows Server 2019. Når automatiseringen er fuldført, logges flows for brugergrænsefladen af enheden og rapporterer sin aktivitet i Power Automate.
 
 Når de køres ikke-automatiseret, bruger flow for brugergrænsefladen en eksisterende Windows-brugersession.
 
@@ -135,9 +135,9 @@ Der udføres følgende i flow for brugergrænsefladen:
 
 1. Automatiserede flow for brugergrænsefladen kører på enheder med skærmen låst, så ingen kan se flowet, mens det køres.
 
-1. Windows 10-enheder kan ikke køre automatiseret, hvis der er aktive Windows-brugersessioner til stede (selv en låst). Du får vist følgende fejl: *Flow for brugergrænsefladen kan ikke udføres. Der er en låst eller inaktiv Windows-brugersession på destinationsenheden*.
+1. Windows 10-enheder kan ikke køre automatiseret, hvis der er aktive Windows-brugersessioner til stede (selv en låst). Du modtager denne fejlmeddelelse: *Kan ikke udføre flow for brugergrænseflade. Der findes en låst eller inaktiv Windows-brugersession på destinationsenheden*.
 
-1. Hvis du har en låst Windows-brugersession åben i Windows Server med den samme bruger, som flowet for brugergrænsefladen skal køre som, får du vist den samme fejl: *Flow for brugergrænsefladen kan ikke udføres. Der er en låst eller inaktiv Windows-brugersession på destinationsenheden*.
+1. Hvis du har en låst Windows-brugersession op med den samme bruger, som brugergrænseflade-flowet skal køres som, får du den samme fejl i Windows Server: *Kan ikke køre flow for brugergrænseflade. Der findes en låst eller inaktiv Windows-brugersession på destinationsenheden*.
 
 ### <a name="attended-mode"></a>Ikke-automatiseret tilstand
 Hvis du vil køre et ikke-automatiseret flow for brugergrænsefladen, skal du have en aktiv Windows-brugersession, der stemmer overens med navnet på den bruger, som er konfigureret for din forbindelse. Sessionen må ikke være låst.
@@ -147,7 +147,7 @@ Når et automatiseret flow for brugergrænsefladen starter på destinationsmaski
 
 ## <a name="schedule-multiple-ui-flows-on-the-same-device"></a>Planlæg flere flow for brugergrænsefladen på den samme enhed
 
-Du kan planlægge at køre flere flow for brugergrænsefladen på en eller flere enheder. Hvis der udløses mere end ét flow for brugergrænsefladen, som skal køre på den samme enhed, følger Power Automate disse regler:
+Du kan planlægge at køre flere flow for brugergrænsefladen på en eller flere enheder. Hvis der udløses mere end ét flow for brugergrænsefladen til kørsel på den samme enhed, følger Power Automate disse regler:
 
 1.  Det første flow for brugergrænsefladen køres på destinationsenheden.
 
@@ -170,7 +170,7 @@ Følg [disse trin for at tilføje en gateway og oprette en klynge](https://docs.
 >[!NOTE]
 >Medlemmer af offlinegatewayen i en klynge vil påvirke ydeevnen negativt. Deaktiver eller fjern disse medlemmer.
 
-Hvis du vil angive justering af belastning på siden med oplysninger om Power Automate-gatewayen, skal du navigere til **Data** -> **Gateways** og derefter vælge din gatewayklynge. 
+Hvis du vil angive justering af belastning på siden med oplysninger om Power Automate-gatewayen, skal du gå til **Data** -> **Gateways** og derefter vælge din gatewayklynge. 
 
 På siden med oplysninger om gatewayen skal du slå Kør på alle gateways i klyngen til. Dermed distribueres kørsler af flow for brugergrænsefladen til alle gateways i den pågældende klynge.
 
@@ -207,7 +207,7 @@ Hvis et flow for brugergrænsefladen mislykkes, skal du løse problemet og deref
 1. Hvis dit automatiserede flow for brugergrænsefladen mislykkes med meddelelsen **En ny session kan ikke oprettes**, skal du følge disse trin for at løse problemet:
 
     - På Windows 10 skal du bekræfte, at du ikke har en aktiv brugersession låst eller oplåst på din destinationsenhed.
-    - På Windows Server 2016 eller Windows Server 2019 skal du bekræfte, at du ikke har nået det maksimale antal aktive brugersessioner, der er konfigureret på din enhed. Flow for brugergrænsefladen kan ikke køres, hvis der ikke kan oprettes nye sessioner.
+    - I Windows Server 2016 eller Windows Server 2019 skal du bekræfte, at du ikke har nået det maksimale antal aktive brugersessioner, der er konfigureret for din enhed. Flow for brugergrænsefladen kan ikke køres, hvis der ikke kan oprettes nye sessioner.
 
 1. Hvis du kører flow for brugergrænsefladen på et operativsystem, der ikke er på engelsk, og du får vist meddelelsen *502 – Forkert anmodning*, skal du bekræfte, at du har fulgt [trinnene til at opgradere dine flow for brugergrænsefladen fra prøveversionen](upgrade.md).
 
