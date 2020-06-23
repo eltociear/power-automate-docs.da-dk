@@ -12,12 +12,12 @@ metadata:
   author: MSFTMAN
   ms.author: Deonhe
   ms.date: 01/18/2020
-  ms.openlocfilehash: c3a46514627a133e6f90abd6476ecd3d914dcdf2
-  ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+  ms.openlocfilehash: 1db41def6d71c0aa64e255e3bdb36fa03a44862a
+  ms.sourcegitcommit: 26bd05fc4729481ba09681aea2b82ebbeef1e1ec
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 03/26/2020
-  ms.locfileid: "3295860"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "3407444"
 landingContent:
 - title: Om Power Automate
   linkLists:
@@ -36,10 +36,10 @@ landingContent:
   - linkListType: video
     links:
     - text: Oversigt over Power Automate
-      url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
   - linkListType: whats-new
     links:
-    - text: Udgivelsesplaner
+    - text: Frigivelsesplaner
       url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features
 - title: Opret flow ved brug af Power Automate
   linkLists:
@@ -73,6 +73,8 @@ landingContent:
       url: /power-automate/ui-flows/setup
     - text: Opret flow for brugergrænseflade til skrivebord
       url: /power-automate/ui-flows/create-desktop
+    - text: Brug WinAutomation fra Softomotive (NYHED!)
+      url: /power-automate/ui-flows/create-processes
     - text: Opret flow for brugergrænseflade til web
       url: /power-automate/ui-flows/create-web
     - text: Kør flow for brugergrænseflade
@@ -125,7 +127,7 @@ landingContent:
       url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
     - text: Power Automate-blog
       url: https://flow.microsoft.com/en-us/blog/
-    - text: Power Automate-licensering
+    - text: Power Automate-licenser
       url: /power-automate/billing-questions
-    - text: Power Automate-planer for offentlige amerikanske myndigheder
+    - text: Power Automate US Government-planer
       url: /power-automate/us-govt

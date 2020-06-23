@@ -20,7 +20,7 @@
       items:
         - name: Læringskatalog
           href: learning-catalog/learning-catalog.md
-        - name: Appfremstiller
+        - name: Appudvikler
           href: learning-catalog/learning-catalog-app-maker.md
         - name: Administrator
           href: learning-catalog/learning-catalog-administrator.md
@@ -28,13 +28,13 @@
           href: learning-catalog/learning-catalog-developer.md
         - name: Funktionel konsulent
           href: learning-catalog/learning-catalog-functional-consultant.md
-        - name: Partner-forsalgsroller
+        - name: Partners forsalgsroller
           href: learning-catalog/learning-catalog-sales.md
 - name: Automatiserede flow
   items:
     - name: Opret et flow fra bunden
       href: get-started-logic-flow.md
-    - name: Udløs et flow med e-mail
+    - name: Udløs et flow med mail
       href: email-triggers.md
     - name: Opret et SharePoint-påmindelsesflow
       href: create-sharepoint-reminder-flows.md
@@ -52,7 +52,7 @@
       href: connection-dynamics365.md
     - name: Opret et flow med OneDrive for Business
       href: onedrive-business-launch-panel.md
-    - name: Filter og kopier data
+    - name: Filtrer og kopiér data
       href: odata-filters.md
     - name: Brug en Flic
       href: flic-button-flows.md
@@ -100,7 +100,7 @@
       href: create-business-process-flow.md
     - name: Optimer forretningsprocesforløb med forgrening
       href: enhance-business-process-flows-branching.md
-    - name: Føj brugerdefinerede kontrolelementer til forretningsprocesflow
+    - name: Føj brugerdefinerede kontrolelementer til forretningsprocesforløb
       href: custom-controls-business-process-flows.md
     - name: Bedste praksis for attributter for forretningsprocesforløb
       href: best-practices-entity-attributes.md
@@ -112,22 +112,24 @@
       href: ./ui-flows/upgrade.md
     - name: Konfigurer flow for brugergrænseflade
       href: ./ui-flows/setup.md
-    - name: Opret og test desktopbrugergrænsefladeflow
+    - name: Opret og test flow for brugergrænsefladen på skrivebordet
       href: ./ui-flows/create-desktop.md
-    - name: Rediger desktopbrugergrænsefladeflow
+    - name: Rediger flow for brugergrænsefladen på skrivebordet
       href: ./ui-flows/edit-desktop.md
-    - name: Brug input og output i desktopbrugergrænsefladeflow
+    - name: Brug input og output i flow for brugergrænsefladen på skrivebordet
       href: ./ui-flows/inputs-outputs-desktop.md
       items:
-        - name: Brug IME'er (Input Method Editors) i flow for brugergrænseflader
+        - name: Brug IME'er (Input Method Editors) i flow for brugergrænseflade
           href: ./ui-flows/use-ime.md
-    - name: Opret og test webbrugergrænsefladeflow
+    - name: Opret og test flow for brugergrænseflade til web
       href: ./ui-flows/create-web.md
-    - name: Rediger webbrugergrænsefladeflow
+    - name: Brug WinAutomation med flow for brugergrænseflade
+      href: ./ui-flows/create-processes.md
+    - name: Rediger flow for brugergrænseflade til web
       href: ./ui-flows/edit-web.md
-    - name: Brug input og output i webbrugergrænsefladeflow
+    - name: Brug input og output i flow for brugergrænseflade til web
       href: ./ui-flows/inputs-outputs-web.md
-    - name: Kør ikke-automatiserede og automatiserede flow for brugergrænsefladen
+    - name: Kør ikke-automatiserede og automatiserede flow for brugergrænseflade
       href: ./ui-flows/run-ui-flow.md
     - name: Administrer flow for brugergrænseflade
       href: ./ui-flows/manage.md
@@ -171,7 +173,7 @@
           href: invoke-custom-actions-workflow-dialog.md
     - name: Klassiske Common Data Service-opgaveprocesser
       items:
-        - name: Opret mobilopgaveflows
+        - name: Opret mobile opgaveprocesser
           href: create-mobile-task-flow.md
     - name: Klassiske Common Data Service-dialogbokse
       items:
@@ -231,7 +233,7 @@
       href: mobile-monitor-activity.md
     - name: Foretag fejlfinding af et flow
       href: fix-flow-failures.md
-    - name: Find og løs fejl med fejlkontrol
+    - name: Find og ret fejl med fejlkontrol
       href: error-checker.md
 - name: Opret forbindelse til data
   items:
@@ -245,7 +247,7 @@
       href: gateway-reference.md
 - name: For udviklere
   items:
-    - name: 'Virksomhedsudviklere, partnere og ISV''er'
+    - name: 'Virksomhedsudviklere, partnere og uafhængige softwareleverandører'
       href: ./developer/dev-enterprise-intro.md
     - name: Byg og certificer brugerdefinerede connectorer
       href: ./developer/register-custom-api.md
@@ -253,7 +255,7 @@
       href: ./developer/embed-flow-dev.md
     - name: Lad kunderne testkøre dine flow
       href: ./developer/dev-appsource-test-drive.md
-    - name: Arbejd med forretningsprocesflows ved hjælp af kode
+    - name: Arbejd med forretningsprocesforløb ved hjælp af kode
       href: ./developer/business-process-flows-code.md
       items:
         - name: 'Eksempel: Arbejd med forretningsprocesforløb'
@@ -262,11 +264,11 @@
       href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
-    - name: 'Flow i organisationen, Ofte stillede spørgsmål'
+    - name: Spørgsmål og svar vedrørende flow i din organisation
       href: organization-q-and-a.md
     - name: Prisfastsættelse
       href: billing-questions.md
-    - name: Introduktion til administration
+    - name: Introduktion til administrationen
       href: admin-center-introduction.md
     - name: Administrer miljøer
       href: environments-overview-admin.md
@@ -276,7 +278,7 @@
       href: intune-support.md
     - name: Introduktion til datagrupper
       href: introduction-to-data-groups.md
-    - name: Få vist analyserapporter for deling og connectors
+    - name: Få vist analyserapporter for deling og connectorer
       href: admin-analytics-report.md
     - name: Besvar DSR-anmodninger
       items:
@@ -300,7 +302,7 @@
           href: gdpr-dsr-delete-msa.md
         - name: Luk anmodninger
           href: gdpr-dsr-accountclose-msa.md
-    - name: Power Automate til offentlige amerikanske myndigheder
+    - name: Power Automate US Government
       href: us-govt.md
 - name: Reference
   items:
