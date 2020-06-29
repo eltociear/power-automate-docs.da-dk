@@ -1,7 +1,7 @@
 ---
 title: Oversigt over forretningsprocesser | Microsoft Docs
 ms.custom: ''
-ms.date: 12/12/2019
+ms.date: 05/06/2019
 ms.reviewer: ''
 ms.service: flow
 author: MSFTMAN
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6e936b833f6b1e1d6cf6e050031969d41e40de6
-ms.sourcegitcommit: 31692af25f91af60cf77572edcb0c986602dc9a6
+ms.openlocfilehash: 9d3ded6a38d45fa97a206abdf0ee5d89d2255124
+ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3298875"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3352058"
 ---
 # <a name="business-process-flows-overview"></a>Oversigt over forretningsproces
 
@@ -91,10 +91,10 @@ Forretningsprocesforløb giver vejledning til brugere i at få udført deres arb
   
 <a name="BKMK_Considerations"></a>   
 ## <a name="business-process-flow-considerations"></a>Overvejelser i forbindelse med forretningsprocesforløb  
- Du kan kun angive forretningsprocesforløb for de objekter, som understøtter dem. Du skal også være opmærksom på grænserne for antallet af processer, faser og trin, der kan tilføjes.  
+ Du kan kun angive forretningsprocesforløb for de objekter, som understøtter dem. Du skal også være opmærksom på begrænsningerne for antallet af processer, faser og trin, der kan tilføjes.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Forretningsprocesforløb, der kalder en arbejdsproces  
- Du kan kalde arbejdsprocesser efter behov inde i et forretningsprocesforløb. Du kan konfigurere dette fra den ny designfunktion for forretningsprocesforløb ved at trække en arbejdsproceskomponent, til en procesfase eller sektionen Globale arbejdsprocesser. Du kan finde flere oplysninger om brug af arbejdsprocesser i forretningsprocesforløb i [Blog: Automatisering af forretningsprocesforløb i Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+ Du kan kalde anmodede arbejdsprocesser inde i et forretningsprocesforløb. Du kan konfigurere dette fra den ny designfunktion for forretningsprocesforløb ved at trække en arbejdsproceskomponent, til en procesfase eller sektionen Globale arbejdsprocesser. Du kan finde flere oplysninger om brug af arbejdsprocesser i forretningsprocesforløb i [Blog: Automatisering af forretningsprocesforløb i Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
  Når du inkluderer en arbejdsproces, der skal udløses ved afslutning af en fase i dit forretningsprocesforløb, og den pågældende fase er den sidste fase i forløbet, giver designeren det indtryk, at arbejdsprocessen bliver udløst, når fasen er fuldført. Arbejdsprocessen udløses imidlertid ikke, fordi der ikke finder en faseovergang sted. Du modtager ikke en advarsel eller fejlmeddelelse, der forhindrer, at du inkluderer arbejdsprocessen i fasen. Når en bruger arbejder med forretningsprocesforløbet, resulterer afslutning eller afbrydelse af processen ikke i en faseovergang, og derfor udløses arbejdsprocessen ikke. Overvej følgende eksempler:  
   
@@ -102,10 +102,10 @@ Forretningsprocesforløb giver vejledning til brugere i at få udført deres arb
   
 -   Når du har oprettet et forretningsprocesforløb med tre faser, opretter S1 forbindelse til S2 og derefter forgrener S2 sig til S3. Det omfatter en arbejdsproces på S2 og angiver udløseren til **Faseafslutning**.  
   
- Arbejdsprocessen udløses ikke i nogen af tilfældene. Hvis du vil løse dette problem, kan du tilføje en global arbejdsproces og tilføje den arbejdsproces, der skal udløses, så den udløses for forretningsprocessen i stedet for et trin i forløbet. Du kan angive udløseren for en global arbejdsproces til Proces afbrudt eller Proces fuldført for at udløse arbejdsprocessen, når en bruger afbryder eller fuldfører forretningsprocessen.  
+ Arbejdsprocessen udløses ikke i nogen af tilfældene. Hvis du vil løse dette problem, kan du tilføje en global arbejdsproces og tilføje den arbejdsproces, der skal udløses, så den udløses for forretningsprocessen i stedet for et trin i forløbet. Du kan angive en udløser for en Global arbejdsproces til Proces afbrudt eller Proces fuldført for at udløse arbejdsprocessen, når en bruger afbryder eller er fuldfører forretningsprocessen.  
   
 <a name="BKMK_Entities"></a>   
-### <a name="entities-that-can-use-business-process-flows"></a>Objekter, der kan bruge forretningsprocesforløb  
+### <a name="entities-that-can-use-business-process-flows"></a>Objekter, som kan anvende forretningsprocesforløb  
  Alle brugerdefinerede objekter kan bruge forretningsprocesforløb. Følgende standardobjekter kan også bruge forretningsprocesforløb:  
   
 -   Firma  
@@ -151,7 +151,7 @@ Forretningsprocesforløb giver vejledning til brugere i at få udført deres arb
   
 -   Processer for flere objekter kan ikke indeholde mere and fem objekter.
   
-## <a name="business-process-flow-entity-customization-support"></a>Understøttelse af objekttilpasning i forretningsprocesforløb 
+## <a name="business-process-flow-entity-customization-support"></a>Understøttelse af tilpasning af objekter i forretningsprocesforløb 
 
 Objekter i forretningsprocesforløb, som blev introduceret i Dynamics 365 (online) version 9.0, kan vises i systemet, så objektpostdata kan gøres tilgængelige i gitre, visninger, diagrammer og dashboards. 
 
@@ -159,26 +159,26 @@ Objekter i forretningsprocesforløb, som blev introduceret i Dynamics 365 (onlin
 
 Med forretningsprocesforløb tilgængelige som et objekt kan du nu bruge avancerede søgninger, visninger, diagrammer og dashboards, hvor kilden er data i forretningsprocesforløb for et bestemt objekt, f.eks. et kundeemne eller en salgsmulighed. Systemadministratorer og systemtilpassere kan oprette brugerdefinerede gitre, visninger, diagrammer og dashboards til forretningsprocesforløb svarende til dem, der oprettes i alle andre objekter.
 
-Forretningsprocesforløb, f.eks **Kundeemne til salgsproces for salgsmulighed**, vises som et objekt, der kan tilpasses i løsningsoversigten.
+Forretningsprocesforløb som f.eks. **Kundeemne til salgsproces for salgsmulighed** vises som et objekt, der kan tilpasses, i løsningsoversigten.
 
-![Løsningsoversigt med processen fra kundeemne til salgsmulighed](media/bpf-lead-solution-explorer.png)
+![Løsningsoversigt med procesobjektet Kundeemne til salgsmulighed](media/bpf-lead-solution-explorer.png)
 
 Hvis du vil have adgang til en standardvisning af et forretningsprocesforløb, skal du åbne løsningsoversigten, udvide **Objekter** > udvide den ønskede proces, f.eks. **Kundeemne til salgsproces for salgsmulighed**, vælge **Visninger** og derefter vælge den visning, du ønsker.
 
 Der findes flere standardvisninger, som du kan få vist som et diagram, f.eks. visningen **Aktiv salgsproces for salgsmulighed**. 
 
-![Visning af salgsprocessen for aktive salgsmuligheder](media/bpf-default-view.png)
+![Visningen Aktiv salgsproces for salgsmulighed](media/bpf-default-view.png)
 
-### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interager med et objekt i et forretningsprocesforløb fra en arbejdsproces
-Du kan også interagere med et objekti et forretningsprocesforløb fra en arbejdsproces. Du kan f.eks. oprette en arbejdsproces for objektposten for forretningsprocesforløbet for at ændre den aktive fase, når et felt i objektposten Salgsmulighed bliver opdateret. Du kan finde flere oplysninger om, hvordan du gør dette, under [Automatiser faser i et forretningsprocesforløb ved hjælp af arbejdsprocesser](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
+### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interagere med et objekt i et forretningsprocesforløb fra en arbejdsproces
+Du kan også interagere med et objekt i et forretningsprocesforløb fra en arbejdsproces. Du kan f.eks. oprette en arbejdsproces for objektposten for forretningsprocesforløbet for at ændre den aktive fase, når et felt i objektposten Salgsmulighed bliver opdateret. Du kan finde flere oplysninger om, hvordan du gør dette, under [Automatisere faser i et forretningsprocesforløb ved hjælp af arbejdsprocesser](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
-### <a name="run-business-process-flows-offline"></a>Kør forretningsprocesflow offline
+### <a name="run-business-process-flows-offline"></a>Køre forretningsprocesforløb offline
 
-Du kan anvende forretningsprocesflow offline, hvis følgende betingelser er opfyldt:
+Du kan anvende forretningsprocesforløb offline, hvis følgende betingelser er opfyldt:
 
 - Forretningsprocesflowet bruges fra en Power Apps-app.
 - Power Apps-appen er aktiveret til offline brug.
-- Forretningsprocesflowet har en enkelt enhed.
+- Forretningsprocesforløbet har et enkelt objekt.
 
 De tre kommandoer, der specifikt er tilgængelige for et forretningsprocesforløb, når Power Apps-appen er offline, er:
 
@@ -186,14 +186,14 @@ De tre kommandoer, der specifikt er tilgængelige for et forretningsprocesforlø
 - Forrige fase
 - Angiv aktiv fase
 
-### <a name="limitations-of-using-business-process-flow-entities"></a>Begrænsninger ved brug af objekter i forretningsprocesforløb
+### <a name="limitations-of-using-business-process-flow-entities"></a>Begrænsninger for brug af objekter i et forretningsprocesforløb
 
-- Du kan i øjeblikket ikke oprette brugerdefinerede formularer for objekter, der er baseret på et forretningsprocesforløb.
-- Hvis en løsning indeholder et objekt i et forretningsprocesforløb, skal dette objekt føjes til løsningen manuelt, før du kan eksportere det. I modsat fald medtages objektet i forretningsprocesforløbet ikke i løsningspakken. Flere oplysninger: [Tilføj løsningskomponenter](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
-- Tilføjelse af procesenheden til et modeldrevet program kan resultere i begrænset funktionalitet. Få mere at vide om [oprettelse og redigering af flow for forretningsprocesser](https://docs.microsoft.com/power-automate/create-business-process-flow). 
+- I øjeblikket kan oprette du ikke oprette brugerdefinerede formularer for objekter baseret på et forretningsprocesforløb.
+- Hvis en løsning indeholder et objekt i et forretningsprocesforløb, skal dette objekt føjes til løsningen manuelt, før du kan eksportere det. I modsat fald medtages objektet i forretningsprocesforløbet ikke i løsningspakken. Flere oplysninger: [Oprette og redigere objekter](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
+- Tilføjelse af procesobjektet i en modelbaseret app kan resultere i begrænset funktionalitet. Få mere at vide om [oprettelse og redigering af forretningsprocesforløb](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### <a name="next-steps"></a>Næste trin  
  [Se en kort video (4:49) om forretningsprocesforløb](https://go.microsoft.com/fwlink/p/?linkid=842226)   
- [Opret et forretningsprocesforløb](create-business-process-flow.md)   
+ [Oprette et forretningsprocesforløb](create-business-process-flow.md)   
  [Optimer forretningsprocesforløb med forgrening](enhance-business-process-flows-branching.md) <br/>
- [Whitepaper: Aktivering af processen med Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [Hvidbog: Procesgodkendelse med Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>

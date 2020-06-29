@@ -13,18 +13,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2019
+ms.date: 05/05/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6ca077b6a7b0d04f184ddf8a716dd677713e0667
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: bc2550d7ed20af51010b2091861732f918980a23
+ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297687"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435082"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integrer Power Automate med websites og apps
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -37,13 +37,13 @@ Widgets kan være enkle. Det kan f.eks. være en widget, der gengiver en liste o
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-- en **Microsoft-konto** eller
-- en arbejds- eller skolekonto
+- En **Microsoft-konto** eller
+- En arbejds- eller skolekonto
 
-## <a name="use-the-unauthenticated-widget"></a>Brug den ikke-godkendte widget
+## <a name="use-the-unauthenticated-widget"></a>Bruge den ikke-godkendte widget
 Hvis du vil bruge den ikke-godkendte skabelonwidget, skal du integrere den direkte i værtsprogrammet ved hjælp af en iframe. Du behøver ikke JS SDK'et eller et adgangstoken. 
 
-### <a name="show-templates-for-your-scenarios"></a>Vis skabeloner til dine scenarier
+### <a name="show-templates-for-your-scenarios"></a>Se skabeloner til dine scenarier
 Du kan starte ved at tilføje denne kode for at vise Power Automate-skabelonerne på dit website:
 
 ```html
@@ -53,11 +53,11 @@ Du kan starte ved at tilføje denne kode for at vise Power Automate-skabelonerne
 
 | Parameter | Beskrivelse |
 | --- | --- |
-| landestandard |Koden på fire bogstaver for visning af skabelonen. F.eks. repræsenterer `en-us` amerikansk engelsk, og `de-de` repræsenterer tysk. |
-| søgeord |Søgeordet til de skabeloner, du vil have vist i visningen. Søg f.eks. på `wunderlist` for at få vist skabeloner til Wunderlist. |
-| antallet af skabeloner |Det antal skabeloner, du vil have vist i visningen. |
+| landestandard |Sprog og områdekoden på fire bogstaver for visning af skabelonen. F.eks. repræsenterer `en-us` amerikansk engelsk, og `de-de` repræsenterer tysk. |
+| søgeord |Søgeord til de skabeloner, du vil se i visningen. Søg f.eks. på `SharePoint` for at få vist skabeloner til SharePoint. |
+| antallet af skabeloner |Det antal skabeloner, du vil se i visningen. |
 | destination |Den side, der åbnes, når brugeren vælger skabelonen. Angiv `details` for at vise oplysningerne om skabelonen, eller angiv `new` for at åbne Power Automate-designeren. |
-| category |Filtrerer til den angivne skabelonkategori. | 
+| kategori |Filtrerer til den angivne skabelonkategori. | 
 | parametre.{name} |Yderligere kontekst, der sendes til flowet. |
 
 
@@ -65,31 +65,30 @@ Hvis destinationsparameteren er `new`, åbnes Power Automate-designeren, når br
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>Overførsel af yderligere parametre til flowskabelonen
 
-Hvis brugeren er i en specifik kontekst på dit websted eller i dit program, kan du overføre denne kontekst til flowet. F.eks. åbner en bruger måske en skabelon til *Giv mig besked, når et element føjes til en liste*, mens vedkommende ser på en bestemt liste i Wunderlist. Følg disse trin for at overføre liste-id'et som en *parameter* til flowet:
+Hvis brugeren er i en specifik kontekst på dit websted eller i din app, kan du overføre denne kontekst til flowet. En bruger kan f.eks. åbne en skabelon for *Når der oprettes et element* ved visning af en bestemt liste i SharePoint. Følg disse trin for at overføre liste-id'et som en *parameter* til flowet:
 
-1. Angiv parameteren i flowskabelonen, inden du udgiver den. En parameter ser sådan ud `@{parameters('parameter_name')}`.
+1. Definer parameteren i flowskabelonen, inden du publicerer den. En parameter ser sådan ud `@{parameters('parameter_name')}`.
 1. Overfør parameteren i iframe-kildens forespørgselsstreng. Tilføj f.eks `&parameters.listName={the name of the list}`, hvis du har en parameter med navnet **listName**.
 
 ### <a name="full-sample"></a>Komplet eksempel
 
-Hvis du vil vise de øverste fire Wunderlist-skabeloner på tysk og starte brugeren med **myCoolList**, skal du bruge denne kode:
+Hvis du vil vise de øverste fire SharePoint-skabeloner på tysk og starte brugeren med **myCoolList**, skal du bruge denne kode:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
-&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
-## <a name="use-the-authenticated-flow-widgets"></a>Brug de godkendte flowwidgets
+## <a name="use-the-authenticated-flow-widgets"></a>Bruge de godkendte flowwidgets
 
 I følgende tabel vises listen over Power Automate-widgets, der understøtter den fulde oplevelse i widgetten ved hjælp af et adgangstoken til brugergodkendelse. Du skal bruge Javascript Software Developer Kit (JS SDK) for Power Automate til at integrere widgets og levere det påkrævede brugeradgangstoken.
 
 | Widgettype    | Understøttet funktion                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| flow          | Viser en liste over flow under en fane for personlige og delte flow. Rediger et eksisterende flow, eller opret et nyt flow fra en skabelon eller en tom. | 
+| flows          | Viser en liste over flow under en fane for personlige og delte flow. Rediger et eksisterende flow, eller opret et nyt flow fra en skabelon eller forfra. | 
 | flowCreation   | Opretter et flow fra et skabelon-id, der leveres af værtsprogrammet.                                                                | 
-| kørsel        | Udløser et manuelt flow eller et hybridudløserflow, der leveres af værtsprogrammet.                                                        | 
+| runtime        | Udløser et manuelt flow eller et hybridudløserflow, der leveres af værtsprogrammet.                                                        | 
 | approvalCenter | Integrerer godkendelsesanmodninger og sendte godkendelser.                                                                                        | 
-| skabeloner      | Viser en liste over skabeloner. Brugeren vælger en for at oprette et nyt flow.                                                                         | 
+| skabeloner      | Viser en liste over skabeloner. Brugeren vælger én for at oprette et nyt flow.                                                                         | 
 
 Brug det godkendte Flow SDK for at giver brugerne tilladelse til at oprette og administrere flow direkte fra dit website eller din app (i stedet for at navigere til Power Automate). Du skal logge brugeren på med brugerens Microsoft-konto eller Azure Active Directory for at bruge det godkendte SDK.
 
@@ -102,7 +101,7 @@ Power Automate-widgets fungerer ved at integrere en iframe, der refererer til Po
 
 ![widgetarkitektur](../media/embed-flow-dev/Architecture.png)
 
-### <a name="js-sdk-details"></a>Oplysninger om JS SDK
+### <a name="js-sdk-details"></a>JS SDK-detaljer
 
 Power Automate-teamet leverer JS SDK for at facilitere integration af Flow-widgets i tredjepartsprogrammer. JS SDK'et for Flow er tilgængeligt som et offentligt link i Flow-tjenesten og gør det muligt for værtsprogrammet at håndtere hændelser fra widgetten og interagere med Flow-programmet ved at sende handlinger til widgetten. Widgethændelser og -handlinger er specifikke for widgettypen.
 
@@ -123,7 +122,7 @@ var sdk = new MsFlowSdk({
 }); 
 ```
 
-| Navn     | Påkrævet/valgfri | Beskrivelse                                                    | 
+| Navn     | Påkrævet/valgfrit | Beskrivelse                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
 | `hostName` | Valgfri          | Power Automate-værtsnavn, f.eks. https://flow.microsoft.com        | 
 | `locale`   | Valgfri          | Klientlandestandarden for widgetten (som standard `en-Us`, hvis der ikke er angivet noget) | 
@@ -164,7 +163,7 @@ Her er et formateksempel for den objektbeholder, som du kan ændre, så den stem
 
 Dette er parametrene for `renderWidget()`: 
 
-| Parameter        | Påkrævet/valgfri | Beskrivelse                                                                                 | 
+| Parameter        | Påkrævet/valgfrit | Beskrivelse                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
 | `container`        | Obligatorisk          | Id'et for et DIV-element på værtssiden, hvor widgetten skal integreres.                   | 
 | `environmentId`    | Valgfri          | Widgets har brug for et miljø-id. Hvis du ikke angiver et id, bruges et standardmiljø. | 
@@ -184,7 +183,7 @@ widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
 });
 ```
 
-Værtsprogrammet er ansvarlig for at vedligeholde tokenet og overføre det med en gyldig udløbsdato til widgetten, når der anmodes om det. Hvis widgetten er åben i længere perioder, skal værten kontrollere, om tokenet er udløbet, og opdatere tokenet, hvis det er nødvendigt, før det overføres til widgetten.
+Værtsprogrammet er ansvarligt for at vedligeholde tokenet og overføre det med en gyldig udløbsdato til widgetten, når der anmodes om det. Hvis widgetten er åben i længere perioder, skal værten kontrollere, om tokenet er udløbet, og opdatere tokenet, hvis det er nødvendigt, før det overføres til widgetten.
 
 ### <a name="detecting-if-the-widget-is-ready"></a>Registrering af, om widgetten er klar
 
@@ -211,11 +210,11 @@ flowsSettings?: {
 };
  ```
 
-| Parameter | Påkrævet/valgfri | Beskrivelse | 
+| Parameter | Påkrævet/valgfrit | Beskrivelse | 
 |-----------|-------------------|-------------| 
-| `createFromBlankTemplateId` | Obligatorisk | Brug skabelonens GUID, når brugeren vælger knappen **Opret fra bunden** i Flow-widgetten. | 
+| `createFromBlankTemplateId` | Obligatorisk | Brug skabelonens GUID, når brugeren vælger knappen **Opret fra bunden** i Flow-widgetten | 
 | `flowsFilter` | Valgfri | Power Automate-widgetten anvender det angivne filter, når der anføres flow. Vis f.eks. flow, der refererer til et specifikt SharePoint-websted. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
-| `tab` | Valgfri | Den aktive fanes vises som standard i Power Automate-widgetten. <br /> F.eks. <br /> ```tab:'sharedFlows' ``` viser fanen Team,<br /> og ``` tab:'myFlows' ``` viser fanen Mine flow. |   
+| `tab` | Valgfri | Den aktive fanes vises som standard i Power Automate-widgetten. <br /> Eksempel: <br /> ```tab:'sharedFlows' ``` viser fanen Team<br /> og ``` tab:'myFlows' ``` viser fanen Mine flow. |   
 
 ### <a name="templatessettings"></a>TemplatesSettings 
 
@@ -233,13 +232,13 @@ templatesSettings?: {
 };
  ```
 
-| Parameter |Påkrævet/valgfri | Beskrivelse                                                                        
+| Parameter |Påkrævet/valgfrit | Beskrivelse                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | Valgfri          | Tidsparametre for design, der skal bruges, når du opretter et flow fra en skabelon, f. eks.: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+|`defaultParams` | Valgfri          | Tidsparametre for design, der skal bruges, når du opretter et flow fra en skabelon, f.eks.: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
 | `destination` | Valgfri          | Gyldige værdier er "new" eller "details". Når den angives til "details", vises en side med detaljer, når du opretter et flow fra en skabelon.     |
 | `pageSize` | Valgfri          | Antallet af skabeloner, der skal vises. Standardstørrelse = 6 | 
-| `searchTerm` | Valgfri          | Vis skabeloner, der stemmer overens med det angivne søgeord.| 
-| `templateCategory` | Valgfri          | Vis skabeloner i en specifik kategori.| 
+| `searchTerm` | Valgfri          | Vise skabeloner, der matcher det angivne søgeudtryk| 
+| `templateCategory` | Valgfri          | Vise skabeloner i en specifik kategori| 
  
 ### <a name="approvalcentersettings"></a>ApprovalCenterSettings
 
@@ -254,11 +253,11 @@ Gælder for ApprovalCenter-widgets.
     hideLink?: boolean
 };
  ```
-| Parameter | Påkrævet/valgfri | Beskrivelse | 
+| Parameter | Påkrævet/valgfrit | Beskrivelse | 
 |------------|-------------------|--------------| 
 | `hideLink`| Valgfri | Når den angives til `true`, skjuler widgetten de modtagne og sendte godkendelseslinks | 
 | `autoNavigateToDetails`| Valgfri | Når den angives til `true`, åbner widgetten automatisk godkendelsesdetaljerne, når der kun findes én godkendelse | 
-| `approvalsFilter`| Valgfri | Godkenderwidgetten anvender det angivne godkendelsesfilter, når godkendelserne angives, f.eks.: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
+| `approvalsFilter`| Valgfri | Godkenderwidgetten anvender det angivne godkendelsesfilter, når der lyttes til godkendelserne, f.eks.: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
 | `tab`| Valgfri | Den aktive fanes vises som standard i Flow-widgetten. <br/> Gyldige værdier: "receivedApprovals", "sentApprovals" | 
 | `showSimpleEmptyPage`| Valgfri | Viser en tom side, når der ikke er nogen godkendelser | 
 | `hideInfoPaneCloseButton` | Valgfri | Skjuler knappen Luk i ruden med oplysninger (eller værten har allerede knappen Luk) | 
@@ -282,7 +281,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 | Widgethændelse      | Detaljer                                                         | 
 |-------------------|-----------------------------------------------------------------| 
 | `WIDGET_READY`      | Widgetten blev indlæst                                      | 
-| `WIDGET_RENDERED`   | Widgetten blev indlæst og gengivelse af brugergrænsefladen er fuldført                      | 
+| `WIDGET_RENDERED`   | Widgetten blev indlæst, og gengivelse af brugergrænsefladen er fuldført                      | 
 | `GET_ACCESS_TOKEN`  | Widgetanmodning om integration af brugeradgangstoken                      | 
 | `GET_STRINGS`       | Gør det muligt for værten at tilsidesætte et sæt brugergrænsefladestrenge, der vises i widgetten | 
 
@@ -295,7 +294,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 | `RUN_FLOW_DONE_BUTTON_CLICKED`    | Brugeren valgte knappen Udført for kørsel af flow       |           | 
 | `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | Brugeren valgte knappen Annuller for kørsel af flow     |           | 
 | `FLOW_CREATION_SUCCEEDED`         | Flowet blev oprettet           |`{ flowUrl: string, flowId: string, fromTemplate: string } `|
-| `WIDGET_CLOSE`                    | Udløses, når værten bør lukke widgetten |       | 
+| `WIDGET_CLOSE`                    | Udløses, når værten skal lukke widgetten |       | 
 
 ### <a name="flow-creation-widget"></a>Widgetten Oprettelse af flow
 
@@ -317,10 +316,10 @@ Med hændelsen **GET\_STRINGS** kan du tilpasse teksten for nogle af de elemente
 
 | Strengnøgle                     | Brug i widgetten                                                                                                                  | 
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| `FLOW_CREATION_CREATE_BUTTON`    | Tekst, der vises på knappen Opret flow i både widgetten Oprettelse af flow og Runtime.                                                | 
+| `FLOW_CREATION_CREATE_BUTTON`    | Tekst, der vises på knappen Opret flow i både widgetten Oprettelse af flow og Runtime                                                | 
 | `FLOW_CREATION_CUSTOM_FLOW_NAME` | Den oprindelige værdi, der skal bruges til flownavnet i widgetten Oprettelse af flow. Bruges kun, når indstillingen allowCustomFlowName er aktiveret. | 
-| `FLOW_CREATION_HEADER`           | Overskrift, der kan bruges, når der oprettes et flow i både widgetten Oprettelse af flow og Runtime.                                                    | 
-| `INVOKE_FLOW_HEADER`             | Overskrift, der skal bruges, når der kaldes et flow i widgetten Runtime.                                                                           | 
+| `FLOW_CREATION_HEADER`           | Overskrift, der kan bruges, når der oprettes et flow i både widgetten Oprettelse af flow og Runtime                                                    | 
+| `INVOKE_FLOW_HEADER`             | Overskrift, der skal bruges, når der kaldes et flow i widgetten Runtime                                                                           | 
 | `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Tekst, der vises på knappen, der bruges til at kalde/køre et flow i widgetten Runtime                                                       | 
 
 ### <a name="example"></a>Eksempel
@@ -361,7 +360,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 | Widgethandling                               | Detaljer                                                      | Parametergrænseflade  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
 | `triggerFlow`                                 | Udløser en kørsel af flow                                          | `{ flowName: string, implicitData?: string } `| 
-| `triggerFlowByTemplate`                       | Udløser en kørsel af flow af skabelonen                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
+| `triggerFlowByTemplate`                       | Udløser en kørsel af flow efter skabelon                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
 | `getTriggerSchema`                            | Henter udløserskemaet for et flow                               | `{   flowName: string, }` | 
 | `closeWidget`                                 | Annullerer eventuelle ventende aktiviteter og sender hændelsen WIDGET_CLOSE |                      | 
 
@@ -381,20 +380,20 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ## <a name="configuring-your-client-application"></a>Konfiguration af dit klientprogram
 
-Du skal konfigurere dit klientprogram med områder for Flow-tjenesten (delegeret tilladelser). Hvis appen Azure Active Directory (AAD), der bruges til integration af widgetten, bruger et godkendelesflow af typen "code grant", skal AAD-programmet forudkonfigureres med delegerede tilladelser, der understøttes af Power Automate. Dette giver delegerede tilladelser, der giver programmet mulighed for:
+Du skal konfigurere dit klientprogram med omfang af Flow-tjenesten (delegerede tilladelser). Hvis appen Azure Active Directory (AAD), der bruges til integration af widgetten, bruger et godkendelesflow af typen "code grant", skal AAD-programmet forudkonfigureres med delegerede tilladelser, der understøttes af Power Automate. Dette giver delegerede tilladelser, så programmet kan:
 
--   at administrere godkendelser
--   at læse godkendelser
--   at læse aktiviteter
--   at administrere flow
--   at læse flow
+-   Administrere godkendelser
+-   Læse godkendelser
+-   Læse aktiviteter
+-   Administrere flow
+-   Læse flow
 
 Følg disse trin for at vælge en eller flere delegerede tilladelser:
 
 1.  Gå til https://portal.azure.com 
 2.  Vælg **Azure Active Directory**.
-3.  Vælg **Programregistreringer** under **Administrer**.
-4.  Angiv det tredjepartsprogram, der skal konfigureres for området for Flow-tjenesten.
+3.  Vælg **Appregistreringer** under **Administrer**.
+4.  Angiv det tredjepartsprogram, der skal konfigureres for omfang af Flow-tjenesten.
 5.  Vælg **Indstillinger**.
       ![widgetarkitektur](../media/embed-flow-dev/AAD-App-Settings.png)
 6. Vælg **Påkrævede tilladelser** under **API-adgang**/
@@ -402,26 +401,26 @@ Følg disse trin for at vælge en eller flere delegerede tilladelser:
 8. Vælg **Vælg en API**.
       ![widgetarkitektur](../media/embed-flow-dev/AAD-App-Select-an-API.png)
 9. Søg efter **Power Automate-tjenesten**, og vælg den. Bemærk! Før du kan se Power Automate-tjenesten, skal din lejer have logget mindst én AAD-bruger på Flow-portalen (<https://flow.microsoft.com>).
-10. Vælg de påkrævede Flow-områder for dit program, og vælg derefter **Gem**.
+10. Vælg det påkrævede Flow-omfang for dit program, og vælg derefter **Gem**.
       ![widgetarkitektur](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
-Dit program får nu vist et token til Flow-tjenesten, der indeholder delegerede tilladelser i kravet \'scp' i JWT-tokenet.
+Dit program får nu et token til Flow-tjenesten, der indeholder delegerede tilladelser i kravet \'scp' i JWT-tokenet.
 
 ## <a name="sample-application-embedding-flow-widgets"></a>Eksempelprogram til integration af flowwidgets 
 
 I ressourceafsnittet er der et eksempel på en JavaScript SPA (Single Page Application), så du kan eksperimentere med integration af flowwidgets på en værtsside. Brug af eksempelprogrammet kræver, at du registrerer et AAD-program med implicit tildeling af flow aktiveret.
 
-### <a name="registering-an-aad-app"></a>Registrering af et AAD-program
+### <a name="registering-an-aad-app"></a>Registrering af en AAD-app
 
 1.  Log på [Azure-portalen](https://portal.azure.com/).
 2.  I navigationsruden til venstre skal du vælge **Azure Active Directory** og derefter vælge **Appregistreringer** (prøveversion) \> Ny registrering.
 3.  Når siden **Registrer et program** vises, skal du angive et navn på dit program.
 4.  Under **Understøttede kontotyper** skal du vælge **Konti** i et hvilket som helst organisationskatalog.
-5.  Under afsnittet **URL-adresse til omdirigering** skal du vælge webplatformen og angive værdien til programmets URL-adresse afhængigt af din webserver.\'  Konfigurer denne værdi til http://localhost:30662/ for at køre eksempelprogrammet.
+5.  Under afsnittet **URL-adresse til omdirigering** skal du vælge webplatformen og angive værdien til programmet\'s URL-adresse afhængigt af din webserver.  Konfigurer denne værdi til http://localhost:30662/ for at køre eksempelappen.
 6.  Vælg **Registrer**.
-7.  På siden **Oversigt** over program skal du notere værdien for program-id'et (klient).
+7.  På siden **Oversigt** over app skal du notere værdien for program-id'et (klient).
 8.  Eksemplet kræver, at [implicit tildeling af flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) er aktiveret. I navigationsruden til venstre i det registrerede program skal du vælge **Godkendelse**.
-9.  Under **Avancerede indstillinger** under **Implicit tildeling** skal du markere begge afkrydsningsfelter **Id-tokens** og **Adgangstokens**. Id-tokens og adgangstokens er påkrævet, da dette program skal logge brugerne på og kalde Flow-API.
+9.  Under **Avancerede indstillinger** under **Implicit tildeling** skal du markere begge afkrydsningsfelter **Id-tokens** og **Adgangstokens**. Id-tokens og adgangstokens er påkrævet, da denne app skal logge brugerne på og kalde Flow-API.
 10. Vælg **Gem**.
 
 ### <a name="running-the-sample"></a>Kørsel af eksemplet
@@ -429,8 +428,8 @@ I ressourceafsnittet er der et eksempel på en JavaScript SPA (Single Page Appli
 1.  Download eksemplet, og kopiér det til en lokal mappe på din enhed.
 2.  Åbn filen index.html i mappen FlowSDKSample, og rediger `applicationConfig` for at opdatere `clientID` til det program-id, du registrerede tidligere.
     ![widgetarkitektur](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
-3.  Eksempelprogrammer er konfigureret til at bruge Flow-områderne **Flows.Read.All** og **Flow.Manage.All.** Du kan konfigurere yderligere områder ved at opdatere egenskaben **flowScopes** i objektet **applicationConfig**.
-4.  Kør disse kommandoer for at installere afhængigheden og køre eksempelprogrammet:
+3.  Eksempelappen er konfigureret til at bruge Flow-omfang **Flows.Read.All** og **Flow.Manage.All.** Du kan konfigurere yderligere omfang ved at opdatere egenskaben **flowScopes** i objektet **applicationConfig**.
+4.  Kør disse kommandoer for at installere afhængigheden og køre eksempelappen:
     > \> npm install \> node server.js
 5. Åbn browseren, og angiv derefter http://localhost:30662
 6. Vælg knappen **Log på** for at godkende mod AAD og hente et adgangstoken til flow.
@@ -439,7 +438,7 @@ I ressourceafsnittet er der et eksempel på en JavaScript SPA (Single Page Appli
 8. Vælg **Widgetten Indlæs flow** eller **Widgetten Indlæs skabeloner** for at integrere de tilsvarende widgets.
     ![widgetarkitektur](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
-[Downloadlink](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip) til eksempelprogram.
+Eksempelprogrammets [downloadlink](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 
 ## <a name="resources"></a>Ressourcer
 
@@ -457,10 +456,10 @@ Få mere at vide om integration af og indstillinger for widget:
 
 Hvis den initialiserede landestandard ikke er angivet, vil Flow som standard bruge den nærmeste understøttede landestandard.
 
-| Landestandard     | Sprog                   | 
+| Landestandard     | Language                   | 
 |------------|----------------------------| 
 | bg-bg      | Bulgarsk (Bulgarien)       | 
-| ca-es      | Catalansk (Spanien)            | 
+| ca-es      | Catalansk (catalansk)            | 
 | cs-cz      | Tjekkisk (Tjekkiet)     | 
 | da-dk      | Dansk (Danmark)           | 
 | de-de      | Tysk (Tyskland)           | 
@@ -468,10 +467,10 @@ Hvis den initialiserede landestandard ikke er angivet, vil Flow som standard bru
 | en-Us      | Engelsk (USA)    | 
 | es-es      | Spansk (castiliansk)        | 
 | et-ee      | Estisk (Estland)         | 
-| eu-es      | Baskisk (Spanien)             | 
+| eu-es      | Baskisk (baskisk)             | 
 | fi-fi      | Finsk (Finland)          | 
 | fr-fr      | Fransk (Frankrig)            | 
-| gl-es      | Galicisk (Spanien)           | 
+| gl-es      | Galicisk (Galicien)           | 
 | hi-HU      | Ungarsk (Ungarn)        | 
 | hi-in      | Hindi (Indien)              | 
 | hr-hr      | Kroatisk (Kroatien)         | 

@@ -3,38 +3,38 @@ title: Flows gemmes nu i Common Data Service og bruger den omfattende web-API
 description: Flows gemmes nu i Common Data Service og bruger den omfattende web-API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 03/05/2019
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298347"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340113"
 ---
-# <a name="power-automate-web-api"></a>Power Automate Web API
+# <a name="power-automate-web-api"></a>Web API til Power Automate
 
 
 Fremover gemmes alle flows i Common Data Service og gør brug af [den omfattende web-API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
-Dette indhold dækker administrationen af flows, som er inkluderet på fanen **Løsninger** i Power Automate. I øjeblikket understøtter disse API'er ikke flow under **Mine flow**.
+Dette indhold dækker administrationen af flows, som er inkluderet på fanen **Løsninger** i Power Automate. I øjeblikket understøtter disse API'er ikke flows under **Mine flows**.
 
 ## <a name="compose-http-requests"></a>Udarbejd HTTP-anmodninger
 
 Du skal starte med at skabe URL-adressen for at komme i gang med at oprette anmodninger. Formatet af den grundlæggende URL-adresse til web-API'en til Power Automate er: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. De to parametre er:
 
-- **Organisations-id'et** er et entydigt navn på det miljø, der gemmer dine flows. Du kan se organisations-id'et i miljøskifteren øverst til højre i Power Automate. Bemærk, at **organisations-id'et** adskiller sig fra **miljø-id'et**, som er det GUID, der vises i flowets URL-adresse.
+- **Organisations-id** er et entydigt navn på det miljø, der gemmer dine flows. Du kan se organisations-id'et i miljøskifteren øverst til højre i Power Automate. Bemærk, at **Organisations-id** er forskelligt fra **Miljø-id** (som er det GUID, der vises i flowets URL-adresse).
 
-     ![Miljøskifter](media/web-api/get-organization-id.png "Miljøskifter")
+     ![Miljøomskifter](media/web-api/get-organization-id.png "Miljøomskifter")
 
-- **Underdomænet for området** afhænger af placeringen af dit miljø. Når du logger på Power Automate, kan du se området for dit miljø i websidens URL-adresse. Brug dét områdenavn til at finde det respektive underdomæne i følgende tabel:
+- **Underdomæne for område** afhænger af placeringen af dit miljø. Når du logger på Power Automate, kan du se området for dit miljø i websidens URL-adresse. Brug dette områdenavn til at finde det respektive underdomæne i følgende tabel:
 
-     ![URL-adresse til Flow](media/web-api/get-region-name.png "URL-adresse til Flow")
+     ![URL-adresse for flow](media/web-api/get-region-name.png "URL-adresse for flow")
 
      | Område         | Underdomæne   |
      | -------------- | ----------- |
@@ -48,10 +48,11 @@ Du skal starte med at skabe URL-adressen for at komme i gang med at oprette anmo
      | Indien          | crm8        |
      |  US Government  | crm9        |
      | Storbritannien | crm11       |
+     |De Forenede Arabiske Emirater |   crm15|
 
-Du kan også hente listen over forekomster, der er tilgængelige for dig, programmatisk via metoden [Hent forekomster](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) i API'en til Online Management.
+Du kan også hente listen over forekomster, der er tilgængelige for dig, programmatisk via metoden [Hent forekomster](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) i API'et til Online Management.
 
-Hver anmodning til web-API'en skal have headerne `Accept` og `Content-type` angivet til `application/json`.
+Hver anmodning til web-API'et skal have headerne `Accept` og `Content-type` angivet til `application/json`.
 
 Udfyld til sidst headeren `Authorization` med et Azure AD-ihændehavertoken. Du kan [lære](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth), hvordan du får et Azure AD-ihændehavertoken for Common Data Service. Se f.eks. denne anmodning:
 
@@ -61,7 +62,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-Svaret indeholder en liste over flow fra dette miljø:
+Svaret indeholder en liste over flows fra dette miljø:
 
 ```http
 {
@@ -86,28 +87,28 @@ Svaret indeholder en liste over flow fra dette miljø:
 }
 ```
 
-## <a name="list-flows"></a>Liste over flow
+## <a name="list-flows"></a>Liste over flows
 
 Som vist ovenfor kan du hente listen over arbejdsprocesser ved at kalde `GET` på `workflows`. Hver arbejdsproces har mange egenskaber, men de mest relevante er:
 
 | Egenskabsnavn     | Beskrivelse                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | Kategorien for flowet. De forskellige typer er: 0 − klassiske arbejdsprocesser i Common Data Service, 1 − klassiske dialogbokse i Common Data Service, 2 − forretningsregler, 3 − klassiske handlinger i Common Data Service, 4 − flows for forretningsprocesser og 5 − automatiserede, øjeblikkelige eller planlagte flows. |
-| statecode         | Statussen for flowet. Statussen kan være **0** − Fra eller **1** − Til.|
+| kategori          | Kategorien for flowet. De forskellige typer er: 0 − klassiske arbejdsprocesser i Common Data Service, 1 − klassiske dialogbokse i Common Data Service, 2 − forretningsregler, 3 − klassiske handlinger i Common Data Service, 4 − flows for forretningsprocesser og 5 − automatiserede, øjeblikkelige eller planlagte flows. |
+| statecode         | Status af flowet. Status kan være **0** − Fra eller **1** − Til.|
 | workflowuniqueid  | Det entydige id for denne installation af flowet. |
 | workflowid        | Det entydige id for et flow på tværs af alle importer. |
 | createdon         | Den dato, hvor flowet blev oprettet. |
 | _ownerid_value    | Det entydige id for den bruger eller det team, der ejer flowet. Dette er et id fra objektet systemusers i Common Data Service. |
 | modifiedon        | Den sidste gang, flowet blev opdateret. |
 | ismanaged         | Angiver, om flowet blev installeret via en administreret løsning. |
-| navn              | Det viste navn, du har givet flowet. |
+| name              | Det viste navn, du har givet flowet. |
 | _modifiedby_value | Den sidste bruger, som opdaterede flowet. Dette er et id fra objektet systemusers i Common Data Service. |
 | _createdby_value  | Den bruger, som oprettede flowet. Dette er et id fra objektet systemusers i Common Data Service. |
-| type              | Angiver, om flowet er et kørende flow eller en skabelon, der kan bruges til at oprette yderligere flow. 1 − flow, 2 − aktivering eller 3 − skabelon. |
+| type              | Angiver, om flowet er et kørende flow eller en skabelon, der kan bruges til at oprette yderligere flows. 1 − flow, 2 − aktivering eller 3 − skabelon. |
 | beskrivelse       | Den brugerangivne beskrivelsen af flowet. |
 | clientdata        | En strengkodet JSON af et objekt, der indeholder connectionReferences og definitionen af flowet. |
 
-Du kan også anmode om bestemte egenskaber, filtrere listen over flows m.m., som beskrevet i [dokumentationen om Common Data Service API'er til oprettelse af forespørgsler om data](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Denne forespørgsel returnerer f.eks. kun de automatiserede, øjeblikkelige eller planlagte flow, der i øjeblikket er på:
+Du kan også anmode om bestemte egenskaber, filtrere listen over flows m.m., som beskrevet i [dokumentationen om Common Data Service API'er til oprettelse af forespørgsler om data](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Denne forespørgsel returnerer f.eks. kun de automatiserede, øjeblikkelige eller planlagte flows, der i øjeblikket er slået til:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -117,7 +118,7 @@ Authorization: Bearer ey...
 
 ## <a name="create-a-flow"></a>Opret et forløb
 
-Kald `POST` i samlingen `workflows` for at oprette et flow. De krævede egenskaber for automatiserede, øjeblikkelige og planlagte flow er: category, name, type, primaryentity og clientdata. Brug `none` som primaryentity for disse typer flow.
+Kald `POST` i samlingen `workflows` for at oprette et flow. De krævede egenskaber for automatiserede, øjeblikkelige og planlagte flows er: category, name, type, primaryentity og clientdata. Brug `none` som primaryentity for disse typer flows.
 
 Du kan også angive description og statecode.
 
@@ -144,7 +145,7 @@ Der er tre egenskaber:
 | Egenskabsnavn  | Beskrivelse                                                 |
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identificerer forbindelsen. Du kan se connectionName ved at gå til siden **Forbindelser** og derefter kopiere det fra forbindelsens URL-adresse. |
-| kilde         | Enten `Embedded` eller `Invoker`. `Invoker` er kun gyldig til øjeblikkelige flow, som er dem, hvor brugeren vælger en knap til at køre flowet, og angiver, at slutbrugeren leverer forbindelsen. I dette tilfælde bruges connectionName kun på designtidspunktet. Hvis forbindelsen er `Embedded`, betyder det, at det connectionName, du angiver, altid bruges. |
+| kilde         | Enten `Embedded` eller `Invoker`. `Invoker` er kun gyldigt til øjeblikkelige flows, som er dem, hvor brugeren vælger en knap til at køre flowet, og angiver, at slutbrugeren leverer forbindelsen. I dette tilfælde bruges connectionName kun på designtidspunktet. Hvis forbindelsen er `Embedded`, betyder det, at det connectionName, du angiver, altid bruges. |
 | id             | Identifikator for connectoren. Id'et starter altid med `/providers/Microsoft.PowerApps/apis/` og efterfølges derefter af navnet på connectoren, som du kan kopiere fra forbindelsens URL-adresse eller ved at vælge connectoren på siden **Connectorer**. |
 
 Når du udfører anmodningen `POST`, modtager du headeren `OData-EntityId`, som indeholder `workflowid` for dit nye flow.
@@ -165,9 +166,9 @@ Content-type: application/json
 ```
 
 > [!NOTE]
-> Formatet `odata.bind` bruges i syntaksen for ændring af ejeren. Det betyder, at du i stedet for at reparere \_ownerid_value field directly, føjer `@odata.bind` til navnet på egenskaben og derefter ombryder id'et med `systemusers()`.
+> Formatet `odata.bind` bruges i syntaksen for ændring af ejeren. Det betyder, at du i stedet for at reparere feltet \_ownerid_value direkte, føjer du `@odata.bind` til navnet af egenskaben og derefter ombryder id'et med `systemusers()`.
 
-I et andet eksempel kan du slå et flow til ved hjælp af dette kald:
+I et andet eksempel kan du slå et flow til vha. dette kald:
 
 ```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -181,7 +182,7 @@ Content-type: application/json
 
 ### <a name="delete-a-flow"></a>Slet et flow
 
-Slet et flow med et enkelt kald af typen `DELETE`:
+Slet et flow med et enkelt `DELETE`-kald:
 
 ```http
 DELETE https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -190,7 +191,7 @@ Authorization: Bearer ey...
 ```
 
 > [!NOTE]
-> Du kan ikke slette et flow, der er slået til. Du skal først slå flowet fra (se **Opdatering af et flow** tidligere). Ellers får du vist fejlen: `Cannot delete an active workflow definition.`
+> Du kan ikke slette et flow, der er slået til. Du skal først slå flowet fra (se **Opdatering af et flow** tidligere). Ellers vises fejlen: `Cannot delete an active workflow definition.`
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>Se alle brugere, som et flow er delt med
 
@@ -221,7 +222,7 @@ Parameteren `Target` er en JSON-lignende streng, hvor en enkelt egenskab kaldes 
 
 ## <a name="share-or-unshare-a-flow"></a>Del eller annuller deling af et flow
 
-Du kan dele et flow ved hjælp af handlingen `GrantAccess`.
+Du kan dele et flow vha. handlingen `GrantAccess`.
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/GrantAccess
@@ -247,7 +248,7 @@ Parameteren `AccessMask` er et felt med følgende værdier for forskellige tilla
 
 | Navn         | Beskrivelse                                          |
 | ------------ | ---------------------------------------------------- |
-| Intet         | Ingen adgang                                           |
+| Intet         | Ingen adgang.                                           |
 | Læseadgang   | Ret til at læse flowet.                          |
 | WriteAccess  | Ret til at opdatere flowet.                        |
 | DeleteAccess | Ret til at slette flowet.                        |
@@ -256,7 +257,7 @@ Parameteren `AccessMask` er et felt med følgende værdier for forskellige tilla
 
 Du kan kombinere tilladelser ved hjælp af et komma. Angiv f.eks. både muligheden for at læse og opdatere et flow ved at skrive `ReadAccess,WriteAccess`.
 
-Du kan *annullere deling* af et flow ved hjælp af handlingen `RevokeAccess`. Her er et eksempel:
+Du kan *annullere deling* af et flow vha. handlingen `RevokeAccess`. Her er et eksempel:
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/RevokeAccess
@@ -277,9 +278,9 @@ Content-type: application/json
 
 `RevokeAccess` fjerner alle tildelte tilladelser i `AccessMask`.
 
-## <a name="export-flows"></a>Eksportér flow
+## <a name="export-flows"></a>Eksporter flows
 
-Brug handlingen `ExportSolution` til at eksportere flow til en .zip-fil. Føj først de ønskede flow til en [løsning](https://flow.microsoft.com/blog/solutions-in-microsoft-flow/).
+Brug handlingen `ExportSolution` til at eksportere flows til en .zip-fil. Føj først de ønskede flows til en [løsning](https://flow.microsoft.com/blog/solutions-in-microsoft-flow/).
 
 Når flowet er i en løsning, kan du kalde følgende handling:
 
@@ -305,14 +306,14 @@ Content-type: application/json
 
 Du kan derefter gemme denne fil i versionsstyring og/eller bruge en hvilken som helst version af administrations- eller distributionssystemet, du vil.
 
-## <a name="import-flows"></a>Importér flow
+## <a name="import-flows"></a>Importer flows
 
 Kald handlingen `ImportSolution` for at importere en løsning.
 
 | Egenskabsnavn                    | Beskrivelse                               |
 | -------------------------------- | ----------------------------------------- |
 | OverwriteUnmanagedCustomizations | Hvis der findes forekomster af disse flows i Common Data Service, skal dette flag angives til `true` for at importere dem. Ellers overskrives de ikke. |
-| PublishWorkflows                 | Angiver, om klassiske arbejdsprocesser i Common Data Service aktiveres ved import. Denne indstilling gælder ikke for andre typer af flow. |
+| PublishWorkflows                 | Angiver, om klassiske arbejdsprocesser i Common Data Service aktiveres ved import. Denne indstilling gælder ikke for andre typer af flows. |
 | ImportJobId                      | Giver et nyt entydigt GUID, som kan bruges til at spore importjobbet. |
 | CustomizationFile                | En grundlæggende 64-kodet zip-fil, der indeholder løsningen. |
 
@@ -329,7 +330,7 @@ Content-type: application/json
 }
 ```
 
-Da importen er en længerevarende handling, vil svaret på handlingen ImportSolution være `204 No content`. For at spore statussen skal du kalde `GET` for objektet `importjobs`, hvor du angiver `ImportJobId`, som du inkluderede i den oprindelige `ImportSolution`-handling.
+Da importen er en længerevarende handling, vil svaret på handlingen ImportSolution være `204 No content`. Du kan spore status ved at kalde `GET` for objektet `importjobs`, hvor du angiver `ImportJobId`, som du inkluderede i den oprindelige `ImportSolution`-handling.
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/importjobs(00000000-0000-0000-0000-000000000006)
@@ -337,6 +338,6 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-Dette kald returnerer statussen for importhandlingen, herunder `progress` (procentdelen af fuldførelsen), `startedon` og `completedon` (hvis importen er afsluttet).
+Dette kald returnerer status for importhandlingen, herunder `progress` (procentdelen af fuldførelsen), `startedon` og `completedon` (hvis importen er afsluttet).
 
 Når importen er fuldført, skal du konfigurere forbindelserne til flowet, da `connectionNames` sandsynligvis vil være anderledes i destinationsmiljøet (hvis forbindelserne overhovedet findes). Hvis du konfigurerer nye forbindelser i destinationsmiljøet, skal ejeren af de forskellige flows oprette dem i Power Automate-designeren. Hvis forbindelserne allerede er konfigureret i det nye miljø, kan du udføre handlingen `PATCH` for flowets `clientData` og angive navnene på forbindelserne.

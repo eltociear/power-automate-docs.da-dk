@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 96b97fe3e6090a2810c0fa0e1dfae2d4b890da62
-ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
+ms.openlocfilehash: ca3dc36827423bffaed53b4ce19c50b94e09df81
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "3331102"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3384957"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Opret et automatiseret flow ved hjælp af Common Data Service (aktuelt miljø)
 
@@ -73,10 +73,10 @@ Her er oplysningerne om de enkelte omfang.
 
 |Scope|Timing af udløser|
 | --- | --- |
-|Afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed|
+|Afdeling|Handling, der udføres på en post, der ejes af din afdeling|
 |Organisation|Handling, der udføres af en hvilken som helst person i organisationen eller databasen|
-|Overordnet: Underordnet afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed eller en underordnet afdeling|
-|Bruger|Handling, der udføres på en post, der ejes af dig|
+|Overordnet: Underafdeling|Handling, der udføres på en post, der ejes af din afdeling eller en underafdeling|
+|User|Handling, der udføres på en post, der ejes af dig|
 
 
 Udløsere, der kører, når en post opdateres, kan også bruges til filtrering af attributter. Dette sikrer, at flowet kun kører, når nogle af de definerede attributter opdateres.
@@ -110,9 +110,9 @@ Hvis du vil skrive data til felterne Kunde, Ejer og Angående, skal to felter ud
 
 | Feltkategori | Eksempel på indstillinger |
 | --- | --- |
-| Angående | Angåede = id for posten (f.eks. konto-id) og typen Angående som valgt på listen. |
-| Kunde | Repræsenterer id for posten og typen Kunde som valgt på listen. |
-| Ejer | Repræsenterer id for systembrugeren eller teamet og typen Ejer som valgt på listen. |
+| Angående | Angåede = id for posten (f.eks. konto-id) og Angående-type som valgt på listen. |
+| Kunde | Repræsenterer id for posten og kundetypen som valgt på listen. |
+| Ejer | Repræsenterer id for systembrugeren eller teamet og ejertypen som valgt på listen. |
 
 ### <a name="enable-upsert-behavior"></a>Aktivér upsert-funktionsmåde
 
@@ -120,7 +120,7 @@ Du kan udnytte handlingen **opdater en post** til at aktivere upsert-handlinger,
 
 ### <a name="trigger-behavior"></a>Funktionsmåde for udløser
 
-Hvis du har en udløser, der er registreret for opdateringen af en post, kører flowet for hver *bindende* opdatering af den givne post. Tjenesten starter dit flow asynkront og med den nyttelast, som indsamles på det tidspunkt, hvor aktiveringen finder sted.
+Hvis du har en udløser, der er registreret for opdateringen af en post, kører flowet for hver *bindende* opdatering af den givne post. Tjenesten starter dit flow asynkront og med de nyttedata, som indsamles på det tidspunkt, hvor aktiveringen finder sted.
 
 > [!NOTE]
 > Hvis du har to opdateringer, der sker inden for få sekunder efter hinanden, kan flowet derfor blive udløst mere end én gang med det nyeste versionerede indhold.

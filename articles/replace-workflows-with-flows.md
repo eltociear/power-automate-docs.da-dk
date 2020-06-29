@@ -6,18 +6,18 @@ manager: KVIVEK
 ms.author: Deonhe
 ms.service: flow
 ms.topic: article
-ms.date: 08/27/2019
+ms.date: 05/12/2020
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6e3e6d1ca0a1700bbfaf6d8e8fb76cc888456c2c
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 008a07cf5ee24b5de6d740cc19ee1f5219d86b76
+ms.sourcegitcommit: b872a664a8adcdfb3db5a4ec861c23eea883a71e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296609"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367723"
 ---
 # <a name="replace-classic-common-data-service-workflows-with-flows"></a>Erstat klassiske Common Data Service-arbejdsprocesser med flows
 
@@ -26,7 +26,7 @@ I dette emne sammenlignes Power Automate-funktioner med en klassisk arbejdsproce
 
 Power Automate rummer betydelige fordele i forhold til den klassiske arbejdsprocesmodel. Du bør overveje at bruge Power Automate til at automatisere processer i stedet for den klassiske arbejdsproces. 
 
-Opret flows i stedet for klassiske Common Data Service-arbejdsprocesser for at bygge nye automatiseringsprocesser. Du bør desuden gennemse dine eksisterende klassiske arbejdsprocesser og overveje at erstatte dem med flow.
+Opret flows i stedet for klassiske Common Data Service-arbejdsprocesser for at bygge nye automatiseringsprocesser. Du bør desuden gennemse dine eksisterende klassiske arbejdsprocesser og overveje at erstatte dem med flows.
 
 ## <a name="feature-capability-comparison"></a>Sammenligning af funktionalitet
 
@@ -36,7 +36,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
 
 <table>
 <tr>
-<th colspan="2">Deres egenskaber</th>
+<th colspan="2">Egenskab</th>
 <th>Power Automate</th>
 <th>Klassisk arbejdsproces</th>
 </tr>
@@ -104,7 +104,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
             <tr>
                 <td>
                     
-   Indbyggede forbindelser til eksterne systemer (udløser og udfører handlinger i eksterne tjenester)
+   Indbyggede forbindelser til eksterne systemer (udløser og udfører handlinger i eksterne services)
                     
                 </td>
                 <td>
@@ -165,7 +165,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
                 </td>
                 <td>
                     
-   No
+   Ja
                     
                 </td>
                 <td>
@@ -182,7 +182,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
                 </td>
                 <td>
                     
-   No
+   Ja
                     
                 </td>
                 <td>
@@ -267,7 +267,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
             <tr>
                 <td>
                     
-   Udløs betingelse ved feltværdier (f. eks. på en bestemt dato i et datofelt)
+   Udløs betingelse ved feltværdier (f.eks. på en bestemt dato i et datofelt)
                     
                 </td>
                 <td>
@@ -289,7 +289,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
                 </td>
                 <td>
                     
-   No
+   Ja
                     
                 </td>
                 <td>
@@ -319,7 +319,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
                 <td>
                     
    Kørsel som områder    <br/>
-   (f. eks. organisation, forretningsenhed, bruger)
+   (f.eks. organisation, forretningsenhed, bruger)
                     
                 </td>
                 <td>
@@ -454,7 +454,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
 
 ## <a name="example-scenario-replace-workflow-with-a-flow"></a>Eksempel på scenarie: Erstat arbejdsproces med et flow
 
-Forestil dig et salgsscenarie, hvor du har sammensat et tilbud til en kunde og nu har brug for at anmode om godkendelse fra dit administrationsteam, før du sender tilbuddet til kunden. Med klassiske arbejdsprocesser ville dette ikke være nemt at gøre, og de fleste løsninger af dette kræver, at en udvikler skriver brugerdefinerede arbejdsprocesaktiviteter for at hente tilbudslinjeelementer.
+Forestil dig et salgsscenarie, hvor du har sammensat et tilbud til en kunde og nu har brug for at anmode om godkendelse fra dit administrationsteam, før du sender tilbuddet til kunden. Med klassiske arbejdsprocesser ville det ikke være nemt at gøre, og de fleste løsninger af det kræver, at en udvikler skriver brugerdefinerede arbejdsprocesaktiviteter for at hente tilbudslinjeelementer.
 
 Flows gør det nemmere at bygge, hvilket vises i gennemgangen senere af de Power Automate-funktioner, der understøtter scenariet. Dette omfatter:
 
@@ -472,19 +472,19 @@ Sådan gør du det muligt for sælgeren at udløse godkendelsesanmodningen efter
 
 1. På listen over udløsere skal du vælge **Common Data Service (aktuelt miljø) – Når en post er valgt**, og vælg **Tilbud** som objekt. Denne udløser gør det muligt at køre et flow på en post eller en liste over poster efter behov.
 
-1. Når udløseren er konfigureret, kan du tilføje handlinger, der skal køres i flowet. Dette giver godkenderen et resume med de oplysninger, de har brug for for at identificere de tilbudte elementer og værdier. Begynd med at tilføje handlingen **Common Data Service (aktuelt miljø) – Listeposter**. Da vi vil hente individuelle linjeelementer fra et tilbud, skal du angive enheden til **Tilbudslinjer**. For at sikre at du kun får vist de tilbudslinjeelementer, der hører til det tilbud, som flowet blev udløst for, skal du angive et filterkriterium for OData-typografien. I feltet **Filterforespørgsel** skal du skrive *\_quoteid_value eq* og derefter vælge *Tilbud* på den liste over dynamiske værdier, der vises.
+1. Når udløseren er konfigureret, kan du tilføje handlinger, der skal køres i flowet. Det giver godkenderen et resumé med de oplysninger, hun/han har brug for til at identificere de tilbudte elementer og værdier. Begynd med at tilføje handlingen **Common Data Service (aktuelt miljø) – Listeposter**. Da vi vil hente individuelle linjeelementer fra et tilbud, skal du angive enheden til **Tilbudslinjer**. Du skal angive et filterkriterium for OData-typografien for at sikre, at du kun får vist de tilbudslinjeelementer, der hører til det tilbud, som flowet blev udløst for. I feltet **Filterforespørgsel** skal du skrive *\_quoteid_value eq* og derefter vælge *Tilbud* på den liste over dynamiske værdier, der vises.
 
     ![Definer dit flow](media/define-flow-1.png "Definer dit flow")
 
 1. Da du vil opsummere tilbudslinjeelementer til godkendelsen, skal du tilføje handlingen **Initialiser variabel**. Angiv feltet **Navn** til *Resume af tilbudslinje* og **Type** til Streng (på rullelisten), og lad feltet **Værdi** være tomt.
 
-1. Tilføj handlingen **Tilføj til streng**, og vælg derefter variablen *Resume af tilbudslinje*, som vi oprettede tidligere. I feltet **Værdi** skal du vælge *Antal, Navn, Pris pr. enhed, Udvidet beløb og Manuelt beløb* på listen over dynamiske værdier. Power Automate-designeren identificerer, at disse værdier er fra en liste over tilbudslinjeelementer, og tilføjer denne handling i en **Anvend på alle**-løkke for at sikre, at oplysninger fra hvert linjeelement føjes til denne oversigt.
+1. Tilføj handlingen **Føj til streng**, og vælg derefter variablen *Resumé af tilbudslinje*, som vi oprettede tidligere. Vælg **Antal, Navn, Pris pr. enhed, Udvidet beløb og Manuelt beløb** på listen over dynamiske værdier i feltet *Værdi*. Power Automate-designeren identificerer, at disse værdier er fra en liste over tilbudslinjeelementer, og tilføjer denne handling i en **Anvend på alle**-løkke for at sikre, at oplysninger fra hvert linjeelement føjes til denne oversigt.
 
     ![Definer dit flow](media/define-flow-2.png "Definer dit flow")
 
-1. Hvis du vil anmode om godkendelse af det tilbudsresume, du har oprettet, skal du tilføje handlingen **Godkendelse – Start, og vent på en godkendelse**. Vælg en godkendelsestype (f. eks. Godkend/Afvis – Første til at svare), giv godkendelsesanmodningen en **Titel** (f. eks. navnet på det tilbud, der anmodes om godkendelse af, og som er angivet på listen over dynamiske værdier), angive mailadressen for den person, der skal gennemse den, og godkend tilbuddet i feltet **Tildelt til** I feltet detaljer skal du tilføje variablen *Resume af tilbudslinje* sammen med eventuelle andre oplysninger, der kan være relevante ved hjælp af den dynamiske værdivælger (f. eks. Samlet beløb).
+1. Tilføj handlingen **Godkendelse – Start, og vent på en godkendelse** for at anmode om godkendelse af det tilbudsresumé, du har oprettet. Vælg en godkendelsestype (f.eks. Godkend/Afvis – Første til at svare), giv godkendelsesanmodningen en **Titel** (f.eks. navnet på det tilbud, der anmodes om godkendelse af, og som er angivet på listen over dynamiske værdier), angiv mailadressen for den person, der skal gennemse den, og godkend tilbuddet i feltet **Tildelt til**. Tilføj variablen *Resume af tilbudslinje* i feltet Detaljer sammen med eventuelle andre oplysninger, der kan være relevante ved hjælp af den dynamiske værdivælger (f.eks. Samlet beløb).
 
-1. Hvis du vil finde ud af, hvad der sker, når en godkendelse accepteres eller afvises, skal du tilføje handlingen **Betingelse**. Vælg *Resultat* på listen over dynamiske værdier fra det første felt i betingelsen, *Indeholder* på rullelisten i det andet felt, og angiv *Accepter* i det tredje felt i betingelsen. Til sidst kan du tilføje handlinger baseret på resultatet af godkendelsen (f. eks. Send en mail med besked).
+1. Tilføj handlingen **Betingelse** for at finde ud af, hvad der sker, når en godkendelse accepteres eller afvises. Vælg *Resultat* på listen over dynamiske værdier fra det første felt i betingelsen, *Indeholder* på rullelisten i det andet felt, og angiv *Accepter* i det tredje felt i betingelsen. Til sidst kan du tilføje handlinger baseret på resultatet af godkendelsen (f.eks. Send en mail med besked).
 
     ![Definer dit flow](media/define-flow-3.png "Definer dit flow")
 
@@ -492,7 +492,7 @@ Du har nu oprettet godkendelsesstrukturen, så godkenderen har alle de oplysning
 
 ![Struktur for godkendelsesflow](media/approval-flow-structure.png "Struktur for godkendelsesflow")
 
-Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeelementer for det pågældende tilbud, og der sendes en godkendelsesanmodning, som godkenderen kan reagere på fra Power Automate eller den handlingsrettede mail, de modtager. Nedenfor kan du se et eksempel på visningen:
+Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeelementer for det pågældende tilbud, og der sendes en godkendelsesanmodning, som godkenderen kan reagere på fra Power Automate eller den handlingsrettede mail, de modtager. Nedenfor vises eksempel på visningen:
 
 ![Flow i handling](media/flow-in-action.png "Flow i handling")
 
@@ -509,7 +509,7 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
     -   Brug Common Data Service-udløsere til at køre flows baseret på hændelser i den.
 
-    -   Hvis du vil køre flow, der er baseret på hændelser i en ekstern tjeneste, kan du udnytte de mere end 260 indbyggede connectorer.
+    -   Hvis du vil køre flows, der er baseret på hændelser i en ekstern tjeneste, kan du udnytte de mere end 260 indbyggede connectorer.
 
     -   I forbindelse med scenarier, hvor en connector, du har brug for, ikke umiddelbart er tilgængelig, kan du nemt oprette din egen brugerdefinerede connector [Få mere at vide om, hvordan du opretter brugerdefinerede connectorer](https://docs.microsoft.com/connectors/custom-connectors/define-blank).
 
@@ -517,7 +517,7 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
 -   **Arbejdsprocesser, der kører rekursivt**  
     
-    Brug [Foretag indtil](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop)- eller [Anvend på alle](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop)-løkke i flow i stedet
+    Brug [Foretag indtil](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop)- eller [Anvend på alle](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop)-løkken i Flows i stedet
 
 -   **Arbejdsprocesser, der skal bruge en liste over poster**  
     
@@ -529,18 +529,18 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
 -   **Arbejdsprocesser, hvor kørsler er administreret for at sikre, at aktiviteterne blev udført i en enkelt transaktion**  
     
-    [Brug [handlingen changeset](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) til at sikre, at alle handlinger i den udføres som en enkelt atomisk enhed, hvor enten alle lykkes eller mislykkes som en gruppe. Hvis en af handlingerne i et ændringssæt mislykkes, rulles ændringer, der er foretaget af fuldførte handlinger, tilbage.
+    Brug handlingen [changeset](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) til at sikre, at alle handlinger i den udføres som en enkelt atomisk enhed, hvor alle lykkes eller mislykkes som en gruppe. Hvis en af handlingerne i et ændringssæt mislykkes, rulles ændringer, der er foretaget af fuldførte handlinger, tilbage.
 
 -   **Overvåg, om der opstår fejl i arbejdsproceskørsler**  
     
     I Power Automate skal du bruge **kør efter-indstillingen** for en handling for at konfigurere den til at køre, når den forrige handling mislykkes. Du kan f.eks. sende en Power Automate-mobilbesked, når handlingen **opdater en post** mislykkedes, eller der opstår timeout for den.
 
-## <a name="faqs"></a>Ofte stille spørgsmål
+## <a name="faqs"></a>Ofte stillede spørgsmål
 
 
 -   **Jeg har en Dynamics 365-licens. Kan jeg bruge Power Automate?**
 
-    Alle Dynamics 365-brugere har ret til at bruge Power Automate. Gennemse vores licensoplysninger:<https://flow.microsoft.com/pricing/>
+    Alle Dynamics 365-brugere har ret til at bruge Power Automate. Gennemse vores licensoplysninger: <https://flow.microsoft.com/pricing/>
 
 -   **Hvor ofte kan mine flow udløses?**
 
@@ -550,15 +550,15 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
     -   Der er især en grænse på 100.000 handlinger pr. 5 minutter, pr. flow – og en enkelt løkke i et flow kan ikke behandle mere end 100.000 elementer på én gang
 
-    -   Der er et maksimum på 6 GB dataoverførselshastighed pr. 5 minutter
+    -   Der er et maksimum på 6 GB dataoverførselshastighed pr. 5. minut
 
 -   **Hvor lang tid kan et enkelt flow køre?**  
     
     Der opstår timeout for kørslen af et enkelt flow efter 30 dage.
 
--   **Hvordan flytter jeg mine flow mellem miljøer?**  
+-   **Hvordan flytter jeg mine flows mellem miljøer?**  
     
-    Lige som ved klassiske arbejdsprocesser kan du oprette flow i løsninger for at understøtte den fulde programlivscyklus for processer.
+    Lige som ved klassiske arbejdsprocesser kan du oprette flows i løsninger for at understøtte den fulde programlivscyklus for processer.
 
 -   **Spores Power Automate-afhængigheder i Common Data Service?**  
     
@@ -566,7 +566,7 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
 -   **Hvad med synkrone arbejdsprocesser?** 
  
-    Du skal evaluere behovet for synkrone arbejdsprocesser igen for at identificere, om målsætningen eller dele af arbejdsprocessen kan oprettes ved hjælp af et flow. Vi kan især ud fra vores telemetri se, at synkrone arbejdsprocesser er en stor bidragyder til den overordnede slutbrugers oplevelse af dårlig ydeevne. Det kan i mange brugssituationer være en fordel at opdele disse handlinger som asynkrone, så brugerne kan fortsætte med deres aktiviteter, mens Power Automate fortsætter med at sikre, at handlingen fuldføres.
+    Du skal evaluere behovet for synkrone arbejdsprocesser igen for at identificere, om målsætningen eller dele af arbejdsprocessen kan oprettes vha. et flow. Vi kan især ud fra vores telemetri se, at synkrone arbejdsprocesser er en stor bidragyder til den overordnede slutbrugers oplevelse af dårlig ydeevne. Det kan i mange brugssituationer være en fordel at opdele disse handlinger som asynkrone, så brugerne kan fortsætte med deres aktiviteter, mens Power Automate fortsætter med at sikre, at handlingen fuldføres.
 
 -   **Når jeg bruger Power Automate, forbliver mine data så inden for området (dvs. samme område som mit Dynamics 365- eller Common Data Service-miljø)?**  
     

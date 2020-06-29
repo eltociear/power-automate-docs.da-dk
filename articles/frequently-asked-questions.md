@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
+ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299007"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346579"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -74,14 +74,14 @@ Power Automate understøtter alle mailadresser undtagen dem, der slutter på .go
 Power Automate er kun en offentlig cloudtjeneste. Du kan dog forbinde dine tjenester i det lokale miljø via datagatewayen i det lokale miljø på en sikker måde.
 
 ### <a name="what-services-can-power-automate-connect-to"></a>Hvilke tjenester kan Power Automate oprette forbindelse til?
-Power Automate kan som standard oprette forbindelse til mere end 100 datakilder, og vi tilføjer hele tiden flere. Eksempler på datakilder og tjenester:
+Power Automate kan som standard oprette forbindelse til mere end 100 datakilder, og vi tilføjer hele tiden flere. Eksempler på datakilder og tjenester omfatter følgende:
 
 * SharePoint
 * Dynamics 365
 * OneDrive
 * OneDrive for Business
 * Google Drev
-* Google Ark
+* Google Sheets
 * Trello
 * Twitter
 * Box
@@ -101,7 +101,7 @@ Skabeloner er færdigbyggede flows til populære og almindelige scenarier. Bruge
 Du kan oprette forbindelse til mere end 100 standardtjenester fra Microsoft og tredjeparter, f.eks. Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server og flere. Du kan også oprette forbindelse til kvalitetstjenester, som Salesforce og Common Data Service.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Hvordan opretter jeg forbindelse til en REST-API i mit flow?
-Du kan oprette forbindelse til alle REST-API'er, der bruger JSON og understøtter mindst én af flere end 10 godkendelsesmetoder ved at oprette [en brugerdefineret connector](developer/register-custom-api.md).
+Du kan oprette forbindelse til alle REST-API'er, der bruger JSON og understøtter mindst én af flere end 10 godkendelsesmetoder, ved at oprette [en brugerdefineret forbindelse](developer/register-custom-api.md).
 
 ### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>Hvordan opretter jeg forbindelse til SQL Server og andre datakilder i det lokale miljø?
 Du kan oprette forbindelse til tjenester på dit eget lokale netværk ved at bruge [datagatewayen i det lokale miljø](gateway-manage.md).
@@ -113,10 +113,10 @@ Du kan dele flows på en af følgende måder:
 * For flows, der kan køres manuelt, kan du også give andre personer eller grupper i din organisation tilladelse til blot at køre flowet.
 
 ### <a name="how-many-flows-can-i-have"></a>Hvor mange flows kan jeg have?
-Power Automate leveres med op til 50 flows. Hvis du har brug for flere, kan du anmode om dem.
+Du kan oprette et ubegrænset antal flow. Det afhænger af den [licenstype](https://flow.microsoft.com/pricing), du har.
 
 ### <a name="where-do-i-get-started-with-power-automate"></a>Hvor kan jeg komme i gang med Power Automate?
-Du kan komme i gang med følgende ressourcer:
+Kom i gang med følgende ressourcer:
 
 * [Blog](https://flow.microsoft.com)
 * [YouTube-kanal](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
@@ -128,14 +128,14 @@ Power Automate-mobilappen er tilgængelig på [Android](https://aka.ms/flowmobil
 
 ### <a name="can-flows-be-turned-off-or-disabled"></a>Kan flows deaktiveres eller slås fra?
 
-Ja. Alle flows har en til-/fra-parameter, som du kan bruge til at stoppe det enkelte flow, så det ikke behandler anmodninger.
+Ja. Alle flows har en til/fra-parameter, som du kan bruge til at stoppe det enkelte flow, så det ikke behandler anmodninger.
 
-Så tabellen nedenfor for at få mere at vide om, hvordan flowet reagerer, når det aktiveres igen.
+Så tabellen nedenfor for at få mere at vide om, hvordan flowet reagerer, når det slås til igen.
 
 Udløsertype|Beskrivelse
 -------|--------
 Forespørgsel, f.eks. udløseren **Gentagelse**|Alle ikke-behandlede/ventende begivenheder behandles, når flowet aktiveres igen. Slet dit flow, hvis du ikke vil behandle ventende elementer.
-Webhook|Når flowet aktiveres igen, behandles kun begivenheder, som genereres efter aktiveringen af flowet.
+Webhook|Når flowet slås til igen, behandles kun begivenheder, som genereres, når flowet er slået til.
 
 ### <a name="what-regions-and-languages-does-power-automate-support"></a>Hvilke områder og sprog understøtter Power Automate?
 Power Automate er tilgængelig på 42 sprog og i [seks områder](regions-overview.md).
@@ -150,7 +150,7 @@ Administratorer kan oprette [politikker til forebyggelse af datatab](prevent-dat
 
 Du kan oprette flows med en tjenestekonto, men vi anbefaler, at du ikke gør det, hvis legitimationsoplysningerne for tjenestekontoen er delte.
 
-## <a name="licensing"></a>Licenser
+## <a name="licensing"></a>Licensering
 ### <a name="will-power-automate-still-have-a-free-or-trial-option"></a>Vil det stadig være muligt at få en gratis version eller prøveversion af Power Automate?
 Ja. Du har mulighed for et gratis tilbud med begrænsede brugerrettigheder, eller du kan tilmelde dig en gratis 90-dages prøveversion af Power Automate. Du kan til enhver tid aktivere dit abonnement i løbet af prøveperioden.
 

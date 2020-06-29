@@ -20,17 +20,17 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 16d92a2d8aad6e39ff5e2eb446438dc769b1baf8
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: d15e9d4e9e52c61495ec464e4db46d993deebe8a
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299073"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385029"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Besvarelse af anmodninger i Power Automate om sletning af dataemner omfattet af GDPR
 
 
-"Retten til sletning" ved at fjerne personlige data fra en organisations kundedata er en central sikkerhedsdetalje i persondataforordningen. Fjernelse af personlige data inkluderer fjernelse af alle personlige data og systemoprettede logge, men ikke oplysninger fra overvågningslogge.
+"Retten til at fjerne" ved fjernelse af personlige data fra en organisations kundedata er en vigtig beskyttelse i GDPR. Fjernelse af personlige data omfatter fjernelse af alle personlige data og systemgenererede logge, undtagen oplysninger om overvågningslog.
 
 Power Automate gør det muligt for brugere at bygge automatiserede arbejdsprocesser, der er en vigtig del af den daglige drift i din organisation. Når en bruger forlader virksomheden, skal en administrator manuelt gennemse og afgøre, om nogle af de data og ressourcer, som brugeren har oprettet, skal slettes. Der er andre personlige data, som slettes automatisk, når brugerens konto slettes fra Azure Active Directory.
 
@@ -42,13 +42,13 @@ I følgende tabel vises, hvilke personlige data der slettes automatisk, og hvilk
 |Miljøtilladelser**|Kørselshistorik|
 |Flow|Aktivitetsopdatering|
 |Flowtilladelser|Gateway |
-|Brugeroplysninger|Gatewaytilladelser|
+|Brugerdetaljer|Gatewaytilladelser|
 |Forbindelser*||
 |Forbindelsestilladelser||
-|Brugerdefineret connector*||
-|Tilladelser til brugerdefineret connector||
+|Brugerdefineret forbindelse*||
+|Brugerdefinerede connectorer||
 
-*Hver af disse ressourcer indeholder posterne "Oprettet af" og "Ændret af", som indeholder personlige data. Af sikkerhedsmæssige årsager gemmes disse poster, indtil ressourcen slettes.
+* Hver af disse ressourcer indeholder posterne "Oprettet af" og "Ændret af", der indeholder personlige data. Af sikkerhedsmæssige årsager gemmes disse poster, indtil ressourcen slettes.
 
 **For de miljøer, der indeholder en Common Data Service-database, gemmes miljøtilladelserne, dvs. hvilke brugere der har fået tildelt rollerne Miljøopretter og Miljøadministrator, som poster i Common Data Service. Se under [Udførelse af DSR'er i forhold til Common Data Service-kundedata](https://go.microsoft.com/fwlink/?linkid=872251), hvis du vil have vejledning i, hvordan du besvarer DSR'er for de brugere, der bruger Common Data Service.
 
@@ -56,11 +56,11 @@ For de data og ressourcer, der kræver manuel gennemgang, findes der følgende f
 
 * **Websiteadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/)
 
-* **PowerShell-adgang:** [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell-adgang:** [Power Apps Admin PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
-Her er opdelingen af oplevelser, som en administrator kan slette opdelt efter de enkelte typer personlige data inden for de enkelte typer ressourcer:
+Her er opdelingen af oplevelser, som en administrator kan slette, opdelt efter de enkelte typer personlige data inden for de enkelte typer ressourcer:
 
-|Ressourcer, der indeholder personlige data|Webstedsadgang|PowerShell-adgang|Automatisk sletning|
+|Ressourcer, der indeholder personlige data|Adgang til websted|PowerShell-adgang|Automatisk sletning|
 |-----|----|----|----|
 |Systemgenererede logge|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
 |Miljø|Power Automate Administration|Power Apps-cmdlet'er||
@@ -70,11 +70,11 @@ Her er opdelingen af oplevelser, som en administrator kan slette opdelt efter de
 |Brugerjob|| ||
 |Flow|Power Automate-udviklerportal**|||
 |Flowtilladelser|Power Automate-udviklerportal|||
-|Brugeroplysninger||Power Apps-cmdlet'er||
+|Brugerdetaljer||Power Apps-cmdlet'er||
 |Forbindelser|Power Automate-udviklerportal| ||
 |Forbindelsestilladelser|Power Automate-udviklerportal| ||
 |Brugerdefineret connector|Power Automate-udviklerportal| ||
-|Tilladelser til brugerdefineret connector|Power Automate-udviklerportal| ||
+|Brugerdefinerede connectorer|Power Automate-udviklerportal| ||
 |Oversigt over godkendelser|Microsoft Power Apps-udviklerportal*|||
 
 *Med introduktionen af Common Data Service vil oprettelsen af en database i miljøet betyde, at miljøtilladelserne og modeldrevne apptilladelser gemmes som poster i forekomsten af Common Data Service. Se under [Udførelse af DSR'er i forhold til Common Data Service-kundedata](https://go.microsoft.com/fwlink/?linkid=872251), hvis du vil have vejledning i, hvordan du besvarer DSR'er for de brugere, der bruger Common Data Service.
@@ -92,27 +92,27 @@ I fremgangsmåden nedenfor beskrives, hvordan du får adgang til administrative 
 
 ## <a name="list-and-re-assign-flows"></a>Vis og tildel flow igen
 
-I disse trin kopieres eksisterende flow for en bruger, der er ved at forlade virksomheden. Hvis du tildeler nyt ejerskab til kopierne, kan disse flow fortsat understøtte eksisterende forretningsprocesser. Det er vigtigt at kopiere disse flow for at slette personlige id-forbindelsesled for den bruger, der forlader virksomheden, og der skal oprettes nye forbindelser, så flowet kan knyttes til andre API'er og SaaS-programmer.
+I disse trin kopieres eksisterende flow for en bruger, der er ved at forlade virksomheden. Hvis du tildeler nyt ejerskab til kopierne, kan disse flow fortsat understøtte eksisterende forretningsprocesser. Det er vigtigt at kopiere disse flows for at slette personlige id-forbindelsesled for den bruger, der forlader virksomheden, og der skal oprettes nye forbindelser, så flowet kan knyttes til andre API'er og SaaS-programmer.
 
 1. Log på [Power Automate Administration](https://admin.flow.microsoft.com/), og vælg derefter det miljø, der indeholder de flows, som den slettede bruger ejer.
 
-    ![Få vist miljøer](./media/gdpr-dsr-delete/view-environments.png)
+    ![Vis miljøer](./media/gdpr-dsr-delete/view-environments.png)
 
-1. Vælg **Ressourcer** > **Flow**, og vælg derefter titlen på det flow, du vil tildele igen.
+1. Vælg **Ressourcer** > **Flows**, og vælg derefter titlen på det flow, du vil tildele igen.
 
-    ![Vis flow](./media/gdpr-dsr-delete/admin-view-flows.png)
+    ![Vis flows](./media/gdpr-dsr-delete/admin-view-flows.png)
 
 1. Vælg **Administrer deling**.
 
     ![Administrer deling](./media/gdpr-dsr-delete/admin-manage-sharing.png)
 
-1. I panelet **Del**, der vises i højre side, skal du tilføje dig selv som ejer og derefter vælge **Gem**.
+1. Tilføj dig selv som ejer i panelet **Del**, der vises i højre side, og vælg derefter **Gem**.
 
     ![Del flow](./media/gdpr-dsr-delete/flow-sharing-save.png)
 
 1. Log på [Power Automate](https://flow.microsoft.com/), vælg **Mine flows**, og vælg derefter **Team-flows**.
 
-1. Vælg ellipsen **(...) ** for det flow, du vil kopiere, og vælg derefter **Gem som**.
+1. Vælg ellipsen **(...)** for det flow, du vil kopiere, og vælg derefter **Gem som**.
 
     ![Gem flow som](./media/gdpr-dsr-delete/flow-save-as.png)
 
@@ -122,15 +122,15 @@ I disse trin kopieres eksisterende flow for en bruger, der er ved at forlade vir
 
     ![Opret kopi af flow](./media/gdpr-dsr-delete/create-copy-flow.png)
 
-1. Denne nye version af flowet vises i **Mine flow**, hvor du kan dele den med flere brugere, hvis du ønsker det.
+1. Denne nye version af flowet vises i **Mine flow**, hvor du kan dele det med flere brugere, hvis du ønsker det.
 
-    ![Teamflow](./media/gdpr-dsr-delete/team-flows.png)
+    ![Teamflows](./media/gdpr-dsr-delete/team-flows.png)
 
 1. Slet det oprindelige flow ved at vælge ellipsen **(...)** for det, vælge **Slet** og derefter vælge **Slet** igen, når du bliver bedt om det. I dette trin fjernes også de underliggende personlige id'er, der er inkluderet i systemafhængigheder mellem brugeren og Power Automate.
 
     ![Bekræftelse af sletning af flow](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
-1. Aktivér kopien af flowet ved at åbne **Mine flow** og derefter slå til/fra-kontrolelementet **til**.
+1. Aktivér kopien af flowet ved at åbne **Mine flow** og derefter slå til/fra-kontrolelementet **Til**.
 
     ![Aktivér proces](./media/gdpr-dsr-delete/toggle-on.png)
 
@@ -142,7 +142,7 @@ I disse trin kopieres eksisterende flow for en bruger, der er ved at forlade vir
 
 1. Log på [PowerApps](https://make.powerapps.com/).
 
-1. Vælg **Data**, og vælg derefter **Enheder**.
+1. Vælg **Data**, og vælg derefter **Objekter**.
 
 1. Vælg ellipsen **(...)** for objektet **Flowgodkendelse**, og åbn derefter dataene i Microsoft Excel.
 
@@ -153,7 +153,7 @@ Se under [Udførelse af DSR'er i forhold til Common Data Service-kundedata](http
 
 ## <a name="delete-connections-created-by-a-user"></a>Slet forbindelser, der er oprettet af en bruger
 
-Forbindelser, der bruges sammen med connectors til at oprette forbindelse til andre API'er og SaaS-systemer.  Forbindelser indeholder referencer til den bruger, der har oprettet dem, og kan derfor slettes for at fjerne alle referencer til brugeren.
+Forbindelser bruges sammen med connectorer til at oprette forbindelse til andre API'er og SaaS-systemer.  Forbindelser inkluderer referencer til den bruger, der har oprettet dem, og kan derfor slettes for at fjerne eventuelle referencer til brugeren.
 
 PowerShell-cmdlets for Power Apps-udvikler
 
@@ -201,13 +201,13 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-A
 
 ```
 > [!NOTE]
-> Ejerrolletildelinger kan ikke slettes uden at slette forbindelsesressourcen.
+> Rolletildelinger for ejer kan ikke slettes uden at slette forbindelsesressourcen.
 >
 >
 
-## <a name="delete-custom-connectors-created-by-the-user"></a>Slet brugerdefinerede connectors, der er oprettet af brugeren
+## <a name="delete-custom-connectors-created-by-the-user"></a>Slet brugerdefinerede connectorer, der er oprettet af brugeren
 
-Brugerdefinerede forbindelseselementer supplerer de medfølgende forbindelseselementer, og de kan bruges til at oprette forbindelse til andre API'er, SaaS-systemer og tilpassede systemer. Brugerdefinerede connectors indeholder dog referencer til den bruger, der har oprettet dem, og kan derfor slettes for at fjerne alle referencer til brugeren.
+Brugerdefinerede connectorer supplerer de eksisterende indbyggede connectorer og gør det muligt at oprette forbindelse til andre API'er, SaaS og brugerudviklede systemer. Brugerdefinerede connectorer indeholder dog referencer til den bruger, der har oprettet dem, og kan derfor slettes for at fjerne alle referencer til brugeren.
 
 PowerShell-cmdlets for Power Apps-udvikler
 
@@ -230,7 +230,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 ```
 
-## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>Slet brugerens tilladelser til delte brugerdefinerede connectors
+## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>Slet brugerens tilladelser til delte brugerdefinerede connectorer
 
 PowerShell-cmdlets for Power Apps-udvikler
 
@@ -254,7 +254,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 ```
 
 > [!NOTE]
-> Ejerrolletildelinger kan ikke slettes uden at slette forbindelsesressourcen.
+> Rolletildelinger for ejer kan ikke slettes uden at slette forbindelsesressourcen.
 >
 >
 
@@ -266,7 +266,7 @@ Som administrator skal du træffe to beslutninger, når du behandler en DSR-slet
 1. Hvis du kan konstatere, at miljøet ikke bruges af andre i din organisation, kan du slette miljøet
 1. Hvis du kan konstatere, at miljøet stadig er påkrævet, kan du vælge ikke at slette miljøet og tilføje dig selv (eller en anden bruger i din organisation) som miljøadministrator.
 > [!IMPORTANT]
-> Hvis du sletter et miljø, slettes alle ressourcer i miljøet permanent, herunder alle apps, flow, forbindelser osv., og derfor skal du gennemse indholdet af i et miljø, inden det slettes.
+> Hvis du sletter et miljø, slettes alle ressourcer i miljøet permanent, herunder alle apps, flows, forbindelser osv., så du skal gennemse indholdet af et miljø, før du sletter det.
 >
 >
 
@@ -278,7 +278,7 @@ En administrator kan tildele administratoradgang til et miljø, der er oprettet 
 
 Brugere kan tildeles tilladelser (f.eks. miljøadministrator, miljøudvikler osv.) i et miljø, der er gemt i tjenesten Power Automate, som en "rolletildeling".
 
-*Med introduktionen af Common Data Service vil oprettelsen af en database i miljøet betyde, at disse "rolletildelinger gemmes som poster i forekomsten af Common Data Service.
+Med introduktionen af Common Data Service vil oprettelsen af en database i miljøet betyde, at disse "rolletildelinger gemmes som poster i forekomsten af Common Data Service.
 
 Du kan finde flere oplysninger om, hvordan du fjerner en brugers tilladelse i et miljø, ved at gå til [Brug af miljøer i Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 
@@ -307,9 +307,9 @@ Når du har udført trinnene ovenfor, er det sidste trin at slette brugerkontoen
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>Slet brugeren fra en ikke-administreret lejer
 
-Hvis du er medlem af en ikke-administreret lejer, skal du udføre **kontolukning** fra [portalen til beskyttelse af personlige oplysninger for arbejde og skole](https://go.microsoft.com/fwlink/?linkid=873123).
+Hvis du er medlem af en ikke-administreret lejer, skal du udføre handlingen **Kontolukning** fra [portalen til beskyttelse af personlige oplysninger for arbejde og skole](https://go.microsoft.com/fwlink/?linkid=873123).
 
-Hvis du vil vide, om du er bruger på en administreret eller ikke-administreret lejer, skal du udføre følgende handlinger:
+Du kan finde ud af, om du er bruger af en administreret eller ikke-administreret lejer, ved at udføre følgende handlinger:
 
 1. Åbn følgende URL-adresse i en browser, idet du erstatter din mailadresse i URL-adressen:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Hvis du er medlem af en **ikke-administreret lejer**, kan du se en `"IsViral": true` i svaret.
@@ -324,4 +324,4 @@ Hvis du vil vide, om du er bruger på en administreret eller ikke-administreret 
     
     }
 
-1. Ellers tilhører du en ikke-administreret lejer.
+1. Ellers tilhører du en administreret lejer.

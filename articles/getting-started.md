@@ -1,5 +1,5 @@
 ---
-title: Introduktion | Microsoft Docs
+title: Start her | Microsoft Docs
 description: Hurtige metoder til at komme i gang med at automatisere dit arbejde og dit liv med Power Automate
 services: ''
 suite: flow
@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e78ba6de412a067ae21eb4a11a5b1a7d5165448c
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: bd7d85dc2ec30147202c2838f00c7de6c7c587ad
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3298655"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340017"
 ---
 # <a name="get-started-with-power-automate"></a>Introduktion til Power Automate 
 
-Velkommen! Power Automate er en tjeneste, hvor du kan oprette automatiske arbejdsprocesser mellem dine foretrukne apps og tjenester for at modtage beskeder, synkronisere filer, modtage meddelelser, indsamle data og meget mere.
+Velkommen! Power Automate er en tjeneste, der hjælper dig med at oprette automatiserede arbejdsprocesser mellem dine favoritprogrammer og -tjenester, så du kan synkronisere filer, få meddelelser, indsamle data og meget mere.
 
 <br/>
 
@@ -38,15 +38,15 @@ Velkommen! Power Automate er en tjeneste, hvor du kan oprette automatiske arbejd
 
 ## <a name="types-of-flows"></a>Typer af flow
 
-Power Automate er en af pillerne i Power Platform. Den består af en platform med meget lidt kode, som kan bruges til arbejdsprocesser og procesautomatisering. Her er en liste over de forskellige typer flow:
+Power Automate er en af pillerne i Power Platform. Den består af en platform med meget lidt kode, som kan bruges til arbejdsprocesser og procesautomatisering. Her er en liste over de forskellige typer flows:
 
-| **Flowtype**                                                                       | **Use case**                                                                                  | **Mål**                                                                             |
+| **Procestype**                                                                       | **Use case**                                                                                  | **Mål**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automatiserede flow](get-started-logic-flow.md)                 | Opret et flow, der automatisk udfører en eller flere handlinger, når det er udløst af en hændelse. | [Connectors](https://docs.microsoft.com/connectors/) til tjenester i cloudmiljøet og det lokale miljø. |
-| [Flow for knapper](introduction-to-button-flows.md)              | Kør gentagne opgaver fra et hvilket som helst sted, når som helst, via din mobilenhed.                        |                                                                                        |
+| [Automatiserede flow](get-started-logic-flow.md)                 | Opret en proces, der udfører en eller flere opgaver automatisk, når den udløses af en hændelse. | [Connectorer](https://docs.microsoft.com/connectors/) til services i cloudmiljøet og det lokale miljø. |
+| [Knapflow](introduction-to-button-flows.md)              | Kør gentagne opgaver fra et hvilket som helst sted, når som helst, via din mobilenhed.                        |                                                                                        |
 | [Planlagte flow](run-scheduled-tasks.md)                    | Opret et flow, der udfører en eller flere opgaver efter en tidsplan.             |                                                                                        |
 | [Forretningsprocesforløb](business-process-flows-overview.md) | Definer en række trin, der skal følges for at opnå det ønskede resultat.                 | Menneskelige processer                                                                        |
-| [Flow for brugergrænseflade (prøveversion)](ui-flows/overview.md)                                                | Optag og automatiser afspilning af manuelle trin på ældre software.                    | Skrivebords- og webprogrammer, der ikke har API'er tilgængelige til automatisering.    |
+| [Brugergrænsefladeprocesser](ui-flows/overview.md)                                                | Optag og automatiser afspilning af manuelle trin i ældre software.                    | Skrivebords- og webprogrammer, der ikke har API'er tilgængelige til automatisering.    |
 
 Du kan oprette og administrere alle flow via fanen **Mine flows** i Power Automate.
 
@@ -60,19 +60,19 @@ Det første trin er at [tilmelde sig](sign-up-sign-in.md). Hvis du allerede har 
 
 Med Power Automate kan du:
 
-- let søge efter skabeloner og tjenester.
+- Søg let efter skabeloner og tjenester.
 
     ![Flow – startside 1](./media/getting-started/flowhome1.png)
 
-- vælge blandt de mest populære tjenester.
+- Vælg blandt de mest populære tjenester.
 
     ![Flow – startside 2](./media/getting-started/flowhome2.png)
 
-- se en oversigt over hvert flow.
+- Få vist en oversigt over hvert flow.
 
     ![Flow – startside 3](./media/getting-started/flowhome3.png)
 
-Hver enkelt skabelon er designet til et specifikt formål. Der er f.eks. skabeloner til afsendelse af en sms til dig, når du får en mail fra din chef, tilføjelse af Twitter-kundeemner til Dynamics 365 eller sikkerhedskopiering af dine filer. Disse skabeloner er bare toppen af isbjerget. De er beregnet til at inspirere dig til at oprette tilpassede flows til lige præcis de processer, du har behov for.
+Hver enkelt skabelon er designet til et specifikt formål. Der er f.eks. skabeloner til at sende en sms til dig, når du får en mail fra din chef, føje Twitter-kundeemner til Dynamics 365 eller sikkerhedskopiere dine filer. Disse skabeloner er bare toppen af isbjerget. De er beregnet til at inspirere dig til at oprette tilpassede flows til lige præcis de processer, du har behov for.
 
 ## <a name="create-your-first-flow"></a>Opret dit første flow ##
 
@@ -82,7 +82,7 @@ Hver enkelt skabelon er designet til et specifikt formål. Der er f.eks. skabelo
 
 1. Vælg **Fortsæt**.
 
-    ![Opret forbindelse](./media/getting-started/create-connection.png)
+    ![Oprette forbindelse](./media/getting-started/create-connection.png)
 
 1. Angiv de mailadresser, som den daglige påmindelse skal sendes til. Derefter skal du angive meddelelsen i påmindelsen. Til sidst skal du vælge **Opret flow** og derefter kontrollere, at dit flow kører som forventet.
 
@@ -99,15 +99,15 @@ Hver enkelt skabelon er designet til et specifikt formål. Der er f.eks. skabelo
 
 Nu da du har oprettet dit første flow på baggrund af en skabelon, skal du bruge en af de mere end [150 datakilder](https://flow.microsoft.com/connectors/), som understøttes af Power Automate, til at [oprette dine egne flows fra bunden](get-started-logic-flow.md).
 
-![Oprettelse af et flow](./media/getting-started/build-a-flow.png)
+![Oprette et flow](./media/getting-started/build-a-flow.png)
 
 Når du opretter et flow fra bunden, har du kontrol over hele arbejdsprocessen. Her er nogle idéer, så du kan komme i gang:
 
 - [Flows med mange trin](multi-step-logic-flow.md).
-- [Kørsel af opgaver efter en tidsplan](run-scheduled-tasks.md).
-- [Oprettelse af et godkendelsesflow](wait-for-approvals.md).
-- [Visning af et flow i aktion](see-a-flow-run.md).
-- [Publicering af en skabelon](publish-a-template.md).
+- [Køre opgaver efter en tidsplan](run-scheduled-tasks.md).
+- [Oprette et godkendelsesflow](wait-for-approvals.md).
+- [Vise et flow i aktion](see-a-flow-run.md).
+- [Publicere en skabelon](publish-a-template.md).
 - [Opret flows ud fra en Microsoft Teams-skabelon](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
@@ -120,23 +120,23 @@ Du behøver ikke at være udvikler for at oprette flows, men Power Automate inde
 
     ![Smugkig på kode](media/getting-started/peek-code.png)
 
-1. Bemærk den fulde JSON-repræsentation af handlinger og udløsere. Dette omfatter alle input, f.eks. den tekst, du angiver direkte, og anvendte udtryk. Du kan vælge udtryk her og derefter indsætte dem i udtrykseditoren **Dynamisk indhold**. Dette giver dig også mulighed for at bekræfte de data, du forventer er til stede i flowet.
+1. Bemærk den fulde JSON-repræsentation af handlinger og udløsere. Det omfatter alle input, f.eks. den tekst, du angiver direkte, og anvendte udtryk. Du kan vælge udtryk her og derefter indsætte dem i udtrykseditoren **Dynamisk indhold**. Det giver dig også mulighed for at bekræfte de data, du forventer er til stede i flowet.
 
     ![Smugkig på kode](media/getting-started/peek-code-details.png)
    
 
-## <a name="find-your-flows-easily"></a>Find nemt dine flow
+## <a name="find-your-flows-easily"></a>Find nemt dine flows
 
-Når kreativiteten *flyder*, opretter du måske mange flow. Bare rolig; det er nemt at finde dine flow – du skal blot bruge søgefeltet på skærmen **Mine flow**, **Teamflow**, **Forbindelser** eller **Løsninger** til kun at få vist de flow, der stemmer overens med de angivne søgeord.
+Når kreativiteten *flyder*, opretter du måske mange flows. Bare rolig; det er nemt at finde dine flows – du skal blot bruge søgefeltet på skærmen **Mine flows**, **Teamflows**, **Forbindelser** eller **Løsninger** til kun at få vist de flows, der matcher de angivne søgeord.
 
-![Filtrer eller søg efter flow](media/getting-started/filter-search-box.png)
+![Filtrer eller søg efter flows](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
-> Søgefilteret finder kun de flow, der er indlæst på siden. Hvis du ikke kan finde dit flow, kan du prøve at vælge **Indlæs flere** nederst på siden.
+> Søgefilteret finder kun de flows, der er indlæst på siden. Hvis du ikke kan finde dit flow, kan du prøve at vælge **Indlæs flere** nederst på siden.
 
 ## <a name="get-notifications-when-somethings-wrong"></a>Få meddelelser, når der er noget galt
 
-Brug meddelelsescentret i Power Automate (som findes øverst til højre i designeren) til hurtigt at se en liste over de seneste mislykkede flows. I meddelelsescenteret vises et tal, der angiver antallet af seneste mislykkede flow.
+Brug meddelelsescentret i Power Automate (som findes øverst til højre i designeren) til hurtigt at se en liste over de seneste mislykkede flows. I meddelelsescenteret vises et tal, der angiver antallet af seneste mislykkede flows.
 
 Fra meddelelsescenteret kan du navigere til siden **Aktivitet** i Power Automate for at se de flows, der blev kørt for nylig, sendte meddelelser eller mislykkedes.
 
@@ -148,4 +148,4 @@ Download Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsan
 
 ## <a name="were-here-to-help"></a>Vi er her for at hjælpe dig ##
 
-Vi er spændte på at se, hvad du vil bruge Power Automate til, og vi vil være sikre på, at du får en god oplevelse. Sørg for at se vores selvstudier med [vejledninger](https://flow.microsoft.com/guided-learning/), og [bliv en del af vores community](https://go.microsoft.com/fwlink/?LinkID=787467), så du kan stille spørgsmål og dele dine idéer. [Kontakt support](https://go.microsoft.com/fwlink/?LinkID=787479), hvis du løber ind i problemer.
+Vi er spændte på at se, hvad du vil bruge Power Automate til, og vi vil være sikre på, at du får en god oplevelse. Sørg for at se vores selvstudier med [vejledninger](https://flow.microsoft.com/guided-learning/), og [bliv en del af vores community](https://go.microsoft.com/fwlink/?LinkID=787467), så du kan stille spørgsmål og dele dine idéer. [Kontakt support](https://go.microsoft.com/fwlink/?LinkID=787479), hvis du får problemer.

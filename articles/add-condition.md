@@ -13,24 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/17/2017
+ms.date: 06/08/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3be9b2414a0f30581763622de0c7d49cb694e3b3
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: c717bfcb10fdae3da5d1a3642ece503ad3de4389
+ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296675"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3434986"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Føj en betingelse til et flow
 
 
-Angiv, at et flow kun skal udføre en eller flere opgaver, hvis en betingelse er sand. Angiv f.eks., at du kun skal have en mail, hvis en tweet, der indeholder et nøgleord, videresendes mindst ti gange.
+Angiv, at et flow kun skal udføre en eller flere opgaver, hvis en betingelse er sand. Angiv f.eks., at du kun skal have en mail, hvis et tweet, der indeholder et nøgleord, retweetes mindst ti gange.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -38,21 +38,19 @@ Angiv, at et flow kun skal udføre en eller flere opgaver, hvis en betingelse er
 
 ## <a name="add-a-condition"></a>Tilføj en betingelse
 
-1. Vælg **Mine flows** på navigationslinjen i [Power Automate](https://flow.microsoft.com).
+1. Vælg **Mine flow** i [Power Automate](https://flow.microsoft.com).
 
     Du skal muligvis logge på, hvis du ikke allerede er logget på.
 
-1. Vælg et af de flow, du har oprettet, på listen over flow.
+1. Vælg et flow i **Mine flow**, og vælg derefter **Flere kommandoer** (de tre punktummer).
+
+   ![Vælg Rediger](./media/add-condition/select-edit.png)
 
     Dette selvstudium bruger et eksempel med en Twitter-udløser og en SharePoint-handling.
 
-1. Vælg **Rediger flow**.
+1. Vælg **Rediger**.
 
-1. Vælg **Nyt trin** under den sidste handling.
-
-1. Vælg **Tilføj en betingelse**.
-
-    ![Betingelsesknap](./media/add-condition/add-condition.png)
+1. Vælg **Nyt trin** > **Betingelse** under den sidste handling.
 
 1. Vælg et tomt område i feltet til venstre på kortet **Betingelse**.
 
@@ -64,21 +62,27 @@ Angiv, at et flow kun skal udføre en eller flere opgaver, hvis en betingelse er
 
 1. Angiv **10** i feltet til højre.
 
-    ![Felet OBJEKTNAVN med en parameter i](./media/add-condition/specify-condition.png)
+    ![Feltet OBJEKTNAVN med en parameter i](./media/add-condition/specify-condition.png)
 
-1. Markér overskriften for den handling, du vil bruge inde i betingelsen (f.eks **Opret vare**), og træk den hen under teksten **Hvis ja**.
+    Nu, hvor du har konfigureret betingelsen, skal du fortsætte med følgende trin for at sende en mail, hvis **Antal retweet** er større end 10.
 
-    Når du slipper markøren, flyttes handlingen ind i det pågældende felt.
+1. Vælg **Tilføj en handling** for **Hvis ja** på sendebetingelsen. 
+1. Angiv **Send en mail** i søgefeltet, og vælg derefter **Send en mail (V2)**.
 
-    ![Træk handling](./media/add-condition/drag-action.png)
+   ![Søg for at sende en mail](./media/add-condition/if-yes-condition.png)
 
-1. Konfigurer handlingen efter behov.
+1. Konfigurer kortet **Send en mail (V2)** efter behov, og angiv indholdet af den mail, som flowet sender, hvis **Antal retweet** er større end 10.
 
-1. Gem flowet.
+   Du kan også konfigurere **Hvis nej** for betingelsen, hvis du vil udføre en handling, når **Antal retweet** er mindre end 10.
 
-## <a name="edit-in-advanced-mode"></a>Rediger i avanceret tilstand
+1. Gem processen.
 
-Du kan også markere **Rediger i avanceret tilstand** for at skrive mere avancerede betingelser. Du kan bruge et hvilket som helst udtryk fra *WDL (Workflow Definition Language)* i avanceret tilstand. Få mere at vide om alle tilgængelige [udtryk](https://msdn.microsoft.com/library/azure/mt643789.aspx).
+>[!TIP]
+>Du kan oprette komplekse betingelser ved hjælp af knappen **Tilføj** på betingelseskortet.
+
+![Tilføje komplekse betingelser](./media/add-condition/add-complex-condition.png)
+
+Du kan bruge et hvilket som helst udtryk fra *WDL (Workflow Definition Language)* i avanceret tilstand. Få mere at vide om alle de tilgængelige [udtryk](https://msdn.microsoft.com/library/azure/mt643789.aspx).
 
 ## <a name="next-steps"></a>Næste trin
 

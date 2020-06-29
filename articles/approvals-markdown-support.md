@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 739d407df91661a6a82aa72f2891a3dac3bda3cf
-ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
+ms.openlocfilehash: fcda9a1098275ddd1e9688c2eec55ac4801aac4e
+ms.sourcegitcommit: 4dfd4013e4e632a91041783df64845651a8935c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3299381"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442683"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug markdown i Power Automate-godkendelsesanmodninger
 
@@ -37,6 +37,9 @@ I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Mark
 
 > [!IMPORTANT]
 > Alle markdown-gengivelser indeholder implementeringsforskelle. Se afsnittet [Klientsupport](#client-support) for at få flere oplysninger.
+
+> [!IMPORTANT]
+> Markdown understøttes ikke i øjeblikket for kunder med GCC og GCC High.
 
 ## <a name="client-support"></a>Klientsupport
 
@@ -113,9 +116,9 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
 ```
 
 **Resultat:**  
-1. First item.
-2. Second item.
-3. Third item.
+1. Første element.
+2. Andet element.
+3. Tredje element.
 
 ### <a name="bullet-lists"></a>Punktopstilling
 
@@ -127,9 +130,9 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
 ```
 
 **Resultat:**  
-- Item 1
-- Item 2
-- Item 3
+- Punkt 1
+- Punkt 2
+- Punkt 3
 
 ### <a name="nested-lists"></a>Indlejrede lister
 
@@ -146,15 +149,15 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
 ```
 
 **Resultat:**  
-1. First item.
+1. Første element.
 
-    - Item 1
-    - Item 2
-    - Item 3
-2. Second item.
-    - Nested item 1
-    - Nested item 2
-    - Nested item 3
+    - Punkt 1
+    - Punkt 2
+    - Punkt 3
+2. Andet element.
+    - Indlejret element 1
+    - Indlejret element 2
+    - Indlejret element 3
 
 
 ## <a name="links"></a>Links
@@ -197,8 +200,8 @@ Organiser strukturerede data med tabeller.
 **Resultat:**  
 | Overskrift 1 | Overskrift 2 | Overskrift 3 |  
 |-----------|:---------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Celle A1 | Celle A2 | Celle A3 |  
+| Celle B1 | Celle B2 | Celle B3<br/>anden tekstlinje |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Fremhævelse (fed, kursiv, gennemstreget)  
@@ -235,7 +238,7 @@ Anvend _fremhævning_ i kommentarer til at udtrykke **stærke** holdninger og po
 
 <tr>
 <td>
-<p>Hvis du vil indsætte et af følgende tegn, skal du indlede teksten med en omvendt skråstreg:</p>
+<p>Hvis du vil indsætte et af følgende tegn, skal du indlede det med en omvendt skråstreg:</p>
 
 <p style="margin-bottom:2px;">```\   backslash ``` </p>
 <p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>

@@ -1,6 +1,6 @@
 ---
-title: Eksempel på billeddeling til deling af fotos | Microsoft Docs
-description: Få mere at vide om, hvordan du opretter et adaptivt kort til deling af fotos.
+title: Eksempel på billeddeling til deling af billeder | Microsoft Docs
+description: Få mere at vide om, hvordan du opretter et adaptivt kort til deling af billeder.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d310eb96a69f66b8f45718554f36ba8b2a51989
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: c804a65eee3b217dd2b6d66d54c7e39d87ef0eae
+ms.sourcegitcommit: 3f582a1e462124d44f63cef7d450fc94be148f3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297929"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372778"
 ---
 # <a name="image-share-sample"></a>Eksempel på billeddeling 
 
@@ -38,7 +38,7 @@ Eksemplet på **Billeddelingsformular** er et adaptivt kort, der er designet til
 | Navn på dynamisk token (input) | Pladsholdertekst   | Noter                                              |
 |-----------------------------|--------------------|-----------------------------------------------------|
 | acphotoTitle                | {acphotoTitle}     | Vist tekst                                        |
-| acTimestamp                 | {acTimestamp]      | Dato/klokkeslæt for visning                                   |
+| acTimestamp                 | {acTimestamp}      | Dato/klokkeslæt for visning                                   |
 | acImageThumbnail            | {acImageThumbnail} | Vist billede <br>Skal erstattes med en gyldig URL-adresse|
 | acAltText                   | {acAltText}        | Alternativ tekst til tilgængelighed                      |
 
