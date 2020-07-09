@@ -1,14 +1,14 @@
-Med en voksende liste over [tjenester](https://flow.microsoft.com/services), der kan oprette arbejdsprocesser i [Power Automate](https://flow.microsoft.com), kan du være nødt til at beskytte følsomme eller vigtige forretningsdata, der lagres i virksomhedstjenester som SharePoint eller Salesforce. Du kan opleve, at din organisation er nødt til at oprette en politik, der sikrer, at følsomme forretningsdata ikke udgives på forbrugertjenester som Twitter og Facebook. Med Power Automate kan du nemt oprette politikker til **forebyggelse af datatab** (DLP), så du får en tæt styring af, hvilke forbrugertjenester dine forretningsdata kan deles med, når brugerne opretter flow.  
+Med en voksende liste over [tjenester](https://flow.microsoft.com/services), der kan oprette arbejdsprocesser i [Power Automate](https://flow.microsoft.com), kan du være nødt til at beskytte følsomme eller vigtige forretningsdata, der lagres i virksomhedstjenester som SharePoint eller Salesforce. Du kan opleve, at din organisation er nødt til at oprette en politik, der sikrer, at følsomme forretningsdata ikke udgives på forbrugertjenester som Twitter og Facebook. Med Power Automate kan du nemt oprette politikker til [**forberedelse af datatab** (DLP)](https://docs.microsoft.com/power-platform/admin/prevent-data-loss), så du får en tæt styring med, hvilke forbrugertjenester dine forretningsdata kan deles med, når brugerne opretter flow.  
 
-## <a name="terms-you-should-get-familiar-with"></a>Begreber, du skal være fortrolig med
+## <a name="terms-you-should-get-familiar-with"></a>Begreber, du bør være fortrolig med
 
 | Begreb | Beskrivelse |
 | --- | --- |
 | **DLP** |Dette er en forkortelse for forebyggelse af datatab. Du skal oprette en DLP-politik for at administrere delingen af data mellem **tjenester**. |
-| **Servicer** |[Tjenester](https://flow.microsoft.com/services) er programmer som Salesforce, SharePoint og Twitter. Disse tjenester, og mange flere, bruges til at oprette flows. |
+| **Tjenester** |[Tjenester](https://flow.microsoft.com/services) er programmer som Salesforce, SharePoint og Twitter. Brug disse tjenester, og mange flere, til oprettelse af flows. |
 | **Datagruppe** |En logisk gruppering af tjenester. Du placerer tjenester, der har tilladelse til at dele data, i den samme datagruppe. Der er to datagrupper: **Kun forretningsdata** og **Ingen forretningsdata tilladt**. |
 | **Miljø** |En DLP anvendes på et [miljø](../environments-overview-admin.md). Et miljø indeholder brugere. |
-| **Brugere** |Brugerne er medlemmer af organisationen, som en DLP-politik skal gælde for, baseret på deres medlemskab af et miljø. |
+| **Brugere** |Brugerne er medlemmer af den organisation, som en DLP-politik skal gælde for, baseret på deres medlemskab i et miljø. |
 | **Flow** |Et flow er en arbejdsprocesapp, der bruger enhver kombination af de tilgængelige tjenester. |
 
 ## <a name="all-about-how-dlp-policies-work"></a>Alt om, hvordan DLP-politikker fungerer
@@ -19,7 +19,7 @@ En DLP-politik er blot en navngivet regel, der placerer hver tjeneste i en af to
 | **Kun forretningsdata** |Alle tjenester i denne gruppe kan dele data indbyrdes. De kan ikke dele data med datagruppen **Ingen forretningsdata tilladt**. |
 | **Ingen forretningsdata tilladt** |Alle tjenester i denne gruppe kan dele data indbyrdes. De kan ikke dele data med datagruppen **Kun forretningsdata**. |
 
-**Bemærk!** Når en tjeneste tilføjes til én datagruppe, fjernes den automatisk fra den anden datagruppe. Hvis Twitter f.eks. i øjeblikket er placeret i datagruppen **Kun forretningsdata**, og du ikke vil tillade, at forretningsdata deles på Twitter, skal du blot tilføje tjenesten Twitter til datagruppen **Ingen forretningsdata er tilladt**. Dette vil fjerne Twitter fra datagruppen **Kun forretningsdata**.
+**Bemærk!** Når en tjeneste tilføjes i én datagruppe, fjernes den automatisk fra den anden datagruppe. Hvis Twitter f.eks. i øjeblikket er placeret i datagruppen **Kun forretningsdata**, og du ikke vil tillade, at forretningsdata deles på Twitter, skal du blot tilføje tjenesten Twitter til datagruppen **Ingen forretningsdata er tilladt**. Dette vil fjerne Twitter fra datagruppen **Kun forretningsdata**.
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>Her er, hvad du skal bruge for at oprette en DLP
 * Adgang til Power Automate [Administration](https://admin.flow.microsoft.com)  
@@ -33,7 +33,7 @@ Her er en hurtig oversigt over, hvordan du opretter en DLP-politik:
 2. Vælg det miljø, hvor politikken skal anvendes
 3. Tilføj tjenesterne til en af de to datagrupper. Husk, at kun tjenester, der er placeret i en bestemt gruppe, kan dele data. Så ethvert flow, der er oprettet til at dele data mellem tjenester, der er placeret i de to datagrupper, blokeres automatisk, når opretteren gemmer det.  
 
-Der er også adgang til en mere [detaljeret gennemgang](../prevent-data-loss.md) af DLP-politikker.  
+Der er også adgang til en mere [detaljeret gennemgang](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) af DLP-politikker.  
 
 ## <a name="examples"></a>Eksempler
 * Hvis du vil oprette en politik, der begrænser flow til kun at dele forretningsdata mellem SharePoint, Office 365-brugere, Office 365 Outlook, OneDrive for Business, Dynamics 365, SQL Server og Salesforce, vil den se ud på denne måde:  

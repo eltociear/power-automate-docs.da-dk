@@ -16,6 +16,8 @@
       href: create-team-flows.md
     - name: 'Opret et flow, der bruger Common Data Service'
       href: common-data-model-intro.md
+    - name: Nyheder
+      href: whats-new.md
     - name: Læringskatalog
       items:
         - name: Læringskatalog
@@ -310,8 +312,6 @@
       href: regions-overview.md
     - name: Grænser og konfiguration
       href: limits-and-config.md
-    - name: Produktbemærkninger
-      href: release-notes.md
     - name: Web API til Power Automate
       href: web-api.md
     - name: Ofte stillede spørgsmål
@@ -324,3 +324,5 @@
       href: 'https://flow.microsoft.com/blog/'
     - name: Forummer
       href: 'https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity'
+    - name: Support
+      href: 'https://us.flow.microsoft.com/support/'
