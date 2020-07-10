@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: dc2eaf9ac0ffc0edb10f5cb096ee98dad6aac55d
-ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
+ms.openlocfilehash: b5ba3c826ae1db9991c92bc1217a07205cce491c
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3299425"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498552"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Opret brugerdefinerede svarmuligheder for godkendelsesflow
 
@@ -40,7 +40,7 @@ Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder 
 
 ## <a name="create-approval-flow"></a>Opret godkendelsesflow
 1. Log på [Power Automate](https://flow.microsoft.com).
-1. Vælg **Mine flow** på navigationslinjen til venstre.
+1. Vælg **Mine flows** på navigationslinjen til venstre.
 1. Vælg **Ny** > **Automatiseret – fra bunden**.
 
     ![Muligheden Opret fra bunden](media/create-approval-response-options/create-approval-response-options.png)
@@ -94,16 +94,23 @@ Hvis svaret på anmodningen er **Acceptér**, kan det være en god idé at sende
 
 Hvis svaret er **Afvis**, kan det være en god idé at sende en mail til medarbejderen, så vedkommende kan se, at anmodningen blev afvist.
 
-Og endelig hvis svaret fra godkenderen er **Angiv flere oplysninger**, kan det være en god idé at sende en mail til medarbejderen, hvor du anmoder om at få flere oplysninger.
+Og endelig, hvis svaret fra godkenderen er **Angiv flere oplysninger**, kan det være en god idé at sende en mail til medarbejderen, hvor du anmoder om at få flere oplysninger.
 
-Hvis du vil gøre noget af dette i flowet, skal du føje en [**Betingelse**](add-condition.md) eller en handling af typen **Skift** til dit flow og derefter vælge feltet **Resultat** i godkendelsesanmodningen fra den dynamiske indholdsvælger. Sørg for at bekræfte, om værdien er Acceptér, Angiv flere oplysninger eller Afvis.
+Hvis du vil gøre noget af dette i flowet, skal du tilføje en [**Betingelse**](add-condition.md) eller en handling af typen **Skift** til dit flow og derefter vælge feltet **Resultat** i godkendelsesanmodningen fra den dynamiske indholdsvælger. Sørg for at bekræfte, om værdien er Acceptér, Angiv flere oplysninger eller Afvis.
 
 ## <a name="respond-to-approval-requests-with-a-custom-response"></a>Besvar godkendelsesanmodninger med et brugerdefineret svar
 
 Godkendere modtager godkendelsesanmodninger via mail. Anmodningerne vises også i godkendelsescenteret i Power Automate. 
 
-![Godkendelsesanmodning i mail](media/create-approval-response-options/approval-request-email.png)
+![Mail med godkendelsesanmodning](media/create-approval-response-options/approval-request-email.png)
+
+## <a name="limitations"></a>Begrænsninger
+
+Der er en grænse på fem brugerdefinerede svar i forbindelse med meddelelser i Outlook og Outlook Web Access (OWA), der kan udføres. Det betyder, at det kun er de fem første svar, der defineres i løbet af flowet, der kan ses i sektionen med brugbare muligheder i Power Automate-godkendelsesmails. Du kan sende de resterende indstillinger via en HTML-mail, der ikke kan reageres på, Power Automate-godkendelsescenter, Power Automate-mobilprogram eller teams.
+
+>[!NOTE]
+>I forbindelse med godkendelser, der bruger et enkelt brugerdefineret svar, kan Outlook og OWA udvide svarfeltet, så brugerne ikke behøver at vælge en knap, før de kan svare, som når der er flere godkendelsesmuligheder.
 
 ## <a name="learn-more"></a>Få mere at vide
-- Opret [enkelte godkenderflow](modern-approvals.md)
-- Opret [fortløbende godkenderflow](sequential-modern-approvals.md)
+- Opret [enkelte godkenderflows](modern-approvals.md)
+- Opret [fortløbende godkenderflows](sequential-modern-approvals.md)

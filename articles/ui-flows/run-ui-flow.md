@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 06/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f893000afea0d554ab911303cbdac2549170f554
-ms.sourcegitcommit: aefd1ebedfbd8c6cc3d08397ac171cb4ba5b5315
+ms.openlocfilehash: a6266b1c6a76d80e46bafd14dcddeb2df9c4aa46
+ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412952"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502357"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>Kør ikke-automatiserede og automatiserede flows for brugergrænsefladen
 
@@ -177,21 +177,36 @@ Hvis du vil køre et ikke-automatiseret flow for brugergrænsefladen, skal du ha
 Når et ikke-automatiseret flow for brugergrænsefladen starter på destinationsmaskinen, anbefaler vi, at du undgår at interagere med enheden, indtil kørslen er fuldført.
 
 
-## <a name="schedule-multiple-ui-flows-on-the-same-device"></a>Planlæg flere flows for brugergrænsefladen på den samme enhed
+## <a name="run-multiple-ui-flows-on-the-same-device-sequentially"></a>Kør flere flow for brugergrænsefladen på den samme enhed efter hinanden 
 
-Du kan planlægge at køre flere flows for brugergrænsefladen på en eller flere enheder. Hvis der udløses mere end ét flow for brugergrænsefladen til kørsel på den samme enhed, følger Power Automate disse regler:
+Du kan planlægge at køre flere flows for brugergrænsefladen på en eller flere enheder. Hvis der udløses mere end ét flow for brugergrænsefladen, som skal køre på den samme enhed, følger Power Automate disse regler:
 
-1.  Det første flow for brugergrænsefladen køres på destinationsenheden.
+1.  Det første flow for brugergrænsefladen kører på destinationsenheden.
 
-1.  Andre flows for brugergrænsefladen sættes i kø, og de vises som **Ventende** på siden med oplysninger om flows for brugergrænsefladen eller gatewayen.
+1.  Andre flow for brugergrænsefladen sættes i kø, og de vises som **Ventende** på siden med oplysninger om flow for brugergrænsefladen eller gatewayen.
 
-1.  Det næste flow for brugergrænsefladen vælges, når hver kørsel er fuldført.
+1.  Det næste flow for brugergrænsefladen, der **Venter**, vælges, når hver kørsel er fuldført.
 
 >[!NOTE]
 >Disse orkestreringsregler gælder for kørsler af flows for brugergrænsefladen, der er planlagt af en hvilken som helst bruger eller af forskellige brugere på den samme enhed.
 
 >[!IMPORTANT]
 >Hvis der er for mange flows for brugergrænsefladen i udførelseskøen, kan der opstå timeout. Kørsler af flows for brugergrænsefladen mislykkes, hvis de ikke køres inden for 30 minutter, efter de blev udløst.
+
+## <a name="run-ui-flows-concurrently-on-windows-server-devices"></a>Kør flows for brugergrænseflade samtidig på Windows Server-enheder
+Flere brugere kan være logget på samtidigt på Windows Server 2016 og Windows Server 2019. Power Automate udnytter denne operativsystemfunktion til samtidig at køre flere flows for brugergrænseflade på sådanne enheder. Ved hjælp af denne funktion kan din organisation spare på sine infrastrukturomkostninger.
+
+Benyt følgende fremgangsmåde for at opnå adgang til flere flows for brugergrænseflade på en enkelt enhed:
+1. Konfigurer en Windows Server 2016- eller 2019-enhed med den lokale miljø-gateway, og den nyeste version af flows for brugergrænseflade installeret.
+1. Brug to eller flere brugerkonti til at oprette flows for brugergrænseflade, der målretter gateway på denne enhed. 
+
+Power Automate skalerer automatisk antallet af samtidige flows for brugergrænseflade, der kører, til den maksimalt understøttede antal på enheden. Hvis enhedens kapacitet overskrides, kan der køres yderligere *vent-funktioner* som [beskrevet her](./run-ui-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
+
+>[!IMPORTANT]
+Hvis du vil bruge mere end to parallelle brugersessioner på Windows Server, skal du aktivere Fjernskrivebordstjenester. Få mere at vide om [RDS](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-client-access-license).
+
+>[!NOTE]
+>Kørsel af flere samtidige flows for brugergrænseflade fra **samme bruger** understøttes ikke. Der skal være forskellige brugere, der kører flows for brugergrænseflade samtidig, for at du kan drage fordel af denne funktion.
 
 ## <a name="load-balance-requests-across-gateways-in-a-cluster"></a>Anmodninger om justering af belastning på tværs af gateways i en klynge
 
@@ -218,7 +233,7 @@ Hvis du planlægger at køre flere flow for brugergrænsefladen, er der en rækk
 
 1. Planlægge, at dine flows for brugergrænsefladen kører på forskellige tidspunkter af dagen, så du dermed spreder belastningen over tid. Det fungerer bedst, hvis du har en enkelt eller et begrænset antal maskiner, der kan køre arbejdsbelastninger, og du kan styre udløserne (f.eks. planlagte flows), der starter dine flows for brugergrænsefladen.
 1. Oprette klynger af maskiner, der kan køre flows for brugergrænsefladen med identiske konfigurationer parallelt. 
-1. Oprette flere flows, der hver især bruger en separat forbindelse til at henvende sig til forskellige maskiner. 
+1. Oprette flere flows, der hver især bruger en separat forbindelse til at henvende sig til forskellige maskiner.
 
 Når du følger disse strategier, kan du undgå, at forskellige flows for brugergrænsefladen konkurrerer med hinanden om at køre på den samme enhed, og at de i nogle tilfælde mislykkedes pga. timeout. 
 

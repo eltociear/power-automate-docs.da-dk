@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: ca815ad5949da494c1a50c193c040acdd948d3a2
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 2c2b9a29988a3b8f4fd25f5490d5f009c1b52ff3
+ms.sourcegitcommit: 368e3749f64f80cd9b45c35eccba6a2e3685ae44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297599"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "3516652"
 ---
 # <a name="power-automate-for-enterprise-developers-isvs-and-partners"></a>Power Automate til virksomhedsudviklere, ISV'er og partnere
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -37,7 +37,7 @@ Som virksomhedsudvikler sætter du din organisation i stand til at bygge robuste
 
 - **Byg brugerdefinerede connectorer**: Udvikl brugerdefinerede connectorer for at oprette forbindelse til organisationens data og webtjenester via Power Automate. [Få mere at vide](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Byg Azure Functions**: Angiv Azure Functions til at udvide apps med brugerdefineret logik på serversiden. [Få mere at vide](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
+- **Byg Azure Functions**: Byg Azure Functions for at udvide apps med brugerdefineret logik på serversiden. [Få mere at vide](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
 - **Integrer Power Automate**: Integrer Power Automate direkte på dit website for at oprette integrerede løsninger, der indeholder arbejdsprocesser eller processer, hvor personer i organisationen allerede udfører deres arbejde. [Få mere at vide](embed-flow-dev.md)
 
@@ -75,13 +75,13 @@ Integrer Power Automate i din app for at aktivere dyb integration i kontekst mel
 
 Når du har fået en connector, skal du udgive skabeloner, der viser, hvordan din tjeneste bruges. Disse skabeloner fungerer som eksempler for brugerne, som derefter kan udvikle deres egne unikke arbejdsprocesser. [Få mere at vide](../publish-a-template.md)
 
-### <a name="5-deployment"></a>5. Installation
+### <a name="5-deployment"></a>5. Implementering
 
 Hvis du vil give slutbrugerne adgang til flows, de kan bruge automatisk, skal du udrulle disse flows i brugerens Azure AD-lejer. Brug en udviklingspakke, som du udruller vha. vores REST API'er eller PowerShell. [Få mere at vide](https://docs.microsoft.com/powerapps/export-import-packages)
 
 ### <a name="6-licensing"></a>6. Licensering
 
-Hvis dine kunder allerede har Office 365 eller Dynamics 365, og disse licenser er knyttet til de identiteter, som brugerne logger på Azure AD med, har du ikke brug for yderligere licenser. Hvis dine kunder ikke bruger Office 365 eller Dynamics 365, skal du dog have brugsrettigheder til Power Automate på deres vegne, så de har licens til at udnytte disse integrerede komponenter i din applikation.
+hvis dine kunder allerede har enten Office 365 eller Dynamics 365, og disse licenser er knyttet til de identiteter, brugerne logger på Azure AD med, kræves der ikke yderligere licenser af dig for at anvende standard-connectorer. Brugerne skal have en af [Power Automate-licenserne](https://preview.flow.microsoft.com/pricing/) for at bruge Premium- og brugerdefinerede connectorer. Hvis dine kunder ikke bruger Office 365 eller Dynamics 365, skal du dog have brugsrettigheder til Power Automate på deres vegne, så de har licens til at udnytte disse integrerede komponenter i dit program.
 
 Vi tilbyder [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-programmet, så du kan få licenser på vegne af dine kunder. Der er to forskellige [prisplaner](https://flow.microsoft.com/pricing/) til Power Automate, hvor du kan se flere oplysninger om planerne og funktionerne.
 

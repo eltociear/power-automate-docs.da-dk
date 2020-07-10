@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9d3ded6a38d45fa97a206abdf0ee5d89d2255124
-ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
+ms.openlocfilehash: 0a819c9ccaa3dd3e8ba60088fb8a9c197b74d15b
+ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3352058"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502405"
 ---
 # <a name="business-process-flows-overview"></a>Oversigt over forretningsproces
 

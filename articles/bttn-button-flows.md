@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4eaafb1a551cc3333cde2058aebc41076b0267bd
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 066e9887520a1f6435cb3ab8f93a6dbdf30cb89a
+ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297137"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518023"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Kør dine flows med fysiske bttns fra The Button Corporation (prøveversion)
 
@@ -51,17 +51,17 @@ Du kan også udløse et flow ved hjælp af en [fysisk Flic-knap](flic-button-flo
 * Mindst én [registreret bttn](https://my.bt.tn/).
 
 ## <a name="create-a-flow-thats-triggered-from-a-bttn"></a>Opret et flow, der udløses af en bttn
-I denne gennemgang bruger vi en helpdeskskabelon til at oprette et flow, som du kan udløse med et enkelt tryk på en [bttn](https://my.bt.tn/). Når der køres flows, oprettes der en anmodning om support, som derefter sendes til helpdesk. Supportanmodningen oplyser helpdesk om placeringen af det lokale, hvor der er brug for hjælp. Denne gennemgang viser, hvordan du opretter dette flow ud fra en skabelon, men du kan bruge den tomme skabelon, hvor du selv kan styre alle aspekter i dit flow.
+I denne gennemgang bruger vi en helpdesk-skabelon til at oprette et flow, som du kan udløse med et enkelt tryk på en [bttn](https://my.bt.tn/). Når der køres flows, oprettes der en anmodning om support, som derefter sendes til helpdesk. Supportanmodningen oplyser helpdesk om placeringen af det lokale, hvor der er brug for hjælp. Denne gennemgang viser, hvordan du opretter dette flow ud fra en skabelon, men du kan bruge den tomme skabelon, hvor du selv kan styre alle aspekter i dit flow.
 
 Du kan bruge en hvilken som helst af disse skabeloner til hurtigt at oprette flows for din bttn og oprette forbindelse til bl.a. Zendesk, Google og SharePoint:
 
-![bttn-skabeloner](./media/bttn-button-flows/bttn-templates.png)
+![Vis liste over bttn-skabeloner](./media/bttn-button-flows/bttn-templates.png)
 
 Tip! I forbindelse med denne gennemgang skal du give din bttn et navn, der repræsenterer et mødelokale i en typisk kontorbygning.
 
 Indstillingerne for din bttn skal ligne dette eksempel (fra bttn-webstedet):
 
-![bttn-skabeloner](./media/bttn-button-flows/bttn-config.png)
+![Visning af bttn-indstillinger](./media/bttn-button-flows/bttn-config.png)
 
 Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at oprette vores flow.
 
@@ -91,7 +91,7 @@ Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at
     ![giv tilladelse](./media/bttn-button-flows/authorize-bttn.png)
 3. Når du er logget på begge tjenester, skal du vælge **Fortsæt**.
    
-    ![Fortsæt](./media/bttn-button-flows/continue.png)
+    ![Markér knappen Fortsæt](./media/bttn-button-flows/continue.png)
 
 ### <a name="select-the-bttn-that-triggers-the-flow"></a>Vælg den bttn, der udløser flowet
 1. På kortet **Når der trykkes på en bttn** skal du åbne listen over bttn-id'er og derefter vælge den bttn, du vil bruge.
@@ -107,7 +107,7 @@ Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at
 
 ## <a name="test-your-flow-and-confirm-results"></a>Test dit flow, og tjek resultaterne
 1. Tryk på knappen på din bttn.
-2. Se kørselsoversigten for dit flow for at bekræfte, at den blev kørt.
+2. Se kørselsoversigten for dit flow for at bekræfte, at den blev fuldført.
    
     Du kan kontrollere kørselsoversigten på webstedet Power Automate eller på din mobilenhed.
    
@@ -116,7 +116,7 @@ Nu, hvor du har registreret og konfigureret din bttn, kan vi komme i gang med at
    
     Hvis du har fulgt med, ser supportmailen ud som i dette eksempel:
    
-    ![](./media/bttn-button-flows/support-request-email.png)
+    ![Supportmail:](./media/bttn-button-flows/support-request-email.png)
 
 ## <a name="troubleshooting"></a>Fejlfinding
 * Hvis dit flow ikke blev udløst, skal du logge på webstedet for The Button Corporation og bekræfte, om knapaktiviteten (tryk på knappen) registreres.

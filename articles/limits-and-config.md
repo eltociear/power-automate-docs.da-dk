@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/19/2020
+ms.date: 06/24/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4f1ff6a7171ecb31ef1273fdc7dc273755089d5e
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: fc03b4b6695ec334a6271f67c0eafea2e2d71b29
+ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435058"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502381"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -165,7 +165,7 @@ webshell.suite.office.com|https|Adgang til Office i forbindelse med header og s�
 Du kan finde flere oplysninger om godkendelse af e-mail-routing i [artiklen om levering af mail til godkendelse](https://go.microsoft.com/fwlink/?linkid=2128304).
 
 ### <a name="ui-flows-required-services"></a>Påkrævede services for flow for brugergrænseflade
-I følgende tabel vises slutpunktdatakrav for forbindelsen fra en brugers maskine til en vellykket installation af et flow for brugergrænseflade.
+I følgende tabel vises slutpunktsdatakrav for forbindelse fra en brugers maskine til en vellykket installation af flows for brugergrænseflade og kørsler.
 
 Slutpunkttype | Domæner | Protokoller | Anvendelser
 --------| --------|  ---------| -----

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3607d41dbe78b591aed97f366dd783db4a0725fb
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: b16e07cf5d6f4cc5a711646b30b7b0780916d281
+ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435010"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527311"
 ---
 # <a name="introducing-instant-flows"></a>Introduktion til øjeblikkeligt flow
 
@@ -40,7 +40,7 @@ Du kan oprette knapper for at gøre det nemt at køre gentagne opgaver fra din m
 
 ## <a name="create-a-button"></a>Opret en knap
 ### <a name="prerequisites"></a>Forudsætninger
-* Adgang til Power Automate](https://flow.microsoft.com).
+* Adgang til [Power Automate](https://flow.microsoft.com).
 * En konto med tilladelser til at bruge forbindelser, når du opretter din knap. Du skal f.eks. have en Dropbox-konto, hvis du vil oprette en knap, der skal have adgang til Dropbox.
 
 ### <a name="from-the-portal"></a>Fra portalen

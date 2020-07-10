@@ -1,6 +1,6 @@
 ---
 title: Styrk forretningsprocesforløb med forgrening med Power Apps | Microsoft Docs
-description: Få mere at vide om, hvordan du bruger forgrening i et forretningsprocesforløb
+description: Lære at bruge forgrening i en forretningsprocesforløb
 ms.custom: ''
 ms.date: 06/27/2018
 ms.tgt_pltfrm: ''
@@ -16,17 +16,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2fedda5160291362d1ff4fcbcf91cec9f4e78713
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 821d06ec1fe4efcff4296f9e1bfb63f2b7503790
+ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297885"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518047"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Selvstudium: Optimer forretningsprocesforløb med forgrening
 
 
-Forretningsprocesforløb fører dig gennem forskellige faser i salg, marketing eller serviceprocesser, indtil forløbet er fuldført. I simple sager er et lineært forretningsprocesforløb en god mulighed. I mere komplekse scenarier kan du forbedre en forretningsprocesforløb med forgrening. Hvis du har tilladelse til oprettelse i forretningsprocesforløb, kan du oprette forretningsprocesforløb med flere grene ved hjælp af `If-Else`-logik. Forgreningsbetingelsen kan være dannet af flere logiske udtryk, der bruger en kombination af `AND`- eller `OR`-operatorer. Forgreningsudvælgelsen foretages automatisk i realtid, baseret på regler, der angives under definitionen af processen. Hvis du f.eks. sælger biler, kan du konfigurere et enkelt forretningsprocesforløb, som efter en fælles kvalifikationsfase opdeles i to adskilte forgreninger på grundlag af en regel (foretrækker kunden en ny bil eller en brugt bil, er budgettet over eller under $20.000 osv. ), én gren for salg af nye biler og en anden for salg af brugte biler. Du kan finde flere oplysninger om forretningsprocesforløb i [Oversigt over forretningsprocesforløb](business-process-flows-overview.md).  
+Forretningsprocesforløb fører dig gennem forskellige faser af salgs-, marketing- og serviceprocesser hen mod afslutning. I simple sager er et lineært forretningsprocesforløb en god mulighed. I mere komplekse scenarier kan du forbedre en forretningsprocesforløb med forgrening. Hvis du har tilladelse til oprettelse i forretningsprocesforløb, kan du oprette forretningsprocesforløb med flere grene ved hjælp af `If-Else`-logik. Forgreningsbetingelsen kan være dannet af flere logiske udtryk, der bruger en kombination af `AND`- eller `OR`-operatorer. Forgreningsudvælgelsen foretages automatisk i realtid, baseret på regler, der angives under definitionen af processen. Hvis du f.eks. sælger biler, kan du konfigurere et enkelt forretningsprocesforløb, som efter en fælles kvalifikationsfase opdeles i to adskilte forgreninger på grundlag af en regel (foretrækker kunden en ny bil eller en brugt bil, er budgettet over eller under $20.000 osv. ), én gren for salg af nye biler og en anden for salg af brugte biler. Du kan finde flere oplysninger om forretningsprocesforløb i [Oversigt over forretningsprocesforløb](business-process-flows-overview.md).  
   
  Følgende diagram viser et forretningsprocesforløb med forgreninger.  
   
@@ -52,7 +52,9 @@ Forretningsprocesforløb fører dig gennem forskellige faser i salg, marketing e
   
 -   Du kan omarrangere felter (faser, trin, betingelser osv.) i procesforløbet ved hjælp af træk og slip.  
   
--   Når du fletter grene, skal alle tilsvarende peer-grene flettes til en enkelt fase. Peer-grenene skal alle enten flettes til en enkelt fase, eller hver peer-gren skal afslutte processen. En peer-gren kan ikke flettes med andre grene og samtidig afslutte processen.  
+-   Når du fletter grene, skal alle tilsvarende peer-grene flettes til en enkelt fase. Peer-grenene skal alle enten flettes til en enkelt fase, eller hver peer-gren skal afslutte processen. En peer-gren kan ikke flettes med andre grene og samtidig afslutte processen.
+
+-   Ændringer af klient-API kan ikke udløse evaluering af forgreningsbetingelse, da en forgrening er afhængig af forretningsregler.
   
 > [!NOTE]
 > - Du kan vende tilbage til et objekt, der bruges i processen, flere gange (flere lukkede objektløkker).  
@@ -63,7 +65,7 @@ Forretningsprocesforløb fører dig gennem forskellige faser i salg, marketing e
 <a name="CarSelling365"></a>   
 ## <a name="example-car-selling-process-flow-with-two-branches"></a>Eksempel: procesforløb for bilsalg med to grene
  
-Lad os se nærmere på eksemplet med forretningsprocesforløbet med to forgreninger til salg af nye og brugte biler.  
+Lad os se på eksemplet med forretningsprocesforløbet med to grene for salg af nye og brugte biler.  
   
  Først skal vi oprette en ny proces med navnet **Bilsalgsproces**.  
   
@@ -86,7 +88,7 @@ Lad os se nærmere på eksemplet med forretningsprocesforløbet med to forgrenin
 > [!TIP]
 >  Du kan tilføje en anden betingelse i "Nej"-stien for et eksisterende betingelsesfelt for at oprette mere kompleks forgrening.  
   
- ![Billede af den oprettede Kvalificer-fase](media/example-car-sales-qualify-stage.JPG "Billede, der viser den oprettede kvalificeringsfase")  
+ ![Billede af den oprettede Kvalificer-fase](media/example-car-sales-qualify-stage.JPG "Billede af den oprettede Kvalificer-fase")  
   
  Hvis **Bilpræference** = **Ny**, forgrenes processen til fasen **Salg af ny bil** og springer ellers til fasen **Salg af en brugt bil** i den anden gren, som vist nedenfor.  
   
@@ -118,9 +120,9 @@ Lad os se nærmere på eksemplet med forretningsprocesforløbet med to forgrenin
   
  ![Rutediagram, der viser trin i en undersøgelsesproces i sager om offentliggørelse af oplysninger](media/example-car-sales-flow-chart-investigation-information-disclosure-case.png "Rutediagram, der viser trin i en undersøgelsesproces i sager om offentliggørelse af oplysninger")  
   
- Du skal angive en arbejdsproces for at synkronisere godkend/afvis-beslutningen fra posten Undersøgelse til posten Anmodning.  
+ Du skal angive en arbejdsproces for at synkronisere Godkend/afvis afgørelse fra undersøgelsesposten med anmodningsposten.  
   
 ### <a name="next-steps"></a>Næste trin  
- [Opret et forretningsprocesforløb](create-business-process-flow.md)   
+ [Oprette et forretningsprocesforløb](create-business-process-flow.md)   
  [Oprette brugerdefineret forretningslogik med processer](guide-staff-through-common-tasks-processes.md)   
  

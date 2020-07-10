@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 18719ac34d84298dd813b0241d00b652ae172ef6
-ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
+ms.openlocfilehash: ea1c52933af3c42397004ae62d15e0475e051f14
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "3331077"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498576"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Opret et automatiseret flow ved hjælp af Common Data Service
 
@@ -39,9 +39,9 @@ Med Common Data Service-connectoren kan du oprette flows, der startes ved at opr
 
 Du kan bruge en af følgende udløsere til at starte dit flow:
 
-- Når en post vælges
-- Når en post oprettes
-- Når en post slettes
+- Når en post markeres
+- Når der oprettes en post
+- Når der slettes en post
 - Når en post opdateres
 
 
@@ -60,10 +60,10 @@ Du kan bruge områder til at bestemme, om dit flow kører, hvis du opretter en n
 
 |Scope|Timing af udløser|
 | --- | --- |
-|Afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed|
+|Afdeling|Handling, der udføres på en post, der ejes af din afdeling|
 |Organisation|Handling, der udføres af en hvilken som helst person i organisationen eller databasen|
-|Overordnet: Underordnet afdeling|Handling, der udføres på en post, der ejes af din forretningsenhed eller en underordnet afdeling|
-|Bruger|Handling, der udføres på en post, der ejes af dig|
+|Overordnet: Underafdeling|Handling, der udføres på en post, der ejes af din afdeling eller en underafdeling|
+|User|Handling, der udføres på en post, der ejes af dig|
 
 Udløsere, der kører, når en post opdateres, kan også bruges til filtrering af attributter. Dette sikrer, at flowet kun kører, når nogle af de definerede attributter opdateres.
 
@@ -77,7 +77,7 @@ Dette flow udløses, hver gang fornavnet eller efternavnet på en kontakt, som f
 
 ## <a name="trigger-privileges"></a>Udløserrettigheder
 
-Hvis du vil oprette et flow, der udløses via oprettelse, opdatering eller sletning af en post, skal brugeren have tilladelser på brugerniveau til at oprette, læse, skrive og slette for posten til tilbagekald af registreringen. Derudover skal brugeren, afhængigt af de områder der er defineret, muligvis have mindst samme niveau af læserettigheder for det samme objekt.  [Få mere at vide](https://docs.microsoft.com/power-platform/admin/database-security) om miljøsikkerhed.
+Hvis du vil oprette et flow, der udløses ud fra oprettelse, opdatering eller sletning af en post, skal brugeren have tilladelser på brugerniveau til at oprette, læse, skrive og slette for objektet Registrering af tilbagekald. Derudover skal brugeren, afhængigt af de områder der er defineret, muligvis have mindst samme niveau af læserettigheder for det samme objekt.  [Få mere at vide](https://docs.microsoft.com/power-platform/admin/database-security) om miljøsikkerhed.
 
 ## <a name="write-data-into-common-data-service"></a>Skriv data til Common Data Service
 
@@ -99,20 +99,17 @@ Hvis du vil skrive data til felterne Kunde, Ejer og Angående, skal to felter ud
 
 | Feltkategori | Eksempel på indstillinger |
 | --- | --- |
-| Angående | Angåede = id for posten (f.eks. konto-id) og typen Angående som valgt på listen. |
-| Kunde | Repræsenterer id for posten og typen Kunde som valgt på listen. |
-| Ejer | Repræsenterer id for systembrugeren eller teamet og typen Ejer som valgt på listen. |
+| Angående | Angåede = id for posten (f.eks. konto-id) og Angående-type som valgt på listen. |
+| Kunde | Repræsenterer id for posten og kundetypen som valgt på listen. |
+| Ejer | Repræsenterer id for systembrugeren eller teamet og ejertypen som valgt på listen. |
 
 ### <a name="enable-upsert-behavior"></a>Aktivér upsert-funktionsmåde
 
-Du kan udnytte kommandoen til **opdatering af en post** til at aktivere upsert-handlinger, som opdaterer posten, hvis den allerede findes, eller opretter en ny post. Du aktiverer upsert ved at angive objektet og en GUID-nøgle. Hvis posten med den angivne type og nøgle findes, foretages en opdatering. I modsat fald oprettes en post med den angivne nøgle.
+Du kan udnytte kommandoen til at **opdatere en post** til at aktivere upsert-handlinger, som opdaterer posten, hvis den allerede findes, eller opretter en ny post. Du aktiverer upsert ved at angive objektet og en GUID-nøgle. Hvis posten med den angivne type og nøgle findes, foretages en opdatering. I modsat fald oprettes en post med den angivne nøgle.
 
 ### <a name="trigger-behavior"></a>Funktionsmåde for udløser
 
-Hvis du har en udløser, der er registreret for opdateringen af en post, kører flowet for hver *bindende* opdatering af den givne post. Tjenesten starter dit flow asynkront og med den nyttelast, som indsamles på det tidspunkt, hvor aktiveringen finder sted.
-
-> [!NOTE]
-> Hvis du har to opdateringer, der sker inden for få sekunder efter hinanden, kan flowet derfor blive udløst mere end én gang med det nyeste versionerede indhold.
+Hvis du har en udløser, der er registreret for opdateringen af en post, kører flowet for hver *bindende* opdatering af den givne post. Tjenesten starter dit flow asynkront og med de nyttedata, som indsamles på det tidspunkt, hvor aktiveringen finder sted.
 
 Flowkørsler kan blive forsinkede, hvis der er en ordrebeholdning af systemjob i miljøet.  Hvis denne forsinkelse forekommer, udløses dit flow, når systemjobbet til aktivering af flowet kører.
 

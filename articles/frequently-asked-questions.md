@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 06/18/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: b4a1a3e7abd2a2a98254ed98d4dca63dd771d551
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346579"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498480"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -144,7 +144,7 @@ Power Automate er tilgængelig på 42 sprog og i [seks områder](regions-overvie
 Power Automate er efterfølgeren til SharePoint Designer for mange almindelige virksomhedsscenarier som f.eks. godkendelser, dokumentgennemsyn og onboarding/offboarding. Det vil fremover være standardværktøjet til oprettelse af funktioner til forretningsautomatisering i SharePoint.
 
 ### <a name="how-does-power-automate-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Hvordan sikrer Power Automate, at virksomhedens data ikke ved et uheld frigives til sociale medier?
-Administratorer kan oprette [politikker til forebyggelse af datatab](prevent-data-loss.md) for at sikre, at der kun kan anvendes godkendte tjenester i Power Automate.
+Administratorer kan oprette [politikker til forebyggelse af datatab](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) for at sikre, at der kun kan anvendes godkendte tjenester i Power Automate.
 
 ### <a name="does-power-automate-support-service-accounts"></a>Understøtter Power Automate tjenestekonti?
 

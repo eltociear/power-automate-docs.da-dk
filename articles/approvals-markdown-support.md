@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: gcorvera
-manager: kfile
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/27/2020
+ms.date: 6/27/2020
 ms.author: gcorvera
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fcda9a1098275ddd1e9688c2eec55ac4801aac4e
-ms.sourcegitcommit: 4dfd4013e4e632a91041783df64845651a8935c3
+ms.openlocfilehash: 19a6380ccdf5d1eb09f872bc0294d79876dee04c
+ms.sourcegitcommit: 9bb2e400751338357c66d11cfa7054d65d919fdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442683"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "3517270"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug markdown i Power Automate-godkendelsesanmodninger
 
@@ -194,14 +194,16 @@ Organiser strukturerede data med tabeller.
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Cell B1 | Cell B2 | Cell B3<br>second line of text |  
 ```
 
+
 **Resultat:**  
+
 | Overskrift 1 | Overskrift 2 | Overskrift 3 |  
-|-----------|:---------:|-----------:|  
+|-----------|:-----------:|-----------:|  
 | Celle A1 | Celle A2 | Celle A3 |  
-| Celle B1 | Celle B2 | Celle B3<br/>anden tekstlinje |  
+| Celle B1 | Celle B2 | Celle B3<br>anden tekstlinje |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Fremhævelse (fed, kursiv, gennemstreget)  

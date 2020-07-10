@@ -20,14 +20,14 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9c7ed87d62ff6fc7370d5b57053239c8bfbeb591
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: c3e1676c5846d36427c83af9e5cc64d2e6eebddc
+ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296807"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3517999"
 ---
-# <a name="sharing-and-connectors-admin-analytics-reports"></a>Administrationsanalyserapporter for deling og forbindelser
+# <a name="sharing-and-connectors-admin-analytics-reports"></a>Administrationsanalyserapporter til deling og forbindelser
 
 
 Organisationer har brug for indsigt i, hvordan apps bruges, og hvem der bruger dem. Administrationsrapporterne for deling og forbindelser giver indsigt i, hvordan Power Automate bruges i din lejer. 
@@ -51,7 +51,7 @@ Fra et delingsperspektiv kan du få mere at vide om, hvem dine appbrugere er og 
 1. Vælg **Analyse** på navigationslinjen i venstre side.
 1. Vælg fanen **Forbindelser**, og få vist en liste over de forbindelser, der er i brug i din organisation.
  
-    ![Visning over delte forbindelser](media/admin-analytics-report/connectors-tab.png)
+    ![Visningen af forbindelser](media/admin-analytics-report/connectors-tab.png)
 
 ## <a name="filter-views"></a>Filtervisninger
 
@@ -64,7 +64,7 @@ Resultaterne i disse rapporter er baseret på det valgte miljø. Sådan ændrer 
 1. Vælg det **miljø** og den **tidsperiode**, du er interesseret i at få vist rapporter om.
 1. Vælg knappen **Anvend**.
 
-    ![Skift filtre](media/admin-analytics-report/filters-detail.png)
+    ![Detaljer om filtre](media/admin-analytics-report/filters-detail.png)
 
 ## <a name="learn-more"></a>Få mere at vide
 

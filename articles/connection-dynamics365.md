@@ -5,38 +5,31 @@ services: ''
 suite: flow
 documentationcenter: na
 author: JimDaly
-manager: kvivek
-editor: ''
-tags: ''
+ms.reviewer: deonhe
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2020
-ms.author: matp
+ms.author: jdaly
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 59eb50914015ffa76607b377963b616cbcc00ded
-ms.sourcegitcommit: b77b16f15bceedc9caa948676bcd641bf0bcaf2c
+ms.openlocfilehash: 9f0866b7d1efaa35b7c37324731ff47e797488ed
+ms.sourcegitcommit: aa540779cac1171038c69ca419e8fd1702fc8eb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413419"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455786"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Opret et flow ved hjælp af Dynamics 365 (online)
 
 > [!IMPORTANT]
-> Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing og Dynamics 365 Project Service Automation) bruger [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) som datakilde.
+> Dynamics 365-apps, f.eks. Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing og Dynamics 365 Project Service Automation, bruger [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) som datakilde.
 >
-> [Dynamics 365 Connector](/connectors/dynamicscrmonline/) er frarådet, men fortsætter med at fungere, indtil den er fjernet.
-> Du kan finde flere oplysninger under [Dynamics 365 Connector er frarådet](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
+> [Dynamics 365 Connector](/connectors/dynamicscrmonline/) er frarådet, men fortsætter med at fungere, indtil den er fjernet. Flere oplysninger: [Dynamics 365 Connector er udfaset](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Brug ikke Dynamics 365 Connector til nye flows. Brug [Common Data Service-connectoren (aktuelt miljø)](/connectors/commondataserviceforapps/), når du kan.
-> Hvis du Common Data Service-connectoren (aktuelt miljø) ikke opfylder dit behov, skal du bruge [Common Data Service-connectoren](/connectors/commondataservice/).
+> Brug ikke Dynamics 365 Connector til nye flows. Brug [Common Data Service-connectoren (aktuelt miljø)](/connectors/commondataserviceforapps/), når du kan. Hvis du Common Data Service-connectoren (aktuelt miljø) ikke opfylder dit behov, skal du bruge [Common Data Service-connectoren](/connectors/commondataservice/).
 >
 > [Common Data Service-connectoren (aktuelt miljø)](/connectors/commondataserviceforapps/) skal være dit førstevalg, da den giver den største kapacitet og bedste ydeevne. Den indeholder dog ikke i øjeblikket visse funktioner, som Dynamics 365 og Common Data Service-connectorer gør, f.eks. muligheden for at oprette forbindelse til flere miljøer. [Common Data Service-connectoren](/connectors/commondataservice/) har samme egenskaber som Dynamics 365 Connector, men giver også større pålidelighed.
 

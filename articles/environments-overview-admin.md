@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: e1c2a93fb011b6f20ecaf79fb0bf95212a2506d4
-ms.sourcegitcommit: 2c9cffb59ef2382648a80966ebbf0fe8eafebe64
+ms.openlocfilehash: 20483e27364ab113ed669db2ae9f63336afe0d3f
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "3354431"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498528"
 ---
 # <a name="using-environments-within-power-automate"></a>Brug af miljøer i Power Automate
 
@@ -40,7 +40,7 @@ Miljøer giver følgende fordele:
 
     > [!IMPORTANT]
     > Hvis du sletter miljøet, slettes alle flow i dette miljø også. Dette gælder for alle elementer, du opretter i det pågældende miljø, herunder forbindelser, gateways, Power Apps og meget mere.
-* **Forebyggelse af datatab:** Som administrator ønsker du ikke flows, der modtager data fra en intern placering (f.eks *OneDrive for Business* eller en SharePoint-liste, der indeholder lønoplysninger) og derefter slår dataene op offentligt (f.eks. på *Twitter*). Brug forebyggelse af datatab til at styre, hvilke tjenester der kan dele data i din Power Automate-udrulning.
+* **Forebyggelse af datatab:** Som administrator ønsker du ikke flows, der modtager data fra en intern placering (f.eks *OneDrive for Business* eller en SharePoint-liste, der indeholder lønoplysninger) og derefter slår dataene op offentligt (f.eks. på *Twitter*). Brug [forebyggelse af datatab](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) til at styre, hvilke tjenester der kan dele data i din Power Automate-udrulning.
 
     Du kan f.eks. føje tjenesterne *SharePoint* og *OneDrive for Business* til en politik, der kun tillader virksomhedsdata. Alle flows, der er oprettet i dette miljø, kan bruge tjenesterne *SharePoint* og *OneDrive for Business*. De kan dog ikke dele data med andre tjenester, som ikke er inkluderet i politikken, der kun tillader firmadata.
 

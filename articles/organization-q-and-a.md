@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: erikre
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/05/2016
+ms.date: 06/18/2020
 ms.author: stepsic
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: fbadbf62760544410cf8fee74f4cecb43cbdefd5
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: 3e1cf3f96d992036883c4fb0e86553aa9cfa7e1d
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340089"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498456"
 ---
 # <a name="power-automate-in-your-organization-qa"></a>Spørgsmål og svar om Power Automate i din organisation
 
@@ -57,7 +57,7 @@ Power Automate er en fuldt offentlig cloudtjeneste, og alle mennesker i verden k
 
 Men hvis en person tilmelder sig Power Automate, og du vælger ikke at understøtter dem i din organisation, kan de på ingen måde påføre virksomheden omkostninger. Når en person tilmelder sig Power Automate, er relationen mellem denne person og Microsoft, som det er tilfældet med mange andre cloudtjenester fra Microsoft, f.eks. Bing, OneDrive eller Outlook.com. En persons brug af Power Automate indebærer på ingen måde, at tjenesten leveres af din organisation.
 
-Endelig, hvis din virksomhed ønsker at begrænse brugen af organisationsdata, der kun findes i Power Automate, er det muligt via DLP-politikker (forhindring af datatab).
+Hvis din virksomhed ønsker at begrænse brugen af data, der kun vedrører organisationen, i Power Automate, er dette muligt via [Politikker til forebyggelse af datatab (DLP)](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention).
 
 ### <a name="how-can-people-gain-access-to-the-paid-features-of-power-automate"></a>Hvordan kan personer få adgang til de betalte funktioner i Power Automate?
 Enkeltpersoner kan få adgang til de betalte funktioner i Power Automate på tre forskellige måder:
