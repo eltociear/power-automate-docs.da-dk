@@ -94,6 +94,32 @@
       href: approvals-markdown-support.md
     - name: Indstillinger for brugerdefineret godkendelsessvar
       href: create-approval-response-options.md
+- name: Microsoft Teams-flows
+  items:
+    - name: Udløser et flow fra en Teams-meddelelse
+      href: trigger-flow-teams-message.md
+    - name: Brug tilpassede kort i modelflow
+      items:
+        - name: Oversigt over tilpassede kort til Teams
+          href: overview-adaptive-cards.md
+        - name: Opret tilpassede kort til Teams
+          href: create-adaptive-cards.md
+        - name: Eksempel – feedback fra kandidat
+          href: candidate-feedback-sample.md
+        - name: Eksempel – billeddeling
+          href: image-share-sample.md
+        - name: Eksempel – indsamling af kundeemner
+          href: lead-collection-sample.md
+        - name: Eksempel – afstemningsgenerator
+          href: poll-generator-sample.md
+        - name: Eksempel – metadataopdatering
+          href: metadata-update-sample.md
+        - name: Eksempel – daglig vejrudsigt
+          href: daily-weather-sample.md
+        - name: Eksempel – akronymformular
+          href: acronym-sample.md
+        - name: Eksempel – generering af kundeemner
+          href: lead-collection-sample.md
 - name: Forretningsprocesforløb
   items:
     - name: Oversigt over forretningsprocesforløb
@@ -141,6 +167,8 @@
       href: overview-solution-flows.md
     - name: Opret et flow i en løsning
       href: create-flow-solution.md
+    - name: Opret underordnede flows
+      href: create-child-flows.md
     - name: Eksportér løsning
       href: export-flow-solution.md
     - name: Importér løsning
@@ -201,33 +229,11 @@
       href: visio-flows.md
     - name: 'Reference: Brug funktioner i udtryk'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
-    - name: Brug tilpassede kort i modelflow
-      items:
-        - name: Oversigt over tilpassede kort til Teams
-          href: overview-adaptive-cards.md
-        - name: Opret tilpassede kort til Teams
-          href: create-adaptive-cards.md
-        - name: Eksempel – feedback fra kandidat
-          href: candidate-feedback-sample.md
-        - name: Eksempel – billeddeling
-          href: image-share-sample.md
-        - name: Eksempel – indsamling af kundeemner
-          href: lead-collection-sample.md
-        - name: Eksempel – afstemningsgenerator
-          href: poll-generator-sample.md
-        - name: Eksempel – metadataopdatering
-          href: metadata-update-sample.md
-        - name: Eksempel – daglig vejrudsigt
-          href: daily-weather-sample.md
-        - name: Eksempel – akronymformular
-          href: acronym-sample.md
-        - name: Eksempel – generering af kundeemner
-          href: lead-collection-sample.md
     - name: Administrer flows på en telefon
       href: mobile-manage-flows.md
     - name: Publicering af en skabelon
       href: publish-a-template.md
-- name: Fejlfinding
+- name: Lokaliser fejl
   items:
     - name: Se et flow
       href: see-a-flow-run.md
