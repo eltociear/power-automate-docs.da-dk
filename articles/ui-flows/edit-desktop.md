@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2020
+ms.date: 07/31/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6122ba249b9e64ff175f8a13b620c70195cfc0e5
-ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
+ms.openlocfilehash: 1562f79c51e23f6623495a86de0ccda03617fcd1
+ms.sourcegitcommit: e5ce6548c5aec34cd27e5f580dc7a02de270eae8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527340"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "3648554"
 ---
 # <a name="edit-desktop-ui-flows"></a>Redigere flow for brugergrænsefladen på skrivebordet
 
@@ -47,7 +47,7 @@ Du kan redigere din optagelse for at gøre følgende:
 
 Avancerede parametre giver dig mulighed for at ændre følgende:
 
--  Forsinkelsen, efter handlingen blev udført. Du kan f.eks. tilføje en forsinkelse på ét sekund ved at ændre PT0S til PT1S. Dette kan være nyttigt, når destinationsprogrammet har en langsom svartid, der ikke fuldføres før næste trin i dit flow for brugergrænsefladen.
+-  Forsinkelsen, efter handlingen blev udført. Du kan f.eks. tilføje en forsinkelse på ét sekund ved at ændre PT0S til PT1S. Dette kan være nyttigt, når destinationsprogrammet har en langsom svartid, der ikke fuldføres før næste trin i dit flow for brugergrænsefladen. Du kan også [tilføje forsinkede handlinger](edit-desktop.md#add-a-delay) direkte, så de f.eks. kan bruges i løkker.
 -   [Vælgeren](edit-desktop.md#set-the-selector) for elementet i brugergrænsefladen for målbrugeren.
 
 
@@ -89,6 +89,41 @@ Det kan være en god idé at optage dit flow for brugergrænsefladen i flere ses
 
 1. Udfør trinnene i brugergrænsefladen for den app, du er ved at optage, og vælg derefter **Udført** i optagerkontrolelementet.
 1. Vælg **Gem**, og test derefter dit flow for brugergrænsefladen.
+
+## <a name="add-a-variable"></a>Tilføje en variabel
+
+Du kan bruge variabler til at udføre flere handlinger i dine flows for brugergrænsefladen. Du kan f.eks. bruge en variabel til at tælle, hvor mange gange en handling blev udført i en løkke. Du kan også bruge en variabel til at oprette en strengmatrix, hvor skærmaflæsningerne udføres i en løkke.
+
+>[!TIP]
+>Du kan bruge variabeldatatyperne heltal, flydende, boolesk, streng, matrix og objekt. 
+
+Når du har oprettet en variabel, kan du f.eks. udføre andre opgaver:
+
+- Du kan øge eller mindske variablen med en konstant værdi, der også kaldes forøgelse og formindskelse.
+- Indsæt eller tilføj variabelværdien som det sidste element i en streng eller matrix.
+- Tildel en anden værdi til en variabel.
+
+Benyt følgende fremgangsmåde for at oprette og bruge variabler i et flow for brugergrænsefladen:
+
+1. Gå til starten af flowet for brugergrænsefladen, og vælg **Tilføj en handling**.
+
+   ![Vælge Tilføj en handling](../media/edit-desktop/add-variable-add-action.png "Vælge Tilføj en handling")
+
+1. Søg efter ordet *variabel*, og vælg derefter handlingen **Initialiser variabel** under den indbyggede kategori.
+
+   ![Vælge handlingen for initialisering af variabel](../media/edit-desktop/add-variable-initialize-variable.png "Vælge handlingen for initialisering af variabel")
+
+1. Initialiser den variabel, der opfylder dine behov.
+
+   ![Initialisere den variabel, der opfylder dine behov](../media/edit-desktop/add-variable-initialize-value.png "Initialisere den variabel, der opfylder dine behov")
+
+>[!TIP]
+>Hvis dit scenarie for automatisering af brugergrænsefladen indebærer, at du læser værdier fra en skærm i en løkke. Det er muligt ved at initialisere variablen som en matrixtype. 
+>
+>Derefter skal du vælge variabelhandlingen **Tilføj til matrix** og derefter bruge outputtet fra handlingen **Hent tekst** fra listen med dynamisk indhold.
+
+   ![Du kan føje til en matrix i en løkke](../media/edit-desktop/add-variable-add-loop.png "Du kan føje til en matrix i en løkke")
+
 
 ## <a name="add-a-loop"></a>Tilføj en løkke
 
@@ -149,6 +184,34 @@ Her er trinene til at oprette en løkke i et flow for brugergrænseflade:
 1.  Output-handlinger understøttes ikke i øjeblikket.
 1.  I forbindelse med komplekse matrix-objekter, der skal overføres fra et flow, f. eks. en SharePoint-liste, skal du angive et eksempel på data for det pågældende objekt. Du kan hente dataene ved at køre flowet uden trinnet med flow til brugergrænseflade og derefter kopiere outputtet til midten af tekstfeltet (Tilføj eksempeldata), når du definerer matrixen.
 1.  Du skal bruge udtryk til komplekse matrix-objekttyper. Du kan f. eks. bruge **udtrykselementerne ('gælder for hvert') ['<value>']**, hvor <value> er navnet på det specifikke objekt i inputmatrixen.
+
+## <a name="add-a-delay"></a>Tilføje en forsinkelse
+
+Du kan tilføje forsinkelse i flows for brugergrænsefladen for bedre at kunne styre kørslen af flowet for brugergrænsefladen.
+
+Benyt denne fremgangsmåde for at føje en forsinkelse til et flow for brugergrænsefladen, som du har optaget.
+
+1. Hold markøren over pilen på det ønskede sted, og vælg **Indsæt et nyt trin**. Du kan også vælge **Tilføj en handling** direkte for at tilføje den i slutningen af området eller flowet for brugergrænsefladen. 
+
+   ![Indsætte et forsinkelsestrin](../media/edit-desktop/insert-new-step-delay.png)
+
+1. Vælg **Tilføj en handling**.
+
+   ![Tilføje handlingen for forsinkelse](../media/edit-desktop/add-delay-action.png)
+
+1. Vælg **Indbygget**, og søg efter "forsinkelse". 
+   Du kan også vælge **Planlæg** > **Forsinkelse**.
+
+   ![Søge efter handlingen for forsinkelse](../media/edit-desktop/search-delay.png)
+
+1. Indtast **antallet**, f.eks. "2", der repræsenterer nummeret på **enheden**.
+1. Vælg **Enhed**, f.eks. **minutter**, for at angive varigheden af forsinkelsen.
+
+   Følgende billede viser en forsinkelse på to minutter. 
+
+   ![Definere forsinkelsen](../media/edit-desktop/delay-details.png)
+
+   Forsinkelseshandlingen føjes til flowet for brugergrænsefladen. Når flowet kører, vil der være en forsinkelse, sådan som du har defineret den, før den næste handling køres.
 
 
 ## <a name="add-a-retry-policy"></a>Tilføj en prøv igen-politik
@@ -290,15 +353,14 @@ Du kan udføre disse avancerede handlinger ved at udføre følgende trin i et ek
 Billedgenkendelse i flow for brugergrænseflade er en prøveversionsfunktion, der i øjeblikket er tilgængelig, når en fjerncomputer optages via appen Forbindelse til fjernskrivebord (RDC).
  
 
-### <a name="what-is-image-recognition"></a>Hvad er billedgenkendelse?
+## <a name="what-is-image-recognition"></a>Hvad er billedgenkendelse?
 
 I øjeblikket optages flow for brugergrænsefladen på skrivebordet primært ved hjælp af API'er for tilgængelighed (UI Automation og WinAppDriver) til registrering af kontrolelementerne i Microsoft Windows-brugergrænsefladetræet. Træet er undertiden ikke tilgængeligt, f.eks. med webbaserede eller Java-apps. Træet kan muligvis være upålideligt, f.eks. når id'erne for et kontrolobjekt ændres ofte eller mellem sessioner. 
 
-Med billedgenkendelse kan du klikke på placeringer og andre detaljer, der afstemmes visuelt under afspilningen, hvilket er en stor udvidelse af det antal programmer, der kan automatiseres. 
+Med billedgenkendelse kan du klikke på placeringer og andre detaljer, der afstemmes visuelt under afspilningen, hvilket er en stor udvidelse af det antal programmer, der kan automatiseres.
 
-### <a name="use-image-recognition-to-record-a-remote-computer"></a>Bruge billedgenkendelse til at registrere en fjerncomputer
+## <a name="use-image-recognition-to-record-a-remote-computer"></a>Bruge billedgenkendelse til at registrere en fjerncomputer
 
- 
 1. Gå til fanen Input i et nyt eller eksisterende flow for brugergrænseflade, og opret to nye **følsomme tekst**-input, ét til brugernavnet og ét til den adgangskode, der bruges til at logge på fjernenheden. Følsomme tekstinput giver dig mulighed for at overføre værdierne dynamisk, når du tester eller kalder flow for brugergrænseflade fra et andet flow, uden at de gemmes eller logges af selve flowet for brugergrænsefladen.
 
    ![Følsom tekst ](../media/create-remote-desktop/ir-sensitive-text.png)
@@ -327,7 +389,59 @@ Med billedgenkendelse kan du klikke på placeringer og andre detaljer, der afste
 >[!TIP]
 > Aktivér **Sikre input** i menuen **Indstillinger** for **Kør et flow for brugergrænsefladen på skrivebordet**-handlingen i det flow, der kalder flow for brugergrænseflade. Derved sikres, at input ikke gemmes i historik over kørsel.
 
-### <a name="use-the-extract-text-from-image-action-while-recording-to-retrieve-an-output-from-a-remote-computer"></a>Brug handlingen Udtræk tekst fra billede under optagelse for at hente et output fra en fjerncomputer.
+## <a name="use-image-recognition-to-record-on-citrix"></a>Brug billedgenkendelse til at optage på Citrix
+
+Der findes to indstillinger for optagelse på Citrix med flows for brugergrænsefladen.
+
+### <a name="option-1-record-a-citrix-application-or-desktop-already-open-on-your-machine"></a>Mulighed 1: Optag en Citrix-applikation eller -skrivebord, som allerede er åbent på computeren
+
+1.  Følg trinnene i [Tilføje en optagelse](#add-a-recording) for at starte optagerkontrolelementet for et nyt eller eksisterende flow for brugergrænseflade.
+1.  Brug Citrix-appen eller fjernskrivebordet til at oprette forbindelse til fjerncomputeren.
+
+   ![Visning af Citrix-appen](../media/edit-desktop/citrix-app-remote.png)
+
+1.  Hvis du bruger Citrix-fjernskrivebordet, skal du udvide vinduet til fuld skærm.
+1.  Vælg **Optag** fra optagerens kontrolelement, og vælg derefter **Forstået** i den viste advarsel.
+1.  Udfør trinnene på Citrix, og vælg derefter **Udført** i optagerens kontrolelement.
+
+>[!TIP]
+>Flows for brugergrænsefladen kan optage flere Citrix-apps i samme session. Åbn alle applikationer, før du starter optagelsen, hvis du ikke har optaget starten af dit Citrix-arbejdsområde.
+
+### <a name="option-2-record-the-launch-of-your-citrix-application--desktop-from-your-citrix-workspace"></a>Mulighed 2: Optag starten af Citrix-applikationen eller -skrivebordet fra Citrix-arbejdsområdet
+
+1.  Følg trinnene i [Tilføje en optagelse](#add-a-recording) for at starte optagerkontrolelementet for et nyt eller eksisterende flow for brugergrænseflade.
+1.  Åbn Citrix-arbejdsområdet fra proceslinjen.
+1.  Angiv din adgangskode, og vælg derefter **Log på**.
+  
+    >[!TIP]
+    >Hvis du ikke vil vælge **Husk adgangskode**, skal du bruge input af typen **Tekst med forskel på store og små bogstaver**.
+
+    ![Angive adgangskoden for Citrix-appen](../media/edit-desktop/citrix-app-password.png)
+
+1. Vælg den app eller det skrivebord, du vil optage.
+
+   ![Viser en liste over apps, du kan vælge at optage](../media/edit-desktop/citrix-select-app-record.png)
+
+1.  Udfør trinnene på Citrix, og vælg derefter **Udført** i optagerens kontrolelement.
+
+   >[!IMPORTANT]
+   >Hvis du har indspillet logon-trinnet, vises der tre Citrix-applikationer i designeren. Det er forventelig, da vinduet for logon er en anden applikation fra Citrix-arbejdsområdet.
+
+   >[!TIP]
+   >Kontrollér, at dit Citrix-arbejdsområde er lukket, inden du afspiller flowet for brugergrænsefladen, i testtilstand og automatiseret tilstand. Højreklik på Citrix-ikonet i meddelelseslinjen, og vælg **Afslut** for at lukke arbejdsområdet.
+
+
+#### <a name="troubleshooting"></a>Fejlfinding
+
+Hvis du har problemer med tekst med forskel på store og små bogstaver i vinduet for logon:
+1. Åbn inputmenuen fra optageren.
+1. Vælg feltet for adgangskoden.
+1. Vælg din tekst med forskel på store og små bogaver (i dette eksempel "adgangskode") i inputmenuen.
+
+   ![Bruge tekst med forskel på store og små bogstaver til adgangskoden](../media/edit-desktop/citrix-app-sensitive-text.png)
+
+
+## <a name="use-ocr-to-extract-text-from-images"></a>Brug OCR til at udtrække tekst fra billeder
 
 1. Når du optager dine trin, skal du navigere til placeringen af den tekst, du vil indlæse.
 

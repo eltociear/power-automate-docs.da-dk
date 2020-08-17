@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 2c2b9a29988a3b8f4fd25f5490d5f009c1b52ff3
-ms.sourcegitcommit: 368e3749f64f80cd9b45c35eccba6a2e3685ae44
+ms.openlocfilehash: 85a480599c908dfddc17d2d3f78a0570efa3b5aa
+ms.sourcegitcommit: 13dec60229deeac4233c66e625a3d0cf33dfbc43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "3516652"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3644202"
 ---
 # <a name="power-automate-for-enterprise-developers-isvs-and-partners"></a>Power Automate til virksomhedsudviklere, ISV'er og partnere
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -77,7 +77,7 @@ Når du har fået en connector, skal du udgive skabeloner, der viser, hvordan di
 
 ### <a name="5-deployment"></a>5. Implementering
 
-Hvis du vil give slutbrugerne adgang til flows, de kan bruge automatisk, skal du udrulle disse flows i brugerens Azure AD-lejer. Brug en udviklingspakke, som du udruller vha. vores REST API'er eller PowerShell. [Få mere at vide](https://docs.microsoft.com/powerapps/export-import-packages)
+Hvis du vil give slutbrugerne adgang til flows, de kan bruge automatisk, skal du udrulle disse flows i brugerens Azure AD-lejer. Brug en udviklingspakke, som du udruller vha. vores REST API'er eller PowerShell. [Få mere at vide]( https://docs.microsoft.com/powerapps/administrator/export-import-packages)
 
 ### <a name="6-licensing"></a>6. Licensering
 

@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 3e1cf3f96d992036883c4fb0e86553aa9cfa7e1d
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: b2861423c73ca27a8e677fcb6a1ee4cf6023feb2
+ms.sourcegitcommit: 942f597678c9b351cef05aef4ab6df6cd5845e1e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498456"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637862"
 ---
 # <a name="power-automate-in-your-organization-qa"></a>Spørgsmål og svar om Power Automate i din organisation
 
@@ -46,13 +46,13 @@ Alle kan tilmelde sig ved at gå til [flow.microsoft.com](https://flow.microsoft
 
 Når en bruger i organisationen tilmelder sig Power Automate med Mulighed 2, får den pågældende bruger automatisk tildelt en gratis Power Automate-licens.
 
-Du finder flere oplysninger under [Tilmeld dig Flow](sign-up-sign-in.md).
+[Tilmelding til Power Automate](sign-up-sign-in.md) omfatter flere oplysninger.
 
 ### <a name="what-is-the-power-automate-free-plan"></a>Hvad er Power Automate Free Plan?
 
 Power Automate Free Plan er kun inkluderet til sporingsformål. Aktivering eller deaktivering af planen har ingen effekt på en brugers mulighed for at oprette flow. Hvis du deaktiverer Power Automate Free Plan, aktiveres den igen, når en bruger logger på. Det er den forventede funktionsmåde.
 
-### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Kan jeg blokere for en anden persons tilmelding til Flow?
+### <a name="can-i-block-another-person-from-signing-up-for-power-automate"></a>Kan jeg blokere for en anden persons tilmelding til Power Automate?
 Power Automate er en fuldt offentlig cloudtjeneste, og alle mennesker i verden kan tilmelde sig og bruge Flow til at automatisere deres daglige opgaver. Hvis du vil bruge Power Automate, er der er intet krav om, at brugerne har eller bruger en Office 365-konto. Derfor findes der ingen mekanisme, der på nuværende tidspunkt giver dig mulighed for at forhindre en person i at bruge Power Automate (da det er muligt for alle mennesker i verden, uanset deres mailadresse).
 
 Men hvis en person tilmelder sig Power Automate, og du vælger ikke at understøtter dem i din organisation, kan de på ingen måde påføre virksomheden omkostninger. Når en person tilmelder sig Power Automate, er relationen mellem denne person og Microsoft, som det er tilfældet med mange andre cloudtjenester fra Microsoft, f.eks. Bing, OneDrive eller Outlook.com. En persons brug af Power Automate indebærer på ingen måde, at tjenesten leveres af din organisation.
@@ -66,12 +66,13 @@ Enkeltpersoner kan få adgang til de betalte funktioner i Power Automate på tre
 2. Du kan tildele dem en Power Automate-licens i Office 365-admin-portalen.
 3. Brugeren har fået tildelt Office 365- og Dynamics 365-planer, der omfatter adgang til Power Automate. Se [siden med Power Automate-priser](https://flow.microsoft.com/pricing/) med en liste over Office 365 og Dynamics 365-planer, der indeholder Power Automate-funktioner.
 
-### <a name="can-i-block-another-person-from-using-the-paid-features-of-flow"></a>Kan jeg blokere for, at en anden person bruger de betalte funktioner i Flow?
+### <a name="can-i-block-another-person-from-using-the-paid-features-of-power-automate"></a>Kan jeg blokere for, at en anden person bruger de betalte funktioner i Power Automate?
 Alle enkeltpersoner kan afprøve de betalte funktioner i Power Automate i 90 dage, og der påløber ingen omkostninger. Men du kan fuldt ud styre tildelingen af de licenser, der betales permanent, inden for virksomheden via Office 365-administrationsportalen.
 
 Som med de gratis tilbud gælder det, at hvis en enkeltperson vælger at tilmelde sig prøveversionen, er det et direkte forhold mellem enkeltpersonen og Microsoft, der ikke nødvendigvis er godkendt af din virksomhed.
 
-## <a name="administration-of-flow"></a>Administration af Flow
+## <a name="administration-of-power-automate"></a>Administration af Power Automate
+
 ### <a name="why-has-the-power-automate-icon-appeared-in-the-office-365-app-launcher"></a>Hvorfor er Power Automate-ikonet vist i Office 365-programstarteren?
 Som annonceret i august er Power Automate nu en grundlæggende del af Office 365-pakken. Tre måneder efter denne annoncering blev Power Automate aktiveret som en tjeneste som en del af alle eksisterende Office 365-SKU'er. Da brugere overalt i verden nu kan bruge Power Automate, vises programmet til dem i appstarteren.
 
@@ -126,7 +127,7 @@ Du kan selv vælge at tildele yderligere licenser til brugere via Office 365-adm
 ### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Er dette gratis? Skal jeg betale for disse licenser?
 Ingen bruger kan påføre din organisation omkostninger uden dit udtrykkelige samtykke, så hverken gratis licenser eller prøvelicenser kan medføre, at din organisation debiteres for gebyrer. Desuden kan de heller ikke bruge kvoter, f.eks. kørselskvoter.
 
-### <a name="i-removed-the-power-automate-free-license-and-users-can-still-access-flow"></a>Jeg fjernede den gratis Power Automate-licens, og brugerne har stadig adgang til Flow?
+### <a name="i-removed-the-power-automate-free-license-and-users-can-still-access-it"></a>Jeg fjernede Power Automate Free-licensen, og brugerne har stadig adgang til den.
 Den gratis Power Automate-licens er kun inkluderet til sporingsformål. Som beskrevet i første afsnit, er det ikke muligt at forhindre, at en anden person bruger Power Automate til individuelle formål. Derfor tildeler eller fjerner tilstedeværelsen af en gratis Power Automate-licens ikke nogen funktioner.
 
 ### <a name="why-cant-i-see-all-power-automate-licenses-in-the-office-365-admin-portal"></a>Hvorfor vises alle Power Automate-licenser ikke på Office 365-administrationsportalen?

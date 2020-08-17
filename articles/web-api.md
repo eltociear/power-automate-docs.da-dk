@@ -3,19 +3,19 @@ title: Flows gemmes nu i Common Data Service og bruger den omfattende web-API
 description: Flows gemmes nu i Common Data Service og bruger den omfattende web-API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 04/28/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: f08ea5ff19acb0f9fd30de06001fd19c00eb85ed
+ms.sourcegitcommit: da9a930a8cf0abd30c83c51f100a039d514ec436
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340113"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3655827"
 ---
 # <a name="power-automate-web-api"></a>Web API til Power Automate
 
@@ -28,29 +28,22 @@ Dette indhold dækker administrationen af flows, som er inkluderet på fanen **L
 
 Du skal starte med at skabe URL-adressen for at komme i gang med at oprette anmodninger. Formatet af den grundlæggende URL-adresse til web-API'en til Power Automate er: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. De to parametre er:
 
-- **Organisations-id** er et entydigt navn på det miljø, der gemmer dine flows. Du kan se organisations-id'et i miljøskifteren øverst til højre i Power Automate. Bemærk, at **Organisations-id** er forskelligt fra **Miljø-id** (som er det GUID, der vises i flowets URL-adresse).
+- **Organisations-id** er et entydigt navn på det miljø, der gemmer dine flows. 
 
-     ![Miljøomskifter](media/web-api/get-organization-id.png "Miljøomskifter")
+- **Underdomæne for område** afhænger af placeringen af dit miljø.
 
-- **Underdomæne for område** afhænger af placeringen af dit miljø. Når du logger på Power Automate, kan du se området for dit miljø i websidens URL-adresse. Brug dette områdenavn til at finde det respektive underdomæne i følgende tabel:
+Sådan hentes disse to parametre:
+1. Gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com/).
+2. Vælg det miljø, du bruger til at bygge flows.
 
-     ![URL-adresse for flow](media/web-api/get-region-name.png "URL-adresse for flow")
+ ![URL-adresse for flow](media/web-api/power-platform-admin-center.png "URL-adresse for flow")
 
-     | Område         | Underdomæne   |
-     | -------------- | ----------- |
-     | USA  | crm         |
-     | Sydamerika  | crm2        |
-     | Canada         | crm3        |
-     | Europa         | crm4        |
-     | Asien og Stillehavsområdet   | crm5        |
-     | Australien      | crm6        |
-     | Japan          | crm7        |
-     | Indien          | crm8        |
-     |  US Government  | crm9        |
-     | Storbritannien | crm11       |
-     |De Forenede Arabiske Emirater |   crm15|
+3. Kopier organisationens id og områdets underdomæne fra miljøets URL-adresse.
 
-Du kan også hente listen over forekomster, der er tilgængelige for dig, programmatisk via metoden [Hent forekomster](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) i API'et til Online Management.
+ ![URL-adresse for flow](media/web-api/power-platform-admin-center-environment-URL.png "URL-adresse for flow")
+
+
+Du kan også oprette et program for at hente listen over de forekomster, der er tilgængelige for dig, via metoden [Hent forekomster](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) i API'en til onlineadministration.
 
 Hver anmodning til web-API'et skal have headerne `Accept` og `Content-type` angivet til `application/json`.
 

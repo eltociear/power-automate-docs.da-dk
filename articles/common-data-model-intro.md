@@ -6,8 +6,6 @@ suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -20,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f64377d57e72612feaf80c811cecc7151d4f90c8
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 25f719a3a8018a084f059125372a229c00f15190
+ms.sourcegitcommit: 89fca599830de21709b47087302a030d91e5fe29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498600"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3549746"
 ---
 # <a name="create-a-flow-that-uses-common-data-service"></a>Opret et flow, der bruger Common Data Service
 

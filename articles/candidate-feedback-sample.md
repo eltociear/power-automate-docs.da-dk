@@ -20,20 +20,20 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d0157c4e0d392dd8493e5aeca4e97531c95213d
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 8d2cbaa54d4256484bf8d17693e30aec85f2a4df
+ms.sourcegitcommit: 89fca599830de21709b47087302a030d91e5fe29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297269"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3549722"
 ---
 # <a name="candidate-feedback-sample"></a>Eksempel på kandidatfeedback
 
-Eksemplet med en **formular til kandidatfeedback** er en inputformular i et adaptivt kort, der er designet til at indsamle feedback under et samtaleloop. Vi anbefaler, at du bruger den sammen med en knap for et delt øjeblikkeligt flow for at gøre det muligt for alle i teamet at give feedback til kandidater i løbet af et samtaleloop. Du kan udvide funktionaliteten ved at registrere svar i en database eller andre ønskede datakilder for at understøtte disse ekstra muligheder:
+Eksemplet med en **formular til kandidatfeedback** er en inputformular i et adaptivt kort, der er designet til at indsamle feedback under et samtaleloop. Vi anbefaler, at du bruger den sammen med en knap for et delt øjeblikkeligt flow for at gøre det muligt for alle i teamet at give feedback omteam kandidater i løbet af et samtaleloop. Du kan udvide funktionen ved at registrere svar i en database eller andre ønskede datakilder for at understøtte disse ekstra muligheder:
 
--   Gøre det lettere at gennemgå forslag til opfølgning før den næste session med kandidaten.
--   Gøre det lettere at gennemgå aggregerede data, når alle svar er registreret.
--   Informere den personaleansvarlige om antallet, der stemmer for/imod en ansættelse, når processen er afsluttet
+-   Gør det lettere at gennemgå forslag til opfølgning inden næste session med kandidaten.
+-   Gør det lettere at gennemgå aggregerede data, når alle svar er registreret.
+-   Underrette den personaleansvarlige om stemmer for/imod en ansættelse, når processen er afsluttet
 
      ![Formular til kandidatfeedback](media/adaptive-cards/candidate-form.png)
 
@@ -41,10 +41,10 @@ Eksemplet med en **formular til kandidatfeedback** er en inputformular i et adap
 
 | Navn på dynamisk token | Pladsholdertekst | Noter:              |
 |--------------------|------------------|---------------------|
-| {acFullName}       | {acFullName}     | Vist tekst        |
-| {acComments}       | {acComments}     | Vist tekst        |
-| {acDecision}       |                  | Svar**output** |
-| {acFollowUp}       |                  | Svar**output** |
+| {acFullName}       | {acFullName}     | Vis tekst        |
+| {acComments}       | {acComments}     | Vis tekst        |
+| {acDecision}       |                  | **Output** for svar |
+| {acFollowUp}       |                  | **Output** for svar |
 
 ``` json
 {
@@ -55,7 +55,8 @@ Eksemplet med en **formular til kandidatfeedback** er en inputformular i et adap
     {
       "type": "TextBlock",
       "size": "Medium",
-      "weight": "Bolder",      "id": "Title",
+      "weight": "Bolder",
+      "id": "Title",
       "text": "CANDIDATE FEEDBACK FORM",
       "horizontalAlignment": "Left"
     },

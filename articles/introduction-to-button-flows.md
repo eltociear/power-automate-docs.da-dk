@@ -20,20 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b16e07cf5d6f4cc5a711646b30b7b0780916d281
-ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
+ms.openlocfilehash: 81ae2f466fc2bdfa688b35544971871de2e45450
+ms.sourcegitcommit: 3fbffb299dd125a6a9a39fb2c1296abdfc362ba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527311"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3623711"
 ---
 # <a name="introducing-instant-flows"></a>Introduktion til øjeblikkeligt flow
 
-## <a name="what-are-instant-flows"></a>Hvad er øjeblikkeligt flow?
-Der er mange gentagne opgaver, som vi ønsker, vi kan køre med blot et enkelt tryk på en knap. Du har f.eks. brug for hurtigt at sende en mail til teamet for at minde dem om at deltage i den daglige teamsynkronisering, eller du vil starte et nyt Visual Studio Online-build af din kodebase, når du har fået besked om, at der ikke er planlagt flere indtjekninger i løbet af dagen. Med øjeblikkeligt flow kan du udføre disse og mange andre typer opgaver ved at trykke på en knap på din mobilenhed.
+Der er mange gentagne opgaver, som vi ønsker, vi kan køre med blot et enkelt tryk på en knap. Det kan f.eks. være, at du skal sende en hurtig mail til dit team for at minde dem om at deltage i dagens teammøde, eller du vil starte et nyt Visual Studio Codespaces-build af koden, efter at du har fået besked om, at der ikke er planlagt flere opdateringer resten af dagen. Med øjeblikkeligt flow kan du udføre disse og mange andre typer opgaver ved at trykke på en knap på din mobilenhed.
 
-**Bemærk!** Du kan oprette øjeblikkelige flow enten fra din mobilenhed eller i Power Automate.  
-  ![Oversigtsbillede](./media/introduction-to-button-flows/buttons-montage.png)  
+![Oversigtsbillede](./media/introduction-to-button-flows/buttons-montage.png) 
+
+> [!NOTE]
+> Du kan oprette øjeblikkelige flows enten fra mobilenheden eller Power Automate.
 
 ## <a name="why-create-buttons"></a>Hvorfor oprette knapper?
 Du kan oprette knapper for at gøre det nemt at køre gentagne opgaver fra din mobilenhed uanset tid og sted. Når du kører knapper, sparer du tid, og da de udfører automatiske opgaver, opstår der færre fejl, end hvis du skulle udføre opgaverne manuelt hver gang.  
@@ -44,7 +45,7 @@ Du kan oprette knapper for at gøre det nemt at køre gentagne opgaver fra din m
 * En konto med tilladelser til at bruge forbindelser, når du opretter din knap. Du skal f.eks. have en Dropbox-konto, hvis du vil oprette en knap, der skal have adgang til Dropbox.
 
 ### <a name="from-the-portal"></a>Fra portalen
-I denne vejledning opretter vi en knap, der starter et Visual Studio Online (VSO)-build og sender meddelelser for at give dig besked om, når buildet startes:
+I denne gennemgang vil vi oprette en knap, der starter et Visual Studio Codespaces-build og sender meddelelser til dig, når buildet startes:
 
 1. Log på [Power Automate](https://flow.microsoft.com).
 1. Vælg **Opret** i den venstre side af skærmen.

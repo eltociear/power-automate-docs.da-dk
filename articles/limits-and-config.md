@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/24/2020
+ms.date: 08/04/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fc03b4b6695ec334a6271f67c0eafea2e2d71b29
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: 869de4c73d29893e54b4345efb2b348bf03c7983
+ms.sourcegitcommit: da9a930a8cf0abd30c83c51f100a039d514ec436
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502381"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3655851"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -43,6 +43,9 @@ Disse er grænser for en enkelt udgående anmodning.
 | --- | --- |
 | Anmod om timeout for synkrone kald |120 sekunder |
 | Anmod om timeout for asynkrone kald|Kan konfigureres. Maksimum er 30 dage. |
+
+>[!NOTE]
+>Hvis du tester et flow, der kører i længere end 10 minutter, kan du få en timeoutmeddelelse i Power Automate, selvom flowet fortsat kører i baggrunden. Hvis det sker, skal du åbne visningen igen for at modtage den aktuelle status. 
 
 ### <a name="message-size"></a>Meddelelsesstørrelse
 
@@ -104,8 +107,8 @@ Disse er grænserne for en enkelt flowkørsel. Du kan få vist de daglige græns
 |Mængden af indholdsflow, der er tilladt for at producere (handlingsinput/outputs) pr. time – licensen af typen gratis, Office 365, Plan 1, Plan 2, Pr. bruger og Pr. flow|200 GB||
 
 
-## <a name="definition-limits"></a>Definitionsgrænser
-Disse er grænserne for et enkelt flow.
+## <a name="flow-limits"></a>Flowgrænser
+Dette er grænser for flows.
 
 | Navn | Grænse | Noter |
 | --- | --- | --- |
@@ -114,6 +117,7 @@ Disse er grænserne for et enkelt flow.
 | Maksimalt antal tegn pr. udtryk |8,192 | |
 | `action`/`trigger` navnegrænse |80 | |
 | `description` længdegrænse |256 | |
+| Løsningsagnostiske flows pr. bruger  |600 | |
 
 ## <a name="sharepoint-limits"></a>SharePoint-grænser
 Der er [begrænsninger](https://docs.microsoft.com/connectors/sharepointonline/#limits) for, hvordan du kan bruge Microsoft SharePoint sammen med Power Automate og Power Apps.

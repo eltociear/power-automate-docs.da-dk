@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/19/2020
+ms.date: 07/16/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 73e8d6d7d0455447182392c67dfc2aaed44b8e0f
-ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
+ms.openlocfilehash: 9fbf338c5904d0e0182f114ebf8c5bd23cb5e1c7
+ms.sourcegitcommit: d4857e5ce087f9a72469ff08a1a91349a0a94505
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "3517975"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597978"
 ---
 # <a name="the-admin-center"></a>Administration
 
@@ -34,7 +34,7 @@ Administration er den centrale placering, hvor lejeradministratorer og miljøadm
 
 ![Viser oversigten over Administration](./media/admin-center-introduction/overview.png)
 
-## <a name="access-the-admin-center"></a>Adgang til Administration
+## <a name="access-the-admin-center"></a>Få adgang til Administration
 
 * Gå til [Power Automate Administration](https://admin.flow.microsoft.com).
 

@@ -13,68 +13,75 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2019
+ms.date: 7/29/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ace2fc20c5ce4eb17015a632308101b2efcc1e2b
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: b751dadcb4be2bb479981b6f58b797fbc61b0041
+ms.sourcegitcommit: 62c8891c497823be6e7691410072011d7cfc5339
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502333"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652898"
 ---
 # <a name="get-started-with-power-automate"></a>Introduktion til Power Automate 
 
-Velkommen! Power Automate er en tjeneste, der hjælper dig med at oprette automatiserede arbejdsprocesser mellem dine favoritprogrammer og -tjenester, så du kan synkronisere filer, få meddelelser, indsamle data og meget mere.
+Velkommen! Hvad kan du forvente af Power Automate? Her er nogle eksempler på, hvad du kan foretage dig:
+
+* Automatisere forretningsprocesser
+* Sende automatiske påmindelser til forfaldne opgaver
+* Flytte forretningsdata mellem systemer efter en tidsplan
+* Oprette forbindelse til næsten 300 datakilder eller enhver tilgængelig API
+* Du kan endda automatisere opgaver på den lokale computer, f.eks. for beregning af data i Excel. 
+
+Spar tid ved at automatisere gentagne manuelle opgaver blot ved at optage museklik, tastetryk og kopiere trin fra skrivebordet! Power Automate handler udelukkende om automatisering. 
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/hCuxuUaGC6Y]
 
 
+## <a name="who-is-power-automate-for"></a>Hvem er Power Automate beregnet til? 
+
+*Hvilke færdigehder skal du have?* Alle fra en grundlæggende forretningsbruger til it-fagfolk kan oprette automatiserede processer ved hjælp af en Power Automate-platform med intet eller lavt kodningsbehov.
+
+*Hvilke brancher kan drage fordel af Power Automate?* Se, hvordan nogle virksomheder har implementeret Power Platform-løsninger ved hjælp af Power Automate i: 
+
+  * [Bank](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
+  * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
+  * [Fremstilling](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
+  * [Forsikring](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
+  * [Sundhedssektor](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
+
+Finde [eksempler fra din branche](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
+
+
+Det første trin til oprettelse af en automatisering er at [tilmelde sig](sign-up-sign-in.md) eller, hvis du allerede har en-konto hos Power Automate, kan du [logge på](https://flow.microsoft.com/signin).
+
 ## <a name="types-of-flows"></a>Typer af flow
 
-Power Automate er en af pillerne i Power Platform. Den består af en platform med meget lidt kode, som kan bruges til arbejdsprocesser og procesautomatisering. Her er en liste over de forskellige typer flows:
+I tabellen nedenfor kan du få mere at vide om de typer flows, du kan bygge for at håndtere dine brugssager.
 
-| **Procestype**                                                                       | **Use case**                                                                                  | **Mål**                                                                             |
+| **Procestype**                                                                       | **Use case**                                                                                  | **Automatiseringsmål**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automatiserede flow](get-started-logic-flow.md)                 | Opret en proces, der udfører en eller flere opgaver automatisk, når den udløses af en hændelse. | [Connectorer](https://docs.microsoft.com/connectors/) til services i cloudmiljøet og det lokale miljø. |
-| [Knapflow](introduction-to-button-flows.md)              | Kør gentagne opgaver fra et hvilket som helst sted, når som helst, via din mobilenhed.                        |                                                                                        |
-| [Planlagte flow](run-scheduled-tasks.md)                    | Opret et flow, der udfører en eller flere opgaver efter en tidsplan.             |                                                                                        |
-| [Forretningsprocesforløb](business-process-flows-overview.md) | Definer en række trin, der skal følges for at opnå det ønskede resultat.                 | Menneskelige processer                                                                        |
-| [Brugergrænsefladeprocesser](ui-flows/overview.md)                                                | Optag og automatiser afspilning af manuelle trin i ældre software.                    | Skrivebords- og webprogrammer, der ikke har API'er tilgængelige til automatisering.    |
+| [Automatiserede flow](get-started-logic-flow.md)                 | Opret en automatisering, der udløses af en hændelse, f.eks. modtagelsen af en mail fra en bestemt person eller omtale af din virksomhed i sociale medier.| [Connectorer](https://docs.microsoft.com/connectors/) til tjenester i skyen eller i det lokale miljø opretter forbindelse til dine konti og gør det muligt for dem at kommunikere med hinanden. |
+| [Øjeblikkelige flows](introduction-to-button-flows.md)              | Start en automatisering med et klik på en knap. Du kan automatisere gentagne opgaver fra skrivebordet eller mobilenheder. Du kan f.eks. sende en påmindelse straks til teamet med et enkelt tryk på en knap fra mobilenheden.                      |     En lang række opgaver, f.eks. anmodning om en godkendelse, en aktion i Teams eller SharePoint.                                                                                |
+| [Planlagte flow](run-scheduled-tasks.md)                    | Planlæg en automatisering som f.eks. daglige dataoverførsler til SharePoint eller en database.             |Opgaver, der skal automatiseres i en tidsplan.                                                                            |
+| [Forretningsprocesforløb](business-process-flows-overview.md) | Kontrollér, at alle i virksomheden følger samme proces, ved at definere en række trin, som personerne skal følge.                 | Processer, udført af mennesker, f.eks. anmodninger om kundeservice, godkendelser, it-udvikling,...                                                                        |
+| [Flow for brugergrænseflade](ui-flows/overview.md)                                                | Optag klik og tastaturtryk fra skrivebordet og webapplikationer, og automatiser afspilningen af manuelle trin i ældre software.                    | Skrivebords- og webprogrammer, der ikke har API'er tilgængelige til automatisering.    |
 
-Du kan oprette og administrere alle flow via fanen **Mine flows** i Power Automate.
 
-Hvis du bruger Dynamics 365, kender du muligvis også de klassiske Common Data Service-processer, der omfatter [arbejdsprocesser](configure-workflow-steps.md), [handlinger](create-actions.md), [flow for mobilopgaver](create-mobile-task-flow.md) og [dialogbokse](use-cds-for-apps-dialogs.md).
 
-Det første trin er at [tilmelde sig](sign-up-sign-in.md). Hvis du allerede har en konto til Power Automate, kan du [logge på](https://flow.microsoft.com/signin) via din tablet, din stationære computer eller tilmed din telefon.
-
-## <a name="check-out-the-start-page"></a>Tjek startsiden ##
+## <a name="check-out-the-start-page"></a>Tjek startsiden 
 
 [På startsiden](https://flow.microsoft.com) for Power Automate kan du [se et bredt udvalg af skabeloner](https://flow.microsoft.com/templates) og få mere at vide om nogle af de vigtige funktioner i Power Automate. Du kan få et hurtigt indtryk af, hvad der er muligt, og hvordan Power Automate kan være en hjælp for din virksomhed og dit liv.
 
-Med Power Automate kan du:
-
-- Søg let efter skabeloner og tjenester.
-
-    ![Flow – startside 1](./media/getting-started/flowhome1.png)
-
-- Vælg blandt de mest populære tjenester.
-
-    ![Flow – startside 2](./media/getting-started/flowhome2.png)
-
-- Få vist en oversigt over hvert flow.
-
-    ![Flow – startside 3](./media/getting-started/flowhome3.png)
-
 Hver enkelt skabelon er designet til et specifikt formål. Der er f.eks. skabeloner til at sende en sms til dig, når du får en mail fra din chef, føje Twitter-kundeemner til Dynamics 365 eller sikkerhedskopiere dine filer. Disse skabeloner er bare toppen af isbjerget. De er beregnet til at inspirere dig til at oprette tilpassede flows til lige præcis de processer, du har behov for.
 
-## <a name="create-your-first-flow"></a>Opret dit første flow ##
+## <a name="create-your-first-flow"></a>Opret dit første flow 
 
 1. Vælg en skabelon, der er nyttig for dig. En simpel skabelon er [**Få daglige påmindelser pr. mail**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
@@ -95,9 +102,9 @@ Hver enkelt skabelon er designet til et specifikt formål. Der er f.eks. skabelo
 
 [Følg dette selvstudium](get-started-logic-template.md) for at få mere at vide om, hvordan du opretter flows på baggrund af skabeloner.
 
-## <a name="get-creative"></a>Vær kreativ ##
+## <a name="get-creative"></a>Vær kreativ
 
-Nu da du har oprettet dit første flow på baggrund af en skabelon, skal du bruge en af de mere end [150 datakilder](https://flow.microsoft.com/connectors/), som understøttes af Power Automate, til at [oprette dine egne flows fra bunden](get-started-logic-flow.md).
+Nu da du har oprettet dit første flow på baggrund af en skabelon, skal du bruge en af de mere end [380 datakilder](https://flow.microsoft.com/connectors/), som understøttes af Power Automate, til at [oprette dine egne flows fra bunden](get-started-logic-flow.md).
 
 ![Oprette et flow](./media/getting-started/build-a-flow.png)
 
@@ -142,10 +149,10 @@ Fra meddelelsescenteret kan du navigere til siden **Aktivitet** i Power Automate
 
 ![Meddelelsescenter](media/getting-started/notification-center.png)
 
-## <a name="use-the-mobile-app"></a>Brug mobilappen ##
+## <a name="use-the-mobile-app"></a>Brug mobilappen 
 
 Download Power Automate-mobilappen til [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows). Med denne app kan du [overvåge flowaktivitet](mobile-monitor-activity.md), [administrere dine flows](mobile-manage-flows.md) og [oprette flows på baggrund af skabeloner](mobile-create-flow.md).
 
-## <a name="were-here-to-help"></a>Vi er her for at hjælpe dig ##
+## <a name="were-here-to-help"></a>Vi er her for at hjælpe dig 
 
 Vi er spændte på at se, hvad du vil bruge Power Automate til, og vi vil være sikre på, at du får en god oplevelse. Sørg for at se vores selvstudier med [vejledninger](https://flow.microsoft.com/guided-learning/), og [bliv en del af vores community](https://go.microsoft.com/fwlink/?LinkID=787467), så du kan stille spørgsmål og dele dine idéer. [Kontakt support](https://go.microsoft.com/fwlink/?LinkID=787479), hvis du får problemer.

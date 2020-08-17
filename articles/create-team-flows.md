@@ -1,6 +1,6 @@
 ---
-title: Få mere at vide om, hvordan du føjer andre ejere til et flow og opretter teamflows | Microsoft Docs
-description: Power Automate gør det nemt at automatisere gentagne opgaver. Du kan tilføje brugere eller grupper som ejere og samarbejde med dem om at designe og administrere flows.
+title: Lære, hvordan du føjer andre ejere til et flow og opretter teamflows | Microsoft Docs
+description: Power Automate gør det nemt at automatisere gentagne opgaver. Du kan tilføje brugere eller grupper som ejere og arbejde sammen med dem om at designe og administrere flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,36 +13,36 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/15/2019
+ms.date: 07/05/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b4479c2df6b8c7a1d5c269a8e0a48f15c1dda275
-ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
+ms.openlocfilehash: 7ddcc0303fb2a1a8d3c5a89adb7a7b8d77c3d08b
+ms.sourcegitcommit: a1d509e61196054c8272ed96aed9477485d3c71e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "3299315"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "3542741"
 ---
-# <a name="create-team-flows"></a>Opret teamflow
+# <a name="share-a-flow"></a>Dele et flow 
 
-Opret et teamflow ved at tilføje andre i organisationen som ejere. Alle ejere af et teamflow kan udføre følgende handlinger:
+Del et flow ved at tilføje andre i organisationen som ejere. Alle ejere af et teamflow kan udføre følgende handlinger:
 
-* Få vist historik for flowet (dvs. hver kørsel).
-* Administrer egenskaber for flowet (start eller stop f.eks. flowet, tilføj ejere, eller opdater legitimationsoplysningerne for en forbindelse).
-* Rediger definitionen af flowet (tilføj eller fjern f.eks. en handling eller betingelse).
-* Tilføj og fjern andre medejere (men ikke opretteren af flowet).
-* Slet flowet.
+* Få vist historik for flowet (hver kørsel).
+* Administrere egenskaber for flowet (start eller stop f.eks. flowet, tilføje ejere, eller opdatere legitimationsoplysningerne for en forbindelse).
+* Redigere definitionen af flowet (f.eks. tilføje eller fjerne en handling eller betingelse).
+* Tilføje og fjerne andre medejere (men ikke opretteren af flowet).
+* Slette flowet.
 
 Hvis du er opretter eller ejer af et teamflow, bliver det anført på fanen **Teamflows** på [Power Automate](https://flow.microsoft.com).
 
-![fanen Teamflows](./media/create-team-flows/addowner5.png)
+![fanen teamflows](./media/create-team-flows/addowner5.png)
 
 > [!NOTE]
-> Delte forbindelser kan **kun** bruges i det flow, hvor de blev oprettet.
+> Delte forbindelser kan **kun** bruges i det flow, hvor de er oprettet.
 > 
 > 
 
@@ -51,27 +51,23 @@ Ejere kan bruge tjenester i et flow, men de kan ikke ændre legitimationsoplysni
 ## <a name="prerequisites"></a>Forudsætninger
 Du skal have en [betalt Power Automate-plan](https://flow.microsoft.com/pricing/) for at oprette et teamflow. Du skal desuden være opretter eller ejer for at tilføje eller fjerne ejere fra et teamflow.
 
-## <a name="create-a-team-flow"></a>Opret et teamflow
+## <a name="share-a-flow"></a>Dele et flow
 Følg disse trin for at oprette et teamflow eller føje flere ejere til et teamflow.
 
 1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Mine flows**.
-2. Vælg **Flere kommandoer**, og vælg derefter **Del** for det flow, du vil dele:
+2. Vælg **...** (flere kommandoer), og vælg derefter **Del** for det flow, du vil dele:
    
     ![teamikon](./media/create-team-flows/addowner1.png)
-3. Angiv navn, mailadresse eller gruppenavn på den person eller gruppe, du vil tilføje som ejer:
+3. Angiv navn, mailadresse eller gruppenavn for den person eller gruppe, du vil tilføje som ejer:
    
-    ![søg efter brugeren](./media/create-team-flows/addowner2.png)
-4. Vælg den bruger, du vil gøre til ejer, på den viste liste:
-   
-    ![vælg brugeren](./media/create-team-flows/addowner3.png)
-   
-     Den valgte bruger eller gruppe bliver ejer af flowet:
-   
+    ![søge efter brugeren](./media/create-team-flows/addowner2.png)
+4. Den valgte bruger eller gruppe bliver ejer af flowet:
+     
     ![ny ejer](./media/create-team-flows/addowner4.png)
    
-     Tillykke &mdash; dit teamflow er blevet oprettet!
+     Tillykke, dit teamflow er oprettet!
 
-## <a name="add-a-list-as-a-co-owner"></a>Tilføj en liste som medejer
+## <a name="add-a-list-as-a-co-owner"></a>Tilføje en liste som medejer
 
 Du kan tilføje SharePoint-lister som medejere til et flow, så alle, der har redigeringstilladelse til listen, automatisk får redigeringstilladelse til flowet. Når flowet er delt, kan du blot distribuere et link til det.
 
@@ -79,45 +75,45 @@ Du kan tilføje SharePoint-lister som medejere til et flow, så alle, der har re
 > Brug en liste, når flowet er forbundet med SharePoint, og brug en gruppe i andre tilfælde.
 >
 
-## <a name="remove-an-owner"></a>Fjern en ejer
+## <a name="remove-an-owner"></a>Fjerne en ejer
 
 > [!IMPORTANT]
 > Når du fjerner en ejer, hvis legitimationsoplysninger bruges til at få adgang til Power Automate-tjenester, skal du opdatere legitimationsoplysningerne for disse forbindelser, så flowet fortsat kører korrekt.
 > 
 > 
 
-1. Vælg **Flere kommandoer**, og vælg derefter **Del** for det flow, du vil dele:
+1. Vælg **...** (flere kommandoer), og vælg derefter **Del** for det flow, du vil dele:
    
-    ![vælg ikonet for personer](./media/create-team-flows/addowner1.png)
+    ![vælge ikonet for personer](./media/create-team-flows/addowner1.png)
 2. Markér ikonet **Slet** for den ejer, du vil fjerne:
    
-    ![vælg Slet](./media/create-team-flows/removeowner2.png)
+    ![vælge slet](./media/create-team-flows/removeowner2.png)
 3. I bekræftelsesdialogboksen skal du markere **Fjern denne ejer**:
    
-    ![bekræft fjernelse](./media/create-team-flows/removeowner3.png)
+    ![bekræfte fjernelse](./media/create-team-flows/removeowner3.png)
 4. Tillykke – den bruger eller gruppe, du har fjernet, er ikke længere angivet som ejer af flowet.
 
 
-## <a name="update-connection-owner"></a>Opdater ejeren af forbindelsen
+## <a name="update-connection-owner"></a>Opdatere ejer af forbindelse
 
-Du skal muligvis ændre ejeren af en forbindelse i et flow, hvis du fjerner den eksisterende ejer. Følg disse trin for at skifte ejeren af et flow:
+Du skal muligvis ændre ejeren af en forbindelse i et flow, hvis du fjerner den eksisterende ejer. Følg denne fremgangsmåde for at ændre ejeren af et flow:
 
 1. Vælg **Data** i venstre sidepanel.
 1. Vælg **Forbindelser**.
 1. Søg efter den forbindelse, du vil opdatere, og vælg den derefter.
 1. Vælg **...** (flere kommandoer) for den forbindelse, du har valgt, og vælg derefter **Skift konto**.
-1. Følg trinnene for at bruge en anden konto til forbindelsen.
+1. Følg fremgangsmåden for at bruge en anden konto til forbindelsen.
 
-## <a name="embedded-and-other-connections"></a>Integrerede forbindelser og andre forbindelser
+## <a name="embedded-and-other-connections"></a>Integrerede og andre forbindelser
 
-Forbindelser, der bruges i et flow, kan deles i to kategorier:
+Forbindelser, der bruges i et flow, kan opdeles i to kategorier:
 
-* **Integrerede** &mdash; Disse forbindelser bruges i flowet.
-* **Andre** &mdash; Disse forbindelser er defineret for et flow, men anvendes ikke i det.
+* **Integrerede** – Disse forbindelser bruges i flowet.
+* **Andre** – Disse forbindelser er defineret for et flow, men anvendes ikke i det.
 
 Hvis du er holdt op med at bruge en forbindelse i et flow, vil den blive vist på listen over **Andre** forbindelser, hvor den forbliver, indtil en ejer inkluderer den i flowet igen.
 
-Følg trinnene for at [opdatere en forbindelsesejer](./create-team-flows.md#update-connection-owner) og foretage ændringer af integrerede forbindelser.
+Følg fremgangsmåden for at [opdatere en forbindelsesejer](./create-team-flows.md#update-connection-owner) og foretage ændringer af integrerede forbindelser.
 
 Listen over forbindelser vises under listen over ejere i egenskaberne for et flow:
 
