@@ -1,8 +1,2 @@
-1. Angiv **SharePoint** i søgefeltet.
-   
-    ![søg efter sharepoint-udløsere](media/modern-approvals/search-for-sharepoint.png)
-2. Find og vælg udløseren **SharePoint - Når der oprettes et element**.
-   
-    ![vælg sharepoint-udløser](media/modern-approvals/select-sharepoint-new-item.png)
-3. Vælg **webstedsadressen** og **listenavnet** for SharePoint-listen, som dit flow overvåger for nye elementer.
-
+1. Vælg **Når der oprettes et element – SharePoint** under **Vælg flowets udløser**, og vælg derefter **Opret**.
+2. Vælg **Webstedsadresse** og **Listenavn** for SharePoint-listen, som dit flow overvåger for nye elementer, på skærmen **Når et element oprettes – SharePoint**.

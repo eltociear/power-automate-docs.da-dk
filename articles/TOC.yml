@@ -12,7 +12,7 @@
       href: get-started-logic-template.md
     - name: Opret et flow på en telefon
       href: mobile-create-flow.md
-    - name: Opret et teamflow
+    - name: Dele et flow
       href: create-team-flows.md
     - name: 'Opret et flow, der bruger Common Data Service'
       href: common-data-model-intro.md
@@ -20,7 +20,7 @@
       href: whats-new.md
     - name: Læringskatalog
       items:
-        - name: Læringskatalog
+        - name: Oversigt
           href: learning-catalog/learning-catalog.md
         - name: Appudvikler
           href: learning-catalog/learning-catalog-app-maker.md
@@ -32,7 +32,7 @@
           href: learning-catalog/learning-catalog-functional-consultant.md
         - name: Partners forsalgsroller
           href: learning-catalog/learning-catalog-sales.md
-- name: Automatiserede flow
+- name: Automatiserede flows
   items:
     - name: Opret et flow fra bunden
       href: get-started-logic-flow.md
@@ -56,11 +56,11 @@
       href: onedrive-business-launch-panel.md
     - name: Filtrer og kopiér data
       href: odata-filters.md
-    - name: Brug en Flic
+    - name: Køre dine flows med Flic-knapper
       href: flic-button-flows.md
-    - name: Brug en bttn
+    - name: Køre dine flows med knapper
       href: bttn-button-flows.md
-- name: Knapflow
+- name: Knapflows
   items:
     - name: Opret et knapflow
       href: introduction-to-button-flows.md
@@ -96,9 +96,9 @@
       href: create-approval-response-options.md
 - name: Microsoft Teams-flows
   items:
-    - name: Udløser et flow fra en Teams-meddelelse
+    - name: Udløs et flow fra en Teams-meddelelse
       href: trigger-flow-teams-message.md
-    - name: Brug tilpassede kort i modelflow
+    - name: Brug tilpassede kort i modelflows
       items:
         - name: Oversigt over tilpassede kort til Teams
           href: overview-adaptive-cards.md
@@ -151,7 +151,7 @@
           href: ./ui-flows/use-ime.md
     - name: Opret og test flow for brugergrænseflade til web
       href: ./ui-flows/create-web.md
-    - name: Brug WinAutomation med flow for brugergrænseflade
+    - name: Brug WinAutomation sammen med flow for brugergrænseflade
       href: ./ui-flows/create-processes.md
     - name: Rediger flow for brugergrænseflade til web
       href: ./ui-flows/edit-web.md
@@ -231,9 +231,11 @@
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
     - name: Administrer flows på en telefon
       href: mobile-manage-flows.md
-    - name: Publicering af en skabelon
+    - name: Publicer en skabelon
       href: publish-a-template.md
-- name: Lokaliser fejl
+    - name: Slå et flow til eller fra
+      href: disable-flow.md
+- name: Lokalisere fejl
   items:
     - name: Se et flow
       href: see-a-flow-run.md

@@ -22,7 +22,7 @@ En DLP-politik er blot en navngivet regel, der placerer hver tjeneste i en af to
 **Bemærk!** Når en tjeneste tilføjes i én datagruppe, fjernes den automatisk fra den anden datagruppe. Hvis Twitter f.eks. i øjeblikket er placeret i datagruppen **Kun forretningsdata**, og du ikke vil tillade, at forretningsdata deles på Twitter, skal du blot tilføje tjenesten Twitter til datagruppen **Ingen forretningsdata er tilladt**. Dette vil fjerne Twitter fra datagruppen **Kun forretningsdata**.
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>Her er, hvad du skal bruge for at oprette en DLP
-* Adgang til Power Automate [Administration](https://admin.flow.microsoft.com)  
+* Adgang til Power Automate [Power Platform Administration](https://admin.powerplatform.microsoft.com/)  
 * En konto i administratorrollen for miljøet  
 * Et miljø med brugere, der er tildelt til det  
 

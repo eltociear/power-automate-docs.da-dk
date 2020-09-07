@@ -1,11 +1,8 @@
-1. Vælg **Nyt trin**, og vælg derefter **Tilføj en handling**.
-   
-    ![nyt trin](media/modern-approvals/select-sharepoint-add-action.png)
-2. Skriv **hent leder** i søgefeltet **Vælg en handling**.
-3. Find og vælg handlingen **Office 365-brugere - Hent leder (V2)**.
+1. Vælg **+Nyt trin**, og skriv derefter **hent leder** i søgefeltet **Vælg en handling**.
+1. Find og vælg handlingen **Hent leder (V2) – Office 365-brugere**.
 
     ![vælg office-brugere](media/modern-approvals/add-get-manager-action.png)
-4. Indsæt tokenet **Oprettet via mail** i feltet **Bruger (UPN)** på kortet **Hent leder**.
+1. Indsæt tokenet **Oprettet via mail** i feltet **Bruger (UPN)** på kortet **Hent leder**.
 
     Denne handling henter lederen til den person, der har oprettet anmodningen om ferie i SharePoint.
 
