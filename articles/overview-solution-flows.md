@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 7/27/2020
+ms.date: 08/14/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 860df112928e4d005e2f11bb92db2db68c325572
-ms.sourcegitcommit: d7707928484106e4a8442055111560f9a9cf7c6e
+ms.openlocfilehash: f999bee5227deed7f4102155ffb85c3cf3d7814d
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "3641077"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691122"
 ---
 # <a name="overview"></a>Oversigt
 
@@ -44,7 +44,7 @@ Du skal have følgende komponenter for at oprette løsninger og løsningsoriente
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - Et miljø med version 9.1.0.267 eller nyere.
 
-  Du kan undersøge, hvilken version du har, ved at gå til [Power Automate Administration](https://admin.flow.microsoft.com), vælge **Miljøer**, vælge det miljø, du er interesseret i, og derefter vælge fanen **Oplysninger**.
+  Du kan undersøge, hvilken version du har, ved at gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com/), vælge **Miljøer**, vælge det miljø, du er interesseret i, og derefter vælge fanen **Oplysninger**.
 
 ## <a name="create-a-solution"></a>Opret en løsning
 
@@ -59,7 +59,7 @@ Følg disse trin for at oprette en løsning:
 
 1. Angiv alle de nødvendige oplysninger for din nye løsning, herunder **Vist navn**, **Udgiver**, **Version** og **Navn**. Det er også en god ide at angive en beskrivelse af din løsning.
 
-   ![Vælge ny løsnng](./media/overview-solution-flows/new-solution.png "skærm for ny løsnings egenskaber")
+   ![Vælge ny løsning](./media/overview-solution-flows/new-solution.png "skærmbillede af egenskaber for ny løsning").
 
 1. Vælg **Gem og luk** i menuen øverst.
 
@@ -67,7 +67,7 @@ Følg disse trin for at oprette en løsning:
    Din nye løsning ser muligvis ud som på dette billede:
 
 
-   ![Viser den nye løsning](./media/overview-solution-flows/new-solution-created.png "Ny løsning, der vises på skærmen *Løsninger*")
+   ![Viser den nye løsning](./media/overview-solution-flows/new-solution-created.png "Ny løsning, der vises på skærmbilledet *Løsninger*")
 
 
   

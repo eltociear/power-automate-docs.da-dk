@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 19a6380ccdf5d1eb09f872bc0294d79876dee04c
-ms.sourcegitcommit: 9bb2e400751338357c66d11cfa7054d65d919fdb
+ms.openlocfilehash: 5b0ca1e9bb28b7cb4cad4e5aaedb151b119ea24a
+ms.sourcegitcommit: 5ae78d01c71a359833061c45d54c8c4636d71090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "3517270"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678588"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug markdown i Power Automate-godkendelsesanmodninger
 
@@ -33,13 +33,9 @@ ms.locfileid: "3517270"
 I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Markdown)-syntaksen til at føje avanceret formatering til dine godkendelsesanmodninger.
 
 > [!IMPORTANT]
-> Mails med godkendelsesanmodninger er *handlingsrettede meddelelser*. Hvis din [Microsoft Outlook-klient](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) ikke understøtter handlingsrettede meddelelser, vises der godkendelsesanmodninger i HTML-format. 
-
-> [!IMPORTANT]
-> Alle markdown-gengivelser indeholder implementeringsforskelle. Se afsnittet [Klientsupport](#client-support) for at få flere oplysninger.
-
-> [!IMPORTANT]
-> Markdown understøttes ikke i øjeblikket for kunder med GCC og GCC High.
+> - Mails med godkendelsesanmodninger er *handlingsrettede meddelelser*. Hvis din [Microsoft Outlook-klient](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) ikke understøtter handlingsrettede meddelelser, vises der godkendelsesanmodninger i HTML-format. 
+> - Alle markdown-gengivelser indeholder implementeringsforskelle. Se afsnittet [Klientsupport](#client-support) for at få flere oplysninger.
+> - Markdown understøttes ikke i øjeblikket for [kunder med GCC og GCC High](/power-automate/us-govt).
 
 ## <a name="client-support"></a>Klientsupport
 

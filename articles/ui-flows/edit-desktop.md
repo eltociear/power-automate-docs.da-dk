@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1562f79c51e23f6623495a86de0ccda03617fcd1
-ms.sourcegitcommit: e5ce6548c5aec34cd27e5f580dc7a02de270eae8
+ms.openlocfilehash: 3fc36a47a64aa6d8825d55bf79adc3dcaab8aa9e
+ms.sourcegitcommit: e1cd564043ecd234050e4cd5c5b8e6ed627d8b78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "3648554"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3688475"
 ---
 # <a name="edit-desktop-ui-flows"></a>Redigere flow for brugergrænsefladen på skrivebordet
 
@@ -88,7 +88,35 @@ Det kan være en god idé at optage dit flow for brugergrænsefladen i flere ses
 1. Vælg **Optag** i optagerkontrolelementet.
 
 1. Udfør trinnene i brugergrænsefladen for den app, du er ved at optage, og vælg derefter **Udført** i optagerkontrolelementet.
-1. Vælg **Gem**, og test derefter dit flow for brugergrænsefladen.
+1. Vælg **Gem**, og test derefter dit flow for brugergrænseflade.
+
+## <a name="provide-command-line-arguments-at-launch"></a>Angiv kommandolinjeargumenter ved start
+
+Når du har optaget dine handlinger for flow for brugergrænseflade, kan du angive kommandolinjeargumenter for de apps, som dit flow for brugergrænseflade starter. 
+
+Følg disse trin for at føje kommandolinjeargumenter til de apps, som dit flow for brugergrænseflade starter:
+
+1.  Optag et flow for brugergrænseflade med en skrivebordsoptager. 
+1.  Vælg **Udført** på optageren, og vælg handlingen for programstart for at udvide den.
+   
+    Skærmbilledet bruger Notepad++ som et eksempel. 
+
+    ![Viser trinnet for programstart](../media/edit-desktop/cmd-line-app-launch-step.png "Viser trinnet for programstart")
+
+
+1. Vælg **Vis avancerede indstillinger**.
+
+   ![Vælg dette link for at få vist de avancerede indstillinger](../media/edit-desktop/cmd-args-advanced.png "Vælg dette link for at få vist de avancerede indstillinger")
+
+1. Angiv kommandolinjeargumenterne her:
+
+   ![Viser tekstfeltet for kommandolinjeargumenterne](../media/edit-desktop/cmd-args.png "Viser tekstfeltet for kommandolinjeargumenterne")
+
+1.  Du kan angive et hvilket som helst gyldigt kommandolinjeargument for dit program.
+
+   >[!Important]
+   >Send ikke følsom tekst såsom adgangskoder via kommandolinjeargumenter.
+
 
 ## <a name="add-a-variable"></a>Tilføje en variabel
 
@@ -123,6 +151,63 @@ Benyt følgende fremgangsmåde for at oprette og bruge variabler i et flow for b
 >Derefter skal du vælge variabelhandlingen **Tilføj til matrix** og derefter bruge outputtet fra handlingen **Hent tekst** fra listen med dynamisk indhold.
 
    ![Du kan føje til en matrix i en løkke](../media/edit-desktop/add-variable-add-loop.png "Du kan føje til en matrix i en løkke")
+
+## <a name="copy-and-paste-steps"></a>Trin til at kopiere og indsætte
+
+Du kan kopiere handlinger og områder ved at bruge **Tilføj en handling** for at vælge de kopierede handlinger og områder fra **Min udklipsholder** og derefter sætte dem ind på en anden placering i det samme flow for brugergrænseflade.  
+
+Flow for brugergrænseflade omdøber automatisk de kopierede handlinger og områder med et entydigt navn. Hvis det kopierede område indeholder et andet område, bevares den indlejrede struktur, når du indsætter det fra **Min udklipsholder**. 
+
+>[!IMPORTANT]
+>Denne funktion understøtter kopiering og tilføjelse af handlinger inden for det samme område. Det er ikke muligt at indsætte handlinger i andre områder eller flow for brugergrænseflade.
+
+Følg disse trin for at kopiere og derefter indsætte handlinger og områder:
+
+1. Vælg **...**, og vælg derefter **Kopiér til min udklipsholder** for den handling eller det område, du vil kopiere.
+
+   ![Visning af udklipsholder for kopiering](../media/edit-desktop/copy-action.png "Visning af udklipsholder for kopiering")
+
+1. Hold musen over destinationsplaceringen, og vælg derefter **Tilføj en handling**. 
+
+   >[!TIP]
+   >Du kan vælge **Tilføj en handling** direkte, hvis den ligger sidst i området eller flowet for brugergrænseflade.
+      
+   ![Tilføj en handling er valgt](../media/edit-desktop/add-copied-action.png "Tilføj en handling er valgt.").
+
+1.  Vælg **Min udklipsholder**, og vælg derefter den handling eller det område, du kopierede.
+
+    ![Vælg den kopierede handling](../media/edit-desktop/select-action.png "Vælge den kopierede handling")
+
+1. Bemærk, at flow for brugergrænseflade indsætter handlingskortet med et entydigt navn.
+
+   ![Få vist det nye navn på den kopierede handling](../media/edit-desktop/action-unique-name.png "Få vist det nye navn på den kopierede handling")
+
+1. Bemærk også, at handlinger med skærmbilleder også bevarer dem med henblik på hurtig reference. 
+
+   ![Få vist bevarede skærmbilleder](../media/edit-desktop/copied-screenshots.png "Få vist bevarede skærmbilleder")
+
+   ![Flere bevarede skærmbilleder](../media/edit-desktop/retained-screen-shorts.png "Få vist bevarede skærmbilleder")
+
+
+## <a name="paste-a-scope-immediately-after-itself"></a>Indsætte et område umiddelbart efter sig
+
+>[!NOTE]
+>Hvis et område ikke har en **Luk program**-handling, og brugeren kopierer området og derefter indsætter området umiddelbart efter det eksisterende område, udføres de indsatte handlinger kun i den første programforekomst. 
+
+   ![Indsætte et område](../media/edit-desktop/paste-scope-after-itself.png "Indsætte et område")
+
+
+I dette eksempel udføres de fremhævede handlinger **Venstreklik 11** og **Gentag tastetryk** i det første Notesblok-program, og der startes en anden Notesblok-forekomst. 
+
+Brugerne kan vælge mellem to muligheder for at løse problemet med denne forekomst:
+
+1. Hvis du kun vil udføre handlingen/handlingerne i den første programforekomst, kan du kopiere og indsætte udelukkende de relevante handlinger i det første område. Hvis du vil kopiere og indsætte hele området på én gang, skal du fjerne Start-handlingen i det indsatte område for at forhindre, at der startes en overflødig programforekomst.
+
+   ![Kun relevante handlinger](../media/edit-desktop/copy-paste-relevant-actions-only.png "Kun relevante handlinger")
+
+1. Hvis du vil udføre handlingen/handlingerne i en separat programforekomst, kan du tilføje en **Luk program**-handling i det første område, så det andet område får sin egen forekomst. 
+
+   ![Separat programforekomst](../media/edit-desktop/paste-scope-different-application.png "Separat programforekomst")
 
 
 ## <a name="add-a-loop"></a>Tilføj en løkke
@@ -178,6 +263,7 @@ Her er trinene til at oprette en løkke i et flow for brugergrænseflade:
 >Hvis matrixen er en simpel streng eller en matrix af typen heltal, kan du bruge det **aktuelle element** direkte fra det dynamiske indhold, f. eks. følgende billede. Du kan også bruge udtryk.
 
 ![Brug aktuelt element](../media/edit-desktop/loop-use-current-item.png)
+
 
 ### <a name="known-limitations"></a>Kendte begrænsninger:
 1.  Løkker kræver statiske vælgere. Det betyder, at det brugergrænsefladeelement (UX), hvor den gentagne handling sker, ikke må ændres. 

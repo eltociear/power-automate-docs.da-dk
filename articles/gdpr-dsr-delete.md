@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/07/2020
+ms.date: 08/14/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d15e9d4e9e52c61495ec464e4db46d993deebe8a
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 07c0f662eae3cebe49009de0730a65494fdbffa2
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3385029"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691146"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Besvarelse af anmodninger i Power Automate om sletning af dataemner omfattet af GDPR
 
@@ -54,7 +54,7 @@ I følgende tabel vises, hvilke personlige data der slettes automatisk, og hvilk
 
 For de data og ressourcer, der kræver manuel gennemgang, findes der følgende funktioner i Power Automate til søgning efter og ændring af personlige data for en bestemt bruger:
 
-* **Websiteadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/)
+* **Websiteadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Platform Administration](https://admin.powerplatform.microsoft.com/)
 
 * **PowerShell-adgang:** [Power Apps Admin PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
@@ -94,7 +94,7 @@ I fremgangsmåden nedenfor beskrives, hvordan du får adgang til administrative 
 
 I disse trin kopieres eksisterende flow for en bruger, der er ved at forlade virksomheden. Hvis du tildeler nyt ejerskab til kopierne, kan disse flow fortsat understøtte eksisterende forretningsprocesser. Det er vigtigt at kopiere disse flows for at slette personlige id-forbindelsesled for den bruger, der forlader virksomheden, og der skal oprettes nye forbindelser, så flowet kan knyttes til andre API'er og SaaS-programmer.
 
-1. Log på [Power Automate Administration](https://admin.flow.microsoft.com/), og vælg derefter det miljø, der indeholder de flows, som den slettede bruger ejer.
+1. Log på [Power Platform Administration](https://admin.powerplatform.microsoft.com/), og vælg derefter det miljø, der indeholder de flows, som den slettede bruger ejer.
 
     ![Vis miljøer](./media/gdpr-dsr-delete/view-environments.png)
 
@@ -272,7 +272,7 @@ Som administrator skal du træffe to beslutninger, når du behandler en DSR-slet
 
 ## <a name="give-access-to-a-users-environments-from-the-power-automate-admin-center"></a>Giv adgang til en brugers miljøer fra Power Automate Administration
 
-En administrator kan tildele administratoradgang til et miljø, der er oprettet af en bestemt bruger. fra [Power Automate Administration](https://admin.flow.microsoft.com/). Du kan finde flere oplysninger om administration af miljøer ved at gå til [Brug af miljøer i Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
+En administrator kan tildele administratoradgang til et miljø, der er oprettet af en bestemt bruger, fra [Power Platform Administration](https://admin.powerplatform.microsoft.com/). Du kan finde flere oplysninger om administration af miljøer ved at gå til [Brug af miljøer i Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## <a name="delete-the-users-permissions-to-all-other-environments"></a>Slet brugerens tilladelser til alle andre miljøer
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dfc07db3386f733696418c23814a662eb36787d6
-ms.sourcegitcommit: 62c8891c497823be6e7691410072011d7cfc5339
+ms.openlocfilehash: 30b3488cf3918b5a9bd13c49d44fe49a1cc2120e
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652874"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697263"
 ---
 # <a name="filter-and-copy-data-with-power-automate"></a>Filtrer og kopier data med Power Automate
 
@@ -33,10 +33,10 @@ Denne gennemgang viser, hvordan du opretter et flow, der overvåger en kilde til
 
 I denne gennemgang kopieres data fra en Microsoft SharePoint-[liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (kilden) til en [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (destinationen), men du kan kopiere data mellem alle de mere end 380 [connectorer](https://flow.microsoft.com/connectors/), som Power Automate understøtter.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 > [!IMPORTANT]
 > Ændringer, som du foretager i destinationen, kopieres ikke til kilden, fordi tovejssynkronisering ikke understøttes. Hvis du forsøger at konfigurere tovejssynkronisering, skal du oprette en uendelig løkke, hvor ændringer sendes uendeligt mellem kilde og destination.
-> 
-> 
 
 ## <a name="prerequisites"></a>Forudsætninger
 * Adgang til en datakilde og en destination. Denne gennemgang omfatter ikke trin til oprettelse af kilden og destinationen.

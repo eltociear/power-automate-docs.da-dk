@@ -20,14 +20,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b4e087855890d7ca94a8288793494ce1e81826b2
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 881a0a99e6570e20d748ea65c2fd003133cace06
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296719"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697119"
 ---
-# <a name="manage-connections-in-power-automate"></a>Administrer forbindelser i Power Automate
+# <a name="manage-connections-in-power-automate"></a>Administrere forbindelser i Power Automate
 
 Hvis du opretter en forbindelse i Power Automate, kan du nemt få adgang til dine data, mens du bygger et flow. Power Automate indeholder almindeligt anvendte forbindelser, herunder SharePoint, , SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter og meget mere. Forbindelser deles med Power Apps, så når du opretter en forbindelse i ét produkt, viser forbindelsen sig i det andet.
 
@@ -44,13 +44,13 @@ Du kan oprette en forbindelse i flere forskellige scenarier, såsom:
 * oprette et [flow fra bunden](get-started-logic-flow.md) eller opdatere et eksisterende flow
 * Oprettelse af en direkte forbindelse på [Power Automate-websitet][1]
 
-I dette emne vises, hvordan du kan administrere forbindelser på [Power Automate-websitet][1].
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
-## <a name="add-a-connection"></a>Tilføj en forbindelse
+## <a name="add-a-connection"></a>Opret en forbindelse
 1. På [Power Automate-websitet][1] skal du logge på med din arbejds- eller organisationskonto.
 2. Vælg gearikonet i det øverste højre hjørne, og vælg derefter **Forbindelser**.
    
-    ![Vælg Forbindelser](./media/add-manage-connections/connections-menu.png)
+    ![Vælge forbindelser](./media/add-manage-connections/connections-menu.png)
 3. Vælg **Opret forbindelse**.
 4. På listen over **Tilgængelige forbindelser** skal du vælge den forbindelse, du vil oprette, f.eks. SharePoint.
 5. Vælg knappen **Opret forbindelse**, og indtast derefter dine legitimationsoplysninger for at oprette forbindelsen.
@@ -61,9 +61,9 @@ Når forbindelsen er oprettet, angives den under **Mine forbindelser**.
 Fra og med denne skrivelse understøtter SQL Server og SharePoint Server datagateways i det lokale miljø. Sådan opretter du en forbindelse, der bruger en gateway:
 
 1. Følg fremgangsmåden, der er angivet tidligere under dette emne, for at tilføje en forbindelse.
-2. På listen over **tilgængelige forbindelser** skal du vælge **SQL Server** og derefter markere afkrydsningsfeltet **Opret forbindelse via datagateway i det lokale miljø**.
+2. På listen over **Tilgængelige forbindelser** skal du vælge **SQL Server** og derefter markere afkrydsningsfeltet **Opret forbindelse via datagateway i det lokale miljø**.
    
-    ![Vælg gateway](./media/add-manage-connections/select-gateway.png)
+    ![Vælge gateway](./media/add-manage-connections/select-gateway.png)
    
    > [!IMPORTANT]
    > Microsoft SharePoint-datagateways understøtter HTTP-trafik, men ikke HTTPS-trafik.
@@ -78,14 +78,14 @@ Fra og med denne skrivelse understøtter SQL Server og SharePoint Server datagat
 ## <a name="delete-a-connection"></a>Sletning af en forbindelse
 1. Gå til siden **Mine forbindelser**, og vælg derefter skraldespandsikonet for den forbindelse, du vil slette.
    
-    ![Slet forbindelse](./media/add-manage-connections/delete-connection.png)
+    ![Slette forbindelse](./media/add-manage-connections/delete-connection.png)
 2. Vælg **OK** for at bekræfte, at du vil slette forbindelsen.
    
     ![Bekræft sletning](./media/add-manage-connections/delete-confirmation.png)
 
 Når du sletter en forbindelse, fjernes den fra både Power Apps og Power Automate.
 
-## <a name="update-a-connection"></a>Opdater en forbindelse
+## <a name="update-a-connection"></a>Opdatere en forbindelse
 Du kan opdatere en forbindelse, der ikke virker, fordi dine kontooplysninger eller din adgangskode er blevet ændret.
 
 1. På siden **Forbindelser** skal du vælge linket **Bekræft adgangskode** for den forbindelse, du vil opdatere.

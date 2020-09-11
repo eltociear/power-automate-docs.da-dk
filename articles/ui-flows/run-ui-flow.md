@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6266b1c6a76d80e46bafd14dcddeb2df9c4aa46
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: a402ec01d8c6b502bf39aa999d45696931d4aa5c
+ms.sourcegitcommit: 7b39517611bff350c760e76d0d6eed03739194a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502357"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710796"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>Kør ikke-automatiserede og automatiserede flows for brugergrænsefladen
 
@@ -203,7 +203,7 @@ Benyt følgende fremgangsmåde for at opnå adgang til flere flows for brugergr�
 Power Automate skalerer automatisk antallet af samtidige flows for brugergrænseflade, der kører, til den maksimalt understøttede antal på enheden. Hvis enhedens kapacitet overskrides, kan der køres yderligere *vent-funktioner* som [beskrevet her](./run-ui-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
 
 >[!IMPORTANT]
-Hvis du vil bruge mere end to parallelle brugersessioner på Windows Server, skal du aktivere Fjernskrivebordstjenester. Få mere at vide om [RDS](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-client-access-license).
+Hvis du vil bruge mere end to parallelle brugersessioner på Windows Server, skal du aktivere Fjernskrivebordstjenester. Få mere at vide om [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license).
 
 >[!NOTE]
 >Kørsel af flere samtidige flows for brugergrænseflade fra **samme bruger** understøttes ikke. Der skal være forskellige brugere, der kører flows for brugergrænseflade samtidig, for at du kan drage fordel af denne funktion.

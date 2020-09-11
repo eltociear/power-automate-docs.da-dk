@@ -1,5 +1,5 @@
 ---
-title: Få mere at vide om oprettelse af flow for brugergrænseflader| Microsoft Docs
+title: Få mere at vide om oprettelse af flow for brugergrænseflader | Microsoft Docs
 description: Få mere at vide om oprettelse af flow for brugergrænseflader til skrivebordet til Windows-programmer.
 services: ''
 suite: flow
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3705d825a2b659e19975b6deeeae215bb1fad3d5
-ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
+ms.openlocfilehash: 4c50db7a26c2657ec7152132ebdbbce9f17e31c7
+ms.sourcegitcommit: 7b39517611bff350c760e76d0d6eed03739194a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3298853"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710532"
 ---
-# <a name="create-and-test-desktop-ui-flows"></a>Opret og test desktopbrugergrænsefladeflow
+# <a name="create-and-test-desktop-ui-flows"></a>Opret og test flow for brugergrænsefladen på skrivebordet
 
 I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så den lægger to tal sammen og derefter gemmer resultatet til senere brug.
 
-## <a name="create-a-desktop-ui-flow"></a>Opret et flow for brugergrænseflader
+## <a name="create-a-desktop-ui-flow"></a>Oprette et flow for brugergrænseflader
 
 > [!TIP]
 > Du kan automatisere andre Windows Desktop-apps ved at følge et lignende mønster.
@@ -42,15 +42,15 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 1. Vælg **Mine flow** > **Flow for brugergrænseflade** > **Nyt**.
 
-   ![Opret et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
+   ![Oprette et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Oprette et nyt flow for brugergrænsefladen")
 
-1. Vælg **Skrivebord-app** og vælg derefter **Næste**.
+1. Vælg **Skrivebordsapp**, og vælg derefter **Næste**.
 
-   ![Vælg skrivebord](../media/create-windows-ui-flow/select-desktop.png "Vælg skrivebord") 
+   ![Vælge skrivebord](../media/create-windows-ui-flow/select-desktop.png "Vælge skrivebord") 
 
-1. Angiv et navn til dit brugergrænseflade-flow i feltet **Flownavn**, og vælg derefter **Næste**.
+1. Angiv et navn til dit flow for brugergrænsefladen i feltet **Flownavn**, og vælg derefter **Næste**.
 
-   ![Vælg skrivebord](../media/create-windows-ui-flow/give-a-name.png "Vælg skrivebord") 
+   ![Vælge skrivebord](../media/create-windows-ui-flow/give-a-name.png "Vælge skrivebord") 
 
 1. Vælg **Næste** nederst for at springe over den valgfri skærm **Konfigurer input**, da vi ikke bruger input i denne gennemgang.
 
@@ -72,7 +72,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 1. Vælg kortet **Optag app** for at udvide det.
 
-   ![Vælg Optag app](../media/create-windows-ui-flow/select-record-app.png "Vælg Optag app")
+   ![Vælge Optag app](../media/create-windows-ui-flow/select-record-app.png "Vælge Optag app")
 
 1. Vælg **Start optager**.
 
@@ -80,12 +80,12 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
    Optagerkontrolelementet vises øverst på skærmen.
 
-   ![Kontrolelementet Optager](../media/create-windows-ui-flow/recorder-control.png "Kontrolelementet Optager")
+   ![Optagerkontrolelementet](../media/create-windows-ui-flow/recorder-control.png "Optagerkontrolelementet")
 
 1. Start appen Lommeregner.
 
      >[!TIP]
-     >Når du holder musen over kontrolelementer i programmet, kan du se en blå kontur rundt om hvert enkelt kontrolelement. Vent altid på den blå markering, før du vælger et kontrolelement.
+     >Når du holder musen over kontrolelementer i appen, kan du se en blå kontur rundt om hvert enkelt kontrolelement. Vent altid på den blå kontur, før du vælger et kontrolelement.
      >
      >Hvis elementet ikke er fremhævet med blåt, optages det muligvis ikke korrekt.
 
@@ -93,9 +93,9 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 1. Vælg det første tal, vælg **+**, vælg det andet tal, og vælg derefter **=**.
 
     ![Appen Lommeregner](../media/create-windows-ui-flow/app-to-record.png "Appen Lommeregner")
-    
-     > [!TIP] 
-     > Du forbedre automatiseringens pålidelighed ved at:
+
+     > [!TIP]
+     > Du forbedrer automatiseringens pålidelighed ved at:
      > - åbne og maksimere de apps, du vil optage, *før* du starter optagelsen
      > - starte din optagelse med et klik på titellinjen i appen for at flytte fokus til den.
 
@@ -108,7 +108,7 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
      >[!TIP]
      >Vælg **...** > **Slet** for at fjerne eventuelle identiske trin.
 
-    ![Vis trin, der er optaget](../media/create-windows-ui-flow/show-recorded-steps.png "Vis trin, der er optaget")
+    ![Vise trin, der er optaget](../media/create-windows-ui-flow/show-recorded-steps.png "Vise trin, der er optaget")
 
 1. Vælg **Næste**. 
 
@@ -120,7 +120,6 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
  >Du opnår de bedste resultater ved ikke at interagere med din enhed under afspilningen.
 
 1. Vælg **Gem og afslut** for at gemme dit flow for brugergrænseflade.
-
 
 ## <a name="known-issues-and-solutions"></a>Almindelige problemer og løsninger
 
@@ -139,52 +138,52 @@ I følgende trin viser vi, hvordan du kan automatisere appen Lommeregner, så de
 
 - Interaktioner i Windows (Stifinder, menuen Start, proceslinje osv.).
 
-- Webbrowsere (Chrome, IE, Microsoft Edge, Firefox, Mozilla, osv.).
-    Du skal se [Opret et flow for brugergrænseflade](create-web.md) for at automatisere websteder.
+- Webbrowsere (Chrome, IE Microsoft Edge, Firefox, Mozilla osv.).
+    Du skal se [Oprette et flow for brugergrænseflade](create-web.md) for at automatisere websteder.
 
--   Java-programmer.
+- Java-programmer.
 
--   ClickOnce-programmer.
+- ClickOnce-programmer.
 
--   Programmer med en webvisning, f. eks. Electron-programmer.
+- Programmer med en webvisning, f. eks. Electron-programmer.
 
--   Microsoft Office 2016 og tidligere. 
+- Microsoft Office 2016 og tidligere. 
 
--   Microsoft Office online.
+- Microsoft Office online.
 
 ### <a name="unsupported-configurations"></a>Ikke-understøttede konfigurationer
 
--   Flere skærme.
+- Flere skærme.
 
--   Optagelse via en virtuel maskine-klient (Fjernskrivebord, Citrix osv.).
+- Optagelse via en virtuel maskine-klient (Fjernskrivebord, Citrix osv.).
 
--   Flere forekomster af et program, hvor titlerne på hovedvinduet er identiske.
+- Flere forekomster af et program, hvor titlerne på hovedvinduet er identiske.
 
--   Programvinduer med identiske titler, f.eks. Microsoft Outlook med flere nye mailvinduer af typen **Ikke-navngivet – meddelelse (HTML)** samtidig.
+- Programvinduer med identiske titler, f.eks. Microsoft Outlook med flere nye mailvinduer af typen **Ikke-navngivet – meddelelse (HTML)** samtidig.
 
--   Samtidige optagelsessessioner på en given enhed.
+- Samtidige optagelsessessioner på en given enhed.
 
--   Samtidige afspilningssessioner på en given enhed. I tilfælde af samtidige kørsler af flow for brugergrænseflade har den første kørsel første prioritet, og de efterfølgende mislykkes, indtil den første er fuldført.
+- Samtidige afspilningssessioner på en given enhed. I tilfælde af samtidige kørsler af flow for brugergrænseflade har den første kørsel første prioritet, og de efterfølgende mislykkes, indtil den første er fuldført.
 
--   Afspilning på en enhed med et andet tastaturlayout end den enhed, hvor det blev optaget.
+- Afspilning på en enhed med et andet tastaturlayout end den enhed, hvor det blev optaget.
 
--   Optagelse på en enhed eller i en Windows-session, mens browseren med Microsoft Flow er på en anden enhed eller i en anden Windows-session.
+- Optagelse på en enhed eller i en Windows-session, mens browseren med Power Automate er på en anden enhed eller i en anden Windows-session.
 
 ### <a name="unsupported-action-types-and-behaviors"></a>Ikke-understøttede handlingstyper og funktionsmåder
 
 Følgende handlinger optages ikke:
 
--   Dobbeltklik
+- Dobbeltklik.
 
--   Flytning af musen.
+- Flytning af musen.
 
--   Peg med musen.
+- Peg med musen.
 
--   Klik og træk.
+- Klik og træk.
 
--   Touch- eller penneinput.
+- Touch- eller penneinput.
 
--   Åbning af app før optagelse.
+- Åbning af app før optagelse.
 
 
 ## <a name="unreliable-behaviors-and-workarounds-for-microsoft-office-desktop"></a>Upålidelige funktionsmåder og løsninger til Microsoft Office (computer)

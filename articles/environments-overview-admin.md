@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 08/14/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 20483e27364ab113ed669db2ae9f63336afe0d3f
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 1f0300f4d9381b669107680ff68e703bff74b00e
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498528"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691170"
 ---
 # <a name="using-environments-within-power-automate"></a>Brug af miljøer i Power Automate
 
@@ -79,13 +79,13 @@ Administratorer kan bruge Administration til at oprette og administrere miljøer
    ![Indstillinger og Administratorportal](./media/environments-overview-admin/settings.png)
 1. Administratorcenteret åbnes.
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>Mulighed 2: Åbn admin.flow.microsoft.com
+### <a name="option-2-open-power-platform-admin-center"></a>Mulighed 2: Åbn Power Platform Administration
 
-Gå til [admin.flow.microsoft.com](https://admin.flow.microsoft.com), og log på med din arbejdskonto.
+Gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com/), og log på med din arbejdskonto.
 
 ## <a name="create-an-environment"></a>Opret et miljø
 
-1. I [Power Automate Administration](https://admin.flow.microsoft.com) skal du vælge **Miljøer**. Du kan se alle eksisterende miljøer: ![Miljøer](./media/environments-overview-admin/environments-list.png)
+1. I [Power Platform Administration](https://admin.powerplatform.microsoft.com/) skal du vælge **Miljøer**. Du kan se alle eksisterende miljøer: ![Miljøer](./media/environments-overview-admin/environments-list.png)
 2. Vælg **Nyt miljø**, og angiv derefter de påkrævede oplysninger:
 
 
@@ -107,7 +107,7 @@ Du kan nu føje brugere til miljøet.
 
 ## <a name="manage-your-existing-environments"></a>Administrere dine eksisterende miljøer
 
-1. I [Power Automate Administration](https://admin.flow.microsoft.com) skal du vælge **Miljøer**:
+1. I [Power Automate Administration](https://admin.powerplatform.microsoft.com/) skal du vælge **Miljøer**:
 
    ![menuelementet miljøer](./media/environments-overview-admin/select-environments.png)
 1. Vælg et miljø for at åbne dets egenskaber.

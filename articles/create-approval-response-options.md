@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: b5ba3c826ae1db9991c92bc1217a07205cce491c
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 7b7db352244a08d05e5b23fbbb2cefe46a55d67a
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498552"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697143"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Opret brugerdefinerede svarmuligheder for godkendelsesflow
 
@@ -37,6 +37,8 @@ Lad os sige, at du vil sende en godkendelsesanmodning, hver gang en medarbejder 
 
 - En Power Automate-konto.
 - En SharePoint-liste, hvor medarbejderne kan angive deres udgiftsrapporter.
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## <a name="create-approval-flow"></a>Opret godkendelsesflow
 1. Log på [Power Automate](https://flow.microsoft.com).

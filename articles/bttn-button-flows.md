@@ -20,14 +20,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 066e9887520a1f6435cb3ab8f93a6dbdf30cb89a
-ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
+ms.openlocfilehash: cedafb8539ba22569e58a7829c1cb3f171b164eb
+ms.sourcegitcommit: a28ad678feaac470cb8da0739f3820eff3329f0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "3518023"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760112"
 ---
-# <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Kør dine flows med fysiske bttns fra The Button Corporation (prøveversion)
+# <a name="run-your-flows-bttns-from-the-button-corporation-preview"></a>Kør dine flows med bttns fra The Button Corporation (prøveversion)
 
 Udløs dine flows ved at trykke på en bttn (en fysisk knap, der er oprettet af [The Button Corporation](https://my.bt.tn/)). Du kan f.eks. trykke på en bttn, der udløser et flow, for at udføre følgende opgaver:
 

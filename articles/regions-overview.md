@@ -13,30 +13,30 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 08/14/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a87845247f57e58edf7170dc3e8da721db7d275e
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 8b36b2cf5b4d400c1f2cb8a4094c984c57e5c76e
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299139"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691050"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Ofte stillede spørgsmål om områder i Power Automate
 
 Dette dokument indeholder en liste over ofte stillede spørgsmål om Power Automate.
 
-## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>Hvordan finder jeg ud af, hvor mine flow er installeret?
+## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>Hvordan finder jeg ud af, hvor mine flow er udrullet?
 Dit flow er udrullet i det [område](https://azure.microsoft.com/regions/), der hoster [miljøet](environments-overview-admin.md). Hvis dit miljø f.eks. er oprettet i området Europa, er dit flow installeret i datacentre i Europa.
 
-Administratorer kan identificere området, hvis de logger på Power Automate [Administration](https://admin.flow.microsoft.com). Under fanen **Miljøer** vises alle eksisterende miljøer og områder.
+Administratorer kan identificere området, hvis de logger på Power Platform [Administration](https://admin.powerplatform.microsoft.com/). Under fanen **Miljøer** vises alle eksisterende miljøer og områder.
 
-![vis miljøer](media/regions-overview/environments-list.png)
+![vise miljøer](media/regions-overview/environments-list.png)
 
 ## <a name="what-regions-are-available"></a>Hvilke områder er tilgængelige?
 * USA
@@ -48,7 +48,7 @@ Administratorer kan identificere området, hvis de logger på Power Automate [Ad
 * Canada
 * Sydamerika
 * Storbritannien
-* Amerikanske myndigheder (GCC)
+* US Government (GCC)
 * Frankrig
 
 ## <a name="what-features-are-specific-to-a-given-region"></a>Hvilke funktioner er specifikke for et bestemt område?

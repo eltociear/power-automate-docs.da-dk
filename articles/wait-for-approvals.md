@@ -1,5 +1,5 @@
 ---
-title: Vent på godkendelse i et flow | Microsoft Docs
+title: Vente på godkendelse i et flow | Microsoft Docs
 description: Flow kan vente på, at en ekstern hændelse opstår, f.eks. at en bruger godkender eller afviser en ændring, før der udføres en handling, f.eks. afsendelse af en meddelelse om beslutningen.
 services: ''
 suite: flow
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 34e17dbb8fdc1c3b3f6ba835b80c687504b9abd6
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 4cd78984e505843277e76b8e8c54636b0b001f71
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298369"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3696879"
 ---
 # <a name="wait-for-approval-in-power-automate"></a>Vent på godkendelse i Power Automate
 
@@ -33,16 +33,17 @@ ms.locfileid: "3298369"
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
-
 Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til godkendelse og underretter dig om, hvorvidt elementet blev godkendt eller afvist. For at følge dette selvstudium nøjagtigt, skal du oprette en enkel SharePoint-liste som en udløserhandling, men du kan bruge en anden datakilde, f.eks. Dropbox eller OneDrive.
 
-**Forudsætninger**
+## <a name="prerequisites"></a>Forudsætninger
 
 * Opret en enkel SharePoint-liste, der hedder **Projektsporing**, tilføj en kolonne med navnet **Titel**, og tilføj derefter en person- eller gruppekolonne med navnet **Tildelt til**.
 
    ![Billede af SPO-listen Projektsporing](./media/wait-for-approvals/project-tracker.png)
 
-## <a name="add-an-event-to-trigger-the-flow"></a>Tilføj en begivenhed, der udløser flowet
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
+## <a name="add-an-event-to-trigger-the-flow"></a>Tilføje en begivenhed, der udløser flowet
 
 1. Log på [Power Automate](https://flow.microsoft.com), vælg **Mine flows** på den øverste navigationslinje, og vælg derefter **Opret fra bunden**.
 
@@ -55,7 +56,7 @@ Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til go
 
     ![Billede af SPO-listenavn](./media/wait-for-approvals/SPO-list-name.png)
 
-## <a name="add-the-resulting-action"></a>Tilføj den resulterende handling
+## <a name="add-the-resulting-action"></a>Tilføje den resulterende handling
 
 1. Vælg knappen **Nyt trin**, og vælg derefter **Tilføj en handling.**
 
@@ -103,7 +104,7 @@ Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til go
 
      ![Billede af nej-send-mail](./media/wait-for-approvals/no-send-email-2.png)
 
-## <a name="finish-and-test-your-flow"></a>Afslut og test dit flow
+## <a name="finish-and-test-your-flow"></a>Afslutte og teste dit flow
 
 1. Navngiv dit flow, og vælg derefter **Opret flow**.
 
@@ -115,6 +116,6 @@ Opret et flow, der, hvis du opretter et element i SharePoint, sender mail til go
 ## <a name="learn-more"></a>Få mere at vide
 
 * [Gennemgang af en enkelt godkenders moderne godkendelse](modern-approvals.md)
-* Opret [sekventielle godkendelser](sequential-modern-approvals.md)
-* Opret [parallelle godkendelse](parallel-modern-approvals.md)
-* Godkend [anmodninger, mens du er på farten](mobile-approvals.md)
+* Oprette [sekventielle godkendelser](sequential-modern-approvals.md)
+* Oprette [parallelle godkendelser](parallel-modern-approvals.md)
+* Godkende [anmodninger, mens du er på farten](mobile-approvals.md)

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fcd99ea786c03eeac6ceabdf9a97886a8bbee022
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: 670b80583cdf07667675f8538b4114781b7b9ba6
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346603"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3696951"
 ---
 # <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Brug handlingen "Anvend på hver enkelt" i Power Automate for at behandle en liste over elementer med jævne mellemrum
 
@@ -49,6 +49,8 @@ Her er kravene til vellykket udførelse af trinnene i denne gennemgang:
 * En Office 365 Outlook-konto.
 * Power Automate-mobilappen for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 * Forbindelser til Office 365 Outlook og pushmeddelelsestjenesten.
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## <a name="create-a-flow"></a>Opret et forløb
 1. Log på [Power Automate](https://flow.microsoft.com).

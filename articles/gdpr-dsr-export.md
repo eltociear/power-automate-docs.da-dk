@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/24/2018
+ms.date: 08/14/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f9fee8a217cdec28f6a3b49dee6335c4f13a3d45
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: b3e28f8504c546ed87b9396a552ad0ead964ddb1
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384933"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691098"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Besvarelse af anmodninger i Power Automate om eksport af dataemner omfattet af GDPR
 
@@ -38,7 +38,7 @@ Som en del af vores forpligtelse i egenskab af din partner i forhold til generel
 
 Power Automate tilbyder følgende funktioner til søgning efter eller eksport af personlige data for en bestemt bruger:
 
-* **Websiteadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Automate Administration](https://admin.flow.microsoft.com/).
+* **Websiteadgang:** Log på [Power Apps Administration](https://admin.powerapps.com/) eller [Power Platform Administration](https://admin.powerplatform.microsoft.com/).
 
 * **PowerShell-adgang:** [Power Apps Admin PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 

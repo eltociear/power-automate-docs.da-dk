@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: bc2550d7ed20af51010b2091861732f918980a23
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: b91019880af56dd6d756cb8d74f03bfcf9efbee8
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435082"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697023"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integrer Power Automate med websites og apps
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -59,7 +59,6 @@ Du kan starte ved at tilføje denne kode for at vise Power Automate-skabelonerne
 | destination |Den side, der åbnes, når brugeren vælger skabelonen. Angiv `details` for at vise oplysningerne om skabelonen, eller angiv `new` for at åbne Power Automate-designeren. |
 | kategori |Filtrerer til den angivne skabelonkategori. | 
 | parametre.{name} |Yderligere kontekst, der sendes til flowet. |
-
 
 Hvis destinationsparameteren er `new`, åbnes Power Automate-designeren, når brugerne vælger en skabelon. Brugerne kan derefter oprette et flow i designeren. Se næste afsnit, hvis du vil have hele oplevelsen med widgetten.
 
@@ -483,7 +482,7 @@ Hvis den initialiserede landestandard ikke er angivet, vil Flow som standard bru
 | lv-lv      | Lettisk (Letland)           | 
 | ms-my      | Malaysisk (Malaysia)           | 
 | nb-no      | Norsk (bokmål)         | 
-| nl-nl      | Nederlandsk (Holland)        | 
+| nl-nl      | Nederlandsk (Nederlandene)        | 
 | pl-pl      | Polsk (Polen)            | 
 | pt-br      | Portugisisk (Brasilien)        | 
 | pt-pt      | Portugisisk (Portugal)      | 

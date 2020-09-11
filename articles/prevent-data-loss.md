@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: cde1ed752ed81344e41b86f5e483d740a6acdf33
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 50acd79de3575843364a0aef95129b17b956ac09
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498360"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3690978"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Politikker til forebyggelse af datatab (DLP)
 
@@ -37,6 +37,9 @@ I dette dokument introduceres du til politikker om forebyggelse af datatab, som 
 En organisations data er vigtige for at opnå succes. Dataene skal være umiddelbart tilgængelige til beslutningstagning, men de skal beskyttes, så de ikke deles med målgrupper, der ikke bør have adgang til dem. Som en hjælp til at beskytte dataene gør Power Automate det muligt at oprette og gennemtvinge politikker, som definerer, hvilke forbrugerforbindelser der kan få adgang til og dele forretningsdata. Disse politikker, som definerer, hvordan data kan deles, kaldes politikker til forebyggelse af datatab.
 
 Se [Politikken til forebyggelse af datatab](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) for at få mere at vide om, hvordan du beskytter dine data.
+
+>[!IMPORTANT]
+>Administratorer styrer politikker til forebyggelse af datatab. Kontakt din administrator, hvis en politik til forebyggelse af datatab blokerer for kørsel af dine flow.
 
 
 ## <a name="next-steps"></a>Næste trin

@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/20/2020
+ms.date: 08/12/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 08170e2c83160e6efa6ee19a04f79d1553001b46
-ms.sourcegitcommit: 368e3749f64f80cd9b45c35eccba6a2e3685ae44
+ms.openlocfilehash: 0fb51351c01ecffb722b3ed7cab13cf97acef7c7
+ms.sourcegitcommit: b0d4492e70d517a872d9e7850c625a395a66923c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "3516628"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3689263"
 ---
 # <a name="whats-new-in-power-automate"></a>Nyheder i Power Automate
 
@@ -38,6 +38,8 @@ Du kan finde oplysninger om de nye funktioner, programrettelser og forbedringer,
 > [!NOTE]
 > Frigivelserne rulles ud i løbet af flere dage. Nye eller opdaterede funktioner vises muligvis ikke med det samme.
 
-## <a name="release-plan"></a>Frigivelsesplan
+## <a name="release-plans"></a>Frigivelsesplaner
 
-Bliv fortrolig med kommende funktioner, og planlæg dine udrulninger ved at læse [Udgivelsesplan 1 for 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
+Få kendskab til kommende funktioner, og planlæg dine udrulninger ved at læse følgende:
+- [Plan for frigivelsesbølge 1, 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
+- [Plan for frigivelsesbølge 2, 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)

@@ -1,5 +1,5 @@
 ---
-title: Opret et godkendelsesflow, som kræver, at alle skal godkende | Microsoft Docs
+title: Oprette et godkendelsesflow, som kræver, at alle skal godkende | Microsoft Docs
 description: Opret et godkendelsesflow, der kræver, at alle skal godkende, eller én person skal afvise en anmodning.
 services: ''
 suite: flow
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3f668d4462c06e061efe2a03b4e5e842364c4b6e
-ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
+ms.openlocfilehash: 675092cda84f17bb1c9d9b63efb7457d98d5d9a2
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "3299293"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3696927"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Opret et godkendelsesflow, som kræver, at alle skal godkende
 
@@ -45,14 +45,16 @@ Denne type godkendelsesforløb er nyttig i en organisation, der kræver, at en p
 * En SharePoint[-liste](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
     I denne gennemgang forudsættes det, at du har oprettet en SharePoint-liste, der bruges til at anmode om ferier. Se gennemgangen af de [parallelle godkendelser](parallel-modern-approvals.md), hvor du kan finde et detaljeret eksempel på, hvordan SharePoint-listen kan se ud.
-* Kendskab til grundlæggende oplysninger om oprettelse af flow.
+
+    [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+    
+* Kendskab til de grundlæggende funktioner i oprettelse af flow.
 
     Du kan gennemse, hvordan du tilføjer [handlinger, udløsere](multi-step-logic-flow.md#add-another-action) og [betingelser](add-condition.md). I de følgende trin forudsættes det, at du ved, hvordan disse handlinger udføres.
 
 > [!NOTE]
 > Selv om vi bruger SharePoint og Office 365 Outlook i denne gennemgang, kan du bruge andre tjenester, f.eks. Zendesk, Salesforce, Gmail eller en af de mere end [200 tjenester](https://flow.microsoft.com/connectors/), som Power Automate understøtter.
->
->
+
 
 ## <a name="create-the-flow"></a>Opret flowet
 
@@ -92,10 +94,10 @@ Log på [Power Automate](https://flow.microsoft.com), og udfør derefter følgen
    |  Tildelt til |Mailadresser til godkenderne. |
    |  Detaljer |Eventuelle yderligere oplysninger, du vil have sendt til de godkendere, der er angivet i feltet **Tildelt til**. |
    |  Elementlink |En URL-adresse til godkendelseselementet. I dette eksempel er dette et link til elementet i SharePoint. |
-   |  Beskrivelse af elementlinket |En tekst med beskrivelse til **elementlinket**. |
+   |  Beskrivelse af elementlink |En tekst med beskrivelse til **Elementlink**. |
 
    > [!TIP]
-   > Handlingen **Start og vent på en godkendelse** indeholder flere tokens, herunder **Svar** og **Resultat**. Brug disse tokens i flowet til at levere detaljeret rapportering af resultaterne efter kørsel af et flow til en godkendelsesanmodning .
+   > Handlingen **Start og vent på en godkendelse** indeholder flere tokens, herunder **Svar** og **Resultat**. Brug disse tokens i flowet til at levere detaljeret rapportering af resultaterne efter kørsel af et flow til en godkendelsesanmodning.
    >
    >
 
@@ -114,7 +116,7 @@ Log på [Power Automate](https://flow.microsoft.com), og udfør derefter følgen
 
     Her er et eksempel på, hvordan kortet **Send en mail (V2)** kan se ud.
 
-    ![send en mail](media/all-assigned-must-approve/send-an-email-card.png)
+    ![sende en mail](media/all-assigned-must-approve/send-an-email-card.png)
 
 > [!NOTE]
 > En vilkårlig handling, der følger efter kørsler af handlingen **Start og vent på en godkendelse** ud fra dit valg på listen **Godkendelsestype** på kortet **Start og vent på en godkendelse**. I følgende tabel vises funktionsmåden baseret på det, du har valgt.
@@ -140,7 +142,7 @@ Hver gang et element føjes til din SharePoint-liste, eller et element ændres, 
 
 Her er et eksempel på den godkendelsesanmodning, der sendes til hver godkender.
 
-![anmodning om godkendelse](media/all-assigned-must-approve/approval-request.png)
+![godkendelsesanmodning](media/all-assigned-must-approve/approval-request.png)
 
 Her er et eksempel på, hvordan et svar og en svaroversigt kan se ud, når dine flow kører.
 
@@ -152,4 +154,4 @@ Her er et eksempel på, hvordan et svar og en svaroversigt kan se ud, når dine 
 * [Sekventielle moderne godkendelser](sequential-modern-approvals.md)
 * [Parallelle moderne godkendelser](parallel-modern-approvals.md)
 * [Godkendelser og Common Data Service](common-data-model-approve.md)
-* [Godkend anmodninger, mens du er på farten](mobile-approvals.md)
+* [Godkende anmodninger, mens du er på farten](mobile-approvals.md)
