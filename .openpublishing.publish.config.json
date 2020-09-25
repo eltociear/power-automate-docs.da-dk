@@ -4,7 +4,7 @@
       "docset_name": "flow",
       "build_source_folder": "articles",
       "build_output_subfolder": "power-automate",
-      "locale": "da-dk",
+      "locale": "da-DK",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
@@ -30,7 +30,7 @@
     "live",
     "master"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/power-automate-docs.da-dk",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/power-automate-docs.da-DK",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
@@ -41,7 +41,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.da-dk",
+      "url": "https://github.com/Microsoft/templates.docs.msft.da-DK",
       "branch": "master",
       "branch_mapping": {}
     },
