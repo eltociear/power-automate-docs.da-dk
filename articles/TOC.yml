@@ -78,6 +78,8 @@
       href: apply-to-each.md
 - name: Godkendelsesflows
   items:
+    - name: Kom i gang med godkendelser
+      href: get-started-approvals.md
     - name: Enkelte godkendelser
       href: modern-approvals.md
     - name: Godkendelser med vedhæftede filer
@@ -96,9 +98,12 @@
       href: create-approval-response-options.md
 - name: Microsoft Teams-flows
   items:
-    - name: Udløs et flow fra en Teams-meddelelse
+    - name: Oversigt
+      href: ./teams/overview.md
+    - name: Udløs flows fra en Teams-meddelelser
       href: trigger-flow-teams-message.md
-    - name: Brug tilpassede kort i modelflows
+    - name: Modelflows med tilpassede kort
+      href: create-adaptive-cards.md
       items:
         - name: Oversigt over tilpassede kort til Teams
           href: overview-adaptive-cards.md
@@ -120,6 +125,8 @@
           href: acronym-sample.md
         - name: Eksempel – generering af kundeemner
           href: lead-collection-sample.md
+    - name: Opret flows ved hjælp af Power Apps-appen (Prøveversion)
+      href: ./teams/create-flows-power-apps-app.md
 - name: Forretningsprocesforløb
   items:
     - name: Oversigt over forretningsprocesforløb
@@ -161,6 +168,203 @@
       href: ./ui-flows/run-ui-flow.md
     - name: Administrer flow for brugergrænseflade
       href: ./ui-flows/manage.md
+    - name: Power Automate Desktop Flow for brugergrænseflade (Prøveversion)
+      items:
+        - name: Introduktion til Power Automate Desktop
+          href: ./ui-flows/desktop/introduction.md
+        - name: Opret et Power Automate Desktop-flow
+          items:
+            - name: Udløs konsollen fra portalen
+              href: ./ui-flows/desktop/create-flow-console.md
+            - name: Design et flow
+              href: ./ui-flows/desktop/design-flow.md
+        - name: Kør et Power Automate Desktop-flow
+          href: ./ui-flows/desktop/run-pad-flow.md
+        - name: Udløse et Power Automate Desktop-flow et andet flow
+          href: ./ui-flows/desktop/link-pad-flow-portal.md
+        - name: Power Automate Desktop-konsol
+          href: ./ui-flows/desktop/console.md
+        - name: Power Automate Desktop-flowdesigner
+          href: ./ui-flows/desktop/flow-designer.md
+          items:
+            - name: Handlinger og ruden Handlinger
+              href: ./ui-flows/desktop/actions-pane.md
+              items:
+                - name: Tilføjelse af en handling til arbejdsområdet
+                  href: ./ui-flows/desktop/adding-action.md
+                - name: Konfiguration af en handling
+                  items:
+                    - name: Konfiguration af en handling
+                      href: ./ui-flows/desktop/configuring-action.md
+                    - name: Konfiguration af handlingsundtagelser
+                      href: ./ui-flows/desktop/configuring-actions-exceptions.md
+                - name: Aktivering og deaktivering af handlinger
+                  href: ./ui-flows/desktop/enabling-disabling-actions.md
+            - name: Arbejdsområdet flowdesigner
+              items:
+                - name: Arbejdsområdet flowdesigner
+                  href: ./ui-flows/desktop/designer-workspace.md
+                - name: Konfigurerer underflows
+                  href: ./ui-flows/desktop/setting-subflows.md
+                - name: Administration af værktøjslinjen i arbejdsområde
+                  href: ./ui-flows/desktop/managing-workspace-toolbar.md
+                  items:
+                    - name: Søger i flow
+                      href: ./ui-flows/desktop/searching-flow.md
+                    - name: Brug af indstillingen Gå til linje
+                      href: ./ui-flows/desktop/using-line-option.md
+                    - name: Brug af optagere
+                      href: ./ui-flows/desktop/making-use-recorders.md
+                - name: Fejlfinding af et flow
+                  href: ./ui-flows/desktop/debugging-flow.md
+                  items:
+                    - name: Køre/stoppe og afbryde midlertidigt fra en flowdesigner
+                      href: ./ui-flows/desktop/run-stop-pause.md
+                    - name: Brug af pausepunkter
+                      href: ./ui-flows/desktop/adding-breakpoints.md
+                    - name: Kørsel af flowhandlingen efter handling
+                      href: ./ui-flows/desktop/running-action.md
+                    - name: Power Automate Desktop-designer i statuslinjen
+                      href: ./ui-flows/desktop/status-bar.md
+                - name: Administrer ruden Variabler
+                  items:
+                    - name: Administrer ruden Variabler
+                      href: ./ui-flows/desktop/manage-variables.md
+                    - name: Omdøber en variabel
+                      href: ./ui-flows/desktop/renaming-variable.md
+                    - name: Input- og outputvariabler
+                      href: ./ui-flows/desktop/variables-inputs-outputs.md
+                    - name: Variable datatyper
+                      items:
+                        - name: Variable datatyper
+                          href: ./ui-flows/desktop/variable-data-types.md
+                        - name: Lister
+                          href: ./ui-flows/desktop/lists.md
+                        - name: Datatabeller
+                          href: ./ui-flows/desktop/datatables.md
+                        - name: Egenskaber for datatype
+                          href: ./ui-flows/desktop/datatype-properties.md
+                    - name: Manipulation af variabler og % notation
+                      href: ./ui-flows/desktop/variable-manipulation.md
+                - name: Elementer i brugergrænsefladen
+                  href: ./ui-flows/desktop/ui-elements.md
+                - name: Billeder
+                  href: ./ui-flows/desktop/images.md
+                - name: Fejl
+                  items:
+                    - name: Fejl
+                      href: ./ui-flows/desktop/errors.md
+                    - name: Vis fejloplysninger
+                      href: ./ui-flows/desktop/error-detail-view.md
+                - name: Søgning efter forbrug i flows
+                  href: ./ui-flows/desktop/finding-usages.md
+                - name: Optagelse i et Power Automate Desktop-flow
+                  href: ./ui-flows/desktop/recording-flow.md
+                - name: Implementering af grundlæggende logik i flows
+                  items:
+                    - name: Brug af løkker
+                      items:
+                        - name: Brug af løkker
+                          href: ./ui-flows/desktop/use-loops.md
+                        - name: Simple løkker
+                          href: ./ui-flows/desktop/simple-loops.md
+                        - name: Løkke-betingelse
+                          href: ./ui-flows/desktop/loop-condition.md
+                        - name: For hver løkke
+                          href: ./ui-flows/desktop/for-each-loop.md
+                    - name: Brug af betingelser
+                      items:
+                        - name: Brug af betingelser
+                          href: ./ui-flows/desktop/use-conditionals.md
+                        - name: If/else
+                          href: ./ui-flows/desktop/if-else.md
+                        - name: If-variationer
+                          href: ./ui-flows/desktop/if-variations.md
+                        - name: Model for skift sag
+                          href: ./ui-flows/desktop/switch–case-model.md
+                - name: Automatisering på internettet
+                  items:
+                    - name: Automatisering på internettet
+                      href: ./ui-flows/desktop/automation-web.md
+                    - name: Interaktion med internettet og API'er
+                      href: ./ui-flows/desktop/interacting-web-services.md
+                    - name: Brug af browsere og administration af udvidelser
+                      href: ./ui-flows/desktop/using-browsers.md
+                    - name: Brug af den faktiske Internet Explorer vs automatiseringsbrowser
+                      href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
+                - name: Desktop-automatisering
+                  href: ./ui-flows/desktop/desktop-automation.md
+            - name: Reference til handlinger
+              href: ./ui-flows/desktop/actions-reference.md
+              items:
+                - name: Variabler
+                  href: ./ui-flows/desktop/actions-reference/variables.md
+                - name: Betingelser
+                  href: ./ui-flows/desktop/actions-reference/conditionals.md
+                - name: Løkker
+                  href: ./ui-flows/desktop/actions-reference/loops.md
+                - name: Vent
+                  href: ./ui-flows/desktop/actions-reference/wait.md
+                - name: Flowstyring
+                  href: ./ui-flows/desktop/actions-reference/flowcontrol.md
+                - name: System
+                  href: ./ui-flows/desktop/actions-reference/system.md
+                - name: Filer
+                  href: ./ui-flows/desktop/actions-reference/file.md
+                - name: Mappe
+                  href: ./ui-flows/desktop/actions-reference/folder.md
+                - name: Komprimering
+                  href: ./ui-flows/desktop/actions-reference/compression.md
+                - name: Brugergrænsefladeautomatisering
+                  href: ./ui-flows/desktop/actions-reference/uiautomation.md
+                - name: Web
+                  href: ./ui-flows/desktop/actions-reference/web.md
+                - name: Web-automatisering
+                  href: ./ui-flows/desktop/actions-reference/webautomation.md
+                - name: Excel
+                  href: ./ui-flows/desktop/actions-reference/excel.md
+                - name: Database
+                  href: ./ui-flows/desktop/actions-reference/database.md
+                - name: E-mail
+                  href: ./ui-flows/desktop/actions-reference/email.md
+                - name: Exchange
+                  href: ./ui-flows/desktop/actions-reference/exchange.md
+                - name: Outlook
+                  href: ./ui-flows/desktop/actions-reference/outlook.md
+                - name: Meddelelsesfelter
+                  href: ./ui-flows/desktop/actions-reference/display.md
+                - name: Mus og tastatur
+                  href: ./ui-flows/desktop/actions-reference/mouseandkeyboard.md
+                - name: Udklipsholder
+                  href: ./ui-flows/desktop/actions-reference/clipboard.md
+                - name: Tekst
+                  href: ./ui-flows/desktop/actions-reference/text.md
+                - name: Dato og klokkeslæt
+                  href: ./ui-flows/desktop/actions-reference/datetime.md
+                - name: CMD-session
+                  href: ./ui-flows/desktop/actions-reference/cmd.md
+                - name: Terminalemulering
+                  href: ./ui-flows/desktop/actions-reference/terminalemulation.md
+                - name: OCR
+                  href: ./ui-flows/desktop/actions-reference/ocr.md
+                - name: Kryptografi
+                  href: ./ui-flows/desktop/actions-reference/cryptography.md
+                - name: Tjenester
+                  href: ./ui-flows/desktop/actions-reference/services.md
+                - name: XML
+                  href: ./ui-flows/desktop/actions-reference/xml.md
+                - name: Active Directory
+                  href: ./ui-flows/desktop/actions-reference/activedirectory.md
+                - name: AWS
+                  href: ./ui-flows/desktop/actions-reference/aws.md
+                - name: Azure
+                  href: ./ui-flows/desktop/actions-reference/azure.md
+                - name: Cognitive
+                  href: ./ui-flows/desktop/actions-reference/cognitive.md
+                - name: FTP
+                  href: ./ui-flows/desktop/actions-reference/ftp.md
+        - name: Kendte problemer og begrænsninger
+          href: ./ui-flows/desktop/known-issues-limitations.md
 - name: Løsninger
   items:
     - name: Oversigt
@@ -183,24 +387,14 @@
       items:
         - name: Oversigt
           href: workflow-processes.md
-        - name: Konfigurer faser og trin for arbejdsprocesser
+        - name: Konfigurer faser og trin for arbejdsprocesfaser i baggrunden
           href: configure-workflow-steps.md
-        - name: Overvåg og administrer arbejdsprocesser
+        - name: Overvåg og administrer arbejdsprocesser i baggrunden
           href: monitor-manage-processes.md
-        - name: Bedste praksis for arbejdsprocesser
+        - name: Bedste praksis for arbejdsprocesser i baggrunden
           href: best-practices-workflow-processes.md
-        - name: Erstat arbejdsprocesser med flow
+        - name: Erstat arbejdsprocesser med flows i baggrunden
           href: replace-workflows-with-flows.md
-    - name: Klassiske Common Data Service-handlinger
-      items:
-        - name: Brug af handlinger
-          href: actions.md
-        - name: Opret en brugerdefineret handling
-          href: create-actions.md
-        - name: Konfigurer brugerdefinerede handlinger fra en arbejdsproces
-          href: configure-actions.md
-        - name: Aktivér brugerdefinerede handlinger fra en arbejdsproces
-          href: invoke-custom-actions-workflow-dialog.md
     - name: Klassiske Common Data Service-opgaveprocesser
       items:
         - name: Opret mobile opgaveprocesser
@@ -278,7 +472,7 @@
       href: organization-q-and-a.md
     - name: Prisfastsættelse
       href: billing-questions.md
-    - name: Introduktion til administrationen
+    - name: Administration
       href: admin-center-introduction.md
     - name: Administrer miljøer
       href: environments-overview-admin.md
@@ -320,10 +514,12 @@
       href: regions-overview.md
     - name: Grænser og konfiguration
       href: limits-and-config.md
-    - name: Web API til Power Automate
+    - name: Power Automate Web-API
       href: web-api.md
     - name: Ofte stillede spørgsmål
       href: frequently-asked-questions.md
+    - name: Power Automate-ordliste
+      href: glossary.md
 - name: Få mere at vide af andre
   items:
     - name: Webinarer

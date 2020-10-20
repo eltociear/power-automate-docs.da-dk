@@ -9,14 +9,14 @@ metadata:
   ms.topic: hub-page
   author: MSFTMAN
   ms.author: deonhe
-  ms.date: 07/30/2020
+  ms.date: 09/22/2020
   hide_bc: false
-  ms.openlocfilehash: 597390a409cb43a3822a8f8f245c2455359debf6
-  ms.sourcegitcommit: b0d4492e70d517a872d9e7850c625a395a66923c
+  ms.openlocfilehash: 17933be156f12ad52731fa85883efa4632a511f2
+  ms.sourcegitcommit: 3585f2fc947acac576bc60b1e80bbea6370181d3
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 08/12/2020
-  ms.locfileid: "3689311"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "3884906"
 highlightedContent:
   items:
   - title: Hvad er Power Automate?
@@ -66,9 +66,20 @@ conceptualContent:
     - text: Konfigurer flow for brugergrænseflade
       url: /power-automate/ui-flows/setup
       itemType: how-to-guide
-    - text: Brug WinAutomation sammen med flow for brugergrænseflade
-      url: /power-automate/ui-flows/create-processes
+    - text: Brug Power Automate Desktop (Prøveversion)
+      url: /power-automate/ui-flows/desktop/introduction
       itemType: concept
+  - title: Brug flows med Microsoft Teams
+    links:
+    - text: Udløs flows fra en Microsoft Teams-meddelelser
+      url: /power-automate/trigger-flow-teams-message
+      itemType: overview
+    - text: Modelflows med tilpassede kort
+      url: /power-automate/create-adaptive-cards
+      itemType: overview
+    - text: Opret flows ved hjælp af Power Apps-appen
+      url: /power-automate/teams/create-flows-power-apps-app
+      itemType: overview
   - title: Brug løsninger til ALM
     links:
     - text: Brug løsninger til at distribuere flows
@@ -115,7 +126,7 @@ conceptualContent:
       itemType: reference
 additionalContent:
   sections:
-  - title: Andre Power Platform-produkter
+  - title: Andre Microsoft Power Platform-produkter
   - items:
     - title: Power Apps
       summary: Du bør hurtigt opbygge apps med lav kode, som moderniserer processer og løser svære forretningsudfordringer i organisationen ved hjælp af Power Apps.
