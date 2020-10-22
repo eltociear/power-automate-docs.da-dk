@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
-manager: erikre
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,23 +13,25 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/18/2016
+ms.date: 09/18/2020
 ms.author: adiregev
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 393ae5f6a86363610c26aea78a04748f34dc4f97
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 4b0dfb8efd5781e67f569bafddbf223ba2105f7e
+ms.sourcegitcommit: 772a71443a19ce3da5e02470eda849762ad83671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821001"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Opret et flow fra din telefon ved hjælp af Power Automate
 
-Opret et flow fra din telefon ved hjælp af en skabelon, som du kan finde ved at søge på en liste over tjenester, gennemse kategorier eller angive nøgleord. Følg trinnene i dette emne for at oprette et flow, der sender en pushmeddelelse til din telefon, når du modtager en mail fra din chef.
+Opret et flow fra din telefon ved hjælp af en skabelon, som du kan finde ved at søge på en liste over tjenester, gennemse kategorier eller angive nøgleord.
+
+Følg trinnene i dette emne for at oprette et flow, der sender en pushmeddelelse til din telefon, når du modtager en mail fra din chef.
 
 Hvis du ikke kender Power Automate, kan du [få vist en oversigt](getting-started.md).
 
@@ -44,7 +46,7 @@ Hvis du ikke kender Power Automate, kan du [få vist en oversigt](getting-starte
 ## <a name="find-a-template"></a>Find en skabelon
 1. Åbn mobilappen, og tryk derefter på **Gennemse** nederst i skærmbilledet.
    
-    ![Ikonet for Gennemse](./media/mobile-create-flow/browse-icon.png)
+    ![Ikonet Søg](./media/mobile-create-flow/browse-icon.png)
    
     Du kan finde en skabelon på en af følgende måder:
    
@@ -52,19 +54,22 @@ Hvis du ikke kender Power Automate, kan du [få vist en oversigt](getting-starte
    * Tryk på en indstilling på listen over tjenester.
    * Rul ned for at få vist en række kategorier, og tryk derefter på en skabelon i en vilkårlig kategori.
      
+  
        ![Fanen Gennemse](./media/mobile-create-flow/browse-tab.png)
      
      I dette selvstudium skal du åbne den skabelon, der sender en pushmeddelelse, når du modtager en mail fra din chef.
-2. Tryk på **Se alle** på listen over tjenester.
+1. Tryk på **Se alle** på listen over tjenester.
    
+
     ![Vis listen over tjenester](./media/mobile-create-flow/list-services.png)
-3. Tryk på ikonet for **Pushmeddelelse**.
-   
+1. Tryk på serviceikonet **Meddelelser**.
+    
     ![Pushmeddelelser](./media/mobile-create-flow/push-notifications.png)
-4. På søgelinjen skal du skrive **mail** og derefter trykke på skabelonen for at sende en pushmeddelelse, når du modtager en meddelelse fra din chef.
+1. På søgelinjen skal du skrive **chef** og derefter trykke på skabelonen for at sende en pushmeddelelse, når du modtager en meddelelse fra din chef.
    
+  
     ![Vælg en skabelon](./media/mobile-create-flow/choose-template.png)
-5. På skærmbilledet, der viser oplysninger om den valgte skabelon, skal du trykke på **Anvend denne skabelon**.
+1. På skærmbilledet, der viser oplysninger om den valgte skabelon, skal du trykke på **Anvend denne skabelon**.
    
     ![Bekræft skabelon](./media/mobile-create-flow/confirm-template.png)
 
@@ -73,24 +78,17 @@ Hvis du ikke kender Power Automate, kan du [få vist en oversigt](getting-starte
    
     ![Log på Office 365](./media/mobile-create-flow/office-signin.png)
    
-    Du kan bruge de samme forbindelser, når du opretter andre flows.
-2. Tryk på **Næste** i øverste højre hjørne.
+    >[!TIP]
+    >Du kan bruge de samme forbindelser, når du opretter andre flows.
+
+1. Tryk på **Opret** i øverste højre hjørne.
    
-    ![Tryk på Næste](./media/mobile-create-flow/next.png)
-   
-    På det næste skærmbillede vises den udløsende hændelse og alle de deraf følgende handlinger.
-   
-    ![Udløsende hændelse og handlinger](./media/mobile-create-flow/flow-structure.png)
-   
-    For denne skabelon udløser en ny mail flowet, der henter dine oplysninger (herunder din chefs adresse), og du får tilsendt en pushmeddelelse, når du modtager en mail fra den pågældende adresse. Nogle skabeloner kræver noget tilpasning, før de fungerer korrekt, men det er ikke tilfældet med denne skabelon.
-3. (valgfrit) Næsten øverst i skærmbilledet skal du angive et andet navn for flowet.
-   
-    ![Omdøb flowet](./media/mobile-create-flow/rename-flow.png)
-4. Tryk på **Opret** i øverste højre hjørne.
-   
-    ![Opret flow](./media/mobile-create-flow/create-flow.png)
-   
-    Dit flow er oprettet og søger efter mails fra din chef, indtil du stopper flowet midlertidigt eller sletter det.
+    ![Tryk på Opret](./media/mobile-create-flow/create.png)
+
+      
+    Dit flow oprettes og søger efter mail fra din chef, indtil du stopper flowet midlertidigt eller sletter det.
+
+    ![Fuldført flow](./media/mobile-create-flow/success.png)
 
 ## <a name="next-steps"></a>Næste trin
 * [Overvåg din flowaktivitet](mobile-monitor-activity.md).

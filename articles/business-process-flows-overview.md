@@ -1,5 +1,6 @@
 ---
 title: Oversigt over forretningsprocesser | Microsoft Docs
+description: En oversigt over forretningsprocesforløb i Power Automate.
 ms.custom: ''
 ms.date: 05/06/2019
 ms.reviewer: ''
@@ -21,14 +22,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0a819c9ccaa3dd3e8ba60088fb8a9c197b74d15b
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: dfe66657340e1d9ec742706690064c26d27f33f1
+ms.sourcegitcommit: 9f96e86aca714b803d16bebf7957cdf3e1e8c124
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3820685"
 ---
-# <a name="business-process-flows-overview"></a>Oversigt over forretningsproces
+# <a name="business-process-flows-overview"></a>Oversigt over forretningsprocesforløb
 
 
 Du kan hjælpe med til at sikre, at brugerne angiver data konsekvent og følger de samme trin, hver gang de arbejder med en kunde, ved at oprette et forretningsprocesforløb i . F.eks. ønsker du måske at oprette et forretningsprocesforløb for at få alle til at håndtere kundeserviceforespørgsler på samme måde, eller for at kræve, at medarbejdere får godkendelse for en faktura, før de sender en ordre. Forretningsprocesforløb bruger den samme underliggende teknologi som andre processer, men de muligheder, de giver, er meget forskellige fra andre funktioner, der bruger processer. Du kan finde oplysninger om, hvordan du opretter eller redigerer et forretningsprocesforløb, under [Oprette et forretningsprocesforløb](create-business-process-flow.md).  
@@ -50,6 +51,9 @@ Forretningsprocesforløb giver vejledning til brugere i at få udført deres arb
  Hver fase indeholder en gruppe af trin. Hvert trin repræsenterer et felt, hvor der kan angives data. Der skiftes til næste fase vha. knappen **Næste fase**. Du kan oprette et obligatorisk trin, hvor brugeren skal angive data for det tilhørende felt, før de kan gå videre til næste fase. Det kendes også som ”stage-gating”.  
   
  Forretningsprocesforløb virker rimeligt enkelt i sammenligning med andre typer processer, fordi de ikke giver nogen betinget forretningslogik eller automatisering ud over den strømlinede oplevelse med dataindtastning og administration af adgang til faser. Men, når du kombinerer dem med andre processer og tilpasninger, kan de spille en vigtig rolle i forbindelse med at spare folks tid, reducere omkostninger til oplæring samt gøre det nemmere for brugerne at lære programmet at kende.  
+ 
+> [!NOTE]
+> Hvis der er påkrævede felter i en fase, herunder den aktuelle fase, skal du udfylde felterne i disse faser, *inden* du gemmer formularen eller flytter til en ny fase.
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### <a name="business-process-flows-integrated-with-other-customizations"></a>Forretningsprocesforløb integreret med andre tilpasninger  

@@ -13,18 +13,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2020
+ms.date: 09/29/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: b91019880af56dd6d756cb8d74f03bfcf9efbee8
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 8ff34fc4190f5a0285e15c55779885016108c22b
+ms.sourcegitcommit: 741ae960b733c4569236089a1f00114508bbb451
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3697023"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3905070"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integrer Power Automate med websites og apps
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -212,7 +212,7 @@ flowsSettings?: {
 | Parameter | Påkrævet/valgfrit | Beskrivelse | 
 |-----------|-------------------|-------------| 
 | `createFromBlankTemplateId` | Obligatorisk | Brug skabelonens GUID, når brugeren vælger knappen **Opret fra bunden** i Flow-widgetten | 
-| `flowsFilter` | Valgfri | Power Automate-widgetten anvender det angivne filter, når der anføres flow. Vis f.eks. flow, der refererer til et specifikt SharePoint-websted. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
+| `flowsFilter` | Valgfri | Power Automate-widgetten anvender det angivne filter, når der anføres flow. Vis f.eks. flow, der refererer til et specifikt SharePoint-websted. <br /> ```flowsFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
 | `tab` | Valgfri | Den aktive fanes vises som standard i Power Automate-widgetten. <br /> Eksempel: <br /> ```tab:'sharedFlows' ``` viser fanen Team<br /> og ``` tab:'myFlows' ``` viser fanen Mine flow. |   
 
 ### <a name="templatessettings"></a>TemplatesSettings 

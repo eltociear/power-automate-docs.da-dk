@@ -20,20 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ca3dc36827423bffaed53b4ce19c50b94e09df81
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 5b144f376640c1de3a1bbd165850555eeb444663
+ms.sourcegitcommit: 1ac37360193f30d33c9a689ae6fe9ca7c7d991f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384957"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3789813"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Opret et automatiseret flow ved hjælp af Common Data Service (aktuelt miljø)
 
 >[!IMPORTANT]
 >Der er tre connectorer tilgængelige til oprettelse af forbindelse til Common Data Service. Denne artikel dækker den anbefalede [Common Data Service-connector (aktuelt miljø)](./connection-cds.md) til oprettelse af forbindelse til Common Data Service. [Common Data Service-connectoren](./connection-cds.md) og [Dynamics 365-connectoren](https://docs.microsoft.com/connectors/dynamicscrmonline/) kan også bruges, hvis du ikke kan bruge den anbefalede connector.
 
-
-Du skal [oprette løsningsorienterede](./overview-solution-flows.md) flows for at bruge connectoren for Common Data Service (aktuelt miljø). 
 
 De flows, du opretter, kan blive udløst, når der oprettes, opdateres eller slettes en Common Data Service-post.
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4b1c10fd0365f370f1cd408528f6555a14d8fbbf
-ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
+ms.openlocfilehash: 84cd5b0f6f0adf8bdbcc5d077bc48a3878e2c83e
+ms.sourcegitcommit: 6714fe9d5217e6aaa07656c7048c1c82ba7312c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "3298963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821052"
 ---
 # <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Opret flows fra OneDrive for Business-startpanelet
 
@@ -52,15 +52,15 @@ I denne gennemgang opretter vi et enkelt flow, hvor en af de mange [OneDrive for
     I dette eksempel skal du vælge skabelonen **Anmod om min leders godkendelse af den valgte fil**.
 
      >[!TIP]
-     >Log på enhver connector, der anmoder om, at du logger på.
+     >Log på alle connectorer, der anmoder om, at du logger på.
 
 1. Vælg **Fortsæt**.
 1. Foretag de ønskede ændringer af skabelonen, og gem derefter flowet med et navn, som du nemt kan huske.
 
-## <a name="run-the-flow"></a>Kør flowet
+## <a name="run-the-flow"></a>Køre flowet
 
 1. Log på OneDrive for Business.
-1. Find og vælg derefter den fil, som du anmoder om godkendelse fra lederen for.
+1. Find og vælg derefter den fil, du vil anmode om chefgodkendelse for.
 1. Vælg linket **Vis handlinger** (tre prikker).
 1. Vælg **Flow**. Du kan se det flow, du oprettede tidligere.
 1. Vælg det flow, du oprettede tidligere.
@@ -71,7 +71,7 @@ I denne gennemgang opretter vi et enkelt flow, hvor en af de mange [OneDrive for
 >[!TIP]
 >Selvom denne gennemgang viser, hvordan du opretter et flow ud fra en skabelon, kan du også oprette et flow fra bunden af for at bruge en af de hundredvis af connectorer, der er tilgængelige i Power Automate.
 
-## <a name="learn-more"></a>Få mere at vide
+## <a name="learn-more"></a>Flere oplysninger
 
 - [Introduktion til Power Automate](getting-started.md) 
-- [Skab flow med flere trin](multi-step-logic-flow.md)
+- [Byg flow med flere trin](multi-step-logic-flow.md)

@@ -4,7 +4,7 @@ description: Opret et flow fra en skabelon, der bruger Common Data Service.
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 ms.service: flow
 ms.devlang: na
@@ -12,18 +12,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 25f719a3a8018a084f059125372a229c00f15190
-ms.sourcegitcommit: 89fca599830de21709b47087302a030d91e5fe29
+ms.openlocfilehash: 9c20fa8c888ba780f64cd9f55afdf11bbd08680e
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3549746"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900162"
 ---
 # <a name="create-a-flow-that-uses-common-data-service"></a>Opret et flow, der bruger Common Data Service
 

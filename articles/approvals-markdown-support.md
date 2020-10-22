@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: gcorvera
-manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +12,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 6/27/2020
+ms.date: 09/29/2020
 ms.author: gcorvera
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b0ca1e9bb28b7cb4cad4e5aaedb151b119ea24a
-ms.sourcegitcommit: 5ae78d01c71a359833061c45d54c8c4636d71090
+ms.openlocfilehash: b27effa7a904687141d606532d37927b87f69300
+ms.sourcegitcommit: 741ae960b733c4569236089a1f00114508bbb451
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678588"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3905046"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Brug markdown i Power Automate-godkendelsesanmodninger
 
@@ -33,6 +32,7 @@ ms.locfileid: "3678588"
 I denne artikel lærer du at bruge [Markdown](https://en.wikipedia.org/wiki/Markdown)-syntaksen til at føje avanceret formatering til dine godkendelsesanmodninger.
 
 > [!IMPORTANT]
+>
 > - Mails med godkendelsesanmodninger er *handlingsrettede meddelelser*. Hvis din [Microsoft Outlook-klient](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) ikke understøtter handlingsrettede meddelelser, vises der godkendelsesanmodninger i HTML-format. 
 > - Alle markdown-gengivelser indeholder implementeringsforskelle. Se afsnittet [Klientsupport](#client-support) for at få flere oplysninger.
 > - Markdown understøttes ikke i øjeblikket for [kunder med GCC og GCC High](/power-automate/us-govt).
@@ -51,7 +51,10 @@ Markdown-support mellem klienter er ikke ensartet. Power Automate-teamet arbejde
 | **Tvungne linjeskift** | Ja | Ja | **_Nej_** (brug en tom linje i stedet) | Ja | Ja | Ja |
 | **Tomme linjer** | **_Nej_** | **_Nej_** | Ja | Ja | **_Nej_** | Ja |
 
-## <a name="headers"></a>Sidehoveder
+> [!NOTE]
+> For Outlook Mobile kan de tidligere parametre variere, afhængigt af den Outlook-klientapp og -version, du bruger.
+
+## <a name="headers"></a>Overskrifter
 
 Strukturér dine kommentarer ved hjælp af overskrifter. Længere kommentarer inddeles under overskrifter, så det er lettere at læse dem.
 
@@ -72,18 +75,17 @@ Start en linje med hash-tegnet `#` for at angive en overskrift. Organiser dine b
 ## <a name="paragraphs-and-line-breaks"></a>Afsnits- og linjeskift
 
 Gør det lettere at læse din tekst ved at opdele den med afsnits- eller linjeskift. Indtast to mellemrum før linjeskiftet for at tvinge de fleste klienter til at starte en ny linje.  
-   
+
 **Eksempel:**  
 ```Markdown
-This is line 1.(space, space)
+This is line 1.(space)
 Now text will appear on the next line.
 ```
 
-**Resultat:**   
-Dette er linje 1.  
+**Resultat:** Dette er linje 1.  
 Nu vises teksten på næste linje. 
 
-**Eksempel 2**  
+**Eksempel 2**
 ```Markdown
 This is line 1.(space, space)  
 
@@ -95,16 +97,16 @@ Dette er linje 1.
 
 Der er mere afstand før linje 2.
   
-
 ## <a name="lists"></a>Lister
 
 Organiser lister med relaterede elementer. Du kan tilføje sorterede lister med tal eller usorterede lister med punkttegn.
 
-Sorterede lister starter med et tal efterfulgt af et punktum for hvert element på listen. Usorterede lister starter med en `*`. Du kan starte de enkelte listeelementer på en ny linje. I en Markdown-fil eller -widget kan du angive to mellemrum før linjeskift, hvis du vil starte et nyt afsnit, eller angive to linjeskift efter hinanden, hvis du vil starte et nyt afsnit.   
+Sorterede lister starter med et tal efterfulgt af et punktum for hvert element på listen. Usorterede lister starter med en `*`. Du kan starte de enkelte listeelementer på en ny linje. I en Markdown-fil eller -widget kan du angive to mellemrum før linjeskift, hvis du vil starte et nyt afsnit, eller angive to linjeskift efter hinanden, hvis du vil starte et nyt afsnit.
 
 ### <a name="ordered-or-numbered-lists"></a>Sorterede eller nummererede lister
 
-**Eksempel:**  
+**Eksempel:**
+
 ```Markdown
 0. First item.
 0. Second item.
@@ -118,21 +120,24 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
 
 ### <a name="bullet-lists"></a>Punktopstilling
 
-**Eksempel:**  
+**Eksempel:**
+
 ```Markdown
 - Item 1
 - Item 2
 - Item 3
 ```
 
-**Resultat:**  
+**Resultat:**
+
 - Punkt 1
 - Punkt 2
 - Punkt 3
 
 ### <a name="nested-lists"></a>Indlejrede lister
 
-**Eksempel:**  
+**Eksempel:**
+
 ```Markdown
 1. First item.
    - Item 1
@@ -144,7 +149,7 @@ Sorterede lister starter med et tal efterfulgt af et punktum for hvert element p
    - Nested item 3
 ```
 
-**Resultat:**  
+**Resultat:** 
 1. Første element.
 
     - Punkt 1
@@ -204,10 +209,10 @@ Organiser strukturerede data med tabeller.
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Fremhævelse (fed, kursiv, gennemstreget)  
 
-Du kan fremhæve tekst ved at anvende fed, kursiv eller gennemstreget tekst: 
-- Sådan anvender du kursiv: Omgiv teksten med en stjerne `*` eller et understregningstegn `_`   
+Du kan fremhæve tekst ved at anvende fed, kursiv eller gennemstreget tekst:
+- Sådan anvender du kursiv: Omgiv teksten med en stjerne `*` eller et understregningstegn `_`
 - Sådan anvender du fed: Omgiv teksten med to stjerner `**`.    
-- Sådan anvender du gennemstregning: Omgiv teksten med to tilder `~~`.   
+- Sådan anvender du gennemstregning: Omgiv teksten med to tilder `~~`.
 
 Kombiner disse elementer for at fremhæve tekst på flere måder.    
 

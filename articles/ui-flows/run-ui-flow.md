@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a402ec01d8c6b502bf39aa999d45696931d4aa5c
-ms.sourcegitcommit: 7b39517611bff350c760e76d0d6eed03739194a7
+ms.openlocfilehash: d18bac0e02da32b2b3791280e695fec096a56828
+ms.sourcegitcommit: 84c68d41abd745339f4c7b7f4cda55daa6d8bcaf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710796"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819054"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>Kør ikke-automatiserede og automatiserede flows for brugergrænsefladen
 
@@ -46,8 +46,8 @@ Når du har oprettet og testet et flow for brugergrænsefladen, kan du køre det
 
 I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brugergrænsefladen, når der modtages en ny mail.
 
-1. Naviger til [Power Automate](https://flow.microsoft.com/).
-1. Vælg **Mine flows** på navigationslinjen til venstre.
+1. Log på [Power Automate](https://flow.microsoft.com/).
+1. Vælg **Mine flows** i navigationsruden til venstre.
 1. Vælg **Nyt**, og vælg derefter **Automatiseret – fra bunden**.
 
    >[!TIP]
@@ -55,11 +55,9 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
 
 1. Giv dit flow et navn i feltet **Navn på flow**.
 1. Søg efter "ny mail", og vælg derefter **Når en ny mail modtages (v3)** på listen over udløsere. 
-    
+
    ![Vælg en udløser](../media/run-ui-flow/select-email-trigger.png "Vælg en udløser")
-
 1. Vælg **Opret**, og vælg derefter **Nyt trin**.
-
 1. Søg efter **Flow for brugergrænseflade**, og vælg derefter **Kør et flow for brugergrænsefladen på skrivebordet** på listen over **Handlinger**. 
 
    ![Søg efter handling](../media/run-ui-flow/search-action.png "Søg efter handling")
@@ -77,7 +75,7 @@ I dette eksempel bruger vi et automatiseret flow til at udløse et flow for brug
       ![Indstillinger for forbindelse](../media/run-ui-flow/uiflow-connection-card.png "Indstillinger for forbindelse")
 
       >[!TIP]
-      >Hvis din gateway ikke vises, er du muligvis i et miljø, hvis område er anderledes end gatewayområdet. Vælg **Foretag fejlfinding af en manglende gateway** på listen over gatewaynavne for at få mere at vide. Du kan også bekræfte, at dine gateway- og Power Automate-områder er [tilknyttet korrekt](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+      >Hvis din gateway ikke vises, er du muligvis i et miljø, hvis område er anderledes end gatewayområdet. Vælg **Foretag fejlfinding af en manglende gateway** på listen over gatewaynavne for at få mere at vide. Du kan også bekræfte, at dine gateway- og Power Automate-områder er [tilknyttet korrekt](../regions-overview.md).
 
       >[!TIP]
       >Hvis din gateway ikke vises, skal du muligvis vælge en anden forbindelse. Det gør du ved at vælge **...** øverst til højre på kortet **Kør et flow for brugergrænsefladen på skrivebordet** eller **Kør et flow for brugergrænsefladen på internettet** og derefter vælge forbindelsen fra **Mine forbindelser**.

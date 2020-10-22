@@ -4,8 +4,8 @@ description: Udvid et flow for at inkludere en avanceret indstilling, f.eks. at 
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/20/2017
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 84221e7425e43140f580f94573b550896a7bd647
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: b5577c50d0811368b860280725bde44151e7786c
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3697167"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900498"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Føje flere handlinger og avancerede indstillinger til et flow
 

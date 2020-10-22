@@ -4,7 +4,7 @@ description: Grænser og konfiguration
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: anneta
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/04/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 92b186b7a6d8664b39d04effbdcdb149323c2636
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 4ff6b57aff8971272ef5f4e24ef9acb877c37074
+ms.sourcegitcommit: e96d865ddf7a68586b3afc604bccc5d9f1be8af6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3696975"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961554"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -79,7 +79,7 @@ Disse er grænserne for en enkelt flowkørsel.
 >De enkelte connectorer kan også have deres egne grænser.
 
 ## <a name="looping-and-debatching-limits"></a>Grænser for løkker og fjernelse af batchinddeling
-Disse er grænserne for en enkelt flowkørsel. Du kan få vist de daglige grænser under [Grænser for anmodninger og fordelinger](https://aka.ms/platformlimits).
+Disse er grænserne for en enkelt flowkørsel. 
 
 | Navn | Grænse | Noter |
 | --- | --- | --- |
@@ -89,10 +89,25 @@ Disse er grænserne for en enkelt flowkørsel. Du kan få vist de daglige græns
 | SplitOn-elementer – Office 365 og gratis licenser |5.000 ||
 | SplitOn-elementer – licenser af typen Plan 1, Plan 2, Pr. bruger og Pr. flow |100.000 ||
 | Anvend for hver parallelitet |50 |Som standard køres løkker i rækkefølge (i bund og grund er parallelitet 1). Du kan konfigurere op til 50 parallelt. |
-| Udførte handlinger for hver 5. minut – gratis, Office365, Plan 1-licenser og prøveversioner | 2.000 | Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov. |
-|Udførte handlinger for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|100.000|Du kan også fordele en arbejdsbelastning på mere end ét flow efter behov.|
 | Handlinger for samtidige udgående kald – gratis, Office 365, Plan 1-licenser og prøveversioner | ~500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. |
 | Handlinger med samtidige udgående opkald – licenser af typen Plan 2, Pr. bruger og Pr. flow | ~2.500 | Reducer antallet af samtidige anmodninger, eller reducer varigheden efter behov. | 
+
+## <a name="daily-limits"></a>Daglige grænser
+Der anvendes daglige grænser i et 24-timers glidende vindue. Grænser for dataforbrug refererer til den mængde lager, der bruges til at gemme oversigten over flowet.  Dette er de maksimumgrænser, der er tilladt for lagerstyring i planen. Du kan finde flere oplysninger om Power Platform-daglige grænser under [anmodningsgrænser og tildelinger](https://aka.ms/platformlimits).
+
+| **Brugerlicenser**                                        |    **Handlinger/24 timer**                       |    **Dataforbrug/24 timer**   |
+|----------------------------------------------------------|-------------------------------------------------|--------------------------------------|
+| Power Automate-plan pr. flow                             | 15.000 pr. flow med licenseret flow               | 50 GB                                 |
+| Dynamics 365 Enterprise-applikationer<sup>1</sup>         | 20.000 på tværs af alle flow, der ejes af en enkelt bruger  | 10 GB                                 |
+| Dynamics 365 Professional<sup>2</sup>                   | 10.000 på tværs af alle flow, der ejes af en enkelt bruger  | 10 GB                                 |
+| Dynamics 365 for Team Members, Power Apps pr. bruger, Power Automate pr. brugerplan | 5.000 på tværs af alle flow, der ejes af en enkelt bruger   | 10 GB            | 
+| Office-licenser (de inkluderer Power Apps/Power Automate)<sup>3</sup>, Power Apps pr. app-planer, programbruger/ikke-interaktive brugere | 2.000 på tværs af alle flow, der ejes af en enkelt bruger | 1 GB                        |
+
+<sup>1</sup>Dynamics 365 Enterprise-programmer omfatter Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement-plan.
+
+<sup>2</sup>Dynamics 365 Professional omfatter Dynamics 365 Sales Professional og Dynamics 365 Customer Service Professional.
+
+<sup>3</sup>Se **Tillæg C** til Microsoft 365-licenser, der omfatter Power Apps- og Power Automate-funktioner, i [Licensvejledningen](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 ## <a name="throughput-limits"></a>Grænser for gennemløb
 
@@ -104,8 +119,6 @@ Disse er grænserne for en enkelt flowkørsel. Du kan få vist de daglige græns
 |Slutpunkt for kørsel: Antal aktiverede kald tilladt for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|45,000||
 |Mængden af tilladt gennemløb for hver 5. minut – gratis, Office 365, Plan 1-licenser og prøveversioner|600 MB||
 |Mængden af tilladt gennemløb for hver 5. minut – betalte licenser af typen Plan 2, Pr. bruger og Pr. flow|6 GB||
-|Mængden af indholdsflow, der er tilladt for at producere (handlingsinput/outputs) pr. time – licensen af typen gratis, Office 365, Plan 1, Plan 2, Pr. bruger og Pr. flow|200 GB||
-
 
 ## <a name="flow-limits"></a>Flowgrænser
 Dette er grænser for flows.

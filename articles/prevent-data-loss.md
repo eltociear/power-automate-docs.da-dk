@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/18/2020
+ms.date: 09/14/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 50acd79de3575843364a0aef95129b17b956ac09
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: eb6143e9656c96005d2773a46d584ce107701132
+ms.sourcegitcommit: 9f0460d80aa368ad25e7ec85bfab0754a17a5526
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3690978"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803339"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Politikker til forebyggelse af datatab (DLP)
 
@@ -36,7 +36,7 @@ I dette dokument introduceres du til politikker om forebyggelse af datatab, som 
 
 En organisations data er vigtige for at opnå succes. Dataene skal være umiddelbart tilgængelige til beslutningstagning, men de skal beskyttes, så de ikke deles med målgrupper, der ikke bør have adgang til dem. Som en hjælp til at beskytte dataene gør Power Automate det muligt at oprette og gennemtvinge politikker, som definerer, hvilke forbrugerforbindelser der kan få adgang til og dele forretningsdata. Disse politikker, som definerer, hvordan data kan deles, kaldes politikker til forebyggelse af datatab.
 
-Se [Politikken til forebyggelse af datatab](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) for at få mere at vide om, hvordan du beskytter dine data.
+Du kan få mere at vide om, hvordan du beskytter dine data, under [politikker for forebyggelse af datatab](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) i Power Platform-administrationsvejledningen.
 
 >[!IMPORTANT]
 >Administratorer styrer politikker til forebyggelse af datatab. Kontakt din administrator, hvis en politik til forebyggelse af datatab blokerer for kørsel af dine flow.
@@ -47,4 +47,3 @@ Se [Politikken til forebyggelse af datatab](https://docs.microsoft.com/power-pla
 * [Få mere at vide om miljøer](environments-overview-admin.md)
 * [Få mere at vide om Power Automate](getting-started.md)
 * [Få mere at vide om administratorcenteret](admin-center-introduction.md)
-* [Få mere at vide om dataintegration](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

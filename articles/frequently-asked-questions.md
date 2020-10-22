@@ -4,7 +4,7 @@ description: Svar på mange almindelige spørgsmål om Power Automate
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/18/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b4a1a3e7abd2a2a98254ed98d4dca63dd771d551
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: d14d32ced99b7e717328369bfcbd87f069db0298
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498480"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900330"
 ---
 # <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -46,6 +46,7 @@ Power Automate indeholder funktioner, der hjælper line of business-brugere med 
 Power Automate er en del af en stærkt og fleksibel virksomhedsprogramplatform, der omfatter Power Apps, Common Data Service, Dynamics 365 og Office 365. Denne platform gør det muligt for vores kunder, vores partnere og vores softwareproducentpartnere at udvikle særlige løsninger til deres egne virksomheder, deres branche, til funktionelle roller eller endda til bestemte geografiske områder. De line of business-brugere, der forstår deres forretningsmæssige behov bedst muligt, kan nu nemt analysere, oprette og forenkle data og processer. Professionelle udviklere kan nemt udvide deres line of business inden for automatisering, analyse og apps til at bruge Azure-tjenester som Functions, App Service og Logic Apps. API-connectorer, gateways og Common Data Service gør det muligt at få mere værdi ud af de tjenester eller data, der allerede er i brug, enten i cloudmiljøet eller i det lokale miljø.
 
 ## <a name="functionality"></a>Funktionalitet
+
 ### <a name="what-do-i-need-to-use-power-automate"></a>Hvad behøver jeg for at kunne bruge Power Automate?
 Hvis du vil bruge Power Automate, skal du blot have en webbrowser og en mailadresse.
 
@@ -95,27 +96,34 @@ Du kan se en komplet liste over de tilgængelige forbindelser [her](https://go.m
 Du kan få adgang til datakilderne i din egen it-infrastruktur via [datagatewayen i det lokale miljø](gateway-manage.md).
 
 ### <a name="what-are-templates"></a>Hvad er skabeloner?
+
 Skabeloner er færdigbyggede flows til populære og almindelige scenarier. Brugen af en skabelon kræver kun, at du har adgang til tjenesterne i skabelonen, og at du udfylder de nødvendige indstillinger.
 
 ### <a name="what-data-sources-will-i-be-able-to-connect-to"></a>Hvilke datakilder kan jeg oprette forbindelse til?
+
 Du kan oprette forbindelse til mere end 100 standardtjenester fra Microsoft og tredjeparter, f.eks. Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server og flere. Du kan også oprette forbindelse til kvalitetstjenester, som Salesforce og Common Data Service.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Hvordan opretter jeg forbindelse til en REST-API i mit flow?
+
 Du kan oprette forbindelse til alle REST-API'er, der bruger JSON og understøtter mindst én af flere end 10 godkendelsesmetoder, ved at oprette [en brugerdefineret forbindelse](developer/register-custom-api.md).
 
 ### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>Hvordan opretter jeg forbindelse til SQL Server og andre datakilder i det lokale miljø?
+
 Du kan oprette forbindelse til tjenester på dit eget lokale netværk ved at bruge [datagatewayen i det lokale miljø](gateway-manage.md).
 
 ### <a name="can-i-share-the-flows-i-create"></a>Kan jeg dele de flows, jeg opretter?
+
 Du kan dele flows på en af følgende måder:
 
 * Du kan tilføje kolleger eller grupper i organisationen som ejere på dine flows, så de også kan redigere og styre flowet.
 * For flows, der kan køres manuelt, kan du også give andre personer eller grupper i din organisation tilladelse til blot at køre flowet.
 
 ### <a name="how-many-flows-can-i-have"></a>Hvor mange flows kan jeg have?
+
 Du kan oprette et ubegrænset antal flow. Det afhænger af den [licenstype](https://flow.microsoft.com/pricing), du har.
 
 ### <a name="where-do-i-get-started-with-power-automate"></a>Hvor kan jeg komme i gang med Power Automate?
+
 Kom i gang med følgende ressourcer:
 
 * [Blog](https://flow.microsoft.com)
@@ -124,6 +132,7 @@ Kom i gang med følgende ressourcer:
 * [Community](https://powerusers.microsoft.com)
 
 ### <a name="what-operating-systems-does-the-mobile-app-for-power-automate-support"></a>Hvilke operativsystemer understøtter mobilappen til Power Automate?
+
 Power Automate-mobilappen er tilgængelig på [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) eller [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="can-flows-be-turned-off-or-disabled"></a>Kan flows deaktiveres eller slås fra?
@@ -138,12 +147,20 @@ Forespørgsel, f.eks. udløseren **Gentagelse**|Alle ikke-behandlede/ventende be
 Webhook|Når flowet slås til igen, behandles kun begivenheder, som genereres, når flowet er slået til.
 
 ### <a name="what-regions-and-languages-does-power-automate-support"></a>Hvilke områder og sprog understøtter Power Automate?
-Power Automate er tilgængelig på 42 sprog og i [seks områder](regions-overview.md).
+
+Power Automate er tilgængelig på 42 sprog og i [seks områder](regions-overview.md). Sådan får du vist de tilgængelige sprog:
+
+1. Log på [Power Platform Administration > Miljøer](https://admin.powerplatform.microsoft.com/environments)
+1. Vælg dit miljø
+1. Vælg **Indstillinger** på den øverste menulinje.
+1. Vælg **Produkt > Sprog**
 
 ### <a name="how-does-power-automate-compare-to-sharepoint-designer-2013"></a>Hvordan er Power Automate sammenlignet med SharePoint Designer 2013?
+
 Power Automate er efterfølgeren til SharePoint Designer for mange almindelige virksomhedsscenarier som f.eks. godkendelser, dokumentgennemsyn og onboarding/offboarding. Det vil fremover være standardværktøjet til oprettelse af funktioner til forretningsautomatisering i SharePoint.
 
 ### <a name="how-does-power-automate-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Hvordan sikrer Power Automate, at virksomhedens data ikke ved et uheld frigives til sociale medier?
+
 Administratorer kan oprette [politikker til forebyggelse af datatab](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) for at sikre, at der kun kan anvendes godkendte tjenester i Power Automate.
 
 ### <a name="does-power-automate-support-service-accounts"></a>Understøtter Power Automate tjenestekonti?

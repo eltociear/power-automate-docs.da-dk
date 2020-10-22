@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: a8b4ee39a7d40df41a1c8012a33860a77a51a092
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: 768f447ab644fcf94e3c971929e7813efa4af66b
+ms.sourcegitcommit: 9f0460d80aa368ad25e7ec85bfab0754a17a5526
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346555"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803388"
 ---
 # <a name="billing-and-metering-questions"></a>Spørgsmål om fakturering og måling
 
@@ -33,7 +33,7 @@ ms.locfileid: "3346555"
 I denne artikel finder du svar på ofte stillede spørgsmål om fakturering og måling i Power Automate.
 
 >[!NOTE]
-> Power Apps og Power Automate bruger en [ny licensmodel](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq), der starter den 1. oktober 2019. 
+> Power Apps og Power Automate begyndte at bruge en [ny licensmodel](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) den 1. oktober 2019. 
 
 ## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>Hvor kan jeg finde ud af, hvilke planer for prisfastsættelse der er tilgængelige?
 

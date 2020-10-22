@@ -4,8 +4,8 @@ description: Automatiser gentagne opgaver ved at køre flow efter en tidsplan, f
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/29/2020
-ms.author: nijemcevic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cb5c1d522a522aa1ef2dce2bc0757e4efa3fcc42
-ms.sourcegitcommit: 71dd515fb482312e2878c3eb8642441780290cb5
+ms.openlocfilehash: 86633b3f976107aeaa8138405aecb2f2b493e9e4
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3742422"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900258"
 ---
 # <a name="run-flows-on-a-schedule"></a>Kør flow efter en tidsplan
 
@@ -38,8 +38,8 @@ Opret et flow, der udfører en eller flere handlinger (f.eks afsendelse af en ra
 ## <a name="create-a-recurring-flow"></a>Opret et tilbagevendende flow
 
 1. Log på [Power Automate](https://flow.microsoft.com), og vælg derefter fanen **Mine flow** i venstre navigationsrude.
-1. Vælg **+ Nyt**, og vælg derefter **+ Automatiseret – fra bunden**.
-    ![Opret en proces fra bunden](./media/run-scheduled-tasks/create-flow.png)
+1. Vælg **Nyt**, og vælg derefter **Planlagt fra bunden**.
+    ![Opret et flow fra tom](./media/run-scheduled-tasks/create-flow.png)
 1. Angiv, hvornår flowet skal starte, ved at redigere felterne **Start**, og angiv flowets gentagelse ved at redigere felterne **Gentag hver**, og vælg derefter **Opret**.
     ![Angiv gentagelse](./media/run-scheduled-tasks/select-recurrence.png)
 

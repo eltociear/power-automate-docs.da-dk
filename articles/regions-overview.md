@@ -13,49 +13,31 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
-ms.author: deonhe
+ms.date: 08/25/2020
+ms.author: hamenon
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b36b2cf5b4d400c1f2cb8a4094c984c57e5c76e
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: 81f9a3533d8180184b12b07ab6379e86ce20c198
+ms.sourcegitcommit: dc401f03be124fffb1cb34e368784e8072a73ccb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691050"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3892755"
 ---
-# <a name="faq-for-regions-in-power-automate"></a>Ofte stillede spørgsmål om områder i Power Automate
+# <a name="power-automate-regions-overview"></a>Oversigt over Power Automate-områder
 
-Dette dokument indeholder en liste over ofte stillede spørgsmål om Power Automate.
+I Power Automate oprettes flows i dit Power Platform-miljø. Disse miljøer er specifikke for et område, som svarer til placeringen af de datacentre, hvor Power Platform-miljøet er gemt.
 
-## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>Hvordan finder jeg ud af, hvor mine flow er udrullet?
-Dit flow er udrullet i det [område](https://azure.microsoft.com/regions/), der hoster [miljøet](environments-overview-admin.md). Hvis dit miljø f.eks. er oprettet i området Europa, er dit flow installeret i datacentre i Europa.
+Med andre ord installeres dine flows i det [datacenterområde](https://azure.microsoft.com/regions/), der er vært for dit [Power Platform-miljø](environments-overview-admin.md).
 
-Administratorer kan identificere området, hvis de logger på Power Platform [Administration](https://admin.powerplatform.microsoft.com/). Under fanen **Miljøer** vises alle eksisterende miljøer og områder.
+## <a name="more-information-about-power-platform-regions"></a>Flere oplysninger om Power Platform-områder
 
-![vise miljøer](media/regions-overview/environments-list.png)
+[Oversigt over Power Platform-områder](/power-platform/admin/regions-overview)
 
-## <a name="what-regions-are-available"></a>Hvilke områder er tilgængelige?
-* USA
-* Europa
-* Asien
-* Australien
-* Indien
-* Japan
-* Canada
-* Sydamerika
-* Storbritannien
-* US Government (GCC)
-* Frankrig
-
-## <a name="what-features-are-specific-to-a-given-region"></a>Hvilke funktioner er specifikke for et bestemt område?
-
-Miljøer kan oprettes i forskellige områder og er bundet til den pågældende geografiske placering. Når du opretter et flow i et miljø, installeres dette flow i datacentre på den pågældende geografiske placering. Dette gælder for alle elementer, du opretter i det pågældende miljø, herunder Common Data Model, flow, forbindelser, gateways, apps og brugerdefinerede connectors.
-
-Opret dit miljø i det område, der er tættest på brugerne, for at få optimal ydeevne. Hvis dine brugere befinder sig i Europa, skal du f.eks. oprette miljøerne i området Europa. Hvis brugerne befinder sig i USA, skal du oprette miljøerne i området USA.
+[Geografiske områder i Azure](https://azure.microsoft.com/global-infrastructure/geographies/)
 
 ## <a name="region-mappings-for-power-automate-and-gateways"></a>Områdetilknytninger for Power Automate og gateways
 
@@ -73,12 +55,23 @@ Europa|Det nordlige Europa, Det vestlige Europa
 Frankrig|Det centrale Frankrig, Det sydlige Frankrig
 Indien|Det centrale Indien, Det sydlige Indien, Det vestlige Indien
 Japan|Det østlige Japan, Det vestlige Japan
-Sydamerika|Det sydlige Brasilien
+Sydamerika|Det Sydlige Brasilien
 Storbritannien|Det sydlige Storbritannien, Det vestlige Storbritannien
 
-## <a name="is-power-automate-available-in-national-clouds"></a>Er Power Automate tilgængelig i nationale skyer?
+## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
+
+### <a name="what-region-should-i-use"></a>Hvilket område skal jeg bruge?
+
+Det er en god ide at oprette dit flow i et miljø, der er i det område, der er nærmest dine kunder. Når de datacentre, der er vært for miljøet, er tættere på de personer, der har adgang til oplysningerne, vil du sandsynligvis opleve bedre ydeevne.
+
+### <a name="how-can-i-find-out-the-region-where-my-flow-is-deployed"></a>Hvordan finder jeg frem til det område, hvor mit flow er udrullet?
+
+Administratorer kan identificere området ved at logge på Power Platform [Administration](https://admin.powerplatform.microsoft.com/). Under fanen **Miljøer** vises alle eksisterende miljøer og områder.
+
+### <a name="is-power-automate-available-in-national-clouds"></a>Er Power Automate tilgængelig i nationale skyer?
+
 Ja. [Få mere at vide](./us-govt.md).
 
-## <a name="what-outbound-ip-addresses-are-used-in-each-region"></a>Hvilke udgående IP-adresser bruges i hvert område?
-Se [Grænser og konfiguration](limits-and-config.md).
+### <a name="what-outbound-ip-addresses-are-used-in-each-region"></a>Hvilke udgående IP-adresser bruges i hvert område?
 
+Se [Grænser og konfiguration](limits-and-config.md).

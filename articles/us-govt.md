@@ -7,24 +7,24 @@ author: msftman
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.date: 08/11/2020
+ms.date: 10/08/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: e5abbe18e9b350e8b820655fb8280496589d24b6
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: 1322dc6b3d391033e3283356798bf5d91a729aba
+ms.sourcegitcommit: eedb45292b26b4729d74e09262706c5085327dba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691194"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970182"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
 
 
-Microsoft har oprettet Power Automate US Government-planer for at imødegå de entydige krav i den offentlige sektor i USA, som hele tiden ændres. Dette afsnit indeholder en oversigt over funktioner, der er specifikke for Power Automate US Government. Vi anbefaler, at du læser dette supplerende afsnit samt emnet [Introduktion](https://docs.microsoft.com/flow/getting-started) for Power Automate-tjenesten. Denne services kaldes ofte bare *Flow GCC*.
+Microsoft har oprettet Power Automate US Government-planer for at imødegå de entydige krav i den offentlige sektor i USA, som hele tiden ændres. Dette afsnit indeholder en oversigt over funktioner, der er specifikke for Power Automate US Government. Vi anbefaler, at du læser dette supplerende afsnit samt emnet [Introduktion](https://docs.microsoft.com/flow/getting-started) for Power Automate-tjenesten. Denne tjeneste er almindeligvis omtalt som Power Automate Government Community Cloud (GCC) eller Power Automate Government Community Cloud – High (GCC High).
 
 Beskrivelsen af Power Automate US Government-servicen er et tillæg til den generelle beskrivelse af Power Automate-servicen. Den definerer de entydige forpligtelser og forskelle sammenlignet med de generelle Power Automate-tilbud, der har været tilgængelige for vores kunder siden oktober 2016.
 
@@ -58,18 +58,14 @@ Objekter med spørgsmål om berettigelse til Power Automate US Government skal s
 
 Adgang til Power Automate US Government-planer er begrænset til de tilbud, der er beskrevet i følgende afsnit; hver enkelt plan tilbydes som et månedsabonnement og kan gives i licens til et ubegrænset antal brugere:
 
-- Power Automate/Power Apps Plan 1 US Government
+- Power Automate pr. flowplan for offentlig myndighed
+- Power Automate pr. brugerplan for offentlig myndighed
 
-- Power Automate/Power Apps Plan 2 US Government
-
-- Ud over de separate planer, er Power Automate- og Power Apps-funktioner også inkluderet i visse Office 365 US Government- og Dynamics 365 US Government-planer, der gør det muligt for kunderne at udvide og tilpasse Office 365 og Dynamics 365 med Power Automate- og Power Apps-funktioner.
-
-> [!NOTE]
-> Licenser er tilgængelige i kundelejere fra midten af april 2019.
+- Ud over de enkeltstående planer inkluderer Microsoft 365 US Government- og Dynamics 365 US Government-planer også Power Apps- og Power Automate-funktionerne, der giver kunderne mulighed for at udvide og tilpasse Microsoft 365- og Customer Engagement-apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service og Dynamics 365 Project Service Automation). 
 
 Yderligere oplysninger samt oplysninger om forskellene i funktionaliteten mellem disse licensgrupper er beskrevet mere detaljeret her: [Power Automate-licensoplysninger](https://flow.microsoft.com/pricing/).
 
-Power Automate US Government er tilgængelig gennem volumenlicens og Cloud Solution Provider-købskanaler.
+Power Automate US Government er tilgængelig gennem volumenlicens og Cloud Solution Provider-købskanaler. Programmet Cloud Solution Provider er ikke i øjeblikket tilgængeligt for kunder med GCC High.
 
 ## <a name="differences-between-customer-data-and-customer-content"></a>Forskelle i kundedata og kundeindhold
 
@@ -82,8 +78,6 @@ Du kan finde flere oplysninger om, hvordan Power Automate beskytter kundedata, p
 ## <a name="data-segregation-for-government-community-cloud"></a>Opdeling af data for Government Community Cloud
 
 Når Power Automate-tjenesten er klargjort som en del af Power Automate US Government, tilbydes den i overensstemmelse med National Institute of Standards and Technology (NIST) Special Publication 800-145.
-
-Microsoft kalder dette tilbud for Government Community Cloud (GCC).
 
 Ud over den logiske opdeling af kundeindhold på programniveau giver Power Automate Government-tjenesten din organisation et sekundært lag af fysisk opdeling af kundeindhold ved hjælp af infrastrukturer, der er adskilt fra den infrastruktur, der anvendes til kommercielle Power Automate-kunder. Dette omfatter brug af Azure-tjenester i Azures Government Cloud. Du kan få mere at vide under [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
 
@@ -116,10 +110,10 @@ Power Automate-support og tekniske servicemedarbejdere har ikke løbende adgang 
 
 Power Automate US Government er udviklet til at understøtte Federal Risk and Authorization Management Program-akkrediteringen (FedRAMP) på et niveau med høj effekt. Dette program resulterer i justering iht. DoD DISA IL2. FedRAMP-artefakter er tilgængelige til gennemsyn af føderale kunder, der skal overholde FedRAMP. Føderale myndigheder kan gennemse disse artefakter som et led i deres gennemgang for at udstede en ATO (dvs. driftsgodkendelse).
 
-> [!NOTE]
-> I øjeblikket gennemgås Power Automate US Government-services i forhold til FedRAMP, men de er tildelt en SAR (Security Assessment Report) af en kvalificeret [3PAO](https://www.fedramp.gov/3pao-requirements-update/).
+>[!NOTE]
+>Power Automate er godkendt som en tjeneste i Azure Government FedRAMP ATO. Du kan finde flere oplysninger, herunder hvordan du får adgang til FedRAMP-dokumenterne, ved at gennemse [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
 
-Når Microsoft opdaterer FedRAMP-artefakter som en del af standardrevisionscyklusser, opdateres indhold tilsvarende.
+
 
 Power Automate US Government har funktioner, der er designet til et understøtte kunders krav til CJIS-politik for retshåndhævende myndigheder. Gå til produktsiden for Power Automate US Government i Center for sikkerhed og rettigheder for at få flere detaljerede oplysninger om certificeringer og akkrediteringer.
 
@@ -143,6 +137,22 @@ Power Automate US Government giver mulighed for at integrere tredjepartsprogramm
 
 > [!TIP]
 > Gennemse erklæringerne om beskyttelse af personlige oplysninger og overholdelse af angivne standarder, som angivet af tredjeparter, når den relevante brug af disse services i din organisation skal vurderes.
+
+[Power Apps- og Power Automate-styringsspørgsmål](https://docs.microsoft.com/power-platform/admin/governance-considerations) kan hjælpe din organisation med at skabe opmærksomhed omkring de muligheder, der er tilgængelige på tværs af flere relaterede temaer, f.eks. arkitektur, sikkerhed, advarsel og handling samt overvågning.
+
+## <a name="configure-mobile-clients"></a>Konfigurere mobilklienter
+
+Her er de trin, du skal udføre for at logge på med Power Apps-mobilklienten.
+
+1. Vælg ikonet med tandhjulet i nederste højre hjørne på logonsiden.
+1. Vælg **Områdeindstillinger**.
+1. Vælg en af følgende:
+   - GCC: US Government GCC
+   - GCC High: US Government GCC High.
+1. Vælg OK.
+1. Vælg **Log på** på logonsiden.
+
+Mobilprogrammet bruger nu US Government Cloud.
 
 ## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government og Azure Services
 
@@ -222,24 +232,13 @@ Hvis din organisation (lejer) allerede har konfigureret og oprettet forbindelse 
 
 Nogle af de funktioner, der er tilgængelige i den kommercielle version af Flow, er ikke tilgængelige for Flow US Government-kunder. Flow-teamet arbejder aktivt på at gøre disse funktioner tilgængelige for US Government-kunder og opdaterer denne artikel, når funktionerne bliver tilgængelige.
 
-- Udløser Power Automate US Government-flow *fra*SharePoint-lister
-
-- Udløser Power Automate US Government-flow *fra* Dynamics 365 GCC
-
 - [AI Builder](https://docs.microsoft.com/ai-builder/) er endnu ikke tilgængelig til GCC- og GCC High-lejere.
 
 - Der findes [godkendelser](./modern-approvals.md) til GCC- og GCC High-lejere, som er underlagt følgende:
   * Der er ingen handlingssupport, der skal godkendes. Godkendelsesmails indeholder links til Power Automate-godkendelsescenter, som brugerne kan svare på.
   * Der er ingen markdown-understøttelse af godkendelsesmail. 
 
-- [Forbrugsanalyse](https://flow.microsoft.com/blog/admin-analytics/)
-
-- [Power Automate-mobilapplikation](https://docs.microsoft.com/flow/mobile-manage-flows)
-
 - [Indsendelse af skabeloner](https://docs.microsoft.com/flow/publish-a-template)
-
-    > [!NOTE]
-    > Indsendelse af skabeloner er deaktiveret i GCC for at imødegå bekymringer i forhold til styring af virksomhedsdata og dataflow.
 
 - [Connectorer](https://docs.microsoft.com/connectors/index) – De mest populære connectorer, der bruges i vores kommercielle service (baseret på brugstelemetri), er blevet udgivet. Hvis der findes en connector i det kommercielle tilbud, som du ikke kan se udrullet, kan du kontakte support, hvorefter din anmodning gennemgås.
 
@@ -249,4 +248,8 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af Flow,
 
 ### <a name="see-also"></a>Se også
 
-[Power Apps Offentlige amerikanske myndigheder](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+- [Flows for brugergrænseflade](https://docs.microsoft.com/power-automate/ui-flows/overview).
+
+- [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government).
+
+- [Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).

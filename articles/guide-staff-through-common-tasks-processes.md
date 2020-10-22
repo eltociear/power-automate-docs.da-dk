@@ -2,7 +2,7 @@
 title: Oprette brugerdefineret forretningslogik via processer med Power Apps | MicrosoftDocs
 description: Få mere at vide om de forskellige typer forretningslogik, der kan bruges i din app
 ms.custom: ''
-ms.date: 05/01/2018
+ms.date: 07/29/2020
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
@@ -22,17 +22,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: af51cc703dbb42296493237bdd25387c6c15720c
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: abc262ce4ecee77ef6b11e6594e7d615d89f5413
+ms.sourcegitcommit: 6aead6aa695ef3dd09a397f7e2df85e3f480071f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298105"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3795125"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Oprette brugerdefineret forretningslogik gennem processer
 
 
-Definering og gennemtvingelse af ensartede forretningsprocesser er en af hovedårsagerne til, at folk bruger modelstyrede apps. Ensartede processer er med til at sikre, at brugerne af systemet kan fokusere på deres arbejde og ikke på at huske at udføre en række manuelle trin. Processer kan være simple eller avancerede og kan ændre sig over tid.  
+Definering og gennemtvingelse af ensartede forretningsprocesser er en af hovedårsagerne til, at folk bruger modelstyrede apps. Ensartede processer er med til at sikre, at brugerne af systemet kan fokusere på deres arbejde og ikke på at huske at udføre en række manuelle trin. Processerne kan være enkle eller komplekse og kan ændres løbende.  
   
 Power Apps omfatter adskillige typer processer, som hver er udviklet til forskellige formål:  
   
@@ -44,38 +44,35 @@ Power Apps omfatter adskillige typer processer, som hver er udviklet til forskel
   
 -   Handlinger  
   
- Som det gælder for processer, du kan også oprette forretningsregler og anbefalinger. Du kan finde flere oplysninger i [Opret forretningsregler og -anbefalinger for at anvende logik i en formular](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
+ Som det gælder for processer, du kan også oprette forretningsregler og anbefalinger. Du kan finde flere oplysninger i [Oprette forretningsregler og anbefalinger til anvendelse af logik i en formular](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
->  Brug af processer kan påvirke licenskravene til Power Apps og flows. Du kan finde flere oplysninger i [Licenskrav til enheder](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
+>  Brug af processer kan påvirke licenskravene til Power Apps og flows. Du kan finde flere oplysninger i [Objektlicenskrav](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
 
 
 <a name="BKMK_BP"></a>   
 ## <a name="when-to-use-business-process-flows"></a>Hvornår bruges forretningsprocesforløb  
  Brug et forretningsprocesforløb, når du vil have medarbejdere til at gå gennem de samme faser og følge de samme trin, når de kommunikerer med en kunde. Brug f.eks. et forretningsprocesforløb, hvis du vil have alle til at håndtere kundeserviceforespørgsler på samme måde eller til at kræve, at medarbejdere får godkendt en faktura, før de sender en ordre.  
   
- Dit miljø inkluderer flere forretningsprocesforløb, der er klar til brug, til fælles salgs-, service- og marketingopgaver, som du kan bruge ved at foretage nogle få ændringer eller slet ingen. Eller du kan oprette dit eget. Se følgende emne for at få flere oplysninger om forretningsprocesforløb:  
+ Dit miljø indeholder flere standardforretningsprocesforløb til almindelige salgs-, service- og marketingopgaver, som du kan bruge med kun få eller ingen ændringer. Du kan også oprette dit eget. Se følgende emne for at få flere oplysninger om forretningsprocesforløb:  
   
 -   [Oprette et forretningsprocesforløb](create-business-process-flow.md)  
   
 <a name="BKMK_WF"></a>   
-## <a name="when-to-use-workflows"></a>Hvornår kan du bruge arbejdsprocesser?  
- Du kan bruge arbejdsprocesser til at automatisere forretningsprocesser i baggrunden. Arbejdsprocesser igangsættes typisk af systemhændelser, så brugeren behøver ikke vide, at de kører. Arbejdsprocesser, der kører i baggrunden, er "asynkrone". Arbejdsprocesser kan også konfigureres, så brugerne igangsætter dem manuelt. Når du vil automatisere almindelige opgaver, som f.eks. automatisk at sende en bekræftelsesmail til en kunde, når der afsendes en ordre. Arbejdsprocesser, der kører i realtid, er "synkrone". Du kan finde flere oplysninger om arbejdsprocesser i [Arbejdsprocesser](workflow-processes.md)  
-
-<a name="BKMK_Actions"></a>   
-## <a name="when-to-use-actions"></a>Hvornår bruges handlinger  
- Brug handlinger, når du vil automatisere en række kommandoer i systemet. Handlinger udvider det ordforråd, der er tilgængeligt for udviklere til at beskrive forretningsprocesser. Grundlæggende verber som f.eks. Opret, Opdater, Slet og Tildel, som leveres af systemet, anvendes af en handling til at oprette mere udtryksfulde verber som f.eks. Godkend, Eskaler, Distribuer eller Planlæg. Hvis definitionen af en forretningsproces ændres, kan andre end udviklere ændre handlingen, så koden ikke behøver at blive ændret.  Du kan finde flere oplysninger om handlinger under [Handlinger](create-actions.md)  
+## <a name="when-to-use-workflows"></a>Hvornår bruges arbejdsprocesser  
+ Brug arbejdsprocesser til at automatisere forretningsprocesser bag kulisserne. Arbejdsprocesser igangsættes typisk af systemhændelser, så brugeren behøver ikke vide, at de kører. Arbejdsprocesser, der kører i baggrunden, er "asynkrone". Arbejdsprocesser kan også konfigureres, så brugerne igangsætter dem manuelt. Når du vil automatisere almindelige opgaver, som f.eks. automatisk at sende en bekræftelsesmail til en kunde, når der afsendes en ordre. Arbejdsprocesser, der kører i realtid, er "synkrone". Du kan finde flere oplysninger om arbejdsprocesser i [Arbejdsprocesser](workflow-processes.md)  
+ 
   
 <a name="useMSFlow"></a>   
 ## <a name="when-to-use-power-automate"></a>Hvornår bruges Power Automate  
- Brug Power Automate, når du har brug at oprette automatiserede arbejdsprocesser, der udfører handlinger mellem dit miljø og dine foretrukne apps og tjenester, f.eks. Dynamics 365, Twitter, Dropbox, Google-tjenester, Office 365 og SharePoint. Du kan udløse et flow baseret på en bestemt handling, eller du kan kalde det fra din app. Flere oplysninger: [Brug Power Automate til at automatisere processer på tværs af tjenester](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+ Brug Power Automate, når du har brug at oprette automatiserede arbejdsprocesser, der udfører handlinger mellem dit miljø og dine foretrukne apps og tjenester, f.eks. Dynamics 365, Twitter, Dropbox, Google-tjenester, Office 365 og SharePoint. Du kan udløse et forløb baseret på en bestemt handling, eller du kan starte den fra din app. Flere oplysninger: [Brug Power Automate til at automatisere processer på tværs af tjenester](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
 )  
   
 <a name="BKMK_Where"></a>   
 ## <a name="where-do-i-go-to-create-processes"></a>Hvor kan jeg oprette processer?  
- Der er to stier til at navigere til processer:  
+ Der findes to stier til at navigere til processerne:  
   
-- Åbn [Løsningsoversigt](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), og gå til **Komponenter > Processer.** Denne sti giver nem adgang, når du udfører andre tilpasningsopgaver i tilpasningsværktøjerne.  
+- Åbn [Løsningsoversigt](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), og gå til **Komponenter > Processer.** Denne sti giver nem adgang, når du udfører anden tilpasning i tilpasningsværktøjerne.  
 
 - **[Indstillinger](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Processer.** Denne sti giver dig mulighed for at bruge de visninger, der er defineret for procesenheden, herunder alle brugerdefinerede visninger.  
   
@@ -83,7 +80,7 @@ Power Apps omfatter adskillige typer processer, som hver er udviklet til forskel
   
 <a name="BKMK_WhoCreate"></a>   
 ## <a name="who-can-create-processes"></a>Hvem kan oprette processer?  
- Kun personer med rollen som systemadministrator, systemtilpasser eller administrerende direktør kan oprette processer, der gælder for hele miljøet. Personer med andre roller kan oprette processer med begrænset adgang. Personer med adgangsniveauet Bruger kan f.eks. oprette arbejdsprocesser til eget brug sammen med poster, de ejer.  
+ Kun personer med rollen som systemadministrator, systemtilpasser eller administrerende direktør kan oprette processer, der gælder for hele miljøet. Brugere med andre roller kan oprette processer med begrænset adgangsniveau. Personer med adgangsniveauet Bruger kan f.eks. oprette arbejdsprocesser til eget brug sammen med poster, de ejer.  
   
  I den følgende tabel vises adgangsniveauet for processer baseret på standardsikkerhedsroller.  
   
@@ -114,8 +111,8 @@ Power Apps omfatter adskillige typer processer, som hver er udviklet til forskel
 |Trin|Procestype|Beskrivelse|  
 |----------|------------------|-----------------|  
 |**Fase**|Arbejdsproces, handling|Faser gør arbejdsproceslogikken nemmere at læse og forklarer arbejdsproceslogikken. Faserne påvirker imidlertid ikke logikken i eller funktionsmåden for arbejdsprocesser. Hvis en proces indeholder faser, skal samtlige trin i processen være indeholdt i en fase.|  
-|**Kontrollér betingelse**|Arbejdsproces, handling|En logisk "if-\<betingelse> then"-sætning.<br /><br /> Du kan kontrollere værdier for den post, som arbejdsprocessen kører på, de poster, der er knyttet til denne post i en N:1-relation, eller poster, der er oprettet i tidligere trin. Afhængigt af disse værdier kan du definere yderligere trin, når betingelsen er sand `true`.|  
-|**Betinget forgrening**|Arbejdsproces, handling|En logisk "else-if-then"-sætning, hvor editoren bruger teksten "Otherwise, if \<betingelse> then":<br /><br /> Vælg en kontrol af en betingelse, som du tidligere har defineret, og du kan tilføje en betinget forgrening for at definere yderligere trin, når kontrollen af betingelsen returnerer `false`.|  
+|**Kontrollér betingelse**|Arbejdsproces, handling|En logisk "if-\<condition> then"-sætning.<br /><br /> Du kan kontrollere værdier for den post, som arbejdsprocessen kører på, de poster, der er knyttet til denne post i en N:1-relation, eller poster, der er oprettet i tidligere trin. Afhængigt af disse værdier kan du definere yderligere trin, når betingelsen er sand `true`.|  
+|**Betinget forgrening**|Arbejdsproces, handling|En logisk "else-if-then"-sætning, hvor editoren bruger teksten "Otherwise, if \<condition> then:"<br /><br /> Vælg en kontrol af en betingelse, som du tidligere har defineret, og du kan tilføje en betinget forgrening for at definere yderligere trin, når kontrollen af betingelsen returnerer `false`.|  
 |**Standardhandling**|Arbejdsproces, handling|En logisk "else"-sætning. editoren bruger teksten "Otherwise:"<br /><br /> Vælg en kontrol af en betingelse, betinget forgrening, vent-betingelse eller parallel vent-gren, du tidligere har defineret, og du kan bruge en standardhandling til at definere trin for alle de sager, som ikke stemmer overens med kriterierne, som er defineret i betingelses- eller grenelementerne.|  
 |**Vent-betingelse**|Kun baggrundsarbejdsproces|Gør det muligt for en arbejdsproces i baggrunden at afbryde sig selv midlertidigt, indtil de kriterier, der er defineret i betingelsen, er opfyldt. Arbejdsprocessen starter igen automatisk, når kriterierne i vent-betingelsen er opfyldt.|  
 |**Parallel vent-gren**|Kun baggrundsarbejdsproces|Definerer en alternativ vent-betingelse for en arbejdsproces i baggrunden med et tilsvarende sæt ekstra trin, der kun skal udføres, når det første kriterium opfyldes. Du kan bruge parallelle vent-grene til at oprette tidsgrænser i arbejdsproceslogikken. De kan være med til at forhindre, at arbejdsprocessen venter på ubestemt tid på, at de kriterier, der er defineret i en vent-betingelse, opfyldes.|  
@@ -127,7 +124,7 @@ Power Apps omfatter adskillige typer processer, som hver er udviklet til forskel
 |**Start en underordnet arbejdsproces**|Arbejdsproces, handling|Starter en proces i en arbejdsproces, der er konfigureret som en underordnet arbejdsproces.|  
 |**Skift status**|Arbejdsproces, handling|Ændrer status for den post, som processen kører på, de poster, der er knyttet til denne post i en N:1-relation, eller poster, der er oprettet i tidligere trin.|  
 |**Stop arbejdsproces**|Arbejdsproces, handling|Standser den aktuelle arbejdsproces eller handling. Du kan angive en status til enten **Fuldført** eller **Annulleret** og angive en statusmeddelelse.|  
-|**Brugerdefineret trin**|Arbejdsproces, handling|Leverer udvidelser til de tilgængelige logiske standardelementer. Trin kan omfatte betingelser, handlinger, andre trin eller en kombination af disse elementer. Udviklere kan oprette brugerdefinerede trin til arbejdsprocestrin. Som standard er der ingen brugerdefinerede trin tilgængelige.|
+|**Brugerdefineret trin**|Arbejdsproces, handling|Leverer udvidelser til de tilgængelige logiske standardelementer. Trin kan omfatte betingelser, handlinger, andre trin eller en kombination af disse elementer. Udviklere kan oprette brugerdefinerede arbejdsprocestrin. Som standard er der ikke nogen tilgængelige brugerdefinerede trin.|
 
   
 

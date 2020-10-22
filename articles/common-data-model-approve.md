@@ -4,7 +4,7 @@ description: Opret et objekt, et flow og en app, der arbejder sammen, så valida
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,24 +14,24 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/07/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 218e4fffd1ba86fec1c38a8322774f642ab64001
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 28b7ba179ba96efcc479a4b939e6c3cab3f5de7c
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299205"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900306"
 ---
 # <a name="build-an-approval-loop-by-using-power-automate-and-common-data-service"></a>Opret en godkendelsesløkke ved hjælp af Power Automate og Common Data Service
 
 Med Common Data Service kan du oprette flows på en måde, hvor oplysningerne gemmes i en database, der er uafhængig af et flow. Det bedste eksempel på dette er godkendelser. Hvis du gemmer status for godkendelsen i en enhed, kan dit flow arbejde oven på den.
 
-I dette eksempel skal du oprette en godkendelsesproces, der starter, når en bruger føjer en fil til Dropbox. Når filen er tilføjet, vises oplysninger om det i en app, hvor en validator kan godkende eller afvise ændringen. Hvis validatoren godkender eller afviser ændringen, sendes der en meddelelsesmail, og afviste filer slettes fra Dropbox.
+I dette eksempel skal du oprette en godkendelsesproces, der starter, når en bruger føjer en fil til Dropbox. Når filen er tilføjet, vises oplysninger om den i en app, hvor en validator kan godkende eller afvise ændringen. Når validatoren godkender eller afviser ændringen, sendes der en meddelelsesmail, og afviste filer slettes fra Dropbox.
 
 Ved at følge trinnene i dette afsnit opretter du:
 
@@ -67,7 +67,7 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Angiv objektnavnet](./media/common-data-model-approve/entity-name.png)
 7. Under **Vist navn** skal du angive et brugervenligt navn.
    
-    ![Angiv det viste navn](./media/common-data-model-approve/display-name.png)
+    ![Angiv vist navn](./media/common-data-model-approve/display-name.png)
 8. Klik eller tryk på **Næste**.
    
     ![Knappen Næste](./media/common-data-model-approve/next-button.png)
@@ -76,7 +76,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 1. Klik eller tryk på **Tilføj felt** i nærheden af øverste højre hjørne.
    
     ![Tilføj felt](./media/common-data-model-approve/add-field.png)
-2. I den tomme række, der vises nederst på listen over felter, skal du angive egenskaber for et **Godkender**-felt. (I takt med at du angiver disse egenskaber, kan du skifte til den næste kolonne ved at trykke på Tab.)
+2. I den tomme række, der vises nederst på listen over felter, skal du angive egenskaber for et **Godkender**-felt. (I takt med at du angiver disse egenskaber, kan du skifte til den næste kolonne ved at trykke på Tab).
    
    * I kolonnen **Vist navn** skal du skrive **Godkender**.
    * I kolonnen **Navn** skal du skrive **ApproverEmail**.
@@ -93,22 +93,22 @@ Ved at følge trinnene i dette afsnit opretter du:
    * I kolonnen **Påkrævet** skal du markere afkrydsningsfeltet.
      
      ![Statusfelt](./media/common-data-model-approve/status-field.png)
-4. I den næste række skal du angive egenskaberne for et **Fil-id**-felt:
+4. I den næste række skal du angive egenskaberne for et **FileId**-felt:
    
-   * I kolonnen **Vist navn** skal du skrive **Fil-id**.
-   * I kolonnen **Navn** skal du skrive **Fil-id**.
+   * I kolonnen **Vist navn** skal du skrive **Filens identifikator**.
+   * I kolonnen **Navn** skal du skrive **FileID**.
    * I kolonnen **Type** skal du klikke eller trykke på indstillingen **Tekst**.
    * I kolonnen **Egenskaber** beholder du standardværdien.
    * I kolonnen **Entydig** skal du markere afkrydsningsfeltet.
    * I kolonnen **Påkrævet** skal du markere afkrydsningsfeltet.
      
-     ![Feltet Fil-id](./media/common-data-model-approve/fileid-field.png)
-5. I nærheden af højre kant skal du klikke eller trykke på ellipsen (...) til feltet **Fil-id** og derefter klikke eller trykke på **Angiv som titelfelt**.
+     ![Feltet FileID](./media/common-data-model-approve/fileid-field.png)
+5. I nærheden af højre kant skal du klikke eller trykke på ellipsen (...) til feltet **FileID** og derefter klikke eller trykke på **Angiv som titelfelt**.
    
     ![Angiv titelfelt](./media/common-data-model-approve/set-title-field.png)
 6. Klik eller tryk på **Opret** i nærheden af nederste venstre hjørne.
    
-    ![Oprette et objekt](./media/common-data-model-approve/create-button.png)
+    ![Opret et objekt](./media/common-data-model-approve/create-button.png)
 7. (valgfrit) Når listen over objekter vises igen, skal du maksimere browservinduet, hvis det ikke allerede er maksimeret, og derefter klikke eller trykke på kolonneoverskriften **Type**. Listen sorteres, så de brugerdefinerede objekter, f.eks. det, du lige har oprettet, vises øverst.
 
 ## <a name="sign-in-and-create-a-flow"></a>Log på, og opret et flow
@@ -118,7 +118,7 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Knappen Log på for Power Automate](./media/common-data-model-approve/signin-flow.png)
 3. I menuen øverst til højre skal du vælge det miljø, hvor du oprettede databasen i powerapps.com.
    
-    **Bemærk**! Hvis du ikke vælger det samme miljø, får du ikke vist din enhed.
+    **Bemærk**: Hvis du ikke vælger det samme miljø, får du ikke vist din enhed.
 4. Klik eller tryk på **Mine flows** i nærheden af øverste venstre hjørne.
    
     ![Knappen Mine flows](./media/common-data-model-approve/myflows-button.png)
@@ -149,15 +149,15 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Tilføj tokenet Filnavn](./media/common-data-model-approve/add-filename-token.png)
 5. Under **Godkender** skal du skrive eller indsætte mailadressen på den person, der skal gennemse filerne.
    
-    **Bemærk!** Angiv din egen adresse, så det er lettere at teste flowet. Du kan ændre den senere, når flowet er klar til faktisk brug.
+    **Bemærk**: Angiv din egen adresse, så det er lettere at teste flowet. Du kan ændre den senere, når flowet er klar til faktisk brug.
    
     ![Tilføj godkender](./media/common-data-model-approve/add-approver.png)
 6. Under **Status** skal du skrive eller indsætte **Ventende**.
    
     ![Tilføj standardstatus](./media/common-data-model-approve/add-default-status.png)
-7. Klik eller tryk på feltet under **Fil-id**, og klik eller tryk derefter på **Fil-id** på listen over parametertokens for at føje dette token til feltet.
+7. Klik eller tryk på feltet under **Filens identifikator**, og klik eller tryk derefter på **Filens identifikator** på listen over parametertokens for at føje dette token til feltet.
    
-    ![Tilføj tokenet Fil-id](./media/common-data-model-approve/add-file-identifier.png)
+    ![Tilføj tokenet Filens identifikator](./media/common-data-model-approve/add-file-identifier.png)
 
 ## <a name="check-whether-the-file-has-been-reviewed"></a>Kontrollér, om filen er blevet gennemgået
 1. Under handlingen **Opret objekt** skal du klikke eller trykke på **Nye trin**, klikke eller trykke på **Flere** og derefter klikke eller trykke på **Tilføj et foretag indtil**.
@@ -167,7 +167,7 @@ Ved at følge trinnene i dette afsnit opretter du:
    
     ![Vælg en værdi](./media/common-data-model-approve/choose-value.png)
    
-    **Bemærk!** Hvis browservinduet ikke er maksimeret, skal du klikke eller trykke i det øverste felt, der indeholder **Vælg en værdi**.
+    **Bemærk**: Hvis browservinduet ikke er maksimeret, skal du klikke eller trykke i det øverste felt, der indeholder **Vælg en værdi**.
 3. Under **Output fra Opret objekt** skal du klikke eller trykke på **Status** for at føje dette parametertoken til feltet.
    
     ![Tilføj tokenet Status](./media/common-data-model-approve/add-status.png)
@@ -178,7 +178,7 @@ Ved at følge trinnene i dette afsnit opretter du:
    
     ![Angiv status til at se](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Bemærk!** Hvis browservinduet ikke er maksimeret, skal du klikke eller trykke i det nederste felt, der indeholder **Vælg en værdi**.
+    **Bemærk**: Hvis browservinduet ikke er maksimeret, skal du klikke eller trykke i det nederste felt, der indeholder **Vælg en værdi**.
 6. Nederst på handlingen **Foretag indtil** skal du klikke eller trykke på **Tilføj en handling**.
    
     ![Tilføj en handling i en foretag indtil](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -189,7 +189,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 9. Under **objektet** skal du skrive eller indsætte **Gennemse** og derefter klikke eller trykke på **Gennemse Dropbox-filer**.
    
     ![Vælg objekt](./media/common-data-model-approve/choose-entity-flow.png)
-10. Klik eller tryk på feltet under **Objekt-id**, og klik eller tryk derefter på parametertokenet **Fil-id** for at føje det til feltet.
+10. Klik eller tryk på feltet under **Objekt-id**, og klik eller tryk derefter på parametertokenet **Filens identifikator** for at føje det til feltet.
     
      ![Tilføj objekt-id](./media/common-data-model-approve/add-object-id.png)
 
@@ -201,15 +201,15 @@ Ved at følge trinnene i dette afsnit opretter du:
    
     ![Øverste venstre hjørne af betingelse](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Bemærk!** Hvis browservinduet ikke er maksimeret, skal du klikke eller trykke i det øverste felt, der indeholder **Vælg en værdi**.
+    **Bemærk**: Hvis browservinduet ikke er maksimeret, skal du klikke eller trykke i det øverste felt, der indeholder **Vælg en værdi**.
 3. Under **Output fra Hent objekt** skal du klikke eller trykke på parametertokenet **Status** for at føje det til feltet.
    
-    ![Tilføj status til betingelse](./media/common-data-model-approve/add-status-to-condition.png)
+    ![Føj status til betingelse](./media/common-data-model-approve/add-status-to-condition.png)
 4. I øverste højre hjørne af betingelsen skal du skrive eller indsætte **Godkendt** i det felt, der indeholder **Vælg en værdi**.
    
-    ![Kontroller, om status er angivet til godkendt](./media/common-data-model-approve/status-equals-approved.png)
+    ![Kontrollér, om status er angivet til godkendt](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Bemærk!** Hvis browservinduet ikke er maksimeret, skal du skrive eller indsætte **Godkendt** i det nederste felt, der indeholder **Vælg en værdi**.
+    **Bemærk**: Hvis browservinduet ikke er maksimeret, skal du skrive eller indsætte **Godkendt** i det nederste felt, der indeholder **Vælg en værdi**.
 
 ## <a name="send-notification-mail"></a>Send mailmeddelelse
 1. Under **Hvis ja, gør ingenting** skal du klikke eller trykke på **Tilføj en handling**.
@@ -220,7 +220,7 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Hvis ja, send mail](./media/common-data-model-approve/if-yes-send-mail.png)
 3. Under **Til** skal du skrive eller indsætte adressen på den person, du vil give besked, når et element er accepteret.
    
-    **Bemærk!** Angiv din egen adresse, så det er lettere at teste flowet. Du kan ændre den, når flowet er klar til faktisk brug.
+    **Bemærk**: Angiv din egen adresse, så det er lettere at teste flowet. Du kan ændre den, når flowet er klar til faktisk brug.
    
     ![Godkendelsesmodtager](./media/common-data-model-approve/approval-recipient.png)
 4. Klik eller tryk på feltet under **Emne**, og klik eller tryk derefter på parametertokenet **Filnavn** for at føje det til feltet.
@@ -228,10 +228,10 @@ Ved at følge trinnene i dette afsnit opretter du:
     ![Angiv filnavnet som mailens emne](./media/common-data-model-approve/subject-is-file-name.png)
 5. Under **Meddelelsestekst** skal du skrive eller indsætte **Elementet er blevet godkendt.**
    
-    ![Mailteksten i godkendelsesmailen](./media/common-data-model-approve/approval-body.png)
+    ![Meddelelsestekst i godkendelsesmail](./media/common-data-model-approve/approval-body.png)
 6. Under **Hvis nej, gør ingenting** skal du gentage trinnene 1-5 i denne procedure, men du skal angive meddelelsesteksten i mailen som **Elementet er blevet afvist.**
    
-    ![Meddelelsestekst i afvisningsmailen](./media/common-data-model-approve/rejection-body.png)
+    ![Meddelelsestekst i afvisningsmail](./media/common-data-model-approve/rejection-body.png)
 
 ## <a name="delete-rejected-files"></a>Slet afviste filer
 1. Klik eller tryk på **Tilføj en handling** under felterne for afvisningsmailen.
@@ -240,7 +240,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 2. I feltet, der indeholder **Søg efter flere handlinger**, skal du skrive eller indsætte **Dropbox** og derefter klikke eller trykke på **Dropbox – slet fil**.
    
     ![Slet fil fra Dropbox](./media/common-data-model-approve/dropbox-delete-file.png)
-3. Klik eller tryk på feltet under **Fil**, og klik eller tryk derefter på tokenparameteren **Fil-id** for at føje den til feltet.
+3. Klik eller tryk på feltet under **Fil**, og klik eller tryk derefter på tokenparameteren **Filens identifikator** for at føje den til feltet.
    
     ![Identificer fil, der skal slettes](./media/common-data-model-approve/identify-file-delete.png)
 
@@ -251,7 +251,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 2. Klik eller tryk på **Luk**, og klik eller tryk derefter på **Udført**.
 3. I Dropbox skal du tilføje mindst to filer til den mappe, du har angivet: en til at teste godkendelse og en til at teste afvisning.
 
-## <a name="build-the-app"></a>Byg appen
+## <a name="build-the-app"></a>Bygge appen
 1. Log på [powerapps.com](https://make.powerapps.com), og klik eller tryk derefter på **Ny app** nederst i venstre navigationslinje.
    
     ![Opret en app i en browser](./media/common-data-model-approve/new-app-button.png)
@@ -260,15 +260,15 @@ Ved at følge trinnene i dette afsnit opretter du:
 4. Under **Opret en app ud fra data** skal du klikke eller trykke på **Telefonlayout** i feltet **Common Data Service**.
    
     ![Opret app](./media/common-data-model-approve/afd-cdm.png)
-5. I feltet **Søg** skal du skrive eller indsætte **Gennemse**.
+5. I feltet **Søg** skal du skrive eller indsætte **Gennemsyn**.
    
-    ![Søg efter et objekt](./media/common-data-model-approve/search-entities.png)
+    ![Søge efter et objekt](./media/common-data-model-approve/search-entities.png)
 6. Under **Vælg et objekt** skal du klikke eller trykke på **Gennemgå Dropbox-filer**.
    
-    ![Vælg et objekt](./media/common-data-model-approve/choose-entity.png)
+    ![Vælg en enhed](./media/common-data-model-approve/choose-entity.png)
 7. Klik eller tryk på **Opret forbindelse** i nærheden af nederste højre hjørne.
    
-    ![Knappen Opret forbindelse](./media/common-data-model-approve/connect-button.png)
+    ![Knappen Tilslut](./media/common-data-model-approve/connect-button.png)
 8. Hvis åbningsskærmen i introduktionspræsentationen vises, kan du gennemse præsentationen for at blive fortrolig med Power Apps (ellers kan du klikke eller trykke på **Spring over**).
    
     ![Introduktionspræsentation](./media/common-data-model-approve/quick-tour.png)
@@ -278,10 +278,10 @@ Ved at følge trinnene i dette afsnit opretter du:
    
     ![Zoomkontrolelement](./media/common-data-model-approve/zoom-control.png)
 
-## <a name="customize-the-app"></a>Tilpas appen
+## <a name="customize-the-app"></a>Tilpasse appen
 1. Klik eller tryk på layoutet, som indeholder en overskrift og en beskrivelse, på den højre navigationslinje.
    
-    ![Knappen Opret forbindelse](./media/common-data-model-approve/choose-layout.png)
+    ![Knappen Tilslut](./media/common-data-model-approve/choose-layout.png)
 2. På **BrowseScreen** skal du klikke eller trykke lige under søgepanelet for at vælge kontrolelementet til større tekstfelt.
    
     ![Vælg overskrift](./media/common-data-model-approve/select-header.png)
@@ -298,7 +298,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 ## <a name="test-the-overall-solution"></a>Test den overordnede løsning
 1. Åbn Vis udskrift i Power Apps ved at klikke eller trykke afspilningsknappen i øverste venstre hjørne.
    
-    ![Åbn Vis udskrift](./media/common-data-model-approve/open-preview.png)
+    ![Åbn tilstanden Eksempel](./media/common-data-model-approve/open-preview.png)
 2. Klik på den første fil på listen, og klik eller tryk på pilen for at få vist detaljer om filen.
    
     ![Åbn skærmbilledet Detaljer](./media/common-data-model-approve/open-details.png)
@@ -322,7 +322,7 @@ Ved at følge trinnene i dette afsnit opretter du:
 8. Klik eller tryk på blyantsikonet i øverste højre hjørne for at ændre detaljerne om filen.
    
     ![Åbn skærmbilledet Rediger](./media/common-data-model-approve/edit-record.png)
-9. I feltet **Status** skal du skrive eller indsætte **Afvist** (eller hvad som helst undtagen **Godkendt**, herunder **Godkendt** eller **Godkendt**).
+9. I feltet **Status** skal du skrive eller indsætte **Afvist** (eller hvad som helst undtagen **Godkendt**, herunder **Godkent** eller **Goodkendt**).
    
     ![Afvis fil](./media/common-data-model-approve/reject-file.png)
 10. Klik eller tryk på afkrydsningsikonet i øverste højre hjørne for at gemme ændringerne og vende tilbage til skærmbilledet Detaljer.

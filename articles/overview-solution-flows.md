@@ -20,17 +20,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f999bee5227deed7f4102155ffb85c3cf3d7814d
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: a0e986c9d98d8a928cde139f9e21a78331c4f039
+ms.sourcegitcommit: c748e9804f4f03d18f3c81d40f1d6fc5862a24c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691122"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968739"
 ---
 # <a name="overview"></a>Oversigt
 
 
-Når du er vært for dine flows i en [løsning](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), bliver de mobile, hvilket gør det nemt at flytte dem og alle deres komponenter fra ét miljø til et andet. Et typisk scenarie er en uafhængig softwareproducent (ISV), der udvikler flows i et sandkassemiljø og derefter flytter disse flows til et testmiljø. Efter at have testet disse flows flytter softwareproducenten dem til et produktionsmiljø for klienter, der køber disse flows. Denne proces er meget nemmere, når du opretter dine flows i løsninger og derefter flytter løsningerne og deres indhold.
+Når du er vært for dine flows i en [løsning](/power-platform/alm/solution-concepts-alm), bliver de mobile, hvilket gør det nemt at flytte dem og alle deres komponenter fra ét miljø til et andet. Et typisk scenarie er en uafhængig softwareproducent (ISV), der udvikler flows i et sandkassemiljø og derefter flytter disse flows til et testmiljø. Efter at have testet disse flows flytter softwareproducenten dem til et produktionsmiljø for klienter, der køber disse flows. Denne proces er meget nemmere, når du opretter dine flows i løsninger og derefter flytter løsningerne og deres indhold.
 
 Flows, der er oprettet i en løsning, kaldes *løsningsorienterede* flows. Du kan tilføje flere flows i en enkelt løsning. Du kan ikke flytte ikke-løsningsorienterede flows (flows, der ikke er oprettet i en løsning) til en løsning.
 

@@ -4,7 +4,7 @@ description: Hurtige metoder til at komme i gang med at automatisere dit arbejde
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 7/29/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b751dadcb4be2bb479981b6f58b797fbc61b0041
-ms.sourcegitcommit: 62c8891c497823be6e7691410072011d7cfc5339
+ms.openlocfilehash: 05f2f6eeca98a23e20abefc24e43302ef300de48
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652898"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900210"
 ---
 # <a name="get-started-with-power-automate"></a>Introduktion til Power Automate 
 
@@ -41,8 +41,7 @@ Spar tid ved at automatisere gentagne manuelle opgaver blot ved at optage musekl
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/hCuxuUaGC6Y]
-
+> [!VIDEO https://www.youtube.com/embed/H4H_jPJWlxU]
 
 ## <a name="who-is-power-automate-for"></a>Hvem er Power Automate beregnet til? 
 
@@ -129,7 +128,7 @@ Du behøver ikke at være udvikler for at oprette flows, men Power Automate inde
 
 1. Bemærk den fulde JSON-repræsentation af handlinger og udløsere. Det omfatter alle input, f.eks. den tekst, du angiver direkte, og anvendte udtryk. Du kan vælge udtryk her og derefter indsætte dem i udtrykseditoren **Dynamisk indhold**. Det giver dig også mulighed for at bekræfte de data, du forventer er til stede i flowet.
 
-    ![Smugkig på kode](media/getting-started/peek-code-details.png)
+    ![Detaljer om visningskode](media/getting-started/peek-code-details.png)
    
 
 ## <a name="find-your-flows-easily"></a>Find nemt dine flows

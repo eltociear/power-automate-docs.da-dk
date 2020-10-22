@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 33c2e0e6a3a35e23d0889cd19908a055cc7f5f5e
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: a1d01caa7ffa5f3611f7419fd4b3c384e1b89a52
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297665"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900234"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Adminsitrer en datagateway i det lokale miljø i Power Automate
 
@@ -41,7 +41,7 @@ Med en gateway kan du oprette forbindelse til data i det lokale miljø via disse
 * Http med Azure AD
 * Informix
 * MySQL
-* Oracle Database
+* Oracle-database
 * PostgreSQL
 * SharePoint
 * SQL Server
@@ -53,7 +53,7 @@ Med en gateway kan du oprette forbindelse til data i det lokale miljø via disse
 ## <a name="prerequisites"></a>Forudsætninger
 
 * Det brugernavn og den adgangskode, du brugte til at [tilmelde dig](sign-up-sign-in.md) til Power Automate.
-* Administrative tilladelser til en gateway.
+* Administrative tilladelser på en gateway.
 
   Du har som standard disse tilladelser for hver gateway, du installerer. En administrator af en anden gateway kan også tildele dig disse tilladelser for den pågældende gateway.
 * En licens, der understøtter gateways. Du kan finde flere oplysninger i afsnittet "Forbindelse" på [siden med priser](https://flow.microsoft.com/pricing/).
@@ -67,9 +67,7 @@ Hvis du vil installere en gateway, skal du følge trinnene i [Installer en datag
 
 ## <a name="view-your-gateways"></a>Se dine gateways
 
-I øverste højre hjørne af [Power Automate-websstet](https://flow.microsoft.com) skal du vælge tandhjulsikonet og derefter vælge **Gateways**.
-
-![Gateway under administration][1]
+Log på [Power Automate](https://flow.microsoft.com), og vælg derefter **Data** > **Gateways** i venstre navigationsrude.
 
 > [!NOTE]
 > Hvis du har oprettet eller har fået adgang til en gateway i Power Apps, vises denne gateway på listen **Mine gateways** i Power Automate.

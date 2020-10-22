@@ -6,26 +6,21 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/06/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 32f8269bce8e36774bf937683776f97fc618d41a
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: d359f1c065db1c089fb367d5b9ba1188da1e47a3
+ms.sourcegitcommit: 1ae0dc87353b2ddec8c639d8a3514b7119401977
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296543"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968278"
 ---
 # <a name="export-a-solution"></a>Eksport af en løsning
 
@@ -33,20 +28,21 @@ ms.locfileid: "3296543"
 Følg disse trin for at flytte din løsning og dens afhængigheder til et nyt miljø:
 
 1. Vælg **Løsninger** på navigationslinjen.
-1. Vælg den løsning, du vil eksportere.
-1. Vælg **Eksportér** i menuen øverst.
-1. Vælg **Som ikke-administreret**.
+1. Vælg den ikke-administrerede løsning, du vil eksportere, og vælg derefter **Eksportér**. Du kan ikke eksportere administrerede løsninger. Flere oplysninger: [Administrerede og ikke-administrerede løsninger](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
+1. Ruden **Før du eksporterer** til højre vises. Vælg mellem følgende indstillinger, og vælg derefter **Næste**:  
+    - **Publicer alle ændringer**. Bemærk, at det kun er publicerede komponenter, der eksporteres, når du eksporterer en ikke-administreret løsning. Det anbefales, at du vælger **Publicer alle ændringer** for at sikre, at alle komponenter er inkluderet i den eksporterede løsning. 
+    - **Søg efter problemer**. Kør løsningskontrol på løsningen for at finde problemer med ydeevnen og stabiliteten.
+1. Ruden **Eksportér denne løsning** til højre vises. Angiv eller vælg mellem følgende indstillinger, og vælg derefter **Eksportér**:  
+    - **Versionsnummer**: Power Automate øger automatisk din løsningsversion, samtidig med at den aktuelle version vises. Du kan acceptere standardversionen eller angive din egen. 
+    - **Eksportér som**: Vælg pakketypen, enten **Administreret** eller **Ikke-administreret**. Flere oplysninger: [Administrerede og ikke-administrerede løsninger](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
-   ![](./media/export-flow-solution/flow-export-options.png)
+ Det kan tage flere minutter at fuldføre eksporten. Når eksporten er afsluttet, er eksport .zip-filen placeret i mappen Overførsel, der er angivet af din webbrowser.
 
-1. Gem løsningen med et navn efter eget valg.
+> [!NOTE]
+> Hvis du vil implementere en sundt ALM (Application Lifecycle Management) i organisationen, kan du overveje at bruge et kildekontrolsystem til at gemme og samarbejde om dine løsninger og automatisere eksportprocessen til løsningen. Flere oplysninger: [Grundlæggende om ALM](/power-platform/alm/basics-alm) i Power Platform ALM-guiden.
 
-   > [!NOTE]
-   > **Som administreret** understøttes ikke i øjeblikket.
+## <a name="learn-more"></a>Flere oplysninger
 
-## <a name="learn-more"></a>Få mere at vide
-
-<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 
 * [Opret en løsning](./overview-solution-flows.md)
 * [Opret et flow i en løsning](./create-flow-solution.md)
