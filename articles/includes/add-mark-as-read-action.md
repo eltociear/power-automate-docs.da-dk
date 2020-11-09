@@ -1,5 +1,5 @@
-1. Vælg **Nyt trin** > **Tilføj en handling**.
-2. Søg efter "læst", og vælg derefter **Office 365 Outlook – Markér som læst** på listen over handlinger.
+1. Vælg **Nyt trin**.
+2. Søg efter "læst", og vælg derefter **Markér som læst eller ulæst (v2)** på listen over handlinger.
    
     ![Markér som læst](media/email-triggers/email-triggers-5.png)
 3. På kortet **Markér som læst** skal du tilføje tokenet **Meddelelses-id** i feltet **Meddelelses-id**.
