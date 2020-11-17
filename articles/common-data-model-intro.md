@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9c20fa8c888ba780f64cd9f55afdf11bbd08680e
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: dd4e736a5f761b96c65b0953dd37a057d24bfef2
+ms.sourcegitcommit: 1870645e09fafe1d529a24828c4bb3fa629a2b9a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900162"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4366540"
 ---
 # <a name="create-a-flow-that-uses-common-data-service"></a>Opret et flow, der bruger Common Data Service
 
@@ -42,7 +42,7 @@ I denne artikel kan du oprette et flow, der sender en e-mailbesked, når et *kva
 * Tilmeld dig [Power Automate](https://flow.microsoft.com) og [Power Apps](https://make.powerapps.com).
   
     Hvis du har problemer, skal du kontrollere, om [Power Automate](sign-up-sign-in.md) og [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) understøtter den kontotype, du har, og at organisationen ikke har blokeret for tilmelding.
-* Hvis du ikke har brugt Common Data Service før, skal du åbne fanen **Objekter** i [Power Apps](https://web.powerapps.com/#/entities) og derefter vælge **Opret min database**.
+* Hvis du ikke har brugt Common Data Service før, kan du oprette et [Common Data Service-miljø med en database](https://docs.microsoft.com/power-platform/admin/create-environment#create-an-environment-with-a-database) i Power Platform Administration.
 
 ## <a name="sign-in-to-your-environment"></a>Log på dit miljø
 

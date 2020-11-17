@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/11/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d74cbdb6c03d65a7902a81194491ef67feda6bb2
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: fe2fdf5b1eb5dc20597a0d086ad70c810e7908e7
+ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297467"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3988244"
 ---
 # <a name="create-a-flow-in-a-solution"></a>Opret et flow i en løsning
 
@@ -41,37 +41,37 @@ Du skal have mindst én løsning, før du kan oprette et løsningsorienteret flo
 1. Log på [Power Automate](https://flow.microsoft.com).
 1. Vælg **Løsninger** på navigationslinjen.
 
-   ![](./media/create-flow-solution/select-solutions-from-left-nav.png)
+   ![Skærmen, der viser den venstre navigationslinje med indstillingen Løsninger fremhævet](./media/create-flow-solution/select-solutions-from-left-nav.png)
 
 1. Vælg den løsning, du opretter dit flow i.
 
-   ![](./media/create-flow-solution/new-solution-created.png)
+   ![Skærmvisning af en liste over løsninger](./media/create-flow-solution/new-solution-created.png)
 
-1. Vælg **+ Ny**, og vælg derefter **Flow**.
+1. Vælg **Nyt**, og vælg derefter **Flow**.
 
-   ![](./media/create-flow-solution/select-new-flow.png)
+   ![Skærmbillede, der viser de forskellige typer elementer, der kan oprettes, med flow fremhævet](./media/create-flow-solution/select-new-flow.png)
 
    Power Automate åbnes.
 
-1. Brug de tilgængelige forbindelseskomponenter og udløsere til at bygge dit flow.
+1. Brug de tilgængelige connectorer og udløsere til at bygge dit flow.
 
    I dette eksempel opretter vi et enkelt flow, der sender en besked, når der modtages en mail i din indbakke.
 1. Søg efter og vælg derefter **Office 365 Outlook**.
-1. Vælg udløseren **Når en ny mail modtages**.
-1. Vælg **+ Nyt trin**.
-1. Vælg handlingen **Send mig en mobilbesked**.
-1. Føj det dynamiske token **Emne** til feltet **Tekst** i feltet **Send mig en mobilbesked**.
+1. Vælg udløseren **Når en ny mail modtages (V3)**.
+1. Vælg **Nyt trin**.
+1. Søg efter ordet "meddelelse", og vælg derefter handlingen **Send mig en mobilmeddelelse**.
+1. Føj det dynamiske token **Emne** til feltet **Tekst** i feltet **Send mig en mobilmeddelelse**.
 1. Giv dit flow et navn, og gem flowet.
 
    Dit flow skal se ud som følger:
 
-   ![](./media/create-flow-solution/new-email-notification-flow.png)
+   ![Skærmbillede, der viser det flow, der er oprettet](./media/create-flow-solution/new-email-notification-flow.png)
    
 1. Vælg **Løsninger** for at se dit flow i løsningen:
 
-   ![](./media/create-flow-solution/new-flow-inside-solution.png)
+   ![Skærmbillede, der viser flowet inde i løsningen](./media/create-flow-solution/new-flow-inside-solution.png)
 
-## <a name="learn-more"></a>Få mere at vide
+## <a name="learn-more"></a>Flere oplysninger
 
 * [Opret en løsning](./overview-solution-flows.md)
 * [Eksportere en løsning](./export-flow-solution.md)

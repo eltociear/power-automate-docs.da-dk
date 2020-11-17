@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/04/2020
+ms.date: 10/25/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4ff6b57aff8971272ef5f4e24ef9acb877c37074
-ms.sourcegitcommit: e96d865ddf7a68586b3afc604bccc5d9f1be8af6
+ms.openlocfilehash: 336c3ec69ce6f226c881b68deaee4215382df83b
+ms.sourcegitcommit: 7a3df04b817ecf8ad99ca7bb551804fe83b0861d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961554"
+ms.lasthandoff: 10/25/2020
+ms.locfileid: "4109948"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Grænser og konfiguration i Power Automate
 
@@ -155,6 +155,7 @@ Kald fra en connector i et flow (f.eks. SQL-API eller SharePoint-API), kommer fr
 | Australien  | 13.70.72.192 – 13.70.72.207, 13.72.243.10, 13.77.50.240 – 13.77.50.255, 13.70.136.174 |
 | Canada | 13.71.170.208 – 13.71.170.223, 13.71.170.224 – 13.71.170.239, 52.237.24.126, 40.69.106.240 – 40.69.106.255, 52.242.35.152|
 | Europa | 13.69.227.208 – 13.69.227.223, 52.178.150.68, 13.69.64.208 – 13.69.64.223, 52.174.88.118, 137.117.161.181 |
+|Tyskland|51.116.60.192, 51.116.158.97, 51.116.158.96, 51.116.211.212 og 51.116.236.78|
 | Indien  | 104.211.81.192 – 104.211.81.207, 52.172.211.12, 40.78.194.240 – 40.78.194.255, 13.71.125.22, 104.211.146.224 – 104.211.146.239, 104.211.189.218 |
 | Japan | 13.78.108.0 – 13.78.108.15, 13.71.153.19, 40.74.100.224 – 40.74.100.239, 104.215.61.248 |
 | Sydamerika | 191.233.203.192 – 191.233.203.207, 104.214.19.48 – 104.214.19.63, 13.65.86.57, 104.41.59.51 |

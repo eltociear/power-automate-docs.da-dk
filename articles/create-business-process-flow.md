@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b478eddf24cb96cb3e5ec3becdc23fa1fcb0faa8
-ms.sourcegitcommit: 479c2d0f7f9651d9744810424c595106d896ca32
+ms.openlocfilehash: f8f1c8016ec76a61037d9cae5399c3b4691e2808
+ms.sourcegitcommit: 9bf10fd76d178c257434b9401c19dc709ee240fc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959386"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4035591"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Selvstudium: Oprette et forretningsprocesforløb for at standardisere processer
 
@@ -45,7 +45,7 @@ Dette selvstudium viser, hvordan du opretter et forretningsprocesforløb i Power
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du har brug for [Flowplan 2](https://preview.flow.microsoft.com/pricing/) for at kunne oprette forretningsprocesforløb. Nogle Dynamics 365-licensplaner inkluderer Flowplan 2.
+Du har brug for en [plan pr. bruger](https://preview.flow.microsoft.com/pricing/) for at kunne oprette forretningsprocesflows. Nogle Dynamics 365-licensplaner omfatter planen for hver bruger.
 
 ## <a name="create-a-business-process-flow"></a>Oprette et forretningsprocesforløb  
   

@@ -13,43 +13,43 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/10/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dae11e0a355d4e3f40b3829981c1b8da6f363748
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 4d5fd403aa0cd74cf81535bd3ad35e046cf41f33
+ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298127"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3988196"
 ---
-# <a name="import-a-solution"></a>Importere en løsning
+# <a name="import-a-solution"></a>Importér en løsning
 
 
 > [!TIP]
-> Hvis du ønsker, at dine flows skal starte automatisk, når du har importeret en løsning, skal du bruge connectoren fra Common Data Service (aktuelt miljø) i dit flow, når du opretter det.
+> Hvis du ønsker, at dine flow skal starte automatisk, når du har importeret en løsning, skal du bruge connectoren Common Data Service (Current Environment) i dit flow, når du opretter den.
 
 Når du har eksporteret din løsning, kan du importere den til et hvilket som helst miljø, der opfylder forudsætningerne. Følg disse trin for at importere en løsning:
 
-1. Log på Power Automate, og vælg derefter **Løsninger** fra den venstre navigationslinje.
+1. Log på Power Automate, og vælg derefter **Løsninger** på navigationslinjen i venstre side af skærmen.
 
-   ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
+   ![Et billede, der viser "Løsninger", som er valgt på navigationslinjen](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
 1. Vælg **Importér**.
 
-   ![](./media/import-flow-solution/select-import.png)
+   ![Et billede, hvor "Importér" er markeret.](./media/import-flow-solution/select-import.png)
 
-1. Vælg **Gennemse** på siden **Importér løsning**, der åbnes.
+1. Vælg **Gennemse** på siden **Importér en løsning**, der åbnes.
 1. Find og vælg derefter den løsning, som du vil importere.
 1. Vælg **Åbn**.
 
    Du kan nu se siden **Vælg løsningspakke**, som ligner dette billede:
 
-   ![](./media/import-flow-solution/import-solution.png)
+   ![Skærmbillede af dialogboksen Importér en løsning](./media/import-flow-solution/import-solution.png)
 
 1. Vælg **Næste**.
 
@@ -59,11 +59,10 @@ Når du har eksporteret din løsning, kan du importere den til et hvilket som he
 > Du kan ikke importere en løsning til et miljø, hvor løsningen allerede findes.
 
 
-## <a name="learn-more"></a>Få mere at vide
-
-<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
+## <a name="learn-more"></a>Flere oplysninger
 
 - [Opret en løsning](./overview-solution-flows.md)
 - [Opret et flow i en løsning](./create-flow-solution.md)
 - [Eksportere en løsning](./export-flow-solution.md)
 - [Rediger et løsningsorienteret flow](./edit-solution-aware-flow.md)
+- [Fjern et løsningsorienteret flow](.//remove-solution-aware-flow.md)

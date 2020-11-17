@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 1322dc6b3d391033e3283356798bf5d91a729aba
-ms.sourcegitcommit: eedb45292b26b4729d74e09262706c5085327dba
+ms.openlocfilehash: c009c5f46a4ced0fd7c86d11c38e7b65d38e8ace
+ms.sourcegitcommit: a881042f3de3cce8087986174fed53fd26b163f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970182"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4365200"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
 
@@ -61,7 +61,7 @@ Adgang til Power Automate US Government-planer er begrænset til de tilbud, der 
 - Power Automate pr. flowplan for offentlig myndighed
 - Power Automate pr. brugerplan for offentlig myndighed
 
-- Ud over de enkeltstående planer inkluderer Microsoft 365 US Government- og Dynamics 365 US Government-planer også Power Apps- og Power Automate-funktionerne, der giver kunderne mulighed for at udvide og tilpasse Microsoft 365- og Customer Engagement-apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service og Dynamics 365 Project Service Automation). 
+- Ud over de enkeltstående planer inkluderer Microsoft 365 US Government- og Dynamics 365 US Government-planer også Power Apps- og Power Automate-funktionerne, der giver kunderne mulighed for at udvide og tilpasse Microsoft 365- og kundeengagementsapps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service og Dynamics 365 Project Service Automation). 
 
 Yderligere oplysninger samt oplysninger om forskellene i funktionaliteten mellem disse licensgrupper er beskrevet mere detaljeret her: [Power Automate-licensoplysninger](https://flow.microsoft.com/pricing/).
 
@@ -140,19 +140,19 @@ Power Automate US Government giver mulighed for at integrere tredjepartsprogramm
 
 [Power Apps- og Power Automate-styringsspørgsmål](https://docs.microsoft.com/power-platform/admin/governance-considerations) kan hjælpe din organisation med at skabe opmærksomhed omkring de muligheder, der er tilgængelige på tværs af flere relaterede temaer, f.eks. arkitektur, sikkerhed, advarsel og handling samt overvågning.
 
-## <a name="configure-mobile-clients"></a>Konfigurere mobilklienter
+## <a name="configure-mobile-client"></a>Konfigurere mobilklient
 
-Her er de trin, du skal udføre for at logge på med Power Apps-mobilklienten.
+Du skal udføre følgende trin for at logge på med Power Automate-mobilprogrammet (kun iOS-enheder):
 
 1. Vælg ikonet med tandhjulet i nederste højre hjørne på logonsiden.
-1. Vælg **Områdeindstillinger**.
-1. Vælg en af følgende:
-   - GCC: US Government GCC
-   - GCC High: US Government GCC High.
+1. Vælg **GCC**.
 1. Vælg OK.
-1. Vælg **Log på** på logonsiden.
+1. Vælg **Start her** på logonsiden.
 
-Mobilprogrammet bruger nu US Government Cloud.
+Mobilappen bruger nu US Government Cloud (GCC).
+
+>[!NOTE]
+>Power Automate-mobilappen er ikke tilgængelig for kunder med US Government GCC High.  
 
 ## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government og Azure Services
 

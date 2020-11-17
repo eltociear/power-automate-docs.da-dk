@@ -1,5 +1,5 @@
 ---
-title: Klassiske Common Data Service-arbejdsprocesser i baggrunden | MicrosoftDocs
+title: Oversigt over klassiske Common Data Service-arbejdsprocesser | MicrosoftDocs
 ms.custom: ''
 ms.date: 07/27/2020
 ms.reviewer: matp
@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 561c0effd6265e939c8c4e342016f7a56cb1fa7c
-ms.sourcegitcommit: 6aead6aa695ef3dd09a397f7e2df85e3f480071f
+ms.openlocfilehash: 733f15a09b6a4491ee1b8d9a7bbeb16d15a9098b
+ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3795029"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973153"
 ---
 # <a name="classic-common-data-service-background-workflows"></a>Klassiske Common Data Service-arbejdsprocesser i baggrunden 
 
@@ -32,7 +32,7 @@ Der findes to typer arbejdsprocesser:
 
 Hvis du vil oprette arbejdsprocesser i baggrunden, skal du markere afkrydsningsfeltet **Kør denne arbejdsproces i baggrunden (anbefales)**, som vist i følgende billede.
 
-![Arbejdsproces med Under/Ikke under-operatorer](media/wfp-under-not-under.PNG "Arbejdsproces med Under/Ikke under-operatorer")
+![Skærmbillede, der viser arbejdsproces med Under/Ikke under-operatorer.](media/wfp-under-not-under.PNG "Arbejdsproces med Under/Ikke under-operatorer")
 
 Se andre emner her i Power Automate-dokumentationen for at få mere at vide om arbejdsprocesser i baggrunden.
 

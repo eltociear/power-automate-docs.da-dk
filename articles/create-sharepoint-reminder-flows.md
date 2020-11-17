@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: a505c10591c39e92465ef8b4b8aacc289cf495fb
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 5ddb783eba69f9f4926778390175d6eac672a730
+ms.sourcegitcommit: dd1d04d6e899174c474291ae415e6272ad4c381a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3696903"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4068730"
 ---
-# <a name="sharepoint-remind-me"></a>Påmind mig i SharePoint
+# <a name="create-sharepoint-reminder-flows"></a>Oprette SharePoint-påmindelsesflow
 
 
 Med SharePoint-lister og -biblioteker kan du definere brugerdefinerede metadatakolonner til sporing af datoer. Med Power Automates integration med SharePoint kan du nemt oprette påmindelsesflows ud fra DateTime-kolonner i SharePoint. Med påmindelsesflows modtager du en personlig advarsel via mail et forudbestemt antal dage før en dato i et dokument eller element i SharePoint.

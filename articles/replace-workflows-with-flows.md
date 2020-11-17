@@ -12,12 +12,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 72c1296c703070d6fbb9b9a2e7493e507c8bd4b8
-ms.sourcegitcommit: 4db6edd51883e28e14a2a7064cf487c167d47649
+ms.openlocfilehash: 2e40680970ec2a5eae505b97acb6b34883ca1ded
+ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3964609"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973249"
 ---
 # <a name="replace-classic-common-data-service-workflows-with-flows"></a>Erstat klassiske Common Data Service-arbejdsprocesser med flows
 
@@ -31,7 +31,8 @@ Opret flows i stedet for klassiske Common Data Service-arbejdsprocesser for at b
 
 I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate og i klassiske arbejdsprocesser.
 
-*Vi tilføjer løbende nye funktioner i Power Automate. Vi opdaterer oplysningerne i denne tabel, når Power Automate får nye funktioner. Vend ofte tilbage! Du kan finde oplysninger om de kommende egenskaber, der kan hjælpe dig med at erstatte klassiske baggrundsarbejdsprocesser med flows, under [Nyheder og planlagte funktioner til Power Automate](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)*
+
+*Vi tilføjer løbende nye funktioner i Power Automate. Vi opdaterer oplysningerne i denne tabel, når Power Automate får nye funktioner. Vend ofte tilbage! Du kan finde oplysninger om de kommende egenskaber, der kan hjælpe dig med at erstatte klassiske baggrundsarbejdsprocesser med flows, under [Nyheder og planlagte funktioner til Power Automate](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features).*
 
 <table>
 <tr>
@@ -74,7 +75,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
                 </td>
                 <td>
                     
-   No
+   Nr.
                     
                 </td>
                 <td>
@@ -96,14 +97,14 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
                 </td>
                 <td>
                     
-   No
+   Nr.
                     
                 </td>
             </tr>
             <tr>
                 <td>
                     
-   Indbyggede forbindelser til eksterne systemer (udløser og udfører handlinger i eksterne services)
+   Indbyggede connectorer til eksterne systemer (udløser og udfører handlinger i eksterne tjenester)
                     
                 </td>
                 <td>
@@ -455,7 +456,7 @@ I denne tabel opsummeres en sammenligning mellem funktionerne i Power Automate o
 
 Forestil dig et salgsscenarie, hvor du har sammensat et tilbud til en kunde og nu har brug for at anmode om godkendelse fra dit administrationsteam, før du sender tilbuddet til kunden. Med klassiske arbejdsprocesser er dette ikke nemt at gøre, og de fleste løsninger til dette kræver, at en udvikler skriver brugerdefinerede baggrundsarbejdsprocesaktiviteter for at hente tilbudslinjeelementer.
 
-Flow gør det nemmere at bygge som vist i gennemgangen senere. Den dækker nogle af de Power Automate-funktioner, der understøtter scenariet. Disse funktioner omfatter:
+Flow gør det nemmere at bygge dette scenarie som vist i gennemgangen senere. Den dækker nogle af Power Automate-funktionerne. Disse funktioner omfatter:
 
 - Oprettelse af et flow, der kører efter behov.
 - Visning af en liste over poster, der er relateret til et Common Data Service-objekt.
@@ -470,29 +471,29 @@ Sådan gør du det muligt for sælgeren at udløse godkendelsesanmodningen efter
 
    Denne udløser gør det muligt at køre et flow på en post eller et sæt af poster efter behov.
 
-1. Når udløseren er konfigureret, kan du tilføje handlinger, der skal køres i flowet. Dette giver godkenderen et resume med de oplysninger, de har brug for til at identificere de tilbudte elementer og værdier. Begynd med at tilføje handlingen **Common Data Service (aktuelt miljø) – Listeposter**. Målet er at hente de enkelte elementer fra et tilbud, så angiv **Objektnavn** til **Tilbudslinjer**. For at sikre, at listen kun viser de tilbudslinjeelementer, der hører til det tilbud, som flowet blev udløst for, skal du angive et filterkriterium for OData-typografien. I feltet **Filterforespørgsel** skal du skrive *\_quoteid_value eq* og derefter vælge *Tilbud* på den liste over dynamiske værdier, der vises.
+1. Når udløseren er konfigureret, kan du tilføje handlinger, der skal køres i flowet. Dette giver godkenderen et resume med de oplysninger, de har brug for til at identificere de tilbudte elementer og værdier. Begynd med at tilføje handlingen **Common Data Service (aktuelt miljø) – Listeposter**. Målet er at hente de enkelte elementer fra et tilbud, så angiv **Objektnavn** til **Tilbudslinjer**. For at sikre, at listen kun viser de tilbudslinjeelementer, der hører til det tilbud, som flowet blev udløst for, skal du angive et filterkriterium for OData-typografien. I feltet **Filterforespørgsel** skal du skrive *\_quoteid_value eq* og derefter vælge **Tilbud** på den liste over dynamiske værdier, der vises.
 
-    ![Tilføj handlinger](media/define-flow-1.png "Fuldfør kortet **Listeposter**")
+    ![Skærmbillede, der viser, hvordan du kan tilføje handlinger.](media/define-flow-1.png "Udfylde kortet Listeposter")
 
-1. Da du vil opsummere tilbudslinjeelementer til godkendelsen, skal du tilføje handlingen **Initialiser variabel**. Angiv feltet **Navn** til *Resume af tilbudslinje* og **Type** til Streng (på rullelisten), og lad feltet **Værdi** være tomt.
+1. Da vi vil opsummere tilbudslinjeelementer til godkendelsen, skal du tilføje handlingen **Initialiser variabel**. Angiv feltet **Navn** til **Resume af tilbudslinje** og **Type** til **Streng** (på rullelisten), og lad feltet **Værdi** være tomt.
 
-1. Tilføj handlingen **Føj til streng**, og vælg derefter variablen *Resumé af tilbudslinje*, som vi oprettede tidligere. Vælg **Antal, Navn, Pris pr. enhed, Udvidet beløb og Manuelt beløb** på listen over dynamiske værdier i feltet *Værdi*. Power Automate-designeren identificerer, at disse værdier er fra en liste over tilbudslinjeelementer, og tilføjer denne handling i en **Anvend på alle**-løkke for at sikre, at oplysninger fra hvert linjeelement føjes til denne oversigt.
+1. Tilføj handlingen **Føj til streng**, og vælg derefter variablen **Resumé af tilbudslinje**, som vi oprettede tidligere. I feltet **Værdi** skal du vælge **Antal**, **Navn**, **Pris pr. enhed**, **Udvidet beløb** og **Manuel rabat** på listen over dynamiske værdier. Power Automate-designeren identificerer, at disse værdier er fra en liste over tilbudslinjeelementer, og tilføjer denne handling i en **Anvend på alle**-løkke for at sikre, at oplysninger fra hvert linjeelement føjes til denne oversigt.
 
-    ![Tilføj variabel](media/define-flow-2.png "Fuldfør kortet **Anvend på hver**")
+    ![Skærmbilledet viser valget af værdier.](media/define-flow-2.png "Udfylde kortet "Anvend på hver"")
 
-1. Tilføj handlingen **Godkendelse – Start, og vent på en godkendelse** for at anmode om godkendelse af det tilbudsresumé, du har oprettet. Vælg en godkendelsestype (f.eks. Godkend/Afvis – Første til at svare), giv godkendelsesanmodningen en **Titel** (f.eks. navnet på det tilbud, der anmodes om godkendelse af, og som er angivet på listen over dynamiske værdier), angiv mailadressen for den person, der skal gennemse den, og godkend tilbuddet i feltet *Tildelt til**. Tilføj variablen *Resume af tilbudslinje* i feltet Detaljer sammen med eventuelle andre oplysninger, der kan være relevante ved hjælp af den dynamiske værdivælger (f.eks. Samlet beløb).
+1. Tilføj handlingen **Godkendelse – Start, og vent på en godkendelse** for at anmode om godkendelse af det tilbudsresumé, du har oprettet. Vælg en **godkendelsestype** (f. eks. **Godkend/Afvis – Første til at svare**), giv godkendelsesanmodningen en **Titel** (f. eks. navnet på det tilbud, der anmodes om godkendelse af, og som er angivet på listen over dynamiske værdier), og angiv mailadressen for den person, der skal gennemse og godkende tilbuddet, i feltet **Tildelt til**. Tilføj variablen **Resume af tilbudslinje** i feltet **Detaljer** sammen med eventuelle andre oplysninger, der kan være relevante ved hjælp af den dynamiske værdivælger (f.eks. **Samlet beløb**).
 
-1. Tilføj handlingen **Betingelse** for at finde ud af, hvad der sker, når en godkendelse accepteres eller afvises. Vælg *Resultat* på listen over dynamiske værdier fra det første felt i betingelsen, *Indeholder* på rullelisten i det andet felt, og angiv *Accepter* i det tredje felt i betingelsen. Til sidst kan du tilføje handlinger baseret på resultatet af godkendelsen (f.eks. Send en mail med besked).
+1. Tilføj handlingen **Betingelse** for at finde ud af, hvad der sker, når en godkendelse accepteres eller afvises. Vælg **Resultat** på listen over dynamiske værdier fra det første felt i betingelsen, **indeholder** på rullelisten i det andet felt, og angiv **Godkend** i det tredje felt i betingelsen. Til sidst kan du tilføje handlinger baseret på resultatet af godkendelsen (f.eks. Send en mail med besked).
 
-    ![Tilføj betingelse](media/define-flow-3.png "Indstillinger for tilstanden ja/nej")
+    ![Skærmbillede af betingelseshandlingen.](media/define-flow-3.png "Indstillinger for tilstanden ja/nej")
 
-Du har nu oprettet godkendelsesstrukturen, så godkenderen har alle de oplysninger, der kræves for at træffe en beslutning om de næste trin. Her er det fuldstændige eksempel 
+Du har nu oprettet godkendelsesstrukturen, så godkenderen har alle de oplysninger, der kræves for at træffe en beslutning om de næste trin. Her er det fulde eksempel: 
 
-![Struktur for godkendelsesflow](media/approval-flow-structure.png "Struktur for godkendelsesflow")
+![Skærmbillede af struktur for godkendelsesflow.](media/approval-flow-structure.png "Struktur for godkendelsesflow")
 
-Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeelementer for det pågældende tilbud, og der sendes en godkendelsesanmodning, som godkenderen kan reagere på fra Power Automate eller den handlingsrettede mail, de modtager. Nedenfor vises eksempel på visningen:
+Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeelementer for det pågældende tilbud, og der sendes en godkendelsesanmodning, som godkenderen kan reagere på fra Power Automate eller den handlingsrettede mail, de modtager. Her er et eksempel på skærmbilledet:
 
-![Flow i handling](media/flow-in-action.png "Flow i handling")
+![Skærmbillede af flowet i handlingen.](media/flow-in-action.png "Flow i handling")
 
 ## <a name="recommended-patterns"></a>Anbefalede mønstre
 
@@ -503,19 +504,19 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
 - **Arbejdsprocesser, der kører fra plug-in/kode**  
 
-  Vi anbefaler, at du omdesigner flowet, så det starter med udløsere.
+  Vi anbefaler, at du omdesigner flowet, så det starter med udløsere:
 
   - Brug Common Data Service-udløsere til at køre flows baseret på hændelser i den.
 
-  - Hvis du vil køre flows, der er baseret på hændelser i en ekstern tjeneste, kan du udnytte de mere end 260 indbyggede connectorer.
+  - Hvis du vil køre flow, der er baseret på hændelser i en ekstern tjeneste, kan du udnytte de mere end 260 indbyggede connectorer.
 
-  - I forbindelse med scenarier, hvor en connector, du har brug for, ikke umiddelbart er tilgængelig, kan du nemt oprette din egen brugerdefinerede connector [Få mere at vide om, hvordan du opretter brugerdefinerede connectorer](https://docs.microsoft.com/connectors/custom-connectors/define-blank).
+  - I forbindelse med scenarier, hvor en connector, du har brug for, ikke er tilgængelig som standard, kan du nemt oprette din egen brugerdefinerede connector. Flere oplysninger: [Oprette en brugerdefineret connector fra bunden](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
-  - Endelig gælder det, at hvis der er scenarier, hvor du ikke kan udløse dit flow ved hjælp af en Common Data Service-connector eller en af de indbyggede connectorer eller oprette en brugerdefineret connector, skal du bruge udløseren [Når der modtages en HTTP-anmodning](https://docs.microsoft.com/azure/connectors/connectors-native-reqres#use-the-http-request-trigger) til at kalde flowet.
+  - Og endelig gælder det, at hvis der er scenarier, hvor du ikke kan udløse dit flow ved hjælp af en Common Data Service-connector eller en af de indbyggede connectorer eller oprette en brugerdefineret connector, skal du bruge udløseren [Når der modtages en HTTP-anmodning](https://docs.microsoft.com/azure/connectors/connectors-native-reqres) til at kalde flowet.
 
-- **Arbejdsprocesser, der kører rekursivt**  
+- **Arbejdsprocesser, der kører rekursivt**
 
-  Brug [Foretag indtil](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop)- eller [Anvend på alle](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop)-løkken i Flows i stedet
+  Brug [gør indtil](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop)- eller [anvend på alle](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop)-løkken i flows i stedet.
 
 - **Arbejdsprocesser, der skal bruge en liste over poster**  
 
@@ -527,7 +528,7 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
 - **Arbejdsprocesser, hvor kørsler er administreret for at sikre, at aktiviteterne blev udført i en enkelt transaktion**  
 
-  Brug handlingen [changeset](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) til at sikre, at alle handlinger i den udføres som en enkelt atomisk enhed, hvor alle lykkes eller mislykkes som en gruppe. Hvis en af handlingerne i et ændringssæt mislykkes, rulles ændringer, der er foretaget af fuldførte handlinger, tilbage.
+  Brug [handlingen changeset](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) til at sikre, at alle handlinger i den udføres som en enkelt atomisk enhed, hvor alle lykkes eller mislykkes som en gruppe. Hvis en af handlingerne i et ændringssæt mislykkes, rulles ændringer, der er foretaget af fuldførte handlinger, tilbage.
 
 - **Overvåg, om der opstår fejl i kørsler af baggrundsarbejdsproces**  
 
@@ -537,15 +538,15 @@ Når du kører dette flow i forhold til dit tilbud, opsummeres tilbudslinjeeleme
 
 - **Jeg har en Dynamics 365-licens. Kan jeg bruge Power Automate?**
 
-  Alle Dynamics 365-brugere har ret til at bruge Power Automate. Gennemse vores licensoplysninger: <https://flow.microsoft.com/pricing/>
+  Alle Dynamics 365-brugere har ret til at bruge Power Automate. [Gennemse vores licensoplysninger.](https://flow.microsoft.com/pricing/)
 
 - **Hvor ofte kan mine flow udløses?**
 
-   Flows i Dynamics 365 (eller Common Data Service) kører næsten i realtid efter udløseren, fordi de bruger webhooks (ingen polling er påkrævet)
+   Flows i Dynamics 365 (eller Common Data Service) kører næsten i realtid efter udløseren, fordi de bruger webhooks (ingen polling er påkrævet).
 
-  - Som med direkte API-adgang er der tærskler/begrænsninger i systemet. Se [Grænser og konfiguration i Power Automate](limits-and-config.md)
-  - Specifikt er der en begrænsning på 100.000 handlinger pr. 5 minutter pr. flow. En enkelt løkke i et flow kan ikke behandle mere end 100.000 elementer på én gang
-  - Der er et maksimum på 6 GB dataoverførselshastighed pr. 5. minut
+  - Som med direkte API-adgang er der tærskler/begrænsninger i systemet. Flere oplysninger: [Grænser og konfiguration i Power Automate](limits-and-config.md)
+  - Specifikt er der en begrænsning på 100.000 handlinger pr. 5. minut pr. flow. En enkelt løkke i et flow kan ikke behandle mere end 100.000 elementer på én gang.
+  - Der er et maksimum på 6 GB dataoverførselshastighed pr. 5 minutter.
 
 - **Hvor lang tid kan et enkelt flow køre?**  
 

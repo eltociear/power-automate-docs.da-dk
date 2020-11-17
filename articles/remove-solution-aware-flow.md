@@ -1,6 +1,6 @@
 ---
 title: Få mere at vide om, hvordan du fjerner eller sletter løsningsorienterede flow | Microsoft Docs
-description: Få mere at vide om, hvordan du fjerner eller sletter løsningsorienterede flow.
+description: Få mere at vide om, hvordan du kan fjerne løsningsorienterede flows fra løsninger eller slette dem i miljøer.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,40 +13,45 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/12/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a026354671627d8d8714e0da1d0d6e8011387da8
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: a3bb56c6b145a8ec6923ee274005ecd5cfe49289
+ms.sourcegitcommit: a881042f3de3cce8087986174fed53fd26b163f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296587"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4365176"
 ---
 # <a name="remove-a-solution-aware-flow"></a>Fjern et løsningsorienteret flow
 
+Du kan enten fjerne et flow fra en løsning eller helt slette flowet i et miljø.
 
-Du kan enten fjerne et flow fra en løsning eller helt slette flowet fra et miljø.
+|Handling|Resultat|
+|------|-----------|
+|Fjern fra denne løsning|Flowet fjernes fra den valgte løsning, men det forbliver i miljøet, og du kan bruge det i andre løsninger i miljøet på et senere tidspunkt.|
+|Slet fra dette miljø|Flowet slettes. Det er ikke tilgængeligt i miljøet.|
 
-Handling|Resultat
-------|-----------
-Fjern fra denne løsning|Flowet fjernes fra den valgte løsning, men forbliver i miljøet. Du kan bruge flowet i andre løsninger i miljøet på et senere tidspunkt.
-Slet fra dette miljø|Flowet slettes. Det er ikke tilgængeligt i miljøet.
+## <a name="remove-a-flow-from-a-solution"></a>Fjerne et flow fra en løsning
 
 1. Log på Power Automate, og vælg derefter **Løsninger** fra den venstre navigationslinje.
-1. Vælg den løsning, der indeholder det flow, du vil slette.
+1. Vælg den løsning, der indeholder det flow, du vil fjerne.
+1. Vælg **Flere kommandoer** (...) for flowet, vælg **Fjern**, og vælg derefter **Fjern fra denne løsning**.
 
-   ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
-   
-1. Vælg **...** (Flere kommandoer) for dit flow, vælg **Fjern**, og vælg derefter enten **Fjern fra denne løsning** eller **Slet fra dette miljø**.
+>[!IMPORTANT]
+>Når du fjerner et flow, flyttes det til **Common Data Service-standardløsningen**, hvor du kan redigere eller slette flowet eller føje det til en anden løsning. 
 
-   ![](./media/remove-solution-aware-flow/delete-flow-from-solution-options.png)
+## <a name="delete-a-flow-from-an-environment"></a>Slette et flow i et miljø
 
-## <a name="learn-more"></a>Få mere at vide
+1. Log på Power Automate, og vælg derefter **Løsninger** fra den venstre navigationslinje.
+1. Vælg den løsning, der indeholder det flow, du vil slette i miljøet.
+1. Vælg **Flere kommandoer** (...) for flowet, vælg **Fjern**, og vælg derefter **Slet fra dette miljø**.
+
+## <a name="learn-more"></a>Flere oplysninger
 
 - [Opret en løsning](./overview-solution-flows.md)
 - [Opret et flow i en løsning](./create-flow-solution.md)

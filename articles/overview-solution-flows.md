@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
+ms.date: 10/09/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a0e986c9d98d8a928cde139f9e21a78331c4f039
-ms.sourcegitcommit: c748e9804f4f03d18f3c81d40f1d6fc5862a24c2
+ms.openlocfilehash: 2d128ba01b476656fa6c903d0f01b9da34b4375c
+ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3968739"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3988220"
 ---
 # <a name="overview"></a>Oversigt
 
@@ -44,15 +44,14 @@ Du skal have følgende komponenter for at oprette løsninger og løsningsoriente
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - Et miljø med version 9.1.0.267 eller nyere.
 
-  Du kan undersøge, hvilken version du har, ved at gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com/), vælge **Miljøer**, vælge det miljø, du er interesseret i, og derefter vælge fanen **Oplysninger**.
+  Du kan undersøge, hvilken version du har, ved at gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com/), vælge **Miljøer**, vælge det miljø, du er interesseret i. Under fanen **Detaljer** vises alle konfigurationsoplysninger for det valgte miljø.
 
 ## <a name="create-a-solution"></a>Opret en løsning
 
 Følg disse trin for at oprette en løsning:
 
 1. Log på [Power Automate](https://flow.microsoft.com).
-1. Vælg **Løsninger** på navigationslinjen.
-
+1. Vælg **Løsninger** på navigationslinjen i venstre side af skærmen.
 1. Vælg **+ Ny løsning**.
 
    ![Vælge en ny løsning](./media/overview-solution-flows/select-new-solution.png "Skærm, der viser ny løsning")
@@ -61,7 +60,7 @@ Følg disse trin for at oprette en løsning:
 
    ![Vælge ny løsning](./media/overview-solution-flows/new-solution.png "skærmbillede af egenskaber for ny løsning").
 
-1. Vælg **Gem og luk** i menuen øverst.
+1. Vælg knappen **Opret**.
 
   
    Din nye løsning ser muligvis ud som på dette billede:

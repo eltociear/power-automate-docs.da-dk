@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2020
+ms.date: 10/25/2020
 ms.author: hamenon
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81f9a3533d8180184b12b07ab6379e86ce20c198
-ms.sourcegitcommit: dc401f03be124fffb1cb34e368784e8072a73ccb
+ms.openlocfilehash: f7bc45f7ff7d6ebdb263cf1124cf8b266d28f2e4
+ms.sourcegitcommit: 7a3df04b817ecf8ad99ca7bb551804fe83b0861d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3892755"
+ms.lasthandoff: 10/25/2020
+ms.locfileid: "4109924"
 ---
 # <a name="power-automate-regions-overview"></a>Oversigt over Power Automate-områder
 
@@ -53,6 +53,7 @@ Australien|Det østlige Australien, Det sydøstlige Australien
 Canada|Det centrale Canada, Det østlige Canada
 Europa|Det nordlige Europa, Det vestlige Europa
 Frankrig|Det centrale Frankrig, Det sydlige Frankrig
+Tyskland|Det vestlige centrale Tyskland, Det nordlige Tyskland
 Indien|Det centrale Indien, Det sydlige Indien, Det vestlige Indien
 Japan|Det østlige Japan, Det vestlige Japan
 Sydamerika|Det Sydlige Brasilien

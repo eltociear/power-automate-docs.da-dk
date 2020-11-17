@@ -1,6 +1,6 @@
 ---
 title: Få mere at vide om, hvordan du opretter flow for brugergrænsefladen for websteder | Microsoft Docs
-description: Lær, hvordan du automatiserer webprogrammer ved hjælp af flow for brugergrænsefladen.
+description: Lær, hvordan du automatiserer webapps ved hjælp af flow for brugergrænsefladen.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fb0b3b2dcd615130764d7f4c206e04e191bb1eca
-ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
+ms.openlocfilehash: 83900272265c19b517343da122ce863c391cca1f
+ms.sourcegitcommit: af414863b5d3a401102746043dbfe2bd93356d48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3298831"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058121"
 ---
-# <a name="create-and-test-your-web-ui-flows"></a>Opret og test flow for brugergrænsefladen på internettet
+# <a name="create-and-test-your-web-ui-flows"></a>Oprette og teste flow for brugergrænsefladen på internettet
 
 Følg disse trin for at oprette et simpelt flow for brugergrænsefladen på internettet.
 
-## <a name="create-a-web-ui-flow"></a>Opret et flow for brugergrænsefladen på internettet
+## <a name="create-a-web-ui-flow"></a>Oprette et flow for brugergrænsefladen på internettet
 
 1. Åbn [Microsoft Edge (version 80 eller nyere)](https://www.microsoft.com/edge) eller Google Chrome, og naviger derefter til [Power Automate](https://flow.microsoft.com/).
 
@@ -39,11 +39,11 @@ Følg disse trin for at oprette et simpelt flow for brugergrænsefladen på inte
 
 1. Vælg **Mine flow** > **Flow for brugergrænseflade** > **Nyt**.
 
-   ![Opret et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Opret et nyt flow for brugergrænsefladen")
+   ![Oprette et nyt flow for brugergrænsefladen](../media/create-windows-ui-flow/create-new.png "Oprette et nyt flow for brugergrænsefladen")
 
-1. Vælg **Webprogram** > **Næste**
+1. Vælg **Webapp** > **Næste**
     
-   ![Vælg webprogram](../media/create-web-ui-flow/select-web-app.png "Vælg webprogram")
+   ![Vælg Webapp](../media/create-web-ui-flow/select-web-app.png "Vælg Webapp")
 
 1. Angiv et navn på dit flow for brugergrænsefladen i feltet **Navn på flow**.
 
@@ -54,7 +54,7 @@ Følg disse trin for at oprette et simpelt flow for brugergrænsefladen på inte
    Selenium IDE starter.
 
    >[!TIP] 
-   >Tip! Du kan optage handlinger på tværs af flere HTTP- eller HTTPS-websteder under den samme fane.  
+   >Tip: Du kan optage handlinger på tværs af flere HTTP- eller HTTPS-websteder under den samme fane.  
 
 1. I Selenium IDE skal du vælge knappen **REC** øverst til højre på skærmen for at starte optageren.
 
@@ -108,6 +108,8 @@ For at løse problemet skal brugeren manuelt redigere scriptet for at indsætte 
 
 -   Disse Selenium IDE-kommandoer understøttes ikke: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt og MouseDownAt.
 
+- Flow for brugergrænseflade understøtter ikke Selenium IDE-handlinger eller trin, der tager mere end ét minut at køre.  Brug [Power Automate Desktop](./desktop/introduction.md) i stedet.
+
 -   Højreklik understøttes ikke. 
 
 -   Yderligere input til flow for brugergrænsefladen på internettet genereres, når du bruger Foreach-kommandoer. Du kan løse dette problem ved at angive en vilkårlig værdi i de ekstra felter. Det påvirker ikke afspilningen.
@@ -121,8 +123,8 @@ For at løse problemet skal brugeren manuelt redigere scriptet for at indsætte 
 
 ## <a name="next-steps"></a>Næste trin
 
-- Få mere at vide om, hvordan du [kører flow for brugergrænsefladen](run-ui-flow.md).
+- Få mere at vide om, hvordan du [kører flow for brugergrænseflade](run-ui-flow.md).
 
-- Hvis du vil foretage dig mere med flow for brugergrænseflader, kan du også afprøve flow for brugergrænseflader med [input- og output](inputs-outputs-web.md)parametre.
+- Hvis du vil foretage dig mere med flow for brugergrænseflade, kan du også afprøve flow for brugergrænseflade med [input- og output](inputs-outputs-web.md)-parametre.
 
  
