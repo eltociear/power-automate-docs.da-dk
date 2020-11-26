@@ -2,19 +2,21 @@
   href: /power-automate/
 - name: Oversigt
   items:
-    - name: Tilmelding
+    - name: Tilmeld dig
       href: sign-up-sign-in.md
     - name: Kom i gang
       href: getting-started.md
+    - name: Kom i gang med udløsere
+      href: triggers-introduction.md
     - name: Styret læring
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
-    - name: Opret et flow i browseren
+    - name: Oprette et flow fra en skabelon
       href: get-started-logic-template.md
-    - name: Opret et flow på en telefon
+    - name: Oprette et flow på en telefon
       href: mobile-create-flow.md
     - name: Dele et flow
       href: create-team-flows.md
-    - name: 'Opret et flow, der bruger Common Data Service'
+    - name: 'Oprette et flow, der bruger Microsoft Dataverse'
       href: common-data-model-intro.md
     - name: Nyheder
       href: whats-new.md
@@ -34,17 +36,15 @@
           href: learning-catalog/learning-catalog-sales.md
 - name: Automatiserede flows
   items:
-    - name: Opret et flow fra bunden
+    - name: Oprette et flow fra bunden
       href: get-started-logic-flow.md
-    - name: Udløs et flow med mail
-      href: email-triggers.md
-    - name: Opret et flow med Common Data Service (nuværende miljø)
+    - name: Oprette et flow med Common Data Service (current environment) connector
       href: connection-cds-native.md
-    - name: Opret et flow med Common Data Service
+    - name: Oprette et flow med Common Data Service-connector
       href: connection-cds.md
-    - name: Opret et flow med Dynamics 365
+    - name: Oprette et flow med Dynamics 365
       href: connection-dynamics365.md
-    - name: Opret et flow med OneDrive for Business
+    - name: Oprette et flow med OneDrive for Business
       href: onedrive-business-launch-panel.md
     - name: Filtrer og kopiér data
       href: odata-filters.md
@@ -84,26 +84,49 @@
       href: all-assigned-must-approve.md
     - name: Integrerede godkendelser
       href: common-data-model-approve.md
-    - name: Formatér anmodninger om godkendelse
+    - name: Formatere anmodninger om godkendelse
       href: approvals-markdown-support.md
     - name: Indstillinger for brugerdefineret godkendelsessvar
       href: create-approval-response-options.md
-- name: Brug flows med SharePoint
+- name: Bruge flow med Office 365 Outlook-e-mail
+  items:
+    - name: Oversigt
+      href: email-overview.md
+      displayName: Use flows with Outlook
+    - name: Oprette flows til at administrere e-mail
+      href: create-email-flows.md
+    - name: Oprette flow til populære e-mailscenarier
+      href: email-top-scenarios.md
+    - name: Udløse et flow med e-mail
+      href: email-triggers.md
+    - name: Tilpasse e-mail i flows
+      href: email-customization.md
+    - name: Foretage fejlfinding af problemer med e-mail i flows
+      href: email-troubleshooting.md
+- name: Bruge flows med SharePoint
   items:
     - name: Oversigt
       href: sharepoint-overview.md
       displayName: Use flows with SharePoint
-    - name: Opret SharePoint-påmindelsesflow
+    - name: Oprette SharePoint-påmindelsesflow
       href: create-sharepoint-reminder-flows.md
-    - name: Administrer SharePoint-sidegodkendelser
+    - name: Administrere SharePoint-sidegodkendelser
       href: customize-sharepoint-page-approvals.md
-- name: Brug flows med Microsoft Teams
+- name: Bruge flows med Microsoft Teams
   items:
     - name: Oversigt
       href: ./teams/overview.md
       displayName: Use flows with Microsoft Teams
-    - name: Udløs flows fra en Teams-meddelelser
+    - name: Installere Power Automate-appen
+      href: ./teams/install-teams-app.md
+    - name: Oprette flows i Microsoft Teams
+      href: ./teams/teams-app-create.md
+    - name: Administrere flows i Microsoft Teams
+      href: ./teams/teams-app-home.md
+    - name: Udløse flows fra Teams-meddelelser
       href: trigger-flow-teams-message.md
+    - name: Oprette flows ved hjælp af Power Apps-appen
+      href: ./teams/create-flows-power-apps-app.md
     - name: Modelflows med tilpassede kort
       href: create-adaptive-cards.md
       items:
@@ -127,8 +150,6 @@
           href: acronym-sample.md
         - name: Eksempel – generering af kundeemner
           href: lead-collection-sample.md
-    - name: Opret flows ved hjælp af Power Apps-appen (Prøveversion)
-      href: ./teams/create-flows-power-apps-app.md
 - name: Forretningsprocesforløb
   items:
     - name: Oversigt over forretningsprocesforløb
@@ -170,13 +191,11 @@
       href: ./ui-flows/run-ui-flow.md
     - name: Administrer flow for brugergrænseflade
       href: ./ui-flows/manage.md
-    - name: Overvåg flow for brugergrænseflade i CoE (Center of Excellence)
-      href: ./ui-flows/monitor.md
     - name: Power Automate Desktop Flow for brugergrænseflade (Prøveversion)
       items:
         - name: Introduktion til Power Automate Desktop
           href: ./ui-flows/desktop/introduction.md
-        - name: Opret et Power Automate Desktop-flow
+        - name: Oprette et Power Automate Desktop-flow
           href: ./ui-flows/desktop/create-flow.md
         - name: Kør et Power Automate Desktop-flow
           href: ./ui-flows/desktop/run-pad-flow.md
@@ -302,45 +321,45 @@
       href: create-child-flows.md
     - name: Eksportér løsning
       href: export-flow-solution.md
-    - name: Importér løsning
+    - name: Importere løsning
       href: import-flow-solution.md
-    - name: Rediger et løsningsorienteret flow
+    - name: Redigere et løsningsorienteret flow
       href: edit-solution-aware-flow.md
-    - name: Fjern et løsningsorienteret flow
+    - name: Fjerne et løsningsorienteret flow
       href: remove-solution-aware-flow.md
-- name: Common Data Service
+- name: Microsoft Dataverse
   items:
-    - name: Klassiske Common Data Service-arbejdsprocesser
+    - name: Klassiske Microsoft Dataverse-arbejdsflows
       items:
         - name: Oversigt
           href: workflow-processes.md
-        - name: Konfigurer faser og trin for arbejdsprocesfaser i baggrunden
+        - name: Konfigurere faser og trin for arbejdsflowfaser i baggrunden
           href: configure-workflow-steps.md
         - name: Overvåg og administrer arbejdsprocesser i baggrunden
           href: monitor-manage-processes.md
-        - name: Bedste praksis for arbejdsprocesser i baggrunden
+        - name: Bedste praksis for arbejdsflow i baggrunden
           href: best-practices-workflow-processes.md
-        - name: Erstat arbejdsprocesser med flows i baggrunden
+        - name: Erstatte arbejdsflow i baggrunden med flows
           href: replace-workflows-with-flows.md
-    - name: Klassiske Common Data Service-opgaveprocesser
+    - name: Klassiske Microsoft Dataverse-opgaveflows
       items:
-        - name: Opret mobile opgaveprocesser
+        - name: Oprette mobile opgaveflows
           href: create-mobile-task-flow.md
-    - name: Klassiske Common Data Service-dialogbokse
+    - name: Klassiske Microsoft Dataverse-dialoger
       items:
-        - name: Brug klassiske Common Data Service-dialogbokse
+        - name: Bruge klassiske Microsoft Dataverse-dialoger
           href: use-cds-for-apps-dialogs.md
-        - name: Erstat klassiske Common Data Service-dialogbokse
+        - name: Erstatte klassiske Microsoft Dataverse-dialoger
           href: replace-dialogs.md
 - name: AI Builder
   items:
-    - name: Brug AI Builder i Power Automate
+    - name: Bruge AI Builder i Power Automate
       href: use-ai-builder.md
 - name: Sådan gør du
   items:
-    - name: Tilføj en handling
+    - name: Tilføje en handling
       href: multi-step-logic-flow.md
-    - name: Tilføj en betingelse
+    - name: Tilføje en betingelse
       href: add-condition.md
     - name: Brug datahandlinger
       href: data-operations.md
@@ -386,12 +405,12 @@
       href: ./developer/embed-flow-dev.md
     - name: Lad kunderne testkøre dine flow
       href: ./developer/dev-appsource-test-drive.md
-    - name: Arbejd med forretningsprocesforløb ved hjælp af kode
+    - name: Arbejde med forretningsprocesforløb ved hjælp af kode
       href: ./developer/business-process-flows-code.md
       items:
-        - name: 'Eksempel: Arbejd med forretningsprocesforløb'
+        - name: 'Eksempel: Arbejde med forretningsprocesforløb'
           href: ./developer/sample-work-business-process-flows.md
-    - name: Brugerdefinerede Common Data Service-arbejdsprocesaktiviteter
+    - name: Brugerdefinerede arbejdsprocesaktiviteter i Microsoft Dataverse
       href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
@@ -401,11 +420,13 @@
       href: billing-questions.md
     - name: Administration
       href: admin-center-introduction.md
-    - name: Administrer miljøer
+    - name: Administrere miljøer
       href: environments-overview-admin.md
-    - name: Angiv en politik for at forhindre tab af data
+    - name: Vise analyse til UI-flows
+      href: ./ui-flows/overview-analytics.md
+    - name: Angive en politik for at forhindre tab af data
       href: prevent-data-loss.md
-    - name: Understøt Intune i mobilapps
+    - name: Understøtte Intune i mobilapps
       href: intune-support.md
     - name: Introduktion til datagrupper
       href: introduction-to-data-groups.md

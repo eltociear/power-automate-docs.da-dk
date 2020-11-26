@@ -11,12 +11,12 @@ metadata:
   ms.author: deonhe
   ms.date: 09/22/2020
   hide_bc: false
-  ms.openlocfilehash: 28a151863c0670f09a9cd76b78aab95db3b57dfa
-  ms.sourcegitcommit: f8e35c134b712d60dfade1b9648fa677cd974457
+  ms.openlocfilehash: 7b7c619405dab757cd3fbc199590ed939aabc03e
+  ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "4114613"
+  ms.lasthandoff: 11/17/2020
+  ms.locfileid: "4553740"
 highlightedContent:
   items:
   - title: Hvad er Power Automate?
@@ -78,7 +78,7 @@ conceptualContent:
       url: /power-automate/sharepoint-overview
       itemType: overview
     - text: Microsoft 365 Outlook
-      url: /power-automate/email-triggers
+      url: /power-automate/email-overview
       itemType: how-to-guide
   - title: Brug løsninger til ALM
     links:

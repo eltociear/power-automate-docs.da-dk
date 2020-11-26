@@ -1,12 +1,12 @@
 ## <a name="what-is-an-environment"></a>Hvad er et miljø:
-Et miljø er et virtuelt område, der bruges til at gemme, administrere og dele apps, flow og forretningsdata i Common Data Service. Miljøer er geolokaliseret, så alle apps og data, der er gemt i en database i et miljø, er også geolokaliseret.  
+Et miljø er et virtuelt område, der bruges til at gemme, administrere og dele apps, flow og forretningsdata i Microsoft Dataverse. Miljøer er geolokaliseret, så alle apps og data, der er gemt i en database i et miljø, er også geolokaliseret.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Begreber, du bør være fortrolig med
 
 | **Begreb** | **Beskrivelse** |
 | --- | --- |
 | **Administration** |Administration er en [webportal](https://admin.powerplatform.microsoft.com/) til administration af alle dine miljøer og politikker til forebyggelse af datatab. |
-| **Common Data Service** |Med Common Data Service kan du føje datalagring og modelleringsfunktioner til dine apps. |
+| **Common Data Service** |Med Dataverse kan du føje datalagring og modelleringsfunktioner til dine apps. |
 | **Miljøroller** |De to miljøroller er Miljøadministrator og Miljøopretter. |
 | **Brugerroller** |De to standardbrugerroller er Organisationsbruger og Databaseejer. Du kan tilføje roller og tilknytte tilladelser til disse roller. |
 
