@@ -45,7 +45,7 @@ Disse ressourcer indeholder personlige data, der slettes automatisk, når en bru
 
 ## <a name="account-close-requests"></a>Anmodninger om kontolukning
 
-Disse trin beskriver, hvordan du selv kan lukke din Micorsoft-konto som følge af GDPR.
+Disse trin beskriver, hvordan du selv kan lukke din Microsoft-konto som følge af GDPR.
 
 1. Log på [portalen til lukning af Microsoft-konti](https://go.microsoft.com/fwlink/?LinkId=523898) ved hjælp af din Microsoft-konto, og vælg derefter **Næste**.
 
